@@ -32,8 +32,9 @@ const App = () => (
               <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
-                <Route path="/" element={<ProtectedRoute><Index /></ProtectedRoute>} />
-                {/* /progress removed: per-user progress surfaced in Profile and Dashboard */}
+                {/* homepage/dashboard is public, shows 0% progress for unauthenticated users */}
+                <Route path="/" element={<Index />} />
+                {/* protected areas */}
                 <Route path="/contributors" element={<ProtectedRoute><TopContributors /></ProtectedRoute>} />
                 <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
                 <Route path="/viewer/:driveId" element={<ProtectedRoute><Viewer /></ProtectedRoute>} />

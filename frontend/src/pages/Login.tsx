@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 
 const Login = () => {
   const { login, user } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = (location.state as any)?.from?.pathname || '/';
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -20,7 +22,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await login({ email, password });
-      navigate('/');
+      navigate(from, { replace: true });
     } catch (err: any) {
       setError(err.response?.data || err.message || 'Login failed');
     }

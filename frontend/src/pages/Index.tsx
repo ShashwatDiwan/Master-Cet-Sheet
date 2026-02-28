@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useAuth } from '@/hooks/useAuth';
+import { useNavigate } from 'react-router-dom';
 import { SubjectSheet } from '@/lib/cet-data';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { getSheets, getSheetById } from '@/api/sheets';
@@ -13,6 +15,9 @@ import logo from '@/assets/Logo.png';
 
 const Index = () => {
   const queryClient = useQueryClient();
+  // authentication info
+  const { user } = useAuth();
+  const navigate = useNavigate();
   // Local cache of sheets for UI; populated from backend only
   const [subjectSheets, setSubjectSheets] = useState<SubjectSheet[]>([]);
   const [selectedSheet, setSelectedSheet] = useState<any>(null);
@@ -71,6 +76,14 @@ console.log({subjectSheets})
     setSubjectSheets(sheetsData ?? []);
   }, [sheetsData]);
 
+  // when user logs in/out, re-fetch sheets so personalized flags update
+  useEffect(() => {
+    queryClient.invalidateQueries(['sheets']);
+    if (selectedSheet) {
+      queryClient.invalidateQueries(['sheet', selectedSheet.id]);
+    }
+  }, [user, queryClient, selectedSheet]);
+
   const handleSheetClick = (sheet: any) => {
     // Open modal immediately with current list item to feel instant
     const sheetIdNum = Number(sheet.id ?? sheet.sheetId);
@@ -114,6 +127,10 @@ console.log({subjectSheets})
   });
 
   const handleChapterToggle = (subjectId: string, chapterId: string, isCompleted: boolean) => {
+    if (!user) {
+      navigate('/login');
+      return;
+    }
     // Optimistic update UI (same as before)
     setSubjectSheets(prev => prev.map(subject => {
       if (subject.id === subjectId) {
@@ -174,6 +191,10 @@ console.log({subjectSheets})
   };
 
   const handleRevisionToggle = (chapterId: string) => {
+    if (!user) {
+      navigate('/login');
+      return;
+    }
     const willBeRevised = !revisionChapters.has(chapterId);
     // Optimistic update
     setRevisionChapters(prev => {
@@ -250,7 +271,7 @@ console.log({subjectSheets})
      
       <div className="text-center mb-6 animate-fade-in">
         <div className="flex items-center justify-center gap-3 mb-2">
-        <div className="w-16 h-16 from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+          <div className="w-16 h-16 from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
             <span className="text-2xl"><img src={logo} alt="EbookStore logo" className="w-20 h-20 object-contain" /></span>
           </div>
           <h1 className="text-5xl font-bold mb-0">
@@ -261,7 +282,7 @@ console.log({subjectSheets})
           </h1>
         </div>
         <p className="text-base text-zinc-300 max-w-xl mx-auto mt-1">
-        Your comprehensive study companion for CET preparation
+          Your comprehensive study companion for CET preparation
         </p>
       </div>
       {/* Hero Carousel - no heading, tighter spacing */}
@@ -532,7 +553,7 @@ console.log({subjectSheets})
                             type="checkbox"
                             checked={chapter.isCompleted || false}
                             onChange={(e) => handleChapterToggle(selectedSheet.id, chapter.id, e.target.checked)}
-                            className="custom-checkbox transition-none duration-75"
+                            className="custom-checkbox transition-none duration-75 cursor-pointer"
                           />
                         </td>
                         <td className="p-4">

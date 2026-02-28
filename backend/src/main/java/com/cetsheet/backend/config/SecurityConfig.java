@@ -36,6 +36,11 @@ public class SecurityConfig {
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/v1/auth/**").permitAll()
                 .requestMatchers("/auth/**").permitAll()
+                // allow browsing sheets without authentication
+                .requestMatchers(org.springframework.http.HttpMethod.GET, "/sheets/**").permitAll()
+                // allow retrieving chapter resources publicly
+                .requestMatchers(org.springframework.http.HttpMethod.GET, "/chapters/*/resources/**").permitAll()
+                // all other endpoints require authentication
                 .anyRequest().authenticated()
             )
                 .userDetailsService(userDetailsService)

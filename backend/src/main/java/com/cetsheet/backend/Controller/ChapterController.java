@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
 
 
 @RestController
@@ -26,11 +28,11 @@ public class ChapterController {
     private Long currentUserId() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         if (auth == null || auth.getName() == null) {
-            throw new RuntimeException("Unauthenticated");
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Unauthenticated");
         }
         return userRepository.findByEmail(auth.getName())
                 .map(User::getId)
-                .orElseThrow(() -> new RuntimeException("User not found: " + auth.getName()));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "User not found: " + auth.getName()));
     }
 
     // PATCH endpoint for updating per-user progress (completed/revised)
