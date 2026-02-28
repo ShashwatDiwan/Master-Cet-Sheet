@@ -1,0 +1,23 @@
+# Ignore local build outputs and VCS
+.target
+/target
+**/target
+.git
+.gitignore
+.idea
+.mvn/wrapper/maven-wrapper.jar
+
+# OS/editor cruft
+.DS_Store
+*.log
+
+# Node/yarn (if present anywhere)
+node_modules
+**/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (managed in Render dashboard)
+.env
+.env.*
