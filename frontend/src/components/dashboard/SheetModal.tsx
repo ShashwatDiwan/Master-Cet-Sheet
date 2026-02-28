@@ -90,18 +90,18 @@ export const SheetModal = ({ sheet, isOpen, onClose, onChapterView, onChapterDow
         </div>
 
         {/* Chapter Table */}
-        <div className="p-6 overflow-auto max-h-[calc(90vh-120px)]">
+        <div className="p-6 overflow-x-auto max-h-[calc(90vh-120px)]">
           <div className="bg-muted/20 rounded-lg overflow-hidden">
             {/* Table Header */}
-            <div className="grid grid-cols-9 gap-4 p-4 bg-muted/40 text-sm font-medium text-muted-foreground border-b border-border">
-              <div>Complete</div>
-              <div>Important</div>
-              <div className="col-span-2">Chapter</div>
-              <div>Notes</div>
-              <div>Short Notes</div>
-              <div>PYQs</div>
-              <div>Revision</div>
-              <div>Weightage</div>
+            <div className="grid gap-4 p-4 bg-muted/40 text-sm font-medium text-muted-foreground border-b border-border" style={{ gridTemplateColumns: '60px 60px 2fr 100px 100px 100px 100px 80px' }}>
+              <div className="text-center">Done</div>
+              <div className="text-center">Star</div>
+              <div>Chapter</div>
+              <div className="text-center">Notes</div>
+              <div className="text-center">Short</div>
+              <div className="text-center">PYQs</div>
+              <div className="text-center">Revision</div>
+              <div className="text-center">Weightage</div>
             </div>
 
             {/* Table Rows */}
@@ -109,7 +109,8 @@ export const SheetModal = ({ sheet, isOpen, onClose, onChapterView, onChapterDow
               {sheet.chapters.map((chapter, index) => (
                 <div 
                   key={chapter.id} 
-                  className="grid grid-cols-9 gap-4 p-4 hover:bg-muted/20 transition-colors"
+                  className="grid gap-4 p-4 hover:bg-muted/20 transition-colors items-center"
+                  style={{ gridTemplateColumns: '60px 60px 2fr 100px 100px 100px 100px 80px' }}
                 >
                   {/* Complete Checkbox */}
                   <div className="flex items-center justify-center">
@@ -130,8 +131,8 @@ export const SheetModal = ({ sheet, isOpen, onClose, onChapterView, onChapterDow
                   </div>
 
                   {/* Chapter Name */}
-                  <div className="col-span-2">
-                    <div className="font-medium text-foreground">{chapter.name}</div>
+                  <div className="min-w-0">
+                    <div className="font-medium text-foreground truncate">{chapter.name}</div>
                     <div className="text-xs text-muted-foreground">
                       {chapter.resourceCount} resources
                     </div>
@@ -150,7 +151,7 @@ export const SheetModal = ({ sheet, isOpen, onClose, onChapterView, onChapterDow
                         <FileText className="w-4 h-4 text-primary" />
                       </Button>
                     ) : (
-                      <span className="text-muted-foreground">-</span>
+                      <span className="text-muted-foreground text-xs">-</span>
                     )}
                   </div>
 
@@ -167,7 +168,7 @@ export const SheetModal = ({ sheet, isOpen, onClose, onChapterView, onChapterDow
                         <Scroll className="w-4 h-4 text-secondary" />
                       </Button>
                     ) : (
-                      <span className="text-muted-foreground">-</span>
+                      <span className="text-muted-foreground text-xs">-</span>
                     )}
                   </div>
 
@@ -184,11 +185,26 @@ export const SheetModal = ({ sheet, isOpen, onClose, onChapterView, onChapterDow
                         <HelpCircle className="w-4 h-4 text-info" />
                       </Button>
                     ) : (
-                      <span className="text-muted-foreground">-</span>
+                      <span className="text-muted-foreground text-xs">-</span>
                     )}
                   </div>
 
-                  
+                  {/* Revision */}
+                  <div className="flex items-center justify-center">
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="h-8 w-8 p-0 hover:bg-warning/10"
+                      title="Mark for revision"
+                    >
+                      <RotateCcw className="w-4 h-4 text-muted-foreground" />
+                    </Button>
+                  </div>
+
+                  {/* Weightage */}
+                  <div className="flex items-center justify-center">
+                    <span className="text-xs text-muted-foreground">-</span>
+                  </div>
                 </div>
               ))}
             </div>

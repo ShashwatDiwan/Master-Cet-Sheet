@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import logo from '@/assets/Logo.png';
+import shashImage from '@/assets/shashwat.jpeg';
+import jiniImage from '@/assets/Jini.jpg';
+import aryanImage from '@/assets/aryan.jpg';
 import { 
   Trophy, 
   Star, 
@@ -19,16 +22,16 @@ import {
 interface Contributor {
   id: string;
   name: string;
-  avatar: string;
+  avatarUrl: string;
   rank: number;
   totalContributions: number;
   subjects: string[];
-  pdfsContributed: number;
   videosContributed: number;
   notesContributed: number;
   shortNotesContributed: number;
   joinDate: string;
-  description: string;
+  bio: string;            // short biography to show in modal
+  percentile: string;    // MHTCET percentile string shown on card
   achievements: string[];
   socialLinks: {
     github?: string;
@@ -41,71 +44,57 @@ const mockContributors: Contributor[] = [
   {
     id: '1',
     name: 'Shashwat Diwan',
-    avatar: '👦',
+    avatarUrl: shashImage,
     rank: 1,
-    totalContributions: 120,
+    totalContributions: 38,
     subjects: ['MHTCET'],
-    pdfsContributed: 9,
     videosContributed: 0,
-    notesContributed: 65,
-    shortNotesContributed: 55,
+    notesContributed: 22,
+    shortNotesContributed: 16,
     joinDate: 'March 2024',
-    description: 'MHTCET Percentile: 98.9',
+    bio: 'Motivated Java Developer skilled in building scalable backend-focused applications using Spring Boot, Hibernate, Spring Security, and REST APIs, with exposure to microservices architecture, DevOps practices (CI/CD, Docker), and AI integration using Spring AI. Solved 190+ DSA problems on LeetCode, experienced with MySQL/SQL databases, and recognized as an effective team collaborator',
+    percentile: '98.9',
     achievements: ['🏆 Top Contributor'],
-    socialLinks: { github: '#', linkedin: '#' }
+    socialLinks: { github: 'https://github.com/ShashwatDiwan', linkedin: 'https://www.linkedin.com/in/shashwatdiwan/' }
   },
   {
     id: '2',
     name: 'Jinendra Dhondge',
-    avatar: '😎',
+    avatarUrl: jiniImage,
     rank: 2,
-    totalContributions: 85,
+    totalContributions: 20,
     subjects: ['MHTCET'],
-    pdfsContributed: 3,
     videosContributed: 0,
-    notesContributed: 63,
-    shortNotesContributed:22,
+    notesContributed: 3,
+    shortNotesContributed:17,
     joinDate: 'February 2024',
-    description: 'MHTCET Percentile: 98.6',
+    bio: 'I am a Full Stack Developer with a passion for building scalable, end-to-end web applications that solve real-world problems. With a strong foundation in Data Structures and Algorithms (DSA), I approach every coding challenge with an analytical mindset to ensure optimal performance.',
+    percentile: '98.6',
     achievements: ['🥈 Silver Contributor'],
-    socialLinks: { github: '#', linkedin: '#' }
+    socialLinks: { linkedin: 'https://www.linkedin.com/in/jinendra-dhongde-b1b4a830b/' }
   },
   {
     id: '3',
     name: 'Aryan Dhole',
-    avatar: '😍',
+    avatarUrl: aryanImage,
     rank: 3,
-    totalContributions: 10,
+    totalContributions: 5,
     subjects: ['MHTCET'],
-    pdfsContributed: 2,
     videosContributed: 0,
-    notesContributed: 6,
-    shortNotesContributed:4,
+    notesContributed: 2,
+    shortNotesContributed:3,
     joinDate: 'January 2024',
-    description: 'MHTCET Percentile: 99.1',
+    bio: 'I am a Machine Learning Engineer with a deep-rooted foundation in computer science core subjects, including OS, DBMS, and OOPS. My technical expertise is backed by rigorous problem-solving, having successfully tackled 300+ challenges in Data Structures and Algorithms (DSA) to ensure every model I build is optimized for performance and scalability.',
+    percentile: '99.1',
     achievements: ['🥉 Bronze Contributor'],
-    socialLinks: { github: '#', linkedin: '#' }
+    socialLinks: { linkedin: 'https://www.linkedin.com/in/aryan-dhole/' }
   },
-  /*{
-    id: '4',
-    name: 'Pranjali Diwan',
-    avatar: '👩‍🎓',
-    rank: 4,
-    totalContributions: 55,
-    subjects: ['MHTCET'],
-    pdfsContributed: 0,
-    videosContributed: 0,
-    notesContributed: 55,
-    joinDate: 'December 2023',
-    description: 'MHTCET Percentile: 94+',
-    achievements: ['🌟 Rising Star'],
-    socialLinks: { github: '#', linkedin: '#' }
-  }*/
 ];
 
 const TopContributors = () => {
   const [selectedContributor, setSelectedContributor] = useState<Contributor | null>(null);
   const [showModal, setShowModal] = useState(false);
+  const [showLearnMore, setShowLearnMore] = useState(false);
 
   const handleContributorClick = (contributor: Contributor) => {
     setSelectedContributor(contributor);
@@ -115,6 +104,10 @@ const TopContributors = () => {
   const closeModal = () => {
     setShowModal(false);
     setSelectedContributor(null);
+  };
+
+  const closeLearnMore = () => {
+    setShowLearnMore(false);
   };
 
   const getRankIcon = (rank: number) => {
@@ -171,8 +164,8 @@ const TopContributors = () => {
             },
             { 
               icon: FileText, 
-              label: 'Total PDFs', 
-              value: mockContributors.reduce((sum, c) => sum + c.pdfsContributed, 0), 
+              label: 'Total Notes', 
+              value: mockContributors.reduce((sum, c) => sum + c.notesContributed, 0), 
               color: 'green',
               description: 'Study materials'
             },
@@ -181,14 +174,14 @@ const TopContributors = () => {
               label: 'Total Videos', 
               value: mockContributors.reduce((sum, c) => sum + c.videosContributed, 0), 
               color: 'purple',
-              description: 'Video explanations'
+              description: 'Upcoming feature'
             },
             { 
               icon: BookOpen, 
-              label: 'Total Notes', 
-              value: mockContributors.reduce((sum, c) => sum + c.notesContributed, 0), 
+              label: 'Total Short Notes', 
+              value: mockContributors.reduce((sum, c) => sum + c.shortNotesContributed, 0), 
               color: 'orange',
-              description: 'Handwritten notes'
+              description: 'Handwritten'
             }
           ].map((stat, index) => (
             <div 
@@ -240,7 +233,9 @@ const TopContributors = () => {
                   
                   {/* Avatar and Name */}
                   <div className="text-center mb-4">
-                    <div className="text-5xl mb-2">{contributor.avatar}</div>
+                    <div className="mx-auto w-24 h-24 rounded-full overflow-hidden mb-2">
+                      <img src={contributor.avatarUrl} alt={contributor.name} className="w-full h-full object-cover" />
+                    </div>
                     <h3 className="text-lg font-semibold text-white mb-1">{contributor.name}</h3>
                     <p className="text-zinc-400 text-xs">{contributor.joinDate}</p>
                   </div>
@@ -271,7 +266,7 @@ const TopContributors = () => {
                         ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30'
                         : 'bg-purple-500/20 text-purple-300 border-purple-500/30'
                     }`}>
-                      {contributor.description.replace('MHTCET Percentile: ', '')}
+                      {contributor.percentile}%
                     </div>
                   </div>
 
@@ -294,13 +289,21 @@ const TopContributors = () => {
           <div className="text-6xl mb-4">🚀</div>
           <h2 className="text-2xl font-bold text-white mb-4">Want to Join the Elite?</h2>
           <p className="text-zinc-300 mb-6 max-w-2xl mx-auto">
-            Share your study materials, notes, and resources to help fellow students and earn recognition in our community.
+            If you'd like to contribute your notes to the community, simply email them to us and we'll add you to the hall of fame!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105">
-              Start Contributing
-            </button>
-            <button className="px-6 py-3 bg-zinc-800 text-white rounded-xl font-semibold hover:bg-zinc-700 transition-all duration-300 hover:scale-105 border border-zinc-700">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=shashh.code@gmail.com&su=Contributing%20Notes&body=Hi%20team,%0A%0AI%27d%20like%20to%20share%20my%20study%20notes%20and%20contribute%20to%20the%20community.%0A%0APlease%20find%20my%20notes%20attached.%0A%0AThanks,%0A[Your%20Name]"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105"
+            >
+              Mail Us Your Notes
+            </a>
+            <button 
+              onClick={() => setShowLearnMore(true)}
+              className="px-6 py-3 bg-zinc-800 text-white rounded-xl font-semibold hover:bg-zinc-700 transition-all duration-300 hover:scale-105 border border-zinc-700"
+            >
               Learn More
             </button>
           </div>
@@ -315,7 +318,9 @@ const TopContributors = () => {
             <div className="bg-gradient-to-r from-zinc-800 to-zinc-900 p-6 border-b border-zinc-700">
               <div className="flex justify-between items-center">
                 <div className="flex items-center gap-4">
-                  <div className="text-4xl">{selectedContributor.avatar}</div>
+                  <div className="w-16 h-16 rounded-full overflow-hidden">
+                    <img src={selectedContributor.avatarUrl} alt={selectedContributor.name} className="w-full h-full object-cover" />
+                  </div>
                   <div>
                     <h2 className="text-2xl font-bold text-white">{selectedContributor.name}</h2>
                     <p className="text-zinc-400">Rank #{selectedContributor.rank} Contributor</p>
@@ -335,7 +340,7 @@ const TopContributors = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">About</h3>
-                  <p className="text-zinc-300 leading-relaxed">{selectedContributor.description}</p>
+                  <p className="text-zinc-300 leading-relaxed">{selectedContributor.bio}</p>
                 </div>
                 
                 <div>
@@ -347,15 +352,15 @@ const TopContributors = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-zinc-400">PDFs:</span>
-                      <span className="text-green-400 font-semibold">{selectedContributor.pdfsContributed}</span>
+                      <span className="text-green-400 font-semibold">{selectedContributor.notesContributed}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-zinc-400">Videos:</span>
                       <span className="text-purple-400 font-semibold">{selectedContributor.videosContributed}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-400">Notes:</span>
-                      <span className="text-orange-400 font-semibold">{selectedContributor.notesContributed}</span>
+                      <span className="text-zinc-400">Short Notes:</span>
+                      <span className="text-orange-400 font-semibold">{selectedContributor.shortNotesContributed}</span>
                     </div>
                   </div>
                 </div>
@@ -410,6 +415,123 @@ const TopContributors = () => {
                     </a>
                   )}
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Learn More Modal */}
+      {showLearnMore && (
+        <div className="fixed inset-0 bg-black/90 backdrop-blur-md flex items-center justify-center z-50 p-4 animate-fade-in">
+          <div className="bg-zinc-900 border border-zinc-700 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-scale-in">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-zinc-800 to-zinc-900 p-6 border-b border-zinc-700 sticky top-0">
+              <div className="flex justify-between items-center">
+                <h2 className="text-2xl font-bold text-white">Share Your Knowledge</h2>
+                <button 
+                  onClick={closeLearnMore}
+                  className="text-zinc-400 hover:text-white text-2xl p-3 hover:bg-zinc-800 rounded-xl transition-all duration-300 hover:scale-110"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+            
+            {/* Content */}
+            <div className="p-8 space-y-8">
+              {/* Motivation Section */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                  <span className="text-2xl">💡</span>
+                  Why Share Your Notes?
+                </h3>
+                <p className="text-zinc-300 leading-relaxed">
+                  Contributing your study materials is one of the most meaningful ways to help your peers succeed. When you share your notes, you're not just providing documents—you're sharing your understanding, insights, and hard work.
+                </p>
+                <div className="space-y-3 mt-4">
+                  <div className="flex gap-3">
+                    <span className="text-green-400 text-lg">✓</span>
+                    <div>
+                      <p className="text-white font-semibold">Help Others Succeed</p>
+                      <p className="text-zinc-400 text-sm">Your notes can be the key resource that helps someone finally understand a difficult concept.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <span className="text-green-400 text-lg">✓</span>
+                    <div>
+                      <p className="text-white font-semibold">Build Your Reputation</p>
+                      <p className="text-zinc-400 text-sm">Get recognized in our Hall of Fame and build credibility in the student community.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <span className="text-green-400 text-lg">✓</span>
+                    <div>
+                      <p className="text-white font-semibold">Give Back to the Community</p>
+                      <p className="text-zinc-400 text-sm">Be part of a mission to make quality study materials accessible to everyone.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Steps Section */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                  <span className="text-2xl">📝</span>
+                  How to Share Your Notes
+                </h3>
+                <div className="space-y-4">
+                  <div className="bg-zinc-800/30 border border-zinc-700 rounded-lg p-4">
+                    <div className="flex gap-3">
+                      <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+                      <div>
+                        <p className="text-white font-semibold">Prepare Your Notes</p>
+                        <p className="text-zinc-400 text-sm mt-1">Organize your notes by chapter or topic. Make sure they're legible and well-structured. You can use PDF, images, or any clear format.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-zinc-800/30 border border-zinc-700 rounded-lg p-4">
+                    <div className="flex gap-3">
+                      <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+                      <div>
+                        <p className="text-white font-semibold">Click "Mail Us Your Notes"</p>
+                        <p className="text-zinc-400 text-sm mt-1">Hit the button below to open a pre-filled email to our contribution team.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-zinc-800/30 border border-zinc-700 rounded-lg p-4">
+                    <div className="flex gap-3">
+                      <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+                      <div>
+                        <p className="text-white font-semibold">Attach Your Files</p>
+                        <p className="text-zinc-400 text-sm mt-1">Attach your note files to the email along with your name and the chapters/topics they cover.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-zinc-800/30 border border-zinc-700 rounded-lg p-4">
+                    <div className="flex gap-3">
+                      <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
+                      <div>
+                        <p className="text-white font-semibold">Submit & Get Featured</p>
+                        <p className="text-zinc-400 text-sm mt-1">Send the email and wait for our team to review. Once approved, you'll be featured in our Hall of Fame!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-lg p-6 text-center">
+                <p className="text-zinc-300 mb-4">Ready to make an impact?</p>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=contribute@ebooks.com&su=Contributing%20Notes&body=Hi%20team,%0A%0AI%27d%20like%20to%20share%20my%20study%20notes%20and%20contribute%20to%20the%20community.%0A%0APlease%20find%20my%20notes%20attached.%0A%0AThanks,%0A[Your%20Name]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeLearnMore}
+                  className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105"
+                >
+                  Mail Us Your Notes Now
+                </a>
               </div>
             </div>
           </div>
