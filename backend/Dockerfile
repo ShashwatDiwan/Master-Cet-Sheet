@@ -1,28 +1,16 @@
-# ---- Build Stage ----
-FROM maven:3.9.6-eclipse-temurin-17 AS build
+# ---------- Stage 1: Build ----------
+FROM maven:3.9.9-eclipse-temurin-17-alpine AS build
+
 WORKDIR /app
+COPY . .
+RUN mvn clean package -DskipTests
 
-# Cache dependencies first
-COPY pom.xml ./
-RUN --mount=type=cache,target=/root/.m2 mvn -q -e -DskipTests dependency:go-offline
+# ---------- Stage 2: Run ----------
+FROM eclipse-temurin:17-jdk-alpine
 
-# Copy source and build
-COPY src ./src
-RUN --mount=type=cache,target=/root/.m2 mvn -q -e -DskipTests package
-
-# ---- Runtime Stage ----
-FROM eclipse-temurin:17-jre
 WORKDIR /app
+COPY --from=build /app/target/*.jar app.jar
 
-# Copy the fat jar built by Spring Boot
-COPY --from=build /app/target/*.jar /app/app.jar
-
-# Render provides $PORT; Spring Boot will read server.port (we also pass it via env)
-ENV JAVA_OPTS="-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0"
-ENV SPRING_PROFILES_ACTIVE=prod
-
-# Expose 8080 for local runs; on Render it will bind to $PORT automatically
 EXPOSE 8080
 
-# Forward PORT from Render into Spring via --server.port
-CMD ["sh", "-c", "java $JAVA_OPTS -jar /app/app.jar --server.port=${PORT:-8080}"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

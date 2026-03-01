@@ -1,23 +1,23 @@
-# Ignore local build outputs and VCS
-.target
-/target
-**/target
+# Maven build output
+target
+
+# Git
 .git
 .gitignore
-.idea
-.mvn/wrapper/maven-wrapper.jar
 
-# OS/editor cruft
-.DS_Store
+# IDE
+.idea
+.vscode
+
+# Logs
 *.log
 
-# Node/yarn (if present anywhere)
-node_modules
-**/node_modules
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# OS files
+.DS_Store
 
-# Environment files (managed in Render dashboard)
+# Node (if frontend exists in repo)
+node_modules
+
+# Environment files (secrets handled by Render)
 .env
-.env.*
+.env.*  
