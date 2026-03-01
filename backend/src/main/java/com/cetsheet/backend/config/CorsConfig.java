@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOriginPatterns(
-                        "https://ebookstore-cet.vercel.app",
+                        "https://cet-sheet.vercel.app",
                         "https://*.vercel.app",
                         "https://*.vercel.com",
                         "https://*.railway.app",
