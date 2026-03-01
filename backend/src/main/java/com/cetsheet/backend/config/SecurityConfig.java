@@ -36,6 +36,8 @@ public class SecurityConfig {
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/v1/auth/**").permitAll()
                 .requestMatchers("/auth/**").permitAll()
+                // permit preflight requests everywhere
+                .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
                 // allow browsing sheets without authentication
                 .requestMatchers(org.springframework.http.HttpMethod.GET, "/sheets/**").permitAll()
                 // allow retrieving chapter resources publicly
@@ -52,8 +54,8 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        // allow both development and production origins
-        config.setAllowedOrigins(List.of(
+        // allow both development and production origins; patterns allow flexibility
+        config.setAllowedOriginPatterns(List.of(
             "http://localhost:5173",
             "http://localhost:5174",
             "http://127.0.0.1:5173",
