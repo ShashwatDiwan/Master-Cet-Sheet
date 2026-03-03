@@ -6,11 +6,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { getSheets, getSheetById } from '@/api/sheets';
 import { upsertProgress } from '@/api/progress';
 import { getResourcesByChapter } from '@/api/resources';
-import Carousel from '@/components/Carousel';
-import imgAdobe from '@/assets/Adobe Express - file.png';
-import imgRemove1 from '@/assets/Remove background project.png';
-import imgRemove2 from '@/assets/Remove background project (1).png';
-import imgRemove3 from '@/assets/Remove background project (2).png';
+import ContentCarousel from '@/components/Carousel';
 import logo from '@/assets/Logo.png';
 
 const Index = () => {
@@ -24,8 +20,7 @@ const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [revisionChapters, setRevisionChapters] = useState<Set<string>>(new Set());
 
-  // Single carousel with 4 images
-  const mainSlides = [imgAdobe, imgRemove1, imgRemove2, imgRemove3];
+
 
   // Map backend DTOs to existing UI shape to minimize UI changes
   const mapDtoToSubjectSheet = (dto: any): SubjectSheet => {
@@ -257,13 +252,12 @@ console.log({subjectSheets})
   };
 
   return (
-    <div className="min-h-screen bg-black text-white relative overflow-hidden">
+    <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-green-500/3 rounded-full blur-3xl animate-pulse-slow delay-500"></div>
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-pink-500/3 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/3 rounded-full blur-3xl animate-pulse-slow delay-500"></div>
       </div>
 
       <div className="relative z-10 p-3 sm:p-6 space-y-6 sm:space-y-8 max-w-full">
@@ -278,21 +272,18 @@ console.log({subjectSheets})
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               EbookStore's
             </span>
-            <span className="text-white ml-0 sm:ml-3 block sm:inline">Master CET Sheet</span>
+            <span className="text-foreground ml-0 sm:ml-3 block sm:inline">Master CET Sheet</span>
           </h1>
         </div>
-        <p className="text-xs sm:text-base text-zinc-300 max-w-xl mx-auto mt-1 px-2">
+        <p className="text-xs sm:text-base text-muted-foreground max-w-xl mx-auto mt-1 px-2">
           Your comprehensive study companion for CET preparation
         </p>
       </div>
-      {/* Hero Carousel - no heading, tighter spacing */}
-      <div className="animate-fade-in-up -mt-1 sm:-mt-2 mb-4 sm:mb-6" style={{ animationDelay: '60ms' }}>
-        <Carousel
-          images={mainSlides}
-          autoPlayInterval={3600}
-          itemsPerView={3}
-          itemsPerViewMobile={1}
-          ariaLabel="Highlights Carousel"
+      {/* Feature Highlights Carousel */}
+      <div className="animate-fade-in-up -mt-1 sm:-mt-2 mb-4 sm:mb-6 px-2 sm:px-4" style={{ animationDelay: '60ms' }}>
+        <ContentCarousel
+          autoPlayInterval={4000}
+          ariaLabel="Feature Highlights"
         />
       </div>
 
