@@ -1,16 +1,11 @@
 import { useState } from "react";
 import { 
   LayoutDashboard, 
-  BookOpen, 
   User, 
   Settings, 
-  HelpCircle,
-  Command,
-  GraduationCap,
   Trophy,
-  TrendingUp
 } from "lucide-react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogDescription } from "@/components/ui/dialog";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from '@/assets/Logo.png';
 import {
@@ -27,6 +22,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { useAuth } from "@/hooks/useAuth";
+import { Button } from "@/components/ui/button";
 
 const mainItems = [
   { 
@@ -71,23 +67,20 @@ export function AppSidebar() {
   const getNavClasses = (path: string) => {
     const active = isActive(path);
     return active 
-      ? "bg-blue-500/20 text-blue-400 font-medium border-r-2 border-blue-500" 
-      : "hover:bg-zinc-800/50 text-zinc-300 hover:text-white";
+      ? "bg-primary/10 text-primary font-medium border-r-2 border-primary" 
+      : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-accent-foreground";
   };
 
   return (
     <Sidebar
-      className={`transition-all duration-300 bg-[#0b0b10] border-r border-zinc-800 ${collapsed ? "w-16" : "w-60"}`}
+      className={`transition-all duration-300 bg-sidebar border-r border-sidebar-border ${collapsed ? "w-16" : "w-60"}`}
       collapsible="icon"
     >
-      <SidebarHeader className="border-b border-zinc-800 bg-[#0d0d14]">
+      <SidebarHeader className="border-b border-sidebar-border">
         <div className="flex justify-center items-center gap-3 px-3 py-4">
-          {/* <img src="/ebookstore-logo.png" alt="logo" className="w-7 h-7 rounded-full object-contain" onError={(e)=>{(e.currentTarget as HTMLImageElement).style.display='none'}} /> */}
           {!collapsed && (
             <div>
               <img src={logo} alt="EbookStore logo" className="w-28 h-28 object-contain" />
-              {/* <h2 className="font-semibold text-white text-base tracking-wide">EbookStore's</h2>
-              <p className="text-[10px] text-zinc-400">Master CET Sheet</p> */}
             </div>
           )}
         </div>
@@ -95,7 +88,7 @@ export function AppSidebar() {
 
       <SidebarContent className="px-2 py-4">
         <SidebarGroup>
-          <SidebarGroupLabel className="text-zinc-500 text-[10px] font-medium uppercase tracking-wider px-3 mb-2">
+          <SidebarGroupLabel className="text-muted-foreground text-[10px] font-medium uppercase tracking-wider px-3 mb-2">
             {!collapsed && "Main Navigation"}
           </SidebarGroupLabel>
           <SidebarGroupContent>
@@ -119,7 +112,7 @@ export function AppSidebar() {
         </SidebarGroup>
 
         <SidebarGroup className="mt-6">
-          <SidebarGroupLabel className="text-zinc-500 text-[10px] font-medium uppercase tracking-wider px-3 mb-2">
+          <SidebarGroupLabel className="text-muted-foreground text-[10px] font-medium uppercase tracking-wider px-3 mb-2">
             {!collapsed && "Account"}
           </SidebarGroupLabel>
             <SidebarGroupContent>
@@ -143,7 +136,7 @@ export function AppSidebar() {
                   {user ? (
                     <button
                       onClick={() => setLogoutOpen(true)}
-                      className="w-full text-left text-zinc-300 hover:text-white transition-colors flex items-center gap-3"
+                      className="w-full text-left text-sidebar-foreground hover:text-accent-foreground transition-colors flex items-center gap-3"
                     >
                       <Settings className="w-5 h-5" />
                       {!collapsed && <span className="font-medium">Logout</span>}
@@ -171,8 +164,8 @@ export function AppSidebar() {
                   </DialogHeader>
                   <DialogFooter>
                     <div className="flex gap-2">
-                      <button onClick={() => setLogoutOpen(false)} className="px-4 py-2 rounded bg-zinc-700 text-white">Cancel</button>
-                      <button onClick={handleConfirmLogout} className="px-4 py-2 rounded bg-red-600 text-white">Logout</button>
+                      <Button variant="outline" onClick={() => setLogoutOpen(false)}>Cancel</Button>
+                      <Button variant="destructive" onClick={handleConfirmLogout}>Logout</Button>
                     </div>
                   </DialogFooter>
                 </DialogContent>
@@ -182,15 +175,15 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
 
-      <SidebarFooter className="border-t border-zinc-800 bg-[#0d0d14]">
+      <SidebarFooter className="border-t border-sidebar-border">
         <div className="p-3">
           {!collapsed ? (
             <div className="text-center">
-              <p className="text-xs text-zinc-400">EbookStore's Master CET Sheet</p>
-              <p className="text-xs text-zinc-500">v1.0.0</p>
+              <p className="text-xs text-muted-foreground">EbookStore's Master CET Sheet</p>
+              <p className="text-xs text-muted-foreground/60">v1.0.0</p>
             </div>
           ) : (
-            <div className="w-2 h-2 bg-blue-500 rounded-full mx-auto animate-pulse"></div>
+            <div className="w-2 h-2 bg-primary rounded-full mx-auto" />
           )}
         </div>
       </SidebarFooter>

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
+import { GraduationCap, Loader2 } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Login = () => {
   const { login, user } = useAuth();
@@ -12,7 +14,6 @@ const Login = () => {
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  // if already logged in, send to dashboard
   useEffect(() => {
     if (user) {
       navigate('/');
@@ -52,29 +53,31 @@ const Login = () => {
   };
 
   const handleInputChange = () => {
-    // Clear error when user starts typing
     if (error) setError(null);
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-6 bg-black">
-      <div className="max-w-md w-full bg-gradient-to-br from-[#0f1724] to-[#1a2332] p-8 rounded-xl border border-zinc-700/50 shadow-2xl">
+    <div className="min-h-[calc(100vh-3.5rem)] flex items-center justify-center p-6 bg-background">
+      <div className="max-w-md w-full bg-card border border-border p-8 rounded-xl shadow-sm animate-fade-in-up">
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
-            <span className="text-white font-bold text-lg">ES</span>
+          <div className="w-11 h-11 bg-primary rounded-lg flex items-center justify-center">
+            <GraduationCap className="w-6 h-6 text-primary-foreground" />
           </div>
-          <h2 className="text-2xl font-bold text-white">Sign in to your account</h2>
+          <div>
+            <h2 className="text-xl font-bold text-foreground font-poppins">Welcome back</h2>
+            <p className="text-sm text-muted-foreground">Sign in to your account</p>
+          </div>
         </div>
 
         {error && (
-          <div className="mb-4 p-3 bg-red-500/10 border border-red-500/30 rounded-lg">
-            <p className="text-red-400 text-sm">{error}</p>
+          <div className="mb-4 p-3 bg-destructive/10 border border-destructive/30 rounded-lg">
+            <p className="text-destructive text-sm">{error}</p>
             {(error.includes('not found') || error.includes('register')) && (
-              <p className="text-red-400/80 text-xs mt-2">
-                Don't have an account?{' '}
+              <p className="text-destructive/80 text-xs mt-2">
+                {"Don't have an account? "}
                 <button
                   onClick={() => navigate('/register')}
-                  className="underline font-semibold hover:text-red-300 transition"
+                  className="underline font-semibold hover:text-destructive transition"
                 >
                   Register here
                 </button>
@@ -85,7 +88,7 @@ const Login = () => {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-zinc-300 mb-2">Email</label>
+            <label className="block text-sm font-medium text-foreground mb-2">Email</label>
             <input
               type="email"
               value={email}
@@ -95,12 +98,12 @@ const Login = () => {
               }}
               placeholder="you@example.com"
               required
-              className="w-full bg-zinc-800/50 border border-zinc-700 text-white px-4 py-2 rounded-lg focus:outline-none focus:border-blue-500 focus:bg-zinc-800 transition"
+              className="w-full bg-background border border-input text-foreground px-4 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition placeholder:text-muted-foreground"
               disabled={isLoading}
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-zinc-300 mb-2">Password</label>
+            <label className="block text-sm font-medium text-foreground mb-2">Password</label>
             <input
               type="password"
               value={password}
@@ -108,27 +111,35 @@ const Login = () => {
                 setPassword(e.target.value);
                 handleInputChange();
               }}
-              placeholder="••••••••"
+              placeholder="Enter your password"
               required
-              className="w-full bg-zinc-800/50 border border-zinc-700 text-white px-4 py-2 rounded-lg focus:outline-none focus:border-blue-500 focus:bg-zinc-800 transition"
+              className="w-full bg-background border border-input text-foreground px-4 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition placeholder:text-muted-foreground"
               disabled={isLoading}
             />
           </div>
-          <button
+          <Button
             type="submit"
-            className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-2 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full"
+            size="lg"
             disabled={isLoading}
           >
-            {isLoading ? 'Signing in...' : 'Sign in'}
-          </button>
+            {isLoading ? (
+              <>
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                Signing in...
+              </>
+            ) : (
+              'Sign in'
+            )}
+          </Button>
         </form>
 
-        <div className="mt-6 pt-6 border-t border-zinc-700/50 text-center">
-          <p className="text-zinc-400 text-sm">
-            Don't have an account?{' '}
+        <div className="mt-6 pt-6 border-t border-border text-center">
+          <p className="text-muted-foreground text-sm">
+            {"Don't have an account? "}
             <button
               onClick={() => navigate('/register')}
-              className="text-blue-400 hover:text-blue-300 font-semibold transition"
+              className="text-primary hover:text-primary/80 font-semibold transition"
             >
               Create one
             </button>

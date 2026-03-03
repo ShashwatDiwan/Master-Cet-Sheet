@@ -3,20 +3,21 @@ import logo from '@/assets/Logo.png';
 import shashImage from '@/assets/shashwat.jpeg';
 import jiniImage from '@/assets/Jini.jpg';
 import aryanImage from '@/assets/aryan.jpg';
+import { Button } from '@/components/ui/button';
 import { 
   Trophy, 
   Star, 
-  Award, 
   Users, 
   BookOpen, 
   FileText, 
   Video, 
-  Download,
-  Heart,
-  Share2,
-  TrendingUp,
   Github,
-  Linkedin
+  Linkedin,
+  X,
+  Lightbulb,
+  CheckCircle2,
+  ArrowRight,
+  Mail
 } from 'lucide-react';
 
 interface Contributor {
@@ -30,8 +31,8 @@ interface Contributor {
   notesContributed: number;
   shortNotesContributed: number;
   joinDate: string;
-  bio: string;            // short biography to show in modal
-  percentile: string;    // MHTCET percentile string shown on card
+  bio: string;
+  percentile: string;
   achievements: string[];
   socialLinks: {
     github?: string;
@@ -54,7 +55,7 @@ const mockContributors: Contributor[] = [
     joinDate: 'March 2024',
     bio: 'Motivated Java Developer skilled in building scalable backend-focused applications using Spring Boot, Hibernate, Spring Security, and REST APIs, with exposure to microservices architecture, DevOps practices (CI/CD, Docker), and AI integration using Spring AI. Solved 190+ DSA problems on LeetCode, experienced with MySQL/SQL databases, and recognized as an effective team collaborator',
     percentile: '98.9',
-    achievements: ['🏆 Top Contributor'],
+    achievements: ['Top Contributor'],
     socialLinks: { github: 'https://github.com/ShashwatDiwan', linkedin: 'https://www.linkedin.com/in/shashwatdiwan/' }
   },
   {
@@ -66,11 +67,11 @@ const mockContributors: Contributor[] = [
     subjects: ['MHTCET'],
     videosContributed: 0,
     notesContributed: 3,
-    shortNotesContributed:17,
+    shortNotesContributed: 17,
     joinDate: 'February 2024',
     bio: 'I am a Full Stack Developer with a passion for building scalable, end-to-end web applications that solve real-world problems. With a strong foundation in Data Structures and Algorithms (DSA), I approach every coding challenge with an analytical mindset to ensure optimal performance.',
     percentile: '98.6',
-    achievements: ['🥈 Silver Contributor'],
+    achievements: ['Silver Contributor'],
     socialLinks: { linkedin: 'https://www.linkedin.com/in/jinendra-dhongde-b1b4a830b/' }
   },
   {
@@ -82,14 +83,35 @@ const mockContributors: Contributor[] = [
     subjects: ['MHTCET'],
     videosContributed: 0,
     notesContributed: 2,
-    shortNotesContributed:3,
+    shortNotesContributed: 3,
     joinDate: 'January 2024',
     bio: 'I am a Machine Learning Engineer with a deep-rooted foundation in computer science core subjects, including OS, DBMS, and OOPS. My technical expertise is backed by rigorous problem-solving, having successfully tackled 300+ challenges in Data Structures and Algorithms (DSA) to ensure every model I build is optimized for performance and scalability.',
     percentile: '99.1',
-    achievements: ['🥉 Bronze Contributor'],
+    achievements: ['Bronze Contributor'],
     socialLinks: { linkedin: 'https://www.linkedin.com/in/aryan-dhole/' }
   },
 ];
+
+const getRankBadgeClasses = (rank: number) => {
+  if (rank === 1) return 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/30';
+  if (rank === 2) return 'bg-zinc-500/10 text-zinc-600 dark:text-zinc-300 border-zinc-400/30';
+  if (rank === 3) return 'bg-orange-500/10 text-orange-600 dark:text-orange-400 border-orange-500/30';
+  return 'bg-muted text-muted-foreground border-border';
+};
+
+const getCardAccent = (rank: number) => {
+  if (rank === 1) return 'border-amber-500/30 hover:border-amber-500/50';
+  if (rank === 2) return 'border-zinc-400/30 hover:border-zinc-400/50';
+  if (rank === 3) return 'border-orange-500/30 hover:border-orange-500/50';
+  return 'border-border hover:border-primary/50';
+};
+
+const getRankLabel = (rank: number) => {
+  if (rank === 1) return '1st';
+  if (rank === 2) return '2nd';
+  if (rank === 3) return '3rd';
+  return `#${rank}`;
+};
 
 const TopContributors = () => {
   const [selectedContributor, setSelectedContributor] = useState<Contributor | null>(null);
@@ -110,174 +132,117 @@ const TopContributors = () => {
     setShowLearnMore(false);
   };
 
-  const getRankIcon = (rank: number) => {
-    if (rank === 1) return '🥇';
-    if (rank === 2) return '🥈';
-    if (rank === 3) return '🥉';
-    return `#${rank}`;
-  };
-
-  const getRankColor = (rank: number) => {
-    if (rank === 1) return 'from-yellow-500 to-orange-500';
-    if (rank === 2) return 'from-gray-400 to-gray-600';
-    if (rank === 3) return 'from-amber-600 to-orange-700';
-    return 'from-zinc-600 to-zinc-800';
-  };
-
   return (
-    <div className="min-h-screen bg-black text-white relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-yellow-500/5 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-500/5 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-red-500/3 rounded-full blur-3xl animate-float"></div>
-      </div>
-
-      <div className="relative z-10 p-6 space-y-8">
+    <div className="min-h-[calc(100vh-3.5rem)] bg-background">
+      <div className="p-6 max-w-7xl mx-auto space-y-8">
         {/* Header */}
-        <div className="text-center mb-8 animate-fade-in">
+        <div className="text-center mb-8 animate-fade-in-up">
           <div className="flex items-center justify-center gap-3 mb-4">
-          <div className="w-16 h-16 from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-              <span className="text-2xl"><img src={logo} alt="EbookStore logo" className="w-20 h-20 object-contain" /></span>
+            <img src={logo} alt="EbookStore logo" className="w-16 h-16 object-contain" />
+            <div className="text-left">
+              <h1 className="text-3xl md:text-4xl font-bold font-poppins text-foreground">
+                {"EbookStore's "}
+                <span className="text-primary">Top Contributors</span>
+              </h1>
             </div>
-            <h1 className="text-5xl font-bold mb-0">
-              <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                EbookStore's
-              </span>
-              <span className="text-white ml-3">Top Contributors</span>
-            </h1>
           </div>
-          <p className="text-base text-zinc-300 max-w-xl mx-auto">
+          <p className="text-muted-foreground max-w-xl mx-auto">
             Celebrating the amazing students who share knowledge and help others succeed
           </p>
         </div>
 
         {/* Stats Overview */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           {[
-            { 
-              icon: Users, 
-              label: 'Total Contributors', 
-              value: mockContributors.length, 
-              color: 'blue',
-              description: 'Active members'
-            },
-            { 
-              icon: FileText, 
-              label: 'Total Notes', 
-              value: mockContributors.reduce((sum, c) => sum + c.notesContributed, 0), 
-              color: 'green',
-              description: 'Study materials'
-            },
-            { 
-              icon: Video, 
-              label: 'Total Videos', 
-              value: mockContributors.reduce((sum, c) => sum + c.videosContributed, 0), 
-              color: 'purple',
-              description: 'Upcoming feature'
-            },
-            { 
-              icon: BookOpen, 
-              label: 'Total Short Notes', 
-              value: mockContributors.reduce((sum, c) => sum + c.shortNotesContributed, 0), 
-              color: 'orange',
-              description: 'Handwritten'
-            }
+            { icon: Users, label: 'Contributors', value: mockContributors.length, description: 'Active members' },
+            { icon: FileText, label: 'Total Notes', value: mockContributors.reduce((sum, c) => sum + c.notesContributed, 0), description: 'Study materials' },
+            { icon: Video, label: 'Total Videos', value: mockContributors.reduce((sum, c) => sum + c.videosContributed, 0), description: 'Upcoming feature' },
+            { icon: BookOpen, label: 'Short Notes', value: mockContributors.reduce((sum, c) => sum + c.shortNotesContributed, 0), description: 'Handwritten' }
           ].map((stat, index) => (
             <div 
               key={stat.label}
-              className="group relative overflow-hidden rounded-2xl glass-morphism p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 animate-fade-in-up card-hover"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="bg-card border border-border rounded-xl p-5 animate-fade-in-up card-hover"
+              style={{ animationDelay: `${index * 80}ms` }}
             >
-              <div className="flex items-center gap-4">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br from-${stat.color}-500/20 to-${stat.color}-600/20 border border-${stat.color}-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                  <stat.icon className="w-6 h-6 text-white" />
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <stat.icon className="w-5 h-5 text-primary" />
                 </div>
-                <div className="flex-1">
-                  <p className="text-2xl font-bold text-white">{stat.value}</p>
-                  <p className="text-zinc-400 text-sm font-medium">{stat.label}</p>
-                  <p className="text-zinc-500 text-xs">{stat.description}</p>
+                <div>
+                  <p className="text-2xl font-bold text-foreground">{stat.value}</p>
+                  <p className="text-sm font-medium text-muted-foreground">{stat.label}</p>
+                  <p className="text-xs text-muted-foreground/70">{stat.description}</p>
                 </div>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
             </div>
           ))}
         </div>
 
-        {/* Top Contributors Grid */}
-        <div className="animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-          <div className="flex items-center gap-3 mb-8">
-            <Trophy className="w-6 h-6 text-yellow-400" />
-            <h2 className="text-3xl font-bold text-white">Hall of Fame</h2>
+        {/* Hall of Fame */}
+        <div className="animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+          <div className="flex items-center gap-2 mb-6">
+            <Trophy className="w-5 h-5 text-amber-500" />
+            <h2 className="text-2xl font-bold text-foreground font-poppins">Hall of Fame</h2>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {mockContributors.slice(0,3).map((contributor, index) => (
+            {mockContributors.slice(0, 3).map((contributor, index) => (
               <div 
                 key={contributor.id}
-                className="group cursor-pointer transition-all duration-300 hover:scale-[1.02] animate-fade-in-up card-hover"
-                style={{ animationDelay: `${500 + index * 100}ms` }}
+                className={`group cursor-pointer bg-card border rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md animate-fade-in-up ${getCardAccent(contributor.rank)}`}
+                style={{ animationDelay: `${400 + index * 100}ms` }}
                 onClick={() => handleContributorClick(contributor)}
               >
-                <div className={`relative overflow-hidden rounded-xl p-4 hover:bg-white/10 transition-all duration-300 border bg-gradient-to-br ${
-                  index === 0
-                    ? 'from-amber-500/10 to-amber-600/10 border-amber-500/30'
-                    : index === 1
-                    ? 'from-emerald-500/10 to-emerald-600/10 border-emerald-500/30'
-                    : 'from-purple-500/10 to-purple-600/10 border-purple-500/30'
-                }`}>
-                  {/* Rank Badge */}
-                  <div className={`absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br ${getRankColor(contributor.rank)} flex items-center justify-center text-white font-bold text-lg shadow-lg`}>
-                    {getRankIcon(contributor.rank)}
+                {/* Rank Badge */}
+                <div className="flex items-center justify-between mb-4">
+                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${getRankBadgeClasses(contributor.rank)}`}>
+                    {getRankLabel(contributor.rank)} Place
+                  </span>
+                  <span className="text-xs text-muted-foreground">{contributor.joinDate}</span>
+                </div>
+                
+                {/* Avatar and Name */}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-border">
+                    <img src={contributor.avatarUrl} alt={contributor.name} className="w-full h-full object-cover" />
                   </div>
-                  
-                  {/* Avatar and Name */}
-                  <div className="text-center mb-4">
-                    <div className="mx-auto w-24 h-24 rounded-full overflow-hidden mb-2">
-                      <img src={contributor.avatarUrl} alt={contributor.name} className="w-full h-full object-cover" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-white mb-1">{contributor.name}</h3>
-                    <p className="text-zinc-400 text-xs">{contributor.joinDate}</p>
-                  </div>
-                  
-                  {/* Stats - only three fields */}
-                  <div className="space-y-2 mb-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-zinc-400 text-sm">Total Contributions</span>
-                      <span className="text-white font-semibold">{contributor.totalContributions}</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-zinc-400 text-sm">Notes</span>
-                      <span className="text-green-400 font-semibold">{contributor.notesContributed}</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-zinc-400 text-sm">Short Notes</span>
-                      <span className="text-purple-400 font-semibold">{Math.floor(contributor.shortNotesContributed)}</span>
+                  <div>
+                    <h3 className="font-semibold text-foreground">{contributor.name}</h3>
+                    <div className="flex items-center gap-2 mt-0.5">
+                      {contributor.socialLinks.linkedin && (
+                        <a href={contributor.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                          <Linkedin className="w-3.5 h-3.5 text-muted-foreground hover:text-primary transition-colors" />
+                        </a>
+                      )}
+                      {contributor.socialLinks.github && (
+                        <a href={contributor.socialLinks.github} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                          <Github className="w-3.5 h-3.5 text-muted-foreground hover:text-foreground transition-colors" />
+                        </a>
+                      )}
                     </div>
                   </div>
-                  
-                  {/* MHTCET Percentile */}
-                  <div className="mb-2">
-                    <p className="text-zinc-400 text-sm mb-1">MHTCET Percentile</p>
-                    <div className={`px-2 py-1 text-xs rounded-full inline-block border ${
-                      index === 0
-                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/30'
-                        : index === 1
-                        ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30'
-                        : 'bg-purple-500/20 text-purple-300 border-purple-500/30'
-                    }`}>
-                      {contributor.percentile}%
-                    </div>
+                </div>
+                
+                {/* Stats */}
+                <div className="space-y-2 mb-4">
+                  <div className="flex justify-between items-center text-sm">
+                    <span className="text-muted-foreground">Total Contributions</span>
+                    <span className="font-semibold text-foreground">{contributor.totalContributions}</span>
                   </div>
-
-                  {/* Social small icons */}
-                  <div className="mt-2 flex justify-center gap-3 opacity-80 text-xs">
-                    <Linkedin className="w-4 h-4 text-blue-500" />
-                    <Github className="w-4 h-4 text-white" />
+                  <div className="flex justify-between items-center text-sm">
+                    <span className="text-muted-foreground">Notes</span>
+                    <span className="font-semibold text-emerald-600 dark:text-emerald-400">{contributor.notesContributed}</span>
                   </div>
-                  
-                  {/* Hover Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                  <div className="flex justify-between items-center text-sm">
+                    <span className="text-muted-foreground">Short Notes</span>
+                    <span className="font-semibold text-primary">{contributor.shortNotesContributed}</span>
+                  </div>
+                </div>
+                
+                {/* Percentile */}
+                <div className="flex items-center justify-between pt-3 border-t border-border">
+                  <span className="text-xs text-muted-foreground">MHTCET Percentile</span>
+                  <span className="text-sm font-bold text-foreground">{contributor.percentile}%</span>
                 </div>
               </div>
             ))}
@@ -285,96 +250,96 @@ const TopContributors = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="glass-morphism rounded-3xl p-8 text-center animate-fade-in-up" style={{ animationDelay: '800ms' }}>
-          <div className="text-6xl mb-4">🚀</div>
-          <h2 className="text-2xl font-bold text-white mb-4">Want to Join the Elite?</h2>
-          <p className="text-zinc-300 mb-6 max-w-2xl mx-auto">
-            If you'd like to contribute your notes to the community, simply email them to us and we'll add you to the hall of fame!
+        <div className="bg-card border border-border rounded-xl p-8 text-center animate-fade-in-up" style={{ animationDelay: '700ms' }}>
+          <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <Mail className="w-6 h-6 text-primary" />
+          </div>
+          <h2 className="text-xl font-bold text-foreground mb-2 font-poppins">Want to Join the Elite?</h2>
+          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto text-sm">
+            {"If you'd like to contribute your notes to the community, simply email them to us and we'll add you to the hall of fame!"}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=shashh.code@gmail.com&su=Contributing%20Notes&body=Hi%20team,%0A%0AI%27d%20like%20to%20share%20my%20study%20notes%20and%20contribute%20to%20the%20community.%0A%0APlease%20find%20my%20notes%20attached.%0A%0AThanks,%0A[Your%20Name]"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105"
-            >
-              Mail Us Your Notes
-            </a>
-            <button 
-              onClick={() => setShowLearnMore(true)}
-              className="px-6 py-3 bg-zinc-800 text-white rounded-xl font-semibold hover:bg-zinc-700 transition-all duration-300 hover:scale-105 border border-zinc-700"
-            >
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Button asChild>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=shashh.code@gmail.com&su=Contributing%20Notes&body=Hi%20team,%0A%0AI%27d%20like%20to%20share%20my%20study%20notes%20and%20contribute%20to%20the%20community.%0A%0APlease%20find%20my%20notes%20attached.%0A%0AThanks,%0A[Your%20Name]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mail Us Your Notes
+              </a>
+            </Button>
+            <Button variant="outline" onClick={() => setShowLearnMore(true)}>
               Learn More
-            </button>
+            </Button>
           </div>
         </div>
       </div>
 
       {/* Contributor Detail Modal */}
       {showModal && selectedContributor && (
-        <div className="fixed inset-0 bg-black/90 backdrop-blur-md flex items-center justify-center z-50 p-4 animate-fade-in">
-          <div className="bg-zinc-900 border border-zinc-700 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl animate-scale-in">
+        <div className="fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fade-in" onClick={closeModal}>
+          <div className="bg-card border border-border rounded-xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-lg animate-scale-in" onClick={(e) => e.stopPropagation()}>
             {/* Header */}
-            <div className="bg-gradient-to-r from-zinc-800 to-zinc-900 p-6 border-b border-zinc-700">
+            <div className="bg-muted/50 p-6 border-b border-border">
               <div className="flex justify-between items-center">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-full overflow-hidden">
+                  <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-border">
                     <img src={selectedContributor.avatarUrl} alt={selectedContributor.name} className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-white">{selectedContributor.name}</h2>
-                    <p className="text-zinc-400">Rank #{selectedContributor.rank} Contributor</p>
+                    <h2 className="text-xl font-bold text-foreground">{selectedContributor.name}</h2>
+                    <p className="text-sm text-muted-foreground">Rank #{selectedContributor.rank} Contributor</p>
                   </div>
                 </div>
                 <button 
                   onClick={closeModal}
-                  className="text-zinc-400 hover:text-white text-2xl p-3 hover:bg-zinc-800 rounded-xl transition-all duration-300 hover:scale-110"
+                  className="text-muted-foreground hover:text-foreground p-2 hover:bg-muted rounded-lg transition-colors"
                 >
-                  ×
+                  <X className="w-5 h-5" />
                 </button>
               </div>
             </div>
             
             {/* Content */}
-            <div className="p-6 space-y-6">
+            <div className="p-6 space-y-6 overflow-y-auto max-h-[calc(90vh-100px)]">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-3">About</h3>
-                  <p className="text-zinc-300 leading-relaxed">{selectedContributor.bio}</p>
+                  <h3 className="text-sm font-semibold text-foreground mb-2 uppercase tracking-wider">About</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{selectedContributor.bio}</p>
                 </div>
                 
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-3">Statistics</h3>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-zinc-400">Total Contributions:</span>
-                      <span className="text-white font-semibold">{selectedContributor.totalContributions}</span>
+                  <h3 className="text-sm font-semibold text-foreground mb-2 uppercase tracking-wider">Statistics</h3>
+                  <div className="space-y-2.5 bg-muted/50 rounded-lg p-4">
+                    <div className="flex justify-between text-sm">
+                      <span className="text-muted-foreground">Total Contributions</span>
+                      <span className="font-semibold text-foreground">{selectedContributor.totalContributions}</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-zinc-400">PDFs:</span>
-                      <span className="text-green-400 font-semibold">{selectedContributor.notesContributed}</span>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-muted-foreground">PDFs</span>
+                      <span className="font-semibold text-emerald-600 dark:text-emerald-400">{selectedContributor.notesContributed}</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-zinc-400">Videos:</span>
-                      <span className="text-purple-400 font-semibold">{selectedContributor.videosContributed}</span>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-muted-foreground">Videos</span>
+                      <span className="font-semibold text-primary">{selectedContributor.videosContributed}</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-zinc-400">Short Notes:</span>
-                      <span className="text-orange-400 font-semibold">{selectedContributor.shortNotesContributed}</span>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-muted-foreground">Short Notes</span>
+                      <span className="font-semibold text-amber-600 dark:text-amber-400">{selectedContributor.shortNotesContributed}</span>
                     </div>
                   </div>
                 </div>
               </div>
               
               <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Achievements</h3>
+                <h3 className="text-sm font-semibold text-foreground mb-2 uppercase tracking-wider">Achievements</h3>
                 <div className="flex flex-wrap gap-2">
                   {selectedContributor.achievements.map((achievement, idx) => (
                     <span 
                       key={idx}
-                      className="px-3 py-2 bg-yellow-500/20 text-yellow-300 rounded-full border border-yellow-500/30 flex items-center gap-2"
+                      className="px-3 py-1.5 bg-amber-500/10 text-amber-700 dark:text-amber-300 rounded-full border border-amber-500/20 text-sm flex items-center gap-1.5"
                     >
-                      <Star className="w-4 h-4" />
+                      <Star className="w-3.5 h-3.5" />
                       {achievement}
                     </span>
                   ))}
@@ -382,37 +347,30 @@ const TopContributors = () => {
               </div>
               
               <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Social Links</h3>
-                <div className="flex gap-4">
+                <h3 className="text-sm font-semibold text-foreground mb-2 uppercase tracking-wider">Social Links</h3>
+                <div className="flex gap-2">
                   {selectedContributor.socialLinks.github && (
-                    <a 
-                      href={selectedContributor.socialLinks.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 bg-zinc-800 text-white rounded-lg hover:bg-zinc-700 transition-colors duration-300 flex items-center gap-2"
-                    >
-                      <span>GitHub</span>
-                    </a>
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={selectedContributor.socialLinks.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-1.5" />
+                        GitHub
+                      </a>
+                    </Button>
                   )}
                   {selectedContributor.socialLinks.linkedin && (
-                    <a 
-                      href={selectedContributor.socialLinks.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center gap-2"
-                    >
-                      <span>LinkedIn</span>
-                    </a>
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={selectedContributor.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+                        <Linkedin className="w-4 h-4 mr-1.5" />
+                        LinkedIn
+                      </a>
+                    </Button>
                   )}
                   {selectedContributor.socialLinks.twitter && (
-                    <a 
-                      href={selectedContributor.socialLinks.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 bg-blue-400 text-white rounded-lg hover:bg-blue-500 transition-colors duration-300 flex items-center gap-2"
-                    >
-                      <span>Twitter</span>
-                    </a>
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={selectedContributor.socialLinks.twitter} target="_blank" rel="noopener noreferrer">
+                        Twitter
+                      </a>
+                    </Button>
                   )}
                 </div>
               </div>
@@ -423,115 +381,88 @@ const TopContributors = () => {
 
       {/* Learn More Modal */}
       {showLearnMore && (
-        <div className="fixed inset-0 bg-black/90 backdrop-blur-md flex items-center justify-center z-50 p-4 animate-fade-in">
-          <div className="bg-zinc-900 border border-zinc-700 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-scale-in">
+        <div className="fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fade-in" onClick={closeLearnMore}>
+          <div className="bg-card border border-border rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-lg animate-scale-in" onClick={(e) => e.stopPropagation()}>
             {/* Header */}
-            <div className="bg-gradient-to-r from-zinc-800 to-zinc-900 p-6 border-b border-zinc-700 sticky top-0">
+            <div className="bg-muted/50 p-6 border-b border-border sticky top-0">
               <div className="flex justify-between items-center">
-                <h2 className="text-2xl font-bold text-white">Share Your Knowledge</h2>
+                <h2 className="text-xl font-bold text-foreground font-poppins">Share Your Knowledge</h2>
                 <button 
                   onClick={closeLearnMore}
-                  className="text-zinc-400 hover:text-white text-2xl p-3 hover:bg-zinc-800 rounded-xl transition-all duration-300 hover:scale-110"
+                  className="text-muted-foreground hover:text-foreground p-2 hover:bg-muted rounded-lg transition-colors"
                 >
-                  ×
+                  <X className="w-5 h-5" />
                 </button>
               </div>
             </div>
             
             {/* Content */}
-            <div className="p-8 space-y-8">
+            <div className="p-6 space-y-8">
               {/* Motivation Section */}
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                  <span className="text-2xl">💡</span>
+                <h3 className="text-lg font-bold text-foreground flex items-center gap-2">
+                  <Lightbulb className="w-5 h-5 text-amber-500" />
                   Why Share Your Notes?
                 </h3>
-                <p className="text-zinc-300 leading-relaxed">
-                  Contributing your study materials is one of the most meaningful ways to help your peers succeed. When you share your notes, you're not just providing documents—you're sharing your understanding, insights, and hard work.
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {"Contributing your study materials is one of the most meaningful ways to help your peers succeed. When you share your notes, you're not just providing documents -- you're sharing your understanding, insights, and hard work."}
                 </p>
                 <div className="space-y-3 mt-4">
-                  <div className="flex gap-3">
-                    <span className="text-green-400 text-lg">✓</span>
-                    <div>
-                      <p className="text-white font-semibold">Help Others Succeed</p>
-                      <p className="text-zinc-400 text-sm">Your notes can be the key resource that helps someone finally understand a difficult concept.</p>
+                  {[
+                    { title: 'Help Others Succeed', desc: 'Your notes can be the key resource that helps someone finally understand a difficult concept.' },
+                    { title: 'Build Your Reputation', desc: 'Get recognized in our Hall of Fame and build credibility in the student community.' },
+                    { title: 'Give Back to the Community', desc: 'Be part of a mission to make quality study materials accessible to everyone.' },
+                  ].map((item) => (
+                    <div key={item.title} className="flex gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-sm font-semibold text-foreground">{item.title}</p>
+                        <p className="text-xs text-muted-foreground">{item.desc}</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex gap-3">
-                    <span className="text-green-400 text-lg">✓</span>
-                    <div>
-                      <p className="text-white font-semibold">Build Your Reputation</p>
-                      <p className="text-zinc-400 text-sm">Get recognized in our Hall of Fame and build credibility in the student community.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-3">
-                    <span className="text-green-400 text-lg">✓</span>
-                    <div>
-                      <p className="text-white font-semibold">Give Back to the Community</p>
-                      <p className="text-zinc-400 text-sm">Be part of a mission to make quality study materials accessible to everyone.</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
 
               {/* Steps Section */}
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                  <span className="text-2xl">📝</span>
+                <h3 className="text-lg font-bold text-foreground flex items-center gap-2">
+                  <ArrowRight className="w-5 h-5 text-primary" />
                   How to Share Your Notes
                 </h3>
-                <div className="space-y-4">
-                  <div className="bg-zinc-800/30 border border-zinc-700 rounded-lg p-4">
-                    <div className="flex gap-3">
-                      <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
-                      <div>
-                        <p className="text-white font-semibold">Prepare Your Notes</p>
-                        <p className="text-zinc-400 text-sm mt-1">Organize your notes by chapter or topic. Make sure they're legible and well-structured. You can use PDF, images, or any clear format.</p>
+                <div className="space-y-3">
+                  {[
+                    { step: 1, title: 'Prepare Your Notes', desc: 'Organize your notes by chapter or topic. Make sure they are legible and well-structured. You can use PDF, images, or any clear format.' },
+                    { step: 2, title: 'Click "Mail Us Your Notes"', desc: 'Hit the button below to open a pre-filled email to our contribution team.' },
+                    { step: 3, title: 'Attach Your Files', desc: 'Attach your note files to the email along with your name and the chapters/topics they cover.' },
+                    { step: 4, title: 'Submit & Get Featured', desc: "Send the email and wait for our team to review. Once approved, you'll be featured in our Hall of Fame!" },
+                  ].map((item) => (
+                    <div key={item.step} className="bg-muted/50 border border-border rounded-lg p-4">
+                      <div className="flex gap-3">
+                        <div className="w-7 h-7 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">{item.step}</div>
+                        <div>
+                          <p className="text-sm font-semibold text-foreground">{item.title}</p>
+                          <p className="text-xs text-muted-foreground mt-1">{item.desc}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="bg-zinc-800/30 border border-zinc-700 rounded-lg p-4">
-                    <div className="flex gap-3">
-                      <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
-                      <div>
-                        <p className="text-white font-semibold">Click "Mail Us Your Notes"</p>
-                        <p className="text-zinc-400 text-sm mt-1">Hit the button below to open a pre-filled email to our contribution team.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-zinc-800/30 border border-zinc-700 rounded-lg p-4">
-                    <div className="flex gap-3">
-                      <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
-                      <div>
-                        <p className="text-white font-semibold">Attach Your Files</p>
-                        <p className="text-zinc-400 text-sm mt-1">Attach your note files to the email along with your name and the chapters/topics they cover.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-zinc-800/30 border border-zinc-700 rounded-lg p-4">
-                    <div className="flex gap-3">
-                      <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
-                      <div>
-                        <p className="text-white font-semibold">Submit & Get Featured</p>
-                        <p className="text-zinc-400 text-sm mt-1">Send the email and wait for our team to review. Once approved, you'll be featured in our Hall of Fame!</p>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
 
               {/* CTA Button */}
-              <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-lg p-6 text-center">
-                <p className="text-zinc-300 mb-4">Ready to make an impact?</p>
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=contribute@ebooks.com&su=Contributing%20Notes&body=Hi%20team,%0A%0AI%27d%20like%20to%20share%20my%20study%20notes%20and%20contribute%20to%20the%20community.%0A%0APlease%20find%20my%20notes%20attached.%0A%0AThanks,%0A[Your%20Name]"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={closeLearnMore}
-                  className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105"
-                >
-                  Mail Us Your Notes Now
-                </a>
+              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 text-center">
+                <p className="text-sm text-muted-foreground mb-4">Ready to make an impact?</p>
+                <Button asChild>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=shashh.code@gmail.com&su=Contributing%20Notes&body=Hi%20team,%0A%0AI%27d%20like%20to%20share%20my%20study%20notes%20and%20contribute%20to%20the%20community.%0A%0APlease%20find%20my%20notes%20attached.%0A%0AThanks,%0A[Your%20Name]"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeLearnMore}
+                  >
+                    Mail Us Your Notes Now
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
@@ -541,4 +472,4 @@ const TopContributors = () => {
   );
 };
 
-export default TopContributors; 
+export default TopContributors;
