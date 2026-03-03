@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { 
-  LayoutDashboard, 
-  BookOpen, 
-  User, 
-  Settings, 
+import {
+  LayoutDashboard,
+  BookOpen,
+  User,
+  Settings,
   HelpCircle,
   Command,
   GraduationCap,
@@ -27,25 +27,26 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { useAuth } from "@/hooks/useAuth";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const mainItems = [
-  { 
-    title: "Dashboard", 
-    url: "/", 
-    icon: LayoutDashboard 
+  {
+    title: "Dashboard",
+    url: "/",
+    icon: LayoutDashboard
   },
-  { 
-    title: "Top Contributors", 
-    url: "/contributors", 
-    icon: Trophy 
+  {
+    title: "Top Contributors",
+    url: "/contributors",
+    icon: Trophy
   },
 ];
 
 const supportItems = [
-  { 
-    title: "Profile", 
-    url: "/profile", 
-    icon: User 
+  {
+    title: "Profile",
+    url: "/profile",
+    icon: User
   },
 ];
 
@@ -70,32 +71,29 @@ export function AppSidebar() {
 
   const getNavClasses = (path: string) => {
     const active = isActive(path);
-    return active 
-      ? "bg-blue-500/20 text-blue-400 font-medium border-r-2 border-blue-500" 
-      : "hover:bg-zinc-800/50 text-zinc-300 hover:text-white";
+    return active
+      ? "bg-primary/10 text-primary font-medium border-r-2 border-primary"
+      : "hover:bg-accent/50 text-muted-foreground hover:text-foreground";
   };
 
   return (
     <Sidebar
-      className={`transition-all duration-300 bg-[#0b0b10] border-r border-zinc-800 ${collapsed ? "w-16" : "w-60"}`}
+      className={`transition-all duration-300 bg-card border-r border-border ${collapsed ? "w-16" : "w-60"}`}
       collapsible="icon"
     >
-      <SidebarHeader className="border-b border-zinc-800 bg-[#0d0d14]">
+      <SidebarHeader className="border-b border-border bg-card">
         <div className="flex justify-center items-center gap-3 px-3 py-4">
-          {/* <img src="/ebookstore-logo.png" alt="logo" className="w-7 h-7 rounded-full object-contain" onError={(e)=>{(e.currentTarget as HTMLImageElement).style.display='none'}} /> */}
           {!collapsed && (
             <div>
-              <img src={logo} alt="EbookStore logo" className="w-28 h-28 object-contain" />
-              {/* <h2 className="font-semibold text-white text-base tracking-wide">EbookStore's</h2>
-              <p className="text-[10px] text-zinc-400">Master CET Sheet</p> */}
+              <img src={logo} alt="EbookStore logo" className="w-28 h-28 object-contain dark:brightness-100 brightness-0" />
             </div>
           )}
         </div>
       </SidebarHeader>
 
-      <SidebarContent className="px-2 py-4">
+      <SidebarContent className="px-2 py-4 bg-card">
         <SidebarGroup>
-          <SidebarGroupLabel className="text-zinc-500 text-[10px] font-medium uppercase tracking-wider px-3 mb-2">
+          <SidebarGroupLabel className="text-muted-foreground text-[10px] font-medium uppercase tracking-wider px-3 mb-2">
             {!collapsed && "Main Navigation"}
           </SidebarGroupLabel>
           <SidebarGroupContent>
@@ -103,8 +101,8 @@ export function AppSidebar() {
               {mainItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <NavLink 
-                      to={item.url} 
+                    <NavLink
+                      to={item.url}
                       end={item.url === "/"}
                       className={`${getNavClasses(item.url)} transition-all duration-200 rounded-lg px-3 py-2 flex items-center gap-3`}
                     >
@@ -119,7 +117,7 @@ export function AppSidebar() {
         </SidebarGroup>
 
         <SidebarGroup className="mt-6">
-          <SidebarGroupLabel className="text-zinc-500 text-[10px] font-medium uppercase tracking-wider px-3 mb-2">
+          <SidebarGroupLabel className="text-muted-foreground text-[10px] font-medium uppercase tracking-wider px-3 mb-2">
             {!collapsed && "Account"}
           </SidebarGroupLabel>
             <SidebarGroupContent>
@@ -127,7 +125,7 @@ export function AppSidebar() {
               {supportItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <NavLink 
+                    <NavLink
                       to={item.url}
                       className={`${getNavClasses(item.url)} transition-all duration-200 rounded-lg px-3 py-2 flex items-center gap-3`}
                     >
@@ -143,7 +141,7 @@ export function AppSidebar() {
                   {user ? (
                     <button
                       onClick={() => setLogoutOpen(true)}
-                      className="w-full text-left text-zinc-300 hover:text-white transition-colors flex items-center gap-3"
+                      className="w-full text-left text-muted-foreground hover:text-foreground transition-colors flex items-center gap-3 px-3 py-2"
                     >
                       <Settings className="w-5 h-5" />
                       {!collapsed && <span className="font-medium">Logout</span>}
@@ -171,8 +169,8 @@ export function AppSidebar() {
                   </DialogHeader>
                   <DialogFooter>
                     <div className="flex gap-2">
-                      <button onClick={() => setLogoutOpen(false)} className="px-4 py-2 rounded bg-zinc-700 text-white">Cancel</button>
-                      <button onClick={handleConfirmLogout} className="px-4 py-2 rounded bg-red-600 text-white">Logout</button>
+                      <button onClick={() => setLogoutOpen(false)} className="px-4 py-2 rounded bg-muted text-muted-foreground hover:bg-muted/80">Cancel</button>
+                      <button onClick={handleConfirmLogout} className="px-4 py-2 rounded bg-destructive text-destructive-foreground hover:bg-destructive/90">Logout</button>
                     </div>
                   </DialogFooter>
                 </DialogContent>
@@ -182,15 +180,21 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
 
-      <SidebarFooter className="border-t border-zinc-800 bg-[#0d0d14]">
-        <div className="p-3">
+      <SidebarFooter className="border-t border-border bg-card">
+        <div className="p-3 flex items-center justify-between">
           {!collapsed ? (
-            <div className="text-center">
-              <p className="text-xs text-zinc-400">EbookStore's Master CET Sheet</p>
-              <p className="text-xs text-zinc-500">v1.0.0</p>
-            </div>
+            <>
+              <div className="flex-1">
+                <p className="text-[10px] text-muted-foreground">EbookStore's Master CET Sheet</p>
+                <p className="text-[10px] text-muted-foreground">v1.0.0</p>
+              </div>
+              <ThemeToggle />
+            </>
           ) : (
-            <div className="w-2 h-2 bg-blue-500 rounded-full mx-auto animate-pulse"></div>
+            <div className="flex flex-col items-center gap-4">
+              <ThemeToggle />
+              <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            </div>
           )}
         </div>
       </SidebarFooter>
