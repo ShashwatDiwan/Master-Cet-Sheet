@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useAuth } from '@/hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
 import { SubjectSheet } from '@/lib/cet-data';
@@ -6,11 +6,13 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { getSheets, getSheetById } from '@/api/sheets';
 import { upsertProgress } from '@/api/progress';
 import { getResourcesByChapter } from '@/api/resources';
-import Carousel from '@/components/Carousel';
-import imgAdobe from '@/assets/Adobe Express - file.png';
-import imgRemove1 from '@/assets/Remove background project.png';
-import imgRemove2 from '@/assets/Remove background project (1).png';
-import imgRemove3 from '@/assets/Remove background project (2).png';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 import logo from '@/assets/Logo.png';
 
 const Index = () => {
@@ -24,8 +26,26 @@ const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [revisionChapters, setRevisionChapters] = useState<Set<string>>(new Set());
 
-  // Single carousel with 4 images
-  const mainSlides = [imgAdobe, imgRemove1, imgRemove2, imgRemove3];
+  const heroSlides = useMemo(
+    () => [
+      {
+        badge: 'Minimal • Fast',
+        title: 'Track CET prep like a pro',
+        subtitle: 'A clean dashboard for chapters, resources, and revision — all in one place.',
+      },
+      {
+        badge: 'One click',
+        title: 'Open notes & PYQs instantly',
+        subtitle: 'No hunting links. Everything is mapped to the exact chapter you need.',
+      },
+      {
+        badge: 'High impact',
+        title: 'Revise by weightage',
+        subtitle: 'Spend time where marks come from with a weightage-aware workflow.',
+      },
+    ],
+    []
+  );
 
   // Map backend DTOs to existing UI shape to minimize UI changes
   const mapDtoToSubjectSheet = (dto: any): SubjectSheet => {
@@ -71,7 +91,6 @@ const Index = () => {
       return res.map(mapDtoToSubjectSheet);
     },
   });
-console.log({subjectSheets})
   useEffect(() => {
     setSubjectSheets(sheetsData ?? []);
   }, [sheetsData]);
@@ -257,255 +276,230 @@ console.log({subjectSheets})
   };
 
   return (
-    <div className="min-h-screen bg-black text-white relative overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-green-500/3 rounded-full blur-3xl animate-pulse-slow delay-500"></div>
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-pink-500/3 rounded-full blur-3xl animate-float"></div>
-      </div>
-
-      <div className="relative z-10 p-3 sm:p-6 space-y-6 sm:space-y-8 max-w-full">
-      {/* Welcome Header with Animation */}
-     
-      <div className="text-center mb-4 sm:mb-6 animate-fade-in">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-2">
-          <div className="w-14 h-14 sm:w-16 sm:h-16 from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
-            <span className="text-xl sm:text-2xl"><img src={logo} alt="EbookStore logo" className="w-16 sm:w-20 h-16 sm:h-20 object-contain" /></span>
-          </div>
-          <h1 className="text-2xl sm:text-5xl font-bold mb-0">
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              EbookStore's
-            </span>
-            <span className="text-white ml-0 sm:ml-3 block sm:inline">Master CET Sheet</span>
-          </h1>
+    <div className="min-h-screen bg-background text-foreground">
+      <div className="relative">
+        {/* Minimal background accent */}
+        <div className="pointer-events-none absolute inset-x-0 -top-24 h-48 blur-3xl opacity-60">
+          <div className="mx-auto h-full w-[720px] max-w-full ig-gradient rounded-[999px]" />
         </div>
-        <p className="text-xs sm:text-base text-zinc-300 max-w-xl mx-auto mt-1 px-2">
-          Your comprehensive study companion for CET preparation
-        </p>
-      </div>
-      {/* Hero Carousel - no heading, tighter spacing */}
-      <div className="animate-fade-in-up -mt-1 sm:-mt-2 mb-4 sm:mb-6" style={{ animationDelay: '60ms' }}>
-        <Carousel
-          images={mainSlides}
-          autoPlayInterval={3600}
-          itemsPerView={3}
-          itemsPerViewMobile={1}
-          ariaLabel="Highlights Carousel"
-        />
-      </div>
 
-        {/* Progress Tracker - Mini Layout (with circular indicator) */}
-        <div className="glass-morphism rounded-xl p-3 sm:p-4 mb-4 sm:mb-6 overflow-hidden">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 items-stretch">
-            {/* Total Progress */}
-            <div className="text-center">
-              <h3 className="text-white text-xs sm:text-sm mb-1">Total Progress</h3>
-              <p className="text-base sm:text-lg font-bold text-white">
-                {subjectSheets.reduce((sum, s) => sum + (s.completedChapters || 0), 0)} / {subjectSheets.reduce((sum, s) => sum + (s.totalChapters || 0), 0)}
-              </p>
-            </div>
-
-            {/* Overall Completion (Circular) */}
-            <div className="text-center">
-              <div className="relative w-12 sm:w-16 h-12 sm:h-16 mx-auto">
-                <svg className="w-12 sm:w-16 h-12 sm:h-16 transform -rotate-180" viewBox="0 0 36 36">
-                  <path
-                    d="m18,2.0845 a 15.9155,15.9155 0 0,1 0,31.831 a 15.9155,15.9155 0 0,1 0,-31.831"
-                    fill="none"
-                    stroke="#1f2937"
-                    strokeWidth="4.5"
-                  />
-                  <path
-                    d="m18,2.0845 a 15.9155,15.9155 0 0,1 0,31.831 a 15.9155,15.9155 0 0,1 0,-31.831"
-                    fill="none"
-                    stroke="#00bf63"
-                    strokeWidth="4.5"
-                    strokeLinecap="round"
-                    strokeDasharray={`${Math.round((subjectSheets.reduce((sum, s) => sum + (s.completedChapters || 0), 0) / subjectSheets.reduce((sum, s) => sum + (s.totalChapters || 0), 0)) * 100)}, 100`}
-                  />
-                </svg>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="px-1.5 py-0.5 rounded-full text-xs font-bold text-white bg-black/70 border border-white/10">
-                    {Math.round((subjectSheets.reduce((sum, s) => sum + (s.completedChapters || 0), 0) / subjectSheets.reduce((sum, s) => sum + (s.totalChapters || 0), 0)) * 100)}%
-                  </span>
+        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-10 space-y-7">
+          {/* Hero */}
+          <section className="grid gap-6 md:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] items-stretch">
+            <div className="space-y-5">
+              <div className="flex items-center gap-3">
+                <div className="h-12 w-12 rounded-2xl bg-card border border-border shadow-soft dark:shadow-soft-dark flex items-center justify-center">
+                  <img src={logo} alt="EbookStore logo" className="h-10 w-10 object-contain" />
+                </div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs text-muted-foreground shadow-soft dark:shadow-soft-dark">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                  Flat • Minimal • Premium
                 </div>
               </div>
-            </div>
 
-            {/* Physics */}
-            <div className="text-center hidden sm:block">
-              <h3 className="text-white text-xs sm:text-sm mb-1">Physics</h3>
-              <p className="text-xs text-zinc-300 mb-1">
-                {subjectSheets.find(s => s.subject === 'Physics')?.completedChapters || 0} / {subjectSheets.find(s => s.subject === 'Physics')?.totalChapters || 0}
-              </p>
-              <div className="w-full bg-zinc-800/70 rounded-full h-2 overflow-hidden">
-                <div
-                  className="h-full rounded-full bg-[#4285f4]"
-                  style={{
-                    width: `${Math.round(((subjectSheets.find(s => s.subject === 'Physics')?.completedChapters || 0) / (subjectSheets.find(s => s.subject === 'Physics')?.totalChapters || 1)) * 100)}%`
-                  }}
-                />
+              <div className="space-y-3">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
+                  <span className="gradient-text">Master CET Sheet</span>
+                </h1>
+                <p className="text-sm sm:text-base text-muted-foreground max-w-xl">
+                  Track chapters, open notes, and plan revisions with a clean, trendy dashboard.
+                </p>
               </div>
-            </div>
 
-            {/* Chemistry */}
-            <div className="text-center hidden sm:block">
-              <h3 className="text-white text-xs sm:text-sm mb-1">Chemistry</h3>
-              <p className="text-xs text-zinc-300 mb-1">
-                {subjectSheets.find(s => s.subject === 'Chemistry')?.completedChapters || 0} / {subjectSheets.find(s => s.subject === 'Chemistry')?.totalChapters || 0}
-              </p>
-              <div className="w-full bg-zinc-800/70 rounded-full h-2 overflow-hidden">
-                <div
-                  className="h-full rounded-full bg-gradient-to-r from-amber-500 to-orange-400 shadow-[0_0_12px_rgba(245,158,11,0.35)]"
-                  style={{
-                    width: `${Math.round(((subjectSheets.find(s => s.subject === 'Chemistry')?.completedChapters || 0) / (subjectSheets.find(s => s.subject === 'Chemistry')?.totalChapters || 1)) * 100)}%`
-                  }}
-                ></div>
-              </div>
-            </div>
-
-            {/* Maths */}
-            <div className="text-center hidden lg:block">
-              <h3 className="text-white text-xs sm:text-sm mb-1">Maths</h3>
-              <p className="text-xs text-zinc-300 mb-1">
-                {subjectSheets.find(s => s.subject === 'Mathematics')?.completedChapters || 0} / {subjectSheets.find(s => s.subject === 'Mathematics')?.totalChapters || 0}
-              </p>
-              <div className="w-full bg-zinc-800/70 rounded-full h-2 overflow-hidden">
-                <div
-                  className="h-full rounded-full bg-[#ff3b30]"
-                  style={{
-                    width: `${Math.round(((subjectSheets.find(s => s.subject === 'Mathematics')?.completedChapters || 0) / (subjectSheets.find(s => s.subject === 'Mathematics')?.totalChapters || 1)) * 100)}%`
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        {/* Study Sheets with Hover Effects */}
-        <div className="animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-          <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-            <span className="text-xl sm:text-2xl">📚</span>
-            <h2 className="text-xl sm:text-2xl font-bold text-white">Study Sheets</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
-            {subjectSheets.map((sheet, index) => (
-              <div 
-                key={sheet.id} 
-                className="group cursor-pointer transition-all duration-500 hover:scale-105 animate-fade-in-up card-hover"
-                style={{ animationDelay: `${500 + index * 100}ms` }}
-                onClick={() => handleSheetClick(sheet)}
-                onMouseEnter={() => {
-                  // Prefetch detailed sheet to reduce waiting on click
-                  const sheetIdNum = Number((sheet as any).id ?? (sheet as any).sheetId);
-                  if (!Number.isNaN(sheetIdNum)) {
-                    queryClient.prefetchQuery({
-                      queryKey: ['sheet', sheetIdNum],
-                      queryFn: () => getSheetById(sheetIdNum),
-                      staleTime: 5 * 60 * 1000,
-                    });
-                  }
-                }}
-              >
-                <div
-                  className={`relative overflow-hidden rounded-2xl p-6 transition-all duration-300 bg-gradient-to-br border 
-                    ${sheet.subject === 'Physics' 
-                      ? 'from-amber-500/10 to-amber-600/10 border-amber-500/30 hover:border-amber-500/50' 
-                      : sheet.subject === 'Chemistry' 
-                      ? 'from-emerald-500/10 to-emerald-600/10 border-emerald-500/30 hover:border-emerald-500/50' 
-                      : sheet.subject === 'Mathematics' 
-                      ? 'from-purple-500/10 to-purple-600/10 border-purple-500/30 hover:border-purple-500/50' 
-                      : 'from-zinc-800/50 to-zinc-900/50 border-zinc-700/50 hover:border-zinc-600/50'}
-                  `}
+              <div className="flex flex-wrap items-center gap-3">
+                <button
+                  onClick={() => navigate(user ? "/" : "/login")}
+                  className="rounded-full px-5 py-2.5 text-sm font-semibold text-white ig-gradient shadow-soft dark:shadow-soft-dark hover:opacity-95 transition-opacity"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                  
-                  <div className="relative z-10">
-                    <div className="flex flex-col sm:flex-row items-start justify-between mb-3 sm:mb-4">
-                      <div className="flex-1">
-                        <h3 className="text-base sm:text-lg font-bold text-white mb-2 transition-colors">
-                          {sheet.subject === 'Physics' ? 'Physics' : 
-                           sheet.subject === 'Chemistry' ? 'Chemistry' : 
-                           sheet.subject === 'Mathematics' ? 'Mathematics' : 
-                           sheet.subject === 'Biology' ? 'Biology' : sheet.title}
-                        </h3>
-                        <p className="text-zinc-300 text-xs mb-2 sm:mb-3 leading-relaxed line-clamp-2">{sheet.description}</p>
-                        <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs text-zinc-400">
-                          <span className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                            {sheet.totalChapters || 0} chapters
-                          </span>
-                          <span className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                            {sheet.completedChapters || 0} completed
-                          </span>
+                  {user ? "Open dashboard" : "Start for free"}
+                </button>
+                <button
+                  onClick={() => window.scrollTo({ top: 560, behavior: "smooth" })}
+                  className="rounded-full px-5 py-2.5 text-sm font-semibold bg-card border border-border shadow-soft dark:shadow-soft-dark hover:bg-accent transition-colors"
+                >
+                  Browse sheets
+                </button>
+              </div>
+
+              <div className="flex flex-wrap gap-3 text-xs text-muted-foreground">
+                <span className="rounded-full bg-card border border-border px-3 py-1 shadow-soft dark:shadow-soft-dark">
+                  {subjectSheets.length} subjects
+                </span>
+                <span className="rounded-full bg-card border border-border px-3 py-1 shadow-soft dark:shadow-soft-dark">
+                  {subjectSheets.reduce((sum, s) => sum + (s.totalChapters || 0), 0)} chapters
+                </span>
+              </div>
+            </div>
+
+            {/* Highlights carousel */}
+            <div className="ig-border shadow-soft dark:shadow-soft-dark">
+              <div className="ig-border-inner ig-border-inner p-4 sm:p-5">
+                <Carousel opts={{ align: 'start', loop: true }}>
+                  <CarouselContent>
+                    {heroSlides.map((slide, idx) => (
+                      <CarouselItem key={idx} className="basis-full">
+                        <div className="surface shadow-soft dark:shadow-soft-dark p-5 sm:p-6">
+                          <div className="flex items-center justify-between gap-3 mb-3">
+                            <span className="text-xs font-semibold text-muted-foreground">
+                              {slide.badge}
+                            </span>
+                            <span className="h-2 w-2 rounded-full bg-foreground/10" />
+                          </div>
+                          <h3 className="text-lg font-semibold tracking-tight">{slide.title}</h3>
+                          <p className="mt-2 text-sm text-muted-foreground">{slide.subtitle}</p>
                         </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="hidden sm:flex" />
+                  <CarouselNext className="hidden sm:flex" />
+                </Carousel>
+              </div>
+            </div>
+          </section>
+
+          {/* Stats row */}
+          <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="surface shadow-soft dark:shadow-soft-dark p-5">
+              <p className="text-xs text-muted-foreground">Overall progress</p>
+              <p className="mt-1 text-2xl font-semibold">
+                {Math.round(
+                  (subjectSheets.reduce((sum, s) => sum + (s.completedChapters || 0), 0) /
+                    Math.max(subjectSheets.reduce((sum, s) => sum + (s.totalChapters || 0), 0), 1)) *
+                    100
+                )}
+                %
+              </p>
+              <div className="mt-3 h-2 rounded-full bg-muted overflow-hidden">
+                <div
+                  className="h-full ig-gradient"
+                  style={{
+                    width: `${Math.round(
+                      (subjectSheets.reduce((sum, s) => sum + (s.completedChapters || 0), 0) /
+                        Math.max(subjectSheets.reduce((sum, s) => sum + (s.totalChapters || 0), 0), 1)) *
+                        100
+                    )}%`,
+                  }}
+                />
+              </div>
+            </div>
+            {[
+              { key: 'Physics', dot: 'bg-sky-500' },
+              { key: 'Chemistry', dot: 'bg-emerald-500' },
+              { key: 'Mathematics', dot: 'bg-violet-500' },
+            ].map(({ key, dot }) => {
+              const s = subjectSheets.find((x) => x.subject === key);
+              const completed = s?.completedChapters || 0;
+              const total = s?.totalChapters || 0;
+              return (
+                <div key={key} className="surface shadow-soft dark:shadow-soft-dark p-5">
+                  <div className="flex items-center justify-between">
+                    <p className="text-xs text-muted-foreground">{key}</p>
+                    <span className={`h-2 w-2 rounded-full ${dot}`} />
+                  </div>
+                  <p className="mt-1 text-2xl font-semibold">{completed}</p>
+                  <p className="text-xs text-muted-foreground">{total} chapters</p>
+                </div>
+              );
+            })}
+          </section>
+
+          {/* Study Sheets */}
+          <section className="pt-2">
+            <div className="flex items-end justify-between gap-4 mb-4 sm:mb-6">
+              <div>
+                <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">Study sheets</h2>
+                <p className="text-sm text-muted-foreground mt-1">
+                  Tap a subject to open chapters, notes and PYQs.
+                </p>
+              </div>
+              <div className="hidden sm:flex items-center gap-2 text-xs text-muted-foreground">
+                <span className="rounded-full bg-card border border-border px-3 py-1 shadow-soft dark:shadow-soft-dark">
+                  Minimal
+                </span>
+                <span className="rounded-full bg-card border border-border px-3 py-1 shadow-soft dark:shadow-soft-dark">
+                  Flat
+                </span>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+              {subjectSheets.map((sheet, index) => (
+                <div 
+                  key={sheet.id} 
+                  className="group cursor-pointer animate-fade-in-up card-hover"
+                  style={{ animationDelay: `${500 + index * 100}ms` }}
+                  onClick={() => handleSheetClick(sheet)}
+                  onMouseEnter={() => {
+                    // Prefetch detailed sheet to reduce waiting on click
+                    const sheetIdNum = Number((sheet as any).id ?? (sheet as any).sheetId);
+                    if (!Number.isNaN(sheetIdNum)) {
+                      queryClient.prefetchQuery({
+                        queryKey: ['sheet', sheetIdNum],
+                        queryFn: () => getSheetById(sheetIdNum),
+                        staleTime: 5 * 60 * 1000,
+                      });
+                    }
+                  }}
+                >
+                  <div className="surface shadow-soft dark:shadow-soft-dark p-6">
+                    <div className="flex items-start justify-between gap-3 mb-4">
+                      <div className="flex-1">
+                        <h3 className="text-base sm:text-lg font-semibold tracking-tight mb-2">
+                            {sheet.subject === 'Physics' ? 'Physics' : 
+                             sheet.subject === 'Chemistry' ? 'Chemistry' : 
+                             sheet.subject === 'Mathematics' ? 'Mathematics' : 
+                             sheet.subject === 'Biology' ? 'Biology' : sheet.title}
+                      </h3>
                       </div>
-                      <div
-                        className={`px-2 sm:px-3 py-1 rounded-full text-xs font-medium border mt-3 sm:mt-0 flex-shrink-0 
-                          ${sheet.subject === 'Physics' 
-                            ? 'bg-amber-500/20 text-amber-300 border-amber-500/30' 
-                            : sheet.subject === 'Chemistry' 
-                            ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' 
-                            : sheet.subject === 'Mathematics' 
-                            ? 'bg-purple-500/20 text-purple-300 border-purple-500/30' 
-                            : 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30'}`}
-                      >
+                      <div className="rounded-full border border-border bg-card px-3 py-1 text-xs font-semibold text-muted-foreground shadow-soft dark:shadow-soft-dark">
                         {sheet.subject === 'Physics' ? '50 marks' : 
                          sheet.subject === 'Chemistry' ? '50 marks' : 
                          sheet.subject === 'Mathematics' ? '100 marks' : 
                          sheet.subject === 'Biology' ? '100 marks' : '50 marks'}
                       </div>
                     </div>
+
+                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                      {sheet.description}
+                    </p>
+
+                    <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
+                      <span className="rounded-full bg-muted px-3 py-1 text-muted-foreground">
+                        {sheet.totalChapters || 0} chapters
+                      </span>
+                      <span className="rounded-full bg-muted px-3 py-1 text-muted-foreground">
+                        {sheet.completedChapters || 0} completed
+                      </span>
+                      <span className="ml-auto hidden sm:inline-flex items-center gap-2 text-muted-foreground">
+                        <span className="h-1.5 w-1.5 rounded-full bg-foreground/15" />
+                        <span className="gradient-text font-semibold">Open</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
+              ))}
+            </div>
+          </section>
       {/* Sleek Matt Black Table Modal */}
       {isModalOpen && selectedSheet && (
         <div
-          className="fixed inset-0 bg-black/90 backdrop-blur-md flex items-center justify-center z-50 p-2 sm:p-4 animate-fade-in"
+          className="fixed inset-0 bg-background/70 dark:bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-2 sm:p-4 animate-fade-in"
           onClick={handleModalClose}
         >
           <div
-            className={`rounded-2xl sm:rounded-3xl max-w-7xl w-full max-h-[95vh] sm:max-h-[90vh] overflow-hidden shadow-2xl animate-scale-in border 
-              ${selectedSheet.subject === 'Physics'
-                ? 'border-amber-500/30'
-                : selectedSheet.subject === 'Chemistry'
-                ? 'border-emerald-500/30'
-                : selectedSheet.subject === 'Mathematics'
-                ? 'border-purple-500/30'
-                : 'border-zinc-600'} bg-gradient-to-br from-zinc-900 to-black`}
+            className="surface shadow-soft dark:shadow-soft-dark max-w-7xl w-full max-h-[95vh] sm:max-h-[90vh] overflow-hidden animate-scale-in"
             onClick={e => e.stopPropagation()}
           >
             {/* Header */}
-            <div
-              className={`p-3 sm:p-6 border-b bg-gradient-to-r 
-                ${selectedSheet.subject === 'Physics'
-                  ? 'from-amber-500/10 to-amber-600/10 border-amber-500/30'
-                  : selectedSheet.subject === 'Chemistry'
-                  ? 'from-emerald-500/10 to-emerald-600/10 border-emerald-500/30'
-                  : selectedSheet.subject === 'Mathematics'
-                  ? 'from-purple-500/10 to-purple-600/10 border-purple-500/30'
-                  : 'from-zinc-800/50 to-zinc-900/50 border-zinc-600'}`}
-            >
+            <div className="p-3 sm:p-6 border-b border-border">
               <div className="flex justify-between items-start gap-2 sm:items-center">
                 <div className="flex-1 min-w-0">
-                  <h2 className="text-lg sm:text-2xl font-bold text-white mb-1 sm:mb-2 truncate">{selectedSheet.title}</h2>
-                  <p className="text-zinc-300 text-xs sm:text-sm flex items-center gap-2 truncate">
+                  <h2 className="text-lg sm:text-2xl font-semibold text-foreground mb-1 sm:mb-2 truncate">{selectedSheet.title}</h2>
+                  <p className="text-muted-foreground text-xs sm:text-sm flex items-center gap-2 truncate">
                     {selectedSheet.description}
                     {/* Subtle spinner to indicate background upgrading when chapters are initially missing */}
                     {!selectedSheet?.chapters?.length && (
-                      <span className="inline-flex items-center gap-1 text-zinc-400 text-xs">
+                      <span className="inline-flex items-center gap-1 text-muted-foreground text-xs">
                         <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                           <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
@@ -517,7 +511,7 @@ console.log({subjectSheets})
                 </div>
                 <button 
                   onClick={handleModalClose}
-                  className="text-zinc-400 hover:text-white text-xl sm:text-2xl p-2 sm:p-3 hover:bg-zinc-800/50 rounded-xl transition-all duration-300 hover:scale-110 flex-shrink-0"
+                  className="text-muted-foreground hover:text-foreground text-xl sm:text-2xl p-2 sm:p-3 hover:bg-accent rounded-2xl transition-all duration-300 hover:scale-110 flex-shrink-0"
                 >
                   ×
                 </button>
@@ -525,28 +519,28 @@ console.log({subjectSheets})
             </div>
             
             {/* Table */}
-            <div className="p-3 sm:p-6 bg-zinc-900/30">
+            <div className="p-3 sm:p-6 bg-background">
               <div className="max-h-[60vh] sm:max-h-[65vh] overflow-y-auto custom-scrollbar">
                 <div className="space-y-2">
-                  <div className="hidden sm:grid sm:grid-cols-[80px_2fr_120px_120px_120px_120px_100px] gap-4 border-b border-zinc-600 pb-3 px-4 sticky top-0 bg-zinc-900 z-10 shadow-md">
-                    <div className="text-center text-zinc-200 font-semibold text-xs uppercase tracking-wider">Done</div>
-                    <div className="text-left text-zinc-200 font-semibold text-xs uppercase tracking-wider">Chapter</div>
-                    <div className="text-center text-zinc-200 font-semibold text-xs uppercase tracking-wider">Notes</div>
-                    <div className="text-center text-zinc-200 font-semibold text-xs uppercase tracking-wider">Short</div>
-                    <div className="text-center text-zinc-200 font-semibold text-xs uppercase tracking-wider">PYQs</div>
-                    <div className="text-center text-zinc-200 font-semibold text-xs uppercase tracking-wider">Revise</div>
-                    <div className="text-center text-zinc-200 font-semibold text-xs uppercase tracking-wider">Weight</div>
+                  <div className="hidden sm:grid sm:grid-cols-[80px_2fr_120px_120px_120px_120px_100px] gap-4 border-b border-border pb-3 px-4 sticky top-0 bg-background z-10">
+                    <div className="text-center text-muted-foreground font-semibold text-xs uppercase tracking-wider">Done</div>
+                    <div className="text-left text-muted-foreground font-semibold text-xs uppercase tracking-wider">Chapter</div>
+                    <div className="text-center text-muted-foreground font-semibold text-xs uppercase tracking-wider">Notes</div>
+                    <div className="text-center text-muted-foreground font-semibold text-xs uppercase tracking-wider">Short</div>
+                    <div className="text-center text-muted-foreground font-semibold text-xs uppercase tracking-wider">PYQs</div>
+                    <div className="text-center text-muted-foreground font-semibold text-xs uppercase tracking-wider">Revise</div>
+                    <div className="text-center text-muted-foreground font-semibold text-xs uppercase tracking-wider">Weight</div>
                   </div>
                   {selectedSheet.chapters
                       ?.slice()
                       .sort((a: any, b: any) => Number(a.id) - Number(b.id))
                       .map((chapter: any) => (
-                      <div key={chapter.id} className="bg-zinc-800/20 rounded-lg p-3 sm:p-0 sm:grid sm:grid-cols-[80px_2fr_120px_120px_120px_120px_100px] sm:gap-4 sm:items-center sm:px-4 sm:py-3 border border-zinc-700/30 sm:border-0 sm:border-b sm:rounded-none hover:bg-zinc-800/30 transition-all duration-300">
+                      <div key={chapter.id} className="bg-card rounded-2xl p-3 sm:p-0 sm:grid sm:grid-cols-[80px_2fr_120px_120px_120px_120px_100px] sm:gap-4 sm:items-center sm:px-4 sm:py-3 border border-border sm:border-0 sm:border-b sm:rounded-none hover:bg-accent transition-colors duration-200">
                         {/* Mobile Card View */}
                         <div className="sm:hidden space-y-2">
                           <div className="flex items-start justify-between gap-2">
                             <div className="flex-1">
-                              <h4 className="text-white font-medium text-sm">{chapter.name}</h4>
+                              <h4 className="text-foreground font-medium text-sm">{chapter.name}</h4>
                             </div>
                             <input
                               type="checkbox"
@@ -617,7 +611,7 @@ console.log({subjectSheets})
                           />
                         </div>
                         <div className="hidden sm:block sm:px-2">
-                          <span className="text-white font-medium text-sm">{chapter.name}</span>
+                          <span className="text-foreground font-medium text-sm">{chapter.name}</span>
                         </div>
                         <div className="hidden sm:flex sm:justify-center">
                           {chapter.resources?.handwrittenNotes ? (
@@ -685,7 +679,9 @@ console.log({subjectSheets})
         </div>
       )}
     </div>
+  </div>
+</div>
   );
 };
 
-export default Index; 
+export default Index;
