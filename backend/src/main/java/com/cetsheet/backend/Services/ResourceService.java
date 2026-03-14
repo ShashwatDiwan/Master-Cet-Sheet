@@ -4,9 +4,9 @@ import com.cetsheet.backend.Model.Resource;
 import com.cetsheet.backend.Repository.ResourceRepository;
 import com.cetsheet.backend.dto.ResourceDTO;
 import com.cetsheet.backend.Model.ResourceType;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,51 +15,41 @@ public class ResourceService {
     @Autowired
     private ResourceRepository resourceRepository;
 
-    @Autowired
-    private ModelMapper modelMapper;
-
     public List<ResourceDTO> getResourcesByChapterId(int chapterId) {
         List<Resource> resources = resourceRepository.findByChapter_ChapterId(chapterId);
-        List<ResourceDTO> dtos = new ArrayList<>();
-        for (Resource r : resources) {
-            ResourceDTO dto = new ResourceDTO();
-            dto.setResourceId(r.getResourceId());
-            dto.setResourceName(r.getResourceName());
-            dto.setType(r.getType());
-            // Map entity driveFileID -> dto driveFileId, normalizing if a full URL leaked into the DB
-            String fileId = extractDriveId(r.getDriveFileID());
-            if ((fileId == null || fileId.isEmpty()) && r.getResourceName() != null) {
-                // As a fallback, attempt to extract from resourceName if it's a URL
-                fileId = extractDriveId(r.getResourceName());
-            }
-            dto.setDriveFileId(fileId);
-            if (fileId != null && !fileId.isEmpty()) {
-                dto.setPreviewUrl("https://drive.google.com/file/d/" + fileId + "/preview");
-            }
-            dtos.add(dto);
-        }
-        return dtos;
+        return toDtos(resources);
     }
 
     public List<ResourceDTO> getResourcesByChapterIdAndType(int chapterId, ResourceType type) {
         List<Resource> resources = resourceRepository.findByChapter_ChapterIdAndType(chapterId, type);
+        return toDtos(resources);
+    }
+
+    public List<ResourceDTO> toDtos(List<Resource> resources) {
         List<ResourceDTO> dtos = new ArrayList<>();
         for (Resource r : resources) {
-            ResourceDTO dto = new ResourceDTO();
-            dto.setResourceId(r.getResourceId());
-            dto.setResourceName(r.getResourceName());
-            dto.setType(r.getType());
-            String fileId = extractDriveId(r.getDriveFileID());
-            if ((fileId == null || fileId.isEmpty()) && r.getResourceName() != null) {
-                fileId = extractDriveId(r.getResourceName());
-            }
-            dto.setDriveFileId(fileId);
-            if (fileId != null && !fileId.isEmpty()) {
-                dto.setPreviewUrl("https://drive.google.com/file/d/" + fileId + "/preview");
-            }
-            dtos.add(dto);
+            dtos.add(toDto(r));
         }
         return dtos;
+    }
+
+    public ResourceDTO toDto(Resource r) {
+        ResourceDTO dto = new ResourceDTO();
+        dto.setResourceId(r.getResourceId());
+        dto.setResourceName(r.getResourceName());
+        dto.setType(r.getType());
+
+        // Map entity driveFileID -> dto driveFileId, normalizing if a full URL leaked into the DB
+        String fileId = extractDriveId(r.getDriveFileID());
+        if ((fileId == null || fileId.isEmpty()) && r.getResourceName() != null) {
+            // As a fallback, attempt to extract from resourceName if it's a URL
+            fileId = extractDriveId(r.getResourceName());
+        }
+        dto.setDriveFileId(fileId);
+        if (fileId != null && !fileId.isEmpty()) {
+            dto.setPreviewUrl("https://drive.google.com/file/d/" + fileId + "/preview");
+        }
+        return dto;
     }
 
     // Attempt to extract a Google Drive file ID from either a bare ID or various Drive URL formats

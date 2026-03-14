@@ -2,6 +2,9 @@ package com.cetsheet.backend.dto;
 
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -13,6 +16,7 @@ public class ChapterDTO {
     private boolean Completed = false;
     private boolean Revised = false;
     private double weightage;
+    private List<ResourceDTO> resources = new ArrayList<>();
 
     // Resource availability flags for quick UI checks
     private boolean hasNotes = false;

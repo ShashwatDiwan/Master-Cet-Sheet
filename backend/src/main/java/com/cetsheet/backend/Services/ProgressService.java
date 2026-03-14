@@ -11,7 +11,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 import lombok.RequiredArgsConstructor;
+
+import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
@@ -48,7 +52,7 @@ public class ProgressService {
     public List<ChapterProgressDTO> getProgressForUser(Long userId) {
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found"));
-        List<ChapterProgress> list = progressRepository.findByUser(user);
+        List<ChapterProgress> list = progressRepository.findAllByUserIdWithChapter(user.getId());
         return list.stream().map(this::toDto).collect(Collectors.toList());
     }
 
@@ -84,8 +88,23 @@ public class ProgressService {
     public List<ChapterProgressDTO> getProgressForUserBySheet(Long userId, int sheetId) {
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found"));
-        List<ChapterProgress> list = progressRepository.findByUserAndChapter_Sheet_SheetId(user, sheetId);
+        List<ChapterProgress> list = progressRepository.findAllByUserIdAndSheetIdWithChapter(user.getId(), sheetId);
         return list.stream().map(this::toDto).collect(Collectors.toList());
+    }
+
+    public Map<Integer, ChapterProgressDTO> getProgressMapForUser(Long userId) {
+        if (userId == null) {
+            return Collections.emptyMap();
+        }
+
+        return progressRepository.findAllByUserIdWithChapter(userId).stream()
+                .map(this::toDto)
+                .collect(Collectors.toMap(
+                        ChapterProgressDTO::getChapterId,
+                        dto -> dto,
+                        (left, right) -> right,
+                        LinkedHashMap::new
+                ));
     }
 
     private ChapterProgressDTO toDto(ChapterProgress p) {

@@ -1,6 +1,5 @@
 package com.cetsheet.backend.Controller;
 
-import com.cetsheet.backend.Model.Sheet;
 import com.cetsheet.backend.Services.SheetService;
 import com.cetsheet.backend.Repository.UserRepository;
 import com.cetsheet.backend.Security.Model.User;
@@ -8,7 +7,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import com.cetsheet.backend.dto.SheetDTO;
-import com.cetsheet.backend.dto.StatusUpdateDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -48,13 +46,6 @@ public class SheetController {
 
     @GetMapping("/byName/{name}")
     public SheetDTO getSheetByName(@PathVariable("name") String sheetName){
-        // service method currently ignores userId for name; retrieve metadata then call overloaded if needed
-        SheetDTO dto = sheetService.getSheetByName(sheetName);
-        // if user logged in, remap with user progress
-        Long uid = currentUserId();
-        if (uid != null) {
-            // fetch sheet again by id to include progress
-            return sheetService.getSheetById(dto.getSheetId(), uid);
-        }
-        return dto;
-    }}
+        return sheetService.getSheetByName(sheetName, currentUserId());
+    }
+}
