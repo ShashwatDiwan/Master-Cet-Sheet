@@ -6,7 +6,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Optional;
 
 public class CustomUserDetails implements UserDetails {
 
@@ -14,6 +13,18 @@ public class CustomUserDetails implements UserDetails {
 
     public CustomUserDetails(User user) {
         this.user = user;
+    }
+
+    public Long getId() {
+        return user != null ? user.getId() : null;
+    }
+
+    public String getEmail() {
+        return user != null ? user.getEmail() : null;
+    }
+
+    public String getDisplayName() {
+        return user != null ? user.getUsername() : null;
     }
 
     @Override

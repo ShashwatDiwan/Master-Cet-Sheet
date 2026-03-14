@@ -1,14 +1,11 @@
 package com.cetsheet.backend.Controller;
 
-import com.cetsheet.backend.Repository.UserRepository;
-import com.cetsheet.backend.Security.Model.User;
+import com.cetsheet.backend.Security.Service.AuthenticatedUserService;
 import com.cetsheet.backend.Services.ProgressService;
 import com.cetsheet.backend.dto.ChapterProgressDTO;
 import com.cetsheet.backend.dto.ProgressUpdateDTO;
 import com.cetsheet.backend.dto.StatusUpdateDTO;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,20 +16,7 @@ import java.util.List;
 public class ProgressController {
 
     private final ProgressService progressService;
-    private final UserRepository userRepository;
-
-    private User currentUser() {
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        if (auth == null || auth.getName() == null) {
-            throw new RuntimeException("Unauthenticated");
-        }
-        return userRepository.findByEmail(auth.getName())
-                .orElseThrow(() -> new RuntimeException("User not found: " + auth.getName()));
-    }
-
-    private Long currentUserId() {
-        return currentUser().getId();
-    }
+    private final AuthenticatedUserService authenticatedUserService;
 
     // Admin / client endpoints that operate on arbitrary userId
     @PatchMapping("/{userId}/{chapterId}")
@@ -50,17 +34,17 @@ public class ProgressController {
     // Authenticated user endpoints
     @GetMapping
     public List<ChapterProgressDTO> getAllForCurrentUser() {
-        return progressService.getProgressForUser(currentUserId());
+        return progressService.getProgressForUser(authenticatedUserService.currentUserId());
     }
 
     @GetMapping("/sheet/{sheetId}")
     public List<ChapterProgressDTO> getBySheetForCurrentUser(@PathVariable int sheetId) {
-        return progressService.getProgressForUserBySheet(currentUserId(), sheetId);
+        return progressService.getProgressForUserBySheet(authenticatedUserService.currentUserId(), sheetId);
     }
 
     @PostMapping
     public ChapterProgressDTO upsertForCurrentUser(@RequestBody ProgressUpdateDTO dto) {
         // support passing revised flag as well now that ProgressUpdateDTO carries it
-        return progressService.updateProgress(currentUserId(), dto.getChapterId(), dto.getCompleted(), dto.getRevised());
+        return progressService.updateProgress(authenticatedUserService.currentUserId(), dto.getChapterId(), dto.getCompleted(), dto.getRevised());
     }
 }

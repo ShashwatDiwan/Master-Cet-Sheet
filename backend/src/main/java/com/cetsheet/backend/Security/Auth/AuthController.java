@@ -1,19 +1,15 @@
 package com.cetsheet.backend.Security.Auth;
 
+import com.cetsheet.backend.Security.Service.AuthenticatedUserService;
 import com.cetsheet.backend.Security.Jwt.JwtService;
 import com.cetsheet.backend.Security.Service.AuthService;
-import com.cetsheet.backend.Security.Service.CustomUserDetailsService;
-import com.cetsheet.backend.Security.Auth.AuthenticationRequest;
-import com.cetsheet.backend.Security.Auth.RegisterRequest;
+import com.cetsheet.backend.Security.Service.CustomUserDetails;
 import com.cetsheet.backend.dto.UserDTO;
-import com.cetsheet.backend.Repository.UserRepository;
-import com.cetsheet.backend.Security.Model.User;
-import org.modelmapper.ModelMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,19 +19,17 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
 
     private final AuthenticationManager authManager;
-    private final CustomUserDetailsService userDetailsService;
     private final JwtService jwtService;
     private final AuthService authService;
-    private final UserRepository userRepository;
-    private final ModelMapper modelMapper;
+    private final AuthenticatedUserService authenticatedUserService;
 
     @PostMapping("/login")
     public ResponseEntity<AuthenticationResponse> authenticate(@RequestBody AuthenticationRequest request) {
-        authManager.authenticate(
+        Authentication authentication = authManager.authenticate(
                 new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword())
         );
 
-        UserDetails user = userDetailsService.loadUserByUsername(request.getEmail());
+        UserDetails user = (UserDetails) authentication.getPrincipal();
         String token = jwtService.generateToken(user);
         return ResponseEntity.ok(new AuthenticationResponse(token));
     }
@@ -48,10 +42,8 @@ public class AuthController {
 
     @GetMapping("/me")
     public ResponseEntity<UserDTO> me() {
-        String email = SecurityContextHolder.getContext().getAuthentication().getName();
-        User user = userRepository.findByEmail(email)
-                .orElseThrow(() -> new RuntimeException("User not found"));
-        UserDTO dto = modelMapper.map(user, UserDTO.class);
+        CustomUserDetails user = authenticatedUserService.currentUserDetails();
+        UserDTO dto = new UserDTO(user.getId(), user.getDisplayName(), user.getEmail());
         return ResponseEntity.ok(dto);
     }
 }
