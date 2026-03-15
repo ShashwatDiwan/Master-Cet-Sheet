@@ -12,7 +12,7 @@ public interface ResourceRepository extends JpaRepository<Resource,Integer> {
 
     List<Resource> findByChapter_ChapterId(int chapterId);
     List<Resource> findByChapter_ChapterIdAndType(int chapterId, ResourceType type);
-    @Query("select r from Resource r where r.chapter.chapterId in :chapterIds")
+    @Query("select r from Resource r join fetch r.chapter where r.chapter.chapterId in :chapterIds")
     List<Resource> findByChapterIds(@Param("chapterIds") Collection<Integer> chapterIds);
 
 

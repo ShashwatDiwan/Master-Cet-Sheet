@@ -82,7 +82,7 @@ public class ProgressService {
 
 
         ChapterProgress saved = progressRepository.save(progress);
-        return toDto(saved);
+        return toDto(saved, chapter);
     }
 
     public List<ChapterProgressDTO> getProgressForUserBySheet(Long userId, int sheetId) {
@@ -107,11 +107,36 @@ public class ProgressService {
                 ));
     }
 
+    public Map<Integer, ChapterProgressDTO> getProgressMapForUserBySheet(Long userId, int sheetId) {
+        if (userId == null) {
+            return Collections.emptyMap();
+        }
+
+        return progressRepository.findAllByUserIdAndSheetIdWithChapter(userId, sheetId).stream()
+                .map(this::toDto)
+                .collect(Collectors.toMap(
+                        ChapterProgressDTO::getChapterId,
+                        dto -> dto,
+                        (left, right) -> right,
+                        LinkedHashMap::new
+                ));
+    }
+
     private ChapterProgressDTO toDto(ChapterProgress p) {
         return ChapterProgressDTO.builder()
                 .id(p.getId())
                 .chapterId(p.getChapter().getChapterId())
                 .sheetId(p.getChapter().getSheet().getSheetId())
+                .completed(p.isCompleted())
+                .revised(p.isRevised())
+                .build();
+    }
+
+    private ChapterProgressDTO toDto(ChapterProgress p, Chapter chapter) {
+        return ChapterProgressDTO.builder()
+                .id(p.getId())
+                .chapterId(chapter.getChapterId())
+                .sheetId(chapter.getSheet().getSheetId())
                 .completed(p.isCompleted())
                 .revised(p.isRevised())
                 .build();
