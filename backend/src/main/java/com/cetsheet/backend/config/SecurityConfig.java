@@ -40,9 +40,9 @@ public class SecurityConfig {
                 // permit preflight requests everywhere
                 .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
                 // allow browsing sheets without authentication
-                .requestMatchers(org.springframework.http.HttpMethod.GET, "/sheets/**").permitAll()
+                .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/v1/sheets/**").permitAll()
                 // allow retrieving chapter resources publicly
-                .requestMatchers(org.springframework.http.HttpMethod.GET, "/chapters/*/resources/**").permitAll()
+                .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/v1/chapters/*/resources/**").permitAll()
                 // all other endpoints require authentication
                 .anyRequest().authenticated()
             )
