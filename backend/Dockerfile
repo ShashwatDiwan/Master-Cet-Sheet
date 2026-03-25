@@ -6,12 +6,11 @@ WORKDIR /app
 # copy only build metadata first so dependency resolution is cacheable
 COPY pom.xml ./
 COPY .mvn/ .mvn/
-COPY mvnw ./
-RUN ./mvnw -q -DskipTests dependency:go-offline
+RUN mvn -q -DskipTests dependency:go-offline
 
 # then copy source and package
 COPY src/ src/
-RUN ./mvnw -q -DskipTests clean package
+RUN mvn -q -DskipTests clean package
 
 # ---------- Stage 2: Run ----------
 FROM eclipse-temurin:17-jre-alpine
