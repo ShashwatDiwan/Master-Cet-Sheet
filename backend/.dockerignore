@@ -1,5 +1,9 @@
 # Maven build output
-target
+target/
+
+# Local Maven/cache folders
+.mvn-home/
+.m2/
 
 # Git
 .git
