@@ -1,6 +1,7 @@
 package com.cetsheet.backend.config;
 
 import com.cetsheet.backend.Security.Jwt.JwtAuthenticationFilter;
+import com.cetsheet.backend.Security.OAuth.OAuth2LoginSuccessHandler;
 import com.cetsheet.backend.Security.Service.CustomUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.cors.CorsConfiguration;
@@ -26,16 +27,18 @@ public class SecurityConfig {
 
     private final JwtAuthenticationFilter jwtAuthFilter;
     private final CustomUserDetailsService userDetailsService;
+    private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
             .csrf(csrf -> csrf.disable())
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
-            .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+            .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/v1/auth/**").permitAll()
                 .requestMatchers("/auth/**").permitAll()
+                .requestMatchers("/oauth2/**", "/login/oauth2/**").permitAll()
                 .requestMatchers("/health/**").permitAll()
                 .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
                 // permit preflight requests everywhere
@@ -47,6 +50,9 @@ public class SecurityConfig {
                 // all other endpoints require authentication
                 .anyRequest().authenticated()
             )
+                .oauth2Login(oauth2 -> oauth2
+                    .successHandler(oAuth2LoginSuccessHandler)
+                )
                 .userDetailsService(userDetailsService)
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 

@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import com.cetsheet.backend.Security.Jwt.JwtService;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -48,4 +49,19 @@ public class AuthService {
         String token = jwtService.generateToken(user);
         return new AuthenticationResponse(token);
     }
+
+        public AuthenticationResponse loginOrRegisterOAuthUser(String email, String username) {
+                User user = userRepository.findByEmail(email)
+                                .orElseGet(() -> {
+                                        User newUser = User.builder()
+                                                        .email(email)
+                                                        .username((username != null && !username.isBlank()) ? username : email)
+                                                        .password(passwordEncoder.encode(UUID.randomUUID().toString()))
+                                                        .build();
+                                        return userRepository.save(newUser);
+                                });
+
+                String token = jwtService.generateToken(user);
+                return new AuthenticationResponse(token);
+        }
 }
