@@ -5,6 +5,8 @@ import com.cetsheet.backend.Security.OAuth.OAuth2LoginSuccessHandler;
 import com.cetsheet.backend.Security.Service.CustomUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -18,6 +20,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
@@ -39,21 +42,30 @@ public class SecurityConfig {
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
             .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/auth/**").permitAll()
-                .requestMatchers("/oauth2/**", "/login/oauth2/**").permitAll()
-                .requestMatchers("/health/**").permitAll()
-                .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
+                .requestMatchers("/auth/**", "/api/v1/auth/**").permitAll()
+                .requestMatchers("/oauth2/**", "/login/oauth2/**", "/api/v1/oauth2/**", "/api/v1/login/oauth2/**").permitAll()
+                .requestMatchers("/health/**", "/api/v1/health/**").permitAll()
+                .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html", "/api/v1/v3/api-docs/**", "/api/v1/swagger-ui/**", "/api/v1/swagger-ui.html").permitAll()
                 // permit preflight requests everywhere
                 .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
                 // allow browsing sheets without authentication
-                .requestMatchers(org.springframework.http.HttpMethod.GET, "/sheets/**").permitAll()
+                .requestMatchers(org.springframework.http.HttpMethod.GET, "/sheets/**", "/api/v1/sheets/**").permitAll()
                 // allow retrieving chapter resources publicly
-                .requestMatchers(org.springframework.http.HttpMethod.GET, "/chapters/*/resources/**").permitAll()
+                .requestMatchers(org.springframework.http.HttpMethod.GET, "/chapters/*/resources/**", "/api/v1/chapters/*/resources/**").permitAll()
                 // all other endpoints require authentication
                 .anyRequest().authenticated()
             )
                 .oauth2Login(oauth2 -> oauth2
                     .successHandler(oAuth2LoginSuccessHandler)
+                )
+                .exceptionHandling(ex -> ex
+                    // Return JSON 401 for API callers instead of redirecting to Spring's generated OAuth login page.
+                    .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
+                    .accessDeniedHandler((request, response, accessDeniedException) -> {
+                        response.setStatus(HttpStatus.FORBIDDEN.value());
+                        response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+                        response.getWriter().write("{\"error\":\"Forbidden\",\"message\":\"Access denied\"}");
+                    })
                 )
                 .userDetailsService(userDetailsService)
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
