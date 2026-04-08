@@ -19,10 +19,15 @@ public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
 
+        private String normalizeEmail(String email) {
+                return email == null ? "" : email.trim().toLowerCase();
+        }
+
     public AuthenticationResponse register(RegisterRequest request) {
+                String normalizedEmail = normalizeEmail(request.getEmail());
         User user = User.builder()
-                .email(request.getEmail())
-                .username(request.getUsername() != null ? request.getUsername() : request.getEmail())
+                                .email(normalizedEmail)
+                                .username(request.getUsername() != null ? request.getUsername() : normalizedEmail)
                 .password(passwordEncoder.encode(request.getPassword()))
                 .build();
                 System.out.println(user);
@@ -32,11 +37,12 @@ public class AuthService {
     }
 
         public AuthenticationResponse loginOrRegisterOAuthUser(String email, String username) {
-                User user = userRepository.findByEmail(email)
+                String normalizedEmail = normalizeEmail(email);
+                User user = userRepository.findByEmailIgnoreCase(normalizedEmail)
                                 .orElseGet(() -> {
                                         User newUser = User.builder()
-                                                        .email(email)
-                                                        .username((username != null && !username.isBlank()) ? username : email)
+                                                        .email(normalizedEmail)
+                                                        .username((username != null && !username.isBlank()) ? username : normalizedEmail)
                                                         .password(passwordEncoder.encode(UUID.randomUUID().toString()))
                                                         .build();
                                         return userRepository.save(newUser);

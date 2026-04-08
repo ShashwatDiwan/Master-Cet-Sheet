@@ -57,6 +57,14 @@ public class SheetCatalogCacheService {
         getCatalog();
     }
 
+    public void refreshCatalogCache() {
+        log.info("Sheet catalog cache REFRESH started for key '{}'.", cacheProperties.cacheKey());
+        List<SheetDTO> catalog = loadCatalogFromDatabase();
+        writeCatalogToCache(catalog);
+        log.info("Sheet catalog cache REFRESH completed for key '{}' with {} sheets.",
+                cacheProperties.cacheKey(), catalog.size());
+    }
+
     private List<SheetDTO> readCatalogFromCache() {
         if (!cacheProperties.isEnabled()) {
             return null;
