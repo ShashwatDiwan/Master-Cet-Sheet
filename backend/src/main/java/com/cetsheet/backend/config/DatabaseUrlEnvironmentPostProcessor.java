@@ -18,25 +18,56 @@ public class DatabaseUrlEnvironmentPostProcessor implements EnvironmentPostProce
 
     @Override
     public void postProcessEnvironment(ConfigurableEnvironment environment, SpringApplication application) {
+        Map<String, Object> properties = new HashMap<>();
+
         String databaseUrl = firstPresent(
                 environment.getProperty("DB_URL"),
                 environment.getProperty("DATABASE_URL")
         );
 
-        if (databaseUrl == null || databaseUrl.isBlank()) {
-            return;
+        if (hasText(databaseUrl)) {
+            if (databaseUrl.startsWith("jdbc:")) {
+                properties.put("spring.datasource.url", databaseUrl);
+            } else if (databaseUrl.startsWith("postgres://") || databaseUrl.startsWith("postgresql://")) {
+                addPostgresProperties(databaseUrl, environment, properties);
+            }
         }
 
-        Map<String, Object> properties = new HashMap<>();
-        if (databaseUrl.startsWith("jdbc:")) {
-            properties.put("spring.datasource.url", databaseUrl);
-        } else if (databaseUrl.startsWith("postgres://") || databaseUrl.startsWith("postgresql://")) {
-            addPostgresProperties(databaseUrl, environment, properties);
-        }
+        addOAuthRegistration(
+                properties,
+                "google",
+                environment.getProperty("GOOGLE_CLIENT_ID"),
+                environment.getProperty("GOOGLE_CLIENT_SECRET"),
+                "openid,profile,email"
+        );
+        addOAuthRegistration(
+                properties,
+                "github",
+                environment.getProperty("GITHUB_CLIENT_ID"),
+                environment.getProperty("GITHUB_CLIENT_SECRET"),
+                "read:user,user:email"
+        );
 
         if (!properties.isEmpty()) {
             environment.getPropertySources().addFirst(new MapPropertySource(PROPERTY_SOURCE_NAME, properties));
         }
+    }
+
+    private void addOAuthRegistration(
+            Map<String, Object> properties,
+            String provider,
+            String clientId,
+            String clientSecret,
+            String scope
+    ) {
+        if (!hasText(clientId) || !hasText(clientSecret)) {
+            return;
+        }
+
+        String prefix = "spring.security.oauth2.client.registration." + provider;
+        properties.put(prefix + ".client-id", clientId);
+        properties.put(prefix + ".client-secret", clientSecret);
+        properties.put(prefix + ".scope", scope);
     }
 
     private void addPostgresProperties(

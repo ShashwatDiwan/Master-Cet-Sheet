@@ -14,11 +14,13 @@ import java.util.List;
 import java.util.Arrays;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -31,6 +33,7 @@ public class SecurityConfig {
     private final JwtAuthenticationFilter jwtAuthFilter;
     private final CustomUserDetailsService userDetailsService;
     private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
+    private final ObjectProvider<ClientRegistrationRepository> clientRegistrationRepository;
 
     @Value("${app.cors.allowed-origin-patterns:http://localhost:5173,http://localhost:5174,http://127.0.0.1:5173,http://127.0.0.1:5174,https://cet-sheet.vercel.app,https://*.vercel.app}")
     private String allowedOriginPatterns;
@@ -55,9 +58,6 @@ public class SecurityConfig {
                 // all other endpoints require authentication
                 .anyRequest().authenticated()
             )
-                .oauth2Login(oauth2 -> oauth2
-                    .successHandler(oAuth2LoginSuccessHandler)
-                )
                 .exceptionHandling(ex -> ex
                     // Return JSON 401 for API callers instead of redirecting to Spring's generated OAuth login page.
                     .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
@@ -69,6 +69,12 @@ public class SecurityConfig {
                 )
                 .userDetailsService(userDetailsService)
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+
+        if (clientRegistrationRepository.getIfAvailable() != null) {
+            http.oauth2Login(oauth2 -> oauth2
+                    .successHandler(oAuth2LoginSuccessHandler)
+            );
+        }
 
         return http.build();
     }
