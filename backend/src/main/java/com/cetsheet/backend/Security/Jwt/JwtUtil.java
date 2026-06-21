@@ -1,6 +1,7 @@
 package com.cetsheet.backend.Security.Jwt;
 
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
@@ -10,6 +11,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Date;
 import java.util.function.Function;
 
@@ -23,8 +27,38 @@ public class JwtUtil {
     private long expirationMs;
 
     private SecretKey getSignInKey() {
-        byte[] keyBytes = Decoders.BASE64.decode(secret);
+        if (secret == null || secret.isBlank()) {
+            throw new JwtException("JWT secret is not configured");
+        }
+
+        byte[] keyBytes = resolveKeyBytes(secret.trim());
         return Keys.hmacShaKeyFor(keyBytes);
+    }
+
+    private byte[] resolveKeyBytes(String configuredSecret) {
+        try {
+            byte[] decoded = Decoders.BASE64.decode(configuredSecret);
+            if (decoded.length >= 32) {
+                return decoded;
+            }
+        } catch (IllegalArgumentException ignored) {
+            // Plain text secrets are supported for local/dev env vars.
+        }
+
+        byte[] raw = configuredSecret.getBytes(StandardCharsets.UTF_8);
+        if (raw.length >= 32) {
+            return raw;
+        }
+
+        return sha256(raw);
+    }
+
+    private byte[] sha256(byte[] value) {
+        try {
+            return MessageDigest.getInstance("SHA-256").digest(value);
+        } catch (NoSuchAlgorithmException ex) {
+            throw new IllegalStateException("Unable to derive a JWT signing key", ex);
+        }
     }
 
     public String generateToken(String username) {

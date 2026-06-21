@@ -16,7 +16,6 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -52,42 +51,6 @@ public class PlanMyDayService {
         Create realistic, time-blocked day plans.
         Prioritize using weightage, completion, and revision status.
         Return only valid JSON.
-            """;
-
-    private static final String USER_PROMPT_TEMPLATE = """
-        Create a one-day study plan in JSON.
-
-        Rules:
-        - Total minutes <= {availableMinutes}
-        - Each task duration must be between {minBlockMinutes} and {maxSessionMinutes}
-        - Use only chapterId from the list
-        - Prefer incomplete + high weightage chapters first
-        - Respect the day type preference while selecting tasks
-        - Keep reasons short
-
-        Student preferences:
-        - Date: {planDate}
-        - Day type: {dayType}
-        - Include revision: {includeRevision}
-        - Extra instruction: {additionalInstructions}
-
-        Chapters JSON:
-            {chapterCatalogJson}
-
-        Return exactly this schema:
-            {
-              "summary": "short daily strategy",
-              "tasks": [
-                {
-                  "chapterId": 123,
-                  "durationMinutes": 45,
-                  "revision": false,
-                  "reason": "high weightage and pending completion"
-                }
-              ]
-            }
-
-            Return only valid JSON.
             """;
 
     private final SheetService sheetService;
@@ -141,16 +104,7 @@ public class PlanMyDayService {
                 .map(this::toPromptChapter)
                 .toList());
 
-        String userPrompt = new PromptTemplate(USER_PROMPT_TEMPLATE).render(Map.of(
-                "availableMinutes", normalized.availableMinutes(),
-                "minBlockMinutes", MIN_BLOCK_MINUTES,
-                "maxSessionMinutes", normalized.maxSessionMinutes(),
-                "planDate", planDate,
-                "dayType", normalized.dayType().name(),
-                "includeRevision", normalized.includeRevision(),
-                "additionalInstructions", normalized.additionalInstructions(),
-                "chapterCatalogJson", promptCatalogJson
-        ));
+        String userPrompt = buildUserPrompt(normalized, planDate, promptCatalogJson);
 
         AiPlanOutput aiOutput = null;
         boolean fallbackUsed = false;
@@ -173,6 +127,53 @@ public class PlanMyDayService {
         }
 
         return buildResponse(planDate, normalized, plannedTasks, promptCandidates, aiOutput, fallbackUsed, userPrompt);
+    }
+
+    private String buildUserPrompt(NormalizedRequest normalized, String planDate, String chapterCatalogJson) {
+        return """
+        Create a one-day study plan in JSON.
+
+        Rules:
+        - Total minutes <= %d
+        - Each task duration must be between %d and %d
+        - Use only chapterId from the list
+        - Prefer incomplete + high weightage chapters first
+        - Respect the day type preference while selecting tasks
+        - Keep reasons short
+
+        Student preferences:
+        - Date: %s
+        - Day type: %s
+        - Include revision: %s
+        - Extra instruction: %s
+
+        Chapters JSON:
+            %s
+
+        Return exactly this schema:
+            {
+              "summary": "short daily strategy",
+              "tasks": [
+                {
+                  "chapterId": 123,
+                  "durationMinutes": 45,
+                  "revision": false,
+                  "reason": "high weightage and pending completion"
+                }
+              ]
+            }
+
+            Return only valid JSON.
+            """.formatted(
+                normalized.availableMinutes(),
+                MIN_BLOCK_MINUTES,
+                normalized.maxSessionMinutes(),
+                planDate,
+                normalized.dayType().name(),
+                normalized.includeRevision(),
+                normalized.additionalInstructions(),
+                chapterCatalogJson
+        );
     }
 
     private PlanMyDayResponseDTO buildResponse(
@@ -351,16 +352,23 @@ public class PlanMyDayService {
 
         List<ChapterCandidate> candidates = new ArrayList<>();
         for (SheetDTO sheet : sourceSheets) {
+            if (sheet == null || sheet.getChapters() == null || sheet.getChapters().isEmpty()) {
+                continue;
+            }
+
             for (ChapterDTO chapter : sheet.getChapters()) {
+                if (chapter == null) {
+                    continue;
+                }
                 if (!includeRevision && chapter.isCompleted()) {
                     continue;
                 }
 
                 ChapterCandidate candidate = ChapterCandidate.builder()
                         .chapterId(chapter.getChapterId())
-                        .chapterName(chapter.getChapterName())
-                        .sheetName(sheet.getSheetName())
-                        .subject(sheet.getSubject())
+                        .chapterName(defaultIfBlank(chapter.getChapterName(), "Untitled chapter"))
+                        .sheetName(defaultIfBlank(sheet.getSheetName(), "Study sheet"))
+                        .subject(defaultIfBlank(sheet.getSubject(), "General"))
                         .weightage(chapter.getWeightage())
                         .completed(chapter.isCompleted())
                         .revised(chapter.isRevised())
@@ -373,6 +381,10 @@ public class PlanMyDayService {
 
         candidates.sort(Comparator.comparingDouble(ChapterCandidate::getPriorityScore).reversed());
         return candidates;
+    }
+
+    private String defaultIfBlank(String value, String fallback) {
+        return value == null || value.isBlank() ? fallback : value;
     }
 
     private PromptChapter toPromptChapter(ChapterCandidate candidate) {

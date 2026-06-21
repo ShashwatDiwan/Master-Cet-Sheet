@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
@@ -57,8 +58,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                     SecurityContextHolder.getContext().setAuthentication(authToken);
                 }
             }
-        } catch (JwtException | IllegalArgumentException ex) {
-            // Expired or malformed JWT should not break the request pipeline.
+        } catch (JwtException | IllegalArgumentException | AuthenticationException ex) {
+            // Expired, malformed, or stale JWTs should not break the request pipeline.
             // Leave the request unauthenticated and let security rules return 401 where required.
             SecurityContextHolder.clearContext();
         }
