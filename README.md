@@ -51,6 +51,27 @@ A backend built for low-latency access and predictable performance under real cl
 
 <br/>
 
+## Screenshots
+
+<table>
+<tr>
+<td width="50%"><img width="2558" height="1146" alt="dashboard" src="https://github.com/user-attachments/assets/fbbe4f3f-6099-4979-95c8-a2cde3c970bb" />
+</td>
+<td width="50%"><img width="2560" height="1120" alt="mockup" src="https://github.com/user-attachments/assets/0163d416-8bf2-4b66-91eb-7ba2af134bbd" />
+</td>
+</tr>
+<tr>
+<td width="50%"><img width="2560" height="1130" alt="overview" src="https://github.com/user-attachments/assets/bbb79053-5607-44fe-bea5-ec78f979f40d" />
+</td>
+<td width="50%"><img width="2560" height="1384" alt="sheets" src="https://github.com/user-attachments/assets/a05c89a7-8320-4506-866f-da8c114f4e2f" />
+</td>
+</tr>
+</table>
+
+<p align="center"><i>click image to enlarge</i></p>
+
+<br/>
+
 ## System Architecture
 
 ```mermaid
@@ -154,27 +175,6 @@ sequenceDiagram
 </p>
 
 <p align="center"><i>Backend: Java, Spring Boot, Spring Security, Hibernate/JPA · Caching: Redis · Auth: JWT · Deployment: Docker<br/>Update the database icon above if your project uses MySQL instead of PostgreSQL. Add frontend framework icons once confirmed.</i></p>
-
-<br/>
-
-## Screenshots
-
-<table>
-<tr>
-<td width="50%"><img width="2558" height="1146" alt="dashboard" src="https://github.com/user-attachments/assets/fbbe4f3f-6099-4979-95c8-a2cde3c970bb" />
-</td>
-<td width="50%"><img width="2560" height="1120" alt="mockup" src="https://github.com/user-attachments/assets/0163d416-8bf2-4b66-91eb-7ba2af134bbd" />
-</td>
-</tr>
-<tr>
-<td width="50%"><img width="2560" height="1130" alt="overview" src="https://github.com/user-attachments/assets/bbb79053-5607-44fe-bea5-ec78f979f40d" />
-</td>
-<td width="50%"><img width="2560" height="1384" alt="sheets" src="https://github.com/user-attachments/assets/a05c89a7-8320-4506-866f-da8c114f4e2f" />
-</td>
-</tr>
-</table>
-
-<p align="center"><i>click image to enlarge</i></p>
 
 <br/>
 
