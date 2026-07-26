@@ -161,16 +161,20 @@ sequenceDiagram
 
 <table>
 <tr>
-<td width="50%"><img src="https://placehold.co/640x400/1e1b4b/e0e7ff?text=Dashboard&font=roboto" width="100%"/></td>
-<td width="50%"><img src="https://placehold.co/640x400/1e1b4b/e0e7ff?text=Progress+Tracker&font=roboto" width="100%"/></td>
+<td width="50%"><img width="2558" height="1146" alt="dashboard" src="https://github.com/user-attachments/assets/fbbe4f3f-6099-4979-95c8-a2cde3c970bb" />
+</td>
+<td width="50%"><img width="2560" height="1120" alt="mockup" src="https://github.com/user-attachments/assets/0163d416-8bf2-4b66-91eb-7ba2af134bbd" />
+</td>
 </tr>
 <tr>
-<td width="50%"><img src="https://placehold.co/640x400/1e1b4b/e0e7ff?text=Login&font=roboto" width="100%"/></td>
-<td width="50%"><img src="https://placehold.co/640x400/1e1b4b/e0e7ff?text=Resource+Explorer&font=roboto" width="100%"/></td>
+<td width="50%"><img width="2560" height="1130" alt="overview" src="https://github.com/user-attachments/assets/bbb79053-5607-44fe-bea5-ec78f979f40d" />
+</td>
+<td width="50%"><img width="2560" height="1384" alt="sheets" src="https://github.com/user-attachments/assets/a05c89a7-8320-4506-866f-da8c114f4e2f" />
+</td>
 </tr>
 </table>
 
-<p align="center"><i>Replace each image URL above with real UI screenshots once uploaded to an /assets folder.</i></p>
+<p align="center"><i>click image to enlarge</i></p>
 
 <br/>
 
@@ -180,7 +184,7 @@ sequenceDiagram
   <img src="https://placehold.co/960x520/0f172a/e0e7ff?text=Demo+Video+%E2%80%94+Coming+Soon&font=roboto" width="100%"/>
 </p>
 
-<p align="center"><i>Will be replaced with an embedded walkthrough of the dashboard, resource tracker, and auth flow.</i></p>
+<p align="center"><i>Demo</i></p>
 
 <br/>
 
