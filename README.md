@@ -1,4 +1,4 @@
-![Master-Cet-Sheet](https://socialify.git.ci/ShashwatDiwan/Master-Cet-Sheet/image?custom_description=A+smart+study+platform+designed+to+organize+MHT-CET+resources+and+make+preparation+structured+and+efficient.&custom_language=Python&description=1&font=Jost&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Light)<div align="center">
+![Master-Cet-Sheet](https://socialify.git.ci/ShashwatDiwan/Master-Cet-Sheet/image?custom_description=A+smart+study+platform+designed+to+organize+MHT-CET+resources+and+make%0Apreparation+structured+and+efficient.&custom_language=Spring+Boot&description=1&font=Jost&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Light)
 
 <p align="center">
   <img src="https://img.shields.io/website?url=https%3A%2F%2Fcet-sheet.tech&style=flat-square&label=live%20site&up_message=online&down_message=offline&up_color=4F46E5&down_color=critical"/>
