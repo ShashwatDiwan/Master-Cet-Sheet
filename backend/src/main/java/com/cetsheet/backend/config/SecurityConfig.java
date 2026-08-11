@@ -47,6 +47,7 @@ public class SecurityConfig {
                 .requestMatchers("/auth/**", "/api/v1/auth/**").permitAll()
                 .requestMatchers("/oauth2/**", "/login/oauth2/**", "/api/v1/oauth2/**", "/api/v1/login/oauth2/**").permitAll()
                 .requestMatchers("/health/**", "/api/v1/health/**").permitAll()
+                .requestMatchers("/actuator/health/**", "/actuator/prometheus", "/api/v1/actuator/health/**", "/api/v1/actuator/prometheus").permitAll()
                 .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html", "/api/v1/v3/api-docs/**", "/api/v1/swagger-ui/**", "/api/v1/swagger-ui.html").permitAll()
                 // permit preflight requests everywhere
                 .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
