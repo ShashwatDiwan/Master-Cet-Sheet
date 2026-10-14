@@ -17,6 +17,8 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -83,13 +85,56 @@ class ViewerUrlServiceTest {
 
     @Test
     void rateLimitsAndAuditsRepeatedRequests() {
-        when(values.increment(anyString())).thenReturn(16L, 1L);
+        when(values.increment(anyString())).thenReturn(16L);
+        when(redisTemplate.getExpire(anyString(), any())).thenReturn(521L);
+        when(resourceRepository.existsById(7)).thenReturn(true);
+        ResourceFile file = new ResourceFile();
+        file.setObjectKey("resources/physics/chapter-1/notes/resource-7/v1.pdf");
+        when(resourceFileRepository.findById(7)).thenReturn(Optional.of(file));
 
-        assertThrows(ViewerUrlRateLimitException.class, () -> service.issue(5L, 7));
+        ViewerUrlRateLimitException exception = assertThrows(ViewerUrlRateLimitException.class, () -> service.issue(5L, 7));
 
-        verify(resourceRepository, never()).existsById(any());
+        assertEquals(521L, exception.getRetryAfterSeconds());
+        verify(storageService, never()).createSignedUrl(anyString());
         ArgumentCaptor<ViewerUrlAudit> audit = ArgumentCaptor.forClass(ViewerUrlAudit.class);
         verify(auditRepository).save(audit.capture());
         assertEquals("RATE_LIMITED", audit.getValue().getOutcome());
+    }
+
+    @Test
+    void appliesTheDailyBoundaryAfterTheTwoHundredthUrl() {
+        ResourceFile file = new ResourceFile();
+        file.setObjectKey("resources/physics/chapter-1/notes/resource-7/v1.pdf");
+        when(resourceRepository.existsById(7)).thenReturn(true);
+        when(resourceFileRepository.findById(7)).thenReturn(Optional.of(file));
+        when(values.increment(anyString())).thenReturn(1L, 201L);
+
+        ViewerUrlRateLimitException exception = assertThrows(ViewerUrlRateLimitException.class, () -> service.issue(5L, 7));
+
+        assertTrue(exception.getRetryAfterSeconds() > 0);
+        verify(storageService, never()).createSignedUrl(anyString());
+    }
+
+    @Test
+    void allowsTheFifteenthResourceUrlAndTwoHundredthDailyUrl() {
+        ResourceFile file = new ResourceFile();
+        file.setObjectKey("resources/physics/chapter-1/notes/resource-7/v1.pdf");
+        when(resourceRepository.existsById(7)).thenReturn(true);
+        when(resourceFileRepository.findById(7)).thenReturn(Optional.of(file));
+        when(values.increment(anyString())).thenReturn(15L, 200L);
+        when(storageService.createSignedUrl(file.getObjectKey())).thenReturn("https://storage.example/signed");
+
+        assertDoesNotThrow(() -> service.issue(5L, 7));
+
+        verify(storageService).createSignedUrl(file.getObjectKey());
+    }
+
+    @Test
+    void doesNotSpendQuotaForAnUnavailableResource() {
+        when(resourceRepository.existsById(7)).thenReturn(false);
+
+        assertThrows(ResponseStatusException.class, () -> service.issue(5L, 7));
+
+        verify(values, never()).increment(anyString());
     }
 }

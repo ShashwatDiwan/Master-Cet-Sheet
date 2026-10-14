@@ -16,6 +16,8 @@ import org.springframework.web.server.ResponseStatusException;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
+import java.time.ZoneOffset;
+import java.util.concurrent.TimeUnit;
 
 @Service
 @RequiredArgsConstructor
@@ -33,13 +35,6 @@ public class ViewerUrlService {
     private final SupabaseStorageProperties storageProperties;
 
     public ViewerUrlResponse issue(Long userId, int resourceId) {
-        try {
-            consumeQuota(userId, resourceId);
-        } catch (ViewerUrlRateLimitException ex) {
-            audit(userId, resourceId, "RATE_LIMITED", "quota exceeded");
-            throw ex;
-        }
-
         if (!resourceRepository.existsById(resourceId)) {
             audit(userId, resourceId, "NOT_FOUND", "resource not found");
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Resource not found");
@@ -49,6 +44,13 @@ public class ViewerUrlService {
             audit(userId, resourceId, "NOT_READY", "private file not uploaded");
             return new ResponseStatusException(HttpStatus.NOT_FOUND, "PDF is not available yet");
         });
+
+        try {
+            consumeQuota(userId, resourceId);
+        } catch (ViewerUrlRateLimitException ex) {
+            audit(userId, resourceId, "RATE_LIMITED", "quota exceeded");
+            throw ex;
+        }
 
         try {
             String signedUrl = storageService.createSignedUrl(file.getObjectKey());
@@ -63,10 +65,16 @@ public class ViewerUrlService {
 
     private void consumeQuota(Long userId, int resourceId) {
         try {
-            long resourceCount = increment("viewer-url:resource:" + userId + ":" + resourceId, RESOURCE_WINDOW);
-            long dailyCount = increment("viewer-url:day:" + LocalDate.now() + ":" + userId, DAILY_WINDOW);
-            if (resourceCount > RESOURCE_WINDOW_LIMIT || dailyCount > DAILY_LIMIT) {
-                throw new ViewerUrlRateLimitException(RESOURCE_WINDOW.toSeconds());
+            String resourceKey = "viewer-url:resource:" + userId + ":" + resourceId;
+            long resourceCount = increment(resourceKey, RESOURCE_WINDOW);
+            if (resourceCount > RESOURCE_WINDOW_LIMIT) {
+                throw new ViewerUrlRateLimitException(retryAfter(resourceKey, RESOURCE_WINDOW));
+            }
+
+            String dailyKey = "viewer-url:day:" + LocalDate.now(ZoneOffset.UTC) + ":" + userId;
+            long dailyCount = increment(dailyKey, DAILY_WINDOW);
+            if (dailyCount > DAILY_LIMIT) {
+                throw new ViewerUrlRateLimitException(secondsUntilNextUtcDay());
             }
         } catch (ViewerUrlRateLimitException ex) {
             throw ex;
@@ -81,6 +89,16 @@ public class ViewerUrlService {
             redisTemplate.expire(key, duration);
         }
         return value == null ? Long.MAX_VALUE : value;
+    }
+
+    private long retryAfter(String key, Duration fallback) {
+        Long remaining = redisTemplate.getExpire(key, TimeUnit.SECONDS);
+        return remaining != null && remaining > 0 ? remaining : fallback.toSeconds();
+    }
+
+    private long secondsUntilNextUtcDay() {
+        Instant nextMidnight = LocalDate.now(ZoneOffset.UTC).plusDays(1).atStartOfDay(ZoneOffset.UTC).toInstant();
+        return Math.max(1, Duration.between(Instant.now(), nextMidnight).toSeconds());
     }
 
     private void audit(Long userId, int resourceId, String outcome, String reason) {

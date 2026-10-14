@@ -44,6 +44,7 @@ public class ResourceUploadRunner implements ApplicationRunner {
     private final ResourceFileRepository resourceFileRepository;
     private final ResourceObjectKeyFactory objectKeyFactory;
     private final SupabaseStorageService storageService;
+    private final SheetCatalogCacheService sheetCatalogCacheService;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
@@ -63,8 +64,9 @@ public class ResourceUploadRunner implements ApplicationRunner {
         }
 
         for (ManifestEntry entry : entries) {
-            upload(entry);
+            uploadOrRecover(entry);
         }
+        sheetCatalogCacheService.refreshCatalogCache();
         log.info("Resource upload completed for {} files.", entries.size());
     }
 
@@ -82,6 +84,9 @@ public class ResourceUploadRunner implements ApplicationRunner {
             if (!Files.isRegularFile(source) || !source.getFileName().toString().toLowerCase(Locale.ROOT).endsWith(".pdf")) {
                 throw new IllegalArgumentException("Manifest source is not a PDF file: " + source);
             }
+            if (!hasPdfSignature(source)) {
+                throw new IllegalArgumentException("Manifest source does not have a PDF signature: " + source);
+            }
             if (Files.size(source) > storageProperties.getMaxFileBytes()) {
                 throw new IllegalArgumentException("Manifest file exceeds configured Storage limit: " + source);
             }
@@ -97,7 +102,19 @@ public class ResourceUploadRunner implements ApplicationRunner {
         }
     }
 
-    private void upload(ManifestEntry entry) throws IOException, NoSuchAlgorithmException {
+    private boolean hasPdfSignature(Path source) throws IOException {
+        byte[] signature = new byte[5];
+        try (InputStream input = Files.newInputStream(source)) {
+            return input.read(signature) == signature.length
+                    && signature[0] == '%'
+                    && signature[1] == 'P'
+                    && signature[2] == 'D'
+                    && signature[3] == 'F'
+                    && signature[4] == '-';
+        }
+    }
+
+    private void uploadOrRecover(ManifestEntry entry) throws IOException, NoSuchAlgorithmException {
         Resource resource = resourceRepository.findById(entry.getResourceId())
                 .orElseThrow(() -> new IllegalArgumentException("Resource not found: " + entry.getResourceId()));
         Path source = Path.of(entry.getSourcePath());
@@ -106,23 +123,61 @@ public class ResourceUploadRunner implements ApplicationRunner {
                 entry.getResourceId(), entry.getVersion());
         String sha256 = sha256(source);
 
+        long sizeBytes = Files.size(source);
         ResourceFile existing = resourceFileRepository.findById(entry.getResourceId()).orElse(null);
-        if (existing != null && sha256.equals(existing.getSha256()) && objectKey.equals(existing.getObjectKey())) {
-            log.info("Skipping resource {}: matching object metadata already exists.", entry.getResourceId());
+        java.util.Optional<SupabaseStorageService.StoredPdf> remote = storageService.verifyPdf(objectKey);
+
+        if (remote.isPresent()) {
+            if (!remote.get().matches(sizeBytes, sha256)) {
+                throw new IllegalStateException("Refusing to overwrite an existing Supabase object with different content: " + objectKey);
+            }
+
+            if (matches(existing, objectKey, sizeBytes, sha256)) {
+                log.info("Skipping resource {}: Storage object and database metadata are verified.", entry.getResourceId());
+                return;
+            }
+
+            // Recovery path: Storage accepted a prior upload but the process stopped
+            // before its database transaction completed. The object is verified first.
+            saveMetadata(existing, resource, objectKey, entry.getVersion(), sizeBytes, sha256);
+            log.info("Recovered metadata for previously uploaded resource {}.", entry.getResourceId());
             return;
         }
 
         storageService.uploadPdf(objectKey, source);
+        SupabaseStorageService.StoredPdf verified = storageService.verifyPdf(objectKey)
+                .orElseThrow(() -> new IllegalStateException("Supabase did not retain uploaded object: " + objectKey));
+        if (!verified.matches(sizeBytes, sha256)) {
+            throw new IllegalStateException("Supabase object hash or size did not match the local PDF: " + objectKey);
+        }
+        saveMetadata(existing, resource, objectKey, entry.getVersion(), sizeBytes, sha256);
+        log.info("Uploaded and verified resource {} at {}.", entry.getResourceId(), objectKey);
+    }
+
+    private boolean matches(ResourceFile existing, String objectKey, long sizeBytes, String sha256) {
+        return existing != null
+                && objectKey.equals(existing.getObjectKey())
+                && Long.valueOf(sizeBytes).equals(existing.getSizeBytes())
+                && sha256.equalsIgnoreCase(existing.getSha256());
+    }
+
+    private void saveMetadata(
+            ResourceFile existing,
+            Resource resource,
+            String objectKey,
+            int version,
+            long sizeBytes,
+            String sha256
+    ) {
         ResourceFile stored = existing == null ? new ResourceFile() : existing;
         stored.setResource(resource);
         stored.setObjectKey(objectKey);
-        stored.setVersion(entry.getVersion());
+        stored.setVersion(version);
         stored.setContentType("application/pdf");
-        stored.setSizeBytes(Files.size(source));
+        stored.setSizeBytes(sizeBytes);
         stored.setSha256(sha256);
         stored.setUploadedAt(Instant.now());
         resourceFileRepository.save(stored);
-        log.info("Uploaded resource {} to {}.", entry.getResourceId(), objectKey);
     }
 
     private String sha256(Path source) throws IOException, NoSuchAlgorithmException {

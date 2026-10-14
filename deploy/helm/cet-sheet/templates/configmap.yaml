@@ -13,3 +13,7 @@ data:
   SERVER_PORT: {{ .Values.backend.service.port | quote }}
   APP_CORS_ALLOWED_ORIGIN_PATTERNS: {{ .Values.backend.env.corsAllowedOriginPatterns | quote }}
   APP_OAUTH2_REDIRECT_URI: {{ .Values.backend.env.oauthRedirectUri | quote }}
+  SUPABASE_URL: {{ .Values.backend.env.supabaseUrl | quote }}
+  SUPABASE_STORAGE_BUCKET: {{ .Values.backend.env.supabaseStorageBucket | quote }}
+  SUPABASE_SIGNED_URL_TTL_SECONDS: {{ .Values.backend.env.supabaseSignedUrlTtlSeconds | quote }}
+  SUPABASE_STORAGE_MAX_FILE_BYTES: {{ .Values.backend.env.supabaseStorageMaxFileBytes | quote }}
