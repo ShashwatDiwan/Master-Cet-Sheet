@@ -12,7 +12,7 @@ public class ResourceDTO {
     private Integer resourceId;
     private String resourceName;
     private ResourceType type;
-    private String driveFileId;
-    private String previewUrl; // Computed Google Drive preview URL
+    /** Availability only. Object keys and signed URLs are never catalog data. */
+    private boolean viewerAvailable;
 }
 

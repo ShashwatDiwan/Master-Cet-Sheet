@@ -2,21 +2,22 @@ package com.cetsheet.backend.Services;
 
 import com.cetsheet.backend.Model.Chapter;
 import com.cetsheet.backend.Model.Resource;
-import com.cetsheet.backend.Model.ResourceType;
 import com.cetsheet.backend.Model.Sheet;
 import com.cetsheet.backend.Repository.ResourceRepository;
 import com.cetsheet.backend.Repository.SheetRepository;
 import com.cetsheet.backend.config.SheetCatalogCacheProperties;
-import com.cetsheet.backend.dto.ChapterDTO;
 import com.cetsheet.backend.dto.ResourceDTO;
 import com.cetsheet.backend.dto.SheetDTO;
+import com.cetsheet.backend.mapper.SheetProgressMapper;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,12 +31,14 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class SheetCatalogCacheService {
 
+    //logs cache hits, misses, refreshes and failures
     private static final Logger log = LoggerFactory.getLogger(SheetCatalogCacheService.class);
     private static final TypeReference<List<SheetDTO>> SHEET_LIST_TYPE = new TypeReference<>() { };
 
     private final SheetRepository sheetRepository;
     private final ResourceRepository resourceRepository;
     private final ResourceService resourceService;
+    private final SheetProgressMapper sheetProgressMapper;
     private final StringRedisTemplate redisTemplate;
     private final ObjectMapper objectMapper;
     private final SheetCatalogCacheProperties cacheProperties;
@@ -51,6 +54,22 @@ public class SheetCatalogCacheService {
         List<SheetDTO> catalog = loadCatalogFromDatabase();
         writeCatalogToCache(catalog);
         return catalog;
+    }
+
+    public SheetDTO findCatalogSheetById(int sheetId) {
+        return getCatalog().stream()
+                .filter(sheet -> sheet.getSheetId() == sheetId)
+                .findFirst()
+                .orElseThrow(() -> new ResponseStatusException(
+                        HttpStatus.NOT_FOUND, "Sheet with ID " + sheetId + " not found"));
+    }
+
+    public SheetDTO findCatalogSheetByName(String sheetName) {
+        return getCatalog().stream()
+                .filter(sheet -> sheet.getSheetName().equalsIgnoreCase(sheetName))
+                .findFirst()
+                .orElseThrow(() -> new ResponseStatusException(
+                        HttpStatus.NOT_FOUND, "Sheet with name " + sheetName + " not found"));
     }
 
     public void warmCatalogCache() {
@@ -100,15 +119,12 @@ public class SheetCatalogCacheService {
     private List<SheetDTO> loadCatalogFromDatabase() {
         List<Sheet> sheets = sheetRepository.findAllWithChapters();
         Map<Integer, List<ResourceDTO>> resourcesByChapterId = loadResourcesByChapterId(sheets);
-
-        List<SheetDTO> result = new ArrayList<>();
-        for (Sheet sheet : sheets) {
-            result.add(toCatalogSheetDto(sheet, resourcesByChapterId));
-        }
-        return result;
+        return sheetProgressMapper.toCatalogDtos(sheets, resourcesByChapterId);
     }
 
-    private Map<Integer, List<ResourceDTO>> loadResourcesByChapterId(List<Sheet> sheets) {
+    private Map<Integer, List<ResourceDTO>> loadResourcesByChapterId(
+            List<Sheet> sheets
+    ) {
         List<Integer> chapterIds = sheets.stream()
                 .flatMap(sheet -> sheet.getChapters().stream())
                 .map(Chapter::getChapterId)
@@ -128,45 +144,5 @@ public class SheetCatalogCacheService {
                         LinkedHashMap::new,
                         Collectors.mapping(resourceService::toDto, Collectors.toList())
                 ));
-    }
-
-    private SheetDTO toCatalogSheetDto(Sheet sheet, Map<Integer, List<ResourceDTO>> resourcesByChapterId) {
-        SheetDTO dto = new SheetDTO();
-        dto.setSheetId(sheet.getSheetId());
-        dto.setSheetName(sheet.getSheetName());
-        dto.setSubject(sheet.getSubject());
-        dto.setDescription(sheet.getDescription());
-
-        List<ChapterDTO> chapterDTOs = sheet.getChapters().stream()
-                .sorted(Comparator.comparingInt(Chapter::getChapterId))
-                .map(chapter -> toCatalogChapterDto(chapter, resourcesByChapterId))
-                .toList();
-
-        dto.setTotalChapters(chapterDTOs.size());
-        dto.setCompletedChapters(0);
-        dto.setChapters(chapterDTOs);
-        return dto;
-    }
-
-    private ChapterDTO toCatalogChapterDto(Chapter chapter, Map<Integer, List<ResourceDTO>> resourcesByChapterId) {
-        ChapterDTO dto = new ChapterDTO();
-        dto.setChapterId(chapter.getChapterId());
-        dto.setChapterName(chapter.getChapterName());
-        dto.setWeightage(chapter.getWeightage());
-
-        List<ResourceDTO> resources = new ArrayList<>(
-                resourcesByChapterId.getOrDefault(chapter.getChapterId(), Collections.emptyList())
-        );
-        dto.setResources(resources);
-        dto.setCompleted(false);
-        dto.setRevised(false);
-        dto.setHasNotes(hasResourceType(resources, ResourceType.NOTES));
-        dto.setHasShortNotes(hasResourceType(resources, ResourceType.SHORT_NOTES));
-        dto.setHasPyqs(hasResourceType(resources, ResourceType.PYQS));
-        return dto;
-    }
-
-    private boolean hasResourceType(List<ResourceDTO> resources, ResourceType type) {
-        return resources.stream().anyMatch(resource -> resource.getType() == type);
     }
 }

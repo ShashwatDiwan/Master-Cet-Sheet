@@ -9,7 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 
 @Configuration
-@EnableConfigurationProperties(SheetCatalogCacheProperties.class)
+@EnableConfigurationProperties({SheetCatalogCacheProperties.class, SupabaseStorageProperties.class, ResourceUploadProperties.class})
 public class AppConfig {
 
     @Bean

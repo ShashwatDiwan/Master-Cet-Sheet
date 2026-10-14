@@ -1,0 +1,47 @@
+frontend:
+  image:
+    repository: ghcr.io/your-github-username/cet-sheet-frontend
+    tag: latest
+    pullPolicy: IfNotPresent
+  replicas: 1
+  service:
+    port: 80
+
+backend:
+  image:
+    repository: ghcr.io/your-github-username/cet-sheet-backend
+    tag: latest
+    pullPolicy: IfNotPresent
+  replicas: 1
+  service:
+    port: 8080
+  env:
+    corsAllowedOriginPatterns: "http://cet-sheet.local,http://localhost:3000"
+    oauthRedirectUri: "http://cet-sheet.local/oauth/callback"
+  secrets:
+    appJwtSecret: "Q2hhbmdlTWVUb0FiYXNlNjRTZWNyZXRLZXlGb3JEZW1vMTIzNDU="
+    geminiApiKey: "replace-with-gemini-api-key"
+    googleClientId: ""
+    googleClientSecret: ""
+    githubClientId: ""
+    githubClientSecret: ""
+
+postgres:
+  image: postgres:16-alpine
+  database: CetSheet
+  username: postgres
+  password: "0000"
+  storageSize: 1Gi
+
+redis:
+  image: redis:7-alpine
+  storageSize: 512Mi
+
+ingress:
+  enabled: true
+  className: nginx
+  host: cet-sheet.local
+
+serviceMonitor:
+  enabled: false
+  interval: 30s

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cet-sheet-config
+  labels:
+    {{- include "cet-sheet.labels" . | nindent 4 }}
+data:
+  SPRING_DATASOURCE_URL: jdbc:postgresql://cet-sheet-postgres:5432/{{ .Values.postgres.database }}
+  SPRING_DATASOURCE_USERNAME: {{ .Values.postgres.username | quote }}
+  SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+  SPRING_DATA_REDIS_URL: redis://cet-sheet-redis:6379
+  SPRING_DATA_REDIS_REPOSITORIES_ENABLED: "false"
+  SERVER_PORT: {{ .Values.backend.service.port | quote }}
+  APP_CORS_ALLOWED_ORIGIN_PATTERNS: {{ .Values.backend.env.corsAllowedOriginPatterns | quote }}
+  APP_OAUTH2_REDIRECT_URI: {{ .Values.backend.env.oauthRedirectUri | quote }}
