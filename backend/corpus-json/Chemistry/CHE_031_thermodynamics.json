@@ -1,0 +1,468 @@
+{
+  "chapterId": "31",
+  "chapterName": "Thermodynamics",
+  "subject": "Chemistry",
+  "concepts": [
+    {
+      "id": "THC-01",
+      "name": "System and Surroundings",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "System is the part under study; surroundings are everything else."
+    },
+    {
+      "id": "THC-02",
+      "name": "Types of Systems",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Open, closed and isolated systems based on exchange of matter and energy."
+    },
+    {
+      "id": "THC-03",
+      "name": "State Functions vs Path Functions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "State functions depend only on initial and final states; path functions depend on path."
+    },
+    {
+      "id": "THC-04",
+      "name": "Internal Energy (U)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Total energy of the system; state function; ΔU = q + w."
+    },
+    {
+      "id": "THC-05",
+      "name": "First Law of Thermodynamics",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Energy can neither be created nor destroyed; ΔU = q + w."
+    },
+    {
+      "id": "THC-06",
+      "name": "Work and Heat",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Work w = −P_ext ΔV; heat is energy transferred due to temperature difference."
+    },
+    {
+      "id": "THC-07",
+      "name": "Enthalpy (H)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "H = U + PV; ΔH = qp for constant-pressure processes."
+    },
+    {
+      "id": "THC-08",
+      "name": "Exothermic and Endothermic Reactions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Exothermic: ΔH < 0; endothermic: ΔH > 0."
+    },
+    {
+      "id": "THC-09",
+      "name": "Hess’s Law",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Total enthalpy change is independent of path; depends only on initial and final states."
+    },
+    {
+      "id": "THC-10",
+      "name": "Standard Enthalpy of Formation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Enthalpy change when one mole of compound is formed from elements in standard states."
+    },
+    {
+      "id": "THC-11",
+      "name": "Bond Enthalpy",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Average energy required to break one mole of bonds in gaseous molecules."
+    },
+    {
+      "id": "THC-12",
+      "name": "Entropy (S)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Measure of randomness or disorder; state function."
+    },
+    {
+      "id": "THC-13",
+      "name": "Second Law of Thermodynamics",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "For a spontaneous process total entropy of system + surroundings increases."
+    },
+    {
+      "id": "THC-14",
+      "name": "Gibbs Free Energy (G)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "G = H − TS; ΔG < 0 for spontaneous process at constant T and P."
+    },
+    {
+      "id": "THC-15",
+      "name": "Spontaneity Criteria",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "ΔG < 0 spontaneous; ΔG = 0 equilibrium; ΔG > 0 non-spontaneous."
+    },
+    {
+      "id": "THC-16",
+      "name": "Thermodynamic Processes",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Isothermal, adiabatic, isobaric and isochoric processes."
+    },
+    {
+      "id": "THC-17",
+      "name": "Relation between ΔH and ΔU",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "ΔH = ΔU + Δn_g RT for ideal-gas reactions."
+    },
+    {
+      "id": "THC-18",
+      "name": "Third Law of Thermodynamics",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Entropy of a perfect crystal at 0 K is zero."
+    }
+  ],
+  "qna": [
+    {
+      "id": "THC-Q01",
+      "conceptIds": ["THC-01", "THC-02"],
+      "question": "Define system, surroundings and the three types of systems.",
+      "answer": "The system is the part of the universe under study; the surroundings are everything else. An open system can exchange both matter and energy, a closed system can exchange only energy, and an isolated system can exchange neither.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q02",
+      "conceptIds": ["THC-03"],
+      "question": "What is the difference between a state function and a path function?",
+      "answer": "A state function depends only on the current state of the system and is independent of the path taken (e.g. U, H, S, G). A path function depends on the path followed (e.g. heat and work). The change in a state function is the same for any path between two states.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q03",
+      "conceptIds": ["THC-05"],
+      "question": "State the first law of thermodynamics and write its mathematical form.",
+      "answer": "The first law states that energy can neither be created nor destroyed; it can only be converted from one form to another. Mathematically, ΔU = q + w, where q is heat absorbed by the system and w is work done on the system.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q04",
+      "conceptIds": ["THC-06"],
+      "question": "Write the expression for pressure-volume work.",
+      "answer": "When a system expands against a constant external pressure, the work done by the system is w = −P_ext ΔV. The negative sign indicates that work is done by the system on the surroundings when volume increases.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q05",
+      "conceptIds": ["THC-07"],
+      "question": "Define enthalpy and relate it to heat at constant pressure.",
+      "answer": "Enthalpy is defined as H = U + PV. For a process carried out at constant pressure, the heat absorbed by the system is equal to the change in enthalpy: qp = ΔH. Enthalpy is therefore a convenient state function for constant-pressure processes.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q06",
+      "conceptIds": ["THC-08"],
+      "question": "How are exothermic and endothermic reactions distinguished thermodynamically?",
+      "answer": "In an exothermic reaction heat is released and ΔH is negative. In an endothermic reaction heat is absorbed and ΔH is positive. The sign of ΔH tells us whether the system loses or gains heat during the reaction.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q07",
+      "conceptIds": ["THC-09"],
+      "question": "State Hess’s law of constant heat summation.",
+      "answer": "Hess’s law states that the total enthalpy change for a reaction is the same whether the reaction takes place in one step or in several steps. In other words, ΔH is a state function and is independent of the path.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q08",
+      "conceptIds": ["THC-10"],
+      "question": "What is the standard enthalpy of formation?",
+      "answer": "The standard enthalpy of formation (ΔfH°) is the enthalpy change when one mole of a compound is formed from its elements in their standard states under standard conditions (1 bar, 298 K). By definition ΔfH° of an element in its standard state is zero.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q09",
+      "conceptIds": ["THC-11"],
+      "question": "Define bond enthalpy and explain its use.",
+      "answer": "Bond enthalpy is the average energy required to break one mole of a particular type of bond in gaseous molecules. It is used to estimate the enthalpy change of a reaction by subtracting the total bond enthalpies of bonds formed from those of bonds broken.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q10",
+      "conceptIds": ["THC-12", "THC-13"],
+      "question": "What is entropy and how is it related to the second law?",
+      "answer": "Entropy is a measure of the randomness or disorder of a system. The second law states that for any spontaneous process the total entropy of the system and the surroundings must increase: ΔS_total > 0. At equilibrium ΔS_total = 0.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q11",
+      "conceptIds": ["THC-14", "THC-15"],
+      "question": "Define Gibbs free energy and state the criteria for spontaneity.",
+      "answer": "Gibbs free energy is defined as G = H − TS. At constant temperature and pressure a process is spontaneous if ΔG < 0, at equilibrium if ΔG = 0, and non-spontaneous if ΔG > 0. ΔG combines both enthalpy and entropy effects.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q12",
+      "conceptIds": ["THC-16"],
+      "question": "Define isothermal, adiabatic, isobaric and isochoric processes.",
+      "answer": "An isothermal process occurs at constant temperature, an adiabatic process involves no heat exchange (q = 0), an isobaric process occurs at constant pressure, and an isochoric process occurs at constant volume. Each has characteristic relations among ΔU, q and w.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q13",
+      "conceptIds": ["THC-17"],
+      "question": "Derive the relation between ΔH and ΔU for a reaction involving ideal gases.",
+      "answer": "From H = U + PV and the ideal-gas law, ΔH = ΔU + Δ(PV) = ΔU + Δn_g RT, where Δn_g is the change in the number of moles of gas. This relation allows conversion between constant-pressure and constant-volume heat changes.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q14",
+      "conceptIds": ["THC-04", "THC-05"],
+      "question": "What is the change in internal energy for an isothermal process involving an ideal gas?",
+      "answer": "For an ideal gas internal energy depends only on temperature. In an isothermal process temperature is constant, therefore ΔU = 0. From the first law it follows that q = −w; the heat absorbed equals the work done by the system.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q15",
+      "conceptIds": ["THC-14"],
+      "question": "Write the Gibbs–Helmholtz equation relating ΔG and temperature.",
+      "answer": "The temperature dependence of Gibbs free energy is given by (∂(ΔG)/∂T)_P = −ΔS. Combining with ΔG = ΔH − TΔS yields the Gibbs–Helmholtz equation, which is useful for calculating ΔG at different temperatures.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q16",
+      "conceptIds": ["THC-09", "THC-10"],
+      "question": "How is the standard enthalpy of a reaction calculated from enthalpies of formation?",
+      "answer": "ΔrH° = Σ ΔfH° (products) − Σ ΔfH° (reactants). This follows directly from Hess’s law. Standard enthalpies of formation of the elements are taken as zero.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q17",
+      "conceptIds": ["THC-12"],
+      "question": "Predict the sign of ΔS for the melting of ice and the condensation of steam.",
+      "answer": "Melting of ice increases randomness, so ΔS is positive. Condensation of steam decreases randomness, so ΔS is negative. Phase changes that increase the number of available microstates have positive entropy changes.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q18",
+      "conceptIds": ["THC-15"],
+      "question": "A reaction has ΔH > 0 and ΔS > 0. Under what conditions is it spontaneous?",
+      "answer": "From ΔG = ΔH − TΔS, when both ΔH and ΔS are positive, ΔG becomes negative only at high temperature (when the TΔS term dominates). The reaction is therefore spontaneous only above a certain temperature.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q19",
+      "conceptIds": ["THC-06", "THC-16"],
+      "question": "What is the work done in a free expansion of an ideal gas?",
+      "answer": "In free expansion the external pressure is zero. Therefore w = −P_ext ΔV = 0. For an ideal gas ΔU is also zero if the process is isothermal, so q = 0 as well.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q20",
+      "conceptIds": ["THC-18"],
+      "question": "State the third law of thermodynamics.",
+      "answer": "The third law states that the entropy of a perfect crystalline substance approaches zero as the temperature approaches absolute zero. This provides an absolute reference point for the determination of absolute entropies.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "THC-Q21",
+      "conceptIds": ["THC-07", "THC-17"],
+      "question": "Why is ΔH approximately equal to ΔU for reactions involving only solids and liquids?",
+      "answer": "For reactions involving only solids and liquids the change in the number of moles of gas, Δn_g, is zero or very small. Therefore the term Δn_g RT is negligible and ΔH ≈ ΔU.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q22",
+      "conceptIds": ["THC-13"],
+      "question": "Why is the entropy of the universe increasing?",
+      "answer": "Every spontaneous process in the universe increases the total entropy of the system and surroundings. Since all natural processes are spontaneous, the entropy of the universe continually increases. This is a statement of the second law.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q23",
+      "conceptIds": ["THC-04"],
+      "question": "Is internal energy a state function? Justify.",
+      "answer": "Yes, internal energy is a state function. Its value depends only on the current state of the system (temperature, volume, composition) and not on the path by which that state was reached. Consequently ΔU is path-independent.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q24",
+      "conceptIds": ["THC-14", "THC-15"],
+      "question": "What is the significance of ΔG = 0?",
+      "answer": "When ΔG = 0 the system is at equilibrium. There is no net driving force for the reaction in either direction. Both the forward and reverse rates are equal and the composition of the system remains constant.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q25",
+      "conceptIds": ["THC-11"],
+      "question": "How is the enthalpy of a reaction estimated from bond enthalpies?",
+      "answer": "ΔH ≈ Σ (bond enthalpies of bonds broken) − Σ (bond enthalpies of bonds formed). This is an approximate method because bond enthalpies are average values and the reactants and products may not be in the gas phase.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q26",
+      "conceptIds": ["THC-02", "THC-16"],
+      "question": "Give an example of an isolated system.",
+      "answer": "A perfect thermos flask containing hot coffee is an approximate isolated system: neither matter nor heat can exchange with the surroundings. In thermodynamics an ideal isolated system does not exchange energy or matter at all.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q27",
+      "conceptIds": ["THC-08", "THC-15"],
+      "question": "Can an endothermic reaction be spontaneous? Explain.",
+      "answer": "Yes. If the entropy increase is large enough that TΔS > ΔH, then ΔG = ΔH − TΔS becomes negative. Endothermic reactions with positive ΔS are therefore spontaneous at sufficiently high temperature.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q28",
+      "conceptIds": ["THC-05", "THC-06"],
+      "question": "In the first law, what is the sign convention for heat and work?",
+      "answer": "Heat absorbed by the system is taken as positive (q > 0). Work done on the system is taken as positive (w > 0). Consequently work done by the system during expansion is negative. This is the IUPAC sign convention.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q29",
+      "conceptIds": ["THC-09"],
+      "question": "Why is Hess’s law useful for calculating enthalpy changes of reactions that are difficult to measure directly?",
+      "answer": "Many reactions cannot be carried out cleanly or measured calorimetrically. Hess’s law allows the desired ΔH to be obtained by combining the enthalpy changes of a series of reactions that can be measured, because ΔH is path-independent.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q30",
+      "conceptIds": ["THC-12", "THC-18"],
+      "question": "What is the absolute entropy of a substance and how is it obtained?",
+      "answer": "Absolute entropy is the entropy of a substance relative to the perfect crystal at 0 K (where S = 0 by the third law). It is obtained by integrating heat-capacity data from 0 K to the desired temperature and adding the entropies of phase transitions.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "THC-Q31",
+      "conceptIds": ["THC-07", "THC-08"],
+      "question": "For the reaction CaCO₃(s) → CaO(s) + CO₂(g), predict the sign of ΔH and ΔS.",
+      "answer": "The reaction is endothermic (heat is required to decompose the carbonate), so ΔH > 0. One mole of gas is produced, increasing disorder, so ΔS > 0. The reaction becomes spontaneous at high temperature.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q32",
+      "conceptIds": ["THC-14"],
+      "question": "What is the relationship between ΔG° and the equilibrium constant?",
+      "answer": "ΔG° = −RT ln K. A large negative ΔG° corresponds to a large equilibrium constant (products favoured). A positive ΔG° corresponds to a small K (reactants favoured). This relation links thermodynamics to chemical equilibrium.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q33",
+      "conceptIds": ["THC-03", "THC-04"],
+      "question": "Why is heat not a state function?",
+      "answer": "The amount of heat transferred depends on the path taken between two states. For example, the heat absorbed in an isothermal expansion differs from that in an adiabatic process between the same states. Therefore heat is a path function, not a state function.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q34",
+      "conceptIds": ["THC-16"],
+      "question": "In an adiabatic process for an ideal gas, what happens to the temperature during expansion?",
+      "answer": "In an adiabatic expansion q = 0. The system does work, so according to the first law ΔU = w < 0. For an ideal gas U depends only on temperature; therefore the temperature decreases during adiabatic expansion.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "THC-Q35",
+      "conceptIds": ["THC-15", "THC-14"],
+      "question": "A reaction has ΔH < 0 and ΔS < 0. At what temperatures is it spontaneous?",
+      "answer": "When both ΔH and ΔS are negative, ΔG = ΔH − TΔS is negative only at low temperature (when the |ΔH| term dominates). The reaction is spontaneous below a certain temperature and becomes non-spontaneous at higher temperatures.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    }
+  ]
+}

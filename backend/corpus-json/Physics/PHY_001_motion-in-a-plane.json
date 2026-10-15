@@ -1,0 +1,660 @@
+{
+  "chapterId": "1",
+  "chapterName": "Motion in a Plane",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "MIP-01",
+      "name": "Average speed",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Total distance / total time; scalar."
+    },
+    {
+      "id": "MIP-02",
+      "name": "Average velocity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Total displacement / total time; vector."
+    },
+    {
+      "id": "MIP-03",
+      "name": "Instantaneous velocity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "v = dx/dt; magnitude is instantaneous speed."
+    },
+    {
+      "id": "MIP-04",
+      "name": "Acceleration",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "a = dv/dt; rate of change of velocity."
+    },
+    {
+      "id": "MIP-05",
+      "name": "Uniform motion vs UCM",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Uniform motion has constant velocity; UCM has constant speed but changing direction."
+    },
+    {
+      "id": "MIP-06",
+      "name": "Tangential and radial acceleration",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "a_t changes speed; a_r changes direction; net a is their resultant."
+    },
+    {
+      "id": "MIP-07",
+      "name": "Equations of constant acceleration",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "v = u+at; v²=u²+2as; s=ut+½at²."
+    },
+    {
+      "id": "MIP-08",
+      "name": "Graphical analysis (slopes and areas)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Slope of x-t is v; slope of v-t is a; area under v-t is displacement."
+    },
+    {
+      "id": "MIP-09",
+      "name": "Equal-time vs equal-distance average speed",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Equal times: arithmetic mean; equal distances: harmonic mean."
+    },
+    {
+      "id": "MIP-10",
+      "name": "2D velocity magnitude and direction",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "v = √(vx²+vy²); tanθ = vy/vx."
+    },
+    {
+      "id": "MIP-11",
+      "name": "Projectile motion basics",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Horizontal velocity constant; vertical motion under g; trajectory parabola."
+    },
+    {
+      "id": "MIP-12",
+      "name": "Relative velocity in 2D",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "v_AB = v_A – v_B; vector subtraction."
+    },
+    {
+      "id": "MIP-13",
+      "name": "Centripetal acceleration",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "a_c = v²/r directed toward centre."
+    },
+    {
+      "id": "MIP-14",
+      "name": "Displacement vs distance",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Displacement is vector shortest path; distance is scalar path length."
+    },
+    {
+      "id": "MIP-15",
+      "name": "Position-velocity-acceleration relations by calculus",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "v = dx/dt; a = dv/dt = v dv/dx; integration recovers position from velocity."
+    },
+    {
+      "id": "MIP-16",
+      "name": "Zero acceleration conditions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Constant velocity (magnitude and direction); uniform rectilinear motion."
+    },
+    {
+      "id": "MIP-17",
+      "name": "Sign of acceleration",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Positive a increases velocity in chosen positive direction; depends on coordinate choice."
+    },
+    {
+      "id": "MIP-18",
+      "name": "Average velocity for closed path",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Net displacement zero so average velocity zero; average speed non-zero."
+    },
+    {
+      "id": "MIP-19",
+      "name": "Time of flight and range of projectile",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "T = 2u sinθ/g; R = u² sin2θ/g; max range at 45°."
+    },
+    {
+      "id": "MIP-20",
+      "name": "Maximum height of projectile",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "H = u² sin²θ/(2g)."
+    }
+  ],
+  "qna": [
+    {
+      "id": "MIP-Q01",
+      "conceptIds": [
+        "MIP-01"
+      ],
+      "question": "Define average speed.",
+      "answer": "Average speed is the total distance travelled divided by the total time taken. It is a scalar quantity. When speed is constant, average speed equals the instantaneous speed.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q02",
+      "conceptIds": [
+        "MIP-02"
+      ],
+      "question": "Define average velocity.",
+      "answer": "Average velocity is the total displacement divided by the total time. It is a vector quantity. When the direction of motion is constant, the magnitude of average velocity equals the average speed.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q03",
+      "conceptIds": [
+        "MIP-03"
+      ],
+      "question": "Define instantaneous velocity.",
+      "answer": "Instantaneous velocity is the velocity at a particular instant: v = dx/dt. Its magnitude is the instantaneous speed. The direction is along the tangent to the path.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q04",
+      "conceptIds": [
+        "MIP-04"
+      ],
+      "question": "Define acceleration.",
+      "answer": "Acceleration is the rate of change of velocity: a = dv/dt. It is a vector. Instantaneous acceleration may increase or decrease with time and can be positive or negative.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q05",
+      "conceptIds": [
+        "MIP-05"
+      ],
+      "question": "What is the difference between uniform motion and uniform circular motion?",
+      "answer": "In uniform motion both speed and direction are constant, so acceleration is zero. In uniform circular motion only speed is constant; direction continuously changes, so there is centripetal acceleration. UCM is therefore accelerated motion.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q06",
+      "conceptIds": [
+        "MIP-06"
+      ],
+      "question": "What are the two components of acceleration in general motion?",
+      "answer": "Tangential acceleration a_t = d|v|/dt changes the magnitude of velocity and is parallel to velocity. Radial (centripetal) acceleration is perpendicular to velocity and changes its direction. Net acceleration is their vector resultant.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q07",
+      "conceptIds": [
+        "MIP-07"
+      ],
+      "question": "Write the three equations of motion for constant acceleration.",
+      "answer": "v = u + a t; v² = u² + 2 a s; s = u t + ½ a t². These equations are valid only when acceleration is constant.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q08",
+      "conceptIds": [
+        "MIP-08"
+      ],
+      "question": "What does the area under a velocity–time graph represent?",
+      "answer": "The area under a v–t graph equals the displacement of the particle. For a speed–time graph the area equals the distance travelled. This follows from s = ∫ v dt.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q09",
+      "conceptIds": [
+        "MIP-08"
+      ],
+      "question": "What does the slope of a velocity–time graph represent?",
+      "answer": "The slope of a v–t graph is the acceleration. A constant slope means constant acceleration; a changing slope means variable acceleration.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q10",
+      "conceptIds": [
+        "MIP-09"
+      ],
+      "question": "How is average speed calculated for two equal time intervals versus two equal distances?",
+      "answer": "For equal times use the arithmetic mean (v1+v2)/2. For equal distances use the harmonic mean 2 v1 v2/(v1+v2). The two formulae are not interchangeable.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q11",
+      "conceptIds": [
+        "MIP-10"
+      ],
+      "question": "How is the magnitude of velocity calculated from its components in 2D?",
+      "answer": "v = √(v_x² + v_y²). The direction is given by tan θ = v_y / v_x. Both components are obtained by differentiating the respective position coordinates.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q12",
+      "conceptIds": [
+        "MIP-05"
+      ],
+      "question": "A particle moves with constant speed but changing direction. Is its acceleration zero?",
+      "answer": "No. Changing direction implies a non-zero radial acceleration. Speed being constant only means the tangential acceleration is zero. Net acceleration is the centripetal acceleration directed toward the centre of curvature.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q13",
+      "conceptIds": [
+        "MIP-16"
+      ],
+      "question": "If acceleration is zero, what can be said about velocity?",
+      "answer": "Velocity is constant in both magnitude and direction. The motion is uniform rectilinear motion. Position changes linearly with time: s = v t.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q14",
+      "conceptIds": [
+        "MIP-09"
+      ],
+      "question": "A particle travels equal distances with speeds v1 and v2. What is the average speed?",
+      "answer": "Average speed = 2 v1 v2 / (v1 + v2). This is the harmonic mean. Using the arithmetic mean would be incorrect for equal distances.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q15",
+      "conceptIds": [
+        "MIP-06"
+      ],
+      "question": "What is the direction of tangential acceleration?",
+      "answer": "Tangential acceleration is always parallel (or anti-parallel) to the velocity vector. It is responsible for changing the speed of the particle. Its magnitude is |d|v|/dt|.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q16",
+      "conceptIds": [
+        "MIP-06"
+      ],
+      "question": "What is the direction of radial acceleration?",
+      "answer": "Radial (centripetal) acceleration is always perpendicular to the velocity and directed toward the centre of the instantaneous circle of curvature. It changes the direction of velocity without changing its magnitude.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q17",
+      "conceptIds": [
+        "MIP-05"
+      ],
+      "question": "Why is uniform circular motion regarded as accelerated motion?",
+      "answer": "Although speed is constant, the velocity vector continuously changes direction. Any change in velocity constitutes acceleration. The acceleration is centripetal with magnitude v²/r.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q18",
+      "conceptIds": [
+        "MIP-08"
+      ],
+      "question": "How can one obtain velocity from an acceleration–time graph?",
+      "answer": "Velocity change is the area under the a–t graph: Δv = ∫ a dt. Adding the initial velocity gives the velocity at any later time.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q19",
+      "conceptIds": [
+        "MIP-01",
+        "MIP-02"
+      ],
+      "question": "A student confuses average speed with average velocity. How would you correct the misconception?",
+      "answer": "Average speed uses total distance (scalar path length); average velocity uses total displacement (vector). In any path that is not a straight line without reversal the two quantities differ. Average velocity can be zero even when average speed is not.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q20",
+      "conceptIds": [
+        "MIP-08"
+      ],
+      "question": "If the displacement–time graph is a straight line parallel to the time axis, what is the velocity?",
+      "answer": "Velocity is zero. The particle is at rest. The slope of the graph is zero, confirming zero instantaneous velocity at every instant.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q21",
+      "conceptIds": [
+        "MIP-08"
+      ],
+      "question": "If the velocity–time graph is a straight line parallel to the time axis, what is the acceleration?",
+      "answer": "Acceleration is zero. The particle moves with constant velocity. The slope of the graph is zero.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q22",
+      "conceptIds": [
+        "MIP-15"
+      ],
+      "question": "Write the chain-rule expression that relates acceleration to velocity and position.",
+      "answer": "a = v dv/dx. This form is useful when acceleration is known as a function of position rather than time. It follows from a = dv/dt = (dv/dx)(dx/dt).",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q23",
+      "conceptIds": [
+        "MIP-18"
+      ],
+      "question": "A particle returns to its starting point. What is its average velocity for the complete trip?",
+      "answer": "Average velocity is zero because the net displacement is zero. Average speed is not zero; it equals total path length divided by total time.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MIP-Q24",
+      "conceptIds": [
+        "MIP-09"
+      ],
+      "question": "How does one decide whether to use the equal-time or equal-distance formula for average speed?",
+      "answer": "If the particle travels for equal intervals of time, use the arithmetic mean. If it travels equal distances, use the harmonic mean. Misidentifying the given data is a frequent source of error.",
+      "type": "cet_tip",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q25",
+      "conceptIds": [
+        "MIP-17"
+      ],
+      "question": "What is the significance of a negative acceleration?",
+      "answer": "Negative acceleration means the velocity is decreasing in the chosen positive direction (deceleration if the particle is moving in the positive direction). Acceleration is a vector; its sign depends on the coordinate system.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MIP-Q26",
+      "conceptIds": [
+        "MIP-11"
+      ],
+      "question": "In projectile motion the acceleration is constant. Which set of equations can therefore be applied?",
+      "answer": "The constant-acceleration equations can be applied separately to the horizontal and vertical components. Horizontal acceleration is zero; vertical acceleration is g downward. The two-dimensional motion is thereby reduced to two independent one-dimensional motions.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MIP-Q27",
+      "conceptIds": [
+        "MIP-08"
+      ],
+      "question": "What does the area under an acceleration–time graph represent?",
+      "answer": "The area under an a–t graph equals the change in velocity. Adding the initial velocity yields the final velocity. This is the graphical expression of Δv = ∫ a dt.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q28",
+      "conceptIds": [
+        "MIP-02",
+        "MIP-01"
+      ],
+      "question": "Why must an object be moving in a straight line for average velocity to equal average speed when speed is constant?",
+      "answer": "Only on a straight path without reversal is the magnitude of the net displacement equal to the total distance. Any curvature or reversal makes the displacement smaller than the path length, so the averages differ.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q29",
+      "conceptIds": [
+        "MIP-13"
+      ],
+      "question": "Write the expression for centripetal acceleration.",
+      "answer": "a_c = v²/r directed toward the centre of the circle. It is responsible for the continuous change in direction of velocity in circular motion. Its magnitude increases with the square of speed and decreases with radius.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MIP-Q30",
+      "conceptIds": [
+        "MIP-19"
+      ],
+      "question": "Write the expressions for time of flight and range of a projectile launched with speed u at angle θ.",
+      "answer": "Time of flight T = 2 u sinθ / g. Horizontal range R = u² sin 2θ / g. Maximum range occurs at θ = 45° and equals u²/g.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MIP-Q31",
+      "conceptIds": [
+        "MIP-20"
+      ],
+      "question": "Write the expression for maximum height of a projectile.",
+      "answer": "H = u² sin²θ / (2g). It is the vertical distance from the launch point to the highest point of the trajectory. At maximum height the vertical component of velocity is zero.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MIP-Q32",
+      "conceptIds": [
+        "MIP-14"
+      ],
+      "question": "Distinguish between displacement and distance.",
+      "answer": "Displacement is the vector from initial to final position; its magnitude is the shortest distance between the two points. Distance is the actual path length travelled and is always a positive scalar. Displacement can be zero while distance is not.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MIP-Q33",
+      "conceptIds": [
+        "MIP-12"
+      ],
+      "question": "How is relative velocity of A with respect to B defined?",
+      "answer": "v_AB = v_A – v_B. It is the velocity of A as observed from a frame attached to B. Relative velocity is a vector and obeys the usual rules of vector subtraction.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MIP-Q34",
+      "conceptIds": [
+        "MIP-07"
+      ],
+      "question": "A particle starts from rest and accelerates uniformly. Which equation relates displacement to time?",
+      "answer": "s = ½ a t². Because the initial velocity u is zero, the general equation s = u t + ½ a t² reduces to this simpler form. Distance travelled is proportional to the square of time.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q35",
+      "conceptIds": [
+        "MIP-07"
+      ],
+      "question": "A particle is decelerated uniformly to rest. Relate initial velocity, acceleration and displacement.",
+      "answer": "From v² = u² + 2 a s with v = 0 one obtains s = –u²/(2a). The negative sign of a (deceleration) makes s positive. This is the stopping distance.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "MIP-Q36",
+      "conceptIds": [
+        "MIP-15"
+      ],
+      "question": "How can position, velocity and acceleration be obtained from one another by differentiation or integration?",
+      "answer": "Velocity is the derivative of position; acceleration is the derivative of velocity. Conversely, velocity is the integral of acceleration and position is the integral of velocity. Graphical equivalents are slopes and areas under the respective curves.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "MIP-Q37",
+      "conceptIds": [
+        "MIP-03"
+      ],
+      "question": "What is the magnitude of instantaneous velocity always equal to?",
+      "answer": "The magnitude of instantaneous velocity is always equal to the instantaneous speed. Speed is the scalar version of the velocity vector at every instant.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    }
+  ]
+}

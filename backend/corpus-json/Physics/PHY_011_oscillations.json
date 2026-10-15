@@ -1,0 +1,646 @@
+{
+  "chapterId": "011",
+  "chapterName": "Oscillations",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "OSC-01",
+      "name": "Periodic motion",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Motion that repeats after a fixed time interval."
+    },
+    {
+      "id": "OSC-02",
+      "name": "Oscillatory motion",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "To-and-fro motion about a mean position."
+    },
+    {
+      "id": "OSC-03",
+      "name": "Simple harmonic motion",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Acceleration proportional to displacement and directed toward mean position."
+    },
+    {
+      "id": "OSC-04",
+      "name": "Displacement equation of SHM",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "x = A sin(ωt + φ) or A cos(ωt + φ)."
+    },
+    {
+      "id": "OSC-05",
+      "name": "Velocity in SHM",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "v = ω √(A² - x²); maximum at mean position."
+    },
+    {
+      "id": "OSC-06",
+      "name": "Acceleration in SHM",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "a = -ω² x; maximum at extreme positions."
+    },
+    {
+      "id": "OSC-07",
+      "name": "Time period and frequency",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "T = 2π/ω; n = 1/T."
+    },
+    {
+      "id": "OSC-08",
+      "name": "Phase and phase difference",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Phase determines the state of motion; difference causes path difference."
+    },
+    {
+      "id": "OSC-09",
+      "name": "Energy in SHM",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Total energy is constant; KE and PE interchange."
+    },
+    {
+      "id": "OSC-10",
+      "name": "Simple pendulum",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        6
+      ],
+      "oneLineSummary": "T = 2π √(l/g) for small amplitudes."
+    },
+    {
+      "id": "OSC-11",
+      "name": "Spring-mass system",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "T = 2π √(m/k) for a mass on a spring."
+    },
+    {
+      "id": "OSC-12",
+      "name": "Damped oscillations",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Amplitude decreases with time due to dissipative forces."
+    },
+    {
+      "id": "OSC-13",
+      "name": "Forced oscillations and resonance",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Large amplitude when driving frequency matches natural frequency."
+    },
+    {
+      "id": "OSC-14",
+      "name": "Angular SHM",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "θ = θ₀ sin(ωt + φ); torsion pendulum."
+    },
+    {
+      "id": "OSC-15",
+      "name": "Composition of two SHMs",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Resultant of two perpendicular SHMs is an ellipse or Lissajous figure."
+    },
+    {
+      "id": "OSC-16",
+      "name": "Restoring force",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Force that always tries to bring the system back to equilibrium."
+    },
+    {
+      "id": "OSC-17",
+      "name": "Amplitude",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Maximum displacement from the mean position."
+    },
+    {
+      "id": "OSC-18",
+      "name": "Reference circle method",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "SHM projected from uniform circular motion."
+    }
+  ],
+  "qna": [
+    {
+      "id": "OSC-Q01",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "What is oscillatory motion?",
+      "answer": "Oscillatory motion is the simplest type of to and fro motion. In our daily life we observe various types of motions including linear, circular, rotational and oscillatory motion. The time taken by a particle to complete one oscillation is called the period of oscillation.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q02",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "Define amplitude in oscillatory motion.",
+      "answer": "The maximum displacement of a particle from its mean position is called the amplitude. At the mean position the displacement is zero. At the extreme positions the displacement equals the amplitude.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q03",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "State the notes regarding displacement and velocity in oscillatory motion.",
+      "answer": "Displacement of the particle at the mean position is zero. Displacement of the particle at the extreme position is equal to its amplitude. Velocity of the particle at the mean position is maximum whereas at the extreme position it is zero.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q04",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "What is the period of oscillation?",
+      "answer": "In oscillatory motion the time taken by a particle to complete one oscillation is called the period of oscillation. It is the time interval after which the motion repeats itself. The period is independent of amplitude for simple harmonic motion under certain conditions.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q05",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "Describe the positions in oscillatory motion with respect to displacement.",
+      "answer": "At the mean position the displacement x is zero. At one extreme position x = -A and at the other extreme position x = +A where A is the amplitude. The particle oscillates between these extreme positions about the mean position.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q06",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "How does velocity vary in oscillatory motion?",
+      "answer": "The velocity of the particle is maximum at the mean position. At the extreme positions the velocity becomes zero because the particle momentarily stops before reversing direction. This variation is characteristic of simple harmonic motion.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q07",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "What types of motions are observed in daily life according to the notes?",
+      "answer": "In daily life we observe various types of motions such as linear motion, circular motion, rotational motion, oscillatory motion and so on. Oscillatory motion is specifically the to and fro motion about a mean position. Understanding these classifications helps in analysing physical systems.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q08",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "Define the restoring force in the context of SHM.",
+      "answer": "In oscillatory motion a restoring force develops that is given by F = -kx where k is the force constant. The negative sign indicates that the force is always directed towards the mean position. This linear restoring force is the hallmark of simple harmonic motion.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q09",
+      "conceptIds": [
+        "OSC-04",
+        "OSC-09",
+        "OSC-16"
+      ],
+      "question": "What is potential energy in SHM?",
+      "answer": "When a particle performs linear SHM the restoring force does work that is stored as potential energy. The potential energy is related to the displacement from the mean position. At the extreme positions potential energy is maximum while kinetic energy is zero.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q10",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "Explain why velocity is zero at extreme positions.",
+      "answer": "At the extreme positions the particle reaches the end of its path and must reverse its direction. For a brief instant its velocity becomes zero before the restoring force accelerates it back toward the mean position. This is a direct consequence of the continuous to and fro motion.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q11",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "What is the significance of the mean position in oscillatory motion?",
+      "answer": "The mean position is the equilibrium position about which the particle oscillates. Displacement measured from this position is zero at the centre. Velocity is maximum and acceleration is zero at the mean position for simple harmonic motion.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q12",
+      "conceptIds": [
+        "OSC-04",
+        "OSC-17"
+      ],
+      "question": "How is amplitude related to the extreme positions?",
+      "answer": "The amplitude is defined as the maximum displacement from the mean position. Consequently the extreme positions are located at distances +A and -A from the mean position. The total distance between the two extremes is therefore 2A.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q13",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "State the relation between force and displacement in SHM.",
+      "answer": "In simple harmonic motion the restoring force is proportional to the displacement and is oppositely directed, F = -kx. The constant k is called the force constant or spring constant. This relation leads to the differential equation of SHM.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q14",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "Why is oscillatory motion called the simplest type of to and fro motion?",
+      "answer": "Oscillatory motion involves repeated back and forth movement about a fixed mean position. It is simpler than other complex motions because it can often be described by a single coordinate that varies periodically with time. Many physical systems approximate this idealised behaviour.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q15",
+      "conceptIds": [
+        "OSC-09"
+      ],
+      "question": "What happens to kinetic and potential energy during oscillation?",
+      "answer": "At the mean position kinetic energy is maximum and potential energy is minimum. At the extreme positions kinetic energy is zero and potential energy is maximum. The total mechanical energy remains constant in the absence of damping.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q16",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "Define the period of oscillation in terms of the motion.",
+      "answer": "The period is the time required for the particle to complete one full cycle of motion, returning to the same position with the same velocity direction. It is a fundamental characteristic of the oscillatory system and is related to the frequency by T = 1/f.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q17",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "How is displacement measured in oscillatory motion?",
+      "answer": "Displacement is measured from the mean position. Positive and negative signs indicate the two opposite sides of the mean position. The magnitude of displacement ranges from zero at the mean position to the amplitude at the extremes.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q18",
+      "conceptIds": [
+        "OSC-04",
+        "OSC-11",
+        "OSC-16"
+      ],
+      "question": "What is the force constant k?",
+      "answer": "The force constant k appears in the expression F = -kx for the restoring force. It quantifies the stiffness of the system; a larger k means a stronger restoring force for a given displacement. For a spring it is the spring constant.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q19",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "Describe the path of a particle in linear SHM.",
+      "answer": "In linear SHM the particle moves back and forth along a straight line about the mean position. The motion is confined between the two extreme points separated by twice the amplitude. The particle repeatedly traverses this line segment.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q20",
+      "conceptIds": [
+        "OSC-04",
+        "OSC-05",
+        "OSC-06"
+      ],
+      "question": "Why is acceleration zero at the mean position?",
+      "answer": "Acceleration is proportional to the restoring force which is itself proportional to displacement. At the mean position displacement is zero so the restoring force and therefore the acceleration are also zero. Velocity, however, is maximum at that instant.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q21",
+      "conceptIds": [
+        "OSC-09",
+        "OSC-17"
+      ],
+      "question": "What is the relation between amplitude and energy in SHM?",
+      "answer": "The total energy of a particle in SHM is proportional to the square of the amplitude. Larger amplitude means greater maximum potential energy and correspondingly greater total energy. This relation follows from the expression for potential energy (1/2)kA².",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q22",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "Explain the continuous nature of oscillatory motion.",
+      "answer": "Oscillatory motion is continuous in the sense that the particle never stops permanently; it only momentarily comes to rest at the extremes before reversing direction. The motion repeats indefinitely if there is no damping. This repetitive character defines periodic oscillatory motion.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q23",
+      "conceptIds": [
+        "OSC-16"
+      ],
+      "question": "How does the restoring force ensure oscillation?",
+      "answer": "The restoring force always points toward the mean position. When the particle is displaced to one side the force pulls it back; when it overshoots to the other side the force again pulls it back. This continuous redirection produces sustained oscillation.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q24",
+      "conceptIds": [
+        "OSC-04",
+        "OSC-05",
+        "OSC-09"
+      ],
+      "question": "What is the significance of the extreme positions?",
+      "answer": "At the extreme positions the particle has zero velocity and maximum displacement equal to the amplitude. All the energy is potential at these points. The particle turns around under the action of the restoring force and begins its return journey toward the mean position.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q25",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "Define simple harmonic motion in terms of the given notes.",
+      "answer": "Simple harmonic motion is a special case of oscillatory motion in which the restoring force is proportional to the displacement and directed toward the mean position, F = -kx. The particle moves along a straight line with amplitude A and period determined by the force constant and mass.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q26",
+      "conceptIds": [
+        "OSC-05",
+        "OSC-07"
+      ],
+      "question": "How is the period related to the completion of one oscillation?",
+      "answer": "One oscillation is completed when the particle starts from any point, goes to one extreme, returns through the mean position to the other extreme, and finally returns to the starting point with the original velocity. The time for this complete cycle is the period.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q27",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "What is the displacement at the mean position and at extremes?",
+      "answer": "At the mean position the displacement is zero. At the extreme positions the displacement equals the amplitude in magnitude, being +A or -A depending on the side. These values define the range of the oscillatory motion.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q28",
+      "conceptIds": [
+        "OSC-05",
+        "OSC-07",
+        "OSC-09"
+      ],
+      "question": "Why is velocity maximum at the mean position?",
+      "answer": "As the particle approaches the mean position the restoring force accelerates it continuously. By the time it reaches the mean position all the potential energy has been converted to kinetic energy, resulting in maximum speed. After the mean position the force begins to decelerate the particle.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q29",
+      "conceptIds": [
+        "OSC-04",
+        "OSC-07",
+        "OSC-11"
+      ],
+      "question": "What physical quantity is the force constant related to?",
+      "answer": "The force constant k is related to the stiffness of the oscillating system. For a mass-spring system it is the spring constant. A larger force constant produces a larger restoring force for the same displacement and therefore a higher frequency of oscillation.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q30",
+      "conceptIds": [
+        "OSC-09"
+      ],
+      "question": "Describe the energy transformation during one half oscillation.",
+      "answer": "Starting from an extreme position the particle has maximum potential energy and zero kinetic energy. As it moves toward the mean position potential energy decreases while kinetic energy increases, reaching maximum kinetic energy at the mean position. The process reverses on the other side.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q31",
+      "conceptIds": [
+        "OSC-17"
+      ],
+      "question": "How does the notes define the amplitude graphically?",
+      "answer": "The notes show the positions x = -A, x = 0 and x = +A corresponding to the left extreme, mean position and right extreme respectively. The amplitude is the distance from the mean position to either extreme. This linear arrangement is characteristic of linear SHM.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q32",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "What is the condition for the motion to be called oscillatory?",
+      "answer": "The motion must be to and fro about a mean position. The particle must repeatedly return to its initial state after a fixed time interval. If the restoring force is linear the oscillatory motion becomes simple harmonic.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q33",
+      "conceptIds": [
+        "OSC-02",
+        "OSC-04",
+        "OSC-11"
+      ],
+      "question": "Explain the role of the mean position as the equilibrium position.",
+      "answer": "At the mean position the net force on the particle is zero when it is at rest. Any displacement from this position produces a restoring force that tries to return the particle. Thus the mean position is the stable equilibrium point of the oscillatory system.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q34",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "How is the period independent of amplitude in ideal SHM?",
+      "answer": "In ideal simple harmonic motion the period depends only on the mass and the force constant, T = 2π √(m/k). Because the restoring force is linear the time for a larger amplitude is exactly compensated by the higher average speed, making the period independent of amplitude.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q35",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "What is the expression for restoring force in the notes?",
+      "answer": "The notes state that the restoring force developed is F = -kx where k is the force constant. This expression is fundamental to the theory of simple harmonic motion. The negative sign ensures that the force is always directed toward the mean position.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q36",
+      "conceptIds": [
+        "OSC-05",
+        "OSC-16"
+      ],
+      "question": "Why does the particle reverse direction at the extreme positions?",
+      "answer": "At the extreme positions the velocity becomes zero while the restoring force is maximum and directed toward the mean position. This force therefore accelerates the particle back toward the centre, causing a reversal of direction. The process repeats at the other extreme.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "OSC-Q37",
+      "conceptIds": [
+        "OSC-01",
+        "OSC-02",
+        "OSC-03"
+      ],
+      "question": "Summarise the key points about oscillatory motion from the introduction.",
+      "answer": "Oscillatory motion is the simplest to and fro motion about a mean position. The period is the time for one complete oscillation and the amplitude is the maximum displacement from the mean. Velocity is maximum at the mean and zero at the extremes while displacement is zero at the mean and maximum at the extremes.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    }
+  ]
+}

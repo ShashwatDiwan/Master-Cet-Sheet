@@ -1,0 +1,462 @@
+{
+  "chapterId": "59",
+  "chapterName": "Probability",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "PRO-01",
+      "name": "Classical definition of probability",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "P(A) = n(A)/n(S) when outcomes are equally likely."
+    },
+    {
+      "id": "PRO-02",
+      "name": "Probability of impossible and sure events",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "P(∅) = 0, P(S) = 1."
+    },
+    {
+      "id": "PRO-03",
+      "name": "Exhaustive events",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "A ∪ B = S; together they cover every outcome."
+    },
+    {
+      "id": "PRO-04",
+      "name": "Mutually exclusive events",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "A ∩ B = ∅; they cannot occur simultaneously."
+    },
+    {
+      "id": "PRO-05",
+      "name": "Complementary events",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Mutually exclusive and exhaustive; A′ = complement of A."
+    },
+    {
+      "id": "PRO-06",
+      "name": "Addition theorem",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B)."
+    },
+    {
+      "id": "PRO-07",
+      "name": "Addition for mutually exclusive events",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "P(A ∪ B) = P(A) + P(B) when A ∩ B = ∅."
+    },
+    {
+      "id": "PRO-08",
+      "name": "Complement rule",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "P(A′) = 1 − P(A)."
+    },
+    {
+      "id": "PRO-09",
+      "name": "Bounds on probability",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "0 ≤ P(A) ≤ 1 for any event A."
+    },
+    {
+      "id": "PRO-10",
+      "name": "Monotonicity of probability",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "If A ⊆ B then P(A) ≤ P(B)."
+    },
+    {
+      "id": "PRO-11",
+      "name": "Probability of A but not B",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "P(A ∩ B′) = P(A) − P(A ∩ B)."
+    },
+    {
+      "id": "PRO-12",
+      "name": "Inclusion-exclusion for three events",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "P(A∪B∪C) = sum singles − sum doubles + triple."
+    },
+    {
+      "id": "PRO-13",
+      "name": "Pairwise mutual exclusivity",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Every pair of distinct events has empty intersection."
+    },
+    {
+      "id": "PRO-14",
+      "name": "De Morgan’s laws in probability",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "(A ∪ B)′ = A′ ∩ B′, (A ∩ B)′ = A′ ∪ B′."
+    },
+    {
+      "id": "PRO-15",
+      "name": "Limitations of classical probability",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Assumes equally likely outcomes; fails when outcomes are not equiprobable."
+    }
+  ],
+  "qna": [
+    {
+      "id": "PRO-Q01",
+      "conceptIds": ["PRO-01"],
+      "question": "What is the classical definition of the probability of an event A?",
+      "answer": "P(A) = (number of favourable outcomes) / (total number of outcomes) = n(A)/n(S). This definition assumes that all outcomes in the sample space are equally likely. It is the foundation of elementary probability calculations.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q02",
+      "conceptIds": ["PRO-02"],
+      "question": "What is the probability of an impossible event and of a sure event?",
+      "answer": "The probability of an impossible event is zero: P(∅) = 0. The probability of a sure event is one: P(S) = 1. These are axioms of any probability measure.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q03",
+      "conceptIds": ["PRO-03"],
+      "question": "Define exhaustive events.",
+      "answer": "Two events A and B of a sample space S are exhaustive if A ∪ B = S. Together they cover every possible outcome. More than two events may also form an exhaustive collection.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q04",
+      "conceptIds": ["PRO-04"],
+      "question": "What are mutually exclusive events?",
+      "answer": "Two events A and B are mutually exclusive if A ∩ B = ∅. They cannot occur simultaneously. Mutually exclusive events are also called disjoint events.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q05",
+      "conceptIds": ["PRO-05"],
+      "question": "When are two events said to be complementary?",
+      "answer": "Two events are complementary if they are both mutually exclusive and exhaustive, i.e., A ∩ B = ∅ and A ∪ B = S. The complement of A is denoted A′, Ā or Aᶜ. Complementary events partition the sample space into two parts.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q06",
+      "conceptIds": ["PRO-06"],
+      "question": "State the addition theorem for any two events A and B.",
+      "answer": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B). The subtraction of the intersection prevents double-counting the outcomes that belong to both events. When the events are mutually exclusive the intersection term vanishes.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q07",
+      "conceptIds": ["PRO-07"],
+      "question": "What is the simplified form of the addition theorem when A and B are mutually exclusive?",
+      "answer": "When A and B are mutually exclusive, P(A ∩ B) = 0 and therefore P(A ∪ B) = P(A) + P(B). This is the special case most frequently used in elementary problems. The same simplification holds for any finite collection of pairwise mutually exclusive events.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q08",
+      "conceptIds": ["PRO-08"],
+      "question": "State the elementary property relating the probability of an event and its complement.",
+      "answer": "P(A′) = 1 − P(A). This follows at once from the fact that A and A′ are complementary events whose probabilities must sum to one. The relation is one of the most useful computational tools in probability.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q09",
+      "conceptIds": ["PRO-09"],
+      "question": "What is the range of possible values for the probability of any event A?",
+      "answer": "For any event A the probability satisfies 0 ≤ P(A) ≤ 1. The lower bound is attained by the impossible event and the upper bound by the sure event. No probability can lie outside this closed interval.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q10",
+      "conceptIds": ["PRO-10"],
+      "question": "If A is a subset of B, what can be said about their probabilities?",
+      "answer": "If A ⊆ B then P(A) ≤ P(B). This monotonicity property follows because B can be written as the disjoint union of A and B − A, both of which have non-negative probability. Consequently larger events have larger or equal probability.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q11",
+      "conceptIds": ["PRO-11"],
+      "question": "State the formula for the probability that A occurs but B does not.",
+      "answer": "P(A ∩ B′) = P(A) − P(A ∩ B). This identity follows from writing A as the disjoint union of A ∩ B and A ∩ B′. It is frequently used when computing probabilities of differences of events.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q12",
+      "conceptIds": ["PRO-12"],
+      "question": "State the inclusion-exclusion formula for three events.",
+      "answer": "P(A ∪ B ∪ C) = P(A) + P(B) + P(C) − P(A ∩ B) − P(A ∩ C) − P(B ∩ C) + P(A ∩ B ∩ C). Each successive term alternates in sign and involves intersections of higher order. The pattern continues for any finite number of events.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "PRO-Q13",
+      "conceptIds": ["PRO-06"],
+      "question": "A common mistake when applying the addition theorem is to omit the intersection term. What is the consequence?",
+      "answer": "The student adds the probabilities of the two events without subtracting the probability of their intersection, thereby double-counting the common outcomes. The resulting value is larger than the true probability of the union and is often greater than 1, which is immediately recognisable as incorrect.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q14",
+      "conceptIds": ["PRO-08"],
+      "question": "Why is the complement rule often computationally advantageous?",
+      "answer": "The probability of the complementary event is frequently easier to compute than the probability of the original event. For example the probability that at least one of several events occurs is found by subtracting the probability that none of them occurs from one. This technique avoids complicated unions.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q15",
+      "conceptIds": ["PRO-05", "PRO-07"],
+      "question": "If A and B are complementary, what is P(A ∪ B) and what is P(A ∩ B)?",
+      "answer": "Because complementary events are exhaustive, P(A ∪ B) = 1. Because they are mutually exclusive, P(A ∩ B) = 0. These two relations together characterise a complementary pair.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q16",
+      "conceptIds": ["PRO-01"],
+      "question": "Why is the classical definition limited to equally likely outcomes?",
+      "answer": "The classical definition counts the number of favourable outcomes and divides by the total number of outcomes. This counting is meaningful only when each individual outcome has the same probability. When outcomes are not equally likely a more general definition of probability must be used.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q17",
+      "conceptIds": ["PRO-11"],
+      "question": "Express P(A − B) in terms of P(A) and P(A ∩ B).",
+      "answer": "A − B is the set of outcomes that belong to A but not to B, which is exactly A ∩ B′. Therefore P(A − B) = P(A) − P(A ∩ B). The formula is identical to the one already given for P(A ∩ B′).",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q18",
+      "conceptIds": ["PRO-09"],
+      "question": "Why can the probability of an event never exceed one?",
+      "answer": "Probability is defined so that the sure event has probability one and every other event is a subset of the sample space. By the monotonicity property the probability of any subset cannot exceed the probability of the whole space. Consequently no event can have probability greater than one.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q19",
+      "conceptIds": ["PRO-03", "PRO-04"],
+      "question": "Can two events be both mutually exclusive and exhaustive? Give an example.",
+      "answer": "Yes; any pair of complementary events is both mutually exclusive and exhaustive. For example, when a coin is tossed, “heads” and “tails” are complementary (assuming a fair coin with no other outcomes). Their probabilities sum to 1 and their intersection is empty.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q20",
+      "conceptIds": ["PRO-06"],
+      "question": "If P(A) = 0.4, P(B) = 0.5 and P(A ∩ B) = 0.2, find P(A ∪ B).",
+      "answer": "By the addition theorem P(A ∪ B) = 0.4 + 0.5 − 0.2 = 0.7. The calculation is a direct substitution of the three known values into the formula.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q21",
+      "conceptIds": ["PRO-08"],
+      "question": "If P(A) = 0.35, what is P(A′)?",
+      "answer": "P(A′) = 1 − 0.35 = 0.65. The complement rule converts the given probability into the probability of the complementary event with a single subtraction.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q22",
+      "conceptIds": ["PRO-14"],
+      "question": "Express the probability of the complement of a union using De Morgan’s law.",
+      "answer": "P((A ∪ B)′) = P(A′ ∩ B′). By De Morgan’s law the complement of the union is the intersection of the complements. The same probability also equals 1 − P(A ∪ B).",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "PRO-Q23",
+      "conceptIds": ["PRO-07"],
+      "question": "Three mutually exclusive events A, B, C have probabilities 0.2, 0.3 and 0.1. Find the probability that at least one of them occurs.",
+      "answer": "Because the events are mutually exclusive, P(A ∪ B ∪ C) = 0.2 + 0.3 + 0.1 = 0.6. The addition of the individual probabilities is valid precisely because all pairwise intersections are empty.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q24",
+      "conceptIds": ["PRO-10"],
+      "question": "If A ⊆ B and P(A) = P(B), what can be concluded about the set difference B − A?",
+      "answer": "P(B − A) = 0. In a discrete probability space this usually implies that B − A is empty, so A = B. In continuous spaces the difference may be a non-empty null set of probability zero.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q25",
+      "conceptIds": ["PRO-01", "PRO-15"],
+      "question": "A die is loaded so that the face 6 is twice as likely as any other face. Can the classical definition be used directly?",
+      "answer": "No. The classical definition requires all outcomes to be equally likely. Because the faces are not equiprobable, the classical counting argument does not apply and a weighted definition of probability must be used instead.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "PRO-Q26",
+      "conceptIds": ["PRO-06"],
+      "question": "Rearrange the addition theorem to solve for the intersection probability.",
+      "answer": "P(A ∩ B) = P(A) + P(B) − P(A ∪ B). When the probabilities of the two events and of their union are known, the intersection probability follows at once. The identity is useful in problems that supply union rather than intersection information.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q27",
+      "conceptIds": ["PRO-02"],
+      "question": "Why must the total probability of the sample space equal one?",
+      "answer": "The sample space S contains every possible outcome of the experiment, so the event S is certain to occur. By the definition of probability for a sure event, P(S) = 1. This normalisation is an axiom of any probability measure.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q28",
+      "conceptIds": ["PRO-04", "PRO-07"],
+      "question": "If two events are mutually exclusive, is it possible for both to have probability greater than 0.5?",
+      "answer": "No. If both had probability greater than 0.5 their sum would exceed 1, yet the probability of their union (which equals the sum because they are mutually exclusive) cannot exceed 1. Hence at least one of them must have probability ≤ 0.5.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q29",
+      "conceptIds": ["PRO-08", "PRO-11"],
+      "question": "Express P(A ∩ B′) in two different ways.",
+      "answer": "P(A ∩ B′) = P(A) − P(A ∩ B) and also P(A ∩ B′) = P(A) + P(B′) − P(A ∪ B′). The first expression is the most direct; the second follows from the addition theorem applied to A and B′.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q30",
+      "conceptIds": ["PRO-13"],
+      "question": "What does it mean for a collection of events to be pairwise mutually exclusive?",
+      "answer": "Every pair of distinct events from the collection has empty intersection. In that case the probability of the union of any sub-collection is simply the sum of the individual probabilities. Pairwise mutual exclusivity is stronger than the requirement that the whole collection has empty total intersection.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "PRO-Q31",
+      "conceptIds": ["PRO-01"],
+      "question": "A fair coin is tossed twice. What is the probability of obtaining at least one head?",
+      "answer": "The sample space has four equally likely outcomes: HH, HT, TH, TT. The favourable outcomes are the first three, so the probability is 3/4. Alternatively, the complement “no heads” has probability 1/4, so the required probability is 1 − 1/4 = 3/4.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q32",
+      "conceptIds": ["PRO-06"],
+      "question": "P(A) = 0.6, P(B) = 0.5 and P(A ∪ B) = 0.9. Find P(A ∩ B).",
+      "answer": "From the rearranged addition theorem P(A ∩ B) = 0.6 + 0.5 − 0.9 = 0.2. The three given probabilities are consistent because 0.2 ≤ min(0.6,0.5).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q33",
+      "conceptIds": ["PRO-05"],
+      "question": "Why is the complement of the complement of an event equal to the event itself?",
+      "answer": "By definition the complement of A′ consists of all outcomes that are not in A′, which is precisely the set A. Consequently (A′)′ = A. This involution property is used when applying the complement rule twice.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q34",
+      "conceptIds": ["PRO-09"],
+      "question": "Is it possible for a probability to equal 1.2? Explain.",
+      "answer": "No. The axiomatic bounds require that every probability lies in the closed interval [0,1]. A value greater than 1 violates the normalisation that the sure event has probability 1 and the monotonicity that no event can be larger than the sample space.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q35",
+      "conceptIds": ["PRO-12"],
+      "question": "Write the inclusion-exclusion expansion for four events in abbreviated form.",
+      "answer": "Sum of the four single probabilities, minus the six double intersections, plus the four triple intersections, minus the one quadruple intersection. The pattern of alternating signs continues, with the sign determined by the number of events in each intersection.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "PRO-Q36",
+      "conceptIds": ["PRO-03"],
+      "question": "How can one decide from probabilities alone whether two events are exhaustive?",
+      "answer": "If P(A ∪ B) = 1 then the events are exhaustive, because their union has probability one and must therefore coincide with the sample space (in a discrete space with no null events). The converse is also true: exhaustive events satisfy P(A ∪ B) = 1.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PRO-Q37",
+      "conceptIds": ["PRO-01", "PRO-08"],
+      "question": "A box contains 5 red and 3 blue balls. One ball is drawn at random. Find the probability that it is not red.",
+      "answer": "Total balls = 8. Probability of red = 5/8, so probability of not red = 1 − 5/8 = 3/8. Alternatively, there are 3 blue balls, so the classical count also yields 3/8. Both approaches agree.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    }
+  ]
+}

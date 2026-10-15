@@ -1,0 +1,462 @@
+{
+  "chapterId": "52",
+  "chapterName": "Vectors",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "VEC-01",
+      "name": "Definition of a vector",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Quantity having both magnitude and direction; represented by a directed line segment."
+    },
+    {
+      "id": "VEC-02",
+      "name": "Types of vectors",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Null, unit, equal, parallel (collinear), coplanar, negative, free, localised."
+    },
+    {
+      "id": "VEC-03",
+      "name": "Addition of vectors (triangle and parallelogram laws)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Resultant by triangle or parallelogram law; commutative and associative."
+    },
+    {
+      "id": "VEC-04",
+      "name": "Subtraction of vectors",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "a − b = a + (−b); geometrically completes the triangle."
+    },
+    {
+      "id": "VEC-05",
+      "name": "Position vector",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Vector from origin to a point; uniquely determines the point."
+    },
+    {
+      "id": "VEC-06",
+      "name": "Section formula (internal and external)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Position vector of point dividing AB in ratio m:n is (n a + m b)/(m+n) or (m b − n a)/(m−n)."
+    },
+    {
+      "id": "VEC-07",
+      "name": "Scalar (dot) product",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "a · b = |a| |b| cos θ; zero if perpendicular."
+    },
+    {
+      "id": "VEC-08",
+      "name": "Vector (cross) product",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "a × b is perpendicular to both; magnitude |a| |b| sin θ; right-hand rule."
+    },
+    {
+      "id": "VEC-09",
+      "name": "Scalar triple product",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "[a b c] = a · (b × c); volume of parallelepiped; zero if coplanar."
+    },
+    {
+      "id": "VEC-10",
+      "name": "Vector triple product",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "a × (b × c) = (a · c)b − (a · b)c."
+    },
+    {
+      "id": "VEC-11",
+      "name": "Component form and magnitude",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "a = a1 i + a2 j + a3 k; |a| = √(a1² + a2² + a3²)."
+    },
+    {
+      "id": "VEC-12",
+      "name": "Direction cosines and direction ratios",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Cosines of angles with axes; ratios proportional to components."
+    },
+    {
+      "id": "VEC-13",
+      "name": "Unit vector in a given direction",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "â = a / |a|."
+    },
+    {
+      "id": "VEC-14",
+      "name": "Collinear and coplanar vectors",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Collinear if one is scalar multiple of other; coplanar if scalar triple product zero."
+    },
+    {
+      "id": "VEC-15",
+      "name": "Applications: work, moment, area",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Work = F · d; moment = r × F; area of parallelogram = |a × b|."
+    }
+  ],
+  "qna": [
+    {
+      "id": "VEC-Q01",
+      "conceptIds": ["VEC-01"],
+      "question": "Define a vector and give two examples.",
+      "answer": "A vector is a quantity that possesses both magnitude and direction. Displacement, velocity, force and acceleration are vectors. Scalars such as mass or temperature have only magnitude.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q02",
+      "conceptIds": ["VEC-02"],
+      "question": "What is a null vector and a unit vector?",
+      "answer": "A null (zero) vector has magnitude zero and arbitrary direction; it is denoted by 0. A unit vector has magnitude one and is obtained by dividing any non-zero vector by its magnitude. Unit vectors along the axes are i, j, k.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q03",
+      "conceptIds": ["VEC-03"],
+      "question": "State the triangle law of vector addition.",
+      "answer": "If two vectors are represented by two sides of a triangle taken in order, then their resultant is represented by the third side taken in the opposite order. The parallelogram law gives the same resultant as the diagonal of the parallelogram.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q04",
+      "conceptIds": ["VEC-05"],
+      "question": "What is a position vector?",
+      "answer": "The position vector of a point P relative to an origin O is the vector OP. It uniquely determines the location of P. If the coordinates of P are (x,y,z) then the position vector is x i + y j + z k.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q05",
+      "conceptIds": ["VEC-06"],
+      "question": "State the section formula for internal division.",
+      "answer": "If a point R divides the line segment joining A (position vector a) and B (position vector b) in the ratio m : n internally, then the position vector of R is (n a + m b)/(m + n). For external division the formula is (m b − n a)/(m − n).",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q06",
+      "conceptIds": ["VEC-07"],
+      "question": "Define the scalar product of two vectors and state when it is zero.",
+      "answer": "a · b = |a| |b| cos θ where θ is the angle between them. The product is zero if and only if the vectors are perpendicular (or one of them is the zero vector). The scalar product is commutative and distributive.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q07",
+      "conceptIds": ["VEC-08"],
+      "question": "Define the vector product and give its magnitude.",
+      "answer": "a × b is a vector perpendicular to both a and b whose magnitude is |a| |b| sin θ. The direction is given by the right-hand rule. The product is anti-commutative: a × b = −(b × a).",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q08",
+      "conceptIds": ["VEC-09"],
+      "question": "What does the scalar triple product represent geometrically?",
+      "answer": "The absolute value of a · (b × c) equals the volume of the parallelepiped formed by the three vectors as edges. The product vanishes if and only if the three vectors are coplanar.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q09",
+      "conceptIds": ["VEC-11"],
+      "question": "Write the magnitude of the vector a = 3i − 2j + 6k.",
+      "answer": "|a| = √(3² + (−2)² + 6²) = √(9 + 4 + 36) = √49 = 7. The magnitude is the square root of the sum of the squares of the components.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q10",
+      "conceptIds": ["VEC-13"],
+      "question": "Find a unit vector in the direction of a = 2i − 3j + 6k.",
+      "answer": "First |a| = √(4 + 9 + 36) = √49 = 7. The unit vector is (2/7)i − (3/7)j + (6/7)k. Dividing by the magnitude produces a vector of length one in the same direction.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q11",
+      "conceptIds": ["VEC-07"],
+      "question": "Find the angle between a = i + 2j − 2k and b = 2i − 2j + k.",
+      "answer": "a · b = 2 − 4 − 2 = −4, |a| = 3, |b| = 3. cos θ = (a · b)/(|a||b|) = −4/9. θ = cos^{-1}(−4/9). The negative sign shows the angle is obtuse.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q12",
+      "conceptIds": ["VEC-08"],
+      "question": "Compute a × b where a = i − j + k and b = 2i + j − k.",
+      "answer": "a × b = |i j k; 1 −1 1; 2 1 −1| = i(1 − 1) − j(−1 − 2) + k(1 + 2) = 0 i + 3 j + 3 k = 3(j + k). The cross product is perpendicular to both original vectors.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q13",
+      "conceptIds": ["VEC-09"],
+      "question": "Show that the vectors a = i + 2j + 3k, b = 2i + 3j + 4k, c = 3i + 4j + 5k are coplanar.",
+      "answer": "Compute the scalar triple product [a b c] = a · (b × c). Expanding the determinant formed by the components yields zero. Therefore the vectors are coplanar.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q14",
+      "conceptIds": ["VEC-06"],
+      "question": "Find the position vector of the point that divides the join of A(2i − j + k) and B(3i + 2j − 2k) in the ratio 2 : 3 internally.",
+      "answer": "Position vector = (3(2i − j + k) + 2(3i + 2j − 2k))/(2+3) = (6i − 3j + 3k + 6i + 4j − 4k)/5 = (12i + j − k)/5. The section formula is applied directly.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q15",
+      "conceptIds": ["VEC-14"],
+      "question": "How do you test whether two vectors are collinear?",
+      "answer": "Two non-zero vectors a and b are collinear if and only if there exists a scalar λ such that a = λ b. Equivalently their cross product is the zero vector, or their direction ratios are proportional.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q16",
+      "conceptIds": ["VEC-12"],
+      "question": "Find the direction cosines of the vector 2i − 3j + 6k.",
+      "answer": "Magnitude = 7. Direction cosines are 2/7, −3/7, 6/7. They satisfy l² + m² + n² = 1, which serves as a quick check.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q17",
+      "conceptIds": ["VEC-03"],
+      "question": "Prove that vector addition is commutative.",
+      "answer": "By the parallelogram law the diagonal representing a + b is the same as the diagonal representing b + a. Algebraically, if a = a1 i + a2 j + a3 k and b = b1 i + b2 j + b3 k then a + b = b + a component-wise.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q18",
+      "conceptIds": ["VEC-15"],
+      "question": "What is the geometric meaning of |a × b|?",
+      "answer": "The magnitude of the cross product equals the area of the parallelogram formed by the vectors a and b as adjacent sides. Half of that magnitude is the area of the triangle formed by the same two vectors.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q19",
+      "conceptIds": ["VEC-07"],
+      "question": "If a · b = 0 and a ≠ 0, b ≠ 0, what can you conclude?",
+      "answer": "The vectors are perpendicular. The cosine of the angle between them is zero, so the angle is π/2. The converse is also true: perpendicular non-zero vectors have vanishing scalar product.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q20",
+      "conceptIds": ["VEC-10"],
+      "question": "State the vector triple product identity.",
+      "answer": "a × (b × c) = (a · c) b − (a · b) c. The result lies in the plane of b and c. Expanding both sides in components verifies the identity.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q21",
+      "conceptIds": ["VEC-04"],
+      "question": "Express the vector from point A to point B in terms of position vectors.",
+      "answer": "If a and b are the position vectors of A and B, then the vector AB = b − a. Geometrically this is the directed segment from A to B; algebraically it is the difference of the position vectors.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q22",
+      "conceptIds": ["VEC-09"],
+      "question": "Evaluate [i j k].",
+      "answer": "i · (j × k) = i · i = 1. The standard basis vectors form a right-handed orthonormal triad, so their scalar triple product equals 1. Any even permutation also equals 1; odd permutations equal −1.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q23",
+      "conceptIds": ["VEC-02"],
+      "question": "What is the difference between free and localised vectors?",
+      "answer": "A free vector is determined solely by its magnitude and direction and may be moved parallel to itself. A localised (or bound) vector is confined to a particular line of action; its point of application matters (as with force vectors in rigid-body mechanics).",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q24",
+      "conceptIds": ["VEC-11"],
+      "question": "If a = 2i + 3j − k and b = i − 2j + 2k, find a + b and a − b.",
+      "answer": "a + b = 3i + j + k; a − b = i + 5j − 3k. Addition and subtraction are performed component-wise.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q25",
+      "conceptIds": ["VEC-14"],
+      "question": "Show that the points with position vectors a, b, c are collinear if and only if there exist scalars x, y, z not all zero such that x a + y b + z c = 0 and x + y + z = 0.",
+      "answer": "The second condition ensures the linear combination is an affine combination. The two conditions together are equivalent to one of the vectors being a convex combination of the other two, which is the definition of collinearity of the three points.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q26",
+      "conceptIds": ["VEC-15"],
+      "question": "A force F = 3i + 2j − k acts at the point with position vector 2i − j + 3k. Find the moment about the origin.",
+      "answer": "Moment = r × F = |i j k; 2 −1 3; 3 2 −1| = i(1 − 6) − j(−2 − 9) + k(4 + 3) = −5 i + 11 j + 7 k. The moment vector is perpendicular to both r and F.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q27",
+      "conceptIds": ["VEC-07"],
+      "question": "Prove that (a + b) · (a − b) = |a|² − |b|².",
+      "answer": "Expand the left side: a · a − a · b + b · a − b · b. Since the scalar product is commutative, the middle terms cancel and we obtain |a|² − |b|². The identity is the vector analogue of the difference of squares.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q28",
+      "conceptIds": ["VEC-08"],
+      "question": "If a × b = 0, what can you say about a and b?",
+      "answer": "Either at least one of the vectors is zero, or the vectors are parallel (collinear). The sine of the angle between them is zero, so the angle is 0 or π.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q29",
+      "conceptIds": ["VEC-06"],
+      "question": "Find the mid-point of the segment joining the points with position vectors a and b.",
+      "answer": "The mid-point divides the segment in the ratio 1 : 1, so its position vector is (a + b)/2. This is the special case of the section formula with m = n = 1.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q30",
+      "conceptIds": ["VEC-12"],
+      "question": "If the direction ratios of a line are 2, −1, 2, find its direction cosines.",
+      "answer": "Magnitude of the direction-ratio vector = √(4 + 1 + 4) = 3. Direction cosines are 2/3, −1/3, 2/3. Direction cosines are the normalised direction ratios.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q31",
+      "conceptIds": ["VEC-09"],
+      "question": "If a · (b × c) = 0, are the vectors necessarily coplanar?",
+      "answer": "Yes, provided we interpret the statement for three vectors in three-dimensional space. The vanishing of the scalar triple product is the necessary and sufficient condition for coplanarity.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q32",
+      "conceptIds": ["VEC-03"],
+      "question": "State the associative law of vector addition.",
+      "answer": "(a + b) + c = a + (b + c). Geometrically, both sides represent the diagonal of the parallelepiped formed by the three vectors as concurrent edges. The law allows the omission of parentheses in multiple sums.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q33",
+      "conceptIds": ["VEC-15"],
+      "question": "A force of magnitude 10 N acts in the direction of the vector 3i − 4j. Find the work done when the point of application moves through the displacement 2i + j − k.",
+      "answer": "Unit vector in the force direction = (3/5)i − (4/5)j. Force vector = 10 · that unit vector = 6i − 8j. Work = F · d = 12 − 8 = 4 J. Work is the scalar product of force and displacement.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q34",
+      "conceptIds": ["VEC-02"],
+      "question": "What is meant by equal vectors?",
+      "answer": "Two vectors are equal if they have the same magnitude and the same direction. They need not have the same initial point; free vectors that can be translated onto each other are regarded as equal.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "VEC-Q35",
+      "conceptIds": ["VEC-11"],
+      "question": "Express the vector joining the points A(1,2,3) and B(−1,0,2) in component form.",
+      "answer": "Position vector of A is i + 2j + 3k, of B is −i + 0j + 2k. Vector AB = (−1 − 1)i + (0 − 2)j + (2 − 3)k = −2i − 2j − k.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q36",
+      "conceptIds": ["VEC-08"],
+      "question": "Prove that a · (a × b) = 0.",
+      "answer": "The cross product a × b is perpendicular to a, so their scalar product vanishes. Algebraically the scalar triple product [a a b] has two identical rows (or columns) and is therefore zero.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "VEC-Q37",
+      "conceptIds": ["VEC-01", "VEC-02"],
+      "question": "Why is a scalar quantity completely specified by a single number while a vector needs more information?",
+      "answer": "A scalar has only magnitude, so one real number is sufficient. A vector possesses both magnitude and direction; in three-dimensional space three independent numbers (components) are required, or equivalently a magnitude together with two angles (direction).",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    }
+  ]
+}

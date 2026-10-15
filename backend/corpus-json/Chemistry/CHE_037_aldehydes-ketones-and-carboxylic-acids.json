@@ -1,0 +1,468 @@
+{
+  "chapterId": "37",
+  "chapterName": "Aldehydes Ketones and Carboxylic Acids",
+  "subject": "Chemistry",
+  "concepts": [
+    {
+      "id": "AKCA-01",
+      "name": "Natural Occurrence of Carbonyls",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Benzaldehyde in almonds; many natural flavours are carbonyl compounds."
+    },
+    {
+      "id": "AKCA-02",
+      "name": "General Formula and Isomerism",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Both aldehydes and ketones have formula CnH2nO; they are functional isomers."
+    },
+    {
+      "id": "AKCA-03",
+      "name": "Formic Acid Dual Nature",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Formic acid is the only acid that also contains an aldehydic group."
+    },
+    {
+      "id": "AKCA-04",
+      "name": "Geminal Diols",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Two OH on one carbon unstable; dehydrate to aldehyde or ketone."
+    },
+    {
+      "id": "AKCA-05",
+      "name": "Preparation of Ketones from Calcium Salts",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Dry distillation of calcium carboxylates yields ketones + CaCO3."
+    },
+    {
+      "id": "AKCA-06",
+      "name": "Selectivity of NaBH4",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "NaBH4 reduces aldehydes and ketones but not carboxylic acids."
+    },
+    {
+      "id": "AKCA-07",
+      "name": "Formalin and Urotropine",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Formalin is 40 % HCHO; reacts with NH3 to give urotropine (HMTA)."
+    },
+    {
+      "id": "AKCA-08",
+      "name": "Cannizzaro vs Aldol",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Cannizzaro needs conc. alkali (no α-H); aldol needs dilute alkali (has α-H)."
+    },
+    {
+      "id": "AKCA-09",
+      "name": "Chloral and Haloform Reaction",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Chloral is CCl3CHO; haloform given by acetaldehyde and methyl ketones."
+    },
+    {
+      "id": "AKCA-10",
+      "name": "Fehling’s and Tollen’s Tests",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1, 2],
+      "oneLineSummary": "Tollen’s for aliphatic + aromatic aldehydes; Fehling’s only for aliphatic."
+    },
+    {
+      "id": "AKCA-11",
+      "name": "NaHSO3 Addition Compounds",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Used to separate aldehydes and methyl ketones from other organics."
+    },
+    {
+      "id": "AKCA-12",
+      "name": "Clemmensen Reduction",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Zn-Hg / HCl converts carbonyl to methylene (deoxygenation)."
+    },
+    {
+      "id": "AKCA-13",
+      "name": "Cyanohydrin Formation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Aldehydes and ketones add HCN to form cyanohydrins."
+    },
+    {
+      "id": "AKCA-14",
+      "name": "Bakelite from Phenol + Formaldehyde",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Condensation polymer; one of the earliest thermosetting plastics."
+    },
+    {
+      "id": "AKCA-15",
+      "name": "Oximes and Enolate Intermediate",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Carbonyl + NH2OH → oxime; aldol proceeds via enolate ion."
+    },
+    {
+      "id": "AKCA-16",
+      "name": "Acidity of Carboxylic Acids",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Resonance stabilisation of carboxylate ion makes acids stronger than phenols."
+    },
+    {
+      "id": "AKCA-17",
+      "name": "Hell-Volhard-Zelinsky Reaction",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "α-Halogenation of carboxylic acids using red P and X2."
+    },
+    {
+      "id": "AKCA-18",
+      "name": "Decarboxylation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Soda-lime decarboxylation converts RCOOH to RH."
+    }
+  ],
+  "qna": [
+    {
+      "id": "AKCA-Q01",
+      "conceptIds": ["AKCA-01"],
+      "question": "Which carbonyl compound is present in almonds?",
+      "answer": "Almonds contain benzaldehyde. It is an aromatic aldehyde with a characteristic pleasant odour. Benzaldehyde is widely used in the flavour and fragrance industry.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q02",
+      "conceptIds": ["AKCA-02"],
+      "question": "What is the general formula of aldehydes and ketones and how are they related?",
+      "answer": "Both aldehydes and ketones have the general formula CnH2nO. They are functional isomers of each other. The difference lies in the position of the carbonyl group.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q03",
+      "conceptIds": ["AKCA-03"],
+      "question": "Why is formic acid unique among carboxylic acids?",
+      "answer": "Formic acid is the only carboxylic acid that also contains an aldehydic hydrogen. This dual functionality allows it to show some reducing properties characteristic of aldehydes as well as the acidic properties of carboxylic acids.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q04",
+      "conceptIds": ["AKCA-04"],
+      "question": "What happens when two hydroxyl groups are attached to the same carbon?",
+      "answer": "A geminal diol is unstable and readily loses a molecule of water. If the carbon is terminal the product is an aldehyde; if it is internal the product is a ketone. This explains why aldehyde and ketone hydrates are rarely isolated.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q05",
+      "conceptIds": ["AKCA-05"],
+      "question": "How are ketones prepared from calcium salts of carboxylic acids?",
+      "answer": "Dry distillation of the calcium salt of a carboxylic acid yields a ketone together with calcium carbonate. The method is useful for the preparation of symmetrical ketones.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q06",
+      "conceptIds": ["AKCA-06"],
+      "question": "Why cannot sodium borohydride reduce carboxylic acids?",
+      "answer": "Sodium borohydride is a mild and selective reducing agent. It can reduce aldehydes and ketones to alcohols but is not strong enough to reduce the less reactive carboxylic acid group. Stronger reagents such as LiAlH4 are required for that purpose.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q07",
+      "conceptIds": ["AKCA-07"],
+      "question": "What is formalin and what is urotropine?",
+      "answer": "Formalin is a 40 % aqueous solution of formaldehyde used as a biological preservative. Formaldehyde reacts with ammonia to form hexamethylenetetramine (urotropine or HMTA), which is used as a urinary antiseptic.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q08",
+      "conceptIds": ["AKCA-08"],
+      "question": "How do the conditions for Cannizzaro and aldol reactions differ?",
+      "answer": "The Cannizzaro reaction requires concentrated alkali and occurs with aldehydes that lack α-hydrogen. The aldol reaction requires dilute alkali and occurs with aldehydes or ketones that possess α-hydrogen. The concentration of base is the key distinguishing factor.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q09",
+      "conceptIds": ["AKCA-09"],
+      "question": "What is chloral and which compounds give the haloform reaction?",
+      "answer": "Chloral is trichloroacetaldehyde (CCl3CHO). The haloform reaction is given by acetaldehyde, all methyl ketones and compounds containing the CH3CH(OH)– group. Iodoform is the yellow precipitate obtained with iodine and alkali.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q10",
+      "conceptIds": ["AKCA-10"],
+      "question": "Distinguish between Tollen’s and Fehling’s tests.",
+      "answer": "Tollen’s reagent (ammoniacal silver nitrate) is reduced by both aliphatic and aromatic aldehydes, producing a silver mirror. Fehling’s solution is reduced only by aliphatic aldehydes, producing a red precipitate of Cu2O. Ketones do not respond to either test under normal conditions.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1, 2]
+    },
+    {
+      "id": "AKCA-Q11",
+      "conceptIds": ["AKCA-11"],
+      "question": "How is sodium bisulphite used in the separation of carbonyl compounds?",
+      "answer": "Aldehydes and methyl ketones form crystalline addition compounds with NaHSO3. These adducts are soluble in water and can be decomposed by acid or base to regenerate the carbonyl compound, allowing separation from non-carbonyl impurities.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q12",
+      "conceptIds": ["AKCA-12"],
+      "question": "What is Clemmensen reduction used for?",
+      "answer": "Clemmensen reduction converts the carbonyl group of an aldehyde or ketone into a methylene group using zinc amalgam and concentrated hydrochloric acid. It is a deoxygenation reaction especially useful for acid-stable compounds.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q13",
+      "conceptIds": ["AKCA-13"],
+      "question": "Write the product of the reaction of a ketone with HCN.",
+      "answer": "Ketones react with hydrogen cyanide to form cyanohydrins. The reaction is a nucleophilic addition of cyanide ion to the carbonyl carbon followed by protonation. Cyanohydrins are useful intermediates for the synthesis of α-hydroxy acids and amino acids.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q14",
+      "conceptIds": ["AKCA-14"],
+      "question": "How is Bakelite prepared?",
+      "answer": "Bakelite is prepared by the condensation polymerisation of phenol and formaldehyde. The reaction proceeds through methylol intermediates and ultimately produces a cross-linked thermosetting polymer used for electrical fittings and handles.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q15",
+      "conceptIds": ["AKCA-15"],
+      "question": "What is the intermediate in the aldol condensation?",
+      "answer": "The intermediate in the aldol condensation is the enolate ion. Base abstracts an α-hydrogen to generate the enolate, which then attacks the carbonyl carbon of another molecule. The resulting β-hydroxy carbonyl compound may dehydrate to an α,β-unsaturated carbonyl compound.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AKCA-Q16",
+      "conceptIds": ["AKCA-16"],
+      "question": "Why are carboxylic acids stronger acids than phenols?",
+      "answer": "The carboxylate anion is stabilised by resonance involving two equivalent oxygen atoms. The phenoxide anion is stabilised by resonance involving the aromatic ring, but the negative charge is less effectively delocalised. Consequently carboxylic acids are stronger acids than phenols.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "AKCA-Q17",
+      "conceptIds": ["AKCA-18"],
+      "question": "What is the product of soda-lime decarboxylation of a carboxylic acid?",
+      "answer": "When a carboxylic acid is heated with soda-lime (NaOH + CaO) it undergoes decarboxylation to give the corresponding hydrocarbon. The carboxyl carbon is lost as carbonate. The reaction is useful for stepping down the carbon chain by one carbon.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q18",
+      "conceptIds": ["AKCA-10"],
+      "question": "Why do ketones not reduce Fehling’s or Tollen’s reagent?",
+      "answer": "Ketones lack the aldehydic hydrogen that is essential for the reducing action. The presence of this hydrogen in aldehydes allows them to be oxidised to carboxylic acids while the metal ion is reduced. Ketones therefore give a negative test with both reagents.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1, 2]
+    },
+    {
+      "id": "AKCA-Q19",
+      "conceptIds": ["AKCA-08", "AKCA-15"],
+      "question": "Why does formaldehyde undergo Cannizzaro reaction while acetaldehyde undergoes aldol condensation?",
+      "answer": "Formaldehyde has no α-hydrogen and therefore cannot form an enolate; it undergoes Cannizzaro reaction with concentrated alkali. Acetaldehyde possesses α-hydrogen, forms an enolate with dilute alkali and undergoes aldol condensation.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q20",
+      "conceptIds": ["AKCA-07"],
+      "question": "What is the medicinal use of urotropine?",
+      "answer": "Urotropine (hexamethylenetetramine) is used as a urinary antiseptic. In acidic urine it slowly releases formaldehyde, which exerts a bactericidal effect. It is therefore administered for the treatment of urinary-tract infections.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q21",
+      "conceptIds": ["AKCA-09"],
+      "question": "How is chloral prepared from acetaldehyde?",
+      "answer": "Acetaldehyde is treated with chlorine in the presence of moisture: CH3CHO + 3 Cl2 → CCl3CHO + 3 HCl. The three α-hydrogens are successively replaced by chlorine, yielding trichloroacetaldehyde (chloral).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q22",
+      "conceptIds": ["AKCA-06"],
+      "question": "Which reducing agent would you choose to reduce an aldehyde in the presence of a carboxylic acid?",
+      "answer": "Sodium borohydride is the reagent of choice. It selectively reduces the aldehyde to a primary alcohol while leaving the carboxylic acid group untouched. Lithium aluminium hydride would reduce both functional groups.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q23",
+      "conceptIds": ["AKCA-11"],
+      "question": "Why do only aldehydes and methyl ketones form bisulphite addition compounds?",
+      "answer": "The addition of bisulphite is reversible and sterically sensitive. Bulky groups around the carbonyl carbon hinder the approach of the bisulphite ion. Consequently only aldehydes and sterically unhindered methyl ketones form stable crystalline adducts.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q24",
+      "conceptIds": ["AKCA-12"],
+      "question": "Why is Clemmensen reduction preferred for acid-stable compounds?",
+      "answer": "Clemmensen reduction employs strongly acidic conditions (Zn-Hg / conc. HCl). Compounds that are sensitive to acid would be destroyed. For base-stable, acid-sensitive compounds the Wolff–Kishner reduction (alkaline conditions) is preferred instead.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q25",
+      "conceptIds": ["AKCA-14"],
+      "question": "Why is Bakelite classified as a thermosetting polymer?",
+      "answer": "Bakelite forms extensive cross-links between polymer chains during the final curing stage. Once these covalent cross-links are formed the material becomes permanently hard and cannot be softened or remoulded by heating. This is the defining characteristic of a thermosetting plastic.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q26",
+      "conceptIds": ["AKCA-16"],
+      "question": "How does the acidity of chloroacetic acid compare with that of acetic acid?",
+      "answer": "Chloroacetic acid is stronger than acetic acid. The electron-withdrawing chlorine atom stabilises the carboxylate anion by dispersing the negative charge, thereby increasing the acid strength. Further substitution by chlorine increases acidity still more.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "AKCA-Q27",
+      "conceptIds": ["AKCA-17"],
+      "question": "What is the Hell-Volhard-Zelinsky reaction used for?",
+      "answer": "The HVZ reaction is used for the selective α-halogenation of carboxylic acids. The acid is treated with red phosphorus and halogen (Cl2 or Br2). The product is an α-halo acid that can be further converted into many useful derivatives.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "AKCA-Q28",
+      "conceptIds": ["AKCA-02", "AKCA-10"],
+      "question": "How can you distinguish an aldehyde from a ketone chemically?",
+      "answer": "Aldehydes reduce Tollen’s reagent (silver mirror) and Fehling’s solution (red precipitate), whereas ketones do not. Aldehydes also form bisulphite addition compounds more readily. These simple tests allow rapid distinction between the two classes.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1, 2]
+    },
+    {
+      "id": "AKCA-Q29",
+      "conceptIds": ["AKCA-15"],
+      "question": "What product is formed when acetone reacts with hydroxylamine?",
+      "answer": "Acetone reacts with hydroxylamine to form acetone oxime ((CH3)2C=NOH). The reaction is a nucleophilic addition-elimination and is used both for characterisation of carbonyl compounds and as a synthetic intermediate.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AKCA-Q30",
+      "conceptIds": ["AKCA-05", "AKCA-18"],
+      "question": "Compare the products obtained when calcium acetate is dry-distilled and when sodium acetate is heated with soda-lime.",
+      "answer": "Dry distillation of calcium acetate yields acetone (a ketone). Heating sodium acetate with soda-lime yields methane (a hydrocarbon) by decarboxylation. The two reactions illustrate different thermal behaviours of carboxylate salts.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q31",
+      "conceptIds": ["AKCA-01", "AKCA-14"],
+      "question": "Name the polymer formed from formaldehyde and phenol and state one use.",
+      "answer": "The polymer is Bakelite (phenol-formaldehyde resin). It is used for making electrical switches, plugs, handles of utensils and other moulded articles because of its electrical insulating properties and heat resistance.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q32",
+      "conceptIds": ["AKCA-09"],
+      "question": "Why do only methyl ketones give a positive iodoform test?",
+      "answer": "The iodoform test requires the presence of a CH3CO– group (or a group that can be oxidised to it). After halogenation of the methyl group the resulting trihalomethyl ketone is cleaved by alkali to give iodoform. Ketones lacking the methyl group do not undergo this cleavage.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q33",
+      "conceptIds": ["AKCA-13"],
+      "question": "Why is the addition of HCN to carbonyl compounds catalysed by base?",
+      "answer": "Base generates the nucleophilic cyanide ion (CN−) from HCN. The cyanide ion is a much stronger nucleophile than undissociated HCN and therefore adds rapidly to the carbonyl carbon. Without base the reaction is extremely slow.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q34",
+      "conceptIds": ["AKCA-04"],
+      "question": "Why are aldehyde hydrates generally unstable?",
+      "answer": "Aldehyde hydrates are geminal diols. The presence of two electronegative oxygen atoms on the same carbon makes the structure unstable relative to the carbonyl compound plus water. Only aldehydes with strongly electron-withdrawing groups (e.g. chloral) form stable isolable hydrates.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AKCA-Q35",
+      "conceptIds": ["AKCA-16", "AKCA-18"],
+      "question": "How would you convert ethanoic acid into methane?",
+      "answer": "Ethanoic acid is first converted into its sodium salt. The sodium acetate is then heated with soda-lime, whereupon decarboxylation occurs and methane is evolved. The overall transformation removes one carbon atom from the chain.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    }
+  ]
+}

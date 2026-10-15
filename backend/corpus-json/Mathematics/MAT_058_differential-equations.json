@@ -1,0 +1,462 @@
+{
+  "chapterId": "58",
+  "chapterName": "Differential Equations",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "DE-01",
+      "name": "Order of a differential equation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Highest order of the derivative appearing in the equation."
+    },
+    {
+      "id": "DE-02",
+      "name": "Degree of a differential equation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Highest power of the highest-order derivative after the equation is made polynomial in the derivatives."
+    },
+    {
+      "id": "DE-03",
+      "name": "Formation of differential equation by eliminating arbitrary constants",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Differentiate the given family as many times as there are constants and eliminate the constants."
+    },
+    {
+      "id": "DE-04",
+      "name": "Variable-separable equations",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "dy/dx = f(x) g(y); separate and integrate both sides."
+    },
+    {
+      "id": "DE-05",
+      "name": "Homogeneous differential equations",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "dy/dx = f(y/x); substitute y = vx to reduce to variable-separable."
+    },
+    {
+      "id": "DE-06",
+      "name": "Linear first-order differential equations",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "dy/dx + P(x)y = Q(x); integrating factor e^{∫P dx}."
+    },
+    {
+      "id": "DE-07",
+      "name": "Exact differential equations",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "M dx + N dy = 0 is exact if ∂M/∂y = ∂N/∂x; solution is ∫M dx + ∫(N − ∂/∂y∫M) dy = C."
+    },
+    {
+      "id": "DE-08",
+      "name": "Determinant method for eliminating constants",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "For a family with two constants, the Wronskian-like determinant of y, y', y'' set to zero."
+    },
+    {
+      "id": "DE-09",
+      "name": "General and particular solutions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "General solution contains arbitrary constants; particular solution is obtained by fixing them."
+    },
+    {
+      "id": "DE-10",
+      "name": "Singular solutions",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Solutions not contained in the general solution; often envelopes of the family."
+    },
+    {
+      "id": "DE-11",
+      "name": "Orthogonal trajectories",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Curves that intersect a given family at right angles; replace dy/dx by −dx/dy."
+    },
+    {
+      "id": "DE-12",
+      "name": "Second-order linear equations with constant coefficients",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Characteristic equation; solutions depend on roots (real distinct, repeated, complex)."
+    },
+    {
+      "id": "DE-13",
+      "name": "Non-homogeneous linear equations",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "General solution = complementary function + particular integral."
+    },
+    {
+      "id": "DE-14",
+      "name": "Equations reducible to variable-separable",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Substitutions that transform the equation into separable form."
+    },
+    {
+      "id": "DE-15",
+      "name": "Degree not defined",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "When the equation cannot be expressed as a polynomial in the highest derivative (e.g. involving sin y' or e^{y'})."
+    }
+  ],
+  "qna": [
+    {
+      "id": "DE-Q01",
+      "conceptIds": ["DE-01"],
+      "question": "What is the order of a differential equation?",
+      "answer": "The order is the order of the highest derivative that appears in the equation. For example, the equation y'' + 2y' + y = 0 has order 2. Order is always a positive integer.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q02",
+      "conceptIds": ["DE-02"],
+      "question": "What is the degree of a differential equation?",
+      "answer": "After the equation has been made free of radicals and fractions involving the derivatives, the degree is the highest power of the highest-order derivative. If the equation cannot be written as a polynomial in the derivatives, the degree is not defined.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q03",
+      "conceptIds": ["DE-15"],
+      "question": "Why is the degree of (y'')² + cos(y') = 2 not defined?",
+      "answer": "The presence of the transcendental function cos(y') prevents the equation from being expressed as a polynomial in the derivatives. Degree is defined only for equations that are polynomial in the highest-order derivative after clearing radicals and fractions.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q04",
+      "conceptIds": ["DE-03"],
+      "question": "How do you form a differential equation from a family containing arbitrary constants?",
+      "answer": "Differentiate the given relation as many times as there are independent arbitrary constants. Eliminate the constants among the original equation and the differentiated equations. The resulting equation free of arbitrary constants is the required differential equation.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q05",
+      "conceptIds": ["DE-04"],
+      "question": "Describe the method of solving a variable-separable equation.",
+      "answer": "Write the equation in the form dy/dx = f(x) g(y) or equivalently g(y) dy = f(x) dx. Integrate both sides: ∫ g(y) dy = ∫ f(x) dx + C. The resulting relation (possibly implicit) is the general solution.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q06",
+      "conceptIds": ["DE-05"],
+      "question": "How do you solve a homogeneous first-order equation?",
+      "answer": "A homogeneous equation can be written dy/dx = f(y/x). Substitute y = v x so that dy/dx = v + x dv/dx. The equation reduces to a variable-separable equation in v and x. After solving for v, replace v by y/x.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q07",
+      "conceptIds": ["DE-06"],
+      "question": "State the standard form and solution method for a linear first-order equation.",
+      "answer": "The standard form is dy/dx + P(x) y = Q(x). The integrating factor is e^{∫ P(x) dx}. Multiplying through by the integrating factor makes the left side an exact derivative; integration then yields the general solution.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q08",
+      "conceptIds": ["DE-01", "DE-02"],
+      "question": "Find the order and degree of the equation (d²y/dx²)² + (dy/dx)³ + y = 0.",
+      "answer": "The highest derivative is of order 2, so the order is 2. The equation is already polynomial in the derivatives and the highest power of the highest derivative is 2, so the degree is 2.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q09",
+      "conceptIds": ["DE-03"],
+      "question": "Form the differential equation from y = A e^{2x} + B e^{3x}.",
+      "answer": "Differentiate: y' = 2A e^{2x} + 3B e^{3x}, y'' = 4A e^{2x} + 9B e^{3x}. Eliminate A and B to obtain the second-order equation y'' − 5 y' + 6 y = 0. The characteristic equation has roots 2 and 3, confirming the result.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q10",
+      "conceptIds": ["DE-04"],
+      "question": "Solve dy/dx = (1 + y²)/(1 + x²).",
+      "answer": "Separate: dy/(1 + y²) = dx/(1 + x²). Integrate: tan^{-1} y = tan^{-1} x + C. Therefore y = tan(tan^{-1} x + C). The solution may also be left in the implicit form tan^{-1} y − tan^{-1} x = C.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q11",
+      "conceptIds": ["DE-05"],
+      "question": "Solve the homogeneous equation dy/dx = (x + y)/x.",
+      "answer": "Write dy/dx = 1 + y/x. Put y = v x: v + x v' = 1 + v ⇒ x v' = 1 ⇒ dv = dx/x. Integrate: v = log|x| + C. Therefore y/x = log|x| + C or y = x (log|x| + C).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q12",
+      "conceptIds": ["DE-06"],
+      "question": "Solve dy/dx + y = e^{-x}.",
+      "answer": "P = 1, integrating factor e^{∫ dx} = e^x. Multiply: e^x y' + e^x y = 1 ⇒ d/dx (y e^x) = 1. Integrate: y e^x = x + C ⇒ y = (x + C) e^{-x}.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q13",
+      "conceptIds": ["DE-08"],
+      "question": "Outline the determinant method for eliminating two arbitrary constants.",
+      "answer": "Write the original relation and its first and second derivatives as a system of three equations linear in the two constants (and 1). For a non-trivial solution the determinant of the coefficient matrix must vanish. Expanding that determinant yields the differential equation of order 2.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q14",
+      "conceptIds": ["DE-09"],
+      "question": "Distinguish between the general solution and a particular solution.",
+      "answer": "The general solution of an nth-order equation contains n independent arbitrary constants and represents a family of curves. A particular solution is obtained by assigning specific values to those constants, usually from initial or boundary conditions. It represents one member of the family.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q15",
+      "conceptIds": ["DE-12"],
+      "question": "How do you solve the second-order equation y'' − 3 y' + 2 y = 0?",
+      "answer": "The characteristic equation is r² − 3r + 2 = 0 ⇒ (r−1)(r−2)=0. Roots are 1 and 2. The general solution is y = A e^x + B e^{2x}. Distinct real roots produce two independent exponential solutions.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q16",
+      "conceptIds": ["DE-01"],
+      "question": "What is the order of the equation d³y/dx³ + 2 (dy/dx)² + y = sin x?",
+      "answer": "The highest derivative is the third derivative, so the order is 3. The presence of the squared first derivative does not affect the order; order is determined solely by the highest derivative present.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q17",
+      "conceptIds": ["DE-02"],
+      "question": "Find the degree of √(1 + (y')²) = y''.",
+      "answer": "Square both sides: 1 + (y')² = (y'')². The equation is now polynomial in the derivatives and the highest power of the highest derivative y'' is 2, so the degree is 2. Squaring is necessary before degree can be read off.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q18",
+      "conceptIds": ["DE-04"],
+      "question": "Solve (1 + y²) dx = (1 + x²) dy.",
+      "answer": "Separate: dy/(1 + y²) = dx/(1 + x²). Integrate: tan^{-1} y = tan^{-1} x + C. The solution is y = tan(tan^{-1} x + C). Initial conditions would fix C.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q19",
+      "conceptIds": ["DE-05"],
+      "question": "Is the equation dy/dx = (x² + y²)/xy homogeneous? Justify.",
+      "answer": "Yes. Dividing numerator and denominator by x² gives dy/dx = (1 + (y/x)²)/(y/x), which is a function of y/x only. The substitution y = v x is therefore applicable.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q20",
+      "conceptIds": ["DE-06"],
+      "question": "Solve dy/dx − y/x = x.",
+      "answer": "P = −1/x, integrating factor e^{∫ −dx/x} = e^{−log x} = 1/x. Multiply: (1/x) y' − (1/x²) y = 1 ⇒ d/dx (y/x) = 1. Integrate: y/x = x + C ⇒ y = x² + C x.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q21",
+      "conceptIds": ["DE-11"],
+      "question": "What is the differential equation of the orthogonal trajectories of a given family?",
+      "answer": "If the given family satisfies F(x, y, dy/dx) = 0, the orthogonal trajectories satisfy F(x, y, −dx/dy) = 0. Replacing the slope by its negative reciprocal produces the equation whose solutions intersect the original family at right angles.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q22",
+      "conceptIds": ["DE-03"],
+      "question": "Form the differential equation of the family y = A cos x + B sin x.",
+      "answer": "Differentiate twice: y' = −A sin x + B cos x, y'' = −A cos x − B sin x = −y. Therefore y'' + y = 0. The equation is free of the arbitrary constants A and B and has order 2, matching the number of constants.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q23",
+      "conceptIds": ["DE-09"],
+      "question": "A differential equation of order 2 has the general solution y = A e^x + B e^{−x}. Find the particular solution satisfying y(0)=0, y'(0)=1.",
+      "answer": "y(0)=A+B=0, y'=A e^x − B e^{−x}, y'(0)=A−B=1. Solving gives A=1/2, B=−1/2. The particular solution is y = (1/2)(e^x − e^{−x}) = sinh x.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q24",
+      "conceptIds": ["DE-12"],
+      "question": "Solve y'' + 4 y = 0.",
+      "answer": "Characteristic equation r² + 4 = 0 ⇒ r = ±2i. The general solution is y = A cos 2x + B sin 2x. Complex conjugate roots produce oscillatory solutions with frequency equal to the imaginary part.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q25",
+      "conceptIds": ["DE-15"],
+      "question": "Why is the degree of e^{y'} + y = 0 not defined?",
+      "answer": "The exponential of the derivative cannot be expressed as a polynomial in y'. Degree is defined only after the equation has been written as a polynomial equation in the highest-order derivative. Transcendental functions of the derivatives prevent that.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q26",
+      "conceptIds": ["DE-04"],
+      "question": "Solve dy/dx = e^{x−y}.",
+      "answer": "Write e^y dy = e^x dx. Integrate: e^y = e^x + C. Therefore y = log(e^x + C). The separation is possible because the right-hand side factors into a function of x times a function of y.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q27",
+      "conceptIds": ["DE-05"],
+      "question": "Solve x dy − y dx = √(x² + y²) dx.",
+      "answer": "Divide by dx: x y' − y = √(x² + y²). Homogeneous of degree 1. Put y = v x: x(v + x v') − v x = x √(1 + v²) ⇒ x v' = √(1 + v²). Separate and integrate to obtain sinh^{-1}(y/x) = log|x| + C.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q28",
+      "conceptIds": ["DE-06"],
+      "question": "What is the integrating factor of dy/dx + (2/x) y = x²?",
+      "answer": "P = 2/x, ∫ P dx = 2 log x, integrating factor = e^{2 log x} = x². Multiplying through by x² makes the left side d/dx (y x²) and the equation becomes integrable.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q29",
+      "conceptIds": ["DE-01", "DE-02"],
+      "question": "State the order and degree of (y')^{3/2} + y = x.",
+      "answer": "Order is 1. To find degree, raise both sides to the power 2 after isolating the derivative term: (y')³ = (x − y)². The highest power of y' is 3, so degree is 3. Clearing the fractional power is necessary.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q30",
+      "conceptIds": ["DE-13"],
+      "question": "What is the structure of the general solution of a non-homogeneous linear equation?",
+      "answer": "General solution = complementary function (solution of the homogeneous equation) + particular integral (any one solution of the non-homogeneous equation). The complementary function contains the arbitrary constants; the particular integral does not.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q31",
+      "conceptIds": ["DE-03"],
+      "question": "A family of curves has two arbitrary constants. What is the order of the differential equation it satisfies?",
+      "answer": "The differential equation obtained by eliminating the two constants will be of order 2. In general, a family with n independent arbitrary constants satisfies a differential equation of order n.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q32",
+      "conceptIds": ["DE-07"],
+      "question": "When is the equation M(x,y) dx + N(x,y) dy = 0 exact?",
+      "answer": "It is exact if and only if ∂M/∂y = ∂N/∂x. When the condition holds there exists a function F such that dF = M dx + N dy, and the solution is F(x,y) = C.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q33",
+      "conceptIds": ["DE-12"],
+      "question": "Solve y'' − 2 y' + y = 0.",
+      "answer": "Characteristic equation (r − 1)² = 0, repeated root 1. General solution y = (A + B x) e^x. A repeated real root produces the extra factor of x in the second solution.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q34",
+      "conceptIds": ["DE-04"],
+      "question": "A student writes dy/dx = x + y as a variable-separable equation. Is the student correct?",
+      "answer": "No. The right-hand side cannot be written as a product f(x) g(y). The equation is linear (or can be treated as homogeneous after a substitution). Variable-separable form requires a product structure.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q35",
+      "conceptIds": ["DE-09"],
+      "question": "How many arbitrary constants appear in the general solution of a differential equation of order n?",
+      "answer": "Exactly n independent arbitrary constants appear in the general solution of an nth-order equation (under the usual existence and uniqueness hypotheses). Each constant corresponds to one integration.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DE-Q36",
+      "conceptIds": ["DE-05"],
+      "question": "Solve dy/dx = (y − x)/(y + x).",
+      "answer": "Homogeneous. Put y = v x: v + x v' = (v − 1)/(v + 1). Then x v' = (v − 1)/(v + 1) − v = (−v² − 1)/(v + 1). Separate and integrate to obtain an implicit relation involving log and arctan.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DE-Q37",
+      "conceptIds": ["DE-01", "DE-15"],
+      "question": "Can a differential equation have order 2 but undefined degree? Give an example.",
+      "answer": "Yes. The equation y'' + sin(y') = 0 has order 2 (highest derivative is the second) but degree is undefined because of the sine of the first derivative. Order is always defined; degree may not be.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    }
+  ]
+}

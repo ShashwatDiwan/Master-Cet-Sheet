@@ -1,0 +1,462 @@
+{
+  "chapterId": "57",
+  "chapterName": "Applications of Definite Integral",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "ADI-01",
+      "name": "Area under a curve y = f(x)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "A = ∫_a^b f(x) dx when f ≥ 0; absolute value for geometric area."
+    },
+    {
+      "id": "ADI-02",
+      "name": "Area with respect to y",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "A = ∫_c^d g(y) dy when the curve is given as x = g(y)."
+    },
+    {
+      "id": "ADI-03",
+      "name": "Standard parabola y² = 4ax",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Opens right, focus (a,0); upper half y = 2√(ax)."
+    },
+    {
+      "id": "ADI-04",
+      "name": "Area under sinusoidal curve",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Must split limits at zeros; otherwise positive and negative parts cancel."
+    },
+    {
+      "id": "ADI-05",
+      "name": "Area between two curves",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "∫_a^b |f(x) − g(x)| dx where a,b are intersection abscissae."
+    },
+    {
+      "id": "ADI-06",
+      "name": "Area of ellipse",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Total area πab; one quadrant (πab)/4."
+    },
+    {
+      "id": "ADI-07",
+      "name": "Parabola x² = −4ay",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Opens downwards; used for areas above or below the x-axis."
+    },
+    {
+      "id": "ADI-08",
+      "name": "Signed versus geometric area",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Definite integral gives signed area; absolute value needed for geometric area."
+    },
+    {
+      "id": "ADI-09",
+      "name": "Area bounded by parabola and latus rectum",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "For y² = 4ax and x = a the area is (8/3)a²."
+    },
+    {
+      "id": "ADI-10",
+      "name": "Choice of variable of integration",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Integrate with respect to y when horizontal strips are more convenient."
+    },
+    {
+      "id": "ADI-11",
+      "name": "Symmetry in area calculations",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Even functions: double the area from 0 to a; odd functions: signed area zero."
+    },
+    {
+      "id": "ADI-12",
+      "name": "Finding intersection points",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Solve the equations of the curves simultaneously to obtain limits."
+    },
+    {
+      "id": "ADI-13",
+      "name": "Area of a circle via definite integral",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "4 ∫_0^r √(r² − x²) dx = π r²."
+    },
+    {
+      "id": "ADI-14",
+      "name": "Common region of two curves",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Integrate difference of upper and lower boundaries between intersection points."
+    },
+    {
+      "id": "ADI-15",
+      "name": "Absolute value when curve crosses axis",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Split integral at zeros and take absolute value of each piece."
+    }
+  ],
+  "qna": [
+    {
+      "id": "ADI-Q01",
+      "conceptIds": ["ADI-01"],
+      "question": "What is the formula for the area under a curve y = f(x) from x = a to x = b?",
+      "answer": "The area is A = ∫_a^b f(x) dx provided f(x) ≥ 0 on the interval. If the curve dips below the x-axis the integral is negative and the absolute value of each piece must be taken to obtain the geometric area.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q02",
+      "conceptIds": ["ADI-02"],
+      "question": "How is the area expressed when the curve is given as x = g(y)?",
+      "answer": "The area is A = ∫_c^d g(y) dy where c and d are the lower and upper y-values of the region. Horizontal strips are then the natural elements of area. This formulation is convenient when the inverse function is simpler.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q03",
+      "conceptIds": ["ADI-03"],
+      "question": "What is the standard equation of a parabola opening to the right with vertex at the origin?",
+      "answer": "The equation is y² = 4ax. The focus is at (a,0) and the directrix is x = −a. The upper half is given by y = 2√(a x) and is used for area calculations.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q04",
+      "conceptIds": ["ADI-04"],
+      "question": "Why must the limits be split when finding the area under y = sin x from 0 to 2π?",
+      "answer": "sin x is positive on (0,π) and negative on (π,2π). Integrating without splitting yields zero because the positive and negative contributions cancel. To obtain the geometric area the integral must be split at π and the absolute value taken on each piece.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q05",
+      "conceptIds": ["ADI-05"],
+      "question": "How is the area between two curves y = f(x) and y = g(x) calculated?",
+      "answer": "First find the points of intersection to obtain the limits a and b. The area is then ∫_a^b |f(x) − g(x)| dx. If f(x) ≥ g(x) throughout the interval the absolute value may be omitted.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q06",
+      "conceptIds": ["ADI-06"],
+      "question": "What is the shortcut formula for the area of the ellipse x²/a² + y²/b² = 1?",
+      "answer": "The total area is π a b. One quadrant has area (π a b)/4. The formula is obtained by evaluating the definite integral of the upper half and multiplying by four.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q07",
+      "conceptIds": ["ADI-08"],
+      "question": "What is the difference between signed area and geometric area?",
+      "answer": "A definite integral yields signed area: regions above the axis contribute positively and regions below contribute negatively. Geometric area is always positive, so the absolute value of each piece of the integrand must be taken or the integral must be split at the zeros of the function.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q08",
+      "conceptIds": ["ADI-09"],
+      "question": "What is the area bounded by the parabola y² = 4ax and its latus rectum?",
+      "answer": "The latus rectum is the line x = a. The area is 2 ∫_0^a 2√(a x) dx = (8/3) a². The factor 2 accounts for the upper and lower halves of the parabola.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q09",
+      "conceptIds": ["ADI-10"],
+      "question": "When is it advantageous to integrate with respect to y rather than x?",
+      "answer": "When the boundary curves are more easily expressed as functions of y, or when the region is bounded by vertical lines that would require splitting an x-integral into several pieces. Horizontal strips then become the natural elements of area and the number of integrals is reduced.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ADI-Q10",
+      "conceptIds": ["ADI-11"],
+      "question": "How can symmetry simplify area calculations for even functions?",
+      "answer": "For an even function the area from −a to a is twice the area from 0 to a. Computing only the positive half and doubling saves algebraic effort. The same principle applies to any curve that is symmetric about a coordinate axis.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "ADI-Q11",
+      "conceptIds": ["ADI-12"],
+      "question": "How are the limits of integration determined when finding the area between a line and a parabola?",
+      "answer": "The points of intersection are found by solving the two equations simultaneously. The resulting abscissae (or ordinates) become the limits of the definite integral. Without the intersection points the correct interval cannot be identified.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q12",
+      "conceptIds": ["ADI-13"],
+      "question": "Show that the definite integral 4 ∫_0^r √(r² − x²) dx equals the area of a circle of radius r.",
+      "answer": "The integrand √(r² − x²) is the upper half of the circle x² + y² = r². Integrating from 0 to r gives the area of one quadrant; multiplying by 4 yields the whole circle. The evaluation produces π r², confirming the classical formula.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ADI-Q13",
+      "conceptIds": ["ADI-15"],
+      "question": "What precaution must be taken when the required area lies partly above and partly below the x-axis?",
+      "answer": "The integral must be split at every zero of the integrand and the absolute value taken on each sub-interval. Alternatively the function can be replaced by its absolute value before integrating. Omitting this step produces a net signed area that underestimates the true geometric area.",
+      "type": "cet_tip",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q14",
+      "conceptIds": ["ADI-04"],
+      "question": "What is the geometric area under y = sin x from 0 to 2π?",
+      "answer": "The geometric area is 4. Each of the two positive and two negative half-periods contributes an area of 2. The definite integral without absolute values is zero because of cancellation; the geometric area counts every lobe as positive.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q15",
+      "conceptIds": ["ADI-06"],
+      "question": "Why is the area of the ellipse π a b rather than π a²?",
+      "answer": "An ellipse is a stretched circle. The linear stretch by the factor b/a in the y-direction multiplies all vertical dimensions by b/a and therefore multiplies areas by the same factor. Starting from the area π a² of the circle of radius a yields the elliptical area π a b.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q16",
+      "conceptIds": ["ADI-03", "ADI-09"],
+      "question": "Calculate the area under the upper half of y² = 4ax from x = 0 to x = a.",
+      "answer": "y = 2√(a x), so ∫_0^a 2√(a x) dx = 2√a · (2/3) x^{3/2} |_0^a = (4/3) a². Doubling this result gives the total area between the parabola and the latus rectum, which is (8/3) a².",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q17",
+      "conceptIds": ["ADI-05", "ADI-12"],
+      "question": "Outline the steps to find the area common to the parabola y² = 4ax and the line y = x.",
+      "answer": "Solve y² = 4ax and y = x simultaneously to obtain the intersection points. Between those points identify the upper and lower curves and integrate their difference. The calculation yields a concrete numerical multiple of a².",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q18",
+      "conceptIds": ["ADI-01", "ADI-08"],
+      "question": "A student integrates sin x from 0 to 2π and obtains zero, then claims the area is zero. What is wrong?",
+      "answer": "The student computed the net signed area. The geometric area is the sum of the absolute values of the areas of the individual lobes and equals 4. The distinction between signed and geometric area is essential in application problems.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q19",
+      "conceptIds": ["ADI-07"],
+      "question": "Write the standard equation of a parabola that opens downwards and has vertex at the origin.",
+      "answer": "The equation is x² = −4ay. The focus lies on the negative y-axis. Areas under such parabolas are computed by expressing y in terms of x or by integrating with respect to y.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q20",
+      "conceptIds": ["ADI-11"],
+      "question": "For an odd function f, what is the value of ∫_{−a}^a f(x) dx and what does it mean for geometric area?",
+      "answer": "The signed integral is zero because the positive and negative contributions cancel. For geometric area the absolute value must still be taken, so the geometric area is twice the area on the positive side. Symmetry halves the computational work but does not make the geometric area zero.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ADI-Q21",
+      "conceptIds": ["ADI-06"],
+      "question": "What is the area of one quadrant of the ellipse x²/9 + y²/4 = 1?",
+      "answer": "Here a = 3, b = 2, so total area = π·3·2 = 6π and one quadrant has area (6π)/4 = (3π)/2. The same result is obtained by integrating the upper half from x = 0 to x = 3 and recognising the quarter-ellipse.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q22",
+      "conceptIds": ["ADI-14"],
+      "question": "How is the area of the region common to a circle and a parabola found in principle?",
+      "answer": "Determine the points of intersection by simultaneous solution. Between the leftmost and rightmost intersection points identify the upper and lower boundaries of the common region and integrate their difference. The integral may need to be split if the upper boundary changes from one curve to the other.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ADI-Q23",
+      "conceptIds": ["ADI-01", "ADI-08"],
+      "question": "Why can a definite integral be negative even though area is a positive quantity?",
+      "answer": "The definite integral computes signed area. When the curve lies below the x-axis the function values are negative and the integral accumulates a negative contribution. Geometric area discards the sign by taking absolute values, restoring positivity.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q24",
+      "conceptIds": ["ADI-03"],
+      "question": "Express the upper half of the parabola y² = 4ax as a function of x and state the domain of that function for the first quadrant.",
+      "answer": "y = 2√(a x). For the first quadrant the domain is x ≥ 0. The expression under the square root is non-negative precisely when x ≥ 0, which matches the geometric half of the parabola that lies above the x-axis.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q25",
+      "conceptIds": ["ADI-09"],
+      "question": "Show that the area between y² = 4ax and the line x = a is (8/3)a².",
+      "answer": "The upper half contributes ∫_0^a 2√(a x) dx = (4/3)a². The lower half contributes the same amount by symmetry. Adding the two contributions yields the total area (8/3)a².",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q26",
+      "conceptIds": ["ADI-05"],
+      "question": "If two curves intersect at three points, how many separate integrals may be needed for the area between them?",
+      "answer": "In general two separate integrals are needed, one for each interval determined by the three abscissae. On each interval the identity of the upper and lower curves must be checked; if it changes, the integrands are different. The total area is the sum of the absolute contributions.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q27",
+      "conceptIds": ["ADI-04"],
+      "question": "Compute the area under y = sin x from 0 to π/2.",
+      "answer": "∫_0^{π/2} sin x dx = [−cos x]_0^{π/2} = 1. This is the area of one quarter of the first positive arch of the sine curve and is a standard definite-integral evaluation.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q28",
+      "conceptIds": ["ADI-10"],
+      "question": "A region is bounded on the left by x = 2 and on the right by a complicated curve that is easier to express as x = g(y). Which variable of integration is preferable?",
+      "answer": "Integration with respect to y is preferable. The left boundary is then simply the constant 2 and the right boundary is g(y). A single integral with respect to y replaces what would have been a more awkward integral with respect to x.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ADI-Q29",
+      "conceptIds": ["ADI-06"],
+      "question": "How does the area formula for an ellipse reduce when a = b?",
+      "answer": "When a = b the ellipse becomes a circle of radius a and the area formula π a b reduces to π a². This consistency check confirms that the elliptical area formula is a genuine generalisation of the circular area formula.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q30",
+      "conceptIds": ["ADI-01", "ADI-15"],
+      "question": "A curve crosses the x-axis at three points inside the interval of integration. How many pieces must the integral be split into for the geometric area?",
+      "answer": "The integral must be split into four pieces (the three zeros create four sub-intervals). On each sub-interval the absolute value of the integrand is taken. The geometric area is the sum of the four absolute contributions.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q31",
+      "conceptIds": ["ADI-03", "ADI-05"],
+      "question": "Find the area bounded by the parabola y² = 4x and the line y = x.",
+      "answer": "Intersection: x² = 4x ⇒ x = 0 or x = 4. Between 0 and 4 the parabola is to the right of the line when viewed horizontally, but it is easier to integrate with respect to y: ∫_0^2 (y − y²/4) dy = 4/3. The area is 4/3 square units.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q32",
+      "conceptIds": ["ADI-08"],
+      "question": "Why does the definite integral of an odd function over a symmetric interval vanish?",
+      "answer": "The contributions from the positive and negative halves cancel exactly because f(−x) = −f(x). The signed area is therefore zero. This cancellation does not occur for the geometric area, which uses absolute values.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q33",
+      "conceptIds": ["ADI-12"],
+      "question": "Why is finding the points of intersection the first step in most area-between-curves problems?",
+      "answer": "The intersection points supply the correct limits of integration. Without them one does not know where one curve is above the other, nor the interval over which the difference should be integrated. Solving the simultaneous equations is therefore indispensable.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q34",
+      "conceptIds": ["ADI-09"],
+      "question": "State the area of the region bounded by y² = 4ax, the y-axis and the line x = a.",
+      "answer": "The region is the same as the area between the parabola and its latus rectum, which equals (8/3)a². The y-axis is the line x = 0; integrating from 0 to a and doubling for both halves yields the result.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q35",
+      "conceptIds": ["ADI-04", "ADI-08"],
+      "question": "A student claims that the area under any continuous curve from a to b is simply the value of the antiderivative at the endpoints. When is this statement incomplete?",
+      "answer": "The statement is incomplete whenever the curve crosses the x-axis inside the interval. In that case the antiderivative evaluates the net signed area, which may be smaller than the geometric area. Absolute values or splitting of limits are required for the geometric measure.",
+      "type": "cet_tip",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q36",
+      "conceptIds": ["ADI-06"],
+      "question": "Estimate the area of the ellipse x²/16 + y²/9 = 1 without integration.",
+      "answer": "a = 4, b = 3, so area = π·4·3 = 12π. The estimate uses the standard formula and requires no further calculation. Direct integration of the upper half would of course confirm the same result.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "ADI-Q37",
+      "conceptIds": ["ADI-01", "ADI-10"],
+      "question": "A region is described as “the area to the left of the curve x = y² and to the right of the y-axis between y = −1 and y = 1”. Write the corresponding definite integral.",
+      "answer": "The integral with respect to y is ∫_{−1}^1 y² dy (or equivalently 2 ∫_0^1 y² dy by evenness). Using x as the variable of integration would require solving for y and splitting into two integrals, which is less convenient.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    }
+  ]
+}

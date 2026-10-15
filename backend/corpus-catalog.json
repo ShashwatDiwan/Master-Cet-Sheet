@@ -1,0 +1,618 @@
+[
+  {
+    "id": 1,
+    "subject": "Physics",
+    "name": "Motion in a Plane",
+    "prefix": "MIP",
+    "resourceId": 153,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "PHY_001_motion-in-a-plane.json",
+    "expectedPath": "corpus-json/Physics/PHY_001_motion-in-a-plane.json"
+  },
+  {
+    "id": 2,
+    "subject": "Physics",
+    "name": "Laws of Motion",
+    "prefix": "LOM",
+    "resourceId": 154,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_002_laws-of-motion.json",
+    "expectedPath": "corpus-json/Physics/PHY_002_laws-of-motion.json"
+  },
+  {
+    "id": 3,
+    "subject": "Physics",
+    "name": "Gravitation",
+    "prefix": "GRAV",
+    "resourceId": 156,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_003_gravitation.json",
+    "expectedPath": "corpus-json/Physics/PHY_003_gravitation.json"
+  },
+  {
+    "id": 4,
+    "subject": "Physics",
+    "name": "Thermal Properties of Matter",
+    "prefix": "TPM",
+    "resourceId": 158,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_004_thermal-properties-of-matter.json",
+    "expectedPath": "corpus-json/Physics/PHY_004_thermal-properties-of-matter.json"
+  },
+  {
+    "id": 5,
+    "subject": "Physics",
+    "name": "Sound",
+    "prefix": "SND",
+    "resourceId": 160,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_005_sound.json",
+    "expectedPath": "corpus-json/Physics/PHY_005_sound.json"
+  },
+  {
+    "id": 6,
+    "subject": "Physics",
+    "name": "Optics",
+    "prefix": "OPT",
+    "skipReason": "PYQ-only (resource 161); question papers are not corpus sources.",
+    "outputFileName": "PHY_006_optics.json",
+    "expectedPath": "corpus-json/Physics/PHY_006_optics.json"
+  },
+  {
+    "id": 7,
+    "subject": "Physics",
+    "name": "Electrostatics",
+    "prefix": "ELS",
+    "resourceId": 162,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_007_electrostatics.json",
+    "expectedPath": "corpus-json/Physics/PHY_007_electrostatics.json"
+  },
+  {
+    "id": 8,
+    "subject": "Physics",
+    "name": "Semiconductors",
+    "prefix": "SEM",
+    "resourceId": null,
+    "outputFileName": "PHY_008_semiconductors.json",
+    "expectedPath": "corpus-json/Physics/PHY_008_semiconductors.json"
+  },
+  {
+    "id": 9,
+    "subject": "Physics",
+    "name": "Circular Motion",
+    "prefix": "CM",
+    "resourceId": 164,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_009_circular-motion.json",
+    "expectedPath": "corpus-json/Physics/PHY_009_circular-motion.json"
+  },
+  {
+    "id": 10,
+    "subject": "Physics",
+    "name": "Rotational Motion",
+    "prefix": "RM",
+    "resourceId": null,
+    "outputFileName": "PHY_010_rotational-motion.json",
+    "expectedPath": "corpus-json/Physics/PHY_010_rotational-motion.json"
+  },
+  {
+    "id": 11,
+    "subject": "Physics",
+    "name": "Oscillations",
+    "prefix": "OSC",
+    "resourceId": 166,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_011_oscillations.json",
+    "expectedPath": "corpus-json/Physics/PHY_011_oscillations.json"
+  },
+  {
+    "id": 12,
+    "subject": "Physics",
+    "name": "Wave Motion",
+    "prefix": "WM",
+    "resourceId": 168,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_012_wave-motion.json",
+    "expectedPath": "corpus-json/Physics/PHY_012_wave-motion.json"
+  },
+  {
+    "id": 13,
+    "subject": "Physics",
+    "name": "Magnetic Effects of Electric Current",
+    "prefix": "MEEC",
+    "resourceId": 169,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_013_magnetic-effects-of-electric-current.json",
+    "expectedPath": "corpus-json/Physics/PHY_013_magnetic-effects-of-electric-current.json"
+  },
+  {
+    "id": 14,
+    "subject": "Physics",
+    "name": "Electromagnetic Induction",
+    "prefix": "EMI",
+    "resourceId": 171,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_014_electromagnetic-induction.json",
+    "expectedPath": "corpus-json/Physics/PHY_014_electromagnetic-induction.json"
+  },
+  {
+    "id": 15,
+    "subject": "Physics",
+    "name": "Electrons and Photons",
+    "prefix": "EAP",
+    "resourceId": null,
+    "outputFileName": "PHY_015_electrons-and-photons.json",
+    "expectedPath": "corpus-json/Physics/PHY_015_electrons-and-photons.json"
+  },
+  {
+    "id": 16,
+    "subject": "Physics",
+    "name": "Dual Nature of Radiation and Matter",
+    "prefix": "DNRM",
+    "resourceId": 172,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_016_dual-nature-of-radiation-and-matter.json",
+    "expectedPath": "corpus-json/Physics/PHY_016_dual-nature-of-radiation-and-matter.json"
+  },
+  {
+    "id": 17,
+    "subject": "Physics",
+    "name": "Kinetic Theory of Gases and Radiation",
+    "prefix": "KTGR",
+    "resourceId": 174,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "PHY_017_kinetic-theory-of-gases-and-radiation.json",
+    "expectedPath": "corpus-json/Physics/PHY_017_kinetic-theory-of-gases-and-radiation.json"
+  },
+  {
+    "id": 18,
+    "subject": "Physics",
+    "name": "Wave Optics",
+    "prefix": "WO",
+    "resourceId": 175,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_018_wave-optics.json",
+    "expectedPath": "corpus-json/Physics/PHY_018_wave-optics.json"
+  },
+  {
+    "id": 19,
+    "subject": "Physics",
+    "name": "Mechanical Properties of Fluids",
+    "prefix": "MPF",
+    "resourceId": 177,
+    "resourceType": "NOTES",
+    "outputFileName": "PHY_019_mechanical-properties-of-fluids.json",
+    "expectedPath": "corpus-json/Physics/PHY_019_mechanical-properties-of-fluids.json"
+  },
+  {
+    "id": 20,
+    "subject": "Chemistry",
+    "name": "Structure of Atom",
+    "prefix": "SOA",
+    "resourceId": 179,
+    "resourceType": "NOTES",
+    "outputFileName": "CHE_020_structure-of-atom.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_020_structure-of-atom.json"
+  },
+  {
+    "id": 21,
+    "subject": "Chemistry",
+    "name": "Chemical Bonding",
+    "prefix": "CB",
+    "resourceId": 180,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "CHE_021_chemical-bonding.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_021_chemical-bonding.json"
+  },
+  {
+    "id": 22,
+    "subject": "Chemistry",
+    "name": "Redox Reactions",
+    "prefix": "RR",
+    "resourceId": null,
+    "outputFileName": "CHE_022_redox-reactions.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_022_redox-reactions.json"
+  },
+  {
+    "id": 23,
+    "subject": "Chemistry",
+    "name": "s-Block Elements",
+    "prefix": "SB",
+    "resourceId": 181,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "CHE_023_s-block-elements.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_023_s-block-elements.json"
+  },
+  {
+    "id": 24,
+    "subject": "Chemistry",
+    "name": "d and f block Elements",
+    "prefix": "DFBE",
+    "resourceId": 182,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "CHE_024_d-and-f-block-elements.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_024_d-and-f-block-elements.json"
+  },
+  {
+    "id": 25,
+    "subject": "Chemistry",
+    "name": "States of Matter (Gases and Liquids)",
+    "prefix": "SM",
+    "resourceId": null,
+    "outputFileName": "CHE_025_states-of-matter-gases-and-liquids.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_025_states-of-matter-gases-and-liquids.json"
+  },
+  {
+    "id": 26,
+    "subject": "Chemistry",
+    "name": "Surface Chemistry",
+    "prefix": "SC",
+    "resourceId": null,
+    "outputFileName": "CHE_026_surface-chemistry.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_026_surface-chemistry.json"
+  },
+  {
+    "id": 27,
+    "subject": "Chemistry",
+    "name": "Hydrocarbons",
+    "prefix": "HYD",
+    "resourceId": 183,
+    "resourceType": "NOTES",
+    "outputFileName": "CHE_027_hydrocarbons.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_027_hydrocarbons.json"
+  },
+  {
+    "id": 28,
+    "subject": "Chemistry",
+    "name": "Basic Principles of Organic Chemistry",
+    "prefix": "BPOC",
+    "resourceId": 184,
+    "resourceType": "NOTES",
+    "outputFileName": "CHE_028_basic-principles-of-organic-chemistry.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_028_basic-principles-of-organic-chemistry.json"
+  },
+  {
+    "id": 29,
+    "subject": "Chemistry",
+    "name": "Chemistry in Everyday Life",
+    "prefix": "CEIL",
+    "resourceId": 185,
+    "resourceType": "NOTES",
+    "outputFileName": "CHE_029_chemistry-in-everyday-life.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_029_chemistry-in-everyday-life.json"
+  },
+  {
+    "id": 30,
+    "subject": "Chemistry",
+    "name": "Solid State",
+    "prefix": "SS",
+    "resourceId": null,
+    "outputFileName": "CHE_030_solid-state.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_030_solid-state.json"
+  },
+  {
+    "id": 31,
+    "subject": "Chemistry",
+    "name": "Thermodynamics",
+    "prefix": "THC",
+    "resourceId": 186,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "CHE_031_thermodynamics.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_031_thermodynamics.json"
+  },
+  {
+    "id": 32,
+    "subject": "Chemistry",
+    "name": "Electrochemistry",
+    "prefix": "ELC",
+    "resourceId": null,
+    "outputFileName": "CHE_032_electrochemistry.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_032_electrochemistry.json"
+  },
+  {
+    "id": 33,
+    "subject": "Chemistry",
+    "name": "p-Block Elements",
+    "prefix": "PB",
+    "resourceId": null,
+    "outputFileName": "CHE_033_p-block-elements.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_033_p-block-elements.json"
+  },
+  {
+    "id": 34,
+    "subject": "Chemistry",
+    "name": "d and f Block Elements",
+    "prefix": "DFE",
+    "resourceId": null,
+    "outputFileName": "CHE_034_d-and-f-block-elements.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_034_d-and-f-block-elements.json"
+  },
+  {
+    "id": 35,
+    "subject": "Chemistry",
+    "name": "Chemical Kinetics",
+    "prefix": "CK",
+    "resourceId": 187,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "CHE_035_chemical-kinetics.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_035_chemical-kinetics.json"
+  },
+  {
+    "id": 36,
+    "subject": "Chemistry",
+    "name": "Halogen Derivatives of Alkanes and Arenes",
+    "prefix": "HDAA",
+    "resourceId": null,
+    "outputFileName": "CHE_036_halogen-derivatives-of-alkanes-and-arenes.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_036_halogen-derivatives-of-alkanes-and-arenes.json"
+  },
+  {
+    "id": 37,
+    "subject": "Chemistry",
+    "name": "Aldehydes Ketones and Carboxylic Acids",
+    "prefix": "AKCA",
+    "resourceId": 188,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "CHE_037_aldehydes-ketones-and-carboxylic-acids.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_037_aldehydes-ketones-and-carboxylic-acids.json"
+  },
+  {
+    "id": 38,
+    "subject": "Chemistry",
+    "name": "Amines",
+    "prefix": "AMN",
+    "resourceId": 189,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "CHE_038_amines.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_038_amines.json"
+  },
+  {
+    "id": 39,
+    "subject": "Chemistry",
+    "name": "Alcohols Phenols and Ethers",
+    "prefix": "APE",
+    "resourceId": null,
+    "outputFileName": "CHE_039_alcohols-phenols-and-ethers.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_039_alcohols-phenols-and-ethers.json"
+  },
+  {
+    "id": 40,
+    "subject": "Chemistry",
+    "name": "Polymers",
+    "prefix": "POL",
+    "resourceId": 190,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "CHE_040_polymers.json",
+    "expectedPath": "corpus-json/Chemistry/CHE_040_polymers.json"
+  },
+  {
+    "id": 41,
+    "subject": "Mathematics",
+    "name": "Trigonometry II",
+    "prefix": "TII",
+    "resourceId": 191,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_041_trigonometry-ii.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_041_trigonometry-ii.json"
+  },
+  {
+    "id": 42,
+    "subject": "Mathematics",
+    "name": "Straight Line",
+    "prefix": "SL",
+    "resourceId": null,
+    "outputFileName": "MAT_042_straight-line.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_042_straight-line.json"
+  },
+  {
+    "id": 43,
+    "subject": "Mathematics",
+    "name": "Circle",
+    "prefix": "CIR",
+    "resourceId": 192,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_043_circle.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_043_circle.json"
+  },
+  {
+    "id": 44,
+    "subject": "Mathematics",
+    "name": "Measures of Dispersion",
+    "prefix": "MOD",
+    "resourceId": 193,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_044_measures-of-dispersion.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_044_measures-of-dispersion.json"
+  },
+  {
+    "id": 45,
+    "subject": "Mathematics",
+    "name": "Complex Numbers",
+    "prefix": "CN",
+    "resourceId": 194,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_045_complex-numbers.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_045_complex-numbers.json"
+  },
+  {
+    "id": 46,
+    "subject": "Mathematics",
+    "name": "Permutations and Combinations",
+    "prefix": "PAC",
+    "resourceId": 195,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_046_permutations-and-combinations.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_046_permutations-and-combinations.json"
+  },
+  {
+    "id": 47,
+    "subject": "Mathematics",
+    "name": "Limits",
+    "prefix": "LIM",
+    "resourceId": 196,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_047_limits.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_047_limits.json"
+  },
+  {
+    "id": 48,
+    "subject": "Mathematics",
+    "name": "Continuity",
+    "prefix": "CON",
+    "resourceId": 197,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_048_continuity.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_048_continuity.json"
+  },
+  {
+    "id": 49,
+    "subject": "Mathematics",
+    "name": "Matrices",
+    "prefix": "MTR",
+    "resourceId": 198,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_049_matrices.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_049_matrices.json"
+  },
+  {
+    "id": 50,
+    "subject": "Mathematics",
+    "name": "Pair of Straight Lines",
+    "prefix": "PSL",
+    "resourceId": 199,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_050_pair-of-straight-lines.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_050_pair-of-straight-lines.json"
+  },
+  {
+    "id": 51,
+    "subject": "Mathematics",
+    "name": "Trigonometric Functions",
+    "prefix": "TF",
+    "resourceId": 200,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_051_trigonometric-functions.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_051_trigonometric-functions.json"
+  },
+  {
+    "id": 52,
+    "subject": "Mathematics",
+    "name": "Vectors",
+    "prefix": "VEC",
+    "resourceId": 201,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_052_vectors.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_052_vectors.json"
+  },
+  {
+    "id": 53,
+    "subject": "Mathematics",
+    "name": "Line and Plane",
+    "prefix": "LAP",
+    "resourceId": 202,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_053_line-and-plane.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_053_line-and-plane.json"
+  },
+  {
+    "id": 54,
+    "subject": "Mathematics",
+    "name": "Applications of Derivatives",
+    "prefix": "AOD",
+    "resourceId": 203,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_054_applications-of-derivatives.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_054_applications-of-derivatives.json"
+  },
+  {
+    "id": 55,
+    "subject": "Mathematics",
+    "name": "Indefinite Integration",
+    "prefix": "II",
+    "resourceId": 204,
+    "resourceType": "NOTES",
+    "outputFileName": "MAT_055_indefinite-integration.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_055_indefinite-integration.json"
+  },
+  {
+    "id": 56,
+    "subject": "Mathematics",
+    "name": "Differentiation",
+    "prefix": "DIF",
+    "resourceId": 207,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_056_differentiation.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_056_differentiation.json"
+  },
+  {
+    "id": 57,
+    "subject": "Mathematics",
+    "name": "Applications of Definite Integral",
+    "prefix": "ADI",
+    "resourceId": 208,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_057_applications-of-definite-integral.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_057_applications-of-definite-integral.json"
+  },
+  {
+    "id": 58,
+    "subject": "Mathematics",
+    "name": "Differential Equations",
+    "prefix": "DE",
+    "resourceId": 209,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_058_differential-equations.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_058_differential-equations.json"
+  },
+  {
+    "id": 59,
+    "subject": "Mathematics",
+    "name": "Probability",
+    "prefix": "PRO",
+    "resourceId": 210,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_059_probability.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_059_probability.json"
+  },
+  {
+    "id": 60,
+    "subject": "Physics",
+    "name": "AC Circuits",
+    "prefix": "ACC",
+    "resourceId": 211,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "PHY_060_ac-circuits.json",
+    "expectedPath": "corpus-json/Physics/PHY_060_ac-circuits.json"
+  },
+  {
+    "id": 61,
+    "subject": "Physics",
+    "name": "Thermodynamics",
+    "prefix": "THP",
+    "resourceId": 212,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "PHY_061_thermodynamics.json",
+    "expectedPath": "corpus-json/Physics/PHY_061_thermodynamics.json"
+  },
+  {
+    "id": 62,
+    "subject": "Physics",
+    "name": "Superposition of Waves",
+    "prefix": "SOW",
+    "resourceId": 213,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "PHY_062_superposition-of-waves.json",
+    "expectedPath": "corpus-json/Physics/PHY_062_superposition-of-waves.json"
+  },
+  {
+    "id": 63,
+    "subject": "Mathematics",
+    "name": "Definite Integration",
+    "prefix": "DI",
+    "resourceId": 206,
+    "resourceType": "SHORT_NOTES",
+    "outputFileName": "MAT_063_definite-integration.json",
+    "expectedPath": "corpus-json/Mathematics/MAT_063_definite-integration.json"
+  }
+]

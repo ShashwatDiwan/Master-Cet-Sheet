@@ -1,0 +1,661 @@
+{
+  "chapterId": "4",
+  "chapterName": "Thermal Properties of Matter",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "TPM-01",
+      "name": "Temperature scales",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Celsius, Fahrenheit, Kelvin and their conversion relations."
+    },
+    {
+      "id": "TPM-02",
+      "name": "Coefficient of linear expansion",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "α = (ΔL/L)/ΔT; ΔL = α L ΔT."
+    },
+    {
+      "id": "TPM-03",
+      "name": "Coefficient of areal expansion",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "β ≈ 2α; ΔA = β A ΔT."
+    },
+    {
+      "id": "TPM-04",
+      "name": "Coefficient of volume expansion",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "γ ≈ 3α; ΔV = γ V ΔT."
+    },
+    {
+      "id": "TPM-05",
+      "name": "Relation among α, β, γ",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "For isotropic solids γ = 3α, β = 2α."
+    },
+    {
+      "id": "TPM-06",
+      "name": "Calorimetry principle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Heat lost by hot body = heat gained by cold body."
+    },
+    {
+      "id": "TPM-07",
+      "name": "Specific heat capacity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Q = m c ΔT; heat per unit mass per degree."
+    },
+    {
+      "id": "TPM-08",
+      "name": "Heat conduction",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Q = (k A ΔT t)/x; rate H = k A ΔT / x."
+    },
+    {
+      "id": "TPM-09",
+      "name": "Thermal conductivity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "k = heat flow per unit time per unit area per unit temperature gradient."
+    },
+    {
+      "id": "TPM-10",
+      "name": "Thermal resistance",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "R = x/(k A); analogous to electrical resistance."
+    },
+    {
+      "id": "TPM-11",
+      "name": "Newton's law of cooling",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "dT/dt ∝ (T – T0); rate of cooling proportional to excess temperature."
+    },
+    {
+      "id": "TPM-12",
+      "name": "Absolute zero",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "0 K = –273 °C; lowest theoretically attainable temperature."
+    },
+    {
+      "id": "TPM-13",
+      "name": "Density variation with temperature",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Density decreases with heating because volume increases."
+    },
+    {
+      "id": "TPM-14",
+      "name": "Apparent vs real expansion of liquid",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "γ_real = γ_apparent + γ_container."
+    },
+    {
+      "id": "TPM-15",
+      "name": "Thermal capacity",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Heat required to raise temperature of whole body by 1 degree = m c."
+    },
+    {
+      "id": "TPM-16",
+      "name": "Latent heat",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Heat absorbed or released during phase change at constant temperature."
+    },
+    {
+      "id": "TPM-17",
+      "name": "Black-body radiation basics",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Ideal emitter/absorber; Stefan’s law, Wien’s law."
+    },
+    {
+      "id": "TPM-18",
+      "name": "Anomalous expansion of water",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Water contracts on heating from 0 °C to 4 °C; maximum density at 4 °C."
+    },
+    {
+      "id": "TPM-19",
+      "name": "Bimetallic strip",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Two metals of different α; bends on heating; used in thermostats."
+    },
+    {
+      "id": "TPM-20",
+      "name": "Thermal expansion applications",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Expansion gaps in bridges and rails; allowance for expansion in structures."
+    }
+  ],
+  "qna": [
+    {
+      "id": "TPM-Q01",
+      "conceptIds": [
+        "TPM-01"
+      ],
+      "question": "What are the three common temperature scales and their fixed points?",
+      "answer": "Celsius (0 °C ice point, 100 °C steam point), Fahrenheit (32 °F and 212 °F), and Kelvin (273 K and 373 K). Absolute zero is –273 °C or 0 K.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q02",
+      "conceptIds": [
+        "TPM-01"
+      ],
+      "question": "Write the general conversion formula among Celsius, Fahrenheit and Kelvin.",
+      "answer": "(C – 0)/100 = (F – 32)/180 = (K – 273)/100. From this C = (5/9)(F – 32) and K = C + 273. The size of one degree is the same on the Celsius and Kelvin scales.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q03",
+      "conceptIds": [
+        "TPM-02"
+      ],
+      "question": "Define the coefficient of linear expansion and write its formula.",
+      "answer": "α = (ΔL / L) / ΔT where ΔL is the change in length for a temperature change ΔT. The unit is °C⁻¹ or K⁻¹. For isotropic solids β ≈ 2α and γ ≈ 3α.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q04",
+      "conceptIds": [
+        "TPM-02"
+      ],
+      "question": "Write the formula for the change in length of a rod when its temperature changes.",
+      "answer": "ΔL = α L ΔT. The final length is L (1 + α ΔT). The formula assumes α is constant over the temperature interval.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q05",
+      "conceptIds": [
+        "TPM-03"
+      ],
+      "question": "Define the coefficient of areal expansion.",
+      "answer": "β = (ΔA / A) / ΔT. For isotropic materials β ≈ 2α. The area after a temperature change is A (1 + β ΔT).",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q06",
+      "conceptIds": [
+        "TPM-04"
+      ],
+      "question": "Define the coefficient of volume expansion.",
+      "answer": "γ = (ΔV / V) / ΔT. For isotropic solids γ ≈ 3α. The volume after heating is V (1 + γ ΔT). Liquids and gases also possess volume expansion coefficients.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q07",
+      "conceptIds": [
+        "TPM-05"
+      ],
+      "question": "How are the three expansion coefficients of an isotropic solid related?",
+      "answer": "γ = 3α and β = 2α. These relations follow from differentiating the expressions for area and volume with respect to temperature while treating the linear dimensions as equal.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q08",
+      "conceptIds": [
+        "TPM-06"
+      ],
+      "question": "What is the principle of calorimetry?",
+      "answer": "Heat lost by the hot body equals heat gained by the cold body (and the calorimeter) until thermal equilibrium is reached. The principle is an application of conservation of energy assuming no heat exchange with the surroundings.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q09",
+      "conceptIds": [
+        "TPM-07"
+      ],
+      "question": "Define specific heat capacity.",
+      "answer": "Specific heat capacity is the heat required to raise the temperature of unit mass of a substance by one degree. Its SI unit is J kg⁻¹ K⁻¹. The heat transferred is Q = m c ΔT.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q10",
+      "conceptIds": [
+        "TPM-08"
+      ],
+      "question": "Write the formula for heat transferred by conduction.",
+      "answer": "Q = (k A ΔT t) / x where k is thermal conductivity, A the cross-sectional area, ΔT the temperature difference, t the time and x the thickness. The rate of heat flow is H = k A ΔT / x.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "TPM-Q11",
+      "conceptIds": [
+        "TPM-09"
+      ],
+      "question": "Define thermal conductivity.",
+      "answer": "Thermal conductivity k is the heat flowing per unit time per unit area per unit temperature gradient. Its SI unit is W m⁻¹ K⁻¹. Good conductors have high k; insulators have low k.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "TPM-Q12",
+      "conceptIds": [
+        "TPM-10"
+      ],
+      "question": "What is thermal resistance?",
+      "answer": "Thermal resistance R = x / (k A). It is analogous to electrical resistance. The rate of heat flow H = ΔT / R. Materials with high thermal resistance are good insulators.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "TPM-Q13",
+      "conceptIds": [
+        "TPM-11"
+      ],
+      "question": "State Newton’s law of cooling.",
+      "answer": "The rate of loss of heat of a body is proportional to the difference between the temperature of the body and the temperature of the surroundings: dQ/dt ∝ (T – T0). In terms of temperature, dT/dt = –K (T – T0).",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "TPM-Q14",
+      "conceptIds": [
+        "TPM-12"
+      ],
+      "question": "What is absolute zero on the Celsius and Kelvin scales?",
+      "answer": "Absolute zero is –273 °C and 0 K. On the Fahrenheit scale it is approximately –460 °F. It is the lowest theoretically attainable temperature.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q15",
+      "conceptIds": [
+        "TPM-02"
+      ],
+      "question": "A steel rod of length L is heated through ΔT. By how much does its length increase if the coefficient of linear expansion is α?",
+      "answer": "The increase is ΔL = α L ΔT. The fractional increase is α ΔT. The absolute change scales with the original length.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q16",
+      "conceptIds": [
+        "TPM-13"
+      ],
+      "question": "How does the density of a solid change with temperature?",
+      "answer": "Density decreases with increasing temperature because volume increases while mass remains constant. Approximately ρ ≈ ρ0 (1 – γ ΔT) for small γ ΔT.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q17",
+      "conceptIds": [
+        "TPM-08"
+      ],
+      "question": "What is the relation between heat current and temperature difference in conduction?",
+      "answer": "Heat current H = (k A / x) ΔT. The quantity (k A / x) is the thermal conductance. The relation is analogous to Ohm’s law with temperature difference playing the role of potential difference.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "TPM-Q18",
+      "conceptIds": [
+        "TPM-09"
+      ],
+      "question": "Why do metals feel colder to the touch than wood at the same temperature?",
+      "answer": "Metals have much higher thermal conductivity, so they conduct heat away from the skin rapidly, producing a greater sensation of cold. Wood is a poor conductor and therefore feels warmer.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "TPM-Q19",
+      "conceptIds": [
+        "TPM-11"
+      ],
+      "question": "A body cools from 60 °C to 50 °C in 10 min. Room temperature is 25 °C. Approximately how long will it take to cool from 50 °C to 40 °C?",
+      "answer": "By Newton’s law the rate is proportional to the excess temperature. Average excess for the first interval is 30 °C; for the second it is 20 °C. Time is therefore roughly (30/20)×10 = 15 min.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "TPM-Q20",
+      "conceptIds": [
+        "TPM-04"
+      ],
+      "question": "Why is the coefficient of volume expansion of a liquid usually larger than that of a solid?",
+      "answer": "Molecules in a liquid are less tightly bound than in a solid, so they can increase their average separation more easily when heated. Typical values of γ for liquids are an order of magnitude larger than for solids.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q21",
+      "conceptIds": [
+        "TPM-15"
+      ],
+      "question": "What is the thermal capacity of a body?",
+      "answer": "Thermal capacity is the heat required to raise the temperature of the whole body by one degree. It equals m c where m is mass and c is specific heat. Its SI unit is J K⁻¹.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TPM-Q22",
+      "conceptIds": [
+        "TPM-11"
+      ],
+      "question": "How is the rate of cooling related to the surface area and the excess temperature?",
+      "answer": "The rate of heat loss is proportional to the surface area and to the excess temperature (T – T0). A body with larger surface area cools faster under otherwise identical conditions.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "TPM-Q23",
+      "conceptIds": [
+        "TPM-02"
+      ],
+      "question": "A copper rod and a steel rod of identical dimensions are heated through the same temperature interval. Which expands more?",
+      "answer": "Copper has a larger coefficient of linear expansion than steel, so the copper rod expands more. The difference in expansion is (α_Cu – α_steel) L ΔT.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q24",
+      "conceptIds": [
+        "TPM-02"
+      ],
+      "question": "What is the SI unit of the coefficient of linear expansion?",
+      "answer": "The SI unit is K⁻¹ (or °C⁻¹, since the size of the degree is the same). It is the fractional change in length per unit temperature change.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q25",
+      "conceptIds": [
+        "TPM-19"
+      ],
+      "question": "Why does a bimetallic strip bend when heated?",
+      "answer": "The two metals have different coefficients of linear expansion. The metal with the larger α expands more, causing the strip to bend toward the metal with the smaller α. The device is used in thermostats.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TPM-Q26",
+      "conceptIds": [
+        "TPM-08"
+      ],
+      "question": "Write the expression for the amount of heat conducted through a slab in time t.",
+      "answer": "Q = (k A (T1 – T2) t) / x. The formula assumes steady-state conduction with constant temperatures on the two faces. Heat flows from the higher-temperature face to the lower-temperature face.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "TPM-Q27",
+      "conceptIds": [
+        "TPM-10"
+      ],
+      "question": "What is the analogy between thermal conduction and electrical conduction?",
+      "answer": "Temperature difference corresponds to potential difference, heat current to electric current, and thermal resistance x/(k A) to electrical resistance. Fourier’s law is the thermal counterpart of Ohm’s law.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "TPM-Q28",
+      "conceptIds": [
+        "TPM-02"
+      ],
+      "question": "A student writes ΔL = α ΔT. What is missing?",
+      "answer": "The original length L is missing. The correct formula is ΔL = α L ΔT. Without L the change in length would be independent of the size of the object, which is unphysical.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q29",
+      "conceptIds": [
+        "TPM-11"
+      ],
+      "question": "How does the rate of cooling of a body change as it approaches the temperature of the surroundings?",
+      "answer": "The rate of cooling decreases because the excess temperature (T – T0) becomes smaller. According to Newton’s law the cooling rate approaches zero as T approaches T0.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "TPM-Q30",
+      "conceptIds": [
+        "TPM-15",
+        "TPM-07"
+      ],
+      "question": "What is the difference between heat capacity and specific heat capacity?",
+      "answer": "Heat capacity (thermal capacity) is the heat needed to raise the temperature of the entire body by one degree. Specific heat capacity is the heat needed per unit mass. Specific heat is an intensive property; heat capacity is extensive.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TPM-Q31",
+      "conceptIds": [
+        "TPM-12"
+      ],
+      "question": "Why is the Kelvin scale called an absolute scale?",
+      "answer": "Its zero point is absolute zero, the lowest theoretically attainable temperature. Temperatures on the Kelvin scale are therefore absolute and never negative. The size of the degree is the same as on the Celsius scale.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "TPM-Q32",
+      "conceptIds": [
+        "TPM-14"
+      ],
+      "question": "A liquid is heated in a container. Does the observed expansion of the liquid equal the real expansion?",
+      "answer": "No. The observed expansion is the difference between the real expansion of the liquid and the expansion of the container. The real volume expansion coefficient of the liquid is γ_real = γ_observed + γ_container.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "TPM-Q33",
+      "conceptIds": [
+        "TPM-04"
+      ],
+      "question": "How is the coefficient of volume expansion of a gas related to its absolute temperature (ideal-gas behaviour)?",
+      "answer": "For an ideal gas at constant pressure γ = 1/T where T is the absolute temperature. At 0 °C (273 K) the value is approximately 1/273 K⁻¹. This is much larger than the expansion coefficients of solids or liquids.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TPM-Q34",
+      "conceptIds": [
+        "TPM-20"
+      ],
+      "question": "Why do bridges and railway tracks have expansion gaps?",
+      "answer": "Metals expand when heated. Without gaps the thermal expansion would generate enormous compressive stresses that could buckle the structure. The gaps accommodate the change in length ΔL = α L ΔT.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TPM-Q35",
+      "conceptIds": [
+        "TPM-16"
+      ],
+      "question": "What is latent heat?",
+      "answer": "Latent heat is the heat absorbed or released by a substance during a phase change (melting, boiling, etc.) at constant temperature. It does not raise the temperature; it is used to change the state.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TPM-Q36",
+      "conceptIds": [
+        "TPM-18"
+      ],
+      "question": "What is the anomalous expansion of water?",
+      "answer": "Water contracts on heating from 0 °C to 4 °C and expands on further heating. Consequently water has maximum density at 4 °C. This anomaly is responsible for lakes freezing from the top downward.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TPM-Q37",
+      "conceptIds": [
+        "TPM-06"
+      ],
+      "question": "In a calorimetry experiment why must the calorimeter be insulated?",
+      "answer": "Insulation ensures that heat exchange occurs only between the bodies inside the calorimeter and not with the surroundings. Only then is the principle “heat lost = heat gained” strictly valid.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    }
+  ]
+}

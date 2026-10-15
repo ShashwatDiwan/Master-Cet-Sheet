@@ -1,0 +1,602 @@
+{
+  "chapterId": "005",
+  "chapterName": "Sound",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "SND-01",
+      "name": "Nature of sound waves",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Sound is a mechanical longitudinal wave that requires a material medium."
+    },
+    {
+      "id": "SND-02",
+      "name": "Production of sound",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Sound is produced by vibrating bodies that create compressions and rarefactions."
+    },
+    {
+      "id": "SND-03",
+      "name": "Propagation of sound",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Sound travels as a sequence of compressions and rarefactions through the medium."
+    },
+    {
+      "id": "SND-04",
+      "name": "Speed of sound",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Speed depends on the medium; greater in solids than liquids than gases."
+    },
+    {
+      "id": "SND-05",
+      "name": "Frequency, wavelength, amplitude",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "Frequency is number of oscillations per second; wavelength is distance between successive compressions."
+    },
+    {
+      "id": "SND-06",
+      "name": "Pitch, loudness, quality",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "Pitch depends on frequency; loudness on amplitude; quality on waveform."
+    },
+    {
+      "id": "SND-07",
+      "name": "Reflection of sound",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Sound reflects from hard surfaces obeying the laws of reflection."
+    },
+    {
+      "id": "SND-08",
+      "name": "Echo",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Echo is the repetition of sound caused by reflection from a distant obstacle."
+    },
+    {
+      "id": "SND-09",
+      "name": "Reverberation",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Persistence of sound due to multiple reflections in a closed space."
+    },
+    {
+      "id": "SND-10",
+      "name": "SONAR",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Sound Navigation and Ranging used to measure depth of sea or locate objects."
+    },
+    {
+      "id": "SND-11",
+      "name": "Ultrasound and applications",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Sound of frequency above 20 kHz used in medical imaging and cleaning."
+    },
+    {
+      "id": "SND-12",
+      "name": "Infrasound",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Sound of frequency below 20 Hz; produced by earthquakes and large animals."
+    },
+    {
+      "id": "SND-13",
+      "name": "Audible range",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Human ear can hear frequencies from 20 Hz to 20 kHz."
+    },
+    {
+      "id": "SND-14",
+      "name": "Intensity of sound",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Intensity is power per unit area carried by the wave."
+    },
+    {
+      "id": "SND-15",
+      "name": "Decibel scale",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Logarithmic scale used to express sound intensity level."
+    },
+    {
+      "id": "SND-16",
+      "name": "Doppler effect in sound",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Apparent change in frequency due to relative motion of source and observer."
+    },
+    {
+      "id": "SND-17",
+      "name": "Beats",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Periodic variation in intensity when two close frequencies interfere."
+    },
+    {
+      "id": "SND-18",
+      "name": "Resonance in air columns",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Standing waves form in closed and open pipes at specific frequencies."
+    }
+  ],
+  "qna": [
+    {
+      "id": "SND-Q01",
+      "conceptIds": [
+        "SND-01"
+      ],
+      "question": "Define a wave and list its types.",
+      "answer": "A wave is defined as an oscillatory disturbance which changes form. The three types of waves are mechanical waves, electromagnetic waves and matter waves. Mechanical waves require a material medium while electromagnetic waves do not.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q02",
+      "conceptIds": [
+        "SND-01",
+        "SND-02",
+        "SND-03"
+      ],
+      "question": "What is a mechanical wave? Give examples.",
+      "answer": "A mechanical wave is a wave that requires a material medium for its propagation. Examples include sound waves and waves produced by the vibration of a string. Without a medium such waves cannot travel.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q03",
+      "conceptIds": [
+        "SND-01"
+      ],
+      "question": "Define electromagnetic waves and give examples.",
+      "answer": "Electromagnetic waves are produced due to variations in electric and magnetic fields. Examples are ultraviolet rays and X-rays. These waves can travel through vacuum as well as through material media.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q04",
+      "conceptIds": [
+        "SND-01"
+      ],
+      "question": "What are matter waves?",
+      "answer": "Matter waves are the waves associated with any object that is in motion. They are also known as de Broglie waves. Every moving particle has an associated matter wave.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q05",
+      "conceptIds": [
+        "SND-05"
+      ],
+      "question": "Define oscillation and its two types.",
+      "answer": "Oscillation is the to and fro motion of a particle about its mean position. The two types are damped oscillations in which amplitude decreases with time and undamped oscillations in which amplitude remains constant.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q06",
+      "conceptIds": [
+        "SND-05"
+      ],
+      "question": "Define amplitude of a wave and give its units.",
+      "answer": "Amplitude is the maximum displacement of a particle from its mean position. The SI unit is metre and the CGS unit is centimetre. Its dimensional formula is [M⁰ L¹ T⁰].",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q07",
+      "conceptIds": [
+        "SND-07"
+      ],
+      "question": "Define wavelength and state its units and dimensions.",
+      "answer": "Wavelength is the distance between two successive particles of the medium which are in the same state of vibration. The SI unit is metre and CGS unit is centimetre. Dimensions are [M⁰ L¹ T⁰].",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q08",
+      "conceptIds": [
+        "SND-08"
+      ],
+      "question": "Define period and frequency of a wave.",
+      "answer": "Period of a wave is the time taken by a particle to complete one oscillation; its unit is second and dimensions [M⁰ L⁰ T¹]. Frequency is the number of oscillations per unit time; frequency equals 1/T, unit is hertz and dimensions [M⁰ L⁰ T⁻¹].",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q09",
+      "conceptIds": [
+        "SND-01"
+      ],
+      "question": "Write the relation between velocity, wavelength and frequency of a wave.",
+      "answer": "The velocity of a wave is given by V = λ / T or equivalently V = λ n where n is the frequency. Velocity is the distance travelled by the wave in one period. This relation holds for all progressive waves.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q10",
+      "conceptIds": [
+        "SND-01"
+      ],
+      "question": "What is wave number?",
+      "answer": "Wave number is the number of waves present in unit distance. It is denoted by ν-bar and equals 1/λ. Wave number has dimensions of inverse length.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q11",
+      "conceptIds": [
+        "SND-01"
+      ],
+      "question": "Explain the doubly periodic nature of a wave.",
+      "answer": "A wave is doubly periodic because it is periodic both in time and in space. At any fixed point the disturbance repeats after a regular time interval (periodicity in time). At any fixed instant the waveform repeats after equal distances (periodicity in space).",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q12",
+      "conceptIds": [
+        "SND-12"
+      ],
+      "question": "Define phase of a particle in a wave.",
+      "answer": "Phase is the state of oscillation of a particle. To specify the phase one needs to know the displacement, the direction of velocity and the oscillation number. Particles having the same displacement and velocity direction are said to be in the same phase.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q13",
+      "conceptIds": [
+        "SND-03"
+      ],
+      "question": "State the conditions required for the propagation of a mechanical wave.",
+      "answer": "For a mechanical wave to propagate the medium must be elastic so that restoring forces can act. The medium should also possess less frictional force so that energy is not rapidly dissipated. These two properties enable sustained wave motion.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q14",
+      "conceptIds": [
+        "SND-01",
+        "SND-03"
+      ],
+      "question": "Define progressive wave and transverse wave.",
+      "answer": "A progressive wave is a wave that travels continuously in the same direction. A transverse wave is one in which the direction of vibration of particles is perpendicular to the direction of propagation of the wave. Transverse waves travel in the form of crests and troughs.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q15",
+      "conceptIds": [
+        "SND-01",
+        "SND-03"
+      ],
+      "question": "List the important characteristics of transverse waves.",
+      "answer": "Particles vibrate at right angles to the direction of propagation. Motion of each particle is periodic and the wave is periodic in space and time. There is no change in pressure or density of the medium. Crests and troughs follow each other at regular intervals. Energy is transported without bulk motion of the medium.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q16",
+      "conceptIds": [
+        "SND-01"
+      ],
+      "question": "In which media can transverse waves travel and can they be polarised?",
+      "answer": "Transverse waves can travel only in media possessing rigidity modulus of elasticity such as solids and strings. They cannot travel in the interior of liquids and gases. Transverse waves can be polarised.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q17",
+      "conceptIds": [
+        "SND-01",
+        "SND-02",
+        "SND-03"
+      ],
+      "question": "Define longitudinal waves and give an example.",
+      "answer": "In longitudinal waves the particles of the medium vibrate in the direction of wave propagation with the same period and amplitude. Sound waves in air are a common example of longitudinal waves. These waves consist of compressions and rarefactions.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q18",
+      "conceptIds": [
+        "SND-01",
+        "SND-03"
+      ],
+      "question": "What elastic property is required for longitudinal waves and where can they travel?",
+      "answer": "For the propagation of longitudinal waves the medium must possess bulk modulus of elasticity. They can travel through solids, liquids and gases but cannot travel through vacuum. Longitudinal waves cannot be polarised.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q19",
+      "conceptIds": [
+        "SND-04"
+      ],
+      "question": "Write the general expression for the speed of a longitudinal wave.",
+      "answer": "The speed of a longitudinal wave is given by v = √(E / ρ) where E is the coefficient of elasticity and ρ is the density of the medium. Speed is directly proportional to the square root of elasticity and inversely proportional to the square root of density. In general v_solid > v_liquid > v_gas.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q20",
+      "conceptIds": [
+        "SND-01",
+        "SND-02",
+        "SND-03"
+      ],
+      "question": "Why is the speed of sound greater in solids than in liquids or gases despite higher density?",
+      "answer": "Although solids have higher density, their coefficient of elasticity is very much higher compared with liquids and gases. Because speed depends on √(E/ρ) the large increase in E more than compensates for the increase in ρ, resulting in higher speed in solids.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q21",
+      "conceptIds": [
+        "SND-01",
+        "SND-04"
+      ],
+      "question": "Give the expressions for speed of longitudinal waves in liquids/gases and in rods.",
+      "answer": "In liquids or gases the speed is v = √(B / ρ) where B is the bulk modulus. In a rod the speed is v = √(Y / ρ) where Y is Young's modulus. Bulk modulus is defined as B = -ΔP / (ΔV/V) and Young's modulus as stress/strain.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q22",
+      "conceptIds": [
+        "SND-01",
+        "SND-02",
+        "SND-03"
+      ],
+      "question": "Describe Newton's formula for the speed of sound in air.",
+      "answer": "Newton assumed that sound propagation is an isothermal process. Using Boyle's law he obtained the isothermal bulk modulus equal to pressure P. Therefore v = √(P / ρ). The calculated value at 0 °C is about 280 m/s which is lower than the experimental value of 332 m/s.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q23",
+      "conceptIds": [
+        "SND-04"
+      ],
+      "question": "What was Laplace's correction to Newton's formula?",
+      "answer": "Laplace argued that the compressions and rarefactions occur so rapidly that there is no time for heat exchange, making the process adiabatic rather than isothermal. For an adiabatic process the bulk modulus becomes γP where γ = Cp/Cv. The corrected speed is therefore √(γP / ρ).",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q24",
+      "conceptIds": [
+        "SND-06"
+      ],
+      "question": "Write the values of degrees of freedom and γ for different gases.",
+      "answer": "For monatomic gases (He, Ne) the degree of freedom f = 3 and γ = 5/3. For diatomic gases (H₂, O₂, N₂) f = 5 and γ = 7/5. For polyatomic gases such as CH₄ f = 6. The relation γ = 1 + 2/f is used.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q25",
+      "conceptIds": [
+        "SND-01",
+        "SND-02",
+        "SND-03"
+      ],
+      "question": "What is the experimental speed of sound in air at 0 °C?",
+      "answer": "The experimental speed of sound in air at 0 °C is 332 m/s. Newton's isothermal calculation gave only 280 m/s. The discrepancy was resolved by Laplace's adiabatic correction which brings the theoretical value into agreement with experiment.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q26",
+      "conceptIds": [
+        "SND-01",
+        "SND-02",
+        "SND-03"
+      ],
+      "question": "Explain why longitudinal waves cannot travel through vacuum.",
+      "answer": "Longitudinal waves require a material medium that can be compressed and rarefied so that pressure variations can propagate. Vacuum contains no particles that can undergo such compressions and rarefactions. Therefore sound and other longitudinal mechanical waves cannot travel through vacuum.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q27",
+      "conceptIds": [
+        "SND-09"
+      ],
+      "question": "What is the difference between crest and trough in a transverse wave?",
+      "answer": "The crest is the point corresponding to the maximum positive displacement of a particle from the mean position. The trough is the point corresponding to the maximum negative displacement. Crests and troughs follow each other at regular intervals equal to the wavelength.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q28",
+      "conceptIds": [
+        "SND-10"
+      ],
+      "question": "Does wave motion involve bulk transport of the medium?",
+      "answer": "There is no bulk motion of the matter from one place to another in wave motion. Only energy is transported from one location to another. Individual particles of the medium oscillate about their mean positions and do not travel with the wave.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q29",
+      "conceptIds": [
+        "SND-11"
+      ],
+      "question": "How does the velocity of a particle in a wave differ from the wave velocity?",
+      "answer": "The velocity of the wave is constant for a given medium and depends only on the properties of the medium. The velocity of an individual particle varies periodically with time and is different at different positions; it is maximum at the mean position and zero at the extreme positions.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q30",
+      "conceptIds": [
+        "SND-01"
+      ],
+      "question": "Can transverse waves travel through liquids and gases?",
+      "answer": "Transverse waves cannot travel through the interior of liquids and gases because these media do not possess the necessary rigidity (shear modulus). They can travel on the surface of liquids where surface tension provides a restoring force, but not as volume waves inside the fluid.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q31",
+      "conceptIds": [
+        "SND-01",
+        "SND-03"
+      ],
+      "question": "What is meant by polarisation of waves?",
+      "answer": "Polarisation is a property that can be exhibited by transverse waves. It refers to the restriction of the vibrations of the particles to a particular plane. Longitudinal waves cannot be polarised because their vibrations are already along the direction of propagation.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q32",
+      "conceptIds": [
+        "SND-01"
+      ],
+      "question": "State the relation between frequency and period.",
+      "answer": "Frequency n (or f or ν) is the reciprocal of the period T. Mathematically n = 1/T. If the period is 0.02 s the frequency is 50 Hz. This relation is fundamental for all periodic waves.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q33",
+      "conceptIds": [
+        "SND-01",
+        "SND-02",
+        "SND-03"
+      ],
+      "question": "Why is the process of sound propagation considered adiabatic according to Laplace?",
+      "answer": "The compressions and rarefactions in a sound wave occur so rapidly that there is insufficient time for heat to flow into or out of the compressed regions. Consequently the temperature changes and the process is adiabatic rather than isothermal. This leads to the factor γ in the speed formula.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q34",
+      "conceptIds": [
+        "SND-01",
+        "SND-04"
+      ],
+      "question": "Write the expression for bulk modulus and Young's modulus.",
+      "answer": "Bulk modulus B is defined as B = -ΔP / (ΔV/V). Young's modulus Y is defined as stress divided by strain, where stress = F/A and strain = ΔL/L. These elastic constants appear in the expressions for the speed of longitudinal waves.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q35",
+      "conceptIds": [
+        "SND-05"
+      ],
+      "question": "What happens to the amplitude in damped and undamped oscillations?",
+      "answer": "In damped oscillations the amplitude of the particle decreases continuously with time due to dissipative forces. In undamped oscillations the amplitude remains constant because energy losses are either absent or continuously compensated. Ideal simple harmonic motion is an example of undamped oscillation.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q36",
+      "conceptIds": [
+        "SND-18"
+      ],
+      "question": "How is the state of phase determined for particles in a wave?",
+      "answer": "To determine the phase of a particle one must know its instantaneous displacement, the direction of its velocity and which oscillation number it is in. Particles that have identical values of these quantities at a given instant are said to be in the same phase.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SND-Q37",
+      "conceptIds": [
+        "SND-01",
+        "SND-02",
+        "SND-03"
+      ],
+      "question": "Why does sound travel faster in solids than in air?",
+      "answer": "Although the density of solids is higher, the coefficient of elasticity of solids is orders of magnitude larger than that of air. Because speed depends on the square root of the ratio of elasticity to density, the high elasticity dominates and produces a much higher speed of sound in solids.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    }
+  ]
+}

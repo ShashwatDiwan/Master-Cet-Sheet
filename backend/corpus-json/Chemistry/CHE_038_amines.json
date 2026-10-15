@@ -1,0 +1,468 @@
+{
+  "chapterId": "38",
+  "chapterName": "Amines",
+  "subject": "Chemistry",
+  "concepts": [
+    {
+      "id": "AMN-01",
+      "name": "Classification of Amines",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Primary, secondary and tertiary amines based on number of alkyl groups on nitrogen."
+    },
+    {
+      "id": "AMN-02",
+      "name": "Reduction of Nitro Compounds",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "ArNO2 reduced by Sn/HCl, Fe/HCl or H2/Pd to ArNH2."
+    },
+    {
+      "id": "AMN-03",
+      "name": "Ammonolysis of Alkyl Halides",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "RX + NH3 gives mixture of 1°, 2°, 3° amines and quaternary salt."
+    },
+    {
+      "id": "AMN-04",
+      "name": "Reduction of Nitriles and Amides",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "RCN or RCONH2 reduced by LiAlH4 to primary amines."
+    },
+    {
+      "id": "AMN-05",
+      "name": "Gabriel Phthalimide Synthesis",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [3],
+      "oneLineSummary": "Gives pure primary aliphatic amines; avoids multiple alkylation."
+    },
+    {
+      "id": "AMN-06",
+      "name": "Hoffmann Bromamide Degradation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [3],
+      "oneLineSummary": "RCONH2 + Br2/KOH → RNH2 (one carbon less)."
+    },
+    {
+      "id": "AMN-07",
+      "name": "Reaction with Nitrous Acid",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "1° aliphatic → N2 + alcohol; 1° aromatic → diazonium; 2° → N-nitrosoamine."
+    },
+    {
+      "id": "AMN-08",
+      "name": "Hinsberg Test",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Distinguishes 1°, 2°, 3° amines using PhSO2Cl."
+    },
+    {
+      "id": "AMN-09",
+      "name": "Carbylamine Reaction",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [3],
+      "oneLineSummary": "Only 1° amines give foul-smelling isocyanide with CHCl3/KOH."
+    },
+    {
+      "id": "AMN-10",
+      "name": "Electrophilic Substitution of Aniline",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "–NH2 strongly activating, ortho-para directing; gives 2,4,6-tribromoaniline."
+    },
+    {
+      "id": "AMN-11",
+      "name": "Protection of Amino Group",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Acetylation before nitration prevents oxidation and poly-substitution."
+    },
+    {
+      "id": "AMN-12",
+      "name": "Diazotisation and Azo Coupling",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "ArNH2 → ArN2+; couples with phenols/anilines to azo dyes."
+    },
+    {
+      "id": "AMN-13",
+      "name": "Basicity Order of Amines",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Aliphatic > NH3 > aromatic; in water 2° > 1° > 3°."
+    },
+    {
+      "id": "AMN-14",
+      "name": "Sandmeyer Reaction",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "ArN2+ + CuX → ArX; introduces Cl, Br, CN into aromatic ring."
+    },
+    {
+      "id": "AMN-15",
+      "name": "Aniline Less Basic than Aliphatic Amines",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Lone pair delocalised into benzene ring; less available for protonation."
+    },
+    {
+      "id": "AMN-16",
+      "name": "Exhaustive Alkylation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [3],
+      "oneLineSummary": "1° amine + excess RX ultimately yields quaternary ammonium salt."
+    },
+    {
+      "id": "AMN-17",
+      "name": "Zwitter-ion of Sulphanilic Acid",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Exists as +H3N–C6H4–SO3−."
+    },
+    {
+      "id": "AMN-18",
+      "name": "Separation of Amine Mixtures",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Hinsberg method or conversion to derivatives followed by fractionation."
+    }
+  ],
+  "qna": [
+    {
+      "id": "AMN-Q01",
+      "conceptIds": ["AMN-01"],
+      "question": "How are amines classified?",
+      "answer": "Amines are classified as primary, secondary or tertiary according to the number of alkyl or aryl groups attached to nitrogen. Primary amines have one organic group, secondary have two and tertiary have three.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AMN-Q02",
+      "conceptIds": ["AMN-02"],
+      "question": "How are aromatic primary amines prepared from nitro compounds?",
+      "answer": "Aromatic nitro compounds are reduced with Sn/HCl, Fe/HCl or by catalytic hydrogenation. The nitro group is converted into an amino group, giving aniline or substituted anilines. This is the most common laboratory route.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AMN-Q03",
+      "conceptIds": ["AMN-03"],
+      "question": "What is the main drawback of preparing amines by ammonolysis of alkyl halides?",
+      "answer": "The reaction produces a mixture of primary, secondary and tertiary amines together with the quaternary ammonium salt. Separation of the pure primary amine is difficult, so alternative methods are preferred when a single product is required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AMN-Q04",
+      "conceptIds": ["AMN-05"],
+      "question": "Describe the Gabriel phthalimide synthesis.",
+      "answer": "Potassium phthalimide is alkylated with an alkyl halide and the product is hydrolysed to liberate a pure primary amine. The method avoids multiple alkylation and is therefore excellent for preparing primary aliphatic amines.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [3]
+    },
+    {
+      "id": "AMN-Q05",
+      "conceptIds": ["AMN-06"],
+      "question": "What is Hoffmann bromamide degradation?",
+      "answer": "A primary amide is treated with bromine and alkali to give a primary amine containing one carbon atom less than the original amide. It is a step-down reaction useful for preparing lower homologous amines.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [3]
+    },
+    {
+      "id": "AMN-Q06",
+      "conceptIds": ["AMN-07"],
+      "question": "How do primary aliphatic and primary aromatic amines differ with nitrous acid?",
+      "answer": "Primary aliphatic amines liberate nitrogen and form alcohols. Primary aromatic amines form stable diazonium salts at 0–5 °C. The aromatic diazonium ion is resonance-stabilised, which accounts for the difference.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q07",
+      "conceptIds": ["AMN-08"],
+      "question": "How does the Hinsberg test distinguish the three classes of amines?",
+      "answer": "Primary amines give a sulphonamide soluble in alkali, secondary amines give a sulphonamide insoluble in alkali, and tertiary amines do not react. The solubility behaviour identifies the class.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q08",
+      "conceptIds": ["AMN-09"],
+      "question": "What is the carbylamine test?",
+      "answer": "A primary amine heated with chloroform and alcoholic KOH produces a foul-smelling isocyanide. Secondary and tertiary amines do not give this test, making it specific for primary amines.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [3]
+    },
+    {
+      "id": "AMN-Q09",
+      "conceptIds": ["AMN-10"],
+      "question": "Why does aniline form 2,4,6-tribromoaniline with bromine water?",
+      "answer": "The amino group is strongly activating and ortho-para directing. It raises the electron density at the ortho and para positions so much that all three positions are substituted rapidly, giving the tribromo product as a white precipitate.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q10",
+      "conceptIds": ["AMN-11"],
+      "question": "Why is aniline acetylated before nitration?",
+      "answer": "The free amino group is highly activating and easily oxidised by nitric acid. Conversion to the acetamido group moderates the activation and protects the nitrogen, allowing clean mono-nitration mainly at the para position.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q11",
+      "conceptIds": ["AMN-12"],
+      "question": "What is diazotisation and why are diazonium salts useful?",
+      "answer": "Diazotisation converts a primary aromatic amine into a diazonium salt with NaNO2/HCl at 0–5 °C. Diazonium salts are versatile intermediates for preparing aryl halides, phenols, nitriles and azo dyes.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q12",
+      "conceptIds": ["AMN-13", "AMN-15"],
+      "question": "Why is aniline less basic than aliphatic amines?",
+      "answer": "In aniline the nitrogen lone pair is delocalised into the benzene ring by resonance, making it less available for protonation. Aliphatic amines have no such delocalisation, so they are stronger bases.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AMN-Q13",
+      "conceptIds": ["AMN-14"],
+      "question": "What is the Sandmeyer reaction used for?",
+      "answer": "The Sandmeyer reaction replaces the diazonium group by Cl or Br using CuCl or CuBr. It provides a mild method for introducing halogen atoms into an aromatic ring.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "AMN-Q14",
+      "conceptIds": ["AMN-16"],
+      "question": "What is the final product of exhaustive methylation of a primary amine?",
+      "answer": "A primary amine treated with excess methyl iodide ultimately forms a quaternary ammonium iodide. The reaction proceeds through secondary and tertiary intermediates.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [3]
+    },
+    {
+      "id": "AMN-Q15",
+      "conceptIds": ["AMN-04"],
+      "question": "How are primary amines obtained from nitriles?",
+      "answer": "Nitriles are reduced by LiAlH4 or by catalytic hydrogenation to primary amines. The –C≡N group becomes –CH2NH2, allowing chain elongation by one carbon.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AMN-Q16",
+      "conceptIds": ["AMN-13"],
+      "question": "What is the basicity order of methylamines in aqueous solution?",
+      "answer": "In aqueous solution the order is (CH3)2NH > CH3NH2 > (CH3)3N > NH3. Secondary amines are the strongest because of the balance between inductive effect and solvation.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AMN-Q17",
+      "conceptIds": ["AMN-08", "AMN-09"],
+      "question": "How can a primary amine be distinguished from a secondary amine?",
+      "answer": "The carbylamine test is positive only for primary amines. Alternatively the Hinsberg test shows alkali-soluble sulphonamide for primary and alkali-insoluble sulphonamide for secondary amines.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [2, 3]
+    },
+    {
+      "id": "AMN-Q18",
+      "conceptIds": ["AMN-12"],
+      "question": "What is the industrial importance of the azo-coupling reaction?",
+      "answer": "Azo coupling produces brightly coloured azo compounds that are the basis of the azo-dye industry. The reaction is also used analytically for the estimation of phenols and anilines.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q19",
+      "conceptIds": ["AMN-10", "AMN-11"],
+      "question": "Why is direct nitration of aniline unsatisfactory?",
+      "answer": "Direct nitration causes oxidation of the highly activated ring and produces a mixture of products including polysubstituted derivatives. Protection as acetanilide allows controlled para-nitration.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q20",
+      "conceptIds": ["AMN-06"],
+      "question": "Why is Hoffmann degradation called a step-down reaction?",
+      "answer": "The product amine contains one carbon atom fewer than the starting amide. The carbon of the carbonyl group is lost during the rearrangement, shortening the chain by one carbon.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [3]
+    },
+    {
+      "id": "AMN-Q21",
+      "conceptIds": ["AMN-01", "AMN-13"],
+      "question": "Why are aliphatic amines stronger bases than ammonia?",
+      "answer": "Alkyl groups are electron-releasing and increase the electron density on nitrogen. The lone pair therefore becomes more available for protonation, making aliphatic amines stronger bases than ammonia.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AMN-Q22",
+      "conceptIds": ["AMN-07"],
+      "question": "What product is formed when a secondary amine reacts with nitrous acid?",
+      "answer": "Secondary amines form yellow oily N-nitrosoamines. These compounds are water-insoluble and serve as a diagnostic test for secondary amines.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q23",
+      "conceptIds": ["AMN-05"],
+      "question": "Why cannot Gabriel synthesis be used for aromatic primary amines?",
+      "answer": "Aryl halides do not undergo nucleophilic substitution with the phthalimide anion under ordinary conditions. Gabriel synthesis is therefore limited to primary aliphatic amines.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [3]
+    },
+    {
+      "id": "AMN-Q24",
+      "conceptIds": ["AMN-14"],
+      "question": "How is aniline converted into chlorobenzene?",
+      "answer": "Aniline is diazotised and the diazonium salt is treated with CuCl (Sandmeyer reaction). The diazonium group is replaced by chlorine, giving chlorobenzene.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "AMN-Q25",
+      "conceptIds": ["AMN-17"],
+      "question": "Why does sulphanilic acid exist as a zwitter-ion?",
+      "answer": "The strongly acidic sulphonic acid group protonates the amino group, producing the zwitter-ionic structure +H3N–C6H4–SO3−. This accounts for its high melting point and low solubility in organic solvents.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q26",
+      "conceptIds": ["AMN-03"],
+      "question": "What is the order of reactivity of alkyl halides toward ammonolysis?",
+      "answer": "The order is RI > RBr > RCl. Iodides are the most reactive because iodide is the best leaving group. Tertiary halides tend to eliminate rather than substitute.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AMN-Q27",
+      "conceptIds": ["AMN-12"],
+      "question": "How is phenol obtained from aniline?",
+      "answer": "Aniline is diazotised and the diazonium salt is warmed with water. The diazonium group is replaced by OH, yielding phenol. This is a standard method for introducing a phenolic hydroxyl group.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q28",
+      "conceptIds": ["AMN-09"],
+      "question": "Why is the carbylamine test specific for primary amines?",
+      "answer": "Only primary amines have two hydrogens on nitrogen that are required for isocyanide formation. Secondary and tertiary amines cannot form the necessary intermediate and therefore do not respond.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [3]
+    },
+    {
+      "id": "AMN-Q29",
+      "conceptIds": ["AMN-10"],
+      "question": "What is observed when aniline is treated with bromine water?",
+      "answer": "A white precipitate of 2,4,6-tribromoaniline is formed immediately. The reaction is used as a qualitative test for aniline.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q30",
+      "conceptIds": ["AMN-04"],
+      "question": "How can secondary amines be prepared from amides?",
+      "answer": "N-substituted amides are reduced with LiAlH4 to secondary amines. The carbonyl oxygen is removed while the nitrogen substituents remain.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AMN-Q31",
+      "conceptIds": ["AMN-13"],
+      "question": "Why does the basicity order of amines differ in gas phase and in water?",
+      "answer": "In the gas phase the order follows the inductive effect (3° > 2° > 1°). In water, solvation of the ammonium ion becomes important and the order becomes 2° > 1° > 3°.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AMN-Q32",
+      "conceptIds": ["AMN-08"],
+      "question": "Why do tertiary amines not react in the Hinsberg test?",
+      "answer": "Tertiary amines lack a hydrogen on nitrogen and cannot form a sulphonamide. They remain unchanged, giving a negative test.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "AMN-Q33",
+      "conceptIds": ["AMN-01", "AMN-07"],
+      "question": "How can ethylamine be distinguished from diethylamine?",
+      "answer": "Ethylamine (1°) liberates nitrogen with HNO2 and gives a positive carbylamine test. Diethylamine (2°) forms a yellow N-nitrosoamine and does not give the carbylamine test.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [2, 3]
+    },
+    {
+      "id": "AMN-Q34",
+      "conceptIds": ["AMN-14"],
+      "question": "How is benzene prepared from aniline?",
+      "answer": "Aniline is diazotised and the diazonium salt is reduced with hypophosphorous acid or ethanol. The diazonium group is replaced by hydrogen, yielding benzene.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "AMN-Q35",
+      "conceptIds": ["AMN-02"],
+      "question": "Why is aniline steam-distilled during its preparation?",
+      "answer": "Aniline forms an azeotrope with water and is steam-volatile. Steam distillation separates it from non-volatile impurities and inorganic salts, giving a reasonably pure product.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    }
+  ]
+}

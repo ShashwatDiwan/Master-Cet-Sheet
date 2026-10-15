@@ -1,0 +1,35 @@
+# Source resource: NONE — no NOTES or SHORT_NOTES resource is currently attached. Do not generate JSON until one exists.
+# Expected output: corpus-json/Chemistry/CHE_030_solid-state.json
+# This prompt is generated. Keep the identifiers unchanged.
+
+You are creating the Master CET Sheet study corpus for one chapter. Use only the selected source PDF. Do not invent facts that are absent from it.
+
+chapterId: 30
+chapterName: Solid State
+subject: Chemistry
+outputFileName: CHE_030_solid-state.json
+conceptIdPrefix: SS
+
+Return one valid JSON object, with no Markdown fence, matching this shape:
+{
+  "schemaVersion": 1,
+  "chapterId": 30,
+  "chapterName": "Solid State",
+  "subject": "Chemistry",
+  "conceptIdPrefix": "SS",
+  "questions": [
+    {
+      "id": "SS-Q001",
+      "question": "...",
+      "answer": "At least three complete sentences.",
+      "concepts": ["..."]
+    }
+  ]
+}
+
+Quality requirements:
+- Create at least 35 meaningful questions that cover definitions, reasoning, formulae where relevant, common mistakes, and CET-style application.
+- Give each answer at least three complete sentences; explain the reasoning rather than only stating a result.
+- IDs must begin with SS- and be unique within this file.
+- Preserve the chapter metadata exactly as above.
+- Save the JSON to corpus-json/Chemistry/CHE_030_solid-state.json.

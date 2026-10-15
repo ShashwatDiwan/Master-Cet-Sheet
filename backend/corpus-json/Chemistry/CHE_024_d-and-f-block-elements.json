@@ -1,0 +1,468 @@
+{
+  "chapterId": "24",
+  "chapterName": "D and F Block Elements",
+  "subject": "Chemistry",
+  "concepts": [
+    {
+      "id": "DF-01",
+      "name": "Position of d-Block",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "d-Block elements lie between s- and p-block; groups 3–12."
+    },
+    {
+      "id": "DF-02",
+      "name": "General Electronic Configuration",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "(n-1)d1–10 ns0–2 for transition metals."
+    },
+    {
+      "id": "DF-03",
+      "name": "Variable Oxidation States",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Due to participation of both ns and (n-1)d electrons."
+    },
+    {
+      "id": "DF-04",
+      "name": "Atomic and Ionic Sizes",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Decrease across period; increase down group; lanthanoid contraction."
+    },
+    {
+      "id": "DF-05",
+      "name": "Ionization Enthalpy",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Increases across period; irregular due to exchange energy and stable configs."
+    },
+    {
+      "id": "DF-06",
+      "name": "Magnetic Properties",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Paramagnetic if unpaired electrons; μ = √n(n+2) BM."
+    },
+    {
+      "id": "DF-07",
+      "name": "Catalytic Properties",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Variable oxidation states and ability to form complexes enable catalysis."
+    },
+    {
+      "id": "DF-08",
+      "name": "Coloured Compounds",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "d–d transitions and charge-transfer spectra cause colour."
+    },
+    {
+      "id": "DF-09",
+      "name": "Complex Formation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Small size, high charge density and vacant d-orbitals favour complexes."
+    },
+    {
+      "id": "DF-10",
+      "name": "Interstitial Compounds",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Small atoms (H, C, N) occupy voids; hard, high m.p., retain metallic conductivity."
+    },
+    {
+      "id": "DF-11",
+      "name": "Alloy Formation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Similar atomic sizes allow solid solutions; improve hardness and strength."
+    },
+    {
+      "id": "DF-12",
+      "name": "Lanthanoid Contraction",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Steady decrease in size from La to Lu due to poor shielding by 4f electrons."
+    },
+    {
+      "id": "DF-13",
+      "name": "Oxidation States of Lanthanoids",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Predominantly +3; Eu2+ and Yb2+ also stable due to half/full f-shell."
+    },
+    {
+      "id": "DF-14",
+      "name": "Actinoids",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "All radioactive; show wider range of oxidation states than lanthanoids."
+    },
+    {
+      "id": "DF-15",
+      "name": "KMnO4 and K2Cr2O7",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Strong oxidising agents in acidic medium; used in volumetric analysis."
+    },
+    {
+      "id": "DF-16",
+      "name": "Preparation of KMnO4",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "From pyrolusite via potassium manganate followed by electrolytic oxidation."
+    },
+    {
+      "id": "DF-17",
+      "name": "Colour of Transition Metal Ions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Depends on number of unpaired electrons and nature of ligands."
+    },
+    {
+      "id": "DF-18",
+      "name": "Comparison of Lanthanoids and Actinoids",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Actinoids show greater range of oxidation states and are radioactive."
+    }
+  ],
+  "qna": [
+    {
+      "id": "DF-Q01",
+      "conceptIds": ["DF-01", "DF-02"],
+      "question": "What is the general electronic configuration of d-block elements?",
+      "answer": "The general electronic configuration is (n-1)d1–10 ns0–2. The d-block elements occupy groups 3 to 12 of the periodic table and are also called transition elements because their properties are intermediate between s- and p-block elements.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q02",
+      "conceptIds": ["DF-03"],
+      "question": "Why do transition metals show variable oxidation states?",
+      "answer": "Both the ns and (n-1)d electrons can participate in bonding. The energy difference between these orbitals is small, allowing successive removal or sharing of electrons and therefore a range of oxidation states.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q03",
+      "conceptIds": ["DF-06"],
+      "question": "How is the magnetic moment of a transition-metal ion calculated?",
+      "answer": "The spin-only magnetic moment is given by μ = √n(n+2) Bohr magneton, where n is the number of unpaired electrons. The formula is used to determine the number of unpaired electrons from experimental magnetic data.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q04",
+      "conceptIds": ["DF-08"],
+      "question": "Why are most transition-metal compounds coloured?",
+      "answer": "Colour arises from d–d electronic transitions. When white light falls on the compound, light of a particular wavelength is absorbed to promote an electron from a lower to a higher d-orbital; the complementary colour is observed.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q05",
+      "conceptIds": ["DF-09"],
+      "question": "Why do transition metals form complexes readily?",
+      "answer": "They have small size, high ionic charge and vacant d-orbitals that can accept lone pairs from ligands. These factors favour the formation of stable coordinate complexes with a wide variety of ligands.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q06",
+      "conceptIds": ["DF-12"],
+      "question": "What is lanthanoid contraction and what are its consequences?",
+      "answer": "Lanthanoid contraction is the steady decrease in atomic and ionic radii from La to Lu caused by the poor shielding effect of 4f electrons. It results in the similarity of size between the second and third transition series and makes separation of lanthanoids difficult.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q07",
+      "conceptIds": ["DF-07"],
+      "question": "Why are transition metals good catalysts?",
+      "answer": "They exhibit variable oxidation states and can form unstable intermediate complexes with reactants. These properties provide alternate pathways of lower activation energy, thereby increasing the rate of reaction.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q08",
+      "conceptIds": ["DF-10"],
+      "question": "What are interstitial compounds? Give their characteristics.",
+      "answer": "Interstitial compounds are formed when small atoms such as H, C or N occupy the voids in the metal lattice. They are hard, have high melting points, retain metallic conductivity and are chemically inert.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q09",
+      "conceptIds": ["DF-11"],
+      "question": "Why do transition metals form alloys easily?",
+      "answer": "Transition metals have similar atomic sizes, allowing them to form solid solutions over a wide composition range. Alloying improves hardness, strength and resistance to corrosion.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q10",
+      "conceptIds": ["DF-13"],
+      "question": "Why is the +3 oxidation state most stable for lanthanoids?",
+      "answer": "The +3 state corresponds to the removal of the two 6s electrons and one 5d or 4f electron, leaving a stable configuration. Eu2+ and Yb2+ are also stable because they possess half-filled and fully-filled 4f subshells respectively.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q11",
+      "conceptIds": ["DF-15"],
+      "question": "Write the balanced equation for the reaction of KMnO4 with Fe2+ in acidic medium.",
+      "answer": "MnO4− + 8 H+ + 5 Fe2+ → Mn2+ + 5 Fe3+ + 4 H2O. Potassium permanganate is a strong oxidising agent and is self-indicating in titrations because the end-point is marked by the appearance of a permanent pink colour.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DF-Q12",
+      "conceptIds": ["DF-16"],
+      "question": "How is potassium permanganate prepared industrially?",
+      "answer": "Pyrolusite (MnO2) is fused with KOH in air to form potassium manganate. The green manganate is then oxidised electrolytically or by chlorine to purple potassium permanganate.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "DF-Q13",
+      "conceptIds": ["DF-04"],
+      "question": "How does atomic size vary across the first transition series?",
+      "answer": "Atomic size decreases from Sc to Cr, remains almost constant from Cr to Cu, and then increases slightly at Zn. The initial decrease is due to increasing nuclear charge; the later constancy is caused by increasing electron–electron repulsion.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q14",
+      "conceptIds": ["DF-14"],
+      "question": "How do actinoids differ from lanthanoids?",
+      "answer": "Actinoids are all radioactive and show a wider range of oxidation states than lanthanoids. Their 5f electrons are more effectively shielded and participate more readily in bonding, leading to greater chemical complexity.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q15",
+      "conceptIds": ["DF-05"],
+      "question": "Why is the second ionisation enthalpy of chromium higher than that of manganese?",
+      "answer": "Chromium has a stable half-filled 3d5 configuration after loss of one electron (Cr+ is 3d5). Removing a second electron from this stable configuration requires extra energy. Manganese does not have this extra stability for Mn+.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q16",
+      "conceptIds": ["DF-06", "DF-17"],
+      "question": "Calculate the spin-only magnetic moment of Fe3+ (Z = 26).",
+      "answer": "Fe3+ has the configuration 3d5 and therefore five unpaired electrons. μ = √5(5+2) = √35 ≈ 5.92 BM. The high value confirms the presence of five unpaired electrons.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q17",
+      "conceptIds": ["DF-08", "DF-17"],
+      "question": "Why is Zn2+ colourless while Cu2+ is blue?",
+      "answer": "Zn2+ has a completely filled 3d10 configuration and therefore no d–d transitions are possible. Cu2+ has a 3d9 configuration and can undergo d–d transitions, absorbing light in the visible region and appearing blue.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q18",
+      "conceptIds": ["DF-12"],
+      "question": "What is the effect of lanthanoid contraction on the radii of the 4d and 5d series?",
+      "answer": "Because of lanthanoid contraction the atomic radii of the 4d and 5d series elements are almost identical. Consequently Zr and Hf, Nb and Ta, etc., have very similar sizes and chemical properties.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q19",
+      "conceptIds": ["DF-15"],
+      "question": "Why is K2Cr2O7 preferred over KMnO4 as a primary standard?",
+      "answer": "Potassium dichromate can be obtained in a high state of purity, is stable in aqueous solution and does not require standardisation. Potassium permanganate solutions slowly decompose and must be standardised before use.",
+      "type": "comparison",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "DF-Q20",
+      "conceptIds": ["DF-03", "DF-07"],
+      "question": "Give two reasons why transition metals are used as catalysts.",
+      "answer": "They show variable oxidation states, allowing them to form intermediate compounds of different oxidation states. They also provide a surface for adsorption of reactants, increasing the local concentration and lowering the activation energy.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q21",
+      "conceptIds": ["DF-10"],
+      "question": "Give one example of an interstitial compound and its use.",
+      "answer": "Tungsten carbide (WC) is an interstitial compound. It is extremely hard and is used for making cutting tools and abrasives. The carbon atoms occupy octahedral voids in the tungsten lattice.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q22",
+      "conceptIds": ["DF-13"],
+      "question": "Which lanthanoids show the +2 oxidation state and why?",
+      "answer": "Europium and ytterbium show the +2 oxidation state. Eu2+ has a half-filled 4f7 configuration and Yb2+ has a fully-filled 4f14 configuration; both are especially stable.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q23",
+      "conceptIds": ["DF-18"],
+      "question": "Compare the oxidation states of lanthanoids and actinoids.",
+      "answer": "Lanthanoids predominantly show the +3 oxidation state with only a few exceptions. Actinoids exhibit a much wider range of oxidation states (from +3 up to +7) because the 5f, 6d and 7s orbitals are closer in energy.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DF-Q24",
+      "conceptIds": ["DF-04", "DF-12"],
+      "question": "Why is the separation of lanthanoids difficult?",
+      "answer": "Because of lanthanoid contraction the ionic radii of the lanthanoids decrease only very gradually. The chemical properties are therefore extremely similar, making separation by ordinary chemical methods very difficult.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q25",
+      "conceptIds": ["DF-09"],
+      "question": "What is the coordination number of the metal in [Ni(CO)4] and [Co(NH3)6]3+?",
+      "answer": "In [Ni(CO)4] the coordination number is 4 (tetrahedral). In [Co(NH3)6]3+ the coordination number is 6 (octahedral). Coordination number is the number of ligand donor atoms attached to the central metal ion.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q26",
+      "conceptIds": ["DF-01"],
+      "question": "Why are Zn, Cd and Hg not regarded as true transition elements?",
+      "answer": "They have completely filled d10 configurations in both the elemental state and in their common oxidation states. True transition elements are defined as those that have an incomplete d-subshell in at least one of their oxidation states.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q27",
+      "conceptIds": ["DF-15"],
+      "question": "Write the oxidising action of acidified K2Cr2O7 on iodide ion.",
+      "answer": "Cr2O7 2− + 14 H+ + 6 I− → 2 Cr3+ + 3 I2 + 7 H2O. Dichromate oxidises iodide to iodine and is itself reduced to green Cr3+. The reaction is used in iodometric titrations.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DF-Q28",
+      "conceptIds": ["DF-06"],
+      "question": "An ion has a magnetic moment of 3.87 BM. How many unpaired electrons does it have?",
+      "answer": "Using μ = √n(n+2) = 3.87, we obtain n(n+2) ≈ 15, so n = 3. The ion therefore has three unpaired electrons.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q29",
+      "conceptIds": ["DF-11"],
+      "question": "Name two alloys of transition metals and their uses.",
+      "answer": "Brass (Cu + Zn) is used for decorative items and fittings. Stainless steel (Fe + Cr + Ni) is used for cutlery, surgical instruments and construction because of its corrosion resistance.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q30",
+      "conceptIds": ["DF-08"],
+      "question": "Why do compounds of Ti4+ and Zn2+ appear colourless?",
+      "answer": "Both ions have empty or completely filled d-orbitals (Ti4+ is 3d0, Zn2+ is 3d10). No d–d transitions are possible, so visible light is not absorbed and the compounds appear colourless.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q31",
+      "conceptIds": ["DF-03"],
+      "question": "What is the highest oxidation state shown by manganese and in which compound?",
+      "answer": "Manganese shows the highest oxidation state of +7 in potassium permanganate (KMnO4) and in Mn2O7. The +7 state corresponds to the participation of all seven valence electrons (3d5 4s2).",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q32",
+      "conceptIds": ["DF-14"],
+      "question": "Why do actinoids show a greater variety of oxidation states than lanthanoids?",
+      "answer": "The 5f, 6d and 7s orbitals of actinoids are closer in energy than the corresponding orbitals of lanthanoids. Electrons can therefore be removed from any of these orbitals, leading to a wider range of oxidation states.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q33",
+      "conceptIds": ["DF-07", "DF-09"],
+      "question": "How does the ability to form complexes help transition metals act as catalysts?",
+      "answer": "Transition metals form intermediate complexes with reactant molecules. These complexes bring the reactants into close proximity and in a favourable orientation, lowering the activation energy of the reaction.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q34",
+      "conceptIds": ["DF-12", "DF-04"],
+      "question": "Why are the atomic radii of Zr and Hf almost identical?",
+      "answer": "The lanthanoid contraction that occurs between the 4d and 5d series almost exactly cancels the expected increase in size on going down the group. Consequently Zr and Hf have nearly the same atomic radius.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DF-Q35",
+      "conceptIds": ["DF-15", "DF-16"],
+      "question": "Why does acidified KMnO4 oxidise oxalic acid only on heating?",
+      "answer": "The reaction between MnO4− and C2O4 2− is slow at room temperature. Heating supplies the activation energy needed for the redox process. Once a little Mn2+ is formed it catalyses the reaction autocatalytically.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    }
+  ]
+}

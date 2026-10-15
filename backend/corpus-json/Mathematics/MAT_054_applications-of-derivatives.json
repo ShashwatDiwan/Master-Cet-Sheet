@@ -1,0 +1,462 @@
+{
+  "chapterId": "54",
+  "chapterName": "Applications of Derivatives",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "AOD-01",
+      "name": "Equation of tangent and normal",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Tangent: (y-y1)=m(x-x1) where m=dy/dx at the point."
+    },
+    {
+      "id": "AOD-02",
+      "name": "Slope of tangent from derivative",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "dy/dx gives the slope of the tangent at a point on the curve."
+    },
+    {
+      "id": "AOD-03",
+      "name": "Parallel and perpendicular lines",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Parallel: m1=m2; Perpendicular: m1 m2=-1."
+    },
+    {
+      "id": "AOD-04",
+      "name": "Slope from general line equation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "For ax+by+c=0 the slope is -a/b."
+    },
+    {
+      "id": "AOD-05",
+      "name": "Approximations using differentials",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "f(a+h) ≈ f(a) + h f'(a)."
+    },
+    {
+      "id": "AOD-06",
+      "name": "Rolle's theorem",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "If f continuous on [a,b], differentiable on (a,b) and f(a)=f(b) then f'(c)=0 for some c."
+    },
+    {
+      "id": "AOD-07",
+      "name": "Increasing and decreasing functions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "f'(x)>0 ⇒ increasing; f'(x)<0 ⇒ decreasing."
+    },
+    {
+      "id": "AOD-08",
+      "name": "Maxima and minima via first derivative",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Critical points where f'(x)=0; test with sign change or second derivative."
+    },
+    {
+      "id": "AOD-09",
+      "name": "Second derivative test",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "f''(x)>0 at critical point ⇒ local minimum; f''(x)<0 ⇒ local maximum."
+    },
+    {
+      "id": "AOD-10",
+      "name": "Conditions for Rolle's theorem",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Continuity on closed interval, differentiability on open interval, equal endpoint values."
+    },
+    {
+      "id": "AOD-11",
+      "name": "Mean value theorem",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "f'(c)=(f(b)-f(a))/(b-a) under continuity and differentiability conditions."
+    },
+    {
+      "id": "AOD-12",
+      "name": "Rate of change applications",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "dy/dx interpreted as rate of change of y with respect to x."
+    },
+    {
+      "id": "AOD-13",
+      "name": "Tangents parallel or perpendicular to a given line",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Set derivative equal (or negative reciprocal) to the given slope."
+    },
+    {
+      "id": "AOD-14",
+      "name": "Absolute maxima and minima on closed interval",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Evaluate f at critical points and endpoints; largest/smallest values."
+    },
+    {
+      "id": "AOD-15",
+      "name": "Common mistakes in approximation",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Using the wrong a or forgetting the sign of h leads to incorrect approximation."
+    }
+  ],
+  "qna": [
+    {
+      "id": "AOD-Q01",
+      "conceptIds": ["AOD-01", "AOD-02"],
+      "question": "How do you write the equation of the tangent to a curve y=f(x) at a point (x1,y1)?",
+      "answer": "First compute m = f'(x1), the slope of the tangent at the point. Then the equation of the tangent is (y - y1) = m (x - x1). The same point-slope form is used for the normal after replacing m by -1/m (provided m ≠ 0).",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q02",
+      "conceptIds": ["AOD-03"],
+      "question": "State the conditions for two lines to be parallel and to be perpendicular.",
+      "answer": "Two lines with slopes m1 and m2 are parallel if m1 = m2. They are perpendicular if m1 m2 = -1. These relations follow directly from the geometry of the angles that the lines make with the positive x-axis.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q03",
+      "conceptIds": ["AOD-04"],
+      "question": "What is the slope of the line given by ax + by + c = 0?",
+      "answer": "Solving for y gives y = (-a/b)x - c/b, so the slope is -a/b (provided b ≠ 0). When b = 0 the line is vertical and has undefined slope.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q04",
+      "conceptIds": ["AOD-05"],
+      "question": "State the approximation formula that uses the derivative.",
+      "answer": "f(a + h) ≈ f(a) + h · f'(a). The formula is the first-order Taylor approximation and is useful for estimating the value of a function near a known point. The smaller |h| is, the better the approximation generally becomes.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q05",
+      "conceptIds": ["AOD-05"],
+      "question": "Approximate √64.1 using differentials.",
+      "answer": "Let f(x) = √x, a = 64, h = 0.1. Then f'(x) = 1/(2√x), so f'(64) = 1/16. Therefore √64.1 ≈ 8 + 0.1 · (1/16) = 8.00625. The approximation is slightly larger than the true value but is accurate to four decimal places for most practical purposes.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q06",
+      "conceptIds": ["AOD-06", "AOD-10"],
+      "question": "State Rolle's theorem completely.",
+      "answer": "If a function f is continuous on the closed interval [a,b], differentiable on the open interval (a,b), and satisfies f(a) = f(b), then there exists at least one point c in (a,b) such that f'(c) = 0. All three conditions are necessary; if any fails the conclusion may not hold.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q07",
+      "conceptIds": ["AOD-06"],
+      "question": "Does the function f(x) = x² - 2x + 3 on [1,4] satisfy the hypotheses of Rolle's theorem?",
+      "answer": "f is a polynomial, so it is continuous on [1,4] and differentiable on (1,4). However f(1) = 2 and f(4) = 11, which are not equal. Therefore the third hypothesis fails and Rolle's theorem cannot be applied.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q08",
+      "conceptIds": ["AOD-07"],
+      "question": "How do you determine the intervals on which a function is increasing or decreasing?",
+      "answer": "Compute the derivative f'(x). The function is increasing on intervals where f'(x) > 0 and decreasing where f'(x) < 0. Critical points where f'(x) = 0 or is undefined are used to split the domain into such intervals.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q09",
+      "conceptIds": ["AOD-07"],
+      "question": "Show that f(x) = x³ + 10x + 7 is strictly increasing on the whole real line.",
+      "answer": "f'(x) = 3x² + 10. Since 3x² ≥ 0 for all real x and 10 > 0, we have f'(x) ≥ 10 > 0. Therefore f is strictly increasing on ℝ. There are no critical points and the derivative never vanishes.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q10",
+      "conceptIds": ["AOD-08", "AOD-09"],
+      "question": "How do you locate local maxima and minima using the second-derivative test?",
+      "answer": "Find the critical points by solving f'(x) = 0. At each critical point evaluate f''(x). If f''(c) > 0 then x = c is a local minimum; if f''(c) < 0 then x = c is a local maximum. If f''(c) = 0 the test is inconclusive and the first-derivative sign chart must be used.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q11",
+      "conceptIds": ["AOD-01"],
+      "question": "Find the equation of the tangent to y = x² at the point (2,4).",
+      "answer": "dy/dx = 2x, so at x = 2 the slope is 4. The tangent equation is y - 4 = 4(x - 2), which simplifies to y = 4x - 4. The normal would have slope -1/4 and equation y - 4 = (-1/4)(x - 2).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q12",
+      "conceptIds": ["AOD-03", "AOD-13"],
+      "question": "Find the points on the curve y = x³ - 3x where the tangent is parallel to the x-axis.",
+      "answer": "The slope of the x-axis is 0, so we need dy/dx = 0. dy/dx = 3x² - 3 = 3(x² - 1) = 0 ⇒ x = ±1. The corresponding points are (1,-2) and (-1,2). At both points the tangent is horizontal.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q13",
+      "conceptIds": ["AOD-11"],
+      "question": "State the Mean Value Theorem.",
+      "answer": "If f is continuous on [a,b] and differentiable on (a,b), then there exists at least one c in (a,b) such that f'(c) = (f(b) - f(a))/(b - a). Geometrically the theorem asserts the existence of a point where the tangent is parallel to the chord joining the endpoints.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "AOD-Q14",
+      "conceptIds": ["AOD-14"],
+      "question": "How do you find the absolute maximum and minimum of a continuous function on a closed interval?",
+      "answer": "Locate all critical points inside the open interval by solving f'(x) = 0 (or where f' does not exist). Evaluate f at those critical points and also at the two endpoints a and b. The largest value among them is the absolute maximum; the smallest is the absolute minimum.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "AOD-Q15",
+      "conceptIds": ["AOD-05", "AOD-15"],
+      "question": "A student approximates √26 by taking a = 25 and h = 1. Is the choice of a and h reasonable?",
+      "answer": "Yes, because 25 is a perfect square close to 26 and h = 1 is relatively small. f(x) = √x, f'(x) = 1/(2√x), so √26 ≈ 5 + 1·(1/10) = 5.1. The true value is approximately 5.099, so the error is only about 0.001.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q16",
+      "conceptIds": ["AOD-06"],
+      "question": "Why does Rolle's theorem require continuity on the closed interval rather than only on the open interval?",
+      "answer": "Continuity on the closed interval guarantees that the extreme-value theorem applies, so the function attains its maximum and minimum. If the maximum or minimum occurs at an interior point then the derivative must vanish there. Without endpoint continuity the function might not attain its extrema and the conclusion can fail.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q17",
+      "conceptIds": ["AOD-07"],
+      "question": "Determine the intervals of increase and decrease for f(x) = x³ - 3x + 2.",
+      "answer": "f'(x) = 3x² - 3 = 3(x-1)(x+1). Critical points at x = ±1. Sign chart: f' > 0 on (-∞,-1), f' < 0 on (-1,1), f' > 0 on (1,∞). Hence f is increasing on (-∞,-1] and [1,∞), decreasing on [-1,1].",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q18",
+      "conceptIds": ["AOD-09"],
+      "question": "Use the second-derivative test to classify the critical points of f(x) = x³ - 3x.",
+      "answer": "f'(x) = 3x² - 3 = 0 ⇒ x = ±1. f''(x) = 6x. At x = 1, f''(1) = 6 > 0 so local minimum; at x = -1, f''(-1) = -6 < 0 so local maximum. The corresponding function values are f(1) = -2 and f(-1) = 2.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q19",
+      "conceptIds": ["AOD-01", "AOD-03"],
+      "question": "Find the equation of the normal to the curve y = x² - 4x + 3 at the point where the tangent is parallel to the line y = 2x.",
+      "answer": "dy/dx = 2x - 4. Set equal to 2: 2x - 4 = 2 ⇒ x = 3. Point is (3,0). Slope of normal is -1/2. Equation: y - 0 = (-1/2)(x - 3) or x + 2y - 3 = 0.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q20",
+      "conceptIds": ["AOD-05"],
+      "question": "Approximate (8.1)^{1/3} using a = 8 and the derivative of x^{1/3}.",
+      "answer": "f(x) = x^{1/3}, f'(x) = (1/3)x^{-2/3}. f'(8) = (1/3)·(1/4) = 1/12. Therefore (8.1)^{1/3} ≈ 2 + 0.1·(1/12) ≈ 2.00833. The approximation is accurate for most engineering purposes.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q21",
+      "conceptIds": ["AOD-06"],
+      "question": "A student claims Rolle's theorem applies to f(x) = |x| on [-1,1]. Is the claim correct?",
+      "answer": "No. Although f(-1) = f(1) = 1 and f is continuous, f is not differentiable at x = 0. The differentiability hypothesis fails, so Rolle's theorem cannot be invoked. Indeed f'(x) never equals zero on (-1,1).",
+      "type": "cet_tip",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q22",
+      "conceptIds": ["AOD-08"],
+      "question": "Why is solving f'(x) = 0 only the first step in finding maxima and minima?",
+      "answer": "Critical points include local maxima, local minima and horizontal points of inflection. Additional tests (first-derivative sign chart or second-derivative test) are required to classify each critical point. Endpoint evaluation is also needed for absolute extrema on a closed interval.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q23",
+      "conceptIds": ["AOD-12"],
+      "question": "If the side of a square is increasing at 2 cm/s, how fast is the area increasing when the side is 5 cm?",
+      "answer": "A = s², dA/dt = 2s ds/dt. When s = 5 and ds/dt = 2, dA/dt = 2·5·2 = 20 cm²/s. The derivative is interpreted as the instantaneous rate of change of area with respect to time.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "AOD-Q24",
+      "conceptIds": ["AOD-02", "AOD-13"],
+      "question": "Find the equations of the tangents to y = x² that are perpendicular to the line 2x + y = 0.",
+      "answer": "Slope of the given line is -2, so perpendicular slope is 1/2. Set 2x = 1/2 ⇒ x = 1/4. Point is (1/4, 1/16). Tangent: y - 1/16 = (1/2)(x - 1/4). Simplifying yields 8x - 16y - 1 = 0. (Only one such tangent exists because the derivative 2x is one-to-one.)",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q25",
+      "conceptIds": ["AOD-09"],
+      "question": "Why can the second-derivative test fail even when a critical point exists?",
+      "answer": "If f''(c) = 0 the test gives no information; the critical point may be a maximum, a minimum or a point of inflection. In such cases one must examine the sign of f' on either side of c or use higher-order derivatives.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q26",
+      "conceptIds": ["AOD-01"],
+      "question": "Write the equation of the normal to the curve y = e^x at the point where x = 0.",
+      "answer": "At x = 0, y = 1 and dy/dx = e^x = 1. Slope of normal is -1. Equation: y - 1 = -1(x - 0) or x + y - 1 = 0.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q27",
+      "conceptIds": ["AOD-07"],
+      "question": "Is the function f(x) = x + 1/x increasing on (0,∞)?",
+      "answer": "f'(x) = 1 - 1/x². For x > 1, f' > 0 so increasing; for 0 < x < 1, f' < 0 so decreasing. Hence the function is not increasing on the whole half-line; it decreases on (0,1] and increases on [1,∞).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q28",
+      "conceptIds": ["AOD-14"],
+      "question": "Find the absolute maximum and minimum of f(x) = x³ - 3x on [-2,2].",
+      "answer": "Critical points: f' = 3x² - 3 = 0 ⇒ x = ±1. Values: f(-2) = -2, f(-1) = 2, f(1) = -2, f(2) = 2. Absolute maximum is 2 (attained at x = -1 and x = 2); absolute minimum is -2 (attained at x = -2 and x = 1).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "AOD-Q29",
+      "conceptIds": ["AOD-05"],
+      "question": "Why does the linear approximation f(a+h) ≈ f(a) + h f'(a) become less accurate as |h| grows?",
+      "answer": "The formula is the first-order Taylor expansion; the neglected remainder involves the second (and higher) derivatives and grows roughly like h²/2. For large |h| the higher-order terms become significant and the approximation deteriorates.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q30",
+      "conceptIds": ["AOD-06", "AOD-10"],
+      "question": "Give an example of a function that satisfies f(a) = f(b) but for which Rolle's theorem fails, and explain why.",
+      "answer": "f(x) = |x| on [-1,1]: f(-1) = f(1) = 1, yet f is not differentiable at 0. The differentiability hypothesis is violated, so the existence of a point where f' = 0 is not guaranteed (and in fact does not occur).",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q31",
+      "conceptIds": ["AOD-02"],
+      "question": "What geometric interpretation does the derivative have at a point on a curve?",
+      "answer": "The derivative f'(x1) is the slope of the tangent line to the curve at the point (x1, f(x1)). It measures the instantaneous rate of change of the function with respect to its independent variable and determines the direction of the curve at that point.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q32",
+      "conceptIds": ["AOD-03"],
+      "question": "If the tangent to a curve at a point is parallel to the line 3x - y + 2 = 0, what is the value of dy/dx at that point?",
+      "answer": "The given line has slope 3. Parallelism requires the tangent to have the same slope, so dy/dx = 3 at the point of tangency. The constant term of the line equation does not affect the slope.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q33",
+      "conceptIds": ["AOD-09"],
+      "question": "A critical point occurs where f'(c) = 0 and f''(c) = 0. What can you conclude?",
+      "answer": "The second-derivative test is inconclusive. The point may be a local maximum, a local minimum, or a horizontal point of inflection. Further investigation of the sign of f' around c (or of higher derivatives) is required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q34",
+      "conceptIds": ["AOD-01", "AOD-04"],
+      "question": "Find the slope of the tangent to the curve x² + y² - 2x - 4y + 1 = 0 at the point (1,0) if the point lies on the curve.",
+      "answer": "Differentiate implicitly: 2x + 2y y' - 2 - 4 y' = 0 ⇒ (2y - 4)y' = 2 - 2x ⇒ y' = (1 - x)/(y - 2). At (1,0) the slope is (1-1)/(0-2) = 0. The tangent is horizontal. (Verification that the point satisfies the original equation is advisable.)",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q35",
+      "conceptIds": ["AOD-07"],
+      "question": "Explain why a function can be increasing on an interval even if its derivative is zero at isolated points.",
+      "answer": "If f' ≥ 0 on an interval and f' vanishes only at isolated points, the function is still non-decreasing; if in addition it is not constant on any sub-interval it is strictly increasing. Classic example: f(x) = x³ is strictly increasing on ℝ even though f'(0) = 0.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q36",
+      "conceptIds": ["AOD-05"],
+      "question": "Approximate cos(0.1) using the derivative of cos x at 0.",
+      "answer": "f(x) = cos x, f(0) = 1, f'(x) = -sin x, f'(0) = 0. Therefore cos(0.1) ≈ 1 + 0.1·0 = 1. The linear approximation is poor because the first derivative vanishes; a better approximation would include the second-derivative term -x²/2.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "AOD-Q37",
+      "conceptIds": ["AOD-14"],
+      "question": "Why must the endpoints of a closed interval always be checked when finding absolute extrema?",
+      "answer": "The absolute maximum or minimum of a continuous function on a closed interval may occur at an endpoint even if there is no critical point there. Evaluating only the critical points would miss possible extreme values attained at the boundary of the domain.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    }
+  ]
+}

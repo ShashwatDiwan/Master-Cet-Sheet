@@ -1,0 +1,468 @@
+{
+  "chapterId": "28",
+  "chapterName": "Basic Principles of Organic Chemistry",
+  "subject": "Chemistry",
+  "concepts": [
+    {
+      "id": "BPOC-01",
+      "name": "Vital Force Theory",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Berzelius proposed special vital force needed for organic compounds; later disproved."
+    },
+    {
+      "id": "BPOC-02",
+      "name": "Wöhler’s Synthesis of Urea",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "1828: NH4CNO → NH2CONH2; first laboratory synthesis of organic compound."
+    },
+    {
+      "id": "BPOC-03",
+      "name": "Kolbe and Berthelot Contributions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Kolbe synthesised acetic acid; Berthelot synthesised methane; vital force theory abandoned."
+    },
+    {
+      "id": "BPOC-04",
+      "name": "Modern Definition of Organic Chemistry",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Chemistry of carbon compounds except CO, CO2, carbonates and bicarbonates."
+    },
+    {
+      "id": "BPOC-05",
+      "name": "Catenation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [3],
+      "oneLineSummary": "Ability of carbon to form long chains and rings with itself."
+    },
+    {
+      "id": "BPOC-06",
+      "name": "Types of Bonds",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [3],
+      "oneLineSummary": "Ionic, covalent and coordinate bonds; organic chemistry dominated by covalent bonds."
+    },
+    {
+      "id": "BPOC-07",
+      "name": "Lewis Structures",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [4],
+      "oneLineSummary": "Dash and dot representations showing all valence electrons and bonds."
+    },
+    {
+      "id": "BPOC-08",
+      "name": "Condensed Structural Formulae",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [5],
+      "oneLineSummary": "Some or all bonds omitted; similar groups written with subscripts."
+    },
+    {
+      "id": "BPOC-09",
+      "name": "Bond-Line (Zig-Zag) Formulae",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [6],
+      "oneLineSummary": "Carbon and hydrogen omitted; only C–C skeleton drawn as zig-zag line."
+    },
+    {
+      "id": "BPOC-10",
+      "name": "Functional Groups",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Atom or group of atoms that determines the characteristic properties of a compound."
+    },
+    {
+      "id": "BPOC-11",
+      "name": "Homologous Series",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Series of compounds differing by CH2 units; same functional group and general formula."
+    },
+    {
+      "id": "BPOC-12",
+      "name": "IUPAC Nomenclature",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Systematic naming based on longest chain, functional group and substituents."
+    },
+    {
+      "id": "BPOC-13",
+      "name": "Isomerism",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Same molecular formula but different structures or spatial arrangements."
+    },
+    {
+      "id": "BPOC-14",
+      "name": "Structural Isomerism",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Chain, position, functional-group and metamerism."
+    },
+    {
+      "id": "BPOC-15",
+      "name": "Stereoisomerism",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Geometrical (cis-trans) and optical isomerism."
+    },
+    {
+      "id": "BPOC-16",
+      "name": "Fission of Covalent Bonds",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Homolytic (free radicals) and heterolytic (carbocation/carbanion)."
+    },
+    {
+      "id": "BPOC-17",
+      "name": "Electron Displacement Effects",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Inductive, resonance, hyperconjugation and electromeric effects."
+    },
+    {
+      "id": "BPOC-18",
+      "name": "Reaction Intermediates",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Carbocations, carbanions, free radicals and carbenes."
+    }
+  ],
+  "qna": [
+    {
+      "id": "BPOC-Q01",
+      "conceptIds": ["BPOC-01"],
+      "question": "What was the vital-force theory and who proposed it?",
+      "answer": "Berzelius proposed that a special vital force present only in living organisms was necessary for the formation of organic compounds. According to this theory organic compounds could not be synthesised in the laboratory.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "BPOC-Q02",
+      "conceptIds": ["BPOC-02"],
+      "question": "How did Wöhler disprove the vital-force theory?",
+      "answer": "In 1828 Wöhler heated ammonium cyanate and obtained urea, an organic compound. This was the first laboratory synthesis of an organic compound from an inorganic precursor and demonstrated that no vital force is required.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "BPOC-Q03",
+      "conceptIds": ["BPOC-03"],
+      "question": "What contributions did Kolbe and Berthelot make?",
+      "answer": "Kolbe synthesised acetic acid from its elements in 1845. Berthelot synthesised methane in 1856. These total syntheses finally disproved the vital-force theory and established that organic compounds obey ordinary chemical laws.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "BPOC-Q04",
+      "conceptIds": ["BPOC-04"],
+      "question": "How is organic chemistry defined today?",
+      "answer": "Organic chemistry is the chemistry of carbon compounds, excluding the oxides CO and CO2 and the carbonates and bicarbonates of metals. The modern definition is based on the unique properties of carbon rather than on a vital origin.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "BPOC-Q05",
+      "conceptIds": ["BPOC-05"],
+      "question": "What is catenation and why is it important for carbon?",
+      "answer": "Catenation is the ability of an element to form bonds with atoms of the same element, producing long chains or rings. Carbon’s exceptional catenation ability is the principal reason for the existence of millions of organic compounds.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [3]
+    },
+    {
+      "id": "BPOC-Q06",
+      "conceptIds": ["BPOC-06"],
+      "question": "Distinguish among ionic, covalent and coordinate bonds.",
+      "answer": "An ionic bond is formed by complete transfer of electrons. A covalent bond is formed by equal sharing of electron pairs. A coordinate bond is formed by unequal sharing in which both electrons come from one atom. Organic chemistry is dominated by covalent bonds.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": [3]
+    },
+    {
+      "id": "BPOC-Q07",
+      "conceptIds": ["BPOC-07"],
+      "question": "What information does a Lewis structure convey?",
+      "answer": "A Lewis structure shows all the atoms of a molecule, all covalent bonds (as dashes or dots) and all lone pairs of electrons. It provides a complete picture of the valence-electron distribution.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [4]
+    },
+    {
+      "id": "BPOC-Q08",
+      "conceptIds": ["BPOC-08"],
+      "question": "What is a condensed structural formula?",
+      "answer": "A condensed structural formula omits some or all of the individual bonds and uses subscripts to indicate repeated groups. For example, propane can be written CH3CH2CH3 instead of showing every C–H and C–C bond.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [5]
+    },
+    {
+      "id": "BPOC-Q09",
+      "conceptIds": ["BPOC-09"],
+      "question": "How is a bond-line formula drawn?",
+      "answer": "Carbon and hydrogen atoms are not written. The carbon skeleton is drawn as a zig-zag line in which each vertex and each terminus represents a carbon atom. Hetero-atoms and the hydrogens attached to them are shown explicitly.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [6]
+    },
+    {
+      "id": "BPOC-Q10",
+      "conceptIds": ["BPOC-10"],
+      "question": "What is a functional group?",
+      "answer": "A functional group is an atom or a group of atoms that is responsible for the characteristic chemical properties of an organic compound. Examples include –OH (alcohol), –CHO (aldehyde), –COOH (carboxylic acid) and –NH2 (amine).",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q11",
+      "conceptIds": ["BPOC-11"],
+      "question": "What are the characteristics of a homologous series?",
+      "answer": "Members of a homologous series have the same functional group, the same general formula, and differ from each other by a CH2 unit. They show a regular gradation in physical properties and similar chemical properties.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q12",
+      "conceptIds": ["BPOC-12"],
+      "question": "What are the basic steps of IUPAC nomenclature?",
+      "answer": "Select the longest continuous carbon chain containing the principal functional group, number the chain to give the functional group the lowest possible number, name the substituents, and assemble the name according to the prescribed order.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q13",
+      "conceptIds": ["BPOC-13", "BPOC-14"],
+      "question": "What is structural isomerism? Give its types.",
+      "answer": "Structural isomers have the same molecular formula but different connectivity of atoms. The main types are chain isomerism, position isomerism, functional-group isomerism and metamerism.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q14",
+      "conceptIds": ["BPOC-15"],
+      "question": "What is geometrical isomerism?",
+      "answer": "Geometrical isomerism arises when free rotation about a bond is restricted (usually a double bond or a ring) and two different groups are attached to each of the doubly-bonded carbons. The isomers are called cis and trans (or E and Z).",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q15",
+      "conceptIds": ["BPOC-16"],
+      "question": "Distinguish between homolytic and heterolytic fission.",
+      "answer": "In homolytic fission each atom takes one electron of the shared pair, producing free radicals. In heterolytic fission one atom takes both electrons, producing a carbocation and a carbanion. The type of fission depends on the nature of the bond and the reaction conditions.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q16",
+      "conceptIds": ["BPOC-17"],
+      "question": "What is the inductive effect?",
+      "answer": "The inductive effect is the permanent displacement of electrons along a chain of atoms due to the electronegativity difference between atoms. It is a through-bond effect that decreases rapidly with distance and is represented by an arrow pointing toward the more electronegative atom.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q17",
+      "conceptIds": ["BPOC-17"],
+      "question": "What is resonance (mesomeric) effect?",
+      "answer": "Resonance is the delocalisation of π or lone-pair electrons in a conjugated system. It is represented by two or more Lewis structures (canonical forms) and the actual molecule is a hybrid of them. Resonance stabilises the molecule.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q18",
+      "conceptIds": ["BPOC-18"],
+      "question": "What are carbocations and how are they stabilised?",
+      "answer": "Carbocations are species containing a positively charged carbon with only six electrons. They are stabilised by inductive donation from alkyl groups and by resonance (e.g., allyl and benzyl cations). The order of stability is tertiary > secondary > primary > methyl.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q19",
+      "conceptIds": ["BPOC-02", "BPOC-03"],
+      "question": "Why was the synthesis of urea regarded as a landmark in chemistry?",
+      "answer": "It was the first time an organic compound had been prepared from an inorganic starting material in the laboratory. The experiment demolished the vital-force theory and opened the way for the systematic study of organic chemistry.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1, 2]
+    },
+    {
+      "id": "BPOC-Q20",
+      "conceptIds": ["BPOC-05"],
+      "question": "Why does carbon form a far larger number of compounds than any other element?",
+      "answer": "Carbon has a unique combination of small size, moderate electronegativity and the ability to catenate extensively. It forms strong covalent bonds with itself and with many other elements and can adopt tetrahedral, trigonal and linear geometries.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [3]
+    },
+    {
+      "id": "BPOC-Q21",
+      "conceptIds": ["BPOC-09"],
+      "question": "What does a terminal vertex represent in a bond-line formula?",
+      "answer": "A terminal vertex represents a carbon atom of a methyl group (–CH3). The three hydrogen atoms required to satisfy the tetravalency of carbon are understood and are not drawn.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [6]
+    },
+    {
+      "id": "BPOC-Q22",
+      "conceptIds": ["BPOC-14"],
+      "question": "Give an example of functional-group isomerism.",
+      "answer": "Ethanol (CH3CH2OH) and dimethyl ether (CH3OCH3) both have the molecular formula C2H6O but contain different functional groups (alcohol and ether). They are functional-group isomers.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q23",
+      "conceptIds": ["BPOC-15"],
+      "question": "What is the necessary condition for geometrical isomerism about a double bond?",
+      "answer": "Each of the doubly-bonded carbon atoms must be attached to two different groups. If either carbon carries two identical groups, cis-trans isomerism is not possible.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q24",
+      "conceptIds": ["BPOC-16"],
+      "question": "What type of intermediates are formed in free-radical halogenation of alkanes?",
+      "answer": "Free-radical halogenation proceeds by a homolytic mechanism and generates alkyl free radicals as intermediates. The radicals are electron-deficient species with seven electrons on carbon.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q25",
+      "conceptIds": ["BPOC-17"],
+      "question": "How does the inductive effect of a chlorine atom affect the acidity of acetic acid?",
+      "answer": "Chlorine is more electronegative than carbon and withdraws electrons through the inductive effect. This disperses the negative charge of the carboxylate anion, stabilising it and thereby increasing the acidity of chloroacetic acid relative to acetic acid.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q26",
+      "conceptIds": ["BPOC-18"],
+      "question": "Arrange the following carbocations in order of increasing stability: CH3+, (CH3)2CH+, (CH3)3C+.",
+      "answer": "The order is CH3+ < (CH3)2CH+ < (CH3)3C+. Alkyl groups stabilise the positive charge by inductive donation and hyperconjugation; the more alkyl groups present, the more stable the carbocation.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q27",
+      "conceptIds": ["BPOC-04"],
+      "question": "Why are CO and CO2 not considered organic compounds?",
+      "answer": "Although they contain carbon, CO and CO2 are traditionally studied under inorganic chemistry. They do not form the long chains or rings characteristic of organic compounds and their chemistry is more closely related to that of other simple oxides.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "BPOC-Q28",
+      "conceptIds": ["BPOC-11"],
+      "question": "What is the general formula of the homologous series of alkanes?",
+      "answer": "The general formula of alkanes is CnH2n+2. Each successive member differs from the previous one by a CH2 unit. Methane, ethane, propane and butane are the first four members.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q29",
+      "conceptIds": ["BPOC-12"],
+      "question": "Name the compound CH3–CH(Cl)–CH2–CH3 according to IUPAC rules.",
+      "answer": "The longest chain contains four carbons and the chlorine is on carbon 2. The name is therefore 2-chlorobutane. Numbering is chosen so that the substituent receives the lowest possible number.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q30",
+      "conceptIds": ["BPOC-17"],
+      "question": "What is hyperconjugation?",
+      "answer": "Hyperconjugation is the delocalisation of electrons of a σ-bond (usually C–H) into an adjacent empty or partially filled p-orbital or π-orbital. It is also called no-bond resonance and stabilises carbocations and free radicals.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q31",
+      "conceptIds": ["BPOC-06", "BPOC-07"],
+      "question": "Why are most organic compounds covalent rather than ionic?",
+      "answer": "Carbon has an intermediate electronegativity and a high ionisation energy. It therefore neither loses nor gains electrons readily but prefers to share electrons, forming strong covalent bonds that are the basis of organic molecular structure.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [3]
+    },
+    {
+      "id": "BPOC-Q32",
+      "conceptIds": ["BPOC-15"],
+      "question": "What is optical isomerism?",
+      "answer": "Optical isomerism arises when a molecule is chiral (non-superimposable on its mirror image). The two isomers (enantiomers) rotate plane-polarised light in opposite directions and are optically active.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q33",
+      "conceptIds": ["BPOC-09"],
+      "question": "How are hetero-atoms treated in a bond-line formula?",
+      "answer": "Hetero-atoms (atoms other than C and H) and any hydrogen atoms attached to them are written explicitly. Only carbon atoms and the hydrogens attached solely to carbon are omitted from the drawing.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [6]
+    },
+    {
+      "id": "BPOC-Q34",
+      "conceptIds": ["BPOC-18"],
+      "question": "What is a free radical and how is it represented?",
+      "answer": "A free radical is an atom or group of atoms that contains an unpaired electron. It is represented by a single dot, for example CH3• (methyl radical). Free radicals are highly reactive intermediates.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "BPOC-Q35",
+      "conceptIds": ["BPOC-01", "BPOC-02"],
+      "question": "Summarise the historical change in the definition of organic chemistry.",
+      "answer": "Originally organic chemistry was defined as the chemistry of compounds produced by living organisms (vital-force theory). After Wöhler’s synthesis of urea and subsequent laboratory preparations, the definition shifted to the chemistry of carbon compounds, independent of their origin.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1, 2]
+    }
+  ]
+}

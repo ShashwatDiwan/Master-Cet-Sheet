@@ -1,0 +1,462 @@
+{
+  "chapterId": "55",
+  "chapterName": "Indefinite Integration",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "II-01",
+      "name": "Definition of indefinite integral",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "∫ f(x) dx = g(x) + C where g'(x) = f(x); C is arbitrary constant."
+    },
+    {
+      "id": "II-02",
+      "name": "Standard integrals of algebraic functions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "∫ x^n dx = x^{n+1}/(n+1), ∫ 1/x dx = log|x|, ∫ a^x dx = a^x / log a."
+    },
+    {
+      "id": "II-03",
+      "name": "Standard integrals of trigonometric functions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "∫ sin x = −cos x, ∫ cos x = sin x, ∫ sec² x = tan x, ∫ csc² x = −cot x, etc."
+    },
+    {
+      "id": "II-04",
+      "name": "Integrals of tan, cot, sec, csc",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "∫ tan x = log|sec x|, ∫ cot x = log|sin x|, ∫ sec x = log|sec x + tan x|, ∫ csc x = log|csc x − cot x|."
+    },
+    {
+      "id": "II-05",
+      "name": "Integration by substitution (basic)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "∫ f(g(x)) g'(x) dx = ∫ f(u) du after u = g(x)."
+    },
+    {
+      "id": "II-06",
+      "name": "Integrals of the form ∫ dx/(a² ± x²) and √(a² ± x²)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Lead to (1/a) tan^{-1}(x/a), (1/2a) log|(x−a)/(x+a)|, log|x + √(x²±a²)|, sin^{-1}(x/a)."
+    },
+    {
+      "id": "II-07",
+      "name": "Integration of linear over quadratic",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Write numerator as derivative of denominator plus constant; split into log + arctan forms."
+    },
+    {
+      "id": "II-08",
+      "name": "t = tan(x/2) substitution (Weierstrass)",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Converts rational functions of sin and cos into rational functions of t."
+    },
+    {
+      "id": "II-09",
+      "name": "Integration by parts",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "∫ u dv = uv − ∫ v du; LIATE rule for choosing u."
+    },
+    {
+      "id": "II-10",
+      "name": "Partial fractions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Decompose rational functions into simpler fractions before integrating."
+    },
+    {
+      "id": "II-11",
+      "name": "Integrals of the form ∫ (px + q)/(ax² + bx + c) dx",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Split into derivative part (log) and constant part (arctan or log)."
+    },
+    {
+      "id": "II-12",
+      "name": "Integrals involving √(ax² + bx + c)",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Complete the square then use standard √(a²±x²) forms."
+    },
+    {
+      "id": "II-13",
+      "name": "Trigonometric substitutions",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "x = a sin θ, a tan θ, a sec θ for √(a²−x²), √(a²+x²), √(x²−a²)."
+    },
+    {
+      "id": "II-14",
+      "name": "Arbitrary constant C",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Always add +C; different antiderivatives differ by a constant."
+    },
+    {
+      "id": "II-15",
+      "name": "Common standard forms from notes",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "The list of basic integrals and the linear-over-quadratic technique."
+    }
+  ],
+  "qna": [
+    {
+      "id": "II-Q01",
+      "conceptIds": ["II-01", "II-14"],
+      "question": "What is the definition of an indefinite integral and why is the constant C necessary?",
+      "answer": "If g'(x) = f(x) then ∫ f(x) dx = g(x) + C. The constant C appears because the derivative of any constant is zero; different antiderivatives of the same function differ by a constant. Omitting C loses a family of solutions.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q02",
+      "conceptIds": ["II-02"],
+      "question": "Write the standard integrals of x^n, 1/x and a^x.",
+      "answer": "∫ x^n dx = x^{n+1}/(n+1) + C (n ≠ −1); ∫ (1/x) dx = log|x| + C; ∫ a^x dx = a^x / log a + C. These are the most frequently used algebraic standard forms.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q03",
+      "conceptIds": ["II-03"],
+      "question": "List the basic trigonometric integrals for sin, cos, sec² and csc².",
+      "answer": "∫ sin x dx = −cos x + C; ∫ cos x dx = sin x + C; ∫ sec² x dx = tan x + C; ∫ csc² x dx = −cot x + C. These follow at once by differentiating the right-hand sides.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q04",
+      "conceptIds": ["II-04"],
+      "question": "State the integrals of tan x, cot x, sec x and csc x.",
+      "answer": "∫ tan x dx = log|sec x| + C; ∫ cot x dx = log|sin x| + C; ∫ sec x dx = log|sec x + tan x| + C; ∫ csc x dx = log|csc x − cot x| + C. Equivalent forms using tan(x/2 + π/4) also exist for sec and csc.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q05",
+      "conceptIds": ["II-06"],
+      "question": "Write the four standard integrals involving a² ± x² and their square roots.",
+      "answer": "∫ dx/(a² + x²) = (1/a) tan^{-1}(x/a) + C; ∫ dx/(a² − x²) = (1/2a) log|(x−a)/(x+a)| + C; ∫ dx/√(a² − x²) = sin^{-1}(x/a) + C; ∫ dx/√(x² ± a²) = log|x + √(x² ± a²)| + C.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q06",
+      "conceptIds": ["II-07", "II-11"],
+      "question": "How do you integrate a linear expression over a quadratic expression?",
+      "answer": "Write the numerator as a multiple of the derivative of the denominator plus a constant remainder. The integral splits into a logarithm of the quadratic plus a constant times the integral of 1 over the quadratic (which becomes an arctan or log after completing the square).",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q07",
+      "conceptIds": ["II-05"],
+      "question": "Explain the method of substitution for indefinite integrals.",
+      "answer": "Choose a new variable u = g(x) so that the integrand becomes f(u) du. Integrate with respect to u and finally substitute back u = g(x). The method works whenever the integrand contains a composite function whose inner derivative is also present (up to a constant factor).",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q08",
+      "conceptIds": ["II-09"],
+      "question": "State the formula for integration by parts and the usual rule for choosing u.",
+      "answer": "∫ u dv = u v − ∫ v du. The LIATE rule (Logarithmic, Inverse trigonometric, Algebraic, Trigonometric, Exponential) suggests the preferred order for selecting the factor u. The goal is to make the remaining integral ∫ v du simpler than the original.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "II-Q09",
+      "conceptIds": ["II-08"],
+      "question": "When is the substitution t = tan(x/2) useful?",
+      "answer": "It converts any rational function of sin x and cos x into a rational function of t. Because sin x = 2t/(1+t²), cos x = (1−t²)/(1+t²) and dx = 2 dt/(1+t²), the original trigonometric integral becomes an ordinary rational integral that can be attacked by partial fractions.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q10",
+      "conceptIds": ["II-02"],
+      "question": "Integrate √x + 1/√x.",
+      "answer": "∫ (x^{1/2} + x^{-1/2}) dx = (2/3) x^{3/2} + 2 x^{1/2} + C. Each term is a standard power integral. The same result is obtained by writing the integrand as (x + 1)/√x and substituting u = √x.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q11",
+      "conceptIds": ["II-03"],
+      "question": "Integrate cos 2x.",
+      "answer": "∫ cos 2x dx = (1/2) sin 2x + C. The chain rule accounts for the factor 2 inside the cosine; dividing by that factor recovers the correct antiderivative.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q12",
+      "conceptIds": ["II-06"],
+      "question": "Evaluate ∫ dx/(9 + x²).",
+      "answer": "This is the standard form with a = 3: ∫ dx/(a² + x²) = (1/a) tan^{-1}(x/a) + C = (1/3) tan^{-1}(x/3) + C.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q13",
+      "conceptIds": ["II-06"],
+      "question": "Evaluate ∫ dx/√(4 − x²).",
+      "answer": "Standard form ∫ dx/√(a² − x²) = sin^{-1}(x/a) + C with a = 2 gives sin^{-1}(x/2) + C.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q14",
+      "conceptIds": ["II-04"],
+      "question": "Integrate tan x.",
+      "answer": "∫ tan x dx = ∫ sin x / cos x dx. The substitution u = cos x yields −log|cos x| + C which is the same as log|sec x| + C.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q15",
+      "conceptIds": ["II-11"],
+      "question": "Integrate (2x + 3)/(x² + 3x + 2).",
+      "answer": "The derivative of the denominator is 2x + 3, which matches the numerator exactly. Therefore the integral is simply log|x² + 3x + 2| + C.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q16",
+      "conceptIds": ["II-09"],
+      "question": "Integrate x e^x by parts.",
+      "answer": "Let u = x, dv = e^x dx ⇒ du = dx, v = e^x. Then ∫ x e^x dx = x e^x − ∫ e^x dx = x e^x − e^x + C = e^x (x − 1) + C.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "II-Q17",
+      "conceptIds": ["II-05"],
+      "question": "Integrate 2x cos(x²).",
+      "answer": "Let u = x², du = 2x dx. The integral becomes ∫ cos u du = sin u + C = sin(x²) + C. The factor 2x is precisely the derivative of the inner function.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q18",
+      "conceptIds": ["II-10"],
+      "question": "When is the method of partial fractions used?",
+      "answer": "Partial fractions are used to integrate proper rational functions (degree of numerator less than degree of denominator). The rational function is decomposed into a sum of simpler fractions whose denominators are linear or irreducible quadratic factors; each of those is then integrated by the standard forms.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "II-Q19",
+      "conceptIds": ["II-12"],
+      "question": "Outline the procedure for integrating an expression containing √(ax² + bx + c).",
+      "answer": "Complete the square inside the radical so that it becomes √(±(u² ± k²)). Then apply one of the four standard square-root forms (log or inverse sine/tangent). A linear substitution may be needed first to eliminate the linear term.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "II-Q20",
+      "conceptIds": ["II-13"],
+      "question": "Which trigonometric substitution is appropriate for √(a² − x²)?",
+      "answer": "x = a sin θ (or x = a cos θ). Then √(a² − x²) = a cos θ and dx = a cos θ dθ, converting the integral into a rational function of sin and cos that can be handled by standard techniques.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "II-Q21",
+      "conceptIds": ["II-14"],
+      "question": "Why must the arbitrary constant always be written?",
+      "answer": "The indefinite integral represents a whole family of antiderivatives that differ from one another by constants. Writing +C makes this family explicit and is required for full marks in examinations. Omitting C is one of the most common avoidable errors.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q22",
+      "conceptIds": ["II-06"],
+      "question": "Evaluate ∫ dx/(x² − 9).",
+      "answer": "This is ∫ dx/(x² − a²) with a = 3. The formula gives (1/(2·3)) log|(x−3)/(x+3)| + C = (1/6) log|(x−3)/(x+3)| + C.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q23",
+      "conceptIds": ["II-04"],
+      "question": "Integrate sec x.",
+      "answer": "Multiply numerator and denominator by sec x + tan x: ∫ sec x (sec x + tan x)/(sec x + tan x) dx = ∫ (sec² x + sec x tan x)/(sec x + tan x) dx. The numerator is now the derivative of the denominator, so the integral is log|sec x + tan x| + C.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q24",
+      "conceptIds": ["II-09"],
+      "question": "Integrate log x by parts.",
+      "answer": "Let u = log x, dv = dx ⇒ du = dx/x, v = x. Then ∫ log x dx = x log x − ∫ x · (1/x) dx = x log x − ∫ dx = x log x − x + C.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "II-Q25",
+      "conceptIds": ["II-07"],
+      "question": "Integrate (x + 1)/(x² + 2x + 5).",
+      "answer": "Derivative of the denominator is 2x + 2 = 2(x + 1). Therefore write the integral as (1/2) ∫ (2x + 2)/(x² + 2x + 5) dx = (1/2) log(x² + 2x + 5) + C. No remainder term appears.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q26",
+      "conceptIds": ["II-05"],
+      "question": "Integrate e^{sin x} cos x.",
+      "answer": "Let u = sin x, du = cos x dx. The integral becomes ∫ e^u du = e^u + C = e^{sin x} + C. The cosine factor is exactly the derivative of the inner function.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q27",
+      "conceptIds": ["II-03"],
+      "question": "Integrate sin² x.",
+      "answer": "Use the identity sin² x = (1 − cos 2x)/2. Then ∫ sin² x dx = ∫ (1/2 − (1/2) cos 2x) dx = x/2 − (1/4) sin 2x + C. Power-reduction identities are the standard route for even powers of sine and cosine.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q28",
+      "conceptIds": ["II-11"],
+      "question": "Integrate (3x + 1)/(x² + 1).",
+      "answer": "Write 3x + 1 = (3/2)(2x) + 1. Then the integral = (3/2) ∫ 2x/(x² + 1) dx + ∫ 1/(x² + 1) dx = (3/2) log(x² + 1) + tan^{-1} x + C.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q29",
+      "conceptIds": ["II-06"],
+      "question": "Evaluate ∫ dx/√(x² + 4).",
+      "answer": "Standard form ∫ dx/√(x² + a²) = log|x + √(x² + a²)| + C with a = 2 gives log|x + √(x² + 4)| + C.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q30",
+      "conceptIds": ["II-01"],
+      "question": "If ∫ f(x) dx = g(x) + C, what is the relation between f and g?",
+      "answer": "g is an antiderivative of f, i.e., g'(x) = f(x). Conversely, any function whose derivative is f is of the form g(x) + C. This is the Fundamental Theorem of Calculus in its indefinite-integral form.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q31",
+      "conceptIds": ["II-08"],
+      "question": "Convert ∫ dx/(sin x + cos x) into a rational integral using t = tan(x/2).",
+      "answer": "sin x = 2t/(1+t²), cos x = (1−t²)/(1+t²), dx = 2 dt/(1+t²). The integrand becomes 2 dt / (2t + 1 − t²) after clearing the common denominator. The resulting rational function of t can be integrated by completing the square or partial fractions.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q32",
+      "conceptIds": ["II-12"],
+      "question": "Integrate 1/√(x² + 2x + 2).",
+      "answer": "Complete the square: x² + 2x + 2 = (x+1)² + 1. Let u = x + 1. The integral becomes ∫ du/√(u² + 1) = log|u + √(u² + 1)| + C = log|x + 1 + √(x² + 2x + 2)| + C.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "II-Q33",
+      "conceptIds": ["II-15"],
+      "question": "A student integrates 1/(x² + 1) as log(x² + 1). What is the error?",
+      "answer": "The correct antiderivative is tan^{-1} x, not the logarithm. The logarithm appears only when the quadratic under the integral has the form x² − a² or when the numerator is the derivative of the denominator. Confusing the two standard forms is a frequent mistake.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q34",
+      "conceptIds": ["II-09"],
+      "question": "Integrate x² e^x by parts twice.",
+      "answer": "First: u = x², dv = e^x dx → x² e^x − ∫ 2x e^x dx. Second: u = 2x, dv = e^x dx → x² e^x − 2x e^x + ∫ 2 e^x dx = e^x (x² − 2x + 2) + C. Repeated integration by parts systematically reduces the power of x.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "II-Q35",
+      "conceptIds": ["II-02"],
+      "question": "Integrate 1/(x log x).",
+      "answer": "Let u = log x, du = dx/x. The integral becomes ∫ du/u = log|u| + C = log|log x| + C. The substitution works because the derivative of the inner logarithm appears in the numerator.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q36",
+      "conceptIds": ["II-04"],
+      "question": "Integrate csc x.",
+      "answer": "Multiply numerator and denominator by csc x − cot x: ∫ csc x (csc x − cot x)/(csc x − cot x) dx = ∫ (csc² x − csc x cot x)/(csc x − cot x) dx. The numerator is the derivative of the denominator (up to sign), yielding log|csc x − cot x| + C.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "II-Q37",
+      "conceptIds": ["II-01", "II-14"],
+      "question": "Two students obtain different-looking answers for the same indefinite integral. How can both be correct?",
+      "answer": "Their answers differ by a constant. Because the derivative of a constant is zero, both expressions are valid antiderivatives. Checking by differentiation or by examining the difference of the two answers confirms they are equivalent up to a constant.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    }
+  ]
+}
