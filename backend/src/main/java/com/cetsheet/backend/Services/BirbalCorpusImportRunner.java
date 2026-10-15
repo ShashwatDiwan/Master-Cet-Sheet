@@ -99,6 +99,11 @@ public class BirbalCorpusImportRunner implements ApplicationRunner {
         jdbc.update("DELETE FROM corpus_chapter WHERE chapter_id = :chapterId", Map.of("chapterId", chapter.id()));
 
         Integer preferredResourceId = preferredResourceId(chapter.id());
+        if (preferredResourceId == null) {
+            // Do not make a corpus reachable through a PYQ-only resource. The same
+            // rule also holds corpus content until a NOTES/SHORT_NOTES resource is attached.
+            throw new IllegalArgumentException("no NOTES or SHORT_NOTES resource is attached to this chapter");
+        }
         MapSqlParameterSource chapterParams = new MapSqlParameterSource()
                 .addValue("chapterId", chapter.id()).addValue("resourceId", preferredResourceId, Types.INTEGER)
                 .addValue("subject", chapter.subject()).addValue("chapterName", chapter.name());
