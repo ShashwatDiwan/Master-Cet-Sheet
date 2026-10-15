@@ -12,6 +12,7 @@ import org.springframework.web.server.ResponseStatusException;
 import java.sql.Array;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -66,10 +67,13 @@ public class BirbalCorpusService {
         Scope scope = scope(resourceId);
         consumeQuota(userId);
         MapSqlParameterSource params = parameters(scope, null)
-                .addValue("type", blankToNull(type))
-                .addValue("difficulty", blankToNull(difficulty))
-                .addValue("conceptId", blankToNull(conceptId))
-                .addValue("page", page);
+                // PostgreSQL cannot infer a type for an untyped null in an
+                // expression such as ':type IS NULL'. Explicit types keep
+                // optional Browse filters valid when the UI leaves them blank.
+                .addValue("type", blankToNull(type), Types.VARCHAR)
+                .addValue("difficulty", blankToNull(difficulty), Types.VARCHAR)
+                .addValue("conceptId", blankToNull(conceptId), Types.VARCHAR)
+                .addValue("page", page, Types.INTEGER);
 
         List<BirbalDtos.Concept> concepts = jdbc.query("""
                 SELECT concept_id, concept_name, importance, source_pages, one_line_summary
@@ -97,7 +101,8 @@ public class BirbalCorpusService {
     }
 
     private MapSqlParameterSource parameters(Scope scope, String query) {
-        return new MapSqlParameterSource("chapterId", scope.chapterId()).addValue("query", query);
+        return new MapSqlParameterSource("chapterId", scope.chapterId())
+                .addValue("query", query, Types.VARCHAR);
     }
 
     private Scope scope(int resourceId) {
