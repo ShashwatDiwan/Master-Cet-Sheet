@@ -230,7 +230,12 @@ public class BirbalCorpusImportRunner implements ApplicationRunner {
     }
 
     private static Integer integer(JsonNode node, String... names) {
-        for (String name : names) if (node.hasNonNull(name) && node.path(name).canConvertToInt()) return node.path(name).asInt();
+        for (String name : names) {
+            if (!node.hasNonNull(name)) continue;
+            JsonNode candidate = node.path(name);
+            if (candidate.canConvertToInt()) return candidate.asInt();
+            if (candidate.isTextual() && candidate.asText().trim().matches("\\d+")) return Integer.parseInt(candidate.asText().trim());
+        }
         return null;
     }
 
