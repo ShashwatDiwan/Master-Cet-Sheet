@@ -38,8 +38,6 @@ CREATE TABLE public.chapter (
 );
 
 
-ALTER TABLE public.chapter OWNER TO postgres;
-
 --
 -- TOC entry 217 (class 1259 OID 25125)
 -- Name: chapter_chapter_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -68,8 +66,6 @@ CREATE TABLE public.chapter_progress (
     revised boolean NOT NULL
 );
 
-
-ALTER TABLE public.chapter_progress OWNER TO postgres;
 
 --
 -- TOC entry 223 (class 1259 OID 41504)
@@ -101,7 +97,6 @@ CREATE TABLE public.resource (
 );
 
 
-ALTER TABLE public.resource OWNER TO postgres;
 
 --
 -- TOC entry 219 (class 1259 OID 25131)
@@ -133,8 +128,6 @@ CREATE TABLE public.sheet (
 );
 
 
-ALTER TABLE public.sheet OWNER TO postgres;
-
 --
 -- TOC entry 221 (class 1259 OID 25140)
 -- Name: sheet_sheet_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -162,9 +155,6 @@ CREATE TABLE public.users (
     password character varying(255) NOT NULL
 );
 
-
-ALTER TABLE public.users OWNER TO postgres;
-
 --
 -- TOC entry 225 (class 1259 OID 41531)
 -- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -177,8 +167,6 @@ CREATE SEQUENCE public.users_id_seq
     NO MAXVALUE
     CACHE 1;
 
-
-ALTER SEQUENCE public.users_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 4943 (class 0 OID 0)

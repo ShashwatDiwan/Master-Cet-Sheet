@@ -119,11 +119,22 @@ public class SupabaseStorageService {
     }
 
     private HttpRequest.Builder requestBuilder(String path) {
-        return HttpRequest.newBuilder(URI.create(normalizedBaseUrl() + path))
+        HttpRequest.Builder builder = HttpRequest.newBuilder(URI.create(normalizedBaseUrl() + path))
                 .timeout(Duration.ofSeconds(60))
-                .header("Authorization", "Bearer " + properties.getServiceRoleKey())
                 .header("apikey", properties.getServiceRoleKey())
                 .header("Accept", "application/json");
+
+        // Legacy service_role keys are JWTs and must be forwarded as Bearer
+        // tokens. New sb_secret keys are opaque API keys; forwarding one as a
+        // Bearer token makes Storage reject authenticated-object downloads.
+        if (isJwt(properties.getServiceRoleKey())) {
+            builder.header("Authorization", "Bearer " + properties.getServiceRoleKey());
+        }
+        return builder;
+    }
+
+    private boolean isJwt(String value) {
+        return value != null && value.split("\\.", -1).length == 3;
     }
 
     private String normalizedBaseUrl() {
