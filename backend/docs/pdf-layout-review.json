@@ -1,0 +1,79 @@
+{
+  "format": "cet-pdf-layout-review-v1",
+  "instructions": "Review each entry. Set approved_rotation to 0, 90, 180, or 270 and approved_crop_box to [x0, y0, x1, y1] only after visual review. This report does not change PDFs.",
+  "flagged_page_count": 3,
+  "pages": [
+    {
+      "source_path": "C:\\EbookStore\\11th 12th Notes\\Maths\\ShortNotes\\Differential Equation.pdf",
+      "resource_id": 209,
+      "page": 6,
+      "width": 595.0,
+      "height": 842.0,
+      "existing_rotation": 0,
+      "content_box": [
+        20.0,
+        0.0,
+        574.3,
+        588.6
+      ],
+      "margins": {
+        "left": 0.034,
+        "top": 0,
+        "right": 0.035,
+        "bottom": 0.301
+      },
+      "flags": [
+        "large_vertical_margin"
+      ],
+      "suggested_rotation": null
+    },
+    {
+      "source_path": "C:\\EbookStore\\11th 12th Notes\\Maths\\ShortNotes\\Pair of Straight Lines.pdf",
+      "resource_id": 199,
+      "page": 11,
+      "width": 595.0,
+      "height": 842.0,
+      "existing_rotation": 0,
+      "content_box": [
+        0.0,
+        245.7,
+        588.6,
+        597.1
+      ],
+      "margins": {
+        "left": 0,
+        "top": 0.292,
+        "right": 0.011,
+        "bottom": 0.291
+      },
+      "flags": [
+        "large_vertical_margin"
+      ],
+      "suggested_rotation": null
+    },
+    {
+      "source_path": "C:\\EbookStore\\11th 12th Notes\\Maths\\ShortNotes\\Pair of Straight Lines.pdf",
+      "resource_id": 199,
+      "page": 12,
+      "width": 595.0,
+      "height": 842.0,
+      "existing_rotation": 0,
+      "content_box": [
+        2.9,
+        245.7,
+        597.1,
+        597.1
+      ],
+      "margins": {
+        "left": 0.005,
+        "top": 0.292,
+        "right": 0,
+        "bottom": 0.291
+      },
+      "flags": [
+        "large_vertical_margin"
+      ],
+      "suggested_rotation": null
+    }
+  ]
+}
