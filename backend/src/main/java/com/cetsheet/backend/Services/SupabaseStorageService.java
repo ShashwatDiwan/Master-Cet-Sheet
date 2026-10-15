@@ -33,6 +33,7 @@ public class SupabaseStorageService {
         requireConfiguration();
         try {
             HttpRequest request = requestBuilder("/storage/v1/object/sign/" + properties.getBucket() + "/" + encodePath(objectKey))
+                    .header("Content-Type", "application/json")
                     .POST(HttpRequest.BodyPublishers.ofString("{\"expiresIn\":" + properties.getSignedUrlTtlSeconds() + "}"))
                     .build();
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
