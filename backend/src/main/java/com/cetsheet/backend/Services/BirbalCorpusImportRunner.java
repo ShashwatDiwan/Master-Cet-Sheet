@@ -47,8 +47,16 @@ public class BirbalCorpusImportRunner implements ApplicationRunner {
         }
         Path directory = Path.of(properties.getImportDirectory());
         if (!Files.isDirectory(directory)) {
-            log.error("BirBal import directory does not exist: {}; skipping import. The reader remains available.", directory.toAbsolutePath());
-            return;
+            try {
+                Files.createDirectories(directory);
+                log.warn("BirBal import directory did not exist and was created at {}; no corpus was imported.", directory.toAbsolutePath());
+            } catch (IOException | SecurityException ex) {
+                // /app is deliberately read-only for the non-root production user.
+                // A failed recovery must never prevent the reader from starting.
+                log.warn("BirBal import directory does not exist and could not be created at {}; skipping import. The reader remains available.",
+                        directory.toAbsolutePath(), ex);
+                return;
+            }
         }
 
         List<Path> files;

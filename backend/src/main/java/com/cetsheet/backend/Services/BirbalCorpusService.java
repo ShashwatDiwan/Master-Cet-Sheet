@@ -102,12 +102,22 @@ public class BirbalCorpusService {
 
     private Scope scope(int resourceId) {
         try {
-            return jdbc.queryForObject("""
+            Scope scope = jdbc.queryForObject("""
                     SELECT c.chapter_id, c.chapter_name
                     FROM resource r JOIN chapter c ON c.chapter_id = r.chapter_id
                     WHERE r.resource_id = :resourceId
                     """, Map.of("resourceId", resourceId),
                     (rs, rowNum) -> new Scope(rs.getInt("chapter_id"), rs.getString("chapter_name")));
+            if (scope == null) throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Resource not found");
+
+            Boolean imported = jdbc.queryForObject("""
+                    SELECT EXISTS (SELECT 1 FROM corpus_chapter WHERE chapter_id = :chapterId)
+                    """, Map.of("chapterId", scope.chapterId()), Boolean.class);
+            if (!Boolean.TRUE.equals(imported)) {
+                throw new ResponseStatusException(HttpStatus.NOT_FOUND,
+                        "BirBal content is not available for " + scope.chapterName() + " yet");
+            }
+            return scope;
         } catch (EmptyResultDataAccessException ex) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Resource not found");
         }
