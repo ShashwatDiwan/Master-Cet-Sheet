@@ -35,6 +35,9 @@ COPY --from=build /app/target/extracted/dependencies/ ./
 COPY --from=build /app/target/extracted/spring-boot-loader/ ./
 COPY --from=build /app/target/extracted/snapshot-dependencies/ ./
 COPY --from=build /app/target/extracted/application/ ./
+# The BirBal importer is intentionally opt-in, but when it is enabled it needs
+# the pre-generated chapter corpus alongside the application.
+COPY --chown=appuser:appgroup corpus-json/ ./corpus-json/
 
 # ✅ NEW: Switch to non-root user (never run as root in production)
 USER appuser

@@ -42,17 +42,24 @@ public class BirbalCorpusImportRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         if (properties.getImportDirectory() == null || properties.getImportDirectory().isBlank()) {
-            throw new IllegalStateException("BIRBAL_IMPORT_DIRECTORY is required when BIRBAL_IMPORT_ENABLED=true");
+            log.error("BirBal import was enabled but BIRBAL_IMPORT_DIRECTORY is blank; skipping import. The reader remains available.");
+            return;
         }
         Path directory = Path.of(properties.getImportDirectory());
-        if (!Files.isDirectory(directory)) throw new IllegalArgumentException("BirBal import directory does not exist: " + directory);
+        if (!Files.isDirectory(directory)) {
+            log.error("BirBal import directory does not exist: {}; skipping import. The reader remains available.", directory.toAbsolutePath());
+            return;
+        }
 
         List<Path> files;
         try (Stream<Path> paths = Files.walk(directory)) {
             files = paths.filter(path -> Files.isRegularFile(path) && path.getFileName().toString().endsWith(".json"))
                     .sorted(Comparator.comparing(Path::toString)).toList();
         }
-        if (files.isEmpty()) throw new IllegalArgumentException("No JSON corpus files found in " + directory);
+        if (files.isEmpty()) {
+            log.warn("No JSON corpus files found in {}; skipping import. The reader remains available.", directory.toAbsolutePath());
+            return;
+        }
 
         List<String> report = new ArrayList<>();
         for (Path file : files) {
@@ -70,7 +77,10 @@ public class BirbalCorpusImportRunner implements ApplicationRunner {
                 log.warn("BirBal corpus file rejected: {}", file, ex);
             }
         }
-        Path reportPath = directory.resolve("birbal-import-report-" + Instant.now().toEpochMilli() + ".txt");
+        // The corpus is copied read-only into the production image. Write the
+        // transient review report to the container's writable temp directory.
+        Path reportPath = Path.of(System.getProperty("java.io.tmpdir"))
+                .resolve("birbal-import-report-" + Instant.now().toEpochMilli() + ".txt");
         Files.write(reportPath, report);
         long failures = report.stream().filter(line -> line.startsWith("REJECTED")).count();
         log.info("BirBal import finished: {} files, {} rejected. Review {}", files.size(), failures, reportPath);
