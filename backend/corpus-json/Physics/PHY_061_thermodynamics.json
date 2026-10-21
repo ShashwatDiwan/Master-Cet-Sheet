@@ -1,0 +1,674 @@
+{
+  "chapterId": "61",
+  "chapterName": "Thermodynamics",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "THP-01",
+      "name": "Thermal equilibrium",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "No temperature difference between system and surroundings."
+    },
+    {
+      "id": "THP-02",
+      "name": "Zeroth law of thermodynamics",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "If A and B are each in equilibrium with C, then A and B are in equilibrium with each other."
+    },
+    {
+      "id": "THP-03",
+      "name": "Open, closed and isolated systems",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Open: energy+matter; closed: only energy; isolated: neither."
+    },
+    {
+      "id": "THP-04",
+      "name": "First law of thermodynamics",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "ΔQ = ΔU + ΔW; heat is conserved, only transferred."
+    },
+    {
+      "id": "THP-05",
+      "name": "Sign conventions for heat and work",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Heat absorbed +; work by system + (expansion)."
+    },
+    {
+      "id": "THP-06",
+      "name": "Internal energy",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Energy of random molecular motion; state function."
+    },
+    {
+      "id": "THP-07",
+      "name": "State variables / properties",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "oneLineSummary": "Measurable quantities with definite value in equilibrium (P, V, T…)."
+    },
+    {
+      "id": "THP-08",
+      "name": "Intensive vs extensive variables",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Intensive independent of size (T, density); extensive scale with size (U, mass)."
+    },
+    {
+      "id": "THP-09",
+      "name": "Mechanical, chemical, thermal equilibrium",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "No unbalanced forces; no reactions/diffusion; uniform temperature."
+    },
+    {
+      "id": "THP-10",
+      "name": "Thermodynamic process",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Change of state; isothermal, isobaric, isochoric, adiabatic."
+    },
+    {
+      "id": "THP-11",
+      "name": "Work as area under P-V curve",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "W = ∫ P dV; area under path on P-V diagram."
+    },
+    {
+      "id": "THP-12",
+      "name": "Isothermal process",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "T constant; for ideal gas ΔU=0 so ΔQ=ΔW."
+    },
+    {
+      "id": "THP-13",
+      "name": "Isochoric process",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "V constant; W=0 so ΔQ=ΔU."
+    },
+    {
+      "id": "THP-14",
+      "name": "Isobaric process",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "P constant; W=PΔV."
+    },
+    {
+      "id": "THP-15",
+      "name": "Adiabatic process",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Q=0; ΔU=–ΔW; expansion cools the gas."
+    },
+    {
+      "id": "THP-16",
+      "name": "State function vs path function",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "State functions depend only on state (U, P); path functions depend on path (Q, W)."
+    },
+    {
+      "id": "THP-17",
+      "name": "Cyclic process",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "System returns to initial state; ΔU=0 so Q_net = W_net."
+    },
+    {
+      "id": "THP-18",
+      "name": "Specific heats Cp and Cv",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Cp – Cv = R for ideal gas; γ = Cp/Cv."
+    },
+    {
+      "id": "THP-19",
+      "name": "Second law and heat engines (basic)",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Heat cannot fully convert to work in a cyclic process; efficiency limits."
+    },
+    {
+      "id": "THP-20",
+      "name": "Equation of state",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Relation among P, V, T describing equilibrium states; graphed as P-V diagram."
+    }
+  ],
+  "qna": [
+    {
+      "id": "THP-Q01",
+      "conceptIds": [
+        "THP-01"
+      ],
+      "question": "When is a system in thermal equilibrium with its surroundings?",
+      "answer": "A system is in thermal equilibrium when there is no temperature difference between the system and its surroundings. No net heat flows between them. Thermal equilibrium is one of the three requirements for complete thermodynamic equilibrium.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q02",
+      "conceptIds": [
+        "THP-02"
+      ],
+      "question": "State the zeroth law of thermodynamics.",
+      "answer": "If two systems are each in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other. The law justifies the use of a thermometer and the concept of temperature as a transitive property.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q03",
+      "conceptIds": [
+        "THP-03"
+      ],
+      "question": "Define open, closed and isolated systems.",
+      "answer": "An open system can exchange both energy and matter with its surroundings. A closed system can exchange only energy. An isolated system exchanges neither energy nor matter.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q04",
+      "conceptIds": [
+        "THP-04"
+      ],
+      "question": "State the first law of thermodynamics.",
+      "answer": "Heat is neither created nor destroyed; it can only be transferred from one form to another. Mathematically ΔQ = ΔU + ΔW. The law is a statement of conservation of energy for thermodynamic processes.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q05",
+      "conceptIds": [
+        "THP-05"
+      ],
+      "question": "What are the sign conventions for heat and work used in the notes?",
+      "answer": "Heat absorbed by the system is positive (ΔQ > 0); heat released is negative. Work done by the system (expansion) is positive; work done on the system (compression) is negative.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q06",
+      "conceptIds": [
+        "THP-06"
+      ],
+      "question": "Define internal energy.",
+      "answer": "Internal energy is the energy associated with the random disordered motion of the molecules of a system. It is a state function; its change depends only on the initial and final states. For an ideal gas internal energy depends only on temperature.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q07",
+      "conceptIds": [
+        "THP-07"
+      ],
+      "question": "What is a state variable? Give examples.",
+      "answer": "A state variable is any measurable characteristic of a system that has a definite value when the system is in equilibrium. Examples are pressure, volume, temperature, density and mass. State variables are independent of the path taken to reach the state.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "THP-Q08",
+      "conceptIds": [
+        "THP-08"
+      ],
+      "question": "Distinguish between intensive and extensive variables.",
+      "answer": "Intensive variables do not depend on the size of the system (examples: density, temperature). Extensive variables scale with the size of the system (examples: mass, internal energy).",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q09",
+      "conceptIds": [
+        "THP-09"
+      ],
+      "question": "Define mechanical equilibrium of a thermodynamic system.",
+      "answer": "A system is in mechanical equilibrium when there are no unbalanced forces within the system or between the system and its surroundings. The net force on every part is zero. Pressure is then uniform throughout.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q10",
+      "conceptIds": [
+        "THP-09"
+      ],
+      "question": "Define chemical equilibrium of a thermodynamic system.",
+      "answer": "A system is in chemical equilibrium when no chemical reactions are occurring and there is no net transfer of matter from one part to another by diffusion. The chemical composition is uniform and does not change with time.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q11",
+      "conceptIds": [
+        "THP-10"
+      ],
+      "question": "What is a thermodynamic process? Name the four common types.",
+      "answer": "A thermodynamic process is a procedure by which the state of a system changes from an initial state to a final state. The four common processes are isothermal, isobaric, isochoric and adiabatic.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q12",
+      "conceptIds": [
+        "THP-11"
+      ],
+      "question": "What does the area under a P–V curve represent?",
+      "answer": "The area under the P–V curve equals the work done by (or on) the system during the process. For a cyclic process the enclosed area is the net work. The sign of the work depends on whether volume increases or decreases.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q13",
+      "conceptIds": [
+        "THP-11"
+      ],
+      "question": "Write the expression for the work done by a gas during a volume change.",
+      "answer": "dW = P dV or W = ∫ P dV between the initial and final volumes. The integral is the area under the P–V path. For an isobaric process W = P ΔV.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q14",
+      "conceptIds": [
+        "THP-13"
+      ],
+      "question": "In an isochoric process what is the work done?",
+      "answer": "Work is zero because dV = 0. From the first law ΔQ = ΔU. All heat added goes into increasing the internal energy (and therefore the temperature) of the system.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q15",
+      "conceptIds": [
+        "THP-12"
+      ],
+      "question": "In an isothermal process for an ideal gas what happens to the internal energy?",
+      "answer": "Internal energy remains constant because temperature is constant and U depends only on T for an ideal gas. Therefore ΔQ = ΔW. Heat absorbed is entirely converted into work done by the gas.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q16",
+      "conceptIds": [
+        "THP-15"
+      ],
+      "question": "What is the defining feature of an adiabatic process?",
+      "answer": "No heat is exchanged with the surroundings: ΔQ = 0. From the first law ΔU = –ΔW. Expansion causes the gas to cool; compression causes the gas to heat.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q17",
+      "conceptIds": [
+        "THP-08"
+      ],
+      "question": "Why is temperature an intensive variable while internal energy is extensive?",
+      "answer": "Temperature does not change when the system is scaled up or down; it is independent of the amount of substance. Internal energy is proportional to the number of molecules and therefore scales with the size of the system.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q18",
+      "conceptIds": [
+        "THP-04"
+      ],
+      "question": "A system absorbs 100 J of heat and does 40 J of work. What is the change in internal energy?",
+      "answer": "From ΔQ = ΔU + ΔW one obtains ΔU = ΔQ – ΔW = 100 – 40 = 60 J. Internal energy increases by 60 J.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q19",
+      "conceptIds": [
+        "THP-09"
+      ],
+      "question": "What is required for a system to be in complete thermodynamic equilibrium?",
+      "answer": "The system must simultaneously be in mechanical equilibrium, chemical equilibrium and thermal equilibrium. Only then do all macroscopic properties have definite, time-independent values.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q20",
+      "conceptIds": [
+        "THP-04"
+      ],
+      "question": "Why is the first law said to be a statement of conservation of energy?",
+      "answer": "Any heat that enters the system either increases its internal energy or is used to perform work (or both). No energy is lost or created. The equation ΔQ = ΔU + ΔW simply accounts for all forms of energy transfer.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q21",
+      "conceptIds": [
+        "THP-11"
+      ],
+      "question": "On a P–V diagram, in which direction is positive work done by the system?",
+      "answer": "Positive work is done when the volume increases (expansion). The path is traversed from left to right and the area under the curve is taken as positive. Compression (right to left) corresponds to negative work.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q22",
+      "conceptIds": [
+        "THP-16"
+      ],
+      "question": "What is the difference between a state function and a path function?",
+      "answer": "A state function (e.g., internal energy, pressure, temperature) depends only on the current state of the system. A path function (e.g., heat and work) depends on the particular process that takes the system from one state to another.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "THP-Q23",
+      "conceptIds": [
+        "THP-14"
+      ],
+      "question": "In an isobaric expansion of an ideal gas, how are ΔQ, ΔU and ΔW related?",
+      "answer": "ΔW = P ΔV = n R ΔT. ΔU = n Cv ΔT. Therefore ΔQ = ΔU + ΔW = n Cp ΔT. All three quantities are proportional to the temperature change.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q24",
+      "conceptIds": [
+        "THP-03"
+      ],
+      "question": "Why can an isolated system never reach a new equilibrium state by exchanging heat or matter?",
+      "answer": "By definition an isolated system cannot exchange energy or matter with its surroundings. Any spontaneous change must therefore occur solely through internal processes until equilibrium is reached, after which no further macroscopic change is possible.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q25",
+      "conceptIds": [
+        "THP-20"
+      ],
+      "question": "What does the equation of state of a system represent?",
+      "answer": "The equation of state is a relation among the state variables (usually P, V, T) that describes the equilibrium states of the system. Its graphical representation is the P–V diagram or the P–V–T surface.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q26",
+      "conceptIds": [
+        "THP-04"
+      ],
+      "question": "A student writes the first law as ΔU = ΔQ + ΔW. Is this consistent with the notes?",
+      "answer": "No. The notes use the convention ΔQ = ΔU + ΔW, so ΔU = ΔQ – ΔW. The student’s form corresponds to the opposite sign convention for work. Consistency with the chosen convention is essential.",
+      "type": "cet_tip",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q27",
+      "conceptIds": [
+        "THP-16"
+      ],
+      "question": "Why is heat not a state function?",
+      "answer": "The amount of heat transferred depends on the path taken between two states. Different processes connecting the same initial and final states can involve different quantities of heat. Only the difference ΔU is path-independent.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "THP-Q28",
+      "conceptIds": [
+        "THP-17"
+      ],
+      "question": "In a cyclic process the system returns to its initial state. What is ΔU for the cycle?",
+      "answer": "ΔU = 0 because internal energy is a state function and the initial and final states are identical. Consequently the net heat absorbed equals the net work done by the system: Q_net = W_net.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "THP-Q29",
+      "conceptIds": [
+        "THP-06"
+      ],
+      "question": "What is the physical meaning of the statement that internal energy is associated with the random disordered motion of molecules?",
+      "answer": "The macroscopic internal energy is the sum of the microscopic kinetic and potential energies of all the molecules. Ordered bulk motion (for example the kinetic energy of the centre of mass) is not counted as internal energy.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q30",
+      "conceptIds": [
+        "THP-15"
+      ],
+      "question": "What happens to the temperature of a gas in an adiabatic expansion?",
+      "answer": "The temperature falls. Because no heat is supplied (ΔQ = 0), the work done by the gas is performed at the expense of its internal energy. For an ideal gas a decrease in U implies a decrease in T.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q31",
+      "conceptIds": [
+        "THP-08"
+      ],
+      "question": "List three examples of intensive variables and three examples of extensive variables.",
+      "answer": "Intensive: density, temperature, pressure. Extensive: mass, internal energy, volume. Intensive variables remain the same when two identical systems are combined; extensive variables double.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q32",
+      "conceptIds": [
+        "THP-02"
+      ],
+      "question": "Why is the zeroth law necessary before one can define temperature?",
+      "answer": "The zeroth law establishes that thermal equilibrium is an equivalence relation. Only then can one assign a numerical temperature that is the same for all systems in mutual thermal equilibrium. Without the law the concept of temperature would lack a logical foundation.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "THP-Q33",
+      "conceptIds": [
+        "THP-11"
+      ],
+      "question": "Why is the statement that work is the area under the P–V graph true only for quasi-static processes?",
+      "answer": "Only in a quasi-static process does a well-defined pressure exist at every volume, allowing the integral ∫ P dV to be evaluated along a continuous path. For non-quasi-static processes the work must be calculated from the actual external pressure.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q34",
+      "conceptIds": [
+        "THP-12"
+      ],
+      "question": "Why does the temperature of an ideal gas remain constant in an isothermal expansion even though the gas does work?",
+      "answer": "The work done by the gas is exactly compensated by the heat absorbed from the surroundings. Because ΔU = 0 for an isothermal process of an ideal gas, ΔQ = ΔW. Energy conservation is maintained without a temperature change.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "THP-Q35",
+      "conceptIds": [
+        "THP-18"
+      ],
+      "question": "What is the relation between Cp and Cv for an ideal gas?",
+      "answer": "Cp – Cv = R. The difference arises because at constant pressure the gas does additional work of expansion, so more heat is needed to produce the same temperature rise. The ratio γ = Cp/Cv is greater than 1.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "THP-Q36",
+      "conceptIds": [
+        "THP-17"
+      ],
+      "question": "For a cyclic process on a P–V diagram, what does the enclosed area represent?",
+      "answer": "The enclosed area represents the net work done by the system in one cycle. Because ΔU = 0 for a cycle, this net work is also equal to the net heat absorbed by the system.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "THP-Q37",
+      "conceptIds": [
+        "THP-15"
+      ],
+      "question": "In an adiabatic compression, does the temperature of the gas rise or fall?",
+      "answer": "The temperature rises. Work is done on the gas (ΔW negative in the notes’ convention), so ΔU = –ΔW is positive. For an ideal gas an increase in internal energy means an increase in temperature.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    }
+  ]
+}

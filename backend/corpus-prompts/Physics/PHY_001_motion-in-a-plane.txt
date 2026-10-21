@@ -1,0 +1,35 @@
+# Source resource: 153 (SHORT_NOTES)
+# Expected output: corpus-json/Physics/PHY_001_motion-in-a-plane.json
+# This prompt is generated. Keep the identifiers unchanged.
+
+You are creating the Master CET Sheet study corpus for one chapter. Use only the selected source PDF. Do not invent facts that are absent from it.
+
+chapterId: 1
+chapterName: Motion in a Plane
+subject: Physics
+outputFileName: PHY_001_motion-in-a-plane.json
+conceptIdPrefix: MIP
+
+Return one valid JSON object, with no Markdown fence, matching this shape:
+{
+  "schemaVersion": 1,
+  "chapterId": 1,
+  "chapterName": "Motion in a Plane",
+  "subject": "Physics",
+  "conceptIdPrefix": "MIP",
+  "questions": [
+    {
+      "id": "MIP-Q001",
+      "question": "...",
+      "answer": "At least three complete sentences.",
+      "concepts": ["..."]
+    }
+  ]
+}
+
+Quality requirements:
+- Create at least 35 meaningful questions that cover definitions, reasoning, formulae where relevant, common mistakes, and CET-style application.
+- Give each answer at least three complete sentences; explain the reasoning rather than only stating a result.
+- IDs must begin with MIP- and be unique within this file.
+- Preserve the chapter metadata exactly as above.
+- Save the JSON to corpus-json/Physics/PHY_001_motion-in-a-plane.json.

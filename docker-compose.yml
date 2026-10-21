@@ -1,0 +1,84 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: cet-sheet-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: CetSheet
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "0000"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d CetSheet"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: cet-sheet-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: cet-sheet-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/CetSheet
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: "0000"
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+      SPRING_DATA_REDIS_URL: redis://redis:6379
+      SPRING_DATA_REDIS_REPOSITORIES_ENABLED: "false"
+      SERVER_PORT: 8080
+      APP_JWT_SECRET: ${APP_JWT_SECRET:-Q2hhbmdlTWVUb0FiYXNlNjRTZWNyZXRLZXlGb3JEZW1vMTIzNDU=}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-replace-with-gemini-api-key}
+      APP_CORS_ALLOWED_ORIGIN_PATTERNS: http://localhost:3000,http://localhost:5173,http://localhost:5174,http://127.0.0.1:3000,http://127.0.0.1:5173,http://127.0.0.1:5174
+      APP_OAUTH2_REDIRECT_URI: http://localhost:3000/oauth/callback
+      # Keep the service-role key server-side. Leave these unset until a private
+      # Supabase bucket has been created and the browser spike is ready to run.
+      SUPABASE_URL: ${SUPABASE_URL:-}
+      SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY:-}
+      SUPABASE_STORAGE_BUCKET: ${SUPABASE_STORAGE_BUCKET:-cet-resources}
+      SUPABASE_SIGNED_URL_TTL_SECONDS: ${SUPABASE_SIGNED_URL_TTL_SECONDS:-3600}
+      SUPABASE_STORAGE_MAX_FILE_BYTES: ${SUPABASE_STORAGE_MAX_FILE_BYTES:-52428800}
+    ports:
+      - "8081:8080"
+
+  frontend:
+    build:
+      context: ../cet-sheet-frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: /api/v1
+    container_name: cet-sheet-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local

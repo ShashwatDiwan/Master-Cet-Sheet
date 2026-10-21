@@ -1,0 +1,468 @@
+{
+  "chapterId": "35",
+  "chapterName": "Chemical Kinetics",
+  "subject": "Chemistry",
+  "concepts": [
+    {
+      "id": "CK-01",
+      "name": "Rate of Reaction",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Change in concentration of reactant or product per unit time."
+    },
+    {
+      "id": "CK-02",
+      "name": "Average vs Instantaneous Rate",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Average rate over interval; instantaneous rate at a particular moment."
+    },
+    {
+      "id": "CK-03",
+      "name": "Factors Affecting Rate",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Concentration, temperature, catalyst, surface area, nature of reactants."
+    },
+    {
+      "id": "CK-04",
+      "name": "Rate Law and Order",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Rate = k [A]^m [B]^n; order = m+n; determined experimentally."
+    },
+    {
+      "id": "CK-05",
+      "name": "Molecularity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Number of molecules colliding in an elementary step; always integer."
+    },
+    {
+      "id": "CK-06",
+      "name": "Zero-Order Reactions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Rate independent of concentration; [A] = [A]₀ − kt; t½ = [A]₀/2k."
+    },
+    {
+      "id": "CK-07",
+      "name": "First-Order Reactions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Rate ∝ [A]; ln[A] = ln[A]₀ − kt; t½ = 0.693/k."
+    },
+    {
+      "id": "CK-08",
+      "name": "Half-Life",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Time required for concentration to fall to half; depends on order."
+    },
+    {
+      "id": "CK-09",
+      "name": "Integrated Rate Equations",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Equations relating concentration and time for zero and first order."
+    },
+    {
+      "id": "CK-10",
+      "name": "Pseudo First-Order",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Higher-order reaction made first-order by taking one reactant in excess."
+    },
+    {
+      "id": "CK-11",
+      "name": "Temperature Dependence (Arrhenius)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "k = A e^(−Ea/RT); rate roughly doubles for 10 °C rise."
+    },
+    {
+      "id": "CK-12",
+      "name": "Activation Energy",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Minimum energy required for reactant molecules to form products."
+    },
+    {
+      "id": "CK-13",
+      "name": "Catalyst Effect",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Catalyst provides alternate path with lower activation energy."
+    },
+    {
+      "id": "CK-14",
+      "name": "Collision Theory",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Rate depends on collision frequency, energy and orientation."
+    },
+    {
+      "id": "CK-15",
+      "name": "Graphical Determination of Order",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Plots of [A] vs t, ln[A] vs t, 1/[A] vs t identify order."
+    },
+    {
+      "id": "CK-16",
+      "name": "Units of Rate Constant",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Units depend on order: mol L⁻¹ s⁻¹ (zero), s⁻¹ (first), L mol⁻¹ s⁻¹ (second)."
+    },
+    {
+      "id": "CK-17",
+      "name": "Second-Order Reactions",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Rate = k[A]² or k[A][B]; 1/[A] = 1/[A]₀ + kt."
+    },
+    {
+      "id": "CK-18",
+      "name": "Effect of Surface Area",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Finely divided solids react faster due to larger surface area."
+    }
+  ],
+  "qna": [
+    {
+      "id": "CK-Q01",
+      "conceptIds": ["CK-01"],
+      "question": "Define the rate of a chemical reaction.",
+      "answer": "The rate of a chemical reaction is the change in concentration of a reactant or product per unit time. For a reaction A → B it may be expressed as −d[A]/dt or +d[B]/dt. The negative sign indicates decrease in reactant concentration.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q02",
+      "conceptIds": ["CK-02"],
+      "question": "Distinguish between average rate and instantaneous rate.",
+      "answer": "Average rate is the change in concentration over a finite time interval. Instantaneous rate is the rate at a particular moment and is given by the slope of the concentration–time curve at that point. Instantaneous rate is more useful for kinetic studies.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q03",
+      "conceptIds": ["CK-03"],
+      "question": "List the main factors that affect the rate of a reaction.",
+      "answer": "The rate of a reaction depends on concentration of reactants, temperature, presence of catalyst, surface area of solid reactants and the nature of the reactants. Increasing concentration or temperature generally increases the rate.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q04",
+      "conceptIds": ["CK-04"],
+      "question": "What is a rate law? How is order determined?",
+      "answer": "The rate law is an experimentally determined expression that relates rate to the concentrations of reactants raised to certain powers: rate = k[A]^m[B]^n. The order of the reaction is the sum m+n. Order cannot be deduced from the balanced equation alone.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q05",
+      "conceptIds": ["CK-05"],
+      "question": "What is molecularity and how does it differ from order?",
+      "answer": "Molecularity is the number of molecules that collide in an elementary step and is always a positive integer. Order is an experimental quantity that can be fractional or zero. Molecularity applies only to elementary reactions while order applies to the overall reaction.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q06",
+      "conceptIds": ["CK-06"],
+      "question": "Write the integrated rate equation and half-life for a zero-order reaction.",
+      "answer": "For a zero-order reaction the integrated rate equation is [A] = [A]₀ − kt. The half-life is t½ = [A]₀ / 2k and therefore depends on the initial concentration. The rate remains constant until the reactant is exhausted.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q07",
+      "conceptIds": ["CK-07"],
+      "question": "Write the integrated rate equation and half-life for a first-order reaction.",
+      "answer": "For a first-order reaction ln[A] = ln[A]₀ − kt or [A] = [A]₀ e^(−kt). The half-life is t½ = 0.693/k and is independent of initial concentration. This constancy of half-life is a characteristic feature of first-order kinetics.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q08",
+      "conceptIds": ["CK-08"],
+      "question": "How does half-life depend on initial concentration for different orders?",
+      "answer": "For zero-order reactions t½ is directly proportional to [A]₀. For first-order reactions t½ is independent of [A]₀. For second-order reactions t½ is inversely proportional to [A]₀. The dependence is used to determine the order experimentally.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q09",
+      "conceptIds": ["CK-11", "CK-12"],
+      "question": "State the Arrhenius equation and the meaning of activation energy.",
+      "answer": "The Arrhenius equation is k = A e^(−Ea/RT), where A is the frequency factor and Ea is the activation energy. Activation energy is the minimum energy that colliding molecules must possess for the reaction to occur. Higher Ea means slower reaction at a given temperature.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q10",
+      "conceptIds": ["CK-13"],
+      "question": "How does a catalyst increase the rate of a reaction?",
+      "answer": "A catalyst provides an alternative reaction pathway with a lower activation energy. More molecules now possess the required energy, so the rate increases. The catalyst itself is regenerated at the end of the reaction and does not alter the equilibrium constant.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q11",
+      "conceptIds": ["CK-15"],
+      "question": "How can the order of a reaction be determined graphically?",
+      "answer": "A plot of [A] versus t is linear for zero order. A plot of ln[A] versus t is linear for first order. A plot of 1/[A] versus t is linear for second order. The linear plot identifies the order and its slope gives the rate constant.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q12",
+      "conceptIds": ["CK-16"],
+      "question": "What are the units of the rate constant for zero-, first- and second-order reactions?",
+      "answer": "For zero-order the unit is mol L⁻¹ s⁻¹. For first-order the unit is s⁻¹. For second-order the unit is L mol⁻¹ s⁻¹. The units follow from the requirement that rate must always have the unit concentration/time.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q13",
+      "conceptIds": ["CK-10"],
+      "question": "What is a pseudo first-order reaction? Give an example.",
+      "answer": "A pseudo first-order reaction is a higher-order reaction that behaves as first-order because one reactant is present in large excess. The hydrolysis of ethyl acetate in excess water is a classic example; the rate depends only on the ester concentration.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q14",
+      "conceptIds": ["CK-11"],
+      "question": "Why does the rate of a reaction roughly double for a 10 °C rise in temperature?",
+      "answer": "According to the Arrhenius equation a small increase in temperature significantly increases the fraction of molecules possessing energy greater than Ea. For many reactions this fraction roughly doubles for a 10 °C rise, causing the observed rate increase.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q15",
+      "conceptIds": ["CK-14"],
+      "question": "State the main postulates of collision theory.",
+      "answer": "Collision theory states that reactant molecules must collide, the collision must possess energy at least equal to the activation energy, and the molecules must be properly oriented. The rate is proportional to the frequency of effective collisions.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CK-Q16",
+      "conceptIds": ["CK-06", "CK-07"],
+      "question": "Compare the concentration–time plots for zero-order and first-order reactions.",
+      "answer": "For a zero-order reaction [A] decreases linearly with time. For a first-order reaction [A] decreases exponentially with time. Consequently a plot of [A] vs t is a straight line for zero order and a curve for first order.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q17",
+      "conceptIds": ["CK-09"],
+      "question": "Derive the relation between half-life and rate constant for a first-order reaction.",
+      "answer": "From the integrated equation ln([A]₀/[A]) = kt. When [A] = [A]₀/2, ln 2 = kt½. Therefore t½ = ln 2 / k ≈ 0.693/k. The half-life is constant and independent of initial concentration.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q18",
+      "conceptIds": ["CK-12"],
+      "question": "What is the effect of increasing activation energy on the rate constant?",
+      "answer": "According to the Arrhenius equation k decreases exponentially as Ea increases. A higher activation energy means fewer molecules have the required energy, resulting in a smaller rate constant and a slower reaction.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q19",
+      "conceptIds": ["CK-03", "CK-18"],
+      "question": "Why do powdered solids react faster than lumps of the same mass?",
+      "answer": "Powdered solids have a much larger surface area than the same mass in lump form. A larger surface area provides more sites for collision with other reactants, increasing the frequency of effective collisions and therefore the rate.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CK-Q20",
+      "conceptIds": ["CK-17"],
+      "question": "Write the integrated rate equation for a second-order reaction of the type 2A → products.",
+      "answer": "For a second-order reaction 2A → products the integrated rate equation is 1/[A] − 1/[A]₀ = kt. A plot of 1/[A] versus t is linear with slope k. The half-life is inversely proportional to the initial concentration.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CK-Q21",
+      "conceptIds": ["CK-04", "CK-05"],
+      "question": "Can the order of a reaction be zero? Can molecularity be zero?",
+      "answer": "Order can be zero when the rate is independent of the concentration of a reactant (e.g. photochemical reactions or surface-catalysed reactions). Molecularity cannot be zero because at least one molecule must participate in the elementary step.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q22",
+      "conceptIds": ["CK-11"],
+      "question": "How can the activation energy be determined experimentally?",
+      "answer": "The Arrhenius equation can be written as ln k = ln A − Ea/RT. A plot of ln k versus 1/T is a straight line whose slope is −Ea/R. Measuring k at several temperatures therefore allows calculation of Ea.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q23",
+      "conceptIds": ["CK-13"],
+      "question": "Does a catalyst change the enthalpy of a reaction? Explain.",
+      "answer": "A catalyst does not change the enthalpy of a reaction. It lowers the activation energy of both the forward and reverse reactions equally, accelerating the attainment of equilibrium without altering the equilibrium constant or the overall energy change.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q24",
+      "conceptIds": ["CK-07", "CK-08"],
+      "question": "A first-order reaction is 50 % complete in 30 minutes. How long will it take for 90 % completion?",
+      "answer": "For a first-order reaction t½ = 30 min, so k = 0.693/30. Time for 90 % completion is given by t = (2.303/k) log([A]₀/[A]) = (2.303/k) log 10 = 2.303/k. Substituting k yields t ≈ 100 minutes.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q25",
+      "conceptIds": ["CK-01", "CK-16"],
+      "question": "Why must the units of rate constant change with the order of reaction?",
+      "answer": "The rate of reaction always has the unit concentration/time. In the rate law rate = k [concentration]^order, the units of k must adjust so that the product has the correct overall unit. Consequently the units of k depend on the order.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q26",
+      "conceptIds": ["CK-14"],
+      "question": "What is the steric factor in collision theory?",
+      "answer": "The steric factor accounts for the fact that not all energetic collisions lead to reaction; the molecules must also be properly oriented. It is the fraction of collisions that have the correct geometry and is usually less than one.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CK-Q27",
+      "conceptIds": ["CK-06"],
+      "question": "Give an example of a zero-order reaction and explain why it is zero order.",
+      "answer": "The decomposition of ammonia on a platinum surface is zero order at high pressure. The surface is fully covered by ammonia molecules, so the rate depends only on the surface area of the catalyst and not on the gas-phase concentration.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q28",
+      "conceptIds": ["CK-09", "CK-15"],
+      "question": "How would you distinguish a first-order reaction from a second-order reaction experimentally?",
+      "answer": "Plot ln[A] versus t and 1/[A] versus t. If the ln[A] plot is linear the reaction is first order; if the 1/[A] plot is linear the reaction is second order. Alternatively, check whether half-life is constant (first order) or varies with concentration (second order).",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q29",
+      "conceptIds": ["CK-03", "CK-11"],
+      "question": "Why does an increase in temperature increase the rate of reaction more than an increase in concentration?",
+      "answer": "Increasing concentration increases the number of collisions proportionally. Increasing temperature increases both the collision frequency and, more importantly, the fraction of molecules with energy greater than Ea. The exponential dependence on temperature makes its effect much larger.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q30",
+      "conceptIds": ["CK-12", "CK-13"],
+      "question": "Draw the energy-profile diagram for a catalysed and an uncatalysed reaction.",
+      "answer": "Both diagrams start and end at the same energy levels (same ΔH). The catalysed path has a lower peak (lower Ea) than the uncatalysed path. The catalyst therefore accelerates the reaction without changing the thermodynamic driving force.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q31",
+      "conceptIds": ["CK-08"],
+      "question": "A zero-order reaction has a half-life of 20 minutes when the initial concentration is 0.4 M. What will be the half-life if the initial concentration is 0.2 M?",
+      "answer": "For a zero-order reaction t½ is directly proportional to [A]₀. Halving the initial concentration therefore halves the half-life. The new half-life is 10 minutes.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q32",
+      "conceptIds": ["CK-04"],
+      "question": "The rate law for a reaction is rate = k[A][B]². What is the order with respect to A, B and the overall order?",
+      "answer": "The order with respect to A is 1, with respect to B is 2, and the overall order is 3. The rate constant k has the unit L² mol⁻² s⁻¹. The reaction is third-order overall.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q33",
+      "conceptIds": ["CK-10"],
+      "question": "Why is the inversion of cane sugar considered a pseudo first-order reaction?",
+      "answer": "The inversion of cane sugar involves water as a reactant, but water is present in large excess. Its concentration remains essentially constant, so the rate depends only on the sugar concentration and the reaction appears first-order.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q34",
+      "conceptIds": ["CK-01", "CK-02"],
+      "question": "Why is instantaneous rate preferred over average rate in kinetic studies?",
+      "answer": "Average rate depends on the time interval chosen and does not reflect the continuously changing rate. Instantaneous rate gives the true rate at any chosen moment and is required for accurate determination of rate laws and rate constants.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CK-Q35",
+      "conceptIds": ["CK-14", "CK-12"],
+      "question": "According to collision theory, why do most collisions not lead to reaction?",
+      "answer": "Most collisions lack the minimum energy (activation energy) required to form the activated complex. In addition, many collisions that are energetic enough still fail because the molecules are not properly oriented. Only a small fraction of collisions are therefore effective.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    }
+  ]
+}

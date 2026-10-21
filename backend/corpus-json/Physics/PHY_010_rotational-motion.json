@@ -1,0 +1,656 @@
+{
+  "chapterId": "010",
+  "chapterName": "Rotational Motion",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "RM-01",
+      "name": "Moment of inertia definition",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Sum of m r² for all particles about a given axis."
+    },
+    {
+      "id": "RM-02",
+      "name": "Units and dimensions of I",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "SI unit kg m²; dimensions [M L²]."
+    },
+    {
+      "id": "RM-03",
+      "name": "Factors affecting I",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Depends on mass, axis, density and mass distribution."
+    },
+    {
+      "id": "RM-04",
+      "name": "Radius of gyration",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Distance k such that I = M k²."
+    },
+    {
+      "id": "RM-05",
+      "name": "Rotational kinetic energy",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3,
+        4
+      ],
+      "oneLineSummary": "K.E. = (1/2) I ω² for a rigid body."
+    },
+    {
+      "id": "RM-06",
+      "name": "Torque and angular acceleration",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "oneLineSummary": "τ = I α is the rotational analogue of F = ma."
+    },
+    {
+      "id": "RM-07",
+      "name": "Parallel-axis theorem",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5,
+        6
+      ],
+      "oneLineSummary": "I_O = I_C + M d² for parallel axes."
+    },
+    {
+      "id": "RM-08",
+      "name": "Perpendicular-axis theorem",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        7
+      ],
+      "oneLineSummary": "For a planar body I_z = I_x + I_y."
+    },
+    {
+      "id": "RM-09",
+      "name": "MI of thin rod about centre",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        8
+      ],
+      "oneLineSummary": "I = M L²/12 about perpendicular axis through centre."
+    },
+    {
+      "id": "RM-10",
+      "name": "MI of thin rod about end",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        9
+      ],
+      "oneLineSummary": "I = M L²/3 about perpendicular axis through end."
+    },
+    {
+      "id": "RM-11",
+      "name": "MI of ring and disc",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Standard results for ring, disc, cylinder and sphere."
+    },
+    {
+      "id": "RM-12",
+      "name": "Angular momentum",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "L = I ω; conserved when external torque is zero."
+    },
+    {
+      "id": "RM-13",
+      "name": "Conservation of angular momentum",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "I ω remains constant if net external torque vanishes."
+    },
+    {
+      "id": "RM-14",
+      "name": "Rolling without slipping",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "v = r ω and a = r α relate translation and rotation."
+    },
+    {
+      "id": "RM-15",
+      "name": "Kinetic energy of rolling",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Total KE = (1/2) M v² + (1/2) I ω²."
+    },
+    {
+      "id": "RM-16",
+      "name": "Torque as r × F",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Torque is the cross product of position and force vectors."
+    },
+    {
+      "id": "RM-17",
+      "name": "Moment of inertia as tensor",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "I depends on orientation of axis; described by a tensor."
+    },
+    {
+      "id": "RM-18",
+      "name": "Applications of MI theorems",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "oneLineSummary": "Parallel and perpendicular axis theorems used to find I about new axes."
+    }
+  ],
+  "qna": [
+    {
+      "id": "RM-Q01",
+      "conceptIds": [
+        "RM-01",
+        "RM-09",
+        "RM-10"
+      ],
+      "question": "Define moment of inertia of a body about a given axis of rotation.",
+      "answer": "Moment of inertia of a body about a given axis of rotation is defined as the sum of the products of the mass of each particle and the square of its distance from the axis of rotation. Mathematically, I = Σ m_n r_n². For a continuous distribution of mass it is expressed as the integral I = ∫ r² dm.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q02",
+      "conceptIds": [
+        "RM-01",
+        "RM-02",
+        "RM-17"
+      ],
+      "question": "What are the units and dimensions of moment of inertia?",
+      "answer": "In SI units moment of inertia is measured in kg m². In CGS units it is g cm². The dimensional formula is [M¹ L²]. These follow directly from the product of mass and the square of length.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q03",
+      "conceptIds": [
+        "RM-01",
+        "RM-03",
+        "RM-09"
+      ],
+      "question": "On which factors does the moment of inertia of a body depend?",
+      "answer": "Moment of inertia depends on the mass of the body, the distances of the mass elements from the axis of rotation, the particular axis chosen, the density of the body, and the distribution of mass about the axis. Changing any of these quantities changes the value of I.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q04",
+      "conceptIds": [
+        "RM-01",
+        "RM-04",
+        "RM-09"
+      ],
+      "question": "Define radius of gyration of a body about a given axis.",
+      "answer": "Radius of gyration of a body about a given axis is the distance from the axis at which the entire mass of the body may be assumed to be concentrated so that the moment of inertia about that axis remains the same. It is denoted by k and is related to moment of inertia by I = M k², so k = √(I/M).",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q05",
+      "conceptIds": [
+        "RM-02",
+        "RM-04"
+      ],
+      "question": "What are the units and dimensions of radius of gyration?",
+      "answer": "Radius of gyration has the unit of length: metre in SI and centimetre in CGS. Its dimensional formula is [M⁰ L¹ T⁰]. It is a purely geometric quantity that characterises the mass distribution relative to the chosen axis.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q06",
+      "conceptIds": [
+        "RM-03",
+        "RM-04",
+        "RM-09"
+      ],
+      "question": "On which factors does the radius of gyration depend?",
+      "answer": "Radius of gyration depends on the position of the axis of rotation and on the distribution of mass of the body about that axis. It does not depend on the total mass of the body, only on how that mass is spread relative to the axis.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q07",
+      "conceptIds": [
+        "RM-01",
+        "RM-05",
+        "RM-06"
+      ],
+      "question": "Derive the expression for the rotational kinetic energy of a rigid body.",
+      "answer": "A rigid body rotating with angular velocity ω consists of particles whose linear speeds are v_i = r_i ω. The kinetic energy of the i-th particle is (1/2) m_i v_i² = (1/2) m_i r_i² ω². Summing over all particles gives total kinetic energy K.E. = (1/2) (Σ m_i r_i²) ω² = (1/2) I ω², where I is the moment of inertia about the axis of rotation.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q08",
+      "conceptIds": [
+        "RM-01",
+        "RM-05",
+        "RM-06"
+      ],
+      "question": "State the relation between torque and angular acceleration for a rigid body.",
+      "answer": "The total torque τ acting on a rigid body about a fixed axis is equal to the product of the moment of inertia I about that axis and the angular acceleration α: τ = I α. This is the rotational analogue of Newton’s second law F = m a.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q09",
+      "conceptIds": [
+        "RM-06",
+        "RM-09",
+        "RM-10"
+      ],
+      "question": "How is the total torque obtained from the forces acting on individual particles?",
+      "answer": "Each particle experiences a force F_i = m_i a_i = m_i r_i α. The torque due to that force about the axis is τ_i = F_i r_i = m_i r_i² α. Summing over all particles yields τ_total = (Σ m_i r_i²) α = I α. Thus the net torque equals I α.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q10",
+      "conceptIds": [
+        "RM-01",
+        "RM-07",
+        "RM-08"
+      ],
+      "question": "State the theorem of parallel axes.",
+      "answer": "The moment of inertia of a body about any axis is equal to the sum of the moment of inertia about a parallel axis passing through the centre of mass and the product of the mass of the body and the square of the perpendicular distance between the two parallel axes. Mathematically, I_O = I_C + M d², where d is the distance between the axes.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q11",
+      "conceptIds": [
+        "RM-07",
+        "RM-08",
+        "RM-09"
+      ],
+      "question": "Outline the proof of the parallel-axis theorem.",
+      "answer": "Consider an element dm at a point P. Let O be a point on the given axis and C the centre of mass. Then OP² = OC² + CP² + 2 OC · CD, where CD is the component of CP along OC. Integrating OP² dm yields I_O = M d² + I_C + 2 d ∫ CD dm. The integral ∫ CD dm vanishes because C is the centre of mass, leaving I_O = I_C + M d².",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q12",
+      "conceptIds": [
+        "RM-01",
+        "RM-07",
+        "RM-08"
+      ],
+      "question": "State the theorem of perpendicular axes.",
+      "answer": "The moment of inertia of a plane lamina about an axis perpendicular to its plane is equal to the sum of its moments of inertia about two mutually perpendicular axes that lie in the plane of the lamina and intersect the perpendicular axis. In symbols, I_z = I_x + I_y.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q13",
+      "conceptIds": [
+        "RM-07",
+        "RM-08"
+      ],
+      "question": "Prove the theorem of perpendicular axes.",
+      "answer": "For a planar lamina the distance from the z-axis of an element dm is √(x² + y²). Therefore I_z = ∫ (x² + y²) dm = ∫ x² dm + ∫ y² dm = I_y + I_x. This identity holds for any planar mass distribution.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q14",
+      "conceptIds": [
+        "RM-01",
+        "RM-04",
+        "RM-09"
+      ],
+      "question": "Write the moment of inertia of a thin uniform rod about an axis through its centre and perpendicular to its length.",
+      "answer": "For a thin uniform rod of mass M and length L the moment of inertia about an axis passing through the centre and perpendicular to the length is I = M L² / 12. The corresponding radius of gyration is k = L / (2 √3).",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q15",
+      "conceptIds": [
+        "RM-01",
+        "RM-04",
+        "RM-07"
+      ],
+      "question": "Find the moment of inertia of a thin uniform rod about an axis through one end and perpendicular to its length.",
+      "answer": "Using the parallel-axis theorem, I_end = I_C + M (L/2)² = M L² / 12 + M L² / 4 = M L² / 3. The radius of gyration about the end is k = L / √3.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q16",
+      "conceptIds": [
+        "RM-01",
+        "RM-04",
+        "RM-07"
+      ],
+      "question": "Calculate the moment of inertia of a thin uniform rod about an axis midway between the centre and one end, perpendicular to the length.",
+      "answer": "The distance from the centre to the new axis is L/4. By the parallel-axis theorem I = M L² / 12 + M (L/4)² = M L² / 12 + M L² / 16 = (4 M L² + 3 M L²)/48 = 7 M L² / 48. The corresponding radius of gyration is k = √(7/48) L.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q17",
+      "conceptIds": [
+        "RM-01",
+        "RM-05",
+        "RM-06"
+      ],
+      "question": "What is the relation between rotational kinetic energy and moment of inertia?",
+      "answer": "Rotational kinetic energy is directly proportional to the moment of inertia and to the square of the angular velocity: K.E. = (1/2) I ω². For a given angular velocity a body with larger I stores more rotational kinetic energy.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q18",
+      "conceptIds": [
+        "RM-01",
+        "RM-02",
+        "RM-17"
+      ],
+      "question": "Why is moment of inertia called a tensor quantity in the notes?",
+      "answer": "Moment of inertia is not a simple scalar or vector; its value depends on the orientation of the axis. In three dimensions it is described by a tensor (or inertia matrix) whose components transform under rotation of the coordinate system. The notes therefore classify I as a tensor quantity.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q19",
+      "conceptIds": [
+        "RM-04"
+      ],
+      "question": "How is the radius of gyration obtained from a known expression for I?",
+      "answer": "From the defining relation I = M k² one obtains k = √(I/M). In practice one cancels the mass M from the expression for I and takes the square root of the remaining geometric factor. This gives a quick route to k once I is known.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q20",
+      "conceptIds": [
+        "RM-01",
+        "RM-07",
+        "RM-08"
+      ],
+      "question": "Explain why the integral term involving the first moment vanishes in the proof of the parallel-axis theorem.",
+      "answer": "The integral ∫ CD dm is proportional to the first moment of mass about the centre of mass. By definition of the centre of mass this first moment is zero. Consequently the cross term disappears and only I_C + M d² remains.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q21",
+      "conceptIds": [
+        "RM-01",
+        "RM-04",
+        "RM-09"
+      ],
+      "question": "What is the physical significance of the radius of gyration?",
+      "answer": "Radius of gyration gives a single length that characterises the mass distribution of the body relative to a chosen axis. Two bodies with the same mass and the same radius of gyration about a given axis will have identical moments of inertia about that axis, even if their shapes differ.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q22",
+      "conceptIds": [
+        "RM-01",
+        "RM-07",
+        "RM-08"
+      ],
+      "question": "How does the choice of axis affect the moment of inertia?",
+      "answer": "Moment of inertia is smallest when the axis passes through the centre of mass. Moving the axis parallel to itself increases I by M d² according to the parallel-axis theorem. Different orientations of the axis also yield different values, which is why I is a tensor.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q23",
+      "conceptIds": [
+        "RM-05",
+        "RM-15"
+      ],
+      "question": "Write the expression for the kinetic energy of an individual particle in a rotating rigid body.",
+      "answer": "A particle of mass m_i located at distance r_i from the axis has linear speed v_i = r_i ω. Its kinetic energy is therefore (1/2) m_i (r_i ω)² = (1/2) m_i r_i² ω². Summing these contributions over all particles produces the total rotational kinetic energy (1/2) I ω².",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q24",
+      "conceptIds": [
+        "RM-01",
+        "RM-06",
+        "RM-09"
+      ],
+      "question": "State Newton’s second law for rotation in terms of torque.",
+      "answer": "The net external torque about a fixed axis equals the product of the moment of inertia about that axis and the angular acceleration about the same axis: τ_net = I α. This is the fundamental dynamical equation for rigid-body rotation about a fixed axis.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q25",
+      "conceptIds": [
+        "RM-06",
+        "RM-09",
+        "RM-10"
+      ],
+      "question": "How is the linear acceleration of a particle related to the angular acceleration of the rigid body?",
+      "answer": "Every particle of a rigid body rotating about a fixed axis moves in a circle. Its tangential linear acceleration a_t is related to the angular acceleration α by a_t = r α, where r is the perpendicular distance from the particle to the axis. This relation is used to express the force on each particle as F = m r α.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q26",
+      "conceptIds": [
+        "RM-01",
+        "RM-07",
+        "RM-08"
+      ],
+      "question": "What is the moment of inertia of a thin uniform rod of length L about its centre?",
+      "answer": "I_C = M L² / 12. This standard result is obtained by integrating r² dm along the length of the rod with the origin at the centre. It is the starting point for applying the parallel-axis theorem to other axes parallel to the central axis.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q27",
+      "conceptIds": [
+        "RM-07",
+        "RM-08"
+      ],
+      "question": "Why does the perpendicular-axis theorem apply only to planar bodies?",
+      "answer": "The derivation relies on the Pythagorean relation z² = x² + y² that holds only when all mass elements lie in the xy-plane. For a three-dimensional body an additional contribution from the z-coordinate appears and the simple sum I_z = I_x + I_y no longer holds.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q28",
+      "conceptIds": [
+        "RM-01",
+        "RM-04",
+        "RM-09"
+      ],
+      "question": "Calculate the radius of gyration of a thin rod about an axis through its centre and perpendicular to its length.",
+      "answer": "From I = M L² / 12 = M k² one obtains k² = L² / 12, so k = L / (2 √3). This length is the distance from the centre at which the entire mass could be concentrated to give the same moment of inertia.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q29",
+      "conceptIds": [
+        "RM-07",
+        "RM-08",
+        "RM-09"
+      ],
+      "question": "How does the parallel-axis theorem help in finding MI about an end of a rod?",
+      "answer": "The MI about the centre is known: I_C = M L² / 12. The end is a distance L/2 from the centre. Adding M (L/2)² yields I_end = M L² / 12 + M L² / 4 = M L² / 3. The theorem therefore converts a central-axis result into an end-axis result with a simple algebraic step.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q30",
+      "conceptIds": [
+        "RM-01",
+        "RM-05",
+        "RM-06"
+      ],
+      "question": "What is the physical meaning of the torque equation τ = I α?",
+      "answer": "Just as force produces linear acceleration of the centre of mass, torque produces angular acceleration about the axis of rotation. The moment of inertia plays the role of inertial mass: a larger I means a smaller angular acceleration for a given torque. This analogy is the foundation of rotational dynamics.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q31",
+      "conceptIds": [
+        "RM-01",
+        "RM-05",
+        "RM-09"
+      ],
+      "question": "Express the total rotational kinetic energy in terms of the individual particle contributions.",
+      "answer": "K.E._total = Σ (1/2) m_i v_i² = Σ (1/2) m_i (r_i ω)² = (1/2) ω² Σ m_i r_i² = (1/2) I ω². The summation of m_i r_i² is precisely the definition of the moment of inertia about the axis of rotation.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q32",
+      "conceptIds": [
+        "RM-01",
+        "RM-07",
+        "RM-08"
+      ],
+      "question": "Why is the moment of inertia of a body smallest about an axis through its centre of mass?",
+      "answer": "According to the parallel-axis theorem any parallel axis displaced by a distance d increases the moment of inertia by the positive quantity M d². Therefore the minimum value occurs when d = 0, i.e., when the axis passes through the centre of mass.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q33",
+      "conceptIds": [
+        "RM-06",
+        "RM-09",
+        "RM-10"
+      ],
+      "question": "Write the expression for the torque on a single particle of a rotating rigid body.",
+      "answer": "The force on the particle is F = m a = m r α. The torque about the axis is τ = F r = m r² α. When this expression is summed over all particles one recovers the global relation τ_total = I α.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q34",
+      "conceptIds": [
+        "RM-04",
+        "RM-09",
+        "RM-10"
+      ],
+      "question": "What is the radius of gyration of a thin rod about an axis through one end perpendicular to its length?",
+      "answer": "From I = M L² / 3 = M k² one obtains k = L / √3. This value is larger than the central radius of gyration, as expected because the mass is on average farther from the end axis.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q35",
+      "conceptIds": [
+        "RM-01",
+        "RM-04",
+        "RM-17"
+      ],
+      "question": "How does the distribution of mass affect the moment of inertia?",
+      "answer": "Mass that is farther from the axis contributes more to I because of the r² weighting. Consequently two bodies of equal total mass can have very different moments of inertia if their mass distributions differ. The radius of gyration quantifies this distribution effect in a single length.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q36",
+      "conceptIds": [
+        "RM-01",
+        "RM-07",
+        "RM-08"
+      ],
+      "question": "State the final result of the parallel-axis theorem after integration.",
+      "answer": "After integrating OP² dm and discarding the vanishing first-moment term, one obtains I_O = I_C + M d², where d is the perpendicular distance between the two parallel axes. This is the working form of the theorem used in all practical calculations.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "RM-Q37",
+      "conceptIds": [
+        "RM-01",
+        "RM-07",
+        "RM-08"
+      ],
+      "question": "Summarise the two fundamental theorems of moment of inertia.",
+      "answer": "The parallel-axis theorem relates the MI about any axis to the MI about a parallel axis through the centre of mass: I_O = I_C + M d². The perpendicular-axis theorem applies only to planar bodies and states that the MI about an axis perpendicular to the plane equals the sum of the MIs about two perpendicular axes lying in the plane: I_z = I_x + I_y. Together these theorems allow MI to be calculated for a wide variety of axes once a few standard results are known.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    }
+  ]
+}

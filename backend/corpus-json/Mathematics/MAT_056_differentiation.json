@@ -1,0 +1,462 @@
+{
+  "chapterId": "56",
+  "chapterName": "Differentiation",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "DIF-01",
+      "name": "Derivative of exponential over exponential forms",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "d/dx [(e^{f(x)} ± 1)/(e^{f(x)} ± 1)] yields ±f'(x) over squared denominator."
+    },
+    {
+      "id": "DIF-02",
+      "name": "Inverse trigonometric identities for differentiation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin^{-1}(cos x) = π/2 − x (and analogous pairs for other inverse functions)."
+    },
+    {
+      "id": "DIF-03",
+      "name": "Derivative of (a cos f ± b sin f)/(b cos f ± a sin f)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Result is ±f'(x) according to the sign pattern in numerator and denominator."
+    },
+    {
+      "id": "DIF-04",
+      "name": "Implicit relation x^m y^n = (x+y)^{m+n}",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Differentiation yields dy/dx = y/x."
+    },
+    {
+      "id": "DIF-05",
+      "name": "Logarithmic differentiation of f(x)^{g(x)}",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "d/dx [f^g] = f^g [ (g/f) f' + log f · g' ]."
+    },
+    {
+      "id": "DIF-06",
+      "name": "Second derivative zero for homogeneous quadratic",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "If ax² + 2hxy + by² = 0 then d²y/dx² = 0 and dy/dx = y/x."
+    },
+    {
+      "id": "DIF-07",
+      "name": "Chain rule",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "d/dx [f(g(x))] = f'(g(x)) · g'(x)."
+    },
+    {
+      "id": "DIF-08",
+      "name": "Product and quotient rules",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "(uv)' = u'v + uv'; (u/v)' = (u'v − uv')/v²."
+    },
+    {
+      "id": "DIF-09",
+      "name": "Derivative of inverse trigonometric functions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "d/dx sin^{-1}x = 1/√(1−x²), d/dx tan^{-1}x = 1/(1+x²), etc."
+    },
+    {
+      "id": "DIF-10",
+      "name": "Implicit differentiation",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Differentiate both sides with respect to x treating y as a function of x."
+    },
+    {
+      "id": "DIF-11",
+      "name": "Parametric differentiation",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "dy/dx = (dy/dt)/(dx/dt) when x and y are given in terms of a parameter."
+    },
+    {
+      "id": "DIF-12",
+      "name": "Higher-order derivatives",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Successive differentiation; Leibniz rule for higher derivatives of a product."
+    },
+    {
+      "id": "DIF-13",
+      "name": "Derivative of logarithmic functions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "d/dx log|x| = 1/x; d/dx log f(x) = f'(x)/f(x)."
+    },
+    {
+      "id": "DIF-14",
+      "name": "Derivative of exponential functions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "d/dx e^x = e^x; d/dx a^x = a^x log a."
+    },
+    {
+      "id": "DIF-15",
+      "name": "Common rapid-differentiation shortcuts",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Special forms given in the notes that avoid lengthy algebraic expansion."
+    }
+  ],
+  "qna": [
+    {
+      "id": "DIF-Q01",
+      "conceptIds": ["DIF-01"],
+      "question": "Differentiate (e^{f(x)} + 1)/(e^{f(x)} − 1) with respect to x.",
+      "answer": "The derivative is −2 f'(x) / (e^{f(x)} − 1)². The result follows by the quotient rule or by writing the expression as coth(f(x)/2) after a hyperbolic substitution, but the algebraic route using the quotient rule is direct.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q02",
+      "conceptIds": ["DIF-02"],
+      "question": "Simplify sin^{-1}(cos x) and then differentiate it.",
+      "answer": "sin^{-1}(cos x) = π/2 − x (for x in the appropriate range). Differentiating both sides immediately yields −1. The same pattern holds for the other inverse-trigonometric pairs listed in the notes.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q03",
+      "conceptIds": ["DIF-03"],
+      "question": "State the derivative of (a cos f(x) + b sin f(x))/(b cos f(x) − a sin f(x)).",
+      "answer": "When the signs are opposite in the indicated way the derivative equals f'(x). The result is obtained by the quotient rule after dividing numerator and denominator by cos f(x) or by recognising the expression as a tangent of a sum/difference.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q04",
+      "conceptIds": ["DIF-04"],
+      "question": "If x^m y^n = (x + y)^{m+n}, show that dy/dx = y/x.",
+      "answer": "Take logarithms of both sides or differentiate both sides implicitly. After simplification the relation m/x + (n/y) y' = (m+n)/(x+y) · (1 + y') appears. Solving for y' yields y' = y/x. The same result follows from the homogeneous character of the equation.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q05",
+      "conceptIds": ["DIF-05"],
+      "question": "Write the formula for the derivative of y = f(x)^{g(x)}.",
+      "answer": "dy/dx = f(x)^{g(x)} [ (g(x)/f(x)) f'(x) + log(f(x)) · g'(x) ]. The formula is obtained by logarithmic differentiation: take log of both sides, differentiate, and multiply back by y.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q06",
+      "conceptIds": ["DIF-06"],
+      "question": "If ax² + 2hxy + by² = 0, what can be said about dy/dx and d²y/dx²?",
+      "answer": "Differentiating once yields dy/dx = y/x (provided the expression is not identically zero). Differentiating a second time shows that d²y/dx² = 0. The curve is a pair of straight lines through the origin, so the second derivative vanishes.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q07",
+      "conceptIds": ["DIF-07"],
+      "question": "State the chain rule for the composition of two functions.",
+      "answer": "If y = f(u) and u = g(x), then dy/dx = (dy/du)·(du/dx) = f'(g(x)) · g'(x). The rule extends to any finite number of nested functions by multiplying the successive derivatives.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q08",
+      "conceptIds": ["DIF-08"],
+      "question": "State the product rule and the quotient rule.",
+      "answer": "Product rule: (uv)' = u'v + uv'. Quotient rule: (u/v)' = (u'v − uv')/v² (v ≠ 0). Both follow from the definition of the derivative or from logarithmic differentiation.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q09",
+      "conceptIds": ["DIF-09"],
+      "question": "Write the derivatives of sin^{-1}x, cos^{-1}x and tan^{-1}x.",
+      "answer": "d/dx sin^{-1}x = 1/√(1−x²), d/dx cos^{-1}x = −1/√(1−x²), d/dx tan^{-1}x = 1/(1+x²). The domains are |x| ≤ 1 for the inverse sine and cosine and all real x for the inverse tangent.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q10",
+      "conceptIds": ["DIF-10"],
+      "question": "Outline the method of implicit differentiation.",
+      "answer": "Given an equation F(x,y) = 0 that defines y as a function of x, differentiate both sides with respect to x, treating y as a differentiable function of x. Collect terms involving dy/dx and solve for it. The method works even when an explicit formula for y is unavailable.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q11",
+      "conceptIds": ["DIF-11"],
+      "question": "How is dy/dx computed when x and y are given parametrically?",
+      "answer": "If x = x(t) and y = y(t), then dy/dx = (dy/dt) / (dx/dt), provided dx/dt ≠ 0. Higher derivatives can be obtained by differentiating this quotient again with respect to t and dividing by dx/dt.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q12",
+      "conceptIds": ["DIF-13"],
+      "question": "Differentiate log(sin x) with respect to x.",
+      "answer": "d/dx log(sin x) = (1/sin x) · cos x = cot x. The chain rule is applied to the composition of the logarithm with the sine function. The expression is valid wherever sin x > 0.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q13",
+      "conceptIds": ["DIF-14"],
+      "question": "Differentiate a^x with respect to x.",
+      "answer": "d/dx a^x = a^x log a (natural logarithm). The result follows by writing a^x = e^{x log a} and applying the chain rule, or by logarithmic differentiation.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q14",
+      "conceptIds": ["DIF-05"],
+      "question": "Find dy/dx if y = x^x.",
+      "answer": "Take log: log y = x log x. Differentiate: (1/y) y' = log x + 1. Therefore y' = x^x (log x + 1). The same formula is recovered from the general expression for f^g by setting f = g = x.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q15",
+      "conceptIds": ["DIF-02"],
+      "question": "Differentiate cos^{-1}(sin x).",
+      "answer": "cos^{-1}(sin x) = π/2 − x (in the appropriate range). Differentiating both sides yields −1. Direct differentiation via the chain rule produces the same constant after simplification with a trigonometric identity.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q16",
+      "conceptIds": ["DIF-01"],
+      "question": "Differentiate (e^x − 1)/(e^x + 1).",
+      "answer": "The derivative is 2 e^x / (e^x + 1)². This can be verified by the quotient rule or by recognising the expression as tanh(x/2). The result is always positive, consistent with the function being strictly increasing.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q17",
+      "conceptIds": ["DIF-08"],
+      "question": "Differentiate (x² + 1)/(x + 1) using the quotient rule.",
+      "answer": "(u = x²+1, v = x+1) ⇒ (u'v − uv')/v² = (2x(x+1) − (x²+1)·1)/(x+1)² = (2x² + 2x − x² − 1)/(x+1)² = (x² + 2x − 1)/(x+1)². Algebraic division yields the same derivative after simplification.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q18",
+      "conceptIds": ["DIF-10"],
+      "question": "If x² + y² = a², find dy/dx by implicit differentiation.",
+      "answer": "2x + 2y y' = 0 ⇒ y' = −x/y (y ≠ 0). Geometrically this is the slope of the tangent to the circle; the normal would have slope y/x. At the points where y = 0 the tangent is vertical.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q19",
+      "conceptIds": ["DIF-11"],
+      "question": "If x = at², y = 2at, find dy/dx.",
+      "answer": "dx/dt = 2at, dy/dt = 2a, so dy/dx = (2a)/(2at) = 1/t (t ≠ 0). In terms of x and y one may also write dy/dx = a/y or y/(2x), recovering the slope of the tangent to the parabola.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q20",
+      "conceptIds": ["DIF-09"],
+      "question": "Differentiate tan^{-1}( (1+x)/(1−x) ) with respect to x.",
+      "answer": "Let θ = tan^{-1}((1+x)/(1−x)). Then tan θ = (1+x)/(1−x). Differentiating both sides or using the formula for the derivative of tan^{-1} u yields dθ/dx = 1/(1+x²). The expression is valid for x ≠ 1.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q21",
+      "conceptIds": ["DIF-12"],
+      "question": "What is the Leibniz rule for the nth derivative of a product?",
+      "answer": "(uv)^{(n)} = Σ_{k=0}^n ⁿCₖ u^{(k)} v^{(n−k)}. The formula generalises the product rule to higher orders and is useful when one of the factors has a simple higher derivative (for example a polynomial).",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q22",
+      "conceptIds": ["DIF-03"],
+      "question": "Why do the special trigonometric forms in the notes differentiate so simply?",
+      "answer": "After dividing numerator and denominator by a cosine (or sine) the expression becomes a tangent or cotangent of a linear combination of f(x). The derivative of tan or cot then produces exactly ±f'(x). The algebraic work is thereby reduced to a single differentiation.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q23",
+      "conceptIds": ["DIF-05"],
+      "question": "Differentiate y = (sin x)^{cos x}.",
+      "answer": "log y = cos x · log(sin x). Differentiating: (1/y) y' = −sin x log(sin x) + cos x · cot x. Therefore y' = (sin x)^{cos x} [cos x cot x − sin x log(sin x)]. The formula is the general logarithmic-differentiation rule applied to this pair of functions.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q24",
+      "conceptIds": ["DIF-04"],
+      "question": "If x³ + y³ = 3xy, find dy/dx at the point (1,1) if it lies on the curve.",
+      "answer": "Implicit differentiation: 3x² + 3y² y' = 3y + 3x y' ⇒ y'(y² − x) = y − x² ⇒ y' = (y − x²)/(y² − x). At (1,1) the expression is (1−1)/(1−1) which is indeterminate; the point is singular and the tangent is not uniquely determined by this formula.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q25",
+      "conceptIds": ["DIF-07", "DIF-13"],
+      "question": "Differentiate log(√(1+x²)).",
+      "answer": "log(√(1+x²)) = (1/2) log(1+x²). Derivative = (1/2) · (2x)/(1+x²) = x/(1+x²). The same result is obtained by the chain rule applied directly to the square-root composition.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q26",
+      "conceptIds": ["DIF-15"],
+      "question": "What is the practical advantage of the rapid-differentiation forms given in the notes?",
+      "answer": "They allow the derivative of certain complicated-looking expressions to be written down at once, without expanding or applying the quotient rule in full. In examination conditions this saves time and reduces the chance of algebraic error.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q27",
+      "conceptIds": ["DIF-09"],
+      "question": "Differentiate sin^{-1}(2x√(1−x²)).",
+      "answer": "The argument is sin(2θ) where x = sin θ. The expression simplifies to 2 sin^{-1} x (or π − 2 sin^{-1} x according to the range). Differentiating yields 2/√(1−x²). Direct differentiation via the chain rule produces the same result after trigonometric simplification.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q28",
+      "conceptIds": ["DIF-08"],
+      "question": "Differentiate x e^x using the product rule.",
+      "answer": "(x e^x)' = 1·e^x + x·e^x = e^x (x + 1). The same result follows by writing the function as e^{x + log x} and using the chain rule, but the product rule is the most direct route.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q29",
+      "conceptIds": ["DIF-11"],
+      "question": "If x = cos t, y = sin t, find d²y/dx².",
+      "answer": "dy/dx = (cos t)/(−sin t) = −cot t. Then d²y/dx² = d/dt (−cot t) / (dx/dt) = (csc² t) / (−sin t) = −csc³ t. In terms of x the second derivative is −1/(1−x²)^{3/2} (with appropriate sign).",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q30",
+      "conceptIds": ["DIF-06"],
+      "question": "Why does the relation ax² + 2hxy + by² = 0 imply that the second derivative vanishes?",
+      "answer": "The equation is homogeneous of degree two and represents a pair of straight lines through the origin. Along each line y = mx, so dy/dx is the constant m and therefore d²y/dx² = 0. Algebraic differentiation confirms the same conclusion.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q31",
+      "conceptIds": ["DIF-14"],
+      "question": "Differentiate e^{sin x}.",
+      "answer": "By the chain rule the derivative is e^{sin x} · cos x. The exponential function is its own derivative, so only the inner derivative cos x appears as a factor.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q32",
+      "conceptIds": ["DIF-05"],
+      "question": "A student writes the derivative of x^x as x·x^{x−1}. What is wrong?",
+      "answer": "The power rule applies only when the exponent is a constant. Here both the base and the exponent are variable, so logarithmic differentiation (or the general f^g formula) must be used. The correct derivative is x^x (log x + 1).",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q33",
+      "conceptIds": ["DIF-10"],
+      "question": "If √x + √y = 1, find dy/dx.",
+      "answer": "Differentiate: (1/(2√x)) + (1/(2√y)) y' = 0 ⇒ y' = −√y / √x. The same result follows after solving for y = (1 − √x)² and differentiating explicitly.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q34",
+      "conceptIds": ["DIF-02"],
+      "question": "List three inverse-trigonometric simplifications that reduce differentiation to a constant.",
+      "answer": "sin^{-1}(cos x) = π/2 − x, cos^{-1}(sin x) = π/2 − x, tan^{-1}(cot x) = π/2 − x (in suitable intervals). Each identity converts the derivative into −1, avoiding the more complicated chain-rule expression.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q35",
+      "conceptIds": ["DIF-01"],
+      "question": "Differentiate (e^{2x} − 1)/(e^{2x} + 1).",
+      "answer": "Let f(x) = 2x. The form matches the notes with a minus in the numerator and a plus in the denominator, giving the derivative 4 e^{2x} / (e^{2x} + 1)². Direct quotient-rule calculation confirms the same expression.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DIF-Q36",
+      "conceptIds": ["DIF-08", "DIF-13"],
+      "question": "Differentiate (log x)/x.",
+      "answer": "Quotient rule: ( (1/x)·x − log x · 1 )/x² = (1 − log x)/x². The same result is obtained by writing the function as x^{-1} log x and using the product rule.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DIF-Q37",
+      "conceptIds": ["DIF-15"],
+      "question": "Why should a CET student memorise the rapid forms given in the notes?",
+      "answer": "Many examination questions are deliberately written in exactly those algebraic shapes. Recognising the form allows the derivative to be written in one line, saving several minutes and avoiding intermediate algebraic mistakes that often cost marks.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    }
+  ]
+}

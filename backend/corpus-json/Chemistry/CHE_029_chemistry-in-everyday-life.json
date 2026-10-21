@@ -1,0 +1,468 @@
+{
+  "chapterId": "29",
+  "chapterName": "Chemistry in Everyday Life",
+  "subject": "Chemistry",
+  "concepts": [
+    {
+      "id": "CEIL-01",
+      "name": "Food Quality Parameters",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Flavour, texture, colour and microbial spoilage define food quality."
+    },
+    {
+      "id": "CEIL-02",
+      "name": "Enzymatic Browning",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Polyphenols oxidised by enzymes to quinones then tannins; causes browning of cut fruits."
+    },
+    {
+      "id": "CEIL-03",
+      "name": "Control of Browning",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Reducing agents (ascorbate) or pH change (citric acid, vinegar) slow browning."
+    },
+    {
+      "id": "CEIL-04",
+      "name": "Rancidity of Oils and Fats",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Unpleasant smell and taste caused by hydrolysis and oxidation of fats."
+    },
+    {
+      "id": "CEIL-05",
+      "name": "Hydrolytic Rancidity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Water and enzymes release free fatty acids from triglycerides."
+    },
+    {
+      "id": "CEIL-06",
+      "name": "Oxidative Rancidity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Atmospheric oxygen attacks unsaturated chains forming aldehydes and acids."
+    },
+    {
+      "id": "CEIL-07",
+      "name": "Saturated vs Unsaturated Fats",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [3],
+      "oneLineSummary": "Saturated fats pack tightly (solid); unsaturated have kinks (liquid)."
+    },
+    {
+      "id": "CEIL-08",
+      "name": "Cis and Trans Fats",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [4],
+      "oneLineSummary": "Cis fats do not deposit in vessels; trans fats increase cardiovascular risk."
+    },
+    {
+      "id": "CEIL-09",
+      "name": "LDL and HDL",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [4],
+      "oneLineSummary": "LDL deposits cholesterol (bad); HDL removes cholesterol (good)."
+    },
+    {
+      "id": "CEIL-10",
+      "name": "Omega-3 and Omega-6 Fatty Acids",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [4, 5],
+      "oneLineSummary": "Omega-3 raises HDL; excess omega-6 linked to high blood pressure."
+    },
+    {
+      "id": "CEIL-11",
+      "name": "Antioxidants",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [5],
+      "oneLineSummary": "Substances that slow oxidation by scavenging free radicals; e.g. vitamin E."
+    },
+    {
+      "id": "CEIL-12",
+      "name": "Vitamin E (Tocopherol)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [5],
+      "oneLineSummary": "Phenolic OH group responsible for antioxidant activity; found in oils and nuts."
+    },
+    {
+      "id": "CEIL-13",
+      "name": "Drugs – Classification",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Analgesics, antibiotics, antiseptics, disinfectants, antacids, antihistamines."
+    },
+    {
+      "id": "CEIL-14",
+      "name": "Analgesics",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Pain relievers; narcotic (morphine) and non-narcotic (aspirin, paracetamol)."
+    },
+    {
+      "id": "CEIL-15",
+      "name": "Antibiotics",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Substances produced by microorganisms that kill or inhibit other microorganisms."
+    },
+    {
+      "id": "CEIL-16",
+      "name": "Antiseptics and Disinfectants",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Antiseptics for living tissue; disinfectants for inanimate objects."
+    },
+    {
+      "id": "CEIL-17",
+      "name": "Artificial Sweeteners",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Aspartame, saccharin, sucralose; provide sweetness without calories."
+    },
+    {
+      "id": "CEIL-18",
+      "name": "Food Preservatives",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Sodium benzoate, sorbates, sulphites; prevent microbial growth."
+    }
+  ],
+  "qna": [
+    {
+      "id": "CEIL-Q01",
+      "conceptIds": ["CEIL-01"],
+      "question": "What parameters are used to describe food quality?",
+      "answer": "Food quality is described by parameters such as flavour or smell, texture, colour and microbial spoilage. These attributes determine consumer acceptance and the shelf-life of the product.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CEIL-Q02",
+      "conceptIds": ["CEIL-02"],
+      "question": "Explain the chemistry of enzymatic browning of cut fruits.",
+      "answer": "When fruits are cut, cells are damaged and polyphenols are released. These are oxidised by polyphenol oxidase in the presence of air to form quinones. The quinones polymerise further to give brown-coloured tannins.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CEIL-Q03",
+      "conceptIds": ["CEIL-03"],
+      "question": "How can the browning of cut fruits be prevented?",
+      "answer": "Browning can be slowed by adding reducing agents such as ascorbic acid or sodium ascorbate, which reduce quinones back to polyphenols. Lowering the pH with citric acid or vinegar also inhibits the enzyme responsible for the oxidation.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CEIL-Q04",
+      "conceptIds": ["CEIL-04", "CEIL-05"],
+      "question": "What is rancidity and what causes hydrolytic rancidity?",
+      "answer": "Rancidity is the development of unpleasant smell and taste in oils and fats on storage. Hydrolytic rancidity is caused by the action of water and microbial enzymes that hydrolyse triglycerides, releasing free fatty acids responsible for the off-flavour.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CEIL-Q05",
+      "conceptIds": ["CEIL-06"],
+      "question": "What is oxidative rancidity and which fats are more susceptible?",
+      "answer": "Oxidative rancidity occurs when atmospheric oxygen attacks the double bonds of unsaturated fatty-acid chains, forming aldehydes and carboxylic acids with unpleasant odours. Unsaturated oils are more susceptible than saturated fats.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CEIL-Q06",
+      "conceptIds": ["CEIL-07"],
+      "question": "Why are saturated fats solid and unsaturated fats liquid at room temperature?",
+      "answer": "Saturated fatty-acid chains pack closely, allowing strong van der Waals forces and higher melting points. Unsaturated chains contain cis double bonds that introduce kinks, prevent close packing and lower the melting point, so the fats remain liquid.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [3]
+    },
+    {
+      "id": "CEIL-Q07",
+      "conceptIds": ["CEIL-08"],
+      "question": "How do cis and trans fats differ in their effect on health?",
+      "answer": "Cis unsaturated fats do not deposit easily in blood vessels and reduce the risk of coronary heart disease. Trans fats are difficult to metabolise, tend to deposit in vessel walls and increase the risk of cardiovascular disease.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [4]
+    },
+    {
+      "id": "CEIL-Q08",
+      "conceptIds": ["CEIL-09"],
+      "question": "What are LDL and HDL and why are they called bad and good cholesterol?",
+      "answer": "LDL (low-density lipoprotein) transports cholesterol to the arteries where it can deposit, increasing heart-attack risk; it is called bad cholesterol. HDL (high-density lipoprotein) carries cholesterol away from the arteries to the liver for excretion; it is called good cholesterol.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [4]
+    },
+    {
+      "id": "CEIL-Q09",
+      "conceptIds": ["CEIL-10"],
+      "question": "What are omega-3 fatty acids and what is their health benefit?",
+      "answer": "Omega-3 fatty acids have a double bond between the third and fourth carbon from the omega end. They raise the level of HDL (good cholesterol) and are beneficial for heart health. Linolenic acid is a common example.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [4, 5]
+    },
+    {
+      "id": "CEIL-Q10",
+      "conceptIds": ["CEIL-11", "CEIL-12"],
+      "question": "How do antioxidants protect food from rancidity?",
+      "answer": "Antioxidants react with oxygen-containing free radicals and terminate the chain reaction of lipid oxidation. Vitamin E (tocopherol) is a natural antioxidant whose phenolic hydroxyl group donates a hydrogen atom to free radicals, preventing oxidative rancidity.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [5]
+    },
+    {
+      "id": "CEIL-Q11",
+      "conceptIds": ["CEIL-13", "CEIL-14"],
+      "question": "Classify analgesics and give one example of each class.",
+      "answer": "Analgesics are classified as narcotic (habit-forming) and non-narcotic. Morphine is a narcotic analgesic used for severe pain. Aspirin and paracetamol are non-narcotic analgesics used for mild pain and fever.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CEIL-Q12",
+      "conceptIds": ["CEIL-15"],
+      "question": "What are antibiotics? Give two examples.",
+      "answer": "Antibiotics are chemical substances produced by microorganisms that can kill or inhibit the growth of other microorganisms. Penicillin and streptomycin are well-known examples used to treat bacterial infections.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CEIL-Q13",
+      "conceptIds": ["CEIL-16"],
+      "question": "Distinguish between antiseptics and disinfectants.",
+      "answer": "Antiseptics are applied to living tissues to kill or prevent the growth of microorganisms (e.g. Dettol, iodine). Disinfectants are used on inanimate objects such as floors and instruments (e.g. phenol, chlorine). The same substance may act as either depending on concentration.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CEIL-Q14",
+      "conceptIds": ["CEIL-17"],
+      "question": "Name three artificial sweeteners and state why they are used.",
+      "answer": "Aspartame, saccharin and sucralose are common artificial sweeteners. They provide intense sweetness with negligible or zero calories and are therefore used by diabetics and in low-calorie foods.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CEIL-Q15",
+      "conceptIds": ["CEIL-18"],
+      "question": "What are food preservatives? Give examples.",
+      "answer": "Food preservatives are substances added to food to prevent spoilage by microorganisms. Sodium benzoate, potassium sorbate and sulphites are widely used preservatives that inhibit bacterial and fungal growth.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CEIL-Q16",
+      "conceptIds": ["CEIL-05"],
+      "question": "Which fatty acids are responsible for the rancid smell of butter?",
+      "answer": "The rancid smell of butter is caused by the release of short-chain fatty acids—butanoic, hexanoic and octanoic acids—by hydrolysis of milk-fat triglycerides. These acids have strong, unpleasant odours.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CEIL-Q17",
+      "conceptIds": ["CEIL-07", "CEIL-08"],
+      "question": "Why do vegetable oils remain liquid while animal fats are solid?",
+      "answer": "Vegetable oils are rich in unsaturated fatty acids whose cis double bonds create kinks and prevent close packing. Animal fats contain more saturated fatty acids that pack tightly, giving higher melting points and solid consistency at room temperature.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [3]
+    },
+    {
+      "id": "CEIL-Q18",
+      "conceptIds": ["CEIL-12"],
+      "question": "Why is the phenolic OH group of vitamin E important?",
+      "answer": "The phenolic hydroxyl group can donate a hydrogen atom to free radicals, converting them into stable non-radical species. This terminates the oxidative chain reaction and is the structural feature responsible for the antioxidant activity of vitamin E.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [5]
+    },
+    {
+      "id": "CEIL-Q19",
+      "conceptIds": ["CEIL-02", "CEIL-03"],
+      "question": "Why does lemon juice prevent browning of apple slices?",
+      "answer": "Lemon juice contains citric acid which lowers the pH of the cut surface. The lower pH inhibits the polyphenol-oxidase enzyme that catalyses the oxidation of polyphenols to brown pigments. Ascorbic acid present in lemon also acts as a reducing agent.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1, 2]
+    },
+    {
+      "id": "CEIL-Q20",
+      "conceptIds": ["CEIL-10"],
+      "question": "What health risk is associated with excess omega-6 fatty acids?",
+      "answer": "Excess intake of omega-6 fatty acids is associated with an increased risk of high blood pressure. A balanced ratio of omega-3 to omega-6 is therefore recommended for cardiovascular health.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [5]
+    },
+    {
+      "id": "CEIL-Q21",
+      "conceptIds": ["CEIL-04", "CEIL-06"],
+      "question": "Why does high temperature accelerate rancidity of oils?",
+      "answer": "High temperature increases the rate of both hydrolytic and oxidative reactions. The oxidation of unsaturated chains by atmospheric oxygen is particularly accelerated, leading to faster formation of rancid-smelling aldehydes and acids.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CEIL-Q22",
+      "conceptIds": ["CEIL-09"],
+      "question": "How does high LDL increase the risk of heart attack?",
+      "answer": "High levels of LDL lead to deposition of cholesterol in the walls of arteries, forming atherosclerotic plaques. The plaques narrow the arteries and can rupture, triggering clot formation that blocks blood flow and causes a heart attack.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [4]
+    },
+    {
+      "id": "CEIL-Q23",
+      "conceptIds": ["CEIL-14"],
+      "question": "Why is aspirin called a non-narcotic analgesic?",
+      "answer": "Aspirin relieves mild pain and reduces fever without causing addiction or stupor. Narcotic analgesics such as morphine act on the central nervous system and can produce dependence; aspirin does not, hence it is classified as non-narcotic.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CEIL-Q24",
+      "conceptIds": ["CEIL-16"],
+      "question": "Can the same substance act as both antiseptic and disinfectant?",
+      "answer": "Yes. Phenol at low concentration (0.2 %) is used as an antiseptic on skin, while at higher concentration (1 %) it is used as a disinfectant for floors and instruments. The distinction depends on the concentration and the intended application.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CEIL-Q25",
+      "conceptIds": ["CEIL-11"],
+      "question": "Name two natural sources of antioxidants used in food.",
+      "answer": "Vitamin E (tocopherol) is abundant in wheat-germ oil, nuts, seeds and green leafy vegetables. Vitamin C (ascorbic acid) is found in citrus fruits and is also used as a food additive to prevent oxidation.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [5]
+    },
+    {
+      "id": "CEIL-Q26",
+      "conceptIds": ["CEIL-01", "CEIL-04"],
+      "question": "How do enzymes contribute to both beneficial and undesirable changes in food?",
+      "answer": "Enzymes can cause desirable changes such as the conversion of milk into curd by lactic-acid bacteria. The same enzymatic activity can cause undesirable changes such as browning of fruits or rancidity of fats, necessitating preservation methods.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1, 2]
+    },
+    {
+      "id": "CEIL-Q27",
+      "conceptIds": ["CEIL-08"],
+      "question": "Why are trans fats considered more harmful than saturated fats?",
+      "answer": "Trans fats not only raise LDL (bad cholesterol) but also lower HDL (good cholesterol). Saturated fats raise LDL but do not lower HDL to the same extent. Consequently trans fats pose a greater cardiovascular risk.",
+      "type": "comparison",
+      "difficulty": "hard",
+      "sourcePages": [4]
+    },
+    {
+      "id": "CEIL-Q28",
+      "conceptIds": ["CEIL-15"],
+      "question": "What is the difference between a broad-spectrum and a narrow-spectrum antibiotic?",
+      "answer": "A broad-spectrum antibiotic is effective against a wide range of bacteria (both Gram-positive and Gram-negative). A narrow-spectrum antibiotic is effective against only a limited group of bacteria. The choice depends on the identified pathogen.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CEIL-Q29",
+      "conceptIds": ["CEIL-17"],
+      "question": "Why is aspartame not used in cooking?",
+      "answer": "Aspartame is unstable at high temperature and decomposes on heating, losing its sweetness. It is therefore suitable only for cold foods and beverages, not for baking or cooking.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CEIL-Q30",
+      "conceptIds": ["CEIL-05"],
+      "question": "Why does coconut oil develop a soapy flavour on storage?",
+      "answer": "Coconut oil is rich in lauric acid. Hydrolysis of its triglycerides releases free lauric acid, which has a characteristic soapy taste and odour. This is an example of hydrolytic rancidity.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CEIL-Q31",
+      "conceptIds": ["CEIL-10"],
+      "question": "Give the systematic name of linolenic acid and indicate why it is an omega-3 acid.",
+      "answer": "Linolenic acid is 9,12,15-octadecatrienoic acid. Counting from the omega (methyl) end, the first double bond lies between carbons 3 and 4, making it an omega-3 fatty acid.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": [5]
+    },
+    {
+      "id": "CEIL-Q32",
+      "conceptIds": ["CEIL-03", "CEIL-11"],
+      "question": "How does ascorbic acid prevent both browning and oxidative rancidity?",
+      "answer": "Ascorbic acid is a reducing agent. In cut fruits it reduces quinones back to polyphenols, preventing browning. In oils it scavenges free radicals, interrupting the chain reaction of lipid oxidation and thereby preventing rancidity.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [2, 5]
+    },
+    {
+      "id": "CEIL-Q33",
+      "conceptIds": ["CEIL-13"],
+      "question": "Name the class of drugs used to neutralise excess stomach acid.",
+      "answer": "Antacids are the class of drugs used to neutralise excess hydrochloric acid in the stomach. Common examples include sodium bicarbonate, magnesium hydroxide and aluminium hydroxide. They provide quick relief from hyperacidity.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CEIL-Q34",
+      "conceptIds": ["CEIL-16"],
+      "question": "Why is 0.2 % phenol used as an antiseptic while 1 % phenol is a disinfectant?",
+      "answer": "At low concentration (0.2 %) phenol kills microorganisms on living tissue without causing significant damage to the tissue itself. At higher concentration (1 %) it is too corrosive for living tissue but effective for sterilising inanimate surfaces.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CEIL-Q35",
+      "conceptIds": ["CEIL-01", "CEIL-18"],
+      "question": "How do food preservatives help maintain food quality?",
+      "answer": "Food preservatives inhibit the growth of bacteria, yeasts and moulds that cause spoilage. By preventing microbial activity they preserve flavour, texture and colour and extend the shelf-life of the food product.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    }
+  ]
+}

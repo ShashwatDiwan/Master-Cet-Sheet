@@ -1,0 +1,478 @@
+{
+  "chapterId": "45",
+  "chapterName": "Complex Numbers",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "CN-01",
+      "name": "Standard form of complex number",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "z = x + iy with real part x and imaginary part y."
+    },
+    {
+      "id": "CN-02",
+      "name": "Powers of i",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "i² = −1, i³ = −i, i⁴ = 1; higher powers reduce modulo 4."
+    },
+    {
+      "id": "CN-03",
+      "name": "Complex conjugate",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Conjugate of a+ib is a−ib; reflection across real axis."
+    },
+    {
+      "id": "CN-04",
+      "name": "Properties of conjugate",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "z + z̄ = 2Re(z), z·z̄ = |z|², conjugate of sum/product is sum/product of conjugates."
+    },
+    {
+      "id": "CN-05",
+      "name": "Modulus of a complex number",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "|z| = √(a² + b²); distance from origin in Argand plane."
+    },
+    {
+      "id": "CN-06",
+      "name": "Properties of modulus",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "|z1 z2| = |z1||z2|, |z1/z2| = |z1|/|z2|, |zⁿ| = |z|ⁿ."
+    },
+    {
+      "id": "CN-07",
+      "name": "Argument of a complex number",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "arg(z) = tan⁻¹(b/a) with correct quadrant adjustment."
+    },
+    {
+      "id": "CN-08",
+      "name": "Polar form",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "z = r(cos θ + i sin θ) where r = |z| and θ = arg(z)."
+    },
+    {
+      "id": "CN-09",
+      "name": "Argument in different quadrants",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Principal value adjusted by π or −π according to the quadrant of the point."
+    },
+    {
+      "id": "CN-10",
+      "name": "Expansion of |z1 ± z2|²",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "|z1 + z2|² = |z1|² + |z2|² + 2 Re(z1 z̄2)."
+    },
+    {
+      "id": "CN-11",
+      "name": "Triangle inequality",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "|z1 + z2| ≤ |z1| + |z2|; equality when arguments are equal."
+    },
+    {
+      "id": "CN-12",
+      "name": "Argument of product and quotient",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "arg(z1 z2) = arg(z1) + arg(z2), arg(z1/z2) = arg(z1) − arg(z2) (mod 2π)."
+    },
+    {
+      "id": "CN-13",
+      "name": "Reciprocal of a complex number",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "1/z = z̄ / |z|² for z ≠ 0."
+    },
+    {
+      "id": "CN-14",
+      "name": "Geometric meaning of multiplication by i",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Multiplication by i rotates the Argand plane by 90° counterclockwise."
+    },
+    {
+      "id": "CN-15",
+      "name": "Principal argument convention",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Principal value Arg(z) usually taken in (−π, π]."
+    },
+    {
+      "id": "CN-16",
+      "name": "Unit circle and conjugate",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "If |z| = 1 then z̄ = 1/z."
+    },
+    {
+      "id": "CN-17",
+      "name": "Real and imaginary parts from z and conjugate",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Re(z) = (z + z̄)/2, Im(z) = (z − z̄)/(2i)."
+    }
+  ],
+  "qna": [
+    {
+      "id": "CN-Q01",
+      "conceptIds": ["CN-01"],
+      "question": "How is a complex number represented in standard form?",
+      "answer": "A complex number is written z = x + i y where x = Re(z) and y = Im(z). The imaginary unit satisfies i² = −1. This rectangular form is the most common algebraic representation.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q02",
+      "conceptIds": ["CN-02"],
+      "question": "What are the values of i², i³ and i⁴?",
+      "answer": "i² = −1, i³ = −i and i⁴ = 1. Higher powers are reduced by writing the exponent as 4k + r and using i^r. The powers of i therefore cycle every four steps: 1, i, −1, −i.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q03",
+      "conceptIds": ["CN-03"],
+      "question": "Define the conjugate of the complex number a + i b.",
+      "answer": "The conjugate is a − i b. Geometrically it is the reflection of the point (a,b) across the real axis. The product of a number and its conjugate is always a non-negative real number equal to the square of the modulus.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q04",
+      "conceptIds": ["CN-04"],
+      "question": "State three fundamental properties of the complex conjugate.",
+      "answer": "z + z̄ = 2 Re(z), z · z̄ = |z|², and the conjugate of a sum (or product) is the sum (or product) of the conjugates. These identities are used constantly when rationalising denominators or proving modulus formulae.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q05",
+      "conceptIds": ["CN-05"],
+      "question": "Define the modulus of a complex number a + i b.",
+      "answer": "The modulus is |z| = √(a² + b²). It is the Euclidean distance from the origin to the point representing z in the Argand plane. The modulus is always a non-negative real number.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q06",
+      "conceptIds": ["CN-06"],
+      "question": "State the product and quotient rules for the modulus.",
+      "answer": "|z1 z2| = |z1| |z2| and |z1 / z2| = |z1| / |z2| (z2 ≠ 0). Both follow from the definition via the conjugate. They allow the modulus of a complicated expression to be computed from the moduli of its factors.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q07",
+      "conceptIds": ["CN-07", "CN-09"],
+      "question": "How is the argument of a complex number determined, and why must the quadrant be considered?",
+      "answer": "arg(z) = tan⁻¹(b/a) but the calculator value must be adjusted according to the signs of a and b. In the second quadrant one adds π, in the third one subtracts π (or adds −π), etc. Failure to adjust produces an incorrect principal argument.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q08",
+      "conceptIds": ["CN-08"],
+      "question": "Write the polar form of a non-zero complex number.",
+      "answer": "z = r (cos θ + i sin θ) where r = |z| and θ = arg(z). Equivalently z = r e^{iθ}. The polar form separates magnitude from direction and is the basis of De Moivre’s theorem.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q09",
+      "conceptIds": ["CN-10"],
+      "question": "Expand |z1 + z2|² in terms of the individual moduli and a real-part term.",
+      "answer": "|z1 + z2|² = |z1|² + |z2|² + 2 Re(z1 z̄2). The analogous formula for |z1 − z2|² has a minus sign in front of the real-part term. These identities are the complex versions of the law of cosines.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q10",
+      "conceptIds": ["CN-11"],
+      "question": "State the triangle inequality for complex numbers and the condition for equality.",
+      "answer": "|z1 + z2| ≤ |z1| + |z2|. Equality holds if and only if one number is a non-negative real multiple of the other (i.e., they have the same argument). The inequality follows geometrically from the parallelogram law of addition.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CN-Q11",
+      "conceptIds": ["CN-12"],
+      "question": "What is the argument of a product of two complex numbers?",
+      "answer": "arg(z1 z2) = arg(z1) + arg(z2) (modulo 2π). The corresponding rule for a quotient is arg(z1/z2) = arg(z1) − arg(z2). These additive properties of argument are the counterpart of the multiplicative properties of modulus.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CN-Q12",
+      "conceptIds": ["CN-13"],
+      "question": "Express the reciprocal of a non-zero complex number using its conjugate.",
+      "answer": "1/z = z̄ / |z|². Multiplying numerator and denominator by the conjugate rationalises the expression. The reciprocal therefore has modulus 1/|z| and argument −arg(z).",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CN-Q13",
+      "conceptIds": ["CN-14"],
+      "question": "What is the geometric effect of multiplying a complex number by i?",
+      "answer": "Multiplication by i rotates the point representing the number by 90° counterclockwise about the origin. Consequently the ray from the origin to the new point is obtained by rotating the original ray through a right angle. Repeated multiplication generates the four cardinal directions.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CN-Q14",
+      "conceptIds": ["CN-15"],
+      "question": "What is the usual range of the principal argument?",
+      "answer": "The principal value Arg(z) is conventionally taken in the interval (−π, π]. Some texts use [0, 2π). The choice must be stated because the multi-valued argument differs by integer multiples of 2π.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CN-Q15",
+      "conceptIds": ["CN-16"],
+      "question": "If a complex number lies on the unit circle, what is the relation between the number and its conjugate?",
+      "answer": "If |z| = 1 then z · z̄ = 1, so z̄ = 1/z. Points on the unit circle therefore satisfy a particularly simple reciprocal relation with their conjugates.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CN-Q16",
+      "conceptIds": ["CN-17"],
+      "question": "Express the real and imaginary parts of z in terms of z and its conjugate.",
+      "answer": "Re(z) = (z + z̄)/2 and Im(z) = (z − z̄)/(2i). These formulae recover the rectangular components from the complex number and its conjugate and are frequently used in proofs.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CN-Q17",
+      "conceptIds": ["CN-02"],
+      "question": "Simplify i^{35}.",
+      "answer": "35 = 4·8 + 3, so i^{35} = (i⁴)^8 · i³ = 1^8 · (−i) = −i. The reduction uses the cyclic nature of the powers of i.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q18",
+      "conceptIds": ["CN-05", "CN-06"],
+      "question": "Find | (3 + 4i)(1 − 2i) | without expanding the product.",
+      "answer": "By the product rule |3+4i| · |1−2i| = 5 · √5 = 5√5. Direct expansion yields 11 − 2i whose modulus is also √(121+4) = √125 = 5√5, confirming the rule.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q19",
+      "conceptIds": ["CN-07", "CN-09"],
+      "question": "Find the principal argument of −1 + i.",
+      "answer": "The point (−1,1) lies in the second quadrant. tan⁻¹(1/1) = π/4, so the principal argument is π − π/4 = 3π/4. Writing tan⁻¹(−1) without quadrant correction would give the wrong value −π/4.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q20",
+      "conceptIds": ["CN-08"],
+      "question": "Write 1 + i in polar form.",
+      "answer": "Modulus = √2, argument = π/4. Therefore 1 + i = √2 (cos(π/4) + i sin(π/4)). The polar form makes subsequent multiplication or root extraction straightforward.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q21",
+      "conceptIds": ["CN-04"],
+      "question": "Prove that z · z̄ is always real and non-negative.",
+      "answer": "Let z = a + ib. Then z · z̄ = (a+ib)(a−ib) = a² + b² which is a sum of two real squares and therefore real and ≥ 0. Equality holds only when a = b = 0, i.e., when z = 0.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q22",
+      "conceptIds": ["CN-11"],
+      "question": "Show that |z1 + z2| = |z1| + |z2| if and only if one is a non-negative real multiple of the other.",
+      "answer": "Geometrically the triangle inequality becomes equality precisely when the two vectors are collinear and point in the same direction. Algebraically this means arg(z1) = arg(z2) (or one of them is zero), which is equivalent to z2 = k z1 for some k ≥ 0.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CN-Q23",
+      "conceptIds": ["CN-03", "CN-13"],
+      "question": "Find the reciprocal of 3 − 4i in the form a + bi.",
+      "answer": "1/(3−4i) = (3+4i)/(9+16) = (3+4i)/25 = 3/25 + (4/25)i. The method multiplies numerator and denominator by the conjugate of the denominator.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CN-Q24",
+      "conceptIds": ["CN-14"],
+      "question": "Starting from the point 1, describe the successive points obtained by repeated multiplication by i.",
+      "answer": "1 → i → −1 → −i → 1. Each multiplication rotates the previous point by 90° counterclockwise about the origin, producing the four points that form a square on the unit circle.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CN-Q25",
+      "conceptIds": ["CN-01", "CN-05"],
+      "question": "A student claims that the modulus of a purely imaginary number is zero. Correct the mistake.",
+      "answer": "The modulus of bi (b real) is |b|, which is zero only when b = 0. A non-zero purely imaginary number still has positive modulus equal to the absolute value of its imaginary coefficient. The student confused the imaginary part with the modulus.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q26",
+      "conceptIds": ["CN-09"],
+      "question": "Why do calculators often give the wrong argument for points in the second or third quadrant?",
+      "answer": "Most calculators return the principal value of tan⁻¹ in (−π/2, π/2). For a point with negative real part this raw value is incorrect; an adjustment of ±π is required. Students must therefore inspect the signs of the real and imaginary parts and correct the calculator output.",
+      "type": "cet_tip",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q27",
+      "conceptIds": ["CN-06"],
+      "question": "Prove the product rule for moduli using conjugates.",
+      "answer": "|z1 z2|² = (z1 z2)(z̄1 z̄2) = (z1 z̄1)(z2 z̄2) = |z1|² |z2|². Taking the non-negative square root of both sides yields |z1 z2| = |z1| |z2|. The proof relies only on the definition of modulus via the conjugate.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q28",
+      "conceptIds": ["CN-08", "CN-12"],
+      "question": "Using polar form, find the product (1+i)(1−i).",
+      "answer": "1+i = √2 e^{iπ/4}, 1−i = √2 e^{−iπ/4}. Their product is 2 e^{i0} = 2, which is real. Direct multiplication also gives 1 − (i)² = 2, confirming the result.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q29",
+      "conceptIds": ["CN-04"],
+      "question": "Show that the conjugate of a quotient is the quotient of the conjugates.",
+      "answer": "(z1/z2)̄ = (z1 · 1/z2)̄ = z̄1 · (1/z2)̄. But 1/z2 = z̄2 / |z2|² so its conjugate is z2 / |z2|² = 1/z̄2. Therefore the whole expression equals z̄1 / z̄2.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q30",
+      "conceptIds": ["CN-05"],
+      "question": "Why is the modulus of a complex number never negative?",
+      "answer": "The modulus is defined as the principal (non-negative) square root of a sum of squares. A sum of squares is ≥ 0 and the principal square root is chosen ≥ 0. Consequently |z| ≥ 0 for every complex z, with equality only at the origin.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q31",
+      "conceptIds": ["CN-08"],
+      "question": "Convert the polar form 2 (cos(2π/3) + i sin(2π/3)) back to rectangular form.",
+      "answer": "cos(2π/3) = −1/2, sin(2π/3) = √3/2. Therefore the number is 2(−1/2 + i √3/2) = −1 + i√3. The conversion simply multiplies the modulus by the cosine and sine of the argument.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q32",
+      "conceptIds": ["CN-10"],
+      "question": "Expand |z1 − z2|² and interpret the result geometrically.",
+      "answer": "|z1 − z2|² = |z1|² + |z2|² − 2 Re(z1 z̄2). Geometrically this is the square of the distance between the points representing z1 and z2 in the Argand plane. The formula is the complex analogue of the law of cosines.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q33",
+      "conceptIds": ["CN-01", "CN-03"],
+      "question": "If z + z̄ = 0, what can be said about z?",
+      "answer": "z + z̄ = 2 Re(z) = 0 implies that the real part is zero, so z is purely imaginary. Conversely every purely imaginary number satisfies the relation. The condition characterises the imaginary axis in the Argand plane.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q34",
+      "conceptIds": ["CN-06"],
+      "question": "Show that |zⁿ| = |z|ⁿ for any positive integer n.",
+      "answer": "The claim follows by induction from the product rule. The base case n = 1 is trivial. Assuming it for n = k, the product rule gives |z^{k+1}| = |z^k · z| = |z^k| |z| = |z|^k |z| = |z|^{k+1}.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q35",
+      "conceptIds": ["CN-15", "CN-09"],
+      "question": "A student obtains arg(−1 − i) = −π/4 from a calculator. Correct the value and explain the error.",
+      "answer": "The point (−1,−1) lies in the third quadrant. The principal argument is −3π/4 (or 5π/4 if the range [0,2π) is used). The calculator returned the value for the first-quadrant point (1,1); the student failed to adjust for the third quadrant.",
+      "type": "cet_tip",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q36",
+      "conceptIds": ["CN-08", "CN-12"],
+      "question": "Using polar forms, compute (1+i)^4.",
+      "answer": "1+i = √2 e^{iπ/4}, so (1+i)^4 = (√2)^4 e^{iπ} = 4 (cos π + i sin π) = 4(−1) = −4. Direct binomial expansion also yields −4, confirming the polar calculation.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CN-Q37",
+      "conceptIds": ["CN-04", "CN-05"],
+      "question": "Why is the identity z · z̄ = |z|² useful when rationalising a complex denominator?",
+      "answer": "Multiplying the numerator and denominator by the conjugate of the denominator produces a real denominator equal to the square of the modulus. The resulting expression is then easy to write in the standard form a + bi. Without the identity the division would leave a complex denominator.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    }
+  ]
+}

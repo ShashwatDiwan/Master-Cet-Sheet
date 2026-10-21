@@ -1,0 +1,468 @@
+{
+  "chapterId": "23",
+  "chapterName": "S-Block Elements",
+  "subject": "Chemistry",
+  "concepts": [
+    {
+      "id": "SB-01",
+      "name": "General Electronic Configuration",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Alkali metals ns¹; alkaline earth metals ns²."
+    },
+    {
+      "id": "SB-02",
+      "name": "Atomic and Ionic Size Trends",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Size increases down the group; decreases across period."
+    },
+    {
+      "id": "SB-03",
+      "name": "Ionization Enthalpy",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Decreases down the group; low values make them highly reactive."
+    },
+    {
+      "id": "SB-04",
+      "name": "Flame Colours",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Li crimson, Na yellow, K violet, Ca brick red, Sr crimson, Ba apple green."
+    },
+    {
+      "id": "SB-05",
+      "name": "Reactivity with Water",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Alkali metals react vigorously; alkaline earth less vigorously."
+    },
+    {
+      "id": "SB-06",
+      "name": "Oxides and Hydroxides",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Basic character increases down the group."
+    },
+    {
+      "id": "SB-07",
+      "name": "Solubility of Compounds",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Solubility of hydroxides increases down group; sulphates decrease."
+    },
+    {
+      "id": "SB-08",
+      "name": "Anomalous Behaviour of Lithium",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Li shows diagonal relationship with Mg due to small size and high polarising power."
+    },
+    {
+      "id": "SB-09",
+      "name": "Diagonal Relationship",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Li-Mg and Be-Al show similar properties."
+    },
+    {
+      "id": "SB-10",
+      "name": "Biological Importance of Na and K",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Na⁺ and K⁺ maintain membrane potential and nerve impulse transmission."
+    },
+    {
+      "id": "SB-11",
+      "name": "Biological Importance of Mg and Ca",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Mg in chlorophyll; Ca in bones, teeth and muscle contraction."
+    },
+    {
+      "id": "SB-12",
+      "name": "Preparation of Sodium Carbonate",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Solvay process for Na₂CO₃."
+    },
+    {
+      "id": "SB-13",
+      "name": "Preparation of Sodium Hydroxide",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Castner-Kellner or Nelson cell process."
+    },
+    {
+      "id": "SB-14",
+      "name": "Hydrides of s-block",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Ionic hydrides; reducing agents; react with water to liberate H₂."
+    },
+    {
+      "id": "SB-15",
+      "name": "Complex Formation",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Be and Mg form complexes more readily than heavier congeners."
+    },
+    {
+      "id": "SB-16",
+      "name": "Reducing Nature",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Strong reducing agents; reducing power increases down the group."
+    },
+    {
+      "id": "SB-17",
+      "name": "Carbonates and Bicarbonates",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Alkali metal carbonates stable; alkaline earth carbonates decompose on heating."
+    },
+    {
+      "id": "SB-18",
+      "name": "Uses of s-block Compounds",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "NaOH in soap, paper; Na₂CO₃ in glass; CaO in cement; Mg in alloys."
+    }
+  ],
+  "qna": [
+    {
+      "id": "SB-Q01",
+      "conceptIds": ["SB-01"],
+      "question": "What is the general electronic configuration of alkali and alkaline earth metals?",
+      "answer": "Alkali metals have the general electronic configuration ns¹. Alkaline earth metals have the general electronic configuration ns². These configurations explain their strong tendency to form +1 and +2 ions respectively.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q02",
+      "conceptIds": ["SB-02"],
+      "question": "How does atomic size vary in the s-block?",
+      "answer": "Atomic and ionic sizes increase down the group due to addition of new shells. Across a period size decreases because of increasing nuclear charge. Alkali metals are larger than the corresponding alkaline earth metals.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q03",
+      "conceptIds": ["SB-03"],
+      "question": "Why do alkali metals have low ionization enthalpies?",
+      "answer": "Alkali metals have large atomic size and the single valence electron is weakly held by the nucleus. Consequently ionization enthalpy is low and decreases further down the group. This accounts for their high chemical reactivity.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q04",
+      "conceptIds": ["SB-04"],
+      "question": "List the characteristic flame colours of s-block metals.",
+      "answer": "Lithium gives a crimson red flame, sodium a persistent golden yellow, potassium a violet (lilac) flame, calcium brick red, strontium crimson and barium apple green. These colours are used in qualitative analysis and fireworks.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q05",
+      "conceptIds": ["SB-05"],
+      "question": "Compare the reactivity of alkali and alkaline earth metals with water.",
+      "answer": "Alkali metals react vigorously with water, liberating hydrogen and forming strong alkalis. Alkaline earth metals react less vigorously; Be and Mg react only with steam while Ca, Sr and Ba react with cold water. Reactivity increases down both groups.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q06",
+      "conceptIds": ["SB-06"],
+      "question": "How does the basic character of oxides and hydroxides change down the group?",
+      "answer": "The basic character of oxides and hydroxides increases down the group. This is because the ionic character increases with increasing size of the cation, making the compounds stronger bases. Francium and radium hydroxides are the strongest bases in their respective groups.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q07",
+      "conceptIds": ["SB-08", "SB-09"],
+      "question": "Why does lithium show anomalous behaviour and a diagonal relationship with magnesium?",
+      "answer": "Lithium has unusually small size and high polarising power. These properties make it resemble magnesium more than the other alkali metals. The similarity is called the diagonal relationship and is also seen between Be and Al.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q08",
+      "conceptIds": ["SB-10"],
+      "question": "What is the biological importance of sodium and potassium?",
+      "answer": "Sodium and potassium ions maintain the osmotic balance and the electrical potential across cell membranes. They are essential for nerve impulse transmission and muscle contraction. Their concentration gradient is maintained by the Na⁺/K⁺ ATPase pump.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q09",
+      "conceptIds": ["SB-11"],
+      "question": "State the biological roles of magnesium and calcium.",
+      "answer": "Magnesium is the central atom in chlorophyll and is required for many enzyme systems. Calcium is a major constituent of bones and teeth and is essential for blood clotting, muscle contraction and nerve function.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q10",
+      "conceptIds": ["SB-12"],
+      "question": "Describe the Solvay process for the manufacture of sodium carbonate.",
+      "answer": "In the Solvay process ammonia and carbon dioxide are passed into a concentrated solution of sodium chloride to form sodium bicarbonate, which is filtered and heated to give sodium carbonate. The ammonia is recovered and recycled, making the process economical.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q11",
+      "conceptIds": ["SB-13"],
+      "question": "How is sodium hydroxide manufactured industrially?",
+      "answer": "Sodium hydroxide is manufactured by the electrolysis of brine in a Castner-Kellner or Nelson cell. Chlorine is liberated at the anode and hydrogen at the cathode, while sodium hydroxide accumulates in the electrolyte.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q12",
+      "conceptIds": ["SB-14"],
+      "question": "What are the characteristic properties of s-block hydrides?",
+      "answer": "s-Block hydrides are ionic (saline) hydrides. They are strong reducing agents and react vigorously with water to liberate hydrogen gas. Lithium hydride is used as a source of hydrogen and as a reducing agent in organic synthesis.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q13",
+      "conceptIds": ["SB-07"],
+      "question": "How does the solubility of alkaline earth metal sulphates change down the group?",
+      "answer": "The solubility of alkaline earth metal sulphates decreases down the group. BeSO₄ and MgSO₄ are highly soluble, CaSO₄ is sparingly soluble, while SrSO₄ and BaSO₄ are almost insoluble. This trend is used in qualitative analysis.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q14",
+      "conceptIds": ["SB-16"],
+      "question": "Why are alkali metals strong reducing agents?",
+      "answer": "Alkali metals have low ionization enthalpies and large negative electrode potentials. They readily lose their valence electron and therefore act as strong reducing agents. Reducing power increases down the group.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q15",
+      "conceptIds": ["SB-17"],
+      "question": "Compare the thermal stability of alkali and alkaline earth metal carbonates.",
+      "answer": "Alkali metal carbonates are thermally stable and do not decompose easily on heating. Alkaline earth metal carbonates decompose on heating to give the corresponding oxide and carbon dioxide. Stability increases down the alkaline earth group.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q16",
+      "conceptIds": ["SB-18"],
+      "question": "List important uses of sodium hydroxide and sodium carbonate.",
+      "answer": "Sodium hydroxide is used in the manufacture of soap, paper, artificial silk and for purifying bauxite. Sodium carbonate is used in the manufacture of glass, soap, borax and as a water softener (washing soda).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q17",
+      "conceptIds": ["SB-04", "SB-05"],
+      "question": "Why are flame tests useful for identifying alkali and alkaline earth metals?",
+      "answer": "When these metals or their salts are introduced into a flame, the valence electrons are excited and then return to the ground state, emitting light of characteristic wavelength. The distinct colours allow rapid qualitative identification of the metal ions.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q18",
+      "conceptIds": ["SB-09"],
+      "question": "What is meant by diagonal relationship? Give examples from s-block.",
+      "answer": "Diagonal relationship refers to the similarity in properties between elements of the second period and the elements of the third period lying diagonally below them. In the s-block, lithium resembles magnesium and beryllium resembles aluminium.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q19",
+      "conceptIds": ["SB-01", "SB-03"],
+      "question": "Why are alkaline earth metals less reactive than alkali metals?",
+      "answer": "Alkaline earth metals have higher ionization enthalpies and smaller atomic sizes than the corresponding alkali metals. They also have a higher effective nuclear charge. Consequently they lose electrons less readily and are less reactive.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q20",
+      "conceptIds": ["SB-06", "SB-07"],
+      "question": "Why does the solubility of alkaline earth metal hydroxides increase down the group?",
+      "answer": "As the cation size increases down the group, the lattice energy of the hydroxide decreases more rapidly than the hydration energy. The net result is an increase in solubility from Be(OH)₂ (insoluble) to Ba(OH)₂ (soluble).",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q21",
+      "conceptIds": ["SB-15"],
+      "question": "Why do beryllium and magnesium form complexes more readily than the heavier alkaline earth metals?",
+      "answer": "Be²⁺ and Mg²⁺ have high charge density because of their small size. High charge density favours the formation of coordinate bonds with ligands, leading to stable complexes. Larger cations of Ca, Sr and Ba have lower charge density and form fewer complexes.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q22",
+      "conceptIds": ["SB-14"],
+      "question": "Write the reaction of sodium hydride with water.",
+      "answer": "Sodium hydride reacts vigorously with water: NaH + H₂O → NaOH + H₂. The reaction liberates hydrogen gas and forms sodium hydroxide. This illustrates the ionic nature and strong reducing character of saline hydrides.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q23",
+      "conceptIds": ["SB-12", "SB-13"],
+      "question": "Why is the Solvay process preferred over the older Leblanc process?",
+      "answer": "The Solvay process uses cheaper raw materials (NaCl, NH₃, CO₂), recovers and recycles ammonia, and produces fewer waste products. It is therefore more economical and environmentally cleaner than the Leblanc process.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q24",
+      "conceptIds": ["SB-11"],
+      "question": "Why is calcium important in the human body?",
+      "answer": "Calcium is the principal mineral component of bones and teeth. It is also required for blood clotting, muscle contraction, nerve impulse transmission and as a second messenger in cellular signalling. Deficiency leads to osteoporosis and tetany.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q25",
+      "conceptIds": ["SB-02", "SB-03"],
+      "question": "Explain the trend in ionization enthalpy down the alkali metal group.",
+      "answer": "Ionization enthalpy decreases steadily from lithium to caesium. The increase in atomic size and the shielding effect of inner electrons outweigh the increase in nuclear charge, making the valence electron easier to remove.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q26",
+      "conceptIds": ["SB-05"],
+      "question": "Why does beryllium not react with water even on heating?",
+      "answer": "Beryllium has a high ionization enthalpy and a strong tendency to form a protective oxide layer. These factors make it resistant to attack by water, even at elevated temperatures. Magnesium reacts only with steam.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q27",
+      "conceptIds": ["SB-18"],
+      "question": "What are the major industrial uses of calcium oxide?",
+      "answer": "Calcium oxide (quicklime) is used in the manufacture of cement, glass and calcium carbide. It is also used for drying gases, in metallurgy for removing impurities and in the preparation of bleaching powder.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q28",
+      "conceptIds": ["SB-08"],
+      "question": "List three properties in which lithium differs from other alkali metals.",
+      "answer": "Lithium is the hardest alkali metal, has the highest melting and boiling points, and forms a normal oxide (Li₂O) rather than a peroxide or superoxide. It also forms covalent compounds more readily and shows diagonal relationship with magnesium.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q29",
+      "conceptIds": ["SB-17"],
+      "question": "Why do alkaline earth metal carbonates become more stable down the group?",
+      "answer": "As the cation size increases, the polarising power decreases. Lower polarisation of the carbonate ion makes the compound more stable toward thermal decomposition. Consequently BaCO₃ is more stable than BeCO₃ or MgCO₃.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q30",
+      "conceptIds": ["SB-10", "SB-11"],
+      "question": "How do Na⁺, K⁺, Mg²⁺ and Ca²⁺ ions contribute to biological systems?",
+      "answer": "Na⁺ and K⁺ maintain membrane potential and enable nerve impulses. Mg²⁺ is essential for chlorophyll and many enzymes. Ca²⁺ provides structural strength to bones and teeth and participates in signalling and muscle contraction. Together they regulate critical physiological processes.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q31",
+      "conceptIds": ["SB-01", "SB-16"],
+      "question": "Why do s-block elements readily form ionic compounds?",
+      "answer": "s-Block elements have low ionization enthalpies and low electronegativities. They readily lose their valence electrons to form cations with noble-gas configuration. The resulting electrostatic attraction with anions produces predominantly ionic compounds.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q32",
+      "conceptIds": ["SB-04"],
+      "question": "Which s-block metals are used in fireworks and why?",
+      "answer": "Strontium and barium salts are commonly used in fireworks. Strontium produces an intense crimson red colour and barium produces an apple-green colour. These brilliant colours make the fireworks visually attractive.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q33",
+      "conceptIds": ["SB-07"],
+      "question": "Why is barium sulphate used in X-ray diagnosis?",
+      "answer": "Barium sulphate is highly insoluble and opaque to X-rays. When administered as a suspension it coats the lining of the digestive tract, allowing clear X-ray imaging without being absorbed into the body.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SB-Q34",
+      "conceptIds": ["SB-15"],
+      "question": "Give one example of a complex formed by beryllium.",
+      "answer": "Beryllium forms the complex ion [BeF₄]²⁻ with fluoride ions. The small size and high charge density of Be²⁺ enable it to accept electron pairs from four fluoride ligands, illustrating its strong complexing ability.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SB-Q35",
+      "conceptIds": ["SB-03", "SB-05"],
+      "question": "Correlate ionization enthalpy with chemical reactivity in the alkali metal group.",
+      "answer": "Lower ionization enthalpy means the valence electron is more easily removed, leading to higher chemical reactivity. Since ionization enthalpy decreases from Li to Cs, chemical reactivity increases down the group, with caesium being the most reactive alkali metal.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    }
+  ]
+}

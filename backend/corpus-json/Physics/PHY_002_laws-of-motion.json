@@ -1,0 +1,653 @@
+{
+  "chapterId": "002",
+  "chapterName": "Laws of Motion",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "LOM-01",
+      "name": "Force and its effects",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Force is a push or pull that changes the state of rest or motion of a body."
+    },
+    {
+      "id": "LOM-02",
+      "name": "Inertia",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "oneLineSummary": "Inertia is the property of a body to resist change in its state of rest or uniform motion."
+    },
+    {
+      "id": "LOM-03",
+      "name": "Newton's first law",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "A body remains at rest or in uniform motion unless acted upon by an external unbalanced force."
+    },
+    {
+      "id": "LOM-04",
+      "name": "Momentum",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "Momentum is the product of mass and velocity; it is a vector quantity."
+    },
+    {
+      "id": "LOM-05",
+      "name": "Newton's second law",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3,
+        4
+      ],
+      "oneLineSummary": "Rate of change of momentum is proportional to the applied force and occurs in its direction."
+    },
+    {
+      "id": "LOM-06",
+      "name": "F = ma and units",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Force equals mass times acceleration; SI unit is the newton."
+    },
+    {
+      "id": "LOM-07",
+      "name": "Newton's third law",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "For every action there is an equal and opposite reaction."
+    },
+    {
+      "id": "LOM-08",
+      "name": "Action-reaction pairs",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5,
+        6
+      ],
+      "oneLineSummary": "Action and reaction are equal, opposite and act on different bodies."
+    },
+    {
+      "id": "LOM-09",
+      "name": "Conservation of momentum",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        7
+      ],
+      "oneLineSummary": "Total momentum of an isolated system remains constant in the absence of external force."
+    },
+    {
+      "id": "LOM-10",
+      "name": "Impulse",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [
+        8
+      ],
+      "oneLineSummary": "Impulse is force times time; it equals the change in momentum."
+    },
+    {
+      "id": "LOM-11",
+      "name": "Contact and non-contact forces",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Contact forces require touch; non-contact forces act at a distance."
+    },
+    {
+      "id": "LOM-12",
+      "name": "Friction and its types",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Friction opposes relative motion; static, kinetic and rolling types exist."
+    },
+    {
+      "id": "LOM-13",
+      "name": "Free body diagrams",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "A free-body diagram shows all external forces on an isolated body."
+    },
+    {
+      "id": "LOM-14",
+      "name": "Apparent weight in a lift",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Apparent weight changes with lift acceleration and is zero in free fall."
+    },
+    {
+      "id": "LOM-15",
+      "name": "Connected bodies and pulleys",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Acceleration and tension in connected systems are found using Newton's laws."
+    },
+    {
+      "id": "LOM-16",
+      "name": "Pseudo force",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "In non-inertial frames a fictitious force -ma is introduced."
+    },
+    {
+      "id": "LOM-17",
+      "name": "Equilibrium of concurrent forces",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "A body is in equilibrium when the vector sum of concurrent forces is zero."
+    },
+    {
+      "id": "LOM-18",
+      "name": "Banking of roads",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Roads are banked so normal reaction provides centripetal force."
+    }
+  ],
+  "qna": [
+    {
+      "id": "LOM-Q01",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-11",
+        "LOM-16"
+      ],
+      "question": "What is mechanisms in physics and how is it divided?",
+      "answer": "Mechanisms is the branch of physics which deals with the study of motion of particles. It is divided into two branches namely statics and kinetics. Statics deals with objects at rest or in equilibrium under balanced forces while kinetics deals with actual motion.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q02",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-04",
+        "LOM-09"
+      ],
+      "question": "Differentiate between kinematics and dynamics as branches of kinetics.",
+      "answer": "Kinematics is the study of various motions without discussing the cause of motion. Parameters like distance, displacement, speed, velocity and acceleration are discussed in kinematics. Dynamics is the study of motion along with its cause and includes quantities such as force, energy, momentum, power and torque.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q03",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-03",
+        "LOM-05"
+      ],
+      "question": "What is Aristotle's fallacy regarding motion?",
+      "answer": "According to Aristotle, a constant and continuous force is required to keep a body in uniform motion. This idea is called Aristotle's fallacy. Newton's first law later corrected this by showing that no force is needed to maintain uniform motion in the absence of unbalanced external forces.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q04",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-02",
+        "LOM-03"
+      ],
+      "question": "State Newton's first law of motion.",
+      "answer": "Newton's first law of motion states that every body continues to be in a state of rest or state of uniform motion in a straight line unless and until it is compelled by an external unbalanced force. This law is also known as the law of inertia. It defines the concept of force as something that changes the state of rest or uniform motion.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q05",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-11",
+        "LOM-13"
+      ],
+      "question": "Define force and list its possible effects on a body.",
+      "answer": "Force is a physical quantity which changes or tends to change the state of uniform motion of a body. The effects of resultant forces include changing the speed of the body, changing the direction of the body, and changing the size and shape of the body. Force is measured in newtons in the SI system.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q06",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-06",
+        "LOM-16"
+      ],
+      "question": "What are the units and dimensions of force?",
+      "answer": "The SI unit of force is the newton which is equal to kg m/s² in MKS units. In the CGS system the unit is dyne which is g cm/s². The dimensional formula of force is [M¹ L¹ T⁻²].",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q07",
+      "conceptIds": [
+        "LOM-02",
+        "LOM-13"
+      ],
+      "question": "Define inertia and state its relation with mass.",
+      "answer": "Inertia is the property of a body due to which it opposes changes in its state of rest or uniform motion. Mass is a measure of inertia of a body. A body with more mass has greater inertia and therefore greater resistance to change in its state of motion.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q08",
+      "conceptIds": [
+        "LOM-02",
+        "LOM-12",
+        "LOM-13"
+      ],
+      "question": "Explain the three types of inertia.",
+      "answer": "Inertia of rest is the inability of a body to change its state of rest by itself. Inertia of motion is the inability of a body to change its state of uniform motion by itself. Inertia of direction is the inability of a body to change its direction of motion by itself.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q09",
+      "conceptIds": [
+        "LOM-04",
+        "LOM-06",
+        "LOM-09"
+      ],
+      "question": "Define momentum and give its vector form, units and dimensions.",
+      "answer": "Momentum is the product of mass and velocity of a body. In vector form it is written as p = m v. The SI unit of momentum is kg m/s and the CGS unit is g cm/s. The dimensional formula of momentum is [M¹ L¹ T⁻¹].",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q10",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-03",
+        "LOM-04"
+      ],
+      "question": "State Newton's second law of motion and derive F = ma.",
+      "answer": "Newton's second law states that the rate of change of momentum is directly proportional to the applied force and takes place in the direction of the force. Mathematically F = dp/dt. When mass is constant this becomes F = m dv/dt which is F = ma.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q11",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-03",
+        "LOM-05"
+      ],
+      "question": "Write the different formulae related to force from Newton's second law.",
+      "answer": "The basic formula is F = dp/dt. When mass is constant F = ma. When velocity is constant F = v dm/dt. These expressions allow calculation of force under different conditions of mass and velocity variation.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q12",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-13",
+        "LOM-16"
+      ],
+      "question": "A force of F = (6 i - 8 j + 10 k) N produces an acceleration of √2 m/s² in a body. Find the mass of the body.",
+      "answer": "The magnitude of the given force is calculated as √(6² + (-8)² + 10²) = √(36 + 64 + 100) = √200 = 10√2 N. Using F = ma we have 10√2 = m × √2 so m = 10 kg. Thus the mass of the body is 10 kg.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q13",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-12",
+        "LOM-16"
+      ],
+      "question": "A 5 kg block resting on a frictionless plane is struck by a jet releasing water at 3 kg/s with speed 4 m/s. Calculate the acceleration of the block.",
+      "answer": "The force exerted by the water jet is F = v dm/dt = 4 × 3 = 12 N. Using F = ma we obtain 12 = 5 × a so a = 12/5 = 2.4 m/s². The acceleration of the block is therefore 2.4 m/s².",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q14",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-03",
+        "LOM-04"
+      ],
+      "question": "Define impulse and state its relation to change in momentum.",
+      "answer": "Impulse is the product of force and the short time interval during which a large force acts on a body. From Newton's second law F = dp/dt it follows that impulse I = F dt equals the change in momentum dp. Thus impulse of a force equals the total change in momentum of the body.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q15",
+      "conceptIds": [
+        "LOM-04",
+        "LOM-06",
+        "LOM-09"
+      ],
+      "question": "What are the units and dimensions of impulse?",
+      "answer": "The SI unit of impulse is N s or kg m/s. The CGS unit is dyne s or g cm/s. The dimensional formula of impulse is [M¹ L¹ T⁻¹] which is the same as that of momentum.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q16",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-03",
+        "LOM-04"
+      ],
+      "question": "State the impulse-momentum theorem.",
+      "answer": "According to the impulse-momentum theorem the impulse of a force is equal to the total change in momentum of the body. Mathematically I = p₂ - p₁ where p₁ and p₂ are the initial and final momenta. This relation follows directly by integrating Newton's second law over the time of action of the force.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q17",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-10",
+        "LOM-11"
+      ],
+      "question": "Give two practical applications of the concept of impulse.",
+      "answer": "A cricket player lowers his hands while catching a ball to increase the time of contact and thereby reduce the force experienced. Shock absorbers are provided in vehicles such as buses and cars to minimize the impact of shocks by increasing the time duration of the force.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q18",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-04",
+        "LOM-09"
+      ],
+      "question": "How is impulse measured using a force-time graph?",
+      "answer": "The area under a force-time graph represents the impulse delivered by the force or equivalently the change in momentum. For a constant force acting from t₁ to t₂ the area is simply force multiplied by the time interval. Positive and negative areas correspond to positive and negative impulses respectively.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q19",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-03",
+        "LOM-04"
+      ],
+      "question": "What does the slope of a momentum-time graph represent?",
+      "answer": "The slope of a momentum-time graph is equal to the force acting on the particle. This follows because slope equals dp/dt and by Newton's second law F = dp/dt. Therefore the instantaneous slope at any point gives the instantaneous force.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q20",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-13",
+        "LOM-16"
+      ],
+      "question": "A force acts for 10 s on a body of mass 10 kg after which the force ceases and the body describes 50 m in the next 5 s. Find the magnitude of the force.",
+      "answer": "After the force ceases the body moves with constant velocity equal to 50 m / 5 s = 10 m/s. This velocity was acquired in 10 s from rest so acceleration a = 10/10 = 1 m/s². Therefore force F = ma = 10 × 1 = 10 N.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q21",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-16"
+      ],
+      "question": "A truck starts from rest and rolls down a hill with constant acceleration travelling 400 m in 20 s. Calculate acceleration and force if mass is 7 metric tons.",
+      "answer": "Using s = ut + (1/2)at² with u = 0 gives 400 = (1/2)a(20)² so a = 2 m/s². Mass is 7000 kg so force F = ma = 7000 × 2 = 14000 N. The truck experiences an acceleration of 2 m/s² and a force of 14000 N.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q22",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-02",
+        "LOM-11"
+      ],
+      "question": "Distinguish between real force and pseudo force.",
+      "answer": "A real force is one whose origin can be explained in terms of known interactions such as gravitational, electromagnetic or nuclear forces. A pseudo force is a force whose origin cannot be explained in terms of known interactions and appears only in non-inertial frames. Centrifugal force experienced by a passenger in a turning car is an example of a pseudo force.",
+      "type": "comparison",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q23",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-03",
+        "LOM-05"
+      ],
+      "question": "State Newton's law of gravitation and write the expression for gravitational force.",
+      "answer": "Newton's law of gravitation states that every particle in the universe attracts every other particle with a force directly proportional to the product of their masses and inversely proportional to the square of the distance between them. The force is given by F = G m₁ m₂ / r² where G is the universal gravitational constant equal to 6.673 × 10⁻¹¹ N m²/kg².",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q24",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-08",
+        "LOM-11"
+      ],
+      "question": "List the characteristics of gravitational force.",
+      "answer": "Gravitational force is a central force and is only attractive in nature. It obeys the inverse square law of distance and forms an action-reaction pair. It acts along the line joining the centres of the two particles, is a long-range force and is independent of the intermediate medium. It is the weakest of the fundamental forces.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q25",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-11",
+        "LOM-16"
+      ],
+      "question": "What are the characteristics of electromagnetic force?",
+      "answer": "Electromagnetic force is a central force that can be both attractive and repulsive. It depends on the nature of the intermediate medium and is a long-range force. It obeys the inverse square law and is about 10³⁶ times stronger than gravitational force. It is the combination of electrostatic and magnetic forces.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q26",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-16"
+      ],
+      "question": "Describe strong nuclear force and weak nuclear force.",
+      "answer": "Strong nuclear force is the strongest force that binds nucleons together inside a nucleus; it is short-range with range less than 10⁻¹⁴ m and is charge-independent. Weak nuclear force is responsible for radioactive decay of atoms and has a range of order 10⁻¹⁶ m. Weak nuclear force is much weaker than both strong nuclear force and electromagnetic force.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q27",
+      "conceptIds": [
+        "LOM-02",
+        "LOM-03",
+        "LOM-05"
+      ],
+      "question": "Define frame of reference and distinguish between inertial and non-inertial frames.",
+      "answer": "A frame of reference is a system relative to which the motion of an object is described. An inertial frame is fixed or moves with uniform velocity relative to a fixed frame so that Newton's laws are obeyed. A non-inertial frame moves with acceleration relative to an inertial frame and Newton's laws are not obeyed in it.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q28",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-03",
+        "LOM-05"
+      ],
+      "question": "State Newton's third law of motion.",
+      "answer": "Newton's third law states that to every action there is an equal and opposite reaction. Whenever two bodies interact they exert equal and opposite forces on each other. Action and reaction act on two different bodies and never cancel each other.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q29",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-08",
+        "LOM-11"
+      ],
+      "question": "List the important points about action-reaction pairs.",
+      "answer": "We cannot produce a single isolated force in nature. There is no time gap between action and reaction so one cannot be called the cause and the other the effect. The action-reaction law is applicable whether bodies are at rest or in motion and applies to all interaction forces including gravitational, electrostatic, tension and friction.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q30",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-03",
+        "LOM-05"
+      ],
+      "question": "Give practical examples based on Newton's third law.",
+      "answer": "Swimming works on the basis of Newton's third law as the swimmer pushes water backward and is propelled forward. Recoil of a gun when fired is due to the reaction force. Rocket propulsion relies on the high-speed ejection of exhaust gases producing an equal and opposite thrust on the rocket.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q31",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-03",
+        "LOM-05"
+      ],
+      "question": "What is a free body diagram?",
+      "answer": "A free body diagram is a diagram that shows all the external forces acting on a body. It is a useful tool for applying Newton's laws of motion to solve problems. Typical forces shown include weight, normal reaction, applied force and frictional force.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q32",
+      "conceptIds": [
+        "LOM-03",
+        "LOM-05",
+        "LOM-07"
+      ],
+      "question": "Derive the expression for apparent weight of a person in a lift accelerating upwards.",
+      "answer": "When a lift accelerates upwards with acceleration a the normal reaction N is greater than the true weight mg. From Newton's second law N - mg = ma so N = m(g + a). Thus the apparent weight is greater than the true weight when the lift accelerates upwards.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q33",
+      "conceptIds": [
+        "LOM-03",
+        "LOM-05",
+        "LOM-07"
+      ],
+      "question": "Derive the expression for apparent weight of a person in a lift accelerating downwards.",
+      "answer": "When a lift accelerates downwards with acceleration a the true weight mg exceeds the normal reaction N. From Newton's second law mg - N = ma so N = m(g - a). Thus the apparent weight is less than the true weight when the lift accelerates downwards.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q34",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-14",
+        "LOM-16"
+      ],
+      "question": "What is the apparent weight of a person in a stationary lift?",
+      "answer": "In a stationary lift the acceleration is zero so the net force is zero. Therefore the normal reaction N equals the true weight mg. The apparent weight is the same as the true weight when the lift is stationary or moving with constant velocity.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q35",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-08",
+        "LOM-11"
+      ],
+      "question": "Why do action and reaction never cancel each other?",
+      "answer": "Action and reaction forces act on two different bodies that are interacting with each other. Since they act on different objects they cannot cancel each other on any single body. Cancellation would require both forces to act on the same body which is never the case for an action-reaction pair.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q36",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-16"
+      ],
+      "question": "A balloon of mass 5 kg loses air at a uniform rate with velocity 5 × 10⁻² m/s and shrinks completely in 2.5 s. Find the average force on the balloon.",
+      "answer": "The force is given by F = v dm/dt. The rate of mass loss is 5 kg / 2.5 s = 2 kg/s. Therefore F = (5 × 10⁻²) × 2 = 0.1 N or 10⁴ dyne. This is the average force acting on the balloon due to the escaping air.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LOM-Q37",
+      "conceptIds": [
+        "LOM-01",
+        "LOM-04",
+        "LOM-09"
+      ],
+      "question": "Explain why a cricket player lowers his hands while catching a ball.",
+      "answer": "By lowering his hands the player increases the time duration over which the momentum of the ball is brought to zero. From the impulse-momentum theorem impulse equals change in momentum so a larger time reduces the average force. This reduces the impact force on the hands and prevents injury.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    }
+  ]
+}

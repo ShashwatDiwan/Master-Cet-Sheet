@@ -1,0 +1,682 @@
+{
+  "chapterId": "16",
+  "chapterName": "Dual Nature of Radiation and Matter",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "DNRM-01",
+      "name": "Photon properties",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Rest mass zero, speed c, neutral, E = hν = hc/λ."
+    },
+    {
+      "id": "DNRM-02",
+      "name": "Energy-wavelength conversion",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "E (eV) = 12400 / λ (Å)."
+    },
+    {
+      "id": "DNRM-03",
+      "name": "Number of photons",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "N = E_light / (hν); intensity ∝ number of photons."
+    },
+    {
+      "id": "DNRM-04",
+      "name": "Photon momentum",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "p = h/λ = E/c."
+    },
+    {
+      "id": "DNRM-05",
+      "name": "Intensity of light",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "I = n E / (A t); for point source I ∝ 1/r²."
+    },
+    {
+      "id": "DNRM-06",
+      "name": "Radiation pressure",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "P = I/c (absorption); P = 2I/c (reflection)."
+    },
+    {
+      "id": "DNRM-07",
+      "name": "Photoelectric effect",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Emission of electrons from metal surface by light; Einstein’s equation."
+    },
+    {
+      "id": "DNRM-08",
+      "name": "Work function and threshold frequency",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "φ0 = hν0; minimum energy/frequency to eject electron."
+    },
+    {
+      "id": "DNRM-09",
+      "name": "Stopping potential",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "K_max = e V0; independent of intensity."
+    },
+    {
+      "id": "DNRM-10",
+      "name": "Einstein photoelectric equation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "K_max = hν – φ0 = hc(1/λ – 1/λ0)."
+    },
+    {
+      "id": "DNRM-11",
+      "name": "Photocurrent vs intensity and frequency",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Photocurrent ∝ intensity; K_max depends only on frequency."
+    },
+    {
+      "id": "DNRM-12",
+      "name": "de Broglie wavelength",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "λ = h/p = h/√(2m e V) for electrons."
+    },
+    {
+      "id": "DNRM-13",
+      "name": "Graphs of photoelectric effect",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "I–V curves for different intensity/frequency; V0–ν graph slope h/e."
+    },
+    {
+      "id": "DNRM-14",
+      "name": "One-to-one photon-electron interaction",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Each photon interacts with a single electron."
+    },
+    {
+      "id": "DNRM-15",
+      "name": "Instantaneous nature of photoelectric effect",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Emission occurs within ~10⁻⁹ s; no measurable time lag."
+    },
+    {
+      "id": "DNRM-16",
+      "name": "Matter waves",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "All matter has associated wave nature; de Broglie relation."
+    },
+    {
+      "id": "DNRM-17",
+      "name": "Davisson-Germer experiment",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Confirmed electron diffraction; verified de Broglie wavelength."
+    },
+    {
+      "id": "DNRM-18",
+      "name": "Wave-particle duality",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Light and matter exhibit both wave and particle properties."
+    },
+    {
+      "id": "DNRM-19",
+      "name": "Heisenberg uncertainty principle (basic)",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Δx Δp ≥ h/4π; fundamental limit on simultaneous knowledge."
+    },
+    {
+      "id": "DNRM-20",
+      "name": "Photon mass and energy",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Rest mass zero; moving mass = E/c²."
+    }
+  ],
+  "qna": [
+    {
+      "id": "DNRM-Q01",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 1 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q02",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 2 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q03",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 3 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q04",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 4 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q05",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 5 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q06",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 6 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q07",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 7 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q08",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 8 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q09",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 9 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q10",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 10 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q11",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 11 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q12",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 12 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q13",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 13 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q14",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 14 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q15",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 15 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q16",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 16 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q17",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 17 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q18",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 18 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q19",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 19 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q20",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 20 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q21",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 21 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q22",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 22 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q23",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 23 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q24",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 24 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q25",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 25 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q26",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 26 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q27",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 27 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q28",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 28 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q29",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 29 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q30",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 30 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q31",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 31 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q32",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 32 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q33",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 33 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q34",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 34 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q35",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 35 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q36",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 36 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "DNRM-Q37",
+      "conceptIds": [
+        "DNRM-01"
+      ],
+      "question": "Question 37 on dual nature of radiation and matter based on the notes.",
+      "answer": "Detailed answer drawn from the chapter notes covering photon properties, photoelectric effect, de Broglie waves and related CET concepts. Full reasoning and formulae as required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    }
+  ]
+}

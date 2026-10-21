@@ -1,0 +1,484 @@
+{
+  "chapterId": "20",
+  "chapterName": "Structure of Atom",
+  "subject": "Chemistry",
+  "concepts": [
+    {
+      "id": "SOA-01",
+      "name": "Discovery of Electron (CRT)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "J.J. Thomson discovered electron via cathode ray tube at low pressure and high voltage."
+    },
+    {
+      "id": "SOA-02",
+      "name": "Anode Rays and Proton",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Rutherford studied anode rays; charge-to-mass ratio varies with gas; proposed atomic neutrality."
+    },
+    {
+      "id": "SOA-03",
+      "name": "Distance of Closest Approach",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Minimum distance an α-particle approaches the nucleus before deflection."
+    },
+    {
+      "id": "SOA-04",
+      "name": "Visible Spectrum Range",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Visible radiation lies between 400 nm and 700 nm."
+    },
+    {
+      "id": "SOA-05",
+      "name": "Failures of Classical Physics",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Black-body radiation, photoelectric effect, hydrogen line spectra and heat capacity variation."
+    },
+    {
+      "id": "SOA-06",
+      "name": "Planck’s Quantum Theory",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Energy is quantised; photon energy E = hν = hc/λ."
+    },
+    {
+      "id": "SOA-07",
+      "name": "Photoelectric Effect",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "K.E.max = E − Φ₀; threshold frequency below which no electrons are ejected."
+    },
+    {
+      "id": "SOA-08",
+      "name": "Bohr’s Model Postulates",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Electrons in fixed orbits; angular momentum mvr = nh/2π; energy emitted on transition."
+    },
+    {
+      "id": "SOA-09",
+      "name": "Bohr Radius and Energy Levels",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "rₙ = n²a₀/Z; Eₙ = −13.6 Z²/n² eV; first four H levels given."
+    },
+    {
+      "id": "SOA-10",
+      "name": "Rydberg Formula",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "1/λ = RZ²(1/n₁² − 1/n₂²); explains hydrogen spectral lines."
+    },
+    {
+      "id": "SOA-11",
+      "name": "Hydrogen Spectral Series",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Lyman (UV), Balmer (visible), Paschen/Brackett/Pfund (IR)."
+    },
+    {
+      "id": "SOA-12",
+      "name": "de Broglie Wavelength",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "λ = h/p = h/mv; establishes wave nature of matter."
+    },
+    {
+      "id": "SOA-13",
+      "name": "Quantum Numbers",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "n (shell), l (subshell/shape), m (orientation), s (spin)."
+    },
+    {
+      "id": "SOA-14",
+      "name": "Orbitals and Electron Capacity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Orbitals in nth shell = n²; max electrons = 2n²; subshell orbitals = 2l+1."
+    },
+    {
+      "id": "SOA-15",
+      "name": "Energy Relations in Bohr Model",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "P.E. = 2×T.E.; K.E. = −T.E.; energy zero at infinity."
+    },
+    {
+      "id": "SOA-16",
+      "name": "Dual Nature of Electron",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Electron shows both particle (photoelectric) and wave (diffraction) properties."
+    },
+    {
+      "id": "SOA-17",
+      "name": "Heisenberg Uncertainty Principle",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Δx·Δp ≥ h/4π; position and momentum cannot both be known precisely."
+    },
+    {
+      "id": "SOA-18",
+      "name": "Atomic Orbitals (s,p,d,f)",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Shapes and orientations of s, p, d and f orbitals; nodal planes."
+    },
+    {
+      "id": "SOA-19",
+      "name": "Electronic Configuration Rules",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Aufbau principle, Pauli exclusion principle and Hund’s rule."
+    },
+    {
+      "id": "SOA-20",
+      "name": "Quantum Mechanical Model",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Schrödinger equation; orbitals as probability density regions."
+    }
+  ],
+  "qna": [
+    {
+      "id": "SOA-Q01",
+      "conceptIds": ["SOA-01"],
+      "question": "Who discovered the electron and under what conditions?",
+      "answer": "J.J. Thomson discovered the electron using a cathode-ray tube. The experiment required low pressure and high voltage. The charge-to-mass ratio was found to be 1.76 × 10¹¹ C kg⁻¹.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q02",
+      "conceptIds": ["SOA-02"],
+      "question": "What did Rutherford conclude from anode-ray studies?",
+      "answer": "Rutherford studied anode rays produced in a discharge tube. He observed that the charge-to-mass ratio varies with the gas used. From these observations he proposed that the atom is electrically neutral.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q03",
+      "conceptIds": ["SOA-04"],
+      "question": "What is the wavelength range of visible radiation?",
+      "answer": "Visible radiation lies between 400 nm and 700 nm. This is the portion of the electromagnetic spectrum that the human eye can detect. Different wavelengths within this range correspond to different colours.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q04",
+      "conceptIds": ["SOA-05"],
+      "question": "List the major failures of classical physics that led to quantum theory.",
+      "answer": "Classical physics failed to explain black-body radiation, the photoelectric effect, the line spectrum of hydrogen and the temperature dependence of heat capacity. These failures necessitated the introduction of quantum concepts by Planck and others.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q05",
+      "conceptIds": ["SOA-06"],
+      "question": "State Planck’s quantum theory and the expression for photon energy.",
+      "answer": "Planck proposed that energy is emitted or absorbed in discrete packets called quanta or photons. The energy of a photon is given by E = hν = hc/λ, where h is Planck’s constant. This relation is the foundation of quantum theory.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q06",
+      "conceptIds": ["SOA-07"],
+      "question": "Write Einstein’s photoelectric equation and define the terms.",
+      "answer": "Einstein’s photoelectric equation is K.E.max = E − Φ₀. Here E is the energy of the incident photon, Φ₀ is the work function (minimum energy needed to eject an electron), and K.E.max is the maximum kinetic energy of the photoelectron. Below the threshold frequency no electrons are emitted.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q07",
+      "conceptIds": ["SOA-08"],
+      "question": "State the main postulates of Bohr’s atomic model.",
+      "answer": "Electrons revolve in fixed circular orbits without radiating energy. The angular momentum of an electron in an orbit is quantised: mvr = nh/2π. When an electron jumps from a higher to a lower orbit it emits a photon of energy equal to the difference of the two levels.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q08",
+      "conceptIds": ["SOA-09"],
+      "question": "Give the expressions for radius and energy of the nth Bohr orbit.",
+      "answer": "The radius of the nth orbit is rₙ = n²a₀/Z, where a₀ = 0.529 Å. The total energy is Eₙ = −13.6 Z²/n² eV per atom. For hydrogen the first four levels are −13.6, −3.4, −1.51 and −0.85 eV.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q09",
+      "conceptIds": ["SOA-10"],
+      "question": "Write Rydberg’s formula for the wave number of spectral lines.",
+      "answer": "Rydberg’s formula is 1/λ = R Z² (1/n₁² − 1/n₂²), where R is the Rydberg constant (1.097 × 10⁷ m⁻¹). n₁ is the lower level and n₂ the higher level. The formula successfully accounts for all series of the hydrogen spectrum.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "SOA-Q10",
+      "conceptIds": ["SOA-11"],
+      "question": "Name the spectral series of hydrogen and the regions in which they appear.",
+      "answer": "The Lyman series (n₁ = 1) lies in the ultraviolet, the Balmer series (n₁ = 2) in the visible, and the Paschen, Brackett and Pfund series (n₁ = 3, 4, 5) in the infrared. Each series corresponds to transitions ending on a particular lower level.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "SOA-Q11",
+      "conceptIds": ["SOA-12"],
+      "question": "State de Broglie’s relation and its significance.",
+      "answer": "de Broglie’s relation is λ = h/p = h/mv. It assigns a wavelength to every moving particle and establishes the wave–particle dual nature of matter. The relation is confirmed by electron-diffraction experiments.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "SOA-Q12",
+      "conceptIds": ["SOA-13"],
+      "question": "List the four quantum numbers and what each describes.",
+      "answer": "The principal quantum number n describes the shell and energy; the azimuthal quantum number l describes the subshell and orbital shape; the magnetic quantum number m describes the orientation of the orbital; the spin quantum number s describes the intrinsic spin of the electron.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "SOA-Q13",
+      "conceptIds": ["SOA-14"],
+      "question": "How many orbitals and electrons are present in the nth shell?",
+      "answer": "The number of orbitals in the nth shell is n². The maximum number of electrons that can be accommodated is 2n². For example, the third shell contains 9 orbitals and can hold 18 electrons.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "SOA-Q14",
+      "conceptIds": ["SOA-15"],
+      "question": "What is the relationship between potential energy, kinetic energy and total energy in Bohr’s model?",
+      "answer": "In Bohr’s model the potential energy is twice the total energy (P.E. = 2 T.E.) and is negative. The kinetic energy is equal in magnitude but opposite in sign to the total energy (K.E. = −T.E.). At infinite separation both P.E. and K.E. become zero.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q15",
+      "conceptIds": ["SOA-09", "SOA-10"],
+      "question": "How can one obtain λ_min and λ_max for a given spectral series?",
+      "answer": "For λ_min the energy difference must be maximum, which occurs when the electron jumps from n = ∞ to the lowest level of the series. For λ_max the energy difference is minimum, corresponding to the transition between the two closest levels of the series. These limiting wavelengths define the series limits.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [2]
+    },
+    {
+      "id": "SOA-Q16",
+      "conceptIds": ["SOA-07"],
+      "question": "What is threshold frequency in the photoelectric effect?",
+      "answer": "Threshold frequency (ν₀) is the minimum frequency of incident light below which no photoelectrons are ejected, regardless of intensity. It is related to the work function by Φ₀ = hν₀. Above this frequency the kinetic energy of the photoelectrons increases linearly with frequency.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q17",
+      "conceptIds": ["SOA-08", "SOA-09"],
+      "question": "Why does the energy gap between successive Bohr orbits decrease with increasing n?",
+      "answer": "The energy of a level is proportional to −1/n². As n increases the levels become closer together because the difference 1/n² − 1/(n+1)² becomes smaller. Consequently the energy gap decreases while the orbital radius increases.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q18",
+      "conceptIds": ["SOA-16"],
+      "question": "What experimental evidence supports the dual nature of the electron?",
+      "answer": "The photoelectric effect demonstrates the particle nature of the electron (and of light). Electron diffraction and the Davisson–Germer experiment demonstrate the wave nature. de Broglie’s hypothesis quantifies the wave aspect through λ = h/p.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SOA-Q19",
+      "conceptIds": ["SOA-17"],
+      "question": "State the Heisenberg uncertainty principle and its implication.",
+      "answer": "The Heisenberg uncertainty principle states that the product of the uncertainties in position and momentum is at least h/4π: Δx·Δp ≥ h/4π. It implies that the exact trajectory of an electron cannot be determined, leading to the probabilistic orbital concept.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SOA-Q20",
+      "conceptIds": ["SOA-19"],
+      "question": "State the three rules that govern electronic configuration.",
+      "answer": "The Aufbau principle says electrons occupy the lowest-energy orbitals first. The Pauli exclusion principle states that no two electrons in an atom can have the same set of four quantum numbers. Hund’s rule requires that electrons occupy degenerate orbitals singly with parallel spins before pairing.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "SOA-Q21",
+      "conceptIds": ["SOA-14"],
+      "question": "How many orbitals and electrons are present in a subshell with quantum number l?",
+      "answer": "A subshell with azimuthal quantum number l contains 2l+1 orbitals. The maximum number of electrons in that subshell is 2(2l+1). For the d-subshell (l = 2) there are five orbitals and a maximum of ten electrons.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "SOA-Q22",
+      "conceptIds": ["SOA-09"],
+      "question": "Calculate the energy of the electron in the third orbit of hydrogen.",
+      "answer": "Using Eₙ = −13.6 / n² eV, for n = 3 we obtain E₃ = −13.6 / 9 = −1.51 eV. The negative sign indicates that the electron is bound. The value matches the experimental term value for the third level.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q23",
+      "conceptIds": ["SOA-11", "SOA-10"],
+      "question": "Why does the Balmer series appear in the visible region?",
+      "answer": "The Balmer series corresponds to transitions that end on n = 2. The energy differences for these transitions fall in the range that produces wavelengths between roughly 400 nm and 700 nm, which is the visible part of the spectrum.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "SOA-Q24",
+      "conceptIds": ["SOA-08"],
+      "question": "What happens when an electron jumps from a higher orbit to a lower orbit?",
+      "answer": "When an electron jumps from a higher to a lower orbit it emits a photon whose energy equals the difference of the two levels. The frequency of the emitted radiation is given by ΔE = hν. This emission produces the characteristic line spectrum of the atom.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q25",
+      "conceptIds": ["SOA-18"],
+      "question": "Describe the shapes of s and p orbitals.",
+      "answer": "An s-orbital is spherically symmetrical about the nucleus. A p-orbital is dumb-bell shaped and is oriented along one of the three Cartesian axes (pₓ, pᵧ, p_z). The three p-orbitals are mutually perpendicular.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "SOA-Q26",
+      "conceptIds": ["SOA-01", "SOA-02"],
+      "question": "Compare the discovery of the electron and the proton.",
+      "answer": "The electron was discovered by J.J. Thomson using cathode rays; its charge-to-mass ratio is constant. The proton was inferred from anode-ray studies by Rutherford; its charge-to-mass ratio varies with the gas. Both particles established the composite nature of the atom.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q27",
+      "conceptIds": ["SOA-06", "SOA-07"],
+      "question": "How does Planck’s theory explain the photoelectric effect?",
+      "answer": "Planck’s theory treats light as discrete photons of energy hν. When a photon strikes a metal surface it can transfer its entire energy to an electron. If hν exceeds the work function, the electron is ejected with kinetic energy hν − Φ₀, explaining the instantaneous emission and the threshold frequency.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q28",
+      "conceptIds": ["SOA-09"],
+      "question": "Why is the energy of an electron in a Bohr orbit negative?",
+      "answer": "The energy is defined as zero when the electron is infinitely far from the nucleus. In a bound orbit the electron has lower potential energy, so the total energy is negative. The more negative the value, the more tightly the electron is bound.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q29",
+      "conceptIds": ["SOA-13", "SOA-14"],
+      "question": "How many electrons can the fourth shell accommodate?",
+      "answer": "For n = 4 the number of orbitals is 4² = 16. The maximum number of electrons is therefore 2 × 16 = 32. The fourth shell contains the 4s, 4p, 4d and 4f subshells.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "SOA-Q30",
+      "conceptIds": ["SOA-20"],
+      "question": "What is the main idea of the quantum-mechanical model of the atom?",
+      "answer": "The quantum-mechanical model replaces definite orbits with orbitals—regions of space where the probability of finding an electron is high. The behaviour of the electron is described by a wave function that is a solution of the Schrödinger equation. Exact position and momentum cannot be known simultaneously.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "SOA-Q31",
+      "conceptIds": ["SOA-12"],
+      "question": "Calculate the de Broglie wavelength of an electron moving with velocity v.",
+      "answer": "The de Broglie wavelength is given by λ = h/(mv). Substituting the mass of the electron and the given velocity yields the numerical value. The relation shows that faster electrons have shorter wavelengths.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "SOA-Q32",
+      "conceptIds": ["SOA-10", "SOA-11"],
+      "question": "Which transition in the hydrogen atom produces the longest wavelength in the Balmer series?",
+      "answer": "The longest wavelength corresponds to the smallest energy difference, which is the transition from n = 3 to n = 2. This line is the red line of the Balmer series and has a wavelength of 656.3 nm.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [2]
+    },
+    {
+      "id": "SOA-Q33",
+      "conceptIds": ["SOA-08"],
+      "question": "Why did classical physics predict that atoms should collapse?",
+      "answer": "According to classical electromagnetism an accelerating charge must radiate energy continuously. An electron orbiting the nucleus is accelerating and should therefore spiral into the nucleus, making atoms unstable. Bohr’s postulates of stationary orbits resolved this paradox.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "SOA-Q34",
+      "conceptIds": ["SOA-19"],
+      "question": "What is Hund’s rule and why is it important?",
+      "answer": "Hund’s rule states that electrons occupy degenerate orbitals singly and with parallel spins before pairing begins. This arrangement maximises total spin and minimises electron–electron repulsion, leading to the most stable ground-state configuration.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "SOA-Q35",
+      "conceptIds": ["SOA-03"],
+      "question": "What is the distance of closest approach and write its formula?",
+      "answer": "The distance of closest approach is the minimum distance to which an α-particle can approach the nucleus before being repelled. Its formula is r = (1/(4πε₀)) · (2Ze²)/(mv²) or equivalently r = 2k q₁ q₂ / (m v²). It provides an estimate of nuclear size.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    }
+  ]
+}

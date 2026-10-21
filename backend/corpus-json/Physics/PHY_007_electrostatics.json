@@ -1,0 +1,640 @@
+{
+  "chapterId": "007",
+  "chapterName": "Electrostatics",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "ELS-01",
+      "name": "Coulomb's law",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Force between two point charges is proportional to product of charges and inverse square of distance."
+    },
+    {
+      "id": "ELS-02",
+      "name": "Constant k and ε₀",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "oneLineSummary": "k = 1/(4πε₀) ≈ 9e9; ε₀ is permittivity of free space."
+    },
+    {
+      "id": "ELS-03",
+      "name": "Dielectric constant",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Ratio of force in vacuum to force in the medium; also called relative permittivity."
+    },
+    {
+      "id": "ELS-04",
+      "name": "Vector form of Coulomb's law",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "Forces are equal and opposite; F12 = -F21 along the line joining charges."
+    },
+    {
+      "id": "ELS-05",
+      "name": "Superposition principle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "Net force on a charge is the vector sum of forces due to all other charges."
+    },
+    {
+      "id": "ELS-06",
+      "name": "Resultant of two forces",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Magnitude and direction of resultant of two forces at an angle."
+    },
+    {
+      "id": "ELS-07",
+      "name": "Dielectric slab effect",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Inserting a dielectric slab changes the effective separation and reduces force."
+    },
+    {
+      "id": "ELS-08",
+      "name": "Charged body on a string",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Equilibrium under gravity and electrostatic force; tanθ = FE/mg."
+    },
+    {
+      "id": "ELS-09",
+      "name": "Electric field",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Force per unit charge experienced by a small positive test charge."
+    },
+    {
+      "id": "ELS-10",
+      "name": "Electric field due to point charge",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "E = kq/r² directed radially outward for positive charge."
+    },
+    {
+      "id": "ELS-11",
+      "name": "Electric potential",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Work done per unit charge in bringing a test charge from infinity."
+    },
+    {
+      "id": "ELS-12",
+      "name": "Potential due to point charge",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "V = kq/r; scalar quantity."
+    },
+    {
+      "id": "ELS-13",
+      "name": "Relation between E and V",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "E = -dV/dr; field is negative gradient of potential."
+    },
+    {
+      "id": "ELS-14",
+      "name": "Equipotential surfaces",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Surfaces of constant potential; work done moving charge on them is zero."
+    },
+    {
+      "id": "ELS-15",
+      "name": "Electric dipole",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Two equal and opposite charges separated by a small distance."
+    },
+    {
+      "id": "ELS-16",
+      "name": "Capacitance",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Ability of a conductor to store charge; C = Q/V."
+    },
+    {
+      "id": "ELS-17",
+      "name": "Parallel plate capacitor",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "C = ε₀A/d; energy stored is (1/2)CV²."
+    },
+    {
+      "id": "ELS-18",
+      "name": "Gauss's law",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Flux through a closed surface equals charge enclosed divided by ε₀."
+    }
+  ],
+  "qna": [
+    {
+      "id": "ELS-Q01",
+      "conceptIds": [
+        "ELS-01",
+        "ELS-04",
+        "ELS-10"
+      ],
+      "question": "State Coulomb's law.",
+      "answer": "Coulomb's law states that the force of attraction or repulsion between two charges is directly proportional to the product of the magnitudes of the two charges and inversely proportional to the square of the separation between them. The force is directed along the line joining the two charges. Mathematically F = k q1 q2 / r².",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q02",
+      "conceptIds": [
+        "ELS-02",
+        "ELS-03",
+        "ELS-07"
+      ],
+      "question": "What is the value of the constant k in SI and CGS units?",
+      "answer": "In SI units for air or vacuum k = 1/(4π ε₀) ≈ 9 × 10⁹ N m²/C². For a dielectric medium k = 1/(4π ε₀ K). In CGS units k = 1 for air and k = 1/K for a dielectric medium. The value of ε₀ is 8.85 × 10⁻¹² C²/N m².",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q03",
+      "conceptIds": [
+        "ELS-02",
+        "ELS-03",
+        "ELS-07"
+      ],
+      "question": "Define relative permittivity or dielectric constant.",
+      "answer": "Relative permittivity or dielectric constant K is the ratio of the permittivity of a dielectric medium to the permittivity of free space (or air). It is also equal to the ratio of the force between two charges in air to the force between the same charges in the dielectric medium. K = ε_m / ε₀ = F_air / F_medium.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q04",
+      "conceptIds": [
+        "ELS-01",
+        "ELS-04",
+        "ELS-06"
+      ],
+      "question": "Write Coulomb's law in vector form.",
+      "answer": "The force exerted on charge q1 by q2 is F12 = k q1 q2 (r21) / r21² and the force on q2 by q1 is F21 = k q1 q2 (r12) / r12². Because r12 = - r21 it follows that F12 = - F21. The forces are equal in magnitude and opposite in direction.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q05",
+      "conceptIds": [
+        "ELS-04",
+        "ELS-05",
+        "ELS-06"
+      ],
+      "question": "State the principle of superposition for electrostatic forces.",
+      "answer": "When a number of charges interact, the total force on any one charge is the vector sum of the individual forces exerted on it by each of the other charges. For four charges the force on q1 is F = F12 + F13 + F14. The principle allows calculation of net force in multi-charge systems.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q06",
+      "conceptIds": [
+        "ELS-04",
+        "ELS-05",
+        "ELS-10"
+      ],
+      "question": "Write the expression for the net force on a charge due to several other charges.",
+      "answer": "The net force is F = (1/(4π ε₀)) [ q1 q2 / r12² + q1 q3 / r13² + q1 q4 / r14² + … ] with appropriate unit vectors. Each term is the Coulomb force from one charge, and the sum is taken vectorially. This is the practical application of the superposition principle.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q07",
+      "conceptIds": [
+        "ELS-06"
+      ],
+      "question": "How is the resultant of two forces of equal magnitude calculated at different angles?",
+      "answer": "For two forces each of magnitude F the resultant is √2 F when the angle is 90°, √3 F when the angle is 60°, √(2+√2) F when the angle is 45°, F when the angle is 120°, 2F when the angle is 0°, and zero when the angle is 180°. These results follow from the law of cosines.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q08",
+      "conceptIds": [
+        "ELS-04",
+        "ELS-06",
+        "ELS-17"
+      ],
+      "question": "Give the formula for the direction of the resultant of two forces.",
+      "answer": "If two forces F1 and F2 act at an angle θ, the direction α of the resultant relative to F1 is given by tan α = (F2 sin θ) / (F1 + F2 cos θ). This formula is obtained by resolving the forces into components and taking the ratio of the perpendicular to the parallel component.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q09",
+      "conceptIds": [
+        "ELS-02",
+        "ELS-03",
+        "ELS-07"
+      ],
+      "question": "What is the effect of inserting a dielectric slab of thickness t between two charges?",
+      "answer": "When a dielectric slab of thickness t and dielectric constant K is inserted, the effective separation becomes r' = r - t + t √K. The force is then F = k q1 q2 / (r - t + t √K)². The slab reduces the force compared with the vacuum value.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q10",
+      "conceptIds": [
+        "ELS-08",
+        "ELS-10",
+        "ELS-12"
+      ],
+      "question": "How is the tension in a string related to electrostatic force for a charged body suspended in equilibrium?",
+      "answer": "For a charged body suspended by a string and deflected by an electrostatic force FE, the vertical component of tension balances the weight: T cos θ = mg. The horizontal component balances the electrostatic force: T sin θ = FE. Dividing gives tan θ = FE / mg and T = √(FE² + mg²).",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q11",
+      "conceptIds": [
+        "ELS-02",
+        "ELS-03",
+        "ELS-04"
+      ],
+      "question": "What are the SI units and dimensions of the Coulomb constant k?",
+      "answer": "The SI unit of k is N m²/C². Its dimensional formula is [M¹ L³ T⁻⁴ A⁻²]. These follow from rearranging F = k q1 q2 / r² and substituting the dimensions of force, charge and length.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q12",
+      "conceptIds": [
+        "ELS-04"
+      ],
+      "question": "What are the SI units and dimensions of the permittivity of free space ε₀?",
+      "answer": "The SI unit of ε₀ is C²/N m². Its dimensional formula is [M⁻¹ L⁻³ T⁴ A²]. It is related to k by k = 1/(4π ε₀).",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q13",
+      "conceptIds": [
+        "ELS-02",
+        "ELS-03",
+        "ELS-07"
+      ],
+      "question": "Write the force expressions for air/vacuum and for a dielectric medium.",
+      "answer": "In air or vacuum F = (1/(4π ε₀)) q1 q2 / r². In a dielectric medium of constant K the force is F = (1/(4π ε₀ K)) q1 q2 / r². The dielectric reduces the force by the factor K.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q14",
+      "conceptIds": [
+        "ELS-01",
+        "ELS-04",
+        "ELS-06"
+      ],
+      "question": "Why is F12 equal in magnitude but opposite in direction to F21?",
+      "answer": "From the vector form of Coulomb's law the unit vectors r12 and r21 are opposite. Consequently the forces satisfy F12 = - F21. This is an example of Newton's third law applied to electrostatic interactions; the forces form an action-reaction pair.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q15",
+      "conceptIds": [
+        "ELS-04",
+        "ELS-05",
+        "ELS-06"
+      ],
+      "question": "How does the superposition principle simplify multi-charge problems?",
+      "answer": "Instead of solving a complicated many-body problem, one calculates the Coulomb force between each pair of charges and then adds the force vectors acting on the charge of interest. The principle holds because electrostatic forces are linear in the charges.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q16",
+      "conceptIds": [
+        "ELS-02",
+        "ELS-03",
+        "ELS-04"
+      ],
+      "question": "What is the numerical value of 1/(4π ε₀)?",
+      "answer": "The constant 1/(4π ε₀) equals 9 × 10⁹ N m²/C². This value is used in almost all SI-unit calculations of electrostatic forces. It is equivalent to writing k = 9 × 10⁹ in the Coulomb-law formula.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q17",
+      "conceptIds": [
+        "ELS-06",
+        "ELS-10",
+        "ELS-12"
+      ],
+      "question": "When is the net force on a charge zero in a system of three collinear charges?",
+      "answer": "If three charges Q, q and 4q are placed on a straight line of length 2L with equal spacing L, the net force on the middle charge q is zero when the forces from the other two charges cancel. Solving the force-balance equation yields a specific relation between Q and q.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q18",
+      "conceptIds": [
+        "ELS-08",
+        "ELS-10",
+        "ELS-12"
+      ],
+      "question": "How is the tension in a string found when both electrostatic force and gravity act?",
+      "answer": "From the two equilibrium equations T sin θ = FE and T cos θ = mg one squares and adds to eliminate θ: T² = FE² + mg². Therefore T = √(FE² + mg²). This gives the magnitude of the tension required to keep the charged body in equilibrium.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q19",
+      "conceptIds": [
+        "ELS-02",
+        "ELS-03",
+        "ELS-07"
+      ],
+      "question": "What happens to the electrostatic force when the medium is changed from air to a dielectric?",
+      "answer": "The force decreases by the factor equal to the dielectric constant K of the medium. Because K > 1 for all material dielectrics, the force in the dielectric is always smaller than the force in air or vacuum for the same charges and separation.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q20",
+      "conceptIds": [
+        "ELS-02",
+        "ELS-03",
+        "ELS-04"
+      ],
+      "question": "Write the expression for the force when a dielectric slab of thickness t is present.",
+      "answer": "With a dielectric slab of thickness t and dielectric constant K inserted between charges separated by r, the effective distance becomes r - t + t √K. The force is therefore F = k q1 q2 / (r - t + t √K)². The formula accounts for the different optical path inside the dielectric.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q21",
+      "conceptIds": [
+        "ELS-01",
+        "ELS-03",
+        "ELS-04"
+      ],
+      "question": "What is the relation between relative permittivity and the forces in air and in the medium?",
+      "answer": "Relative permittivity K equals the ratio of the force between two charges in air to the force between the same charges when the space is filled with the dielectric: K = F_air / F_medium. This definition follows directly from the appearance of K in the denominator of Coulomb's law.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q22",
+      "conceptIds": [
+        "ELS-01",
+        "ELS-04",
+        "ELS-10"
+      ],
+      "question": "How are the unit vectors defined in the vector form of Coulomb's law?",
+      "answer": "The unit vector r21 points from q2 toward q1 and r12 points from q1 toward q2. They are opposite, so r12 = - r21. Using these unit vectors ensures that the force on each charge points correctly for attraction or repulsion according to the signs of the charges.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q23",
+      "conceptIds": [
+        "ELS-06"
+      ],
+      "question": "What is the resultant force when two equal forces act at 90°?",
+      "answer": "When two forces of equal magnitude F act at right angles the magnitude of the resultant is √(F² + F²) = F √2. The direction is 45° to each of the original forces. This is a standard result used in electrostatic force calculations.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q24",
+      "conceptIds": [
+        "ELS-04",
+        "ELS-06",
+        "ELS-10"
+      ],
+      "question": "What is the resultant when two equal forces act at 180°?",
+      "answer": "When two equal forces act in exactly opposite directions (180°) their vector sum is zero. The forces cancel each other completely. This situation can occur for collinear charges of appropriate magnitudes and signs.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q25",
+      "conceptIds": [
+        "ELS-08"
+      ],
+      "question": "Derive the expression for tan θ in the string-force problem.",
+      "answer": "From the equilibrium conditions T sin θ = FE and T cos θ = mg, division of the first equation by the second immediately yields tan θ = FE / mg. The angle θ is therefore determined solely by the ratio of the electrostatic force to the weight of the body.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q26",
+      "conceptIds": [
+        "ELS-01",
+        "ELS-02",
+        "ELS-03"
+      ],
+      "question": "What is the permittivity of free space numerically?",
+      "answer": "The permittivity of free space ε₀ equals 8.85 × 10⁻¹² C²/N m². This constant appears in the denominator of Coulomb's law in SI units and is a fundamental constant of nature.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q27",
+      "conceptIds": [
+        "ELS-01",
+        "ELS-04",
+        "ELS-10"
+      ],
+      "question": "How does the force change if the distance between charges is doubled?",
+      "answer": "Because force varies as 1/r², doubling the separation reduces the force to one-fourth of its original value. This inverse-square dependence is a direct consequence of Coulomb's law and is independent of the medium.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q28",
+      "conceptIds": [
+        "ELS-04",
+        "ELS-05",
+        "ELS-06"
+      ],
+      "question": "What is the force on a charge when the other charges form a closed system?",
+      "answer": "By the superposition principle the net force is still the vector sum of the individual Coulomb forces. If the charges are arranged symmetrically the vector sum may vanish, resulting in zero net force on the central charge.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q29",
+      "conceptIds": [
+        "ELS-02",
+        "ELS-03",
+        "ELS-10"
+      ],
+      "question": "Why is the constant k different in SI and CGS systems?",
+      "answer": "The two systems define the unit of charge differently. In CGS (electrostatic units) the constant is chosen to be unity in vacuum, while in SI the constant absorbs the factor 1/(4π ε₀) so that charge is measured in coulombs. The numerical values therefore differ.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q30",
+      "conceptIds": [
+        "ELS-02",
+        "ELS-03",
+        "ELS-07"
+      ],
+      "question": "Write the expression for the force between two charges separated by a dielectric of constant K.",
+      "answer": "The force is F = (1/(4π ε₀ K)) q1 q2 / r². Compared with the vacuum force the magnitude is reduced by the dielectric constant K. The direction remains along the line joining the charges.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q31",
+      "conceptIds": [
+        "ELS-02",
+        "ELS-03",
+        "ELS-07"
+      ],
+      "question": "How is the effective distance modified by a dielectric slab?",
+      "answer": "A dielectric slab of thickness t and dielectric constant K replaces a length t of vacuum by an equivalent length t/√K. Consequently the effective separation becomes r_eff = r - t + t/√K (or equivalently r - t + t √K depending on the exact derivation used in the notes). The force uses this effective distance.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q32",
+      "conceptIds": [
+        "ELS-10",
+        "ELS-12",
+        "ELS-13"
+      ],
+      "question": "What is the condition for the net force on the middle charge to be zero in a collinear arrangement?",
+      "answer": "The force exerted by the charge on one side must be equal in magnitude and opposite in direction to the force exerted by the charge on the other side. Setting the magnitudes equal yields a relation among the three charges and the distances that must be satisfied for equilibrium.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q33",
+      "conceptIds": [
+        "ELS-06",
+        "ELS-08",
+        "ELS-10"
+      ],
+      "question": "How does the presence of gravity affect the equilibrium of a charged suspended body?",
+      "answer": "Gravity provides the downward force mg that is balanced by the vertical component of the string tension. The electrostatic force is balanced by the horizontal component. Both forces together determine the equilibrium angle and the tension in the string.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q34",
+      "conceptIds": [
+        "ELS-06"
+      ],
+      "question": "What is the resultant of two equal forces acting at 60°?",
+      "answer": "When two forces of magnitude F act at 60° the magnitude of the resultant is √(F² + F² + 2 F F cos 60°) = √(2 F² + F²) = F √3. The direction lies along the angle bisector.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q35",
+      "conceptIds": [
+        "ELS-01",
+        "ELS-04",
+        "ELS-09"
+      ],
+      "question": "Why is Coulomb's law an inverse-square law?",
+      "answer": "Experimental measurements by Coulomb showed that the force falls off as the square of the distance. The mathematical form F ∝ 1/r² is therefore an empirical law that has been confirmed to high precision and is consistent with the flux of the electric field through a closed surface.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q36",
+      "conceptIds": [
+        "ELS-04",
+        "ELS-05",
+        "ELS-10"
+      ],
+      "question": "How is the total force on a charge expressed using the superposition principle in SI units?",
+      "answer": "F = (1/(4π ε₀)) Σ (qi qj / rij²) r̂ij where the sum runs over all other charges j. Each term is a vector, and the sum is the net force. This compact expression is the working formula for multi-charge electrostatic problems.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ELS-Q37",
+      "conceptIds": [
+        "ELS-04",
+        "ELS-08"
+      ],
+      "question": "What happens to the tension if the electrostatic force becomes zero?",
+      "answer": "If the electrostatic force FE vanishes, the only force that remains is the weight. The string then hangs vertically (θ = 0) and the tension equals the weight mg. The general formula T = √(FE² + mg²) reduces to T = mg when FE = 0.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    }
+  ]
+}

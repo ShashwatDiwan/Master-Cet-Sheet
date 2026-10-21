@@ -1,0 +1,462 @@
+{
+  "chapterId": "41",
+  "chapterName": "Trigonometry II",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "TII-01",
+      "name": "Double-angle identities",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin 2A, cos 2A, tan 2A expressed in terms of single angles."
+    },
+    {
+      "id": "TII-02",
+      "name": "Triple-angle identities",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin 3A = 3 sin A − 4 sin³ A; cos 3A = 4 cos³ A − 3 cos A."
+    },
+    {
+      "id": "TII-03",
+      "name": "Half-angle identities",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin(A/2), cos(A/2), tan(A/2) in terms of cos A or t = tan(A/2)."
+    },
+    {
+      "id": "TII-04",
+      "name": "Transformation of sums into products",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin C + sin D = 2 sin((C+D)/2) cos((C−D)/2); analogous for other combinations."
+    },
+    {
+      "id": "TII-05",
+      "name": "Transformation of products into sums",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "2 sin A cos B = sin(A+B) + sin(A−B); similar product-to-sum formulae."
+    },
+    {
+      "id": "TII-06",
+      "name": "Conditional trigonometric identities",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Identities that hold under a given relation among the angles (e.g., A+B+C=π)."
+    },
+    {
+      "id": "TII-07",
+      "name": "Identities for angles of a triangle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "When A+B+C=π, sin(A+B)=sin C, tan A + tan B + tan C = tan A tan B tan C, etc."
+    },
+    {
+      "id": "TII-08",
+      "name": "Maximum and minimum values of trigonometric expressions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "R sin(θ+α) form yields max ±R; calculus or AM-GM for more complicated expressions."
+    },
+    {
+      "id": "TII-09",
+      "name": "Solution of trigonometric equations using multiple-angle formulae",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Reduce to standard form via double/triple-angle identities then solve."
+    },
+    {
+      "id": "TII-10",
+      "name": "Weierstrass substitution t = tan(θ/2)",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Converts rational functions of sin and cos into rational functions of t."
+    },
+    {
+      "id": "TII-11",
+      "name": "Factorisation of trigonometric polynomials",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "sin nθ, cos nθ expressed as polynomials in sin θ or cos θ."
+    },
+    {
+      "id": "TII-12",
+      "name": "Sum of sines or cosines in AP",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Σ sin(a+(k−1)d) = sin(n d/2) sin(a+(n−1)d/2) / sin(d/2)."
+    },
+    {
+      "id": "TII-13",
+      "name": "Trigonometric series and finite sums",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Standard summation formulae for sin and cos of angles in arithmetic progression."
+    },
+    {
+      "id": "TII-14",
+      "name": "Elimination of trigonometric functions from simultaneous equations",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Use identities to obtain a relation free of the angle variable."
+    },
+    {
+      "id": "TII-15",
+      "name": "Common CET techniques for trigonometry II",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Double/triple angle, sum-to-product, triangle identities, max-min."
+    }
+  ],
+  "qna": [
+    {
+      "id": "TII-Q01",
+      "conceptIds": ["TII-01"],
+      "question": "Write the double-angle formulae for sin 2A, cos 2A and tan 2A.",
+      "answer": "sin 2A = 2 sin A cos A; cos 2A = cos² A − sin² A = 2 cos² A − 1 = 1 − 2 sin² A; tan 2A = 2 tan A / (1 − tan² A). These are the most frequently used multiple-angle identities.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q02",
+      "conceptIds": ["TII-02"],
+      "question": "State the triple-angle formulae for sine and cosine.",
+      "answer": "sin 3A = 3 sin A − 4 sin³ A; cos 3A = 4 cos³ A − 3 cos A. Both follow from the addition formula applied to 2A + A and subsequent substitution of the double-angle expressions.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q03",
+      "conceptIds": ["TII-03"],
+      "question": "Express sin(A/2) and cos(A/2) in terms of cos A.",
+      "answer": "sin(A/2) = ±√((1 − cos A)/2); cos(A/2) = ±√((1 + cos A)/2). The signs are chosen according to the quadrant in which A/2 lies. These are the standard half-angle formulae.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q04",
+      "conceptIds": ["TII-04"],
+      "question": "Write the sum-to-product identity for sin C + sin D.",
+      "answer": "sin C + sin D = 2 sin((C+D)/2) cos((C−D)/2). Analogous formulae exist for sin C − sin D, cos C + cos D and cos C − cos D. They convert sums into products and are useful for solving equations and for integration.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q05",
+      "conceptIds": ["TII-05"],
+      "question": "Write the product-to-sum identity for 2 cos A cos B.",
+      "answer": "2 cos A cos B = cos(A+B) + cos(A−B). The three companion identities for 2 sin A cos B, 2 cos A sin B and 2 sin A sin B complete the set of product-to-sum conversions.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q06",
+      "conceptIds": ["TII-07"],
+      "question": "If A + B + C = π, prove that tan A + tan B + tan C = tan A tan B tan C.",
+      "answer": "From A + B = π − C one has tan(A+B) = tan(π − C) = −tan C. But tan(A+B) = (tan A + tan B)/(1 − tan A tan B). Therefore (tan A + tan B)/(1 − tan A tan B) = −tan C. Cross-multiplication yields tan A + tan B + tan C = tan A tan B tan C.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q07",
+      "conceptIds": ["TII-07"],
+      "question": "If A + B + C = π, show that sin 2A + sin 2B + sin 2C = 4 sin A sin B sin C.",
+      "answer": "sin 2A + sin 2B = 2 sin(A+B) cos(A−B) = 2 sin(π−C) cos(A−B) = 2 sin C cos(A−B). Continuing with product-to-sum and the identity for cos(A−B) − cos(A+B) eventually produces the factor 4 sin A sin B sin C after algebraic simplification.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q08",
+      "conceptIds": ["TII-08"],
+      "question": "Find the maximum value of 3 sin θ + 4 cos θ.",
+      "answer": "Rewrite as 5 ( (3/5) sin θ + (4/5) cos θ ) = 5 sin(θ + α) where cos α = 3/5, sin α = 4/5. The maximum of the sine is 1, so the maximum of the original expression is 5. The minimum is −5.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TII-Q09",
+      "conceptIds": ["TII-01"],
+      "question": "Prove that cos 2θ = (1 − tan² θ)/(1 + tan² θ).",
+      "answer": "Start from cos 2θ = cos² θ − sin² θ and divide numerator and denominator by cos² θ: (1 − tan² θ)/(sec² θ) = (1 − tan² θ)/(1 + tan² θ). The identity holds wherever cos θ ≠ 0.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q10",
+      "conceptIds": ["TII-02"],
+      "question": "If cos 3θ = 4 cos³ θ − 3 cos θ, find cos 3θ when cos θ = 1/2.",
+      "answer": "cos 3θ = 4 (1/2)³ − 3 (1/2) = 4·(1/8) − 3/2 = 1/2 − 3/2 = −1. Direct verification: θ = π/3 ⇒ 3θ = π ⇒ cos π = −1, confirming the calculation.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q11",
+      "conceptIds": ["TII-04"],
+      "question": "Express sin 5θ + sin 3θ as a product.",
+      "answer": "sin 5θ + sin 3θ = 2 sin 4θ cos θ. The sum-to-product formula is applied with C = 5θ, D = 3θ.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q12",
+      "conceptIds": ["TII-05"],
+      "question": "Express 2 sin 3θ cos θ as a sum.",
+      "answer": "2 sin 3θ cos θ = sin 4θ + sin 2θ. The product-to-sum identity is used directly.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q13",
+      "conceptIds": ["TII-12"],
+      "question": "State the formula for the sum of sines of angles in arithmetic progression.",
+      "answer": "Σ_{k=0}^{n−1} sin(a + k d) = [sin(n d / 2) / sin(d / 2)] · sin(a + (n−1)d / 2). The formula is obtained by multiplying by 2 sin(d/2) and converting the products into differences of cosines that telescope.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "TII-Q14",
+      "conceptIds": ["TII-09"],
+      "question": "Solve the equation cos 2θ = sin θ.",
+      "answer": "cos 2θ − sin θ = 0 ⇒ 1 − 2 sin² θ − sin θ = 0 ⇒ 2 sin² θ + sin θ − 1 = 0. Let u = sin θ: 2u² + u − 1 = 0 ⇒ (2u − 1)(u + 1) = 0. u = 1/2 or u = −1. General solutions follow from the standard sine equations.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TII-Q15",
+      "conceptIds": ["TII-06"],
+      "question": "If A + B = 45°, prove that (1 + tan A)(1 + tan B) = 2.",
+      "answer": "tan(A+B) = tan 45° = 1 = (tan A + tan B)/(1 − tan A tan B). Therefore tan A + tan B = 1 − tan A tan B. Expand the left side of the required identity: 1 + tan A + tan B + tan A tan B = 1 + (1 − tan A tan B) + tan A tan B = 2. The identity follows.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q16",
+      "conceptIds": ["TII-01"],
+      "question": "Express sin 2A in terms of tan A.",
+      "answer": "sin 2A = 2 tan A / (1 + tan² A). Divide numerator and denominator of 2 sin A cos A by cos² A and replace sin A / cos A by tan A and 1/cos² A by sec² A = 1 + tan² A.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q17",
+      "conceptIds": ["TII-03"],
+      "question": "Find the exact value of sin 15° using a half-angle formula.",
+      "answer": "sin 15° = sin(30°/2) = √((1 − cos 30°)/2) = √((1 − √3/2)/2) = √(2 − √3)/2. The positive root is taken because 15° is acute.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q18",
+      "conceptIds": ["TII-07"],
+      "question": "In a triangle ABC prove that sin A + sin B + sin C = 4 cos(A/2) cos(B/2) cos(C/2).",
+      "answer": "Because A + B = π − C one has sin A + sin B = 2 sin((A+B)/2) cos((A−B)/2) = 2 cos(C/2) cos((A−B)/2). Continuing with the product-to-sum for the remaining terms and using the half-angle identities eventually yields the factorisation 4 cos(A/2) cos(B/2) cos(C/2).",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q19",
+      "conceptIds": ["TII-08"],
+      "question": "Find the maximum and minimum values of sin² θ cos² θ.",
+      "answer": "sin² θ cos² θ = (sin 2θ / 2)² = (1/4) sin² 2θ. The maximum of sin² is 1, so the maximum of the expression is 1/4; the minimum is 0. Alternatively use AM-GM: (sin² + cos²)/2 ≥ √(sin² cos²) ⇒ 1/2 ≥ |sin cos| ⇒ sin² cos² ≤ 1/4.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TII-Q20",
+      "conceptIds": ["TII-10"],
+      "question": "What is the Weierstrass substitution and when is it useful?",
+      "answer": "The substitution t = tan(θ/2) expresses sin θ = 2t/(1+t²), cos θ = (1−t²)/(1+t²) and dθ = 2 dt/(1+t²). It converts any rational function of sin θ and cos θ into a rational function of t, which can then be integrated by partial fractions.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "TII-Q21",
+      "conceptIds": ["TII-02"],
+      "question": "If sin 3θ = 0, find the possible values of sin θ.",
+      "answer": "sin 3θ = 3 sin θ − 4 sin³ θ = 0 ⇒ sin θ (3 − 4 sin² θ) = 0. Therefore sin θ = 0 or sin² θ = 3/4 ⇒ sin θ = 0, ±√3/2. These are consistent with 3θ = nπ.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q22",
+      "conceptIds": ["TII-04"],
+      "question": "Simplify cos 5θ − cos 3θ.",
+      "answer": "cos 5θ − cos 3θ = −2 sin 4θ sin θ. The sum-to-product (difference) formula is applied with C = 5θ, D = 3θ.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q23",
+      "conceptIds": ["TII-12"],
+      "question": "Evaluate the sum sin θ + sin 2θ + … + sin nθ.",
+      "answer": "The sum equals [sin(n θ / 2) / sin(θ / 2)] · sin((n+1)θ / 2). The formula is the standard summation of an arithmetic progression of sines with first term θ and common difference θ.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "TII-Q24",
+      "conceptIds": ["TII-06"],
+      "question": "If tan A = 1/2 and tan B = 1/3, find tan(A+B) without finding A and B.",
+      "answer": "tan(A+B) = (tan A + tan B)/(1 − tan A tan B) = (1/2 + 1/3)/(1 − (1/2)(1/3)) = (5/6)/(5/6) = 1. Therefore A+B = 45° + k·180°.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q25",
+      "conceptIds": ["TII-01"],
+      "question": "Prove that sin 2θ = 2 tan θ / (1 + tan² θ).",
+      "answer": "Right-hand side = 2 (sin θ / cos θ) / (1 + sin² θ / cos² θ) = 2 (sin θ / cos θ) / ((cos² θ + sin² θ)/cos² θ) = 2 sin θ cos θ / 1 = sin 2θ. The identity is verified by direct algebraic reduction.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q26",
+      "conceptIds": ["TII-07"],
+      "question": "In any triangle ABC show that cot A + cot B + cot C = cot A cot B cot C.",
+      "answer": "Because A+B+C=π one has cot(A+B) = cot(π−C) = −cot C. Expanding cot(A+B) = (cot A cot B − 1)/(cot A + cot B) and equating yields the required relation after clearing the denominator.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q27",
+      "conceptIds": ["TII-08"],
+      "question": "Find the range of the expression 2 sin θ + 3 cos θ.",
+      "answer": "The expression equals √13 sin(θ + α) where tan α = 3/2. Therefore its range is the closed interval [−√13, √13]. The amplitude √(2²+3²) determines the extreme values.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TII-Q28",
+      "conceptIds": ["TII-09"],
+      "question": "Solve  sin 2θ = cos θ  for θ ∈ [0, 2π).",
+      "answer": "2 sin θ cos θ − cos θ = 0 ⇒ cos θ (2 sin θ − 1) = 0. Either cos θ = 0 ⇒ θ = π/2, 3π/2; or sin θ = 1/2 ⇒ θ = π/6, 5π/6. All four solutions lie in the required interval.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TII-Q29",
+      "conceptIds": ["TII-15"],
+      "question": "A student forgets the factor 2 in the product-to-sum identities. What is the typical consequence?",
+      "answer": "All subsequent numerical answers are halved, and any equation that used the identity will produce an incorrect set of roots. Checking a special case (for example A=B=π/4) quickly reveals the missing factor.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q30",
+      "conceptIds": ["TII-03"],
+      "question": "Express tan(A/2) in terms of sin A and cos A.",
+      "answer": "tan(A/2) = (1 − cos A)/sin A = sin A/(1 + cos A). Both forms are obtained from the half-angle formulae by dividing sin(A/2) by cos(A/2) and rationalising.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q31",
+      "conceptIds": ["TII-05"],
+      "question": "Convert the product sin θ cos 2θ into a sum.",
+      "answer": "2 sin θ cos 2θ = sin 3θ + sin(−θ) = sin 3θ − sin θ. Therefore sin θ cos 2θ = (1/2)(sin 3θ − sin θ).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q32",
+      "conceptIds": ["TII-11"],
+      "question": "Express cos 4θ as a polynomial in cos θ.",
+      "answer": "cos 4θ = 2 cos² 2θ − 1 = 2 (2 cos² θ − 1)² − 1 = 2(4 cos⁴ θ − 4 cos² θ + 1) − 1 = 8 cos⁴ θ − 8 cos² θ + 1. The polynomial is of degree 4.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TII-Q33",
+      "conceptIds": ["TII-07"],
+      "question": "If A, B, C are angles of a triangle, find the value of tan A + tan B + tan C − tan A tan B tan C.",
+      "answer": "From the identity tan A + tan B + tan C = tan A tan B tan C the expression equals zero. The value is identically zero for any triangle.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q34",
+      "conceptIds": ["TII-01"],
+      "question": "Prove that 1 + cos 2θ = 2 cos² θ.",
+      "answer": "Right-hand side: 2 cos² θ. Left-hand side: 1 + (2 cos² θ − 1) = 2 cos² θ. The two sides are identical. The identity is one of the three standard double-angle forms for cosine.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TII-Q35",
+      "conceptIds": ["TII-08"],
+      "question": "Find the maximum value of sin θ cos θ.",
+      "answer": "sin θ cos θ = (1/2) sin 2θ. The maximum of sin 2θ is 1, therefore the maximum of the product is 1/2. The minimum is −1/2.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TII-Q36",
+      "conceptIds": ["TII-14"],
+      "question": "Eliminate θ from the equations x = cos θ + sin θ and y = cos θ − sin θ.",
+      "answer": "Square and add: x² + y² = 2(cos² θ + sin² θ) = 2. The relation free of θ is x² + y² = 2. (Squaring and subtracting yields the alternative xy = cos 2θ, which still contains θ.)",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TII-Q37",
+      "conceptIds": ["TII-15"],
+      "question": "List the four most frequently tested identity families in the Trigonometry-II chapter of CET.",
+      "answer": "1. Double- and triple-angle formulae. 2. Sum-to-product and product-to-sum conversions. 3. Identities valid when A+B+C=π (triangle identities). 4. Maximum/minimum of linear combinations a sin θ + b cos θ. Mastery of these four covers the great majority of examination questions.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    }
+  ]
+}

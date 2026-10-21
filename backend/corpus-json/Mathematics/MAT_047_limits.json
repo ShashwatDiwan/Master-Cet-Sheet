@@ -1,0 +1,462 @@
+{
+  "chapterId": "47",
+  "chapterName": "Limits",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "LIM-01",
+      "name": "Definition of limit",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "lim_{x→a} f(x) = L means f(x) approaches L as x approaches a."
+    },
+    {
+      "id": "LIM-02",
+      "name": "Left-hand and right-hand limits",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "lim_{x→a-} and lim_{x→a+}; two-sided limit exists only when both agree."
+    },
+    {
+      "id": "LIM-03",
+      "name": "Algebra of limits",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Limit of sum, product, quotient (denominator limit ≠0) equals corresponding operations on limits."
+    },
+    {
+      "id": "LIM-04",
+      "name": "Standard limits",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "lim (sin x)/x =1, lim (tan x)/x =1, lim (1+x)^{1/x}=e, lim (a^x-1)/x = log a as x→0."
+    },
+    {
+      "id": "LIM-05",
+      "name": "Limits of the form 0/0 and ∞/∞",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Indeterminate forms resolved by algebraic simplification, rationalisation or L'Hôpital."
+    },
+    {
+      "id": "LIM-06",
+      "name": "L'Hôpital's rule",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "For 0/0 or ∞/∞, lim f/g = lim f'/g' under suitable conditions."
+    },
+    {
+      "id": "LIM-07",
+      "name": "Limits at infinity",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Behaviour of rational functions as x→±∞ determined by degrees of numerator and denominator."
+    },
+    {
+      "id": "LIM-08",
+      "name": "Squeeze (sandwich) theorem",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "If g ≤ f ≤ h and lim g = lim h = L then lim f = L."
+    },
+    {
+      "id": "LIM-09",
+      "name": "Continuity via limits",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "f continuous at a iff lim_{x→a} f(x) = f(a)."
+    },
+    {
+      "id": "LIM-10",
+      "name": "One-sided continuity",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Right-continuous if lim_{x→a+} f(x)=f(a); left-continuous similarly."
+    },
+    {
+      "id": "LIM-11",
+      "name": "Limits of trigonometric functions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Standard results involving sin, cos, tan as argument →0 or special values."
+    },
+    {
+      "id": "LIM-12",
+      "name": "Exponential and logarithmic limits",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "lim (1+1/n)^n = e, lim (log(1+x))/x =1 as x→0."
+    },
+    {
+      "id": "LIM-13",
+      "name": "Indeterminate forms 1^∞, 0^0, ∞^0",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Take logarithm, convert to 0/0 or ∞/∞, then apply L'Hôpital or standard limits."
+    },
+    {
+      "id": "LIM-14",
+      "name": "Asymptotes via limits",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Horizontal asymptote y=L if lim_{x→±∞} f(x)=L; vertical if lim_{x→a} f=±∞."
+    },
+    {
+      "id": "LIM-15",
+      "name": "Common techniques for evaluating limits",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Factorisation, rationalisation, trigonometric identities, substitution, L'Hôpital."
+    }
+  ],
+  "qna": [
+    {
+      "id": "LIM-Q01",
+      "conceptIds": ["LIM-01"],
+      "question": "State the informal definition of lim_{x→a} f(x) = L.",
+      "answer": "The limit equals L if the values of f(x) can be made arbitrarily close to L by taking x sufficiently close to a (but not equal to a). The function need not be defined at a itself. This captures the idea of approaching a value.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q02",
+      "conceptIds": ["LIM-02"],
+      "question": "When does the two-sided limit lim_{x→a} f(x) exist?",
+      "answer": "The two-sided limit exists if and only if both the left-hand limit lim_{x→a-} f(x) and the right-hand limit lim_{x→a+} f(x) exist and are equal. If either one-sided limit fails to exist or they differ, the two-sided limit does not exist.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q03",
+      "conceptIds": ["LIM-03"],
+      "question": "State the algebra of limits for sum, product and quotient.",
+      "answer": "If lim f = A and lim g = B then lim(f+g)=A+B, lim(fg)=A B, and lim(f/g)=A/B provided B≠0. These rules allow complicated limits to be broken into simpler pieces that can be evaluated separately.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q04",
+      "conceptIds": ["LIM-04"],
+      "question": "State the standard limit lim_{x→0} (sin x)/x.",
+      "answer": "lim_{x→0} (sin x)/x = 1. The same limit holds when x is replaced by any expression that tends to zero. This is the most important trigonometric limit and is the foundation of the derivatives of sin and cos.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q05",
+      "conceptIds": ["LIM-04"],
+      "question": "State lim_{x→0} (tan x)/x and lim_{x→0} (1+x)^{1/x}.",
+      "answer": "lim_{x→0} (tan x)/x = 1 and lim_{x→0} (1+x)^{1/x} = e. Both are standard results used repeatedly in CET problems involving trigonometric or exponential expressions.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q06",
+      "conceptIds": ["LIM-05"],
+      "question": "What are the indeterminate forms 0/0 and ∞/∞ and how are they resolved?",
+      "answer": "They arise when direct substitution yields 0/0 or ∞/∞. They are resolved by algebraic simplification (factorisation, rationalisation), trigonometric identities, or by applying L'Hôpital's rule. The form itself is not a value; further work is required.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q07",
+      "conceptIds": ["LIM-06"],
+      "question": "State L'Hôpital's rule.",
+      "answer": "If lim f/g is of the form 0/0 or ∞/∞ and the limit of f'/g' exists, then lim f/g = lim f'/g'. The rule may be applied repeatedly if the new limit is again indeterminate. Differentiability of f and g near the point (except possibly at the point) is required.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q08",
+      "conceptIds": ["LIM-07"],
+      "question": "How do you find lim_{x→∞} of a rational function p(x)/q(x)?",
+      "answer": "Divide numerator and denominator by the highest power of x appearing in the denominator. The limit is then determined by the ratio of the leading coefficients if the degrees are equal, is zero if deg q > deg p, and is infinite if deg p > deg q.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q09",
+      "conceptIds": ["LIM-08"],
+      "question": "State the Squeeze Theorem.",
+      "answer": "If g(x) ≤ f(x) ≤ h(x) for all x in a deleted neighbourhood of a, and if lim g(x) = lim h(x) = L, then lim f(x) = L. The theorem is used when a function is trapped between two functions that share the same limit.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q10",
+      "conceptIds": ["LIM-09"],
+      "question": "How is continuity at a point expressed in terms of limits?",
+      "answer": "A function f is continuous at a if and only if lim_{x→a} f(x) exists and equals f(a). Equivalently the left-hand limit, the right-hand limit and the function value must all be equal.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q11",
+      "conceptIds": ["LIM-04"],
+      "question": "Evaluate lim_{x→0} (sin 5x)/x.",
+      "answer": "Write (sin 5x)/x = 5 · (sin 5x)/(5x). As x→0, 5x→0, so the standard limit gives 5 · 1 = 5. The same technique works for any constant multiple inside the sine.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q12",
+      "conceptIds": ["LIM-04"],
+      "question": "Evaluate lim_{x→0} (1 − cos x)/x².",
+      "answer": "Multiply numerator and denominator by 1 + cos x or use the identity 1 − cos x = 2 sin²(x/2). The limit becomes (1/2) lim (sin(x/2)/(x/2))² = 1/2. The standard result is 1/2.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q13",
+      "conceptIds": ["LIM-06"],
+      "question": "Evaluate lim_{x→0} (e^x − 1)/x using L'Hôpital or a standard limit.",
+      "answer": "The form is 0/0. Differentiating numerator and denominator gives lim e^x / 1 = 1. Alternatively the standard limit lim (a^x − 1)/x = log a with a = e yields log e = 1.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q14",
+      "conceptIds": ["LIM-07"],
+      "question": "Find lim_{x→∞} (3x² + 2x + 1)/(5x² − 7).",
+      "answer": "Divide numerator and denominator by x²: lim (3 + 2/x + 1/x²)/(5 − 7/x²) = 3/5. The degrees are equal, so the limit is the ratio of the leading coefficients.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q15",
+      "conceptIds": ["LIM-05"],
+      "question": "Evaluate lim_{x→2} (x² − 4)/(x − 2).",
+      "answer": "Direct substitution gives 0/0. Factor the numerator: (x−2)(x+2)/(x−2) = x+2 for x≠2. The limit is therefore 4. Cancellation of the common factor removes the indeterminacy.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q16",
+      "conceptIds": ["LIM-08"],
+      "question": "Use the Squeeze Theorem to show that lim_{x→0} x² sin(1/x) = 0.",
+      "answer": "−x² ≤ x² sin(1/x) ≤ x² because |sin| ≤ 1. Both −x² and x² tend to 0 as x→0. By the Squeeze Theorem the middle expression also tends to 0.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q17",
+      "conceptIds": ["LIM-12"],
+      "question": "Evaluate lim_{x→0} (log(1+x))/x.",
+      "answer": "The standard limit is 1. It can be derived from the definition of the derivative of log at 1 or by writing the expression as the reciprocal of (e^y − 1)/y after the substitution y = log(1+x).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q18",
+      "conceptIds": ["LIM-13"],
+      "question": "How do you evaluate a limit of the indeterminate form 1^∞?",
+      "answer": "Write the expression as e^{g(x)} where g(x) = log(of the original expression). The exponent g(x) is usually of the form 0/0 or ∞/∞ and can be evaluated by L'Hôpital or standard limits. The original limit is then e raised to that value.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q19",
+      "conceptIds": ["LIM-02"],
+      "question": "Does lim_{x→0} |x|/x exist?",
+      "answer": "No. The right-hand limit is 1 and the left-hand limit is −1. Because the one-sided limits differ, the two-sided limit does not exist. The function has a jump discontinuity at the origin.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q20",
+      "conceptIds": ["LIM-04"],
+      "question": "Evaluate lim_{x→0} (sin 3x)/(sin 5x).",
+      "answer": "Write the expression as (3/5) · [(sin 3x)/(3x)] / [(sin 5x)/(5x)]. Each standard limit tends to 1, so the whole limit is 3/5.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q21",
+      "conceptIds": ["LIM-06"],
+      "question": "Evaluate lim_{x→0} (tan x − x)/x³ using L'Hôpital.",
+      "answer": "The form is 0/0. Differentiating three times (or using series) yields the limit 1/2. Direct application of L'Hôpital three times produces the same result after trigonometric simplification.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q22",
+      "conceptIds": ["LIM-07"],
+      "question": "Find lim_{x→∞} (2x³ − x)/(x³ + 5).",
+      "answer": "Divide by x³: lim (2 − 1/x²)/(1 + 5/x³) = 2/1 = 2. Degrees are equal, so the limit is the ratio of leading coefficients.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q23",
+      "conceptIds": ["LIM-15"],
+      "question": "A student substitutes x = 0 directly into (sin x)/x and obtains 0/0, then stops. What should be done next?",
+      "answer": "0/0 is an indeterminate form, not an answer. The student must apply a standard limit, a trigonometric identity, L'Hôpital's rule, or a series expansion to resolve the indeterminacy. Stopping at 0/0 is incomplete.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q24",
+      "conceptIds": ["LIM-11"],
+      "question": "Evaluate lim_{x→π/2} (sec x − tan x).",
+      "answer": "Write sec − tan = (1 − sin x)/cos x and multiply numerator and denominator by 1 + sin x, or use the substitution t = π/2 − x. The limit equals 0. Direct substitution yields ∞ − ∞, an indeterminate form that must be resolved.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q25",
+      "conceptIds": ["LIM-12"],
+      "question": "Evaluate lim_{n→∞} (1 + 1/n)^n.",
+      "answer": "This is the definition of the number e. The limit equals e. The same limit with 1/n replaced by any expression tending to zero yields e raised to the appropriate power.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q26",
+      "conceptIds": ["LIM-09"],
+      "question": "If lim_{x→a} f(x) exists but is not equal to f(a), what kind of discontinuity does f have?",
+      "answer": "The discontinuity is removable. Redefining f(a) to equal the limit removes the discontinuity and makes the function continuous at a. The graph has a single missing or misplaced point.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q27",
+      "conceptIds": ["LIM-03"],
+      "question": "If lim f(x) = 2 and lim g(x) = 0, does lim f(x)/g(x) necessarily exist?",
+      "answer": "Not necessarily. The quotient may tend to infinity, or the limit may fail to exist if g changes sign. The algebra of limits for quotients requires the limit of the denominator to be non-zero.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q28",
+      "conceptIds": ["LIM-14"],
+      "question": "How do you determine a horizontal asymptote of a function using limits?",
+      "answer": "Compute lim_{x→∞} f(x) and lim_{x→−∞} f(x). If either limit equals a finite number L, then y = L is a horizontal asymptote. The two one-sided limits at infinity may give different horizontal asymptotes.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q29",
+      "conceptIds": ["LIM-04"],
+      "question": "Evaluate lim_{x→0} (1 − cos 2x)/x².",
+      "answer": "1 − cos 2x = 2 sin² x, so the expression becomes 2 (sin x / x)² → 2 · 1² = 2. The standard limit for sine is used after the double-angle identity.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q30",
+      "conceptIds": ["LIM-06"],
+      "question": "When is L'Hôpital's rule not applicable even if the form looks indeterminate?",
+      "answer": "The rule requires that the limit of the ratio of the derivatives exists (or is infinite). If that limit itself fails to exist, L'Hôpital does not conclude anything. Also the functions must be differentiable in a punctured neighbourhood of the point.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q31",
+      "conceptIds": ["LIM-01"],
+      "question": "Does the existence of lim_{x→a} f(x) imply that f is defined at a?",
+      "answer": "No. The limit concerns the behaviour of f near a, not at a. The function may be undefined at a, or defined to a value different from the limit. Continuity additionally requires that the function value equal the limit.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q32",
+      "conceptIds": ["LIM-15"],
+      "question": "List four common techniques for evaluating limits in CET problems.",
+      "answer": "1. Algebraic factorisation and cancellation. 2. Rationalisation of square roots. 3. Use of standard trigonometric or exponential limits. 4. L'Hôpital's rule for 0/0 or ∞/∞ forms. Substitution and series expansions are also useful.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q33",
+      "conceptIds": ["LIM-02"],
+      "question": "Evaluate lim_{x→0+} √x and lim_{x→0-} √x.",
+      "answer": "The right-hand limit is 0. The left-hand limit does not exist in the reals because √x is not defined for x < 0. Consequently the two-sided limit does not exist.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q34",
+      "conceptIds": ["LIM-13"],
+      "question": "Evaluate lim_{x→0+} x^x.",
+      "answer": "Write x^x = e^{x log x}. The exponent x log x tends to 0 (standard limit), so the original limit is e^0 = 1. The form 0^0 is indeterminate and must be converted to an exponential.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q35",
+      "conceptIds": ["LIM-07"],
+      "question": "Find lim_{x→∞} (√(x² + x) − x).",
+      "answer": "Rationalise by multiplying by the conjugate: lim [x / (√(x² + x) + x)] = lim 1 / (√(1 + 1/x) + 1) = 1/2. Direct substitution yields ∞ − ∞, an indeterminate form.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q36",
+      "conceptIds": ["LIM-04"],
+      "question": "Evaluate lim_{x→0} (cos x − 1)/x.",
+      "answer": "The limit is 0. It can be seen by writing (cos x − 1)/x = − (1 − cos x)/x and using the standard limit (1 − cos x)/x² → 1/2 together with an extra factor of x that tends to 0.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LIM-Q37",
+      "conceptIds": ["LIM-09"],
+      "question": "If lim_{x→a} f(x) = f(a), is f continuous at a?",
+      "answer": "Yes. That equality is precisely the definition of continuity at a. The limit must exist (so both one-sided limits exist and agree) and equal the function value.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "chapterId": "53",
+  "chapterName": "Line and Plane",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "LAP-01",
+      "name": "Direction cosines and direction ratios of a line",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "l, m, n with l² + m² + n² = 1; ratios a : b : c proportional to them."
+    },
+    {
+      "id": "LAP-02",
+      "name": "Equation of a line in space (symmetric and parametric)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "(x−x1)/l = (y−y1)/m = (z−z1)/n = t; or r = a + λ d."
+    },
+    {
+      "id": "LAP-03",
+      "name": "Angle between two lines",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "cos θ = |l1 l2 + m1 m2 + n1 n2| / (√(l1²+m1²+n1²) √(l2²+m2²+n2²))."
+    },
+    {
+      "id": "LAP-04",
+      "name": "Condition for two lines to be perpendicular or parallel",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Perpendicular: l1l2 + m1m2 + n1n2 = 0; parallel: direction ratios proportional."
+    },
+    {
+      "id": "LAP-05",
+      "name": "Shortest distance between two skew lines",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "|(a2 − a1) · (d1 × d2)| / |d1 × d2|."
+    },
+    {
+      "id": "LAP-06",
+      "name": "Equation of a plane (normal form and general form)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "lx + my + nz = p; ax + by + cz + d = 0."
+    },
+    {
+      "id": "LAP-07",
+      "name": "Equation of a plane through three points",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Determinant form or using two vectors in the plane and their cross product as normal."
+    },
+    {
+      "id": "LAP-08",
+      "name": "Angle between two planes",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Angle between their normals: cos θ = |n1 · n2| / (|n1| |n2|)."
+    },
+    {
+      "id": "LAP-09",
+      "name": "Angle between a line and a plane",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin φ = |d · n| / (|d| |n|) where φ is the angle between line and plane."
+    },
+    {
+      "id": "LAP-10",
+      "name": "Distance of a point from a plane",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "|ax1 + by1 + cz1 + d| / √(a² + b² + c²)."
+    },
+    {
+      "id": "LAP-11",
+      "name": "Intersection of a line and a plane",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Substitute parametric equations of the line into the plane equation and solve for the parameter."
+    },
+    {
+      "id": "LAP-12",
+      "name": "Coplanar lines",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Two lines are coplanar if the scalar triple product (a2−a1) · (d1 × d2) = 0."
+    },
+    {
+      "id": "LAP-13",
+      "name": "Plane through the intersection of two planes",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "π1 + λ π2 = 0 represents a plane through the line of intersection."
+    },
+    {
+      "id": "LAP-14",
+      "name": "Foot of the perpendicular from a point to a plane",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Parametric equations of the normal line from the point; intersection with the plane."
+    },
+    {
+      "id": "LAP-15",
+      "name": "Image of a point in a plane",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Mid-point of the segment joining the point and its image lies on the plane; the segment is parallel to the normal."
+    }
+  ],
+  "qna": [
+    {
+      "id": "LAP-Q01",
+      "conceptIds": ["LAP-01"],
+      "question": "Define direction cosines of a line and state the fundamental relation they satisfy.",
+      "answer": "Direction cosines are the cosines of the angles that the line makes with the positive directions of the coordinate axes. If l, m, n are the direction cosines then l² + m² + n² = 1. Direction ratios are any three numbers proportional to the direction cosines.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q02",
+      "conceptIds": ["LAP-02"],
+      "question": "Write the symmetric equations of a line passing through (x1,y1,z1) with direction cosines l, m, n.",
+      "answer": "(x − x1)/l = (y − y1)/m = (z − z1)/n. Equivalently in vector form r = a + λ d where a is the position vector of the given point and d is a direction vector of the line.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q03",
+      "conceptIds": ["LAP-03"],
+      "question": "State the formula for the angle between two lines with direction cosines (l1,m1,n1) and (l2,m2,n2).",
+      "answer": "cos θ = |l1 l2 + m1 m2 + n1 n2|. If direction ratios are used the denominators √(Σ a1²) √(Σ a2²) must be inserted. The absolute value is taken when the acute angle is required.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q04",
+      "conceptIds": ["LAP-04"],
+      "question": "Write the conditions for two lines to be parallel and to be perpendicular.",
+      "answer": "Two lines are parallel if their direction ratios are proportional: a1/a2 = b1/b2 = c1/c2. They are perpendicular if a1 a2 + b1 b2 + c1 c2 = 0. The same conditions hold when direction cosines replace the ratios.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q05",
+      "conceptIds": ["LAP-05"],
+      "question": "State the formula for the shortest distance between two skew lines.",
+      "answer": "If the lines are r = a1 + λ d1 and r = a2 + μ d2, the shortest distance is |(a2 − a1) · (d1 × d2)| / |d1 × d2|. The numerator is the absolute value of the scalar triple product and the denominator is the magnitude of the common perpendicular direction.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q06",
+      "conceptIds": ["LAP-06"],
+      "question": "Write the general equation of a plane and the normal form.",
+      "answer": "General form: ax + by + cz + d = 0. Normal form: lx + my + nz = p where (l,m,n) are the direction cosines of the normal and p is the length of the perpendicular from the origin to the plane.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q07",
+      "conceptIds": ["LAP-08"],
+      "question": "How do you find the angle between two planes?",
+      "answer": "The angle between two planes is equal to the angle between their normals. If the normals are n1 and n2 then cos θ = |n1 · n2| / (|n1| |n2|). Parallel planes have proportional normals; perpendicular planes have normals whose scalar product is zero.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q08",
+      "conceptIds": ["LAP-09"],
+      "question": "State the formula for the angle between a line and a plane.",
+      "answer": "If φ is the angle between the line with direction vector d and the plane with normal n, then sin φ = |d · n| / (|d| |n|). The angle between the line and the normal is complementary to φ, which produces the sine rather than the cosine.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q09",
+      "conceptIds": ["LAP-10"],
+      "question": "Write the formula for the perpendicular distance from a point to a plane.",
+      "answer": "The distance from the point (x1,y1,z1) to the plane ax + by + cz + d = 0 is |ax1 + by1 + cz1 + d| / √(a² + b² + c²). The formula is the absolute value of the plane expression evaluated at the point divided by the magnitude of the normal vector.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q10",
+      "conceptIds": ["LAP-02"],
+      "question": "Find the equation of the line passing through (1,2,3) and parallel to the vector 2i − j + 2k.",
+      "answer": "Symmetric form: (x − 1)/2 = (y − 2)/(−1) = (z − 3)/2. Parametric form: x = 1 + 2t, y = 2 − t, z = 3 + 2t. Vector form: r = (i + 2j + 3k) + λ(2i − j + 2k).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q11",
+      "conceptIds": ["LAP-03"],
+      "question": "Find the angle between the lines with direction ratios 1,1,2 and 1,−1,1.",
+      "answer": "cos θ = |(1)(1) + (1)(−1) + (2)(1)| / (√6 · √3) = |1 − 1 + 2| / √18 = 2/(3√2) = √2/3. θ = cos^{-1}(√2/3).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q12",
+      "conceptIds": ["LAP-06"],
+      "question": "Find the equation of the plane with normal vector 2i − 3j + 6k and passing through the point (1,1,1).",
+      "answer": "The plane is 2(x − 1) − 3(y − 1) + 6(z − 1) = 0 ⇒ 2x − 3y + 6z − 5 = 0. The normal vector supplies the coefficients a, b, c; the given point determines the constant term.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q13",
+      "conceptIds": ["LAP-10"],
+      "question": "Find the distance of the point (2,−1,3) from the plane 2x − 2y + z + 3 = 0.",
+      "answer": "Distance = |2·2 − 2·(−1) + 1·3 + 3| / √(4 + 4 + 1) = |4 + 2 + 3 + 3|/3 = 12/3 = 4. The formula is applied directly.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q14",
+      "conceptIds": ["LAP-05"],
+      "question": "When is the shortest distance between two lines zero?",
+      "answer": "The shortest distance is zero precisely when the lines intersect (or are coincident). Algebraically this occurs when the scalar triple product (a2 − a1) · (d1 × d2) vanishes, which is also the condition that the lines are coplanar.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q15",
+      "conceptIds": ["LAP-07"],
+      "question": "Write the equation of the plane passing through the three points A(1,0,0), B(0,1,0), C(0,0,1).",
+      "answer": "Two vectors in the plane are AB = −i + j and AC = −i + k. Their cross product is i + j + k, so the plane is x + y + z = 1 (after substituting any of the three points). The intercept form also yields the same equation.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q16",
+      "conceptIds": ["LAP-11"],
+      "question": "Find the point of intersection of the line (x−1)/2 = (y+1)/3 = (z−2)/−1 with the plane x + y + z = 3.",
+      "answer": "Parametric: x = 1 + 2t, y = −1 + 3t, z = 2 − t. Substitute: (1+2t) + (−1+3t) + (2−t) = 3 ⇒ 2 + 4t = 3 ⇒ t = 1/4. Point is (1 + 1/2, −1 + 3/4, 2 − 1/4) = (3/2, −1/4, 7/4).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LAP-Q17",
+      "conceptIds": ["LAP-04"],
+      "question": "Show that the lines (x−1)/2 = (y−2)/3 = (z−3)/4 and (x−2)/3 = (y−3)/4 = (z−4)/5 are not perpendicular.",
+      "answer": "Direction ratios 2,3,4 and 3,4,5. Dot product 2·3 + 3·4 + 4·5 = 6 + 12 + 20 = 38 ≠ 0. Therefore the lines are not perpendicular. (They are also not parallel because the ratios are not proportional.)",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q18",
+      "conceptIds": ["LAP-12"],
+      "question": "State the condition for two lines in space to be coplanar.",
+      "answer": "The lines r = a1 + λ d1 and r = a2 + μ d2 are coplanar if and only if (a2 − a1) · (d1 × d2) = 0. Equivalently the shortest distance between them is zero.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LAP-Q19",
+      "conceptIds": ["LAP-08"],
+      "question": "Find the angle between the planes 2x − y + 2z = 5 and 3x − 6y − 2z = 7.",
+      "answer": "Normals n1 = 2i − j + 2k, n2 = 3i − 6j − 2k. n1 · n2 = 6 + 6 − 4 = 8, |n1| = 3, |n2| = 7. cos θ = 8/(3·7) = 8/21. θ = cos^{-1}(8/21).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q20",
+      "conceptIds": ["LAP-09"],
+      "question": "Find the angle between the line (x−1)/1 = (y−2)/2 = (z−3)/3 and the plane x + y + z = 1.",
+      "answer": "d = i + 2j + 3k, n = i + j + k. sin φ = |1+2+3| / (√14 · √3) = 6 / √42 = √6 / √7. φ = sin^{-1}(√(6/7)).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q21",
+      "conceptIds": ["LAP-13"],
+      "question": "Write the equation of the family of planes through the intersection of 2x − y + z = 3 and x + 2y − z = 1.",
+      "answer": "The family is (2x − y + z − 3) + λ (x + 2y − z − 1) = 0. Expanding: (2+λ)x + (−1+2λ)y + (1−λ)z − 3 − λ = 0. Each value of λ gives a plane containing the line of intersection of the two given planes.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LAP-Q22",
+      "conceptIds": ["LAP-14"],
+      "question": "How do you find the foot of the perpendicular from a point to a plane?",
+      "answer": "Write the parametric equations of the line that passes through the given point and is parallel to the normal of the plane. Substitute these parametric equations into the plane equation and solve for the parameter. The resulting point is the foot of the perpendicular.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LAP-Q23",
+      "conceptIds": ["LAP-01"],
+      "question": "If the direction ratios of a line are 2, −1, 2, find its direction cosines.",
+      "answer": "Magnitude = √(4+1+4) = 3. Direction cosines are 2/3, −1/3, 2/3. They satisfy the identity l² + m² + n² = 1.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q24",
+      "conceptIds": ["LAP-06"],
+      "question": "Reduce the plane 2x − 3y + 6z = 14 to normal form.",
+      "answer": "Divide by √(4+9+36) = 7: (2/7)x − (3/7)y + (6/7)z = 2. The right-hand side is the distance from the origin; the coefficients of x, y, z are the direction cosines of the normal.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q25",
+      "conceptIds": ["LAP-05"],
+      "question": "Find the shortest distance between the lines r = i + 2j + 3k + λ(i − j + k) and r = 2i + j − k + μ(2i + j − k).",
+      "answer": "a2 − a1 = (2i + j − k) − (i + 2j + 3k) = i − j − 4k. d1 × d2 = |i j k; 1 −1 1; 2 1 −1| = i(1−1) − j(−1−2) + k(1+2) = 0 i + 3 j + 3 k. (a2−a1)·(d1×d2) = 0 − 3 − 12 = −15. |d1×d2| = 3√2. Distance = 15/(3√2) = 5/√2.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q26",
+      "conceptIds": ["LAP-15"],
+      "question": "Outline the method for finding the image of a point in a plane.",
+      "answer": "Let P be the given point and P' its image. The mid-point of PP' lies on the plane, and PP' is parallel to the normal of the plane. These two conditions determine the coordinates of P'. Equivalently, the foot of the perpendicular from P to the plane is the mid-point of PP'.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LAP-Q27",
+      "conceptIds": ["LAP-02"],
+      "question": "Write the vector equation of the line passing through the point with position vector 2i − j + 3k and parallel to the vector i + 2j − k.",
+      "answer": "r = (2i − j + 3k) + λ(i + 2j − k). The first vector is a fixed point on the line; the second vector is a direction vector of the line.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q28",
+      "conceptIds": ["LAP-04"],
+      "question": "Are the lines with direction ratios 1,2,3 and 2,4,6 parallel? Justify.",
+      "answer": "Yes. The ratios are proportional: 2/1 = 4/2 = 6/3 = 2. Therefore the direction vectors are scalar multiples of each other and the lines are parallel (or coincident).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q29",
+      "conceptIds": ["LAP-10"],
+      "question": "Find the distance between the parallel planes 2x − 2y + z + 3 = 0 and 4x − 4y + 2z − 6 = 0.",
+      "answer": "First divide the second plane by 2: 2x − 2y + z − 3 = 0. Distance = |3 − (−3)| / √(4+4+1) = 6/3 = 2. The formula for distance between parallel planes is |d1 − d2| / √(a²+b²+c²) after making the coefficients of x,y,z identical.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q30",
+      "conceptIds": ["LAP-11"],
+      "question": "Does the line (x−1)/1 = (y−2)/1 = (z−3)/1 intersect the plane x + y + z = 6?",
+      "answer": "Parametric: x=1+t, y=2+t, z=3+t. Substitute: 1+t + 2+t + 3+t = 6 ⇒ 6 + 3t = 6 ⇒ t=0. Intersection point is (1,2,3). The line does intersect the plane (in fact it meets at the point already known to lie on both).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "LAP-Q31",
+      "conceptIds": ["LAP-07"],
+      "question": "Find the equation of the plane determined by the points (1,1,1), (1,−1,1) and (−1,1,1).",
+      "answer": "Vectors in the plane: (0,−2,0) and (−2,0,0). Cross product = (0,0,0)? Wait, better: AB = 0i −2j +0k, AC = −2i +0j +0k. Cross product = |i j k; 0 −2 0; −2 0 0| = i(0) − j(0) + k(0+4) = 4k. Plane is z = 1. Verification with the three points confirms z=1.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q32",
+      "conceptIds": ["LAP-03"],
+      "question": "If two lines are perpendicular, what is the relation between their direction cosines?",
+      "answer": "l1 l2 + m1 m2 + n1 n2 = 0. This is the vanishing of the cosine of the angle between them, which is the condition for perpendicularity.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q33",
+      "conceptIds": ["LAP-09"],
+      "question": "When is a line parallel to a plane?",
+      "answer": "A line is parallel to a plane if it is perpendicular to the normal of the plane, i.e., if d · n = 0, and the line does not lie in the plane. Equivalently the angle φ between the line and the plane is zero.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q34",
+      "conceptIds": ["LAP-01"],
+      "question": "Can the direction cosines of a line be 1/2, 1/2, 1/2? Justify.",
+      "answer": "No. The sum of squares would be 3/4 ≠ 1. Direction cosines must satisfy l² + m² + n² = 1. The numbers 1/2, 1/2, 1/2 are possible direction ratios but not direction cosines.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q35",
+      "conceptIds": ["LAP-06"],
+      "question": "Find the intercepts of the plane 2x − 3y + 4z = 12 on the coordinate axes.",
+      "answer": "x-intercept: set y=z=0 ⇒ 2x=12 ⇒ x=6. y-intercept: set x=z=0 ⇒ −3y=12 ⇒ y=−4. z-intercept: set x=y=0 ⇒ 4z=12 ⇒ z=3. The intercept form is x/6 + y/(−4) + z/3 = 1.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "LAP-Q36",
+      "conceptIds": ["LAP-12"],
+      "question": "Two lines have direction vectors d1 and d2 and pass through points with position vectors a1 and a2. Write the condition that they are coplanar.",
+      "answer": "(a2 − a1) · (d1 × d2) = 0. This single scalar condition is necessary and sufficient for the four points (or the two lines) to be coplanar.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "LAP-Q37",
+      "conceptIds": ["LAP-14"],
+      "question": "Find the foot of the perpendicular from the origin to the plane 2x − y + 2z = 6.",
+      "answer": "Normal direction is 2i − j + 2k. Parametric equations of the normal from origin: x=2t, y=−t, z=2t. Substitute into the plane: 2(2t) − (−t) + 2(2t) = 6 ⇒ 4t + t + 4t = 6 ⇒ 9t=6 ⇒ t=2/3. Foot is (4/3, −2/3, 4/3).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    }
+  ]
+}

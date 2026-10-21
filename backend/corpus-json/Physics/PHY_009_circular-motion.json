@@ -1,0 +1,655 @@
+{
+  "chapterId": "009",
+  "chapterName": "Circular Motion",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "CM-01",
+      "name": "Periodic and circular motion",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Periodic motion repeats after a fixed interval; circular motion is along a circle."
+    },
+    {
+      "id": "CM-02",
+      "name": "Uniform and non-uniform circular motion",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Uniform has constant speed; non-uniform has variable speed."
+    },
+    {
+      "id": "CM-03",
+      "name": "Right-hand rule",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Gives direction of angular displacement and angular velocity vectors."
+    },
+    {
+      "id": "CM-04",
+      "name": "Radius vector",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Vector from centre of circle to the position of the particle."
+    },
+    {
+      "id": "CM-05",
+      "name": "Angular displacement",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2,
+        3
+      ],
+      "oneLineSummary": "Angle described by the radius vector; θ = s/r in radians."
+    },
+    {
+      "id": "CM-06",
+      "name": "Angular velocity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Rate of change of angular displacement; ω = dθ/dt."
+    },
+    {
+      "id": "CM-07",
+      "name": "Relation v = rω",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Linear speed equals radius times angular speed."
+    },
+    {
+      "id": "CM-08",
+      "name": "Period of revolution",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Time for one complete revolution; T = 2π/ω."
+    },
+    {
+      "id": "CM-09",
+      "name": "Frequency of revolution",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        6
+      ],
+      "oneLineSummary": "Number of revolutions per unit time; n = 1/T = ω/2π."
+    },
+    {
+      "id": "CM-10",
+      "name": "Angular speeds of clock hands",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [
+        6
+      ],
+      "oneLineSummary": "Second, minute and hour hands have characteristic angular speeds."
+    },
+    {
+      "id": "CM-11",
+      "name": "Centripetal acceleration",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Acceleration directed toward centre; a = v²/r = rω²."
+    },
+    {
+      "id": "CM-12",
+      "name": "Centripetal force",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Net force toward centre that keeps a body in circular path."
+    },
+    {
+      "id": "CM-13",
+      "name": "Centrifugal force",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Pseudo force in rotating frame directed away from centre."
+    },
+    {
+      "id": "CM-14",
+      "name": "Banking of roads",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Inclined road surface that supplies centripetal force via normal reaction."
+    },
+    {
+      "id": "CM-15",
+      "name": "Vertical circular motion",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Motion in a vertical circle; critical speeds at top and bottom."
+    },
+    {
+      "id": "CM-16",
+      "name": "Angular acceleration",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Rate of change of angular velocity; α = dω/dt."
+    },
+    {
+      "id": "CM-17",
+      "name": "Tangential and radial acceleration",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Tangential changes speed; radial changes direction."
+    },
+    {
+      "id": "CM-18",
+      "name": "Time period of Earth's rotation",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Earth rotates once in 24 h corresponding to angular speed 7.27e-5 rad/s."
+    }
+  ],
+  "qna": [
+    {
+      "id": "CM-Q01",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-08"
+      ],
+      "question": "Define periodic motion and circular motion.",
+      "answer": "Periodic motion is the motion which repeats itself after a regular interval of time. Circular motion is the motion of a particle along the circumference of a circle. Examples include the motion of the blades of a fan, a stone tied to a string and whirled, and the hands of a clock.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q02",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-10"
+      ],
+      "question": "Distinguish between uniform and non-uniform circular motion.",
+      "answer": "Uniform circular motion is the motion of a particle along the circumference of a circle with constant speed. Examples are the motion of the second hand of a clock and a geostationary satellite. Non-uniform circular motion is motion along a circle with variable speed, for example the motion of the wheels of vehicles.",
+      "type": "comparison",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q03",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-03"
+      ],
+      "question": "State the right-hand rule for the direction of angular displacement.",
+      "answer": "Imagine the axis of rotation held in the right hand with fingers curled and thumb outstretched. The curled fingers give the direction of rotation of the particle performing circular motion, and the stretched thumb gives the direction of angular displacement. This rule defines the sense of the angular displacement vector.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q04",
+      "conceptIds": [
+        "CM-04"
+      ],
+      "question": "Define radius vector or position vector.",
+      "answer": "A radius vector is a vector drawn from the centre of the circle to the position of the particle. It is also called the position vector. Its magnitude remains constant while the particle moves on the circumference, and it starts from the centre and ends at the particle.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q05",
+      "conceptIds": [
+        "CM-04",
+        "CM-05",
+        "CM-06"
+      ],
+      "question": "Define angular displacement and give its unit and dimensions.",
+      "answer": "Angular displacement is the angle described by the radius vector at the centre of the circle in a given time. It is equal to the arc length divided by the radius, θ = s/r. The unit is the radian and the dimensions are [M⁰ L⁰ T⁰].",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q06",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-05"
+      ],
+      "question": "Write the relations for angular displacement in terms of time, revolutions and arc length.",
+      "answer": "Angular displacement θ = ω t = 2π t / T = s / r = 2π N where N is the number of revolutions. For continuous motion the infinitesimal form is dθ = ds / r. These relations connect linear and angular quantities.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q07",
+      "conceptIds": [
+        "CM-03",
+        "CM-04",
+        "CM-05"
+      ],
+      "question": "Is instantaneous angular displacement a vector? Give the vector relation.",
+      "answer": "Yes, instantaneous angular displacement is a vector quantity. In vector form the linear displacement is related by d s = dθ × r. The direction of dθ is given by the right-hand rule along the axis of rotation.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q08",
+      "conceptIds": [
+        "CM-05",
+        "CM-06",
+        "CM-10"
+      ],
+      "question": "Define angular velocity and give its unit and dimensions.",
+      "answer": "Angular velocity of a particle is defined as the ratio of angular displacement to time, or as the time rate of change of angular displacement, ω = dθ / dt. The unit is radian per second (or rpm/rps) and the dimensions are [M⁰ L⁰ T⁻¹].",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q09",
+      "conceptIds": [
+        "CM-04",
+        "CM-05",
+        "CM-06"
+      ],
+      "question": "State the relation between linear velocity and angular velocity.",
+      "answer": "The linear velocity v and angular velocity ω are related by v = r ω. In vector form v = ω × r. This relation holds for a particle moving in a circle of radius r with angular speed ω.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q10",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-08"
+      ],
+      "question": "Define the period of revolution for uniform circular motion.",
+      "answer": "The period of revolution T is the time taken by a particle performing uniform circular motion to complete one revolution. It is given by T = 2π r / v = 2π / ω. The unit is the second and the dimensions are [T].",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q11",
+      "conceptIds": [
+        "CM-05",
+        "CM-06",
+        "CM-08"
+      ],
+      "question": "Give the periods of the hands of a clock and of the Earth’s rotation.",
+      "answer": "The time period of the second hand is 60 s, of the minute hand is 60 min, of the hour hand is 12 hours, and of the Earth’s rotation about its axis is 24 hours or 86400 s. These values are useful for calculating the corresponding angular speeds.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q12",
+      "conceptIds": [
+        "CM-07",
+        "CM-08",
+        "CM-09"
+      ],
+      "question": "Define frequency of revolution and give its relations.",
+      "answer": "Frequency of revolution n is the reciprocal of the time period, n = 1/T. It is also equal to v / (2π r) or ω / (2π). The unit is hertz (Hz) or s⁻¹ and the dimensions are [T⁻¹].",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q13",
+      "conceptIds": [
+        "CM-05",
+        "CM-06",
+        "CM-08"
+      ],
+      "question": "List the angular speeds of the hands of a clock and of the Earth.",
+      "answer": "Angular speed of the second hand is 1.046 × 10⁻¹ rad/s, of the minute hand is 1.744 × 10⁻³ rad/s, of the hour hand is 1.454 × 10⁻⁴ rad/s, of the Earth’s rotation about itself is 7.268 × 10⁻⁵ rad/s, and of the Earth’s revolution about the Sun is 1.99 × 10⁻⁷ rad/s.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q14",
+      "conceptIds": [
+        "CM-04",
+        "CM-05",
+        "CM-06"
+      ],
+      "question": "How is angular displacement related to the number of revolutions?",
+      "answer": "If a particle completes N revolutions, the angular displacement is θ = 2π N. Each complete revolution corresponds to an angle of 2π radians. This relation is independent of the radius of the circle.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q15",
+      "conceptIds": [
+        "CM-03",
+        "CM-04",
+        "CM-05"
+      ],
+      "question": "What is the direction convention for angular quantities?",
+      "answer": "Anticlockwise direction is conventionally taken as positive and clockwise direction as negative. The right-hand rule determines the direction of the angular displacement and angular velocity vectors along the axis of rotation.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q16",
+      "conceptIds": [
+        "CM-05",
+        "CM-06",
+        "CM-07"
+      ],
+      "question": "Derive the relation T = 2π / ω.",
+      "answer": "The linear speed v equals the circumference divided by the period, v = 2π r / T. But v = r ω, so r ω = 2π r / T. Cancelling r (r ≠ 0) yields T = 2π / ω. This shows that the period is inversely proportional to the angular speed.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q17",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-04"
+      ],
+      "question": "Why is the magnitude of the radius vector constant in circular motion?",
+      "answer": "In pure circular motion the particle remains at a fixed distance from the centre. Therefore the length of the radius vector, which is that fixed distance, does not change. Only the direction of the radius vector changes continuously.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q18",
+      "conceptIds": [
+        "CM-04",
+        "CM-05",
+        "CM-06"
+      ],
+      "question": "What is the difference between angular displacement and linear displacement?",
+      "answer": "Linear displacement is the actual arc length s travelled by the particle, while angular displacement is the angle θ = s / r subtended at the centre. Angular displacement is independent of radius for a given angle, whereas linear displacement depends on the radius.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q19",
+      "conceptIds": [
+        "CM-05",
+        "CM-06",
+        "CM-07"
+      ],
+      "question": "How is frequency related to angular velocity?",
+      "answer": "Frequency n equals ω / 2π. Since one revolution corresponds to 2π radians, dividing the angular speed by 2π converts it into the number of revolutions per unit time. This relation is used whenever angular speed is given in rad/s.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q20",
+      "conceptIds": [
+        "CM-08",
+        "CM-09",
+        "CM-18"
+      ],
+      "question": "Give an example of calculating frequency from revolutions.",
+      "answer": "If a pendulum makes 10 revolutions in 15 s, then the frequency n = 10 / 15 = 2/3 Hz. Frequency is simply the number of complete revolutions divided by the total time taken.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q21",
+      "conceptIds": [
+        "CM-05",
+        "CM-06",
+        "CM-08"
+      ],
+      "question": "What is the unit commonly used for angular velocity in everyday contexts?",
+      "answer": "Besides rad/s, angular velocity is commonly expressed in revolutions per minute (rpm) or revolutions per second (rps). These units are convenient for rotating machinery and clock hands.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q22",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-05"
+      ],
+      "question": "Explain why the second hand of a clock performs uniform circular motion.",
+      "answer": "The second hand moves with constant angular speed, completing one revolution every 60 s. Its linear speed at any point on the tip is therefore constant in magnitude. This satisfies the definition of uniform circular motion.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q23",
+      "conceptIds": [
+        "CM-05",
+        "CM-06",
+        "CM-10"
+      ],
+      "question": "How does the angular speed of the Earth’s rotation compare with that of the hour hand?",
+      "answer": "The angular speed of the Earth’s rotation about its axis is 7.268 × 10⁻⁵ rad/s, while that of the hour hand is 1.454 × 10⁻⁴ rad/s. The hour hand therefore rotates roughly twice as fast as the Earth itself.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q24",
+      "conceptIds": [
+        "CM-04",
+        "CM-05",
+        "CM-06"
+      ],
+      "question": "What is the vector relation between linear displacement and angular displacement?",
+      "answer": "The infinitesimal linear displacement vector is the cross product of the angular displacement vector and the radius vector: d s = dθ × r. This relation automatically incorporates the direction perpendicular to both the axis and the radius.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q25",
+      "conceptIds": [
+        "CM-04",
+        "CM-05",
+        "CM-06"
+      ],
+      "question": "Why is angular displacement dimensionless?",
+      "answer": "Angular displacement is the ratio of two lengths (arc length divided by radius) and therefore has no dimensions. Its SI unit, the radian, is a pure number. The dimensional formula is consequently [M⁰ L⁰ T⁰].",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q26",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-05"
+      ],
+      "question": "How can the period of the minute hand be used to find its angular speed?",
+      "answer": "The minute hand completes one revolution in 60 minutes = 3600 s. Therefore ω = 2π / T = 2π / 3600 ≈ 1.745 × 10⁻³ rad/s, which matches the tabulated value. The same method applies to any periodic circular motion.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q27",
+      "conceptIds": [
+        "CM-04",
+        "CM-05",
+        "CM-06"
+      ],
+      "question": "What is the significance of the centre of the circle in defining angular quantities?",
+      "answer": "All angular quantities—displacement, velocity and acceleration—are measured with respect to the centre of the circle. The radius vector is drawn from this centre, and the angle is subtended at this centre. Without a fixed centre, angular description is not possible.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q28",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-05"
+      ],
+      "question": "Is the speed constant in non-uniform circular motion?",
+      "answer": "No. In non-uniform circular motion the speed (magnitude of linear velocity) varies with time. The particle still moves on a circular path, but both the magnitude of velocity and the angular speed change. An example is a vehicle accelerating or decelerating while turning.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q29",
+      "conceptIds": [
+        "CM-05",
+        "CM-06",
+        "CM-07"
+      ],
+      "question": "How is linear speed related to the circumference and period?",
+      "answer": "In one period T the particle covers a distance equal to the circumference 2π r. Therefore the constant linear speed is v = 2π r / T. This expression is the starting point for deriving the relations involving angular speed and frequency.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q30",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-03"
+      ],
+      "question": "What does the right-hand rule determine for a particle in circular motion?",
+      "answer": "The right-hand rule determines the direction of the angular displacement and angular velocity vectors. With the fingers curling in the sense of rotation, the thumb points along the positive axis of rotation. This convention makes angular quantities axial vectors.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q31",
+      "conceptIds": [
+        "CM-05",
+        "CM-06",
+        "CM-08"
+      ],
+      "question": "Why is the angular speed of the second hand the largest among the clock hands?",
+      "answer": "The second hand completes a full circle in the shortest time (60 s), so its period is smallest and therefore its angular speed ω = 2π / T is largest. The minute and hour hands have progressively longer periods and correspondingly smaller angular speeds.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q32",
+      "conceptIds": [
+        "CM-04",
+        "CM-08",
+        "CM-09"
+      ],
+      "question": "Express frequency in terms of linear speed and radius.",
+      "answer": "From n = 1/T and T = 2π r / v one obtains n = v / (2π r). This shows that for a given linear speed a larger radius corresponds to a lower frequency of revolution.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q33",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-05"
+      ],
+      "question": "What is the angular displacement after N complete revolutions?",
+      "answer": "After N complete revolutions the angular displacement is exactly 2π N radians. If the motion continues beyond an integer number of revolutions, the fractional part of N contributes an additional angle less than 2π.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q34",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-03"
+      ],
+      "question": "How does the vector relation v = ω × r encode direction?",
+      "answer": "The cross product ω × r produces a linear velocity vector that is perpendicular both to the axis of rotation and to the radius vector. Its sense is given by the right-hand rule applied to ω and r, correctly giving the tangential direction of motion.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q35",
+      "conceptIds": [
+        "CM-05",
+        "CM-06",
+        "CM-09"
+      ],
+      "question": "Why are the dimensions of angular velocity the same as those of frequency?",
+      "answer": "Angular velocity has dimensions [T⁻¹] because it is angle (dimensionless) divided by time. Frequency also has dimensions [T⁻¹]. They differ only by the constant factor 2π: ω = 2π n.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q36",
+      "conceptIds": [
+        "CM-05",
+        "CM-06",
+        "CM-08"
+      ],
+      "question": "Give the expression for angular velocity of the Earth’s rotation about the Sun.",
+      "answer": "The notes list the angular speed of the Earth’s revolution about the Sun as 1.99 × 10⁻⁷ rad/s. This value follows from the orbital period of approximately one year converted into seconds and then using ω = 2π / T.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CM-Q37",
+      "conceptIds": [
+        "CM-01",
+        "CM-02",
+        "CM-05"
+      ],
+      "question": "Summarise the key kinematic quantities of circular motion.",
+      "answer": "The fundamental quantities are angular displacement θ = s/r, angular velocity ω = dθ/dt, period T = 2π/ω, frequency n = ω/2π, and the linear–angular link v = r ω. These relations fully describe the kinematics of a particle moving on a circular path.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    }
+  ]
+}

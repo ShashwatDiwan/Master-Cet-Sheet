@@ -1,0 +1,462 @@
+{
+  "chapterId": "44",
+  "chapterName": "Measures of Dispersion",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "MOD-01",
+      "name": "Mean of ungrouped data",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "x̄ = (Σ x_i)/n for ungrouped observations."
+    },
+    {
+      "id": "MOD-02",
+      "name": "Mean of grouped data",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "x̄ = (Σ f_i x_i)/(Σ f_i) using class mid-points."
+    },
+    {
+      "id": "MOD-03",
+      "name": "Range",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Range = largest value − smallest value."
+    },
+    {
+      "id": "MOD-04",
+      "name": "Variance of ungrouped data",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Var = [(Σ x_i²)/n] − [(Σ x_i)/n]²."
+    },
+    {
+      "id": "MOD-05",
+      "name": "Standard deviation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "σ = √Var; same units as the original data."
+    },
+    {
+      "id": "MOD-06",
+      "name": "Coefficient of variation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "c.v. = (S.D./Mean) × 100; relative measure of dispersion."
+    },
+    {
+      "id": "MOD-07",
+      "name": "SD of first n natural numbers",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "σ = √[(n² − 1)/12]."
+    },
+    {
+      "id": "MOD-08",
+      "name": "Combined mean of two groups",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "x̄ = (n1 x̄1 + n2 x̄2)/(n1 + n2)."
+    },
+    {
+      "id": "MOD-09",
+      "name": "Combined variance / SD of two groups",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "σ² = [n1(σ1² + d1²) + n2(σ2² + d2²)]/(n1 + n2) where d_i = x̄_i − x̄."
+    },
+    {
+      "id": "MOD-10",
+      "name": "Properties of variance and SD",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Variance is translation-invariant; SD scales with the data."
+    },
+    {
+      "id": "MOD-11",
+      "name": "Effect of outliers on range",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Range is highly sensitive to extreme values."
+    },
+    {
+      "id": "MOD-12",
+      "name": "When to use coefficient of variation",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Preferred for comparing relative variability of series with different means or units."
+    },
+    {
+      "id": "MOD-13",
+      "name": "Computational formula for variance",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Var = [Σ x_i² − (Σ x_i)²/n]/n avoids intermediate rounding."
+    },
+    {
+      "id": "MOD-14",
+      "name": "Between-group and within-group variation",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Combined variance decomposes into within-group σ² terms and between-group d² terms."
+    },
+    {
+      "id": "MOD-15",
+      "name": "Non-negativity of variance",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Variance is always ≥ 0 and equals zero only when all observations are identical."
+    }
+  ],
+  "qna": [
+    {
+      "id": "MOD-Q01",
+      "conceptIds": ["MOD-01"],
+      "question": "What is the formula for the mean of ungrouped data?",
+      "answer": "The mean is x̄ = (Σ x_i)/n where n is the number of observations. It is the most common measure of central tendency. Extreme values can pull the mean away from the bulk of the data.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q02",
+      "conceptIds": ["MOD-02"],
+      "question": "How is the mean calculated for grouped data?",
+      "answer": "Use the class mid-points x_i and frequencies f_i: x̄ = (Σ f_i x_i)/(Σ f_i). The mid-point is taken as representative of the whole class. This is an approximation assuming uniform distribution inside each class.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q03",
+      "conceptIds": ["MOD-03"],
+      "question": "Define the range of a data set and state its main limitation.",
+      "answer": "Range = largest value − smallest value. It is the simplest measure of dispersion but depends only on the two extreme observations and is therefore highly affected by outliers.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q04",
+      "conceptIds": ["MOD-04"],
+      "question": "Write the formula for the variance of ungrouped data.",
+      "answer": "Var = [(Σ x_i²)/n] − [(Σ x_i)/n]². It is the average of the squared deviations from the mean. The computational form avoids calculating each deviation separately.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q05",
+      "conceptIds": ["MOD-05"],
+      "question": "How is standard deviation related to variance?",
+      "answer": "Standard deviation σ is the positive square root of the variance: σ = √Var. Consequently Var = σ². Standard deviation has the same units as the original data and is therefore easier to interpret.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q06",
+      "conceptIds": ["MOD-06"],
+      "question": "State the formula for the coefficient of variation and explain when it is preferred.",
+      "answer": "c.v. = (S.D./Mean) × 100. It is a dimensionless relative measure. It is preferred when comparing the variability of two data sets that have different means or different units of measurement.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q07",
+      "conceptIds": ["MOD-07"],
+      "question": "What is the standard deviation of the first n natural numbers?",
+      "answer": "σ = √[(n² − 1)/12]. The formula is obtained by substituting the known sums of the first n integers and their squares into the variance formula and simplifying.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q08",
+      "conceptIds": ["MOD-08"],
+      "question": "How is the combined mean of two groups calculated?",
+      "answer": "x̄ = (n1 x̄1 + n2 x̄2)/(n1 + n2). It is the weighted average of the individual means with weights equal to the sample sizes. The combined mean is required before the combined variance can be computed.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q09",
+      "conceptIds": ["MOD-09"],
+      "question": "Write the formula for the variance of the combined data of two groups.",
+      "answer": "σ² = [n1(σ1² + d1²) + n2(σ2² + d2²)]/(n1 + n2) where d1 = x̄1 − x̄ and d2 = x̄2 − x̄. The formula accounts for both the internal variation of each group and the separation of the group means.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q10",
+      "conceptIds": ["MOD-10"],
+      "question": "What happens to the standard deviation if every observation is increased by the same constant?",
+      "answer": "The standard deviation remains unchanged. Adding a constant shifts the whole distribution but does not alter the spread about the mean. Consequently both variance and standard deviation are invariant under translation.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MOD-Q11",
+      "conceptIds": ["MOD-10"],
+      "question": "What happens to the standard deviation if every observation is multiplied by a positive constant k?",
+      "answer": "The standard deviation is multiplied by k. Variance is multiplied by k². This scaling property follows directly from the definition of variance as a sum of squared deviations.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MOD-Q12",
+      "conceptIds": ["MOD-11"],
+      "question": "Why is the range considered a crude measure of dispersion?",
+      "answer": "The range uses only the two extreme values and ignores all intermediate observations. It is therefore highly sensitive to outliers and does not reflect the overall pattern of variability. More robust measures such as standard deviation utilise every data point.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MOD-Q13",
+      "conceptIds": ["MOD-12"],
+      "question": "Why is the coefficient of variation preferred over the standard deviation when comparing two series with different means?",
+      "answer": "The coefficient of variation is a relative measure that eliminates the effect of the magnitude of the mean. Absolute measures such as standard deviation cannot be compared directly when the means differ substantially. By expressing dispersion as a percentage of the mean, c.v. allows a fair comparison of relative variability.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MOD-Q14",
+      "conceptIds": ["MOD-09", "MOD-14"],
+      "question": "In the combined variance formula what do the terms n1 σ1² and n1 d1² represent?",
+      "answer": "n1 σ1² is the contribution of the within-group variation of the first sample. n1 d1² is the contribution arising from the difference between the first group mean and the overall mean (between-group variation). Both terms are needed for the correct total sum of squares.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q15",
+      "conceptIds": ["MOD-15"],
+      "question": "Why is variance always non-negative?",
+      "answer": "Variance is defined as an average of squared deviations. Squares of real numbers are non-negative and their average is therefore non-negative. Variance equals zero only when every observation is identical to the mean.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MOD-Q16",
+      "conceptIds": ["MOD-06"],
+      "question": "A data set has mean 50 and standard deviation 5. Another has mean 80 and standard deviation 6. Which is relatively more variable?",
+      "answer": "Compute c.v. for the first series: (5/50)×100 = 10 %. For the second: (6/80)×100 = 7.5 %. The first series has the larger coefficient of variation and is therefore relatively more variable.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q17",
+      "conceptIds": ["MOD-07"],
+      "question": "Verify the formula for the SD of the first n natural numbers for n = 2.",
+      "answer": "The numbers are 1 and 2, mean = 1.5, variance = 0.25, SD = 0.5. The formula gives √[(4−1)/12] = √(3/12) = √0.25 = 0.5, which matches. Similar checks for other small n confirm the general expression.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q18",
+      "conceptIds": ["MOD-01", "MOD-04"],
+      "question": "A common student mistake is to compute variance as the average of the absolute deviations. Why is this incorrect?",
+      "answer": "Variance is defined using squared deviations, not absolute deviations. The absolute-deviation measure is the mean absolute deviation (MAD), which is a different statistic. Using absolute deviations produces a smaller number that is not the variance and cannot be used in the usual statistical formulae that assume the squared definition.",
+      "type": "cet_tip",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q19",
+      "conceptIds": ["MOD-09"],
+      "question": "Two groups of sizes 10 and 15 have means 20 and 30 and standard deviations 2 and 3 respectively. Find the combined standard deviation.",
+      "answer": "Combined mean = (10·20 + 15·30)/25 = 26. Then d1 = 20−26 = −6, d2 = 30−26 = 4. Combined variance = [10(4 + 36) + 15(9 + 16)]/25 = (400 + 375)/25 = 31. Combined SD = √31 ≈ 5.57.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q20",
+      "conceptIds": ["MOD-03", "MOD-11"],
+      "question": "Why should the range never be used as the sole measure of dispersion in a CET answer?",
+      "answer": "Because it ignores all intermediate data and is extremely sensitive to a single outlier. Examiners expect standard deviation or coefficient of variation for a proper measure of spread. Mentioning the limitation of the range earns credit even if the numerical calculation is asked.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MOD-Q21",
+      "conceptIds": ["MOD-13"],
+      "question": "Why is the computational formula for variance preferred in numerical work?",
+      "answer": "It avoids the intermediate step of subtracting the mean from every observation, which can introduce rounding error when the mean is not an integer. The two forms are algebraically identical, but the computational form is numerically more stable.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MOD-Q22",
+      "conceptIds": ["MOD-06", "MOD-12"],
+      "question": "If both the mean and the standard deviation of a data set are multiplied by the same positive constant, what happens to the coefficient of variation?",
+      "answer": "The coefficient of variation remains unchanged because the constant cancels in the ratio S.D./Mean. Consequently c.v. is invariant under scaling of the data and is therefore a pure relative measure.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MOD-Q23",
+      "conceptIds": ["MOD-02"],
+      "question": "When class intervals are of unequal width, how is the mean still calculated?",
+      "answer": "The mean formula continues to use the mid-point of each class as x_i and the corresponding frequency f_i. Unequal widths affect the interpretation of density but do not change the algebraic expression for the arithmetic mean.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q24",
+      "conceptIds": ["MOD-08", "MOD-09"],
+      "question": "List the three steps required to obtain the combined standard deviation of two groups.",
+      "answer": "First compute the combined mean x̄ = (n1 x̄1 + n2 x̄2)/(n1 + n2). Then form the deviations d1 = x̄1 − x̄ and d2 = x̄2 − x̄. Finally substitute into the combined-variance formula and take the positive square root. All three steps are mandatory.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q25",
+      "conceptIds": ["MOD-05"],
+      "question": "Why is standard deviation preferred over variance in many practical contexts?",
+      "answer": "Standard deviation is expressed in the same units as the original observations, making it easier to interpret and to communicate. Variance is expressed in squared units which are often less meaningful. Many statistical procedures are also formulated directly in terms of the standard deviation.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q26",
+      "conceptIds": ["MOD-01", "MOD-06"],
+      "question": "A student reports the coefficient of variation as 0.12 instead of 12 %. What is the error?",
+      "answer": "The student forgot to multiply the ratio S.D./Mean by 100. The coefficient of variation is conventionally expressed as a percentage. Reporting the pure ratio is a common mistake that loses marks in CET answers.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q27",
+      "conceptIds": ["MOD-07"],
+      "question": "Derive the formula for the variance of the first n natural numbers.",
+      "answer": "Mean = (n+1)/2. Σ k = n(n+1)/2, Σ k² = n(n+1)(2n+1)/6. Substitute into Var = (Σ k²)/n − (mean)² and simplify the algebra to obtain (n² − 1)/12. The standard deviation is the positive square root of this expression.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q28",
+      "conceptIds": ["MOD-04", "MOD-13"],
+      "question": "Show that the two common formulae for variance are algebraically identical.",
+      "answer": "Expand Σ (x_i − x̄)² = Σ x_i² − 2 x̄ Σ x_i + n x̄². Because Σ x_i = n x̄ the middle term becomes −2 n x̄² and the last term is n x̄², leaving Σ x_i² − n x̄². Dividing by n yields the computational form.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MOD-Q29",
+      "conceptIds": ["MOD-09"],
+      "question": "Why must the deviations d1 and d2 be measured from the combined mean rather than from zero?",
+      "answer": "Variance is defined with respect to the mean of the whole data set. Using any other reference point would produce an incorrect expression for the total sum of squared deviations. The algebraic identity that expands the total sum of squares requires these particular deviations.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q30",
+      "conceptIds": ["MOD-03"],
+      "question": "In what situation is the range still a useful quick check?",
+      "answer": "The range gives an immediate impression of the total spread with almost no calculation. It is useful for a rapid preliminary assessment or when only the extreme values are known. It should not, however, be the sole measure reported in a formal answer.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q31",
+      "conceptIds": ["MOD-06"],
+      "question": "What does a larger coefficient of variation indicate about a data set?",
+      "answer": "A larger coefficient of variation indicates greater relative variability. When two data sets are compared, the one with the higher c.v. is considered more dispersed relative to its own mean, even if its absolute standard deviation is smaller.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q32",
+      "conceptIds": ["MOD-02"],
+      "question": "Why is the class mid-point used as the representative value when calculating the mean of grouped data?",
+      "answer": "Individual observations inside a class are unknown; only the frequency of the class is known. The mid-point is the natural average of the lower and upper class limits and is therefore taken as the representative value for every observation in that class.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q33",
+      "conceptIds": ["MOD-05", "MOD-10"],
+      "question": "If a constant is subtracted from every observation, which of mean, variance and standard deviation change?",
+      "answer": "The mean decreases by that constant, but both the variance and the standard deviation remain unchanged. Subtracting a constant is a pure translation that does not affect the spread of the data about its centre.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MOD-Q34",
+      "conceptIds": ["MOD-09"],
+      "question": "Two groups have the same mean. How does the combined-variance formula simplify?",
+      "answer": "When x̄1 = x̄2 the deviations d1 and d2 are both zero. The combined variance therefore reduces to the weighted average of the individual variances: σ² = (n1 σ1² + n2 σ2²)/(n1 + n2). The between-group contribution vanishes.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q35",
+      "conceptIds": ["MOD-01", "MOD-05"],
+      "question": "A data set consists of the numbers 2, 4, 6, 8, 10. Calculate its mean and standard deviation.",
+      "answer": "Mean = 6. Sum of squares = 220, so (Σ x²)/n = 44. Variance = 44 − 36 = 8, standard deviation = √8 = 2√2. Direct calculation of squared deviations from 6 yields the same variance 8.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MOD-Q36",
+      "conceptIds": ["MOD-12"],
+      "question": "Why can two data sets with the same standard deviation still have very different coefficients of variation?",
+      "answer": "Because c.v. also depends on the mean. A data set with a small mean will have a large c.v. even if its absolute standard deviation is the same as that of a data set with a large mean. Relative variability is therefore different.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MOD-Q37",
+      "conceptIds": ["MOD-04", "MOD-05"],
+      "question": "Is it possible for the variance of a data set to be smaller than its standard deviation? Explain.",
+      "answer": "Yes, whenever the variance is a number between 0 and 1 (exclusive). In that case the square root is larger than the number itself. For example variance 0.25 has standard deviation 0.5. Outside the unit interval the inequality reverses.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "chapterId": "63",
+  "chapterName": "Definite Integration",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "DI-01",
+      "name": "Basic properties of definite integrals",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "∫_a^a = 0, ∫_a^b = −∫_b^a, ∫_a^b f = ∫_a^b f(t) dt, additivity over intervals."
+    },
+    {
+      "id": "DI-02",
+      "name": "Property ∫_a^b f(x) dx = ∫_a^b f(a+b−x) dx",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Useful substitution that often simplifies the integrand."
+    },
+    {
+      "id": "DI-03",
+      "name": "Property ∫_0^a f(x) dx = ∫_0^a f(a−x) dx",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Special case of the previous property with lower limit zero."
+    },
+    {
+      "id": "DI-04",
+      "name": "Even and odd functions on symmetric intervals",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Even: 2∫_0^a; Odd: 0 (when the integral exists)."
+    },
+    {
+      "id": "DI-05",
+      "name": "Important logarithmic integrals",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "∫_0^{π/2} log(sin x) dx = −(π/2) log 2 (and analogues for cos, sec, cosec)."
+    },
+    {
+      "id": "DI-06",
+      "name": "Area between two curves",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "∫_a^b |f−g| dx after finding intersection points."
+    },
+    {
+      "id": "DI-07",
+      "name": "Area of an ellipse by definite integral",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "πab; one quadrant (πab)/4."
+    },
+    {
+      "id": "DI-08",
+      "name": "King property (reflection property)",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "∫_a^b f(x) dx = ∫_a^b f(a+b−x) dx; often used to evaluate difficult integrands."
+    },
+    {
+      "id": "DI-09",
+      "name": "Definite integral as limit of a sum",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "∫_a^b f(x) dx = lim_{n→∞} Σ f(x_i) Δx."
+    },
+    {
+      "id": "DI-10",
+      "name": "Integration by parts for definite integrals",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "∫_a^b u dv = [uv]_a^b − ∫_a^b v du."
+    },
+    {
+      "id": "DI-11",
+      "name": "Substitution in definite integrals",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Change limits according to the new variable; do not return to the original variable."
+    },
+    {
+      "id": "DI-12",
+      "name": "Wallis formula",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "∫_0^{π/2} sin^n x dx and cos^n x dx expressed in factorials or double factorials."
+    },
+    {
+      "id": "DI-13",
+      "name": "Reduction formulae",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Recursive relations that express an integral of order n in terms of a lower-order integral."
+    },
+    {
+      "id": "DI-14",
+      "name": "Improper integrals (basic idea)",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Limits of proper integrals when an endpoint is infinite or the integrand is unbounded."
+    },
+    {
+      "id": "DI-15",
+      "name": "Common evaluation techniques",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Symmetry, property ∫ f(x) = ∫ f(a−x), even/odd, standard forms."
+    }
+  ],
+  "qna": [
+    {
+      "id": "DI-Q01",
+      "conceptIds": ["DI-01"],
+      "question": "State four fundamental properties of the definite integral.",
+      "answer": "∫_a^a f = 0; ∫_a^b f = −∫_b^a f; ∫_a^b f(x) dx = ∫_a^b f(t) dt (dummy variable); ∫_a^b f = ∫_a^c f + ∫_c^b f for any c. These properties follow directly from the definition of the definite integral as a limit of sums or from the Fundamental Theorem of Calculus.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q02",
+      "conceptIds": ["DI-02", "DI-08"],
+      "question": "State the King property and give one typical use.",
+      "answer": "∫_a^b f(x) dx = ∫_a^b f(a+b−x) dx. The substitution x → a+b−x leaves the limits unchanged while transforming the integrand. Adding the original integral to the transformed one often produces a simpler integrand that can be evaluated at once.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q03",
+      "conceptIds": ["DI-03"],
+      "question": "State the special case of the King property when the lower limit is zero.",
+      "answer": "∫_0^a f(x) dx = ∫_0^a f(a−x) dx. This form is especially useful for integrands involving sin x and cos x on [0, π/2] or for polynomials in (a−x).",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q04",
+      "conceptIds": ["DI-04"],
+      "question": "How do you evaluate the integral of an even or odd function over a symmetric interval [−a,a]?",
+      "answer": "If f is even, ∫_{−a}^a f = 2 ∫_0^a f. If f is odd and the integral exists, ∫_{−a}^a f = 0. The statements follow at once from the substitution x → −x and the definition of even/odd functions.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q05",
+      "conceptIds": ["DI-05"],
+      "question": "Evaluate ∫_0^{π/2} log(sin x) dx.",
+      "answer": "The value is −(π/2) log 2. The same result holds for ∫_0^{π/2} log(cos x) dx. The integrals of log(sec x) and log(cosec x) equal +(π/2) log 2. These are standard results obtained by the property ∫ f(x) = ∫ f(π/2 − x) and a carefully chosen substitution.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q06",
+      "conceptIds": ["DI-06"],
+      "question": "How is the area between two curves found using definite integrals?",
+      "answer": "Find the points of intersection to determine the limits a and b. The area is ∫_a^b |f(x) − g(x)| dx. If one curve stays above the other the absolute value may be dropped. The same idea applies when the curves are expressed as functions of y.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q07",
+      "conceptIds": ["DI-07"],
+      "question": "What is the area of the ellipse x²/a² + y²/b² = 1?",
+      "answer": "The total area is π a b. One quadrant has area (π a b)/4. The result is obtained by integrating the upper half of the ellipse and multiplying by four, or by recognising the ellipse as an affine transformation of the unit circle.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q08",
+      "conceptIds": ["DI-01"],
+      "question": "Why is ∫_a^a f(x) dx equal to zero?",
+      "answer": "The interval of integration has zero length, so the corresponding Riemann sum is identically zero. From the Fundamental Theorem the antiderivative evaluated at the same point twice also yields zero. The property is consistent with the oriented nature of the definite integral.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q09",
+      "conceptIds": ["DI-04"],
+      "question": "Evaluate ∫_{−π/2}^{π/2} sin x dx and ∫_{−π/2}^{π/2} cos x dx.",
+      "answer": "sin x is odd, so its integral over a symmetric interval is zero. cos x is even, so the integral equals 2 ∫_0^{π/2} cos x dx = 2. The contrast illustrates the even/odd property clearly.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q10",
+      "conceptIds": ["DI-02"],
+      "question": "Use the property ∫_0^{π/2} f(sin x) dx = ∫_0^{π/2} f(cos x) dx to evaluate a typical integral.",
+      "answer": "The property follows at once from the substitution x → π/2 − x. Consequently any integral that depends on sin x only can be rewritten with cos x, and vice versa. Adding the two forms often produces a constant integrand that is trivial to integrate.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q11",
+      "conceptIds": ["DI-11"],
+      "question": "What is the correct procedure when a substitution is made in a definite integral?",
+      "answer": "Change the limits according to the new variable and never return to the original variable. If the substitution is x = g(t), the new limits are the values of t that correspond to the original endpoints. Leaving the limits unchanged or converting back is a common source of error.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DI-Q12",
+      "conceptIds": ["DI-10"],
+      "question": "State the formula for integration by parts of a definite integral.",
+      "answer": "∫_a^b u dv = [u v]_a^b − ∫_a^b v du. The boundary term is evaluated at the two limits while the remaining integral is usually simpler. The choice of which factor to call u is guided by the LIATE rule or by the desire to obtain a more elementary integrand.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DI-Q13",
+      "conceptIds": ["DI-05"],
+      "question": "Why is ∫_0^{π/2} log(sin x) dx equal to ∫_0^{π/2} log(cos x) dx?",
+      "answer": "The substitution x → π/2 − x transforms sin x into cos x while leaving the limits unchanged. Therefore the two integrals are identical. Their common value is −(π/2) log 2.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q14",
+      "conceptIds": ["DI-06"],
+      "question": "Find the area of the region bounded by y = x² and y = x.",
+      "answer": "Intersection points: x² = x ⇒ x = 0,1. Area = ∫_0^1 (x − x²) dx = [x²/2 − x³/3]_0^1 = 1/2 − 1/3 = 1/6. The line lies above the parabola on (0,1).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q15",
+      "conceptIds": ["DI-07"],
+      "question": "Compute the area of the ellipse x²/4 + y²/9 = 1.",
+      "answer": "Here a = 2, b = 3, so area = π·2·3 = 6π. One quadrant has area (3π)/2. The result follows at once from the standard formula without further integration.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q16",
+      "conceptIds": ["DI-01"],
+      "question": "Show that ∫_0^π sin x dx = 2 using the basic properties.",
+      "answer": "∫_0^π sin x dx = [−cos x]_0^π = −(−1) − (−1) = 2. Alternatively split at π/2 and use the property with a−x to see that the two halves are equal, each contributing 1.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q17",
+      "conceptIds": ["DI-04"],
+      "question": "Evaluate ∫_{−1}^1 x³ dx and ∫_{−1}^1 x⁴ dx.",
+      "answer": "x³ is odd, so the integral is 0. x⁴ is even, so the integral equals 2 ∫_0^1 x⁴ dx = 2/5. The contrast again illustrates the even/odd rule.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q18",
+      "conceptIds": ["DI-08"],
+      "question": "Use the King property to evaluate ∫_0^{π/2} (sin x − cos x)/(sin x + cos x) dx.",
+      "answer": "Let I be the integral. Replacing x by π/2 − x yields I = ∫ (cos x − sin x)/(cos x + sin x) dx = −I. Therefore 2I = 0 ⇒ I = 0. The integrand is odd with respect to the midpoint of the interval.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q19",
+      "conceptIds": ["DI-12"],
+      "question": "What is Wallis’ formula for ∫_0^{π/2} sin^n x dx when n is even?",
+      "answer": "∫_0^{π/2} sin^n x dx = (π/2) · (1·3·5⋯(n−1))/(2·4·6⋯n). An analogous product formula holds when n is odd. The formulae are obtained by repeated integration by parts or by reduction formulae.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "DI-Q20",
+      "conceptIds": ["DI-09"],
+      "question": "Express the definite integral as the limit of a Riemann sum.",
+      "answer": "∫_a^b f(x) dx = lim_{n→∞} Σ_{i=1}^n f(x_i*) Δx where Δx = (b−a)/n and x_i* is any point in the i-th sub-interval. The limit exists whenever f is continuous on [a,b]. This definition underpins all further properties of the definite integral.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DI-Q21",
+      "conceptIds": ["DI-11"],
+      "question": "A student substitutes u = sin x in ∫_0^{π/2} sin x cos x dx but forgets to change the limits. What is the correct procedure?",
+      "answer": "When x = 0, u = 0; when x = π/2, u = 1. The integral becomes ∫_0^1 u du = 1/2. Leaving the limits as 0 to π/2 after the substitution is incorrect and produces a wrong numerical value.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "DI-Q22",
+      "conceptIds": ["DI-05"],
+      "question": "Evaluate ∫_0^{π/2} log(sec x) dx.",
+      "answer": "log(sec x) = −log(cos x), so the integral equals −∫_0^{π/2} log(cos x) dx = −(−(π/2) log 2) = (π/2) log 2. The result is the negative of the standard cosine-log integral.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q23",
+      "conceptIds": ["DI-06"],
+      "question": "Find the area common to the circle x² + y² = 2 and the parabola y² = x.",
+      "answer": "Intersection: x² + x = 2 ⇒ x² + x − 2 = 0 ⇒ (x+2)(x−1)=0 ⇒ x=1 (x=−2 discarded). Area = 2 ∫_0^1 (√(2−x²) − √x) dx after suitable arrangement. The exact evaluation yields a combination of inverse sine and elementary terms.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q24",
+      "conceptIds": ["DI-01"],
+      "question": "Why does changing the dummy variable of integration leave the value of a definite integral unchanged?",
+      "answer": "The definite integral is defined by the limits and the integrand function, not by the particular letter used for the independent variable. Replacing x by t (or any other letter) merely renames the variable of integration; the underlying sum of areas remains the same.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q25",
+      "conceptIds": ["DI-04"],
+      "question": "Is the integral of an odd function over a symmetric interval always zero?",
+      "answer": "Yes, provided the integral exists (i.e., the function is integrable). If the odd function has a non-integrable singularity at the origin the integral may diverge; otherwise the contributions from the positive and negative halves cancel exactly.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q26",
+      "conceptIds": ["DI-13"],
+      "question": "What is a reduction formula and why is it useful?",
+      "answer": "A reduction formula expresses an integral containing a parameter n in terms of a similar integral with a smaller value of n. Repeated application eventually reduces the original integral to a known elementary integral. Reduction formulae are especially useful for powers of sine and cosine.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DI-Q27",
+      "conceptIds": ["DI-02"],
+      "question": "Evaluate ∫_0^1 x(1−x)^n dx using a suitable property or substitution.",
+      "answer": "The substitution x → 1−x yields ∫_0^1 (1−x) x^n dx. Adding the two forms produces ∫_0^1 (x + (1−x)) x^n (1−x)^0 \ldots which simplifies to a Beta-function integral equal to 1/((n+1)(n+2)). Direct expansion also works but is longer.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q28",
+      "conceptIds": ["DI-10"],
+      "question": "Integrate by parts ∫_0^{π/2} x cos x dx.",
+      "answer": "Let u = x, dv = cos x dx ⇒ du = dx, v = sin x. Then [x sin x]_0^{π/2} − ∫_0^{π/2} sin x dx = π/2 − [−cos x]_0^{π/2} = π/2 − (0 − (−1)) = π/2 − 1. The boundary term is the only contribution that survives.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DI-Q29",
+      "conceptIds": ["DI-07"],
+      "question": "Why does the area of an ellipse reduce to the area of a circle when a = b?",
+      "answer": "When a = b the standard equation becomes that of a circle of radius a. The area formula π a b then becomes π a², recovering the classical circular area. The reduction confirms consistency of the elliptical formula.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q30",
+      "conceptIds": ["DI-15"],
+      "question": "List three standard techniques that frequently appear in CET definite-integral problems.",
+      "answer": "1. The King property (or its special case with lower limit zero). 2. Even/odd symmetry on a symmetric interval. 3. Recognition of standard forms such as the log-sine integral. Combining these techniques often reduces an apparently difficult integral to a trivial one.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q31",
+      "conceptIds": ["DI-03"],
+      "question": "Evaluate ∫_0^{π/4} log(1 + tan x) dx.",
+      "answer": "Using the property with a = π/4 yields I = ∫_0^{π/4} log(1 + tan(π/4 − x)) dx = ∫ log(1 + (1−tan x)/(1+tan x)) dx = ∫ log(2/(1+tan x)) dx. Adding the two expressions for I gives 2I = ∫ log 2 dx = (π/4) log 2, so I = (π/8) log 2.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q32",
+      "conceptIds": ["DI-01"],
+      "question": "If ∫_0^1 f(x) dx = 2, what is ∫_1^0 f(x) dx?",
+      "answer": "By the orientation property ∫_1^0 f = −∫_0^1 f = −2. The sign change reflects the fact that the definite integral is an oriented quantity.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q33",
+      "conceptIds": ["DI-06"],
+      "question": "Why must the absolute value be used when writing the area between two curves?",
+      "answer": "Without the absolute value the integral of f − g would give a signed quantity that becomes negative wherever g lies above f. Area is a positive measure, so the absolute value (or an equivalent splitting of the integral) is required to guarantee a non-negative result.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q34",
+      "conceptIds": ["DI-12"],
+      "question": "State Wallis’ formula for the integral of an odd power of sine.",
+      "answer": "∫_0^{π/2} sin^{2m+1} x dx = (2·4·6⋯2m)/(3·5·7⋯(2m+1)). The formula is the odd-power counterpart of the even-power product formula and is derived by the same reduction process.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "DI-Q35",
+      "conceptIds": ["DI-14"],
+      "question": "What is an improper integral of the first kind?",
+      "answer": "An integral in which one or both limits of integration are infinite, for example ∫_a^∞ f(x) dx. It is defined as the limit lim_{b→∞} ∫_a^b f(x) dx whenever the limit exists. Convergence must be checked separately from the existence of an antiderivative.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "DI-Q36",
+      "conceptIds": ["DI-08"],
+      "question": "A difficult integrand f(x) satisfies f(x) + f(a+b−x) = constant. How does the King property help?",
+      "answer": "Adding the original integral to the transformed integral produces twice the original integral equal to the constant times the length of the interval. Solving for the original integral immediately yields the value. Many CET problems are constructed so that this cancellation occurs.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "DI-Q37",
+      "conceptIds": ["DI-07"],
+      "question": "Write the definite integral that represents one quadrant of the ellipse x²/a² + y²/b² = 1 and evaluate it.",
+      "answer": "y = b √(1 − x²/a²), so the quadrant area is ∫_0^a b √(1 − x²/a²) dx. The substitution x = a sin θ converts the integral into b a ∫_0^{π/2} cos² θ dθ = (π a b)/4, recovering the standard result.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    }
+  ]
+}

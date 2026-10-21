@@ -1,0 +1,468 @@
+{
+  "chapterId": "40",
+  "chapterName": "Polymers",
+  "subject": "Chemistry",
+  "concepts": [
+    {
+      "id": "POL-01",
+      "name": "Definition of Polymer",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Large molecules formed by repeated linking of monomer units."
+    },
+    {
+      "id": "POL-02",
+      "name": "Classification by Source",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Natural, semi-synthetic and synthetic polymers."
+    },
+    {
+      "id": "POL-03",
+      "name": "Classification by Structure",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Linear, branched and cross-linked polymers."
+    },
+    {
+      "id": "POL-04",
+      "name": "Classification by Polymerisation Mode",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Addition (chain-growth) and condensation (step-growth) polymers."
+    },
+    {
+      "id": "POL-05",
+      "name": "Classification by Molecular Forces",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Elastomers, fibres, thermoplastics and thermosetting plastics."
+    },
+    {
+      "id": "POL-06",
+      "name": "Addition Polymerisation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Monomers with double bonds add without loss of atoms; e.g. polythene, PVC."
+    },
+    {
+      "id": "POL-07",
+      "name": "Condensation Polymerisation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Monomers combine with elimination of small molecules (H₂O, HCl); e.g. nylon, polyester."
+    },
+    {
+      "id": "POL-08",
+      "name": "Homopolymer vs Copolymer",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Homopolymer from one monomer; copolymer from two or more monomers."
+    },
+    {
+      "id": "POL-09",
+      "name": "Natural Rubber",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "cis-1,4-polyisoprene; elastic due to weak intermolecular forces."
+    },
+    {
+      "id": "POL-10",
+      "name": "Vulcanisation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Heating rubber with sulphur to form cross-links; improves elasticity and strength."
+    },
+    {
+      "id": "POL-11",
+      "name": "Synthetic Rubbers",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Buna-S, Buna-N, neoprene; designed for specific properties."
+    },
+    {
+      "id": "POL-12",
+      "name": "Polythene Types",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "LDPE (branched, flexible) and HDPE (linear, stronger)."
+    },
+    {
+      "id": "POL-13",
+      "name": "Nylon-6 and Nylon-6,6",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Nylon-6 from caprolactam; Nylon-6,6 from adipic acid + hexamethylenediamine."
+    },
+    {
+      "id": "POL-14",
+      "name": "Polyesters and Bakelite",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Terylene (PET); Bakelite (phenol-formaldehyde thermoset)."
+    },
+    {
+      "id": "POL-15",
+      "name": "Biodegradable Polymers",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "PHBV, nylon-2-nylon-6; designed to degrade in environment."
+    },
+    {
+      "id": "POL-16",
+      "name": "Molecular Mass of Polymers",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Number-average and weight-average molecular mass; polydispersity index."
+    },
+    {
+      "id": "POL-17",
+      "name": "Thermoplastics vs Thermosetting",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Thermoplastics soften on heating; thermosets become permanently hard."
+    },
+    {
+      "id": "POL-18",
+      "name": "Important Commercial Polymers",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "PVC, polystyrene, PTFE (Teflon), PMMA (Perspex)."
+    }
+  ],
+  "qna": [
+    {
+      "id": "POL-Q01",
+      "conceptIds": ["POL-01"],
+      "question": "Define a polymer and give two examples.",
+      "answer": "A polymer is a large molecule formed by the repeated linking of many small monomer units. Polythene and nylon are common examples. The process of formation is called polymerisation.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q02",
+      "conceptIds": ["POL-02"],
+      "question": "How are polymers classified on the basis of source?",
+      "answer": "Polymers are classified as natural (e.g. rubber, cellulose, proteins), semi-synthetic (e.g. cellulose acetate, vulcanised rubber) and synthetic (e.g. polythene, nylon, PVC). This classification reflects their origin and degree of human modification.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q03",
+      "conceptIds": ["POL-04"],
+      "question": "Distinguish between addition and condensation polymerisation.",
+      "answer": "In addition polymerisation monomers containing double bonds join without the loss of any atoms. In condensation polymerisation monomers combine with the elimination of small molecules such as water or HCl. Polythene is an addition polymer while nylon is a condensation polymer.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q04",
+      "conceptIds": ["POL-05"],
+      "question": "Classify polymers on the basis of intermolecular forces.",
+      "answer": "On the basis of intermolecular forces polymers are classified as elastomers (weak forces, elastic), fibres (strong hydrogen bonding, high tensile strength), thermoplastics (intermediate forces, soften on heating) and thermosetting plastics (extensive cross-linking, permanently hard).",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q05",
+      "conceptIds": ["POL-09", "POL-10"],
+      "question": "What is natural rubber and how is it vulcanised?",
+      "answer": "Natural rubber is cis-1,4-polyisoprene obtained from latex. Vulcanisation involves heating rubber with sulphur to form cross-links between polymer chains. The cross-links improve elasticity, strength and resistance to temperature changes.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q06",
+      "conceptIds": ["POL-12"],
+      "question": "Differentiate between LDPE and HDPE.",
+      "answer": "LDPE is highly branched, has low density, is flexible and is used for packaging films. HDPE is linear, has higher density and tensile strength, and is used for containers and pipes. The difference arises from the polymerisation conditions and catalyst used.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q07",
+      "conceptIds": ["POL-13"],
+      "question": "How are Nylon-6 and Nylon-6,6 prepared?",
+      "answer": "Nylon-6 is prepared by the ring-opening polymerisation of caprolactam. Nylon-6,6 is prepared by the condensation of adipic acid and hexamethylenediamine with elimination of water. Both are polyamides used as fibres.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q08",
+      "conceptIds": ["POL-14"],
+      "question": "What is Bakelite and how is it classified?",
+      "answer": "Bakelite is a phenol-formaldehyde polymer formed by condensation polymerisation. It is a thermosetting plastic because extensive cross-linking makes it permanently hard and infusible on heating. It is used for electrical switches and handles.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q09",
+      "conceptIds": ["POL-11"],
+      "question": "Name three synthetic rubbers and their monomers.",
+      "answer": "Buna-S is a copolymer of butadiene and styrene. Buna-N is a copolymer of butadiene and acrylonitrile. Neoprene is the polymer of chloroprene. Each is designed for specific resistance properties.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q10",
+      "conceptIds": ["POL-15"],
+      "question": "What are biodegradable polymers? Give examples.",
+      "answer": "Biodegradable polymers are designed to be degraded by microorganisms in the environment. Examples include PHBV (poly-β-hydroxybutyrate-co-β-hydroxyvalerate) and nylon-2-nylon-6. They help reduce plastic pollution.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "POL-Q11",
+      "conceptIds": ["POL-17"],
+      "question": "How do thermoplastics differ from thermosetting plastics?",
+      "answer": "Thermoplastics soften on heating and can be remoulded; they have linear or lightly branched chains. Thermosetting plastics become permanently hard on heating because of extensive cross-linking and cannot be remoulded. Polythene is thermoplastic; Bakelite is thermosetting.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q12",
+      "conceptIds": ["POL-08"],
+      "question": "What is the difference between a homopolymer and a copolymer?",
+      "answer": "A homopolymer is formed from a single type of monomer (e.g. polythene from ethene). A copolymer is formed from two or more different monomers (e.g. Buna-S from butadiene and styrene). Copolymers often possess improved or tailored properties.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q13",
+      "conceptIds": ["POL-06"],
+      "question": "Give the preparation and uses of polythene.",
+      "answer": "Polythene is prepared by the addition polymerisation of ethene under high pressure or with Ziegler-Natta catalyst. LDPE is used for packaging films and bags; HDPE is used for bottles, pipes and containers.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q14",
+      "conceptIds": ["POL-18"],
+      "question": "What is Teflon and why is it chemically inert?",
+      "answer": "Teflon is polytetrafluoroethylene (PTFE) obtained by polymerisation of tetrafluoroethene. The strong C–F bonds and the protective sheath of fluorine atoms make it highly resistant to chemical attack and heat. It is used for non-stick coatings.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "POL-Q15",
+      "conceptIds": ["POL-03"],
+      "question": "How does cross-linking affect the properties of a polymer?",
+      "answer": "Cross-linking joins polymer chains by covalent bonds, restricting their movement. This increases hardness, rigidity and thermal stability while decreasing solubility and elasticity. Thermosetting plastics owe their permanent hardness to extensive cross-linking.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q16",
+      "conceptIds": ["POL-10"],
+      "question": "Why is vulcanised rubber preferred over raw rubber?",
+      "answer": "Raw rubber is soft, sticky and becomes brittle at low temperature. Vulcanisation introduces sulphur cross-links that improve elasticity, tensile strength, resistance to abrasion and temperature stability, making the rubber commercially useful.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q17",
+      "conceptIds": ["POL-07"],
+      "question": "Write the monomers of terylene (PET) and the type of polymerisation.",
+      "answer": "Terylene is formed by the condensation polymerisation of ethylene glycol and terephthalic acid (or dimethyl terephthalate). Water or methanol is eliminated. It is a polyester used as a fibre and for packaging.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q18",
+      "conceptIds": ["POL-16"],
+      "question": "What is polydispersity index and why is it important?",
+      "answer": "Polydispersity index (PDI) is the ratio of weight-average molecular mass to number-average molecular mass. A PDI close to 1 indicates a narrow molecular-mass distribution. Commercial polymers usually have PDI greater than 1, affecting mechanical properties.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "POL-Q19",
+      "conceptIds": ["POL-05", "POL-17"],
+      "question": "Why are elastomers elastic?",
+      "answer": "Elastomers have weak intermolecular forces and coiled polymer chains. When stretched the chains uncoil; when the force is removed the chains return to the coiled state due to weak forces. Cross-linking (as in vulcanised rubber) prevents permanent deformation.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q20",
+      "conceptIds": ["POL-18"],
+      "question": "Name the polymer used for non-stick cookware and its monomer.",
+      "answer": "The polymer is Teflon (polytetrafluoroethylene). Its monomer is tetrafluoroethene (CF₂=CF₂). The polymer is chemically inert and has a high melting point, making it ideal for non-stick coatings.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "POL-Q21",
+      "conceptIds": ["POL-01", "POL-04"],
+      "question": "What is the difference between a monomer and a repeating unit?",
+      "answer": "A monomer is the small molecule that undergoes polymerisation. The repeating unit is the structural unit that repeats along the polymer chain; it may be identical to the monomer (addition polymers) or derived from it after loss of atoms (condensation polymers).",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q22",
+      "conceptIds": ["POL-11"],
+      "question": "Why is Buna-N preferred for oil-resistant applications?",
+      "answer": "Buna-N is a copolymer of butadiene and acrylonitrile. The polar nitrile groups impart resistance to oils and solvents. Consequently Buna-N is used for fuel hoses, gaskets and oil seals.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q23",
+      "conceptIds": ["POL-14"],
+      "question": "How is Bakelite prepared and why is it thermosetting?",
+      "answer": "Bakelite is prepared by the condensation of phenol and formaldehyde in the presence of acid or base catalyst. Extensive cross-linking between chains makes the polymer permanently hard and infusible on heating, classifying it as a thermosetting plastic.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q24",
+      "conceptIds": ["POL-15"],
+      "question": "Why are biodegradable polymers environmentally important?",
+      "answer": "Conventional synthetic polymers persist in the environment for decades. Biodegradable polymers are broken down by microorganisms into harmless products, reducing plastic accumulation and pollution. They are especially useful for medical implants and packaging.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "POL-Q25",
+      "conceptIds": ["POL-12"],
+      "question": "How does the structure of LDPE differ from HDPE at the molecular level?",
+      "answer": "LDPE has extensive branching that prevents close packing of chains, resulting in lower density and crystallinity. HDPE is essentially linear, allowing chains to pack closely, giving higher density, crystallinity and tensile strength.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q26",
+      "conceptIds": ["POL-13"],
+      "question": "Write the monomers and the linkage present in Nylon-6,6.",
+      "answer": "Nylon-6,6 is formed from adipic acid (HOOC–(CH₂)₄–COOH) and hexamethylenediamine (H₂N–(CH₂)₆–NH₂). The linkage is the amide (–CONH–) group formed by condensation with elimination of water.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q27",
+      "conceptIds": ["POL-02", "POL-09"],
+      "question": "Is natural rubber a polymer? Justify.",
+      "answer": "Yes, natural rubber is a polymer. It is a natural polymer consisting of long chains of isoprene (2-methylbuta-1,3-diene) units linked in a cis-1,4 fashion. Its elasticity arises from the coiled structure and weak intermolecular forces.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q28",
+      "conceptIds": ["POL-06", "POL-07"],
+      "question": "Give one example each of an addition polymer and a condensation polymer used as fibres.",
+      "answer": "An addition polymer used as a fibre is polyacrylonitrile (orlon). A condensation polymer used as a fibre is nylon-6,6 or terylene (PET). Addition polymers retain all atoms of the monomer; condensation polymers lose small molecules.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q29",
+      "conceptIds": ["POL-05"],
+      "question": "Why do fibres have high tensile strength?",
+      "answer": "Fibres possess strong intermolecular forces such as hydrogen bonding (in polyamides and polyesters). These forces hold the chains tightly together in a highly ordered crystalline arrangement, giving high tensile strength and low elasticity.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q30",
+      "conceptIds": ["POL-18"],
+      "question": "What is PMMA and what are its uses?",
+      "answer": "PMMA is poly(methyl methacrylate), commonly known as Perspex or acrylic glass. It is a transparent thermoplastic used for windows, lenses, signboards and as a substitute for glass where shatter resistance is required.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "POL-Q31",
+      "conceptIds": ["POL-03"],
+      "question": "How does branching affect the density of a polymer?",
+      "answer": "Branching prevents polymer chains from packing closely together. As a result branched polymers have lower density and crystallinity compared with linear polymers of the same chemical composition. LDPE is a classic example.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q32",
+      "conceptIds": ["POL-10"],
+      "question": "What is the role of sulphur in vulcanisation?",
+      "answer": "Sulphur forms covalent cross-links (–S–S– or –Sₓ– bridges) between adjacent polyisoprene chains. These cross-links restrict chain slippage, thereby increasing elasticity, strength and thermal stability of the rubber.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q33",
+      "conceptIds": ["POL-15"],
+      "question": "Name two biodegradable polymers and their monomers.",
+      "answer": "PHBV is a copolymer of 3-hydroxybutanoic acid and 3-hydroxypentanoic acid. Nylon-2-nylon-6 is a polyamide of glycine and amino-caproic acid. Both can be degraded by microorganisms.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "POL-Q34",
+      "conceptIds": ["POL-01", "POL-08"],
+      "question": "Can a copolymer be formed by addition polymerisation? Give an example.",
+      "answer": "Yes, copolymers can be formed by addition polymerisation. Buna-S (styrene-butadiene rubber) is an addition copolymer of butadiene and styrene. The two monomers add across their double bonds without elimination of any small molecule.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "POL-Q35",
+      "conceptIds": ["POL-17", "POL-05"],
+      "question": "Why cannot thermosetting plastics be recycled by melting?",
+      "answer": "Thermosetting plastics have extensive covalent cross-links between chains. These cross-links do not break on heating; instead the polymer chars or decomposes. Consequently they cannot be softened and remoulded, unlike thermoplastics.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    }
+  ]
+}

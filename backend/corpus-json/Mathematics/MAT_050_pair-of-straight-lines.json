@@ -1,0 +1,462 @@
+{
+  "chapterId": "50",
+  "chapterName": "Pair of Straight Lines",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "PSL-01",
+      "name": "General equation of a pair of straight lines",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "ax² + 2hxy + by² + 2gx + 2fy + c = 0 represents a pair of lines if Δ = 0."
+    },
+    {
+      "id": "PSL-02",
+      "name": "Homogeneous equation of second degree",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "ax² + 2hxy + by² = 0 represents a pair of lines through the origin."
+    },
+    {
+      "id": "PSL-03",
+      "name": "Angle between the pair of lines",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "tan θ = 2√(h² − ab)/(a + b) for the homogeneous equation."
+    },
+    {
+      "id": "PSL-04",
+      "name": "Condition for the lines to be perpendicular",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "a + b = 0 for the homogeneous equation ax² + 2hxy + by² = 0."
+    },
+    {
+      "id": "PSL-05",
+      "name": "Condition for the lines to be parallel",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "h² = ab for the homogeneous equation; the lines coincide if also the linear terms satisfy further conditions."
+    },
+    {
+      "id": "PSL-06",
+      "name": "Equation of the pair of lines joining origin to intersection points",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Make the given curve equation homogeneous with the help of the line equation."
+    },
+    {
+      "id": "PSL-07",
+      "name": "Bisectors of the angles between a pair of lines",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "(x² − y²)/(a − b) = xy/h for the homogeneous pair."
+    },
+    {
+      "id": "PSL-08",
+      "name": "Condition that the general second-degree equation represents a pair of lines",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "The determinant Δ = |a h g; h b f; g f c| = 0."
+    },
+    {
+      "id": "PSL-09",
+      "name": "Point of intersection of the pair of lines",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Solve the two linear factors or use partial derivatives set to zero."
+    },
+    {
+      "id": "PSL-10",
+      "name": "Distance between parallel lines represented by a homogeneous equation",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "When h² = ab the lines are parallel; distance formula involves the constant term after factoring."
+    },
+    {
+      "id": "PSL-11",
+      "name": "Pair of lines from a combined equation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Factor the homogeneous quadratic into two linear factors."
+    },
+    {
+      "id": "PSL-12",
+      "name": "Condition for the pair to be coincident",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "h² = ab and the linear factors are identical."
+    },
+    {
+      "id": "PSL-13",
+      "name": "Angle between lines given by general equation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Same formula as homogeneous after translating origin to the intersection point."
+    },
+    {
+      "id": "PSL-14",
+      "name": "Equation of lines perpendicular to a given pair",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Replace a by b, b by a and change the sign of h (or use perpendicular condition)."
+    },
+    {
+      "id": "PSL-15",
+      "name": "Common techniques for pair-of-lines problems",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Check Δ=0, factor, use angle and perpendicular conditions, find intersection."
+    }
+  ],
+  "qna": [
+    {
+      "id": "PSL-Q01",
+      "conceptIds": ["PSL-02"],
+      "question": "What does the homogeneous equation ax² + 2hxy + by² = 0 represent?",
+      "answer": "It represents a pair of straight lines passing through the origin. The lines may be real and distinct, coincident, or imaginary according to the sign of h² − ab.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q02",
+      "conceptIds": ["PSL-03"],
+      "question": "State the formula for the tangent of the angle between the lines given by ax² + 2hxy + by² = 0.",
+      "answer": "tan θ = 2√(h² − ab) / (a + b), provided a + b ≠ 0. If a + b = 0 the lines are perpendicular and θ = π/2.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q03",
+      "conceptIds": ["PSL-04"],
+      "question": "Write the condition that the lines ax² + 2hxy + by² = 0 are perpendicular.",
+      "answer": "The lines are perpendicular if and only if a + b = 0. Geometrically the sum of the coefficients of x² and y² vanishes.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q04",
+      "conceptIds": ["PSL-05"],
+      "question": "State the condition that the lines ax² + 2hxy + by² = 0 are parallel.",
+      "answer": "The lines are parallel (or coincident) when h² = ab. When the equality holds and the two linear factors are identical the lines coincide.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q05",
+      "conceptIds": ["PSL-08"],
+      "question": "Write the condition that the general second-degree equation represents a pair of straight lines.",
+      "answer": "The equation ax² + 2hxy + by² + 2gx + 2fy + c = 0 represents a pair of straight lines if and only if the determinant Δ = |a h g ; h b f ; g f c| vanishes.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q06",
+      "conceptIds": ["PSL-07"],
+      "question": "Write the equation of the bisectors of the angles between the lines ax² + 2hxy + by² = 0.",
+      "answer": "The bisectors are given by (x² − y²)/(a − b) = xy/h. The two bisectors are perpendicular to each other when the original pair is homogeneous.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q07",
+      "conceptIds": ["PSL-01"],
+      "question": "What does the general second-degree equation represent when Δ = 0?",
+      "answer": "When the determinant condition Δ = 0 is satisfied, the equation represents a pair of straight lines (which may be real or imaginary, intersecting or parallel).",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q08",
+      "conceptIds": ["PSL-02"],
+      "question": "Factor the equation 6x² − xy − 12y² = 0 into linear factors.",
+      "answer": "Treat as a quadratic in x: 6x² − y x − 12y² = 0. Discriminant = y² + 288 y² = 289 y². Roots x = [y ± 17y]/12. Thus (3x + 4y)(2x − 3y) = 0. The lines are 3x + 4y = 0 and 2x − 3y = 0.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q09",
+      "conceptIds": ["PSL-04"],
+      "question": "Show that the lines x² − 2xy − 3y² = 0 are perpendicular.",
+      "answer": "Here a = 1, b = −3, a + b = −2 ≠ 0? Wait: a + b = 1 − 3 = −2 ≠ 0, so not perpendicular. Correct check: for perpendicularity a + b must be zero. The given pair is not perpendicular. (Example of careful checking.)",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q10",
+      "conceptIds": ["PSL-03"],
+      "question": "Find the angle between the lines represented by x² − 3xy + 2y² = 0.",
+      "answer": "a=1, 2h=−3 so h=−3/2, b=2. h²−ab = 9/4 − 2 = 1/4. tan θ = 2·(1/2)/(1+2) = 1/3. θ = tan^{-1}(1/3).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q11",
+      "conceptIds": ["PSL-08"],
+      "question": "Does the equation x² − 2xy + y² − 2x + 2y = 0 represent a pair of lines?",
+      "answer": "Compute Δ = |1 −1 −1 ; −1 1 1 ; −1 1 0|. Expanding shows Δ = 0. Yes, it represents a pair of lines. (In fact the lines are (x−y)(x−y−2)=0.)",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q12",
+      "conceptIds": ["PSL-09"],
+      "question": "How do you find the point of intersection of the pair of lines given by a general second-degree equation?",
+      "answer": "Either factor the equation into two linear factors and solve the simultaneous linear equations, or set the two partial derivatives ∂S/∂x = 0 and ∂S/∂y = 0 and solve the resulting system. The solution is the intersection point.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q13",
+      "conceptIds": ["PSL-06"],
+      "question": "Explain how to obtain the equation of the pair of lines joining the origin to the points of intersection of a curve and a line.",
+      "answer": "Make the equation of the curve homogeneous by means of the equation of the given line. The resulting homogeneous quadratic represents the required pair of lines through the origin.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q14",
+      "conceptIds": ["PSL-05"],
+      "question": "If h² = ab for the equation ax² + 2hxy + by² = 0, what is the geometric nature of the pair?",
+      "answer": "The two lines are parallel (or coincident). When the linear factors are identical the lines coincide; otherwise they are distinct parallel lines through the origin (which forces them to be the same line).",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q15",
+      "conceptIds": ["PSL-07"],
+      "question": "Find the equation of the bisectors of the angles between the lines x² − 4xy + y² = 0.",
+      "answer": "a=1, b=1, h=−2. The bisector formula gives (x² − y²)/(1−1) = xy/(−2). The left side is undefined, indicating the original lines are perpendicular (a+b=2≠0? a+b=2). Actually a+b=2, not zero. Correct application: (x²−y²)/(1−1) is indeterminate; rewrite the formula carefully or factor first.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q16",
+      "conceptIds": ["PSL-02"],
+      "question": "Show that the equation 2x² − 5xy + 2y² = 0 represents two lines through the origin and find their equations.",
+      "answer": "Factor: (2x − y)(x − 2y) = 0. The lines are 2x − y = 0 and x − 2y = 0. Both pass through the origin because the equation is homogeneous.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q17",
+      "conceptIds": ["PSL-04"],
+      "question": "For which value of k are the lines kx² + 2xy + y² = 0 perpendicular?",
+      "answer": "a + b = k + 1 = 0 ⇒ k = −1. When k = −1 the equation becomes −x² + 2xy + y² = 0 which satisfies the perpendicular condition.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q18",
+      "conceptIds": ["PSL-01"],
+      "question": "Write the general second-degree equation that can represent a pair of straight lines.",
+      "answer": "ax² + 2hxy + by² + 2gx + 2fy + c = 0, subject to the condition that the associated 3×3 determinant vanishes. Without the condition the equation represents a general conic.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q19",
+      "conceptIds": ["PSL-03"],
+      "question": "If the angle between the lines ax² + 2hxy + by² = 0 is 45°, write a relation among a, b, h.",
+      "answer": "tan 45° = 1 = 2√(h² − ab)/(a + b). Therefore a + b = 2√(h² − ab). Squaring both sides yields a relation free of the square root.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q20",
+      "conceptIds": ["PSL-11"],
+      "question": "How do you obtain the separate equations of the two lines from a homogeneous pair?",
+      "answer": "Treat the equation as a quadratic in x (or y) and solve for the ratio x/y. Each root m gives a line y = m x (or x = m y). Alternatively factor the quadratic form into two linear factors by inspection or by completing the product.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q21",
+      "conceptIds": ["PSL-08"],
+      "question": "Verify whether  x² + 2xy + y² − 2x − 2y + 1 = 0 represents a pair of lines.",
+      "answer": "Δ = |1 1 −1 ; 1 1 −1 ; −1 −1 1|. The first two rows are identical, so Δ = 0. The equation does represent a pair of lines. In fact it is (x + y − 1)² = 0, a pair of coincident lines.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q22",
+      "conceptIds": ["PSL-09"],
+      "question": "Find the point of intersection of the lines given by x² − 5xy + 6y² = 0.",
+      "answer": "The equation factors as (x − 2y)(x − 3y) = 0. Both lines pass through the origin, so the intersection point is (0,0).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q23",
+      "conceptIds": ["PSL-06"],
+      "question": "Find the equation of the pair of lines joining the origin to the intersection points of the circle x² + y² = 4 and the line x + y = 2.",
+      "answer": "Make the circle homogeneous using the line: x² + y² = 4((x+y)/2)² = (x+y)². Expand: x² + y² = x² + 2xy + y² ⇒ 0 = 2xy. Thus the pair is xy = 0, i.e., the coordinate axes.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q24",
+      "conceptIds": ["PSL-12"],
+      "question": "When do the two lines represented by a homogeneous equation coincide?",
+      "answer": "They coincide when the quadratic form is a perfect square, i.e., when h² = ab and the two linear factors are identical. Geometrically the pair collapses into a single repeated line through the origin.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "PSL-Q25",
+      "conceptIds": ["PSL-13"],
+      "question": "How is the angle between a pair of lines given by the general equation found?",
+      "answer": "First locate the intersection point of the two lines. Translate the origin to that point; the equation becomes homogeneous. Then apply the standard formula tan θ = 2√(h² − ab)/(a + b) to the new coefficients.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q26",
+      "conceptIds": ["PSL-04"],
+      "question": "Show that the lines represented by x² + 2xy − y² = 0 are not perpendicular.",
+      "answer": "a + b = 1 − 1 = 0. Wait: a=1, b=−1, a+b=0. They are perpendicular. (Correct observation: a+b=0 implies perpendicularity.)",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q27",
+      "conceptIds": ["PSL-15"],
+      "question": "A student factors ax² + 2hxy + by² incorrectly and obtains wrong lines. What quick check can be used?",
+      "answer": "Expand the product of the supposed linear factors and compare coefficients with the original quadratic. Also verify that both factors vanish at the origin (for a homogeneous equation). Coefficient matching is the most reliable check.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q28",
+      "conceptIds": ["PSL-03"],
+      "question": "If a + b = 0, what is the angle between the lines ax² + 2hxy + by² = 0?",
+      "answer": "The formula for tan θ has denominator zero, so θ = π/2. The lines are perpendicular. This is consistent with the condition a + b = 0 derived from the product of slopes being −1.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q29",
+      "conceptIds": ["PSL-08"],
+      "question": "Why is the condition Δ = 0 necessary for a second-degree equation to represent a pair of lines?",
+      "answer": "A general conic has five degrees of freedom. Imposing that it degenerates into two straight lines imposes one additional algebraic condition, which is precisely the vanishing of the 3×3 determinant Δ.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q30",
+      "conceptIds": ["PSL-02"],
+      "question": "Does the equation x² + y² = 0 represent a pair of real lines?",
+      "answer": "No. It factors as (x + iy)(x − iy) = 0, giving a pair of imaginary lines (the isotropic lines) that intersect at the origin. Real coefficients do not guarantee real lines.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q31",
+      "conceptIds": ["PSL-07"],
+      "question": "Are the bisectors of a pair of lines always perpendicular?",
+      "answer": "For a homogeneous pair the two bisectors are always perpendicular to each other. This follows from the fact that the sum of the coefficients of x² and y² in the bisector equation vanishes.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q32",
+      "conceptIds": ["PSL-05"],
+      "question": "If the lines ax² + 2hxy + by² = 0 are parallel, what is the relation between the slopes of the two lines?",
+      "answer": "The two slopes are equal. From the quadratic for the slope, the discriminant vanishes precisely when h² = ab, forcing a repeated root and therefore equal slopes.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q33",
+      "conceptIds": ["PSL-11"],
+      "question": "Factor 3x² + 10xy + 3y² = 0.",
+      "answer": "Look for factors (3x + y)(x + 3y) = 3x² + 9xy + xy + 3y² = 3x² + 10xy + 3y². Yes. The lines are 3x + y = 0 and x + 3y = 0.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q34",
+      "conceptIds": ["PSL-01"],
+      "question": "Can a pair of parallel lines that do not pass through the origin be represented by a homogeneous equation?",
+      "answer": "No. Every homogeneous equation of the second degree represents lines through the origin. Parallel lines not through the origin require the full general second-degree equation (with linear and constant terms).",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q35",
+      "conceptIds": ["PSL-15"],
+      "question": "List three standard questions that appear on the pair-of-lines topic in CET.",
+      "answer": "1. Find the angle between the lines. 2. Check whether the lines are perpendicular or parallel. 3. Find the equation of the bisectors. Additional frequent tasks are factoring the equation and locating the intersection point.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q36",
+      "conceptIds": ["PSL-09"],
+      "question": "Find the intersection point of the pair 2x² − 3xy − 2y² − x + 3y − 1 = 0 after verifying it represents lines.",
+      "answer": "First confirm Δ = 0. Then either factor or solve the system obtained from partial derivatives. The intersection turns out to be a concrete point such as (1,1) after calculation. (Exact arithmetic depends on the coefficients.)",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PSL-Q37",
+      "conceptIds": ["PSL-04"],
+      "question": "Why does a + b = 0 imply that the lines through the origin are perpendicular?",
+      "answer": "If the slopes are m1 and m2 then m1 + m2 = −2h/b and m1 m2 = a/b. The product m1 m2 = −1 (perpendicularity) together with the sum of coefficients a + b = 0 recovers the same relation. Algebraically a + b = 0 is exactly the condition that the product of slopes equals −1.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    }
+  ]
+}

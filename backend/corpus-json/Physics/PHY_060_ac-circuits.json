@@ -1,0 +1,679 @@
+{
+  "chapterId": "60",
+  "chapterName": "AC Circuits",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "ACC-01",
+      "name": "DC vs AC current",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "DC flows in one direction; AC reverses direction periodically."
+    },
+    {
+      "id": "ACC-02",
+      "name": "AC generator emf and current",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "e = e0 sin(ωt); i = i0 sin(ωt + α) with peak values e0 and i0."
+    },
+    {
+      "id": "ACC-03",
+      "name": "Average value of AC",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Average over half cycle: e_av = 0.637 e0; i_av = 0.637 i0."
+    },
+    {
+      "id": "ACC-04",
+      "name": "RMS value of AC",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "i_rms = i0/√2 = 0.707 i0; same factor for voltage."
+    },
+    {
+      "id": "ACC-05",
+      "name": "Pure resistive AC circuit",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Voltage and current in phase; i0 = e0/R."
+    },
+    {
+      "id": "ACC-06",
+      "name": "Pure inductive circuit and inductive reactance",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Current lags voltage by π/2; XL = ωL; i0 = e0/(ωL)."
+    },
+    {
+      "id": "ACC-07",
+      "name": "Pure capacitive circuit and capacitive reactance",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Current leads voltage by π/2; XC = 1/(ωC)."
+    },
+    {
+      "id": "ACC-08",
+      "name": "Series LCR circuit and impedance",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Z = √[R² + (XL – XC)²]; e0 = i0 Z; tan φ = (XL – XC)/R."
+    },
+    {
+      "id": "ACC-09",
+      "name": "Impedance triangle and phase angle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Right triangle with sides R, (XL–XC) and Z; φ is phase difference."
+    },
+    {
+      "id": "ACC-10",
+      "name": "LC oscillations",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Charged capacitor discharging through non-resistive inductor produces constant amplitude oscillations."
+    },
+    {
+      "id": "ACC-11",
+      "name": "Energy in LC circuit",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "UB = ½LI²; UE = ½q²/C; total energy conserved in ideal LC."
+    },
+    {
+      "id": "ACC-12",
+      "name": "Series resonance",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "XL = XC; f = 1/(2π√LC); Z = R; current maximum."
+    },
+    {
+      "id": "ACC-13",
+      "name": "Parallel resonance",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Resonant frequency same form; current drawn from source is minimum."
+    },
+    {
+      "id": "ACC-14",
+      "name": "Average power in AC circuits",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "P_av = e_rms i_rms cos φ; zero for pure L or C; maximum at resonance."
+    },
+    {
+      "id": "ACC-15",
+      "name": "Power factor",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "cos φ; unity at series resonance; measures useful power fraction."
+    },
+    {
+      "id": "ACC-16",
+      "name": "Frequency dependence of reactances",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "XL ∝ f; XC ∝ 1/f; used to identify inductive or capacitive behaviour."
+    },
+    {
+      "id": "ACC-17",
+      "name": "Q-factor and bandwidth",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Sharpness of resonance; Q = ω0 L / R; higher Q means narrower bandwidth."
+    },
+    {
+      "id": "ACC-18",
+      "name": "Phasor diagrams for R, L, C and LCR",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Graphical representation of phase relations between voltage and current."
+    },
+    {
+      "id": "ACC-19",
+      "name": "Choke coil",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Inductor used to control current in AC with low power loss."
+    },
+    {
+      "id": "ACC-20",
+      "name": "Wattless current",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Current component 90° out of phase with voltage; contributes zero average power."
+    }
+  ],
+  "qna": [
+    {
+      "id": "ACC-Q01",
+      "conceptIds": [
+        "ACC-01"
+      ],
+      "question": "What is the fundamental difference between DC and AC current?",
+      "answer": "DC current flows only in one direction. AC current periodically reverses direction. This directional difference is the basic distinction used throughout the chapter.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "ACC-Q02",
+      "conceptIds": [
+        "ACC-02"
+      ],
+      "question": "Write the expression for instantaneous emf of an AC generator.",
+      "answer": "e = e0 sin(ωt). Here e0 is the peak voltage and ω is the angular frequency. The emf varies sinusoidally with time.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "ACC-Q03",
+      "conceptIds": [
+        "ACC-02"
+      ],
+      "question": "Write the expression for instantaneous current when a phase constant α is present.",
+      "answer": "i = i0 sin(ωt + α). i0 is the peak current. The phase constant α accounts for any lag or lead relative to the voltage.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "ACC-Q04",
+      "conceptIds": [
+        "ACC-03"
+      ],
+      "question": "What is the average value of alternating voltage over one half-cycle?",
+      "answer": "e_av = 0.637 e0. The same numerical factor applies to current: i_av = 0.637 i0. These averages are obtained by integrating the sinusoidal function over half a period.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "ACC-Q05",
+      "conceptIds": [
+        "ACC-04"
+      ],
+      "question": "Give the relation between rms current and peak current.",
+      "answer": "i_rms = i0 / √2 = 0.707 i0. The identical relation holds for voltage. Rms values are the effective values used for power calculations.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "ACC-Q06",
+      "conceptIds": [
+        "ACC-05"
+      ],
+      "question": "In a pure resistive AC circuit, what is the phase relation between voltage and current?",
+      "answer": "Voltage and current are in phase. The current is i = i0 sin(ωt) with i0 = e0/R. The e–i graph therefore shows two coincident sinusoidal curves.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "ACC-Q07",
+      "conceptIds": [
+        "ACC-06"
+      ],
+      "question": "In a pure inductive circuit, by how much does the current lag the voltage?",
+      "answer": "The current lags the voltage by π/2. The expression is i = i0 sin(ωt – π/2) with i0 = e0/(ωL). Inductive reactance XL = ωL opposes the alternating current.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "ACC-Q08",
+      "conceptIds": [
+        "ACC-06"
+      ],
+      "question": "Define inductive reactance and give its expression.",
+      "answer": "Inductive reactance is the opposing nature of an inductor to the flow of alternating current. Its magnitude is XL = ωL. It increases with both frequency and inductance.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "ACC-Q09",
+      "conceptIds": [
+        "ACC-07"
+      ],
+      "question": "In a pure capacitive circuit, what is the phase relation between current and voltage?",
+      "answer": "Current leads voltage by π/2. The current is i = i0 sin(ωt + π/2) with i0 = e0 ωC. Capacitive reactance XC = 1/(ωC).",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "ACC-Q10",
+      "conceptIds": [
+        "ACC-07"
+      ],
+      "question": "Write the expression for capacitive reactance.",
+      "answer": "XC = 1/(ωC). It decreases with increasing frequency and with increasing capacitance. It is the effective opposition offered by the capacitor to alternating current.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "ACC-Q11",
+      "conceptIds": [
+        "ACC-08"
+      ],
+      "question": "Write the expression for impedance of a series LCR circuit.",
+      "answer": "Z = √[R² + (XL – XC)²]. The peak current is then i0 = e0/Z. This is the AC analogue of Ohm’s law.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q12",
+      "conceptIds": [
+        "ACC-08",
+        "ACC-09"
+      ],
+      "question": "How is the phase angle φ related to the reactances and resistance in a series LCR circuit?",
+      "answer": "tan φ = (XL – XC)/R. When XL > XC the circuit is inductive and current lags voltage. When XC > XL the circuit is capacitive and current leads voltage.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q13",
+      "conceptIds": [
+        "ACC-10"
+      ],
+      "question": "What is an LC oscillation and under what condition is it produced?",
+      "answer": "When a charged capacitor is allowed to discharge through a non-resistive inductor, electrical oscillations of constant amplitude and frequency are produced. These are called LC oscillations. Energy continuously oscillates between the electric field of the capacitor and the magnetic field of the inductor.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q14",
+      "conceptIds": [
+        "ACC-11"
+      ],
+      "question": "Write the expressions for magnetic and electric energy stored in an LC circuit.",
+      "answer": "Magnetic energy UB = ½ L I². Electric energy UE = ½ (q²/C). In an ideal LC circuit their sum remains constant while each varies with time.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q15",
+      "conceptIds": [
+        "ACC-12"
+      ],
+      "question": "What is a series resonance circuit and what is its resonant frequency?",
+      "answer": "A series LCR circuit that admits maximum current for a given frequency is called a series resonance circuit. At resonance XL = XC so Z = R and f = 1/(2π√LC). Current reaches its highest possible value.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q16",
+      "conceptIds": [
+        "ACC-12"
+      ],
+      "question": "What is the impedance of a series LCR circuit at resonance?",
+      "answer": "At resonance XL = XC, therefore Z = R. The circuit behaves as a pure resistance. Current is maximum and equal to e0/R.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q17",
+      "conceptIds": [
+        "ACC-13"
+      ],
+      "question": "State the resonant frequency of a parallel resonance circuit.",
+      "answer": "The resonant frequency is also f = 1/(2π√LC). At this frequency the current drawn from the source is minimum because the parallel combination behaves as a high impedance.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q18",
+      "conceptIds": [
+        "ACC-14"
+      ],
+      "question": "What is the average power associated with a pure resistance in an AC circuit?",
+      "answer": "P_av = e_rms × i_rms. This power is positive and represents actual energy dissipated as heat. It is the only non-zero average power in a pure resistive circuit.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q19",
+      "conceptIds": [
+        "ACC-14"
+      ],
+      "question": "What is the average power associated with a pure inductor or pure capacitor?",
+      "answer": "The average power is zero. Energy is alternately stored and released by the reactive elements, so the net energy transfer over a full cycle is zero.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q20",
+      "conceptIds": [
+        "ACC-14",
+        "ACC-15"
+      ],
+      "question": "Write the expression for average power in a series LCR circuit.",
+      "answer": "P_av = e_rms i_rms cos φ. The factor cos φ is the power factor. When φ = 0 (resonance) the power factor is unity and power is maximum.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q21",
+      "conceptIds": [
+        "ACC-16"
+      ],
+      "question": "If the frequency of the AC source is doubled, how do XL and XC change?",
+      "answer": "XL = ωL doubles because it is proportional to frequency. XC = 1/(ωC) is halved because it is inversely proportional to frequency. Current in a pure inductive circuit therefore halves while current in a pure capacitive circuit doubles.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ACC-Q22",
+      "conceptIds": [
+        "ACC-08"
+      ],
+      "question": "Under what condition does the current lead the voltage in a series LCR circuit?",
+      "answer": "Current leads voltage when XC > XL. The net reactance is capacitive and the phase angle φ is negative. The impedance triangle then shows the capacitive side larger.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q23",
+      "conceptIds": [
+        "ACC-08"
+      ],
+      "question": "Under what condition does the current lag the voltage in a series LCR circuit?",
+      "answer": "Current lags voltage when XL > XC. The net reactance is inductive and φ is positive. This is the situation assumed when writing eL > eC in the notes.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q24",
+      "conceptIds": [
+        "ACC-12",
+        "ACC-15"
+      ],
+      "question": "What is the power factor of a series LCR circuit at resonance?",
+      "answer": "At resonance φ = 0, therefore cos φ = 1. The power factor is unity. The circuit draws maximum average power from the source.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q25",
+      "conceptIds": [
+        "ACC-09"
+      ],
+      "question": "What is the physical meaning of the impedance triangle?",
+      "answer": "It is a right-angled triangle whose base is R, perpendicular side is (XL – XC) and hypotenuse is Z. The angle between Z and R is the phase angle φ. It gives a geometric picture of the magnitude and phase of the total impedance.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q26",
+      "conceptIds": [
+        "ACC-14"
+      ],
+      "question": "A student claims that average power consumed by a pure capacitor is e_rms i_rms. Is the claim correct?",
+      "answer": "No. For a pure capacitor the phase difference is 90°, so cos φ = 0 and average power is zero. Although the product of the rms values is non-zero, the power factor multiplies it and makes the average power vanish.",
+      "type": "cet_tip",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q27",
+      "conceptIds": [
+        "ACC-12"
+      ],
+      "question": "Why does a series resonance circuit admit maximum current at a particular frequency?",
+      "answer": "At that frequency the inductive and capacitive reactances become equal and opposite, cancelling each other. Impedance falls to its minimum value R. Consequently the current i = e/Z reaches its largest magnitude.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q28",
+      "conceptIds": [
+        "ACC-12",
+        "ACC-13"
+      ],
+      "question": "Compare the current-versus-frequency curves for series and parallel resonance.",
+      "answer": "In series resonance the current shows a sharp peak at the resonant frequency. In parallel resonance the current shows a sharp dip (minimum) at the resonant frequency. These opposite behaviours follow from series impedance being minimum and parallel impedance being maximum at resonance.",
+      "type": "comparison",
+      "difficulty": "hard",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q29",
+      "conceptIds": [
+        "ACC-05",
+        "ACC-06",
+        "ACC-07"
+      ],
+      "question": "Summarise the phase relationships in pure R, pure L and pure C circuits.",
+      "answer": "In pure R, voltage and current are in phase. In pure L, current lags voltage by 90°. In pure C, current leads voltage by 90°. These fixed phase differences determine the average power in each case.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "ACC-Q30",
+      "conceptIds": [
+        "ACC-08"
+      ],
+      "question": "Write the relation between peak voltage, peak current and impedance for a series LCR circuit.",
+      "answer": "e0 = i0 Z where Z = √[R² + (XL – XC)²]. This is the AC form of Ohm’s law. It reduces to the ordinary Ohm’s law when the circuit is purely resistive.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q31",
+      "conceptIds": [
+        "ACC-17"
+      ],
+      "question": "What is the Q-factor of a series LCR circuit and why is it important?",
+      "answer": "Q-factor is a measure of the sharpness of resonance, given by Q = ω0 L / R. A higher Q means a narrower bandwidth and a sharper peak in the current-frequency curve. It is an important CET concept even though not explicitly written in these notes.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "ACC-Q32",
+      "conceptIds": [
+        "ACC-14",
+        "ACC-15"
+      ],
+      "question": "Why is the average power associated with pure L and C zero while that associated with R is non-zero?",
+      "answer": "In pure L or C the voltage and current are 90° out of phase, so the product e i averages to zero over a cycle. In pure R they are in phase, so the product is always positive and averages to a non-zero value. Only resistance dissipates energy as heat.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q33",
+      "conceptIds": [
+        "ACC-18"
+      ],
+      "question": "What information does a phasor diagram convey for an LCR circuit?",
+      "answer": "A phasor diagram shows the relative magnitudes and phase angles of the voltages across R, L and C (or of the currents). It makes the impedance triangle and the phase angle φ visually clear and is a standard CET tool.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ACC-Q34",
+      "conceptIds": [
+        "ACC-19"
+      ],
+      "question": "What is a choke coil and why is it preferred over a pure resistor for controlling AC current?",
+      "answer": "A choke coil is an inductor used to limit current in an AC circuit. Because its average power consumption is nearly zero (power factor ≈ 0), it controls current with far less energy loss than a resistor of the same impedance.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ACC-Q35",
+      "conceptIds": [
+        "ACC-20"
+      ],
+      "question": "What is wattless current?",
+      "answer": "Wattless current is the component of current that is 90° out of phase with the voltage. It contributes nothing to the average power (P = VI cos φ). In a pure inductive or capacitive circuit the entire current is wattless.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "ACC-Q36",
+      "conceptIds": [
+        "ACC-12"
+      ],
+      "question": "A series LCR circuit is driven at its resonant frequency. What happens to the voltage across the inductor and capacitor?",
+      "answer": "At resonance XL = XC, so the voltages across L and C are equal in magnitude and opposite in phase; they cancel each other. The entire source voltage appears across the resistor.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ACC-Q37",
+      "conceptIds": [
+        "ACC-04",
+        "ACC-14"
+      ],
+      "question": "Why are rms values preferred over peak values for power calculations?",
+      "answer": "The average power in a resistive circuit is exactly e_rms i_rms. Using peak values would require an extra factor of ½. Rms values therefore give the correct heating effect directly and are the practical quantities measured by AC instruments.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1,
+        2
+      ]
+    }
+  ]
+}

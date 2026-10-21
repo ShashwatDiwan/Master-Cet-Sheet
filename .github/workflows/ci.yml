@@ -1,0 +1,74 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "backend/**"
+      - ".github/workflows/backend-ci.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "backend/**"
+      - ".github/workflows/backend-ci.yml"
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ghcr.io/your-github-user/cet-sheet-backend
+
+jobs:
+  build-test-publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: maven
+
+      - name: Make Maven wrapper executable
+        run: chmod +x ./mvnw
+
+      - name: Build and test application
+        run: ./mvnw -q verify
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build container image
+        uses: docker/build-push-action@v6
+        with:
+          context: backend
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: |
+            ${{ env.IMAGE_NAME }}:${{ github.sha }}
+            ${{ env.IMAGE_NAME }}:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Prepare GitOps update
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          echo "CI complete for commit SHA: ${{ github.sha }}"
+          echo "Next step: update GitOps manifests to use image tag ${{ github.sha }}"

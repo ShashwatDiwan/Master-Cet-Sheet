@@ -1,0 +1,462 @@
+{
+  "chapterId": "48",
+  "chapterName": "Continuity",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "CON-01",
+      "name": "Definition of continuity at a point",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "lim_{x→a} f(x) = f(a); left and right limits equal the function value."
+    },
+    {
+      "id": "CON-02",
+      "name": "Types of discontinuity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Removable, jump (discontinuity of first kind), infinite (second kind)."
+    },
+    {
+      "id": "CON-03",
+      "name": "Continuity on an interval",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Function continuous at every point of the interval (one-sided at endpoints)."
+    },
+    {
+      "id": "CON-04",
+      "name": "Algebra of continuous functions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Sum, product, quotient (denominator ≠0) of continuous functions are continuous."
+    },
+    {
+      "id": "CON-05",
+      "name": "Continuity of polynomial and rational functions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Polynomials continuous everywhere; rationals continuous where denominator ≠0."
+    },
+    {
+      "id": "CON-06",
+      "name": "Continuity of trigonometric and inverse trigonometric functions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "sin, cos continuous everywhere; tan continuous on its domain."
+    },
+    {
+      "id": "CON-07",
+      "name": "Removable discontinuity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Limit exists but is not equal to f(a) (or f(a) undefined); can be removed by redefining."
+    },
+    {
+      "id": "CON-08",
+      "name": "Jump discontinuity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Left and right limits exist but are unequal."
+    },
+    {
+      "id": "CON-09",
+      "name": "Infinite discontinuity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "At least one of the one-sided limits is infinite."
+    },
+    {
+      "id": "CON-10",
+      "name": "Intermediate value theorem",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Continuous function on [a,b] attains every value between f(a) and f(b)."
+    },
+    {
+      "id": "CON-11",
+      "name": "Composition of continuous functions",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Composition of continuous functions is continuous where defined."
+    },
+    {
+      "id": "CON-12",
+      "name": "Continuity of inverse functions",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Continuous strictly monotonic function has continuous inverse."
+    },
+    {
+      "id": "CON-13",
+      "name": "Checking continuity from left and right",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "lim_{x→a-} f(x) = lim_{x→a+} f(x) = f(a)."
+    },
+    {
+      "id": "CON-14",
+      "name": "Piecewise functions and continuity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Check matching of left/right limits and function value at the junction points."
+    },
+    {
+      "id": "CON-15",
+      "name": "Common mistakes in continuity problems",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Forgetting to check the function value itself, or confusing one-sided limits."
+    }
+  ],
+  "qna": [
+    {
+      "id": "CON-Q01",
+      "conceptIds": ["CON-01"],
+      "question": "State the definition of continuity of a function f at a point x = a.",
+      "answer": "f is continuous at x = a if lim_{x→a} f(x) exists and equals f(a). Equivalently the left-hand limit, the right-hand limit and the function value must all be equal. The three quantities lim_{x→a-} f(x), lim_{x→a+} f(x) and f(a) must coincide.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q02",
+      "conceptIds": ["CON-02", "CON-07"],
+      "question": "What is a removable discontinuity?",
+      "answer": "A discontinuity at x = a is removable if the limit lim_{x→a} f(x) exists (finite) but is not equal to f(a) (or f(a) is undefined). Redefining f(a) to equal the limit removes the discontinuity and makes the function continuous at a.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q03",
+      "conceptIds": ["CON-02", "CON-08"],
+      "question": "What is a jump discontinuity?",
+      "answer": "A jump discontinuity (discontinuity of the first kind) occurs when both one-sided limits exist and are finite but are unequal. The size of the jump is the absolute difference of the two one-sided limits. The function cannot be made continuous by redefining a single point.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q04",
+      "conceptIds": ["CON-02", "CON-09"],
+      "question": "What is an infinite discontinuity?",
+      "answer": "An infinite discontinuity (discontinuity of the second kind) occurs when at least one of the one-sided limits is infinite. Typical examples are vertical asymptotes of rational functions where the denominator vanishes while the numerator does not.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q05",
+      "conceptIds": ["CON-05"],
+      "question": "Why are all polynomial functions continuous everywhere?",
+      "answer": "A polynomial is built from the continuous functions 1 and x by repeated addition and multiplication. The algebra of continuous functions therefore guarantees that every polynomial is continuous at every real number. No exceptions arise.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q06",
+      "conceptIds": ["CON-05"],
+      "question": "Where is a rational function continuous?",
+      "answer": "A rational function p(x)/q(x) is continuous at every point where the denominator q(x) ≠ 0. At the roots of the denominator the function may have a removable discontinuity, a jump, or (most often) an infinite discontinuity.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q07",
+      "conceptIds": ["CON-13"],
+      "question": "How do you check continuity of a piecewise function at a junction point?",
+      "answer": "Evaluate the left-hand limit using the left-hand piece, the right-hand limit using the right-hand piece, and the function value given by the definition at that point. The three numbers must be equal for continuity. If any two differ the function is discontinuous there.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q08",
+      "conceptIds": ["CON-01"],
+      "question": "Is the function f(x) = |x| continuous at x = 0?",
+      "answer": "Yes. The left-hand limit is 0, the right-hand limit is 0, and f(0) = 0. All three coincide, so f is continuous at the origin. In fact |x| is continuous on the whole real line.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q09",
+      "conceptIds": ["CON-07"],
+      "question": "Classify the discontinuity of f(x) = (x² - 1)/(x - 1) at x = 1.",
+      "answer": "For x ≠ 1 the function simplifies to x + 1, so lim_{x→1} f(x) = 2. The limit exists but f is undefined at x = 1. The discontinuity is therefore removable; defining f(1) = 2 removes it.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q10",
+      "conceptIds": ["CON-08"],
+      "question": "Give an example of a function that has a jump discontinuity at x = 0.",
+      "answer": "The sign function or the unit step function: f(x) = -1 for x < 0 and f(x) = 1 for x ≥ 0. The left-hand limit is -1, the right-hand limit is 1, so there is a jump of size 2 at the origin.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q11",
+      "conceptIds": ["CON-09"],
+      "question": "Classify the discontinuity of f(x) = 1/x at x = 0.",
+      "answer": "Both one-sided limits are infinite (approaching +∞ from the right and -∞ from the left). The discontinuity is therefore infinite (of the second kind). The graph has a vertical asymptote at x = 0.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q12",
+      "conceptIds": ["CON-10"],
+      "question": "State the Intermediate Value Theorem.",
+      "answer": "If f is continuous on the closed interval [a,b] and k is any number between f(a) and f(b), then there exists at least one c in [a,b] such that f(c) = k. The theorem guarantees that a continuous function attains every intermediate value.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CON-Q13",
+      "conceptIds": ["CON-04"],
+      "question": "If f and g are continuous at a, what can be said about f + g, f g and f/g?",
+      "answer": "f + g and f g are continuous at a. f/g is continuous at a provided g(a) ≠ 0. These results follow from the corresponding limit theorems and the definition of continuity.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CON-Q14",
+      "conceptIds": ["CON-14"],
+      "question": "Examine the continuity of f(x) = { x² if x ≤ 1; 2x - 1 if x > 1 } at x = 1.",
+      "answer": "Left-hand limit = 1² = 1. Right-hand limit = 2·1 - 1 = 1. Function value f(1) = 1. All three are equal, so f is continuous at x = 1. The two pieces match smoothly at the junction.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q15",
+      "conceptIds": ["CON-15"],
+      "question": "A student checks only that the left and right limits exist and are equal, then declares the function continuous. What is missing?",
+      "answer": "The student forgot to verify that the common limit equals the actual function value f(a). If f(a) is different from the limit (or undefined), the function still has a discontinuity (removable). All three quantities must coincide.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q16",
+      "conceptIds": ["CON-06"],
+      "question": "Is tan x continuous at every real number?",
+      "answer": "No. tan x = sin x / cos x is continuous wherever cos x ≠ 0, i.e., on the open intervals ((k - 1/2)π, (k + 1/2)π) for integers k. At the odd multiples of π/2 the function has infinite discontinuities.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CON-Q17",
+      "conceptIds": ["CON-01", "CON-13"],
+      "question": "Show that f(x) = √x is continuous at x = 4.",
+      "answer": "lim_{x→4} √x = 2 = f(4). The limit exists (one-sided from the right is sufficient since the domain is [0,∞)) and equals the function value, so f is continuous at 4. The same argument works at every point of (0,∞).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q18",
+      "conceptIds": ["CON-10"],
+      "question": "Use the Intermediate Value Theorem to show that x³ - x - 1 = 0 has a root in (1,2).",
+      "answer": "Let f(x) = x³ - x - 1. f is continuous on [1,2]. f(1) = -1 < 0 and f(2) = 5 > 0. By the Intermediate Value Theorem there exists c in (1,2) such that f(c) = 0. Hence the equation has a root in the interval.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CON-Q19",
+      "conceptIds": ["CON-07"],
+      "question": "How can a removable discontinuity be removed?",
+      "answer": "If lim_{x→a} f(x) = L exists and is finite, redefine f(a) = L (or define f(a) = L if it was previously undefined). The new function is continuous at a. The graph is repaired by filling in the single missing or misplaced point.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q20",
+      "conceptIds": ["CON-03"],
+      "question": "What does it mean for a function to be continuous on a closed interval [a,b]?",
+      "answer": "f must be continuous at every point of the open interval (a,b), continuous from the right at a, and continuous from the left at b. One-sided continuity is required at the endpoints because the function is not defined beyond them.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q21",
+      "conceptIds": ["CON-11"],
+      "question": "If f is continuous at a and g is continuous at f(a), what can be said about g ∘ f?",
+      "answer": "The composition g ∘ f is continuous at a. The continuity of the outer function at the image point and the continuity of the inner function together guarantee that the limit of the composition equals the composition of the values.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CON-Q22",
+      "conceptIds": ["CON-14"],
+      "question": "Examine continuity of f(x) = { 2x if x < 1; x² if x ≥ 1 } at x = 1.",
+      "answer": "Left-hand limit = 2·1 = 2. Right-hand limit = 1² = 1. Function value = 1. The left-hand limit differs from the right-hand limit, so f has a jump discontinuity at x = 1.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q23",
+      "conceptIds": ["CON-05"],
+      "question": "Is every continuous function a polynomial? Justify.",
+      "answer": "No. Many non-polynomial functions are continuous, for example sin x, e^x, √x on [0,∞), and rational functions on their domains. Continuity is a far weaker condition than being a polynomial.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q24",
+      "conceptIds": ["CON-08"],
+      "question": "Can a jump discontinuity be removed by redefining the function at a single point?",
+      "answer": "No. Because the left- and right-hand limits differ, no single choice of f(a) can equal both of them simultaneously. The jump remains no matter how the function is redefined at that one point.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q25",
+      "conceptIds": ["CON-01"],
+      "question": "Why is continuity required for the Intermediate Value Theorem?",
+      "answer": "Without continuity a function can “jump over” intermediate values. The classic counter-example is a step function that never takes the value 0 even though it takes both positive and negative values. Continuity prevents such jumps.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CON-Q26",
+      "conceptIds": ["CON-09"],
+      "question": "Does the function f(x) = 1/(x-2) have a removable discontinuity at x = 2?",
+      "answer": "No. Both one-sided limits are infinite, so the discontinuity is infinite, not removable. Redefining f(2) to any finite number cannot eliminate the vertical asymptote.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q27",
+      "conceptIds": ["CON-13"],
+      "question": "A function is defined by different formulae on either side of x = 0. What three numbers must be computed to test continuity at 0?",
+      "answer": "The left-hand limit lim_{x→0-} f(x), the right-hand limit lim_{x→0+} f(x), and the function value f(0). Continuity holds if and only if all three are equal (and finite).",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q28",
+      "conceptIds": ["CON-06"],
+      "question": "Is the inverse sine function continuous on its domain?",
+      "answer": "Yes. arcsin x is continuous on the closed interval [-1,1]. It is the inverse of the continuous strictly increasing restriction of sin x to [-π/2, π/2], and the inverse of a continuous strictly monotonic function is continuous.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CON-Q29",
+      "conceptIds": ["CON-15"],
+      "question": "A student finds that lim_{x→a} f(x) = f(a) but still claims the function is discontinuous. What is the most likely error?",
+      "answer": "The student may have computed only one-sided limits and found them unequal, or may have confused the existence of the limit with continuity. If the two-sided limit equals the function value the function is continuous; any claim of discontinuity contradicts the definition.",
+      "type": "cet_tip",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q30",
+      "conceptIds": ["CON-04"],
+      "question": "If f is continuous at a and g is continuous at a, is f/g always continuous at a?",
+      "answer": "Not always. Continuity of the quotient requires the additional condition g(a) ≠ 0. If g(a) = 0 the quotient may have a removable discontinuity, a jump, or an infinite discontinuity at a.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CON-Q31",
+      "conceptIds": ["CON-10"],
+      "question": "Can the Intermediate Value Theorem be used to prove the existence of a root of a continuous function?",
+      "answer": "Yes. If f is continuous on [a,b] and f(a) and f(b) have opposite signs, then 0 lies between f(a) and f(b). By the Intermediate Value Theorem there exists c in (a,b) such that f(c) = 0. This is a standard existence proof for roots.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CON-Q32",
+      "conceptIds": ["CON-01"],
+      "question": "Is continuity a local or a global property?",
+      "answer": "Continuity at a single point is a local property; it depends only on the behaviour of the function in a neighbourhood of that point. Continuity on an interval is the global requirement that the function be continuous at every point of the interval.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q33",
+      "conceptIds": ["CON-07", "CON-08"],
+      "question": "Compare removable and jump discontinuities with respect to the possibility of removal.",
+      "answer": "A removable discontinuity can be eliminated by redefining the function at a single point because the two-sided limit exists. A jump discontinuity cannot be removed by any redefinition at a single point because the one-sided limits differ; the jump persists.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q34",
+      "conceptIds": ["CON-03"],
+      "question": "Why is one-sided continuity required at the endpoints of a closed interval?",
+      "answer": "Outside the interval the function need not even be defined, so two-sided limits cannot be formed. Continuity from the right at the left endpoint and from the left at the right endpoint is the natural and sufficient requirement for the function to be continuous on the closed interval.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q35",
+      "conceptIds": ["CON-14"],
+      "question": "A piecewise function is continuous at every point of each open piece and the pieces match at every junction. Is the whole function continuous on the real line?",
+      "answer": "Yes. Continuity on each open piece together with matching of limits and function values at the finitely many junction points guarantees continuity at every real number. The function is therefore continuous on ℝ.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q36",
+      "conceptIds": ["CON-05"],
+      "question": "Why does the rational function (x²-4)/(x-2) become continuous after simplification?",
+      "answer": "Algebraic simplification removes the common factor (x-2), yielding the polynomial x+2 which is continuous everywhere. The original expression had a removable discontinuity at x=2; after cancellation and redefinition the discontinuity disappears.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CON-Q37",
+      "conceptIds": ["CON-01", "CON-15"],
+      "question": "Summarise the three conditions that must all hold for continuity at a point.",
+      "answer": "1. The function must be defined at the point (f(a) exists). 2. The two-sided limit lim_{x→a} f(x) must exist and be finite. 3. The limit must equal the function value: lim_{x→a} f(x) = f(a). Failure of any one condition produces a discontinuity.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    }
+  ]
+}

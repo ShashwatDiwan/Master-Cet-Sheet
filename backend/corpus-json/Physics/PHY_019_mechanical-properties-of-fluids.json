@@ -1,0 +1,615 @@
+{
+  "chapterId": "019",
+  "chapterName": "Mechanical Properties of Fluids",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "MPF-01",
+      "name": "Thrust and pressure",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Thrust is force; pressure is thrust per unit area."
+    },
+    {
+      "id": "MPF-02",
+      "name": "Pascal's law",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Pressure applied to an enclosed fluid is transmitted equally in all directions."
+    },
+    {
+      "id": "MPF-03",
+      "name": "Atmospheric pressure",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Pressure exerted by the column of air; measured by barometer."
+    },
+    {
+      "id": "MPF-04",
+      "name": "Gauge pressure and absolute pressure",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Absolute = gauge + atmospheric."
+    },
+    {
+      "id": "MPF-05",
+      "name": "Buoyancy and Archimedes' principle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "Upthrust equals weight of fluid displaced."
+    },
+    {
+      "id": "MPF-06",
+      "name": "Density and relative density",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "Density is mass per volume; relative density is density relative to water."
+    },
+    {
+      "id": "MPF-07",
+      "name": "Streamline and turbulent flow",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Streamline is orderly; turbulent is irregular."
+    },
+    {
+      "id": "MPF-08",
+      "name": "Equation of continuity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "A v = constant for incompressible fluid."
+    },
+    {
+      "id": "MPF-09",
+      "name": "Bernoulli's principle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "P + ρgh + (1/2)ρv² = constant along a streamline."
+    },
+    {
+      "id": "MPF-10",
+      "name": "Applications of Bernoulli",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Venturimeter, atomiser, lift on aerofoil."
+    },
+    {
+      "id": "MPF-11",
+      "name": "Viscosity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        6
+      ],
+      "oneLineSummary": "Internal friction in fluids; Stokes' law F = 6πηrv."
+    },
+    {
+      "id": "MPF-12",
+      "name": "Reynolds number",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Dimensionless number that predicts laminar or turbulent flow."
+    },
+    {
+      "id": "MPF-13",
+      "name": "Surface tension",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Force per unit length acting on a liquid surface."
+    },
+    {
+      "id": "MPF-14",
+      "name": "Surface energy",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Excess energy of surface molecules; related to surface tension."
+    },
+    {
+      "id": "MPF-15",
+      "name": "Capillarity",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Rise or fall of liquid in a narrow tube due to surface tension."
+    },
+    {
+      "id": "MPF-16",
+      "name": "Angle of contact",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Angle between tangent to liquid surface and solid surface."
+    },
+    {
+      "id": "MPF-17",
+      "name": "Excess pressure in drops and bubbles",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "ΔP = 2σ/r for drop; 4σ/r for soap bubble."
+    },
+    {
+      "id": "MPF-18",
+      "name": "Terminal velocity",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Constant velocity when viscous drag balances weight."
+    }
+  ],
+  "qna": [
+    {
+      "id": "MPF-Q01",
+      "conceptIds": [
+        "MPF-06",
+        "MPF-07",
+        "MPF-11"
+      ],
+      "question": "Define viscosity of a fluid.",
+      "answer": "Viscosity is the property by virtue of which a liquid or fluid resists the relative motion between its different layers. The friction exists both within the fluid itself and between the fluid and its surroundings. This property causes honey to flow more slowly than water.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q02",
+      "conceptIds": [
+        "MPF-06",
+        "MPF-07",
+        "MPF-11"
+      ],
+      "question": "Why does honey flow more slowly than water?",
+      "answer": "Honey has a higher viscosity than water. Because of greater internal friction between its layers, the relative motion of different layers is more strongly opposed in honey. Consequently honey sticks to surfaces and flows very slowly while water moves freely.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q03",
+      "conceptIds": [
+        "MPF-18"
+      ],
+      "question": "Define velocity gradient.",
+      "answer": "Velocity gradient is defined as the rate of change of velocity dv with distance dx measured from a reference or stationary layer. Mathematically velocity gradient = dv/dx. Different layers of a fluid move with different velocities, giving rise to a non-zero velocity gradient.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q04",
+      "conceptIds": [
+        "MPF-06",
+        "MPF-11",
+        "MPF-18"
+      ],
+      "question": "What is viscous drag?",
+      "answer": "Viscous drag is the resistive force experienced between different layers of a liquid that opposes their relative motion. The force is proportional to the relative velocity between the layers. It is this drag that gives rise to the phenomenon of viscosity.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q05",
+      "conceptIds": [
+        "MPF-11",
+        "MPF-18"
+      ],
+      "question": "State Newton's law of viscosity and define the coefficient of viscosity.",
+      "answer": "According to Newton's law of viscosity the viscous force F is proportional to the area A of the layer and to the velocity gradient dv/dx. Thus F = η A (dv/dx) where η is the coefficient of viscosity. The coefficient of viscosity is defined as the ratio of force per unit area per unit velocity gradient.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q06",
+      "conceptIds": [
+        "MPF-11"
+      ],
+      "question": "What are the units and dimensions of the coefficient of viscosity?",
+      "answer": "In the CGS system the unit is the poise (dyne s/cm²). One poise equals 0.1 N s/m². The dimensional formula of η is [M¹ L⁻¹ T⁻¹]. In SI units η is expressed in N s/m² or Pa s.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q07",
+      "conceptIds": [
+        "MPF-11",
+        "MPF-18"
+      ],
+      "question": "State Stokes' law.",
+      "answer": "Stokes' law states that the viscous force F_v acting on a sphere falling through a viscous medium is directly proportional to the radius r of the sphere, its velocity v through the fluid, and the coefficient of viscosity η. The expression is F = 6 π η r v.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q08",
+      "conceptIds": [
+        "MPF-18"
+      ],
+      "question": "Define terminal velocity.",
+      "answer": "When a sphere falls through a viscous medium it eventually attains a constant velocity known as the terminal velocity. At terminal velocity the net force on the sphere becomes zero because the upward viscous and buoyant forces balance the downward weight.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q09",
+      "conceptIds": [
+        "MPF-18"
+      ],
+      "question": "List the forces acting on a sphere falling in a viscous medium.",
+      "answer": "Three forces act on a sphere falling in a viscous medium: the downward gravitational force (weight) Fg, the upward buoyant force Fb, and the upward viscous force Fv. The net downward force is Fg - (Fb + Fv). Magnitude of the viscous force increases with velocity until terminal velocity is reached.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q10",
+      "conceptIds": [
+        "MPF-06",
+        "MPF-07",
+        "MPF-11"
+      ],
+      "question": "How does the flow of river water illustrate viscosity?",
+      "answer": "Near the river bank the water flows slowly while at the centre it flows fastest. This observation indicates the presence of opposing forces between adjacent layers of fluid. The layers near the stationary bank experience greater drag, reducing their speed relative to the faster central layers.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q11",
+      "conceptIds": [
+        "MPF-07",
+        "MPF-08",
+        "MPF-11"
+      ],
+      "question": "Write the expression for viscous force according to Stokes' law and explain the constant.",
+      "answer": "The viscous force is F = 6 π η r v. The numerical factor 6π arises from the solution of the Navier-Stokes equations for a sphere in laminar flow at low Reynolds number. The force is proportional to the product of viscosity, radius and speed.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q12",
+      "conceptIds": [
+        "MPF-11"
+      ],
+      "question": "What is the relation between poise and SI unit of viscosity?",
+      "answer": "One poise is equal to 10⁻¹ N s/m². Therefore 1 poise = 0.1 Pa s. This conversion is useful when switching between CGS and SI systems of units for viscosity calculations.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q13",
+      "conceptIds": [
+        "MPF-07",
+        "MPF-11",
+        "MPF-16"
+      ],
+      "question": "Why is the area A in the viscosity formula the area of the layer rather than cross-sectional area?",
+      "answer": "In Newton's law of viscosity the force is the tangential force between adjacent layers. Consequently A is the area of contact of the layer that is parallel to the direction of flow, not the cross-sectional area perpendicular to the flow. This area multiplies the shear stress.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q14",
+      "conceptIds": [
+        "MPF-05",
+        "MPF-18"
+      ],
+      "question": "How does viscous force vary with velocity for a falling sphere?",
+      "answer": "According to Stokes' law the viscous force is directly proportional to the instantaneous velocity of the sphere. As the sphere accelerates under gravity the viscous force increases until it, together with buoyancy, exactly balances the weight, after which velocity becomes constant.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q15",
+      "conceptIds": [
+        "MPF-06",
+        "MPF-13",
+        "MPF-14"
+      ],
+      "question": "What is the significance of the reference layer in defining velocity gradient?",
+      "answer": "The reference layer is usually taken as a stationary layer in contact with a solid surface. Velocities of successive layers are measured relative to this layer. The velocity gradient is then the change in velocity per unit distance from this stationary surface.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q16",
+      "conceptIds": [
+        "MPF-06",
+        "MPF-11",
+        "MPF-18"
+      ],
+      "question": "Explain the concept of relative motion between fluid layers.",
+      "answer": "Different layers of a fluid move with different velocities, giving rise to relative motion. Viscosity opposes this relative motion by producing a dragging force between the layers. The greater the relative velocity the greater the viscous drag.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q17",
+      "conceptIds": [
+        "MPF-11",
+        "MPF-18"
+      ],
+      "question": "Derive the dimensional formula of the coefficient of viscosity.",
+      "answer": "From η = F / [A (dv/dx)] the dimensions are those of force divided by (area times velocity/distance). Force has dimensions [M L T⁻²], area [L²], velocity [L T⁻¹] and distance [L], so overall η has dimensions [M¹ L⁻¹ T⁻¹].",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q18",
+      "conceptIds": [
+        "MPF-18"
+      ],
+      "question": "What happens to the net force when a sphere reaches terminal velocity?",
+      "answer": "At terminal velocity the net force on the sphere becomes zero. The downward weight is exactly balanced by the sum of the upward buoyant force and the upward viscous force. Consequently the acceleration becomes zero and the sphere continues with constant speed.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q19",
+      "conceptIds": [
+        "MPF-07",
+        "MPF-13",
+        "MPF-14"
+      ],
+      "question": "Why does water near the bank of a river flow more slowly?",
+      "answer": "The bank acts as a stationary surface. Layers of water adjacent to the bank experience a large viscous drag that reduces their speed. Layers farther from the bank experience less drag from the stationary surface and therefore flow faster.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q20",
+      "conceptIds": [
+        "MPF-11",
+        "MPF-18"
+      ],
+      "question": "State the proportionality in Stokes' law.",
+      "answer": "Stokes' law states that the viscous force is directly proportional to the radius of the sphere, the velocity of the sphere and the coefficient of viscosity of the medium. The constant of proportionality is 6π, giving F = 6πηrv.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q21",
+      "conceptIds": [
+        "MPF-11",
+        "MPF-18"
+      ],
+      "question": "How is the coefficient of viscosity related to the force per unit area?",
+      "answer": "The coefficient of viscosity η equals the force per unit area divided by the velocity gradient. In other words η is the shear stress required to produce a unit velocity gradient. This definition follows directly from Newton's law of viscosity.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q22",
+      "conceptIds": [
+        "MPF-18"
+      ],
+      "question": "What is the direction of the viscous force on a falling sphere?",
+      "answer": "The viscous force on a sphere falling through a fluid always acts upward, opposite to the direction of motion. It opposes the downward velocity and therefore increases as the speed increases until terminal velocity is reached.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q23",
+      "conceptIds": [
+        "MPF-11"
+      ],
+      "question": "Give an example of a fluid with very low viscosity at low temperature.",
+      "answer": "Helium gas at 2 K temperature has essentially zero viscosity according to the notes. This illustrates that viscosity can become extremely small under certain conditions, approaching ideal fluid behaviour.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q24",
+      "conceptIds": [
+        "MPF-05",
+        "MPF-18"
+      ],
+      "question": "Explain the role of buoyancy in the motion of a falling sphere.",
+      "answer": "The buoyant force acts upward and equals the weight of the fluid displaced by the sphere. Together with the viscous force it opposes the gravitational force. At terminal velocity the sum of buoyancy and viscous drag exactly equals the weight of the sphere.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q25",
+      "conceptIds": [
+        "MPF-07",
+        "MPF-11",
+        "MPF-13"
+      ],
+      "question": "Why is viscosity important in everyday life?",
+      "answer": "Viscosity determines how easily fluids flow. Low-viscosity fluids such as water pour easily while high-viscosity fluids such as honey or oils flow slowly and stick to surfaces. Understanding viscosity helps in designing lubrication systems, pipelines and many industrial processes.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q26",
+      "conceptIds": [
+        "MPF-11"
+      ],
+      "question": "What is the SI unit of the coefficient of viscosity?",
+      "answer": "The SI unit of the coefficient of viscosity is N s/m² or pascal-second (Pa s). It can also be expressed as kg m⁻¹ s⁻¹. One poise in the CGS system equals 0.1 of this SI unit.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q27",
+      "conceptIds": [
+        "MPF-11",
+        "MPF-18"
+      ],
+      "question": "How does the velocity gradient appear in the expression for viscous force?",
+      "answer": "The viscous force is proportional to the velocity gradient dv/dx. A larger difference in velocity between adjacent layers over a given distance produces a larger shearing force. This linear dependence is the content of Newton's law of viscosity.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q28",
+      "conceptIds": [
+        "MPF-18"
+      ],
+      "question": "Describe the motion of a sphere before it reaches terminal velocity.",
+      "answer": "Initially the sphere accelerates under the net downward force Fg - Fb. As speed increases the viscous force grows, reducing the net force. Acceleration therefore decreases continuously until the net force becomes zero and terminal velocity is attained.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q29",
+      "conceptIds": [
+        "MPF-07",
+        "MPF-11"
+      ],
+      "question": "What is meant by the statement that viscosity is a property of the fluid?",
+      "answer": "Viscosity is an intrinsic property of the fluid that characterises its internal friction. It depends on the nature of the fluid and on temperature but is independent of the particular flow geometry once the coefficient η is defined. Different fluids possess different values of η.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q30",
+      "conceptIds": [
+        "MPF-07",
+        "MPF-12"
+      ],
+      "question": "Write the full expression for the viscous force on a sphere and state the conditions of validity.",
+      "answer": "The viscous force is F = 6 π η r v. This expression is valid for laminar flow at low Reynolds number, i.e., when the sphere moves slowly enough that inertial effects are negligible compared with viscous effects. Under these conditions the flow around the sphere is smooth and steady.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q31",
+      "conceptIds": [
+        "MPF-11",
+        "MPF-18"
+      ],
+      "question": "How is the force F related to area and velocity gradient?",
+      "answer": "According to Newton's law of viscosity F is directly proportional to both the area A of the layer and the velocity gradient dv/dx. The constant of proportionality is the coefficient of viscosity η, giving the compact relation F = η A (dv/dx).",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q32",
+      "conceptIds": [
+        "MPF-18"
+      ],
+      "question": "Why do different layers of a fluid move with different velocities?",
+      "answer": "Because of the presence of viscous drag, momentum is transferred from faster layers to slower layers. Layers closer to a stationary boundary are slowed more than layers farther away. The resulting continuous variation of velocity with distance constitutes the velocity gradient.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q33",
+      "conceptIds": [
+        "MPF-18"
+      ],
+      "question": "What is the net force expression for a sphere falling in a fluid?",
+      "answer": "The net downward force is F_net = Fg - (Fb + Fv). Here Fg is the weight of the sphere, Fb is the buoyant force and Fv is the viscous force. This net force determines the acceleration of the sphere until terminal velocity is reached.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q34",
+      "conceptIds": [
+        "MPF-18"
+      ],
+      "question": "Explain why the viscous force increases with velocity.",
+      "answer": "Stokes' law shows that F_v is proportional to v. Physically, a higher speed produces a larger velocity gradient in the fluid surrounding the sphere, and therefore a larger shear stress and a larger total drag force. The increase continues until the forces balance.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q35",
+      "conceptIds": [
+        "MPF-07",
+        "MPF-11"
+      ],
+      "question": "What practical observation illustrates the existence of viscosity in rivers?",
+      "answer": "In a river the water near the banks flows slowly while the water in the middle flows much faster. This difference in speed between adjacent layers demonstrates the presence of an opposing viscous force that retards the layers closest to the stationary banks.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q36",
+      "conceptIds": [
+        "MPF-11",
+        "MPF-18"
+      ],
+      "question": "How is the coefficient of viscosity defined from Newton's law?",
+      "answer": "From the relation F = η A (dv/dx) one obtains η = F / [A (dv/dx)]. Thus η is the force per unit area required to maintain a unit velocity gradient. This definition makes η an intensive property of the fluid.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MPF-Q37",
+      "conceptIds": [
+        "MPF-18"
+      ],
+      "question": "State the condition under which a falling sphere attains constant velocity.",
+      "answer": "A falling sphere attains constant (terminal) velocity when the sum of the upward buoyant force and the upward viscous force exactly equals the downward gravitational force. At that instant the net force and therefore the acceleration become zero.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    }
+  ]
+}

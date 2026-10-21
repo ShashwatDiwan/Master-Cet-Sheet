@@ -1,0 +1,658 @@
+{
+  "chapterId": "018",
+  "chapterName": "Wave Optics",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "WO-01",
+      "name": "Newton's corpuscular theory",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Light consists of corpuscles emitted by luminous sources."
+    },
+    {
+      "id": "WO-02",
+      "name": "Drawbacks of corpuscular theory",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Predicts wrong speed in denser medium; cannot explain interference."
+    },
+    {
+      "id": "WO-03",
+      "name": "Huygens' wave theory",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "Light is a wave that needs luminiferous ether to propagate."
+    },
+    {
+      "id": "WO-04",
+      "name": "Merits of Huygens' theory",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "Explains reflection, refraction, interference and diffraction."
+    },
+    {
+      "id": "WO-05",
+      "name": "Maxwell's electromagnetic theory",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Light is a transverse EM wave; c = 1/√(μ₀ε₀)."
+    },
+    {
+      "id": "WO-06",
+      "name": "Planck's quantum theory",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Light is emitted in quanta called photons; E = hν."
+    },
+    {
+      "id": "WO-07",
+      "name": "Wavefront",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Locus of points that are in the same phase."
+    },
+    {
+      "id": "WO-08",
+      "name": "Types of wavefront",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Spherical, plane and cylindrical wavefronts."
+    },
+    {
+      "id": "WO-09",
+      "name": "Huygens' principle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        6
+      ],
+      "oneLineSummary": "Every point on a wavefront acts as a secondary source."
+    },
+    {
+      "id": "WO-10",
+      "name": "Conditions for interference",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        7
+      ],
+      "oneLineSummary": "Coherent, monochromatic sources; small slit separation; large D."
+    },
+    {
+      "id": "WO-11",
+      "name": "Young's double-slit experiment",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        7
+      ],
+      "oneLineSummary": "Demonstrates interference with two narrow slits."
+    },
+    {
+      "id": "WO-12",
+      "name": "Path difference",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        8
+      ],
+      "oneLineSummary": "Δx = (d y)/D; determines constructive or destructive interference."
+    },
+    {
+      "id": "WO-13",
+      "name": "Fringe width",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "β = λD/d; distance between successive bright or dark fringes."
+    },
+    {
+      "id": "WO-14",
+      "name": "Coherent sources",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Sources that maintain a constant phase difference."
+    },
+    {
+      "id": "WO-15",
+      "name": "Interference conditions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Constructive: Δx = nλ; destructive: Δx = (2n-1)λ/2."
+    },
+    {
+      "id": "WO-16",
+      "name": "Diffraction",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Bending of light around obstacles or through apertures."
+    },
+    {
+      "id": "WO-17",
+      "name": "Polarisation",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Restriction of vibrations of light to a single plane."
+    },
+    {
+      "id": "WO-18",
+      "name": "Dual nature of light",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Light exhibits both wave and particle properties."
+    }
+  ],
+  "qna": [
+    {
+      "id": "WO-Q01",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "What is Newton's corpuscular theory of light?",
+      "answer": "Newton's corpuscular theory assumed that light consists of a stream of corpuscles emitted by a luminous source. These corpuscles are elastic, rigid and massless with different shapes and sizes. The theory treated light as particles travelling in straight lines.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q02",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "List the postulates of Newton's corpuscular theory.",
+      "answer": "Every light source emits tiny particles called corpuscles that are elastic, rigid and massless. Corpuscles travel in straight lines with very high speeds that vary in different media, with speed greater in denser media. Different colours are due to different sizes of corpuscles, sensation of light occurs when corpuscles enter the eyes, and reflection is elastic collision on a surface.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q03",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "How does Newton's theory explain reflection and refraction?",
+      "answer": "Reflection is explained as elastic collisions of corpuscles on a surface that exerts a normal repulsive force. Refraction occurs when corpuscles strike the interface of two media; the denser medium exerts a greater attractive force, bending the path of the corpuscles toward the normal.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q04",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "What are the drawbacks of Newton's corpuscular theory?",
+      "answer": "The theory predicts that the speed of light is greater in a denser medium than in a rarer medium, which is incorrect. It cannot explain polarisation, interference, diffraction or simultaneous reflection and refraction. There is also no basis for the hypothesis that colours arise from different sizes of corpuscles.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q05",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "State Huygens' wave theory of light.",
+      "answer": "According to Huygens, light is a form of wave that requires a material medium called luminiferous ether to propagate. The ether is very dilute and highly elastic and fills the entire universe. Different colours of light correspond to different wavelengths.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q06",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "What are the merits of Huygens' wave theory?",
+      "answer": "It explained the rectilinear propagation of light even though light is a wave. It satisfactorily explained the laws of reflection and refraction. It also accounted for interference and diffraction, although it could not explain polarisation.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q07",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "State Maxwell's electromagnetic theory of light.",
+      "answer": "Maxwell's theory states that light waves are transverse electromagnetic waves. The velocity of light is given by c = 1/√(μ₀ ε₀) where μ₀ and ε₀ are the permeability and permittivity of free space. No material medium is required for the propagation of electromagnetic waves.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q08",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "What phenomena does Maxwell's theory explain and where does it fail?",
+      "answer": "Maxwell's electromagnetic theory successfully explained the polarisation of light. However, it failed to explain the photoelectric effect, the Compton effect and the Raman effect. These phenomena require a quantum description of light.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q09",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "State Planck's quantum theory of light.",
+      "answer": "Planck's theory states that the emission of light is not continuous; light is emitted in small packets called photons. The energy of a photon is E = hν = hc/λ. Light energy is absorbed or emitted in integral multiples of this quantum of energy.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q10",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "What phenomena did Planck's quantum theory successfully explain?",
+      "answer": "Planck's quantum theory successfully explained the photoelectric effect and the Compton effect. The energy of the photon remains localised in a small volume of space rather than spreading out continuously. This particle-like behaviour of light was essential for understanding these effects.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q11",
+      "conceptIds": [
+        "WO-03",
+        "WO-07",
+        "WO-08"
+      ],
+      "question": "Define a wavefront.",
+      "answer": "A wavefront is the locus of all points in the medium that the wave reaches simultaneously so that all those points are in the same phase. Wavefronts are classified as spherical, plane or cylindrical depending on the nature of the source.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q12",
+      "conceptIds": [
+        "WO-03",
+        "WO-07",
+        "WO-08"
+      ],
+      "question": "Describe the three types of wavefronts.",
+      "answer": "A spherical wavefront originates from a point source at a finite distance and the rays are along the radii. A plane wavefront originates from a linear source at infinite distance and the rays are parallel. A cylindrical wavefront originates from a linear source at a finite distance and the rays are along the radii of the cross-section.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q13",
+      "conceptIds": [
+        "WO-03",
+        "WO-07",
+        "WO-08"
+      ],
+      "question": "List the characteristics of a wavefront.",
+      "answer": "The phase difference between any two points on the same wavefront is zero. A wavefront always travels in the forward direction and becomes weaker after travelling a long distance from a spherical source. The effectiveness of light is predominantly in the forward direction.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q14",
+      "conceptIds": [
+        "WO-03",
+        "WO-04",
+        "WO-07"
+      ],
+      "question": "State Huygens' principle.",
+      "answer": "According to Huygens' principle every point on a given primary wavefront acts as a secondary source of light. The secondary sources emit secondary wavelets in all directions, but these wavelets are effective only in the forward direction. The secondary waves travel with the same speed as the primary waves.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q15",
+      "conceptIds": [
+        "WO-03",
+        "WO-10",
+        "WO-13"
+      ],
+      "question": "What are the conditions for obtaining a steady interference pattern?",
+      "answer": "The sources must be coherent and monochromatic (single wavelength, e.g., laser or sodium vapour lamp). The distance between the sources and the screen must be large, the distance between the two sources must be small, and the slits must be narrow. These conditions ensure a stable fringe pattern.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q16",
+      "conceptIds": [
+        "WO-03",
+        "WO-10",
+        "WO-11"
+      ],
+      "question": "Describe Young's double-slit experiment briefly.",
+      "answer": "In Young's double-slit experiment performed in 1801, two narrow slits S₁ and S₂ placed close to each other act as coherent sources. The interference pattern obtained on the screen consists of regions of maximum and minimum intensity called bright and dark fringes. The experiment demonstrated the wave nature of light.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q17",
+      "conceptIds": [
+        "WO-03",
+        "WO-10",
+        "WO-11"
+      ],
+      "question": "What is path difference in Young's experiment?",
+      "answer": "Path difference Δx is the difference in the distances travelled by the waves from the two slits to a point P on the screen, Δx = S₂P - S₁P. For constructive interference the path difference is an integral multiple of the wavelength, and for destructive interference it is an odd multiple of λ/2.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q18",
+      "conceptIds": [
+        "WO-11",
+        "WO-12",
+        "WO-13"
+      ],
+      "question": "How is the path difference related to the geometry of Young's experiment?",
+      "answer": "From the geometry of the setup, the path difference can be shown to be approximately (d y)/D where d is the slit separation, y is the distance of the point from the central fringe and D is the distance from slits to screen. This relation is used to locate the positions of bright and dark fringes.",
+      "type": "comparison",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q19",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "Why did Newton's theory fail to explain the correct speed of light in different media?",
+      "answer": "Newton's corpuscular theory required that corpuscles be attracted more strongly by denser media, leading to the prediction that light travels faster in denser media. Experimental measurements show the opposite: light travels slower in denser media. This contradiction was a major drawback of the theory.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q20",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "What is luminiferous ether according to Huygens?",
+      "answer": "Huygens postulated a material medium called luminiferous ether that fills the entire universe and is necessary for the propagation of light waves. The ether was assumed to be very dilute and highly elastic. Later electromagnetic theory showed that no such medium is required.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q21",
+      "conceptIds": [
+        "WO-03",
+        "WO-06",
+        "WO-18"
+      ],
+      "question": "How does the energy of a photon relate to frequency and wavelength?",
+      "answer": "The energy associated with a photon is E = hν where ν is the frequency, or equivalently E = hc/λ where λ is the wavelength. Higher frequency (or shorter wavelength) photons carry greater energy. This relation is central to the quantum description of light.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q22",
+      "conceptIds": [
+        "WO-03",
+        "WO-07",
+        "WO-08"
+      ],
+      "question": "Why is the secondary wavelet effective only in the forward direction according to Huygens?",
+      "answer": "Although secondary sources emit wavelets in all directions, the backward wavelets cancel due to destructive interference or are ineffective. Only the forward envelope of the secondary wavelets forms the new wavefront. This ensures that light propagates predominantly in the forward direction.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q23",
+      "conceptIds": [
+        "WO-03",
+        "WO-07",
+        "WO-08"
+      ],
+      "question": "What is the difference between spherical and plane wavefronts?",
+      "answer": "A spherical wavefront is produced by a point source at a finite distance and the rays diverge along radii. A plane wavefront is produced by a distant linear source (or effectively at infinity) and the rays are parallel. Plane wavefronts are often used in laboratory interference experiments.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q24",
+      "conceptIds": [
+        "WO-10",
+        "WO-12",
+        "WO-13"
+      ],
+      "question": "Why must the sources be coherent for a steady interference pattern?",
+      "answer": "Coherent sources maintain a constant phase difference. Only then does the path difference produce a fixed interference condition at each point on the screen. Incoherent sources have rapidly fluctuating phase differences, washing out the fringe pattern.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q25",
+      "conceptIds": [
+        "WO-03",
+        "WO-10",
+        "WO-13"
+      ],
+      "question": "What is the role of monochromatic light in interference?",
+      "answer": "Monochromatic light consists of a single wavelength, so the fringe width is the same for the entire pattern. Polychromatic light would produce overlapping patterns of different fringe widths, resulting in a blurred or coloured fringe system that is not steady.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q26",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "How did Maxwell's theory relate the speed of light to electromagnetic constants?",
+      "answer": "Maxwell showed that the speed of electromagnetic waves in free space is c = 1/√(μ₀ ε₀). The ratio of the magnitudes of the electric and magnetic fields in the wave is also equal to c. This identified light as an electromagnetic wave.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q27",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "What is meant by quantum energy in Planck's theory?",
+      "answer": "Quantum energy is the minimum amount of energy that can be absorbed or emitted. Light energy is always an integral multiple of this quantum. The concept replaced the continuous emission assumed by classical wave theory.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q28",
+      "conceptIds": [
+        "WO-03",
+        "WO-07",
+        "WO-08"
+      ],
+      "question": "Why does a spherical wavefront weaken after travelling a long distance?",
+      "answer": "As a spherical wave propagates, its surface area increases with the square of the radius. The energy is therefore spread over a larger area, reducing the intensity. This geometric spreading causes the wavefront to appear weaker at large distances.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q29",
+      "conceptIds": [
+        "WO-03",
+        "WO-10",
+        "WO-11"
+      ],
+      "question": "What is the significance of the central bright fringe in Young's experiment?",
+      "answer": "The central bright fringe occurs where the path difference is zero. Both waves travel equal distances and arrive in phase, producing constructive interference and maximum intensity. It serves as the reference point for measuring fringe positions.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q30",
+      "conceptIds": [
+        "WO-10",
+        "WO-13",
+        "WO-14"
+      ],
+      "question": "How does the distance between slits affect the interference pattern?",
+      "answer": "A smaller slit separation d produces a larger fringe width because fringe width is proportional to λD/d. Larger separation compresses the pattern. The notes require that the distance between the two sources be small to obtain a well-spread, observable pattern.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q31",
+      "conceptIds": [
+        "WO-03",
+        "WO-07",
+        "WO-08"
+      ],
+      "question": "Why must the slits be narrow in Young's experiment?",
+      "answer": "Narrow slits act approximately as line sources and ensure that each slit produces a cylindrical wavefront of sufficient spatial coherence. Wide slits would introduce multiple path differences across their width, blurring the interference fringes.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q32",
+      "conceptIds": [
+        "WO-12"
+      ],
+      "question": "What is the geometrical relation used to find path difference?",
+      "answer": "From the right triangles formed by the slits and the point P on the screen, subtracting the squared distances yields (S₂P)² - (S₁P)² = 2 y d. For D ≫ d and D ≫ y this approximates to path difference ≈ (d y)/D.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q33",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "How did Huygens' theory explain rectilinear propagation?",
+      "answer": "Although light is a wave, the envelope of secondary wavelets produces a sharp wavefront that travels in a straight line in a homogeneous medium. Diffraction effects become noticeable only when the obstacle size is comparable to the wavelength, which is very small for light.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q34",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "Why could Huygens' theory not explain polarisation?",
+      "answer": "Huygens treated light as a longitudinal wave in the ether, similar to sound. Longitudinal waves cannot be polarised. Polarisation requires the transverse nature of the vibrations, which was later established by Maxwell's electromagnetic theory.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q35",
+      "conceptIds": [
+        "WO-01",
+        "WO-02",
+        "WO-03"
+      ],
+      "question": "What is the modern view of the dual nature that reconciles the theories?",
+      "answer": "Light exhibits both wave and particle properties. Wave optics (interference, diffraction, polarisation) is described by the electromagnetic wave theory, while particle aspects (photoelectric effect, Compton effect) are described by photons. Planck's quanta and Maxwell's waves together form the dual description.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q36",
+      "conceptIds": [
+        "WO-03",
+        "WO-05",
+        "WO-18"
+      ],
+      "question": "How is the velocity of light expressed in terms of E and B fields?",
+      "answer": "In an electromagnetic wave the ratio of the magnitudes of the electric and magnetic fields is equal to the speed of light: c = |E|/|B|. Combined with the expression c = 1/√(μ₀ ε₀) this confirms the electromagnetic character of light.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "WO-Q37",
+      "conceptIds": [
+        "WO-03",
+        "WO-10",
+        "WO-12"
+      ],
+      "question": "What is the condition for constructive interference in terms of path difference?",
+      "answer": "Constructive interference (bright fringe) occurs when the path difference is an integral multiple of the wavelength, Δx = nλ where n = 0, 1, 2, …. At these positions the waves arrive in phase and their amplitudes add, producing maximum intensity.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    }
+  ]
+}

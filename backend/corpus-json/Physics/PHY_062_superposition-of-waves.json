@@ -1,0 +1,673 @@
+{
+  "chapterId": "62",
+  "chapterName": "Superposition of Waves",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "SOW-01",
+      "name": "Principle of superposition",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Resultant displacement is the algebraic sum of individual displacements."
+    },
+    {
+      "id": "SOW-02",
+      "name": "Resultant amplitude of two waves",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "R = √(a1² + a2² + 2 a1 a2 cosΔφ); max a1+a2, min |a1–a2|."
+    },
+    {
+      "id": "SOW-03",
+      "name": "Mechanical vs non-mechanical waves",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Mechanical need medium (sound); non-mechanical do not (EM waves)."
+    },
+    {
+      "id": "SOW-04",
+      "name": "Reflection of waves (phase change)",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Phase change of π on reflection from denser medium; none from rarer."
+    },
+    {
+      "id": "SOW-05",
+      "name": "Intensity and amplitude",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "I ∝ A²; Imax = (A1+A2)²; Imin = (A1–A2)²."
+    },
+    {
+      "id": "SOW-06",
+      "name": "Stationary waves",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "y = 2a cos(kx) sin(ωt); formed by two opposite progressive waves."
+    },
+    {
+      "id": "SOW-07",
+      "name": "Nodes and antinodes",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Nodes at (2p–1)λ/4; antinodes at p λ/2; distance between consecutive = λ/2."
+    },
+    {
+      "id": "SOW-08",
+      "name": "End correction",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "oneLineSummary": "e ≈ 0.3 d; effective length L + e because antinode is outside open end."
+    },
+    {
+      "id": "SOW-09",
+      "name": "Closed organ pipe",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Fundamental n = v/(4L); only odd harmonics n, 3n, 5n…"
+    },
+    {
+      "id": "SOW-10",
+      "name": "Open organ pipe",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Fundamental n = v/(2L); all harmonics n, 2n, 3n…"
+    },
+    {
+      "id": "SOW-11",
+      "name": "Laws of vibrating string",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "n = (1/(2L)) √(T/m); frequency depends on length, tension, linear density."
+    },
+    {
+      "id": "SOW-12",
+      "name": "Beats",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "Beat frequency = |n1 – n2|; periodic intensity variation from close frequencies."
+    },
+    {
+      "id": "SOW-13",
+      "name": "Constructive and destructive interference",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Constructive when Δφ = 2πn; destructive when Δφ = (2n+1)π."
+    },
+    {
+      "id": "SOW-14",
+      "name": "Conditions for sustained interference",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Coherent sources, same frequency, comparable amplitudes, constant phase difference."
+    },
+    {
+      "id": "SOW-15",
+      "name": "Progressive vs stationary waves",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Progressive transport energy; stationary have fixed nodes and no net energy flow."
+    },
+    {
+      "id": "SOW-16",
+      "name": "Harmonics and overtones",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Harmonics are integer multiples of fundamental; overtones are frequencies above fundamental."
+    },
+    {
+      "id": "SOW-17",
+      "name": "Melde's experiment / string vibration modes",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Standing waves on string under tension; loops and nodes visible."
+    },
+    {
+      "id": "SOW-18",
+      "name": "Doppler effect (basic idea)",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Apparent frequency change due to relative motion of source and observer."
+    },
+    {
+      "id": "SOW-19",
+      "name": "Intensity ratio in interference",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Imax/Imin = (√I1 + √I2)² / (√I1 – √I2)²."
+    },
+    {
+      "id": "SOW-20",
+      "name": "Phase and path difference",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Δφ = (2π/λ) Δx; path difference of λ corresponds to phase difference 2π."
+    }
+  ],
+  "qna": [
+    {
+      "id": "SOW-Q01",
+      "conceptIds": [
+        "SOW-01"
+      ],
+      "question": "State the principle of superposition of waves.",
+      "answer": "When two or more waves overlap, the resultant displacement at any point is the algebraic (vector) sum of the individual displacements. For two harmonic waves the resultant can be written as a single wave of amplitude R and phase φ. The principle holds for linear media.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q02",
+      "conceptIds": [
+        "SOW-02"
+      ],
+      "question": "Write the expression for resultant amplitude of two waves with phase difference Δφ.",
+      "answer": "R = √(a1² + a2² + 2 a1 a2 cos Δφ). When Δφ = 0, R = a1 + a2. When Δφ = π, R = |a1 – a2|. Intensity is proportional to the square of this amplitude.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q03",
+      "conceptIds": [
+        "SOW-03"
+      ],
+      "question": "Distinguish between mechanical and non-mechanical waves.",
+      "answer": "Mechanical waves require a material medium (example: sound). Non-mechanical waves do not require a medium (example: electromagnetic waves). The distinction is based on the necessity of a medium for propagation.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q04",
+      "conceptIds": [
+        "SOW-04"
+      ],
+      "question": "What phase change occurs when a transverse wave reflects from a denser medium?",
+      "answer": "A phase change of π occurs on reflection from a denser medium. Reflection from a rarer medium produces no phase change. The same rule applies to longitudinal waves (compression becomes rarefaction).",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q05",
+      "conceptIds": [
+        "SOW-05"
+      ],
+      "question": "How is intensity related to amplitude?",
+      "answer": "Intensity is proportional to the square of amplitude: I ∝ A². Consequently Imax = (A1 + A2)² and Imin = (A1 – A2)². This relation is fundamental to all interference calculations.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q06",
+      "conceptIds": [
+        "SOW-06"
+      ],
+      "question": "Write the equation of a stationary wave formed by two opposite progressive waves.",
+      "answer": "If y1 = a sin(ωt – kx) and y2 = a sin(ωt + kx), the resultant is y = 2a cos(kx) sin(ωt). The amplitude of the stationary wave is 2a cos(kx). Points of permanent zero amplitude are nodes; points of maximum amplitude are antinodes.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q07",
+      "conceptIds": [
+        "SOW-07"
+      ],
+      "question": "Give the positions of nodes and antinodes in a stationary wave.",
+      "answer": "Nodes occur at x = (2p – 1)λ/4 (p = 1, 2, 3…). Antinodes occur at x = p λ/2 (p = 0, 1, 2…). The distance between consecutive nodes (or antinodes) is λ/2.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q08",
+      "conceptIds": [
+        "SOW-08"
+      ],
+      "question": "What is end correction and how is it applied?",
+      "answer": "End correction e ≈ 0.3 d (d = diameter). The effective length of an organ pipe is L + e. The correction accounts for the fact that the antinode forms a short distance outside the open end.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q09",
+      "conceptIds": [
+        "SOW-09"
+      ],
+      "question": "Write the fundamental frequency of a closed organ pipe and the series of harmonics.",
+      "answer": "Fundamental n = v/(4L). Only odd harmonics appear: n, 3n, 5n…. The first overtone is therefore the third harmonic. This follows from the node-at-closed-end, antinode-at-open-end boundary conditions.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q10",
+      "conceptIds": [
+        "SOW-10"
+      ],
+      "question": "Write the fundamental frequency of an open organ pipe and the series of harmonics.",
+      "answer": "Fundamental n = v/(2L). All integer harmonics appear: n, 2n, 3n…. The first overtone is the second harmonic. Both ends are antinodes, so length = integer multiples of λ/2.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q11",
+      "conceptIds": [
+        "SOW-11"
+      ],
+      "question": "State the law of vibration of a stretched string.",
+      "answer": "Frequency n = (1/(2L)) √(T/m) where T is tension and m is linear mass density. Frequency is inversely proportional to length and to √m, and directly proportional to √T.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q12",
+      "conceptIds": [
+        "SOW-12"
+      ],
+      "question": "What are beats and how is beat frequency related to the two frequencies?",
+      "answer": "Beats are periodic variations in intensity heard when two notes of slightly different frequencies interfere. Beat frequency N = |n1 – n2|. The frequency difference must be small for the beats to be audible.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q13",
+      "conceptIds": [
+        "SOW-05",
+        "SOW-13"
+      ],
+      "question": "When two waves of equal amplitude interfere constructively, what is the resultant intensity?",
+      "answer": "Resultant amplitude is 2A, so intensity is 4 times the intensity of each individual wave. This is the maximum possible intensity for two coherent sources of equal amplitude.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q14",
+      "conceptIds": [
+        "SOW-05",
+        "SOW-13"
+      ],
+      "question": "When two waves of equal amplitude interfere destructively, what is the resultant intensity?",
+      "answer": "Resultant amplitude is zero, therefore intensity is zero. Complete destructive interference occurs only when the amplitudes are equal and the phase difference is an odd multiple of π.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q15",
+      "conceptIds": [
+        "SOW-09"
+      ],
+      "question": "Why does a closed organ pipe produce only odd harmonics?",
+      "answer": "A closed pipe has a node at the closed end and an antinode at the open end. The length must therefore be an odd multiple of λ/4. Consequently only frequencies that are odd multiples of the fundamental satisfy the boundary conditions.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q16",
+      "conceptIds": [
+        "SOW-10"
+      ],
+      "question": "Why does an open organ pipe produce both even and odd harmonics?",
+      "answer": "An open pipe has antinodes at both ends. The length must be an integer multiple of λ/2. All integer multiples of the fundamental frequency therefore satisfy the boundary conditions.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q17",
+      "conceptIds": [
+        "SOW-11"
+      ],
+      "question": "If the tension in a string is increased by a factor of four, by what factor does frequency change?",
+      "answer": "Frequency n ∝ √T. Increasing T by four multiplies frequency by two. Length and linear density are assumed constant.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q18",
+      "conceptIds": [
+        "SOW-12"
+      ],
+      "question": "Two sound waves of frequencies 256 Hz and 260 Hz are sounded together. What is the beat frequency?",
+      "answer": "Beat frequency = |260 – 256| = 4 Hz. Four beats are heard every second. The notes emphasise that the frequency difference must be small for the beats to be perceptible.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q19",
+      "conceptIds": [
+        "SOW-06"
+      ],
+      "question": "In a stationary wave, is energy transferred from one place to another?",
+      "answer": "No net energy is transferred along the medium. Energy oscillates locally between kinetic and potential forms between nodes. The wave is called stationary precisely because energy does not propagate.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q20",
+      "conceptIds": [
+        "SOW-09"
+      ],
+      "question": "What is the first overtone of a closed organ pipe whose fundamental is n?",
+      "answer": "The first overtone is 3n (the third harmonic). Closed pipes do not support the second harmonic.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q21",
+      "conceptIds": [
+        "SOW-10"
+      ],
+      "question": "What is the first overtone of an open organ pipe whose fundamental is n?",
+      "answer": "The first overtone is 2n (the second harmonic). Open pipes support every integer harmonic.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q22",
+      "conceptIds": [
+        "SOW-06"
+      ],
+      "question": "Why must the two waves that form a stationary wave have the same amplitude and frequency?",
+      "answer": "Only then do the nodes remain permanently at rest and the antinodes oscillate with a fixed maximum amplitude. If the amplitudes differ, complete cancellation never occurs and the pattern is not truly stationary. Frequency must be identical so that the phase relationship is constant in time.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q23",
+      "conceptIds": [
+        "SOW-11"
+      ],
+      "question": "How does frequency of a stretched string change if its length is doubled (T and m constant)?",
+      "answer": "Frequency is inversely proportional to length: n ∝ 1/L. Doubling the length halves the frequency. This is one of the classical laws of a vibrating string.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q24",
+      "conceptIds": [
+        "SOW-05"
+      ],
+      "question": "A student claims that intensity is proportional to amplitude. Correct the statement.",
+      "answer": "Intensity is proportional to the square of the amplitude, I ∝ A². The incorrect linear relation would violate energy conservation and is a common mistake. All interference formulae use the squared amplitudes.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q25",
+      "conceptIds": [
+        "SOW-02"
+      ],
+      "question": "What is the resultant amplitude when the phase difference is π/2?",
+      "answer": "cos(π/2) = 0, so R = √(a1² + a2²). The resultant amplitude is the root-sum-square of the individual amplitudes. Intensity is then simply the sum of the individual intensities.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q26",
+      "conceptIds": [
+        "SOW-08"
+      ],
+      "question": "Why is an end correction necessary for organ pipes?",
+      "answer": "The antinode of the standing wave does not form exactly at the open end; it forms a short distance outside. The effective length is therefore greater than the geometric length by e ≈ 0.3 d. Without the correction calculated frequencies would be slightly too high.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q27",
+      "conceptIds": [
+        "SOW-09"
+      ],
+      "question": "What is the wavelength of the fundamental mode in a closed organ pipe of length L (ignore end correction)?",
+      "answer": "λ = 4L. The pipe length equals one-quarter of the wavelength. Higher odd harmonics have wavelengths 4L/3, 4L/5, etc.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q28",
+      "conceptIds": [
+        "SOW-10"
+      ],
+      "question": "What is the wavelength of the fundamental mode in an open organ pipe of length L (ignore end correction)?",
+      "answer": "λ = 2L. The pipe length equals one-half of the wavelength. All harmonics have wavelengths 2L, L, 2L/3, etc.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q29",
+      "conceptIds": [
+        "SOW-02"
+      ],
+      "question": "If two waves of amplitudes 3 cm and 4 cm interfere, what are the maximum and minimum possible resultant amplitudes?",
+      "answer": "Maximum amplitude is 3 + 4 = 7 cm (phase difference 0). Minimum amplitude is |4 – 3| = 1 cm (phase difference π). Corresponding intensities are in the ratio 49 : 1.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q30",
+      "conceptIds": [
+        "SOW-12"
+      ],
+      "question": "How are beats useful in tuning musical instruments?",
+      "answer": "When two notes of nearly the same frequency are played together, the beat frequency equals the difference of the two frequencies. A musician adjusts the instrument until the beats disappear, indicating that the frequencies are identical.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q31",
+      "conceptIds": [
+        "SOW-07"
+      ],
+      "question": "In a stationary wave the amplitude is zero at nodes. Does that mean particles at nodes never move?",
+      "answer": "Yes. At a node the two oppositely travelling waves always cancel, so the medium particle remains permanently at rest. Neighbouring particles oscillate with amplitudes that increase toward the nearest antinode.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "SOW-Q32",
+      "conceptIds": [
+        "SOW-09"
+      ],
+      "question": "Write the successive frequencies that can be produced by a closed organ pipe.",
+      "answer": "The successive frequencies are n, 3n, 5n… where n = v/(4L) is the fundamental. Only odd multiples of the fundamental appear. This series is a direct consequence of the node-antinode boundary conditions.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q33",
+      "conceptIds": [
+        "SOW-10"
+      ],
+      "question": "Write the successive frequencies that can be produced by an open organ pipe.",
+      "answer": "The successive frequencies are n, 2n, 3n… where n = v/(2L) is the fundamental. All integer multiples appear. The spectrum is richer than that of a closed pipe of the same length.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q34",
+      "conceptIds": [
+        "SOW-11"
+      ],
+      "question": "If the linear density of a string is increased by a factor of four (T and L constant), what happens to frequency?",
+      "answer": "Frequency n ∝ 1/√m. Increasing m by four reduces the frequency by a factor of two. The string becomes heavier per unit length and therefore vibrates more slowly under the same tension.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "SOW-Q35",
+      "conceptIds": [
+        "SOW-14"
+      ],
+      "question": "List the conditions required for sustained interference of two waves.",
+      "answer": "The sources must be coherent (constant phase difference), of the same frequency, of comparable amplitudes, and the waves must travel in the same medium. These conditions ensure a stable, observable interference pattern.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SOW-Q36",
+      "conceptIds": [
+        "SOW-15"
+      ],
+      "question": "Compare progressive and stationary waves with respect to energy transport.",
+      "answer": "A progressive wave transports energy from one place to another. A stationary wave has fixed nodes and antinodes; energy oscillates locally and there is no net transport of energy along the medium.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "SOW-Q37",
+      "conceptIds": [
+        "SOW-20"
+      ],
+      "question": "How are phase difference and path difference related?",
+      "answer": "Δφ = (2π/λ) × path difference. A path difference of λ corresponds to a phase difference of 2π. This relation converts geometric path differences into the phase differences needed for interference calculations.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    }
+  ]
+}

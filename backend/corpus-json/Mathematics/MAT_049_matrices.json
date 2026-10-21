@@ -1,0 +1,462 @@
+{
+  "chapterId": "49",
+  "chapterName": "Matrices",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "MAT-01",
+      "name": "Definition and types of matrices",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Rectangular array; row, column, square, diagonal, scalar, identity, zero, symmetric, skew-symmetric."
+    },
+    {
+      "id": "MAT-02",
+      "name": "Equality of matrices",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Two matrices equal if same order and corresponding elements equal."
+    },
+    {
+      "id": "MAT-03",
+      "name": "Addition and subtraction of matrices",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Defined only for same order; element-wise; commutative and associative."
+    },
+    {
+      "id": "MAT-04",
+      "name": "Scalar multiplication",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Each element multiplied by the scalar; distributive over addition."
+    },
+    {
+      "id": "MAT-05",
+      "name": "Matrix multiplication",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Defined when columns of first equal rows of second; not commutative in general."
+    },
+    {
+      "id": "MAT-06",
+      "name": "Transpose of a matrix",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Rows become columns; (Aᵀ)ᵀ = A; (A+B)ᵀ = Aᵀ+Bᵀ; (AB)ᵀ = BᵀAᵀ."
+    },
+    {
+      "id": "MAT-07",
+      "name": "Symmetric and skew-symmetric matrices",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Aᵀ = A (symmetric); Aᵀ = −A (skew-symmetric); every square matrix = symmetric + skew-symmetric."
+    },
+    {
+      "id": "MAT-08",
+      "name": "Determinant of a square matrix",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Scalar associated with square matrix; det(AB)=det(A)det(B); det(Aᵀ)=det(A)."
+    },
+    {
+      "id": "MAT-09",
+      "name": "Adjoint and inverse of a matrix",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "adj(A) = transpose of cofactor matrix; A⁻¹ = (1/det A) adj(A) when det A ≠ 0."
+    },
+    {
+      "id": "MAT-10",
+      "name": "Singular and non-singular matrices",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Singular if det = 0 (no inverse); non-singular if det ≠ 0 (invertible)."
+    },
+    {
+      "id": "MAT-11",
+      "name": "System of linear equations in matrix form",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "AX = B; unique solution X = A⁻¹B when A non-singular."
+    },
+    {
+      "id": "MAT-12",
+      "name": "Cramer's rule",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Solution of n equations via ratios of determinants."
+    },
+    {
+      "id": "MAT-13",
+      "name": "Elementary row and column operations",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Used to find rank, inverse, or reduce to echelon form."
+    },
+    {
+      "id": "MAT-14",
+      "name": "Rank of a matrix",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Maximum number of linearly independent rows (or columns); equals order of largest non-zero minor."
+    },
+    {
+      "id": "MAT-15",
+      "name": "Properties of determinants",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Interchange of rows changes sign; repeated row → zero; linear combination of rows leaves det unchanged."
+    }
+  ],
+  "qna": [
+    {
+      "id": "MAT-Q01",
+      "conceptIds": ["MAT-01"],
+      "question": "Define a matrix and list five important types of square matrices.",
+      "answer": "A matrix is a rectangular array of numbers arranged in rows and columns. Important square types are: diagonal matrix (non-zero entries only on the main diagonal), scalar matrix (diagonal with equal entries), identity matrix (diagonal of 1’s), symmetric matrix (Aᵀ = A) and skew-symmetric matrix (Aᵀ = −A).",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q02",
+      "conceptIds": ["MAT-02"],
+      "question": "When are two matrices said to be equal?",
+      "answer": "Two matrices are equal if and only if they have the same order (same number of rows and columns) and their corresponding elements are equal. Equality is an element-wise notion.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q03",
+      "conceptIds": ["MAT-03"],
+      "question": "State the conditions under which two matrices can be added and the properties of matrix addition.",
+      "answer": "Addition is defined only when the matrices have the same order. The sum is obtained by adding corresponding elements. Matrix addition is commutative (A+B=B+A) and associative ((A+B)+C=A+(B+C)). The zero matrix is the additive identity.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q04",
+      "conceptIds": ["MAT-05"],
+      "question": "When is the product AB defined and is matrix multiplication commutative?",
+      "answer": "The product AB is defined when the number of columns of A equals the number of rows of B. In general AB ≠ BA even when both products exist. Matrix multiplication is associative and distributive over addition, but not commutative.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q05",
+      "conceptIds": ["MAT-06"],
+      "question": "State three important properties of the transpose of a matrix.",
+      "answer": "(Aᵀ)ᵀ = A; (A+B)ᵀ = Aᵀ + Bᵀ; (AB)ᵀ = Bᵀ Aᵀ. The last property shows that transposition reverses the order of a product. Also det(Aᵀ) = det(A).",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q06",
+      "conceptIds": ["MAT-07"],
+      "question": "Define symmetric and skew-symmetric matrices and state the decomposition of a square matrix.",
+      "answer": "A is symmetric if Aᵀ = A and skew-symmetric if Aᵀ = −A. Every square matrix A can be uniquely written as the sum of a symmetric matrix (A+Aᵀ)/2 and a skew-symmetric matrix (A−Aᵀ)/2.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q07",
+      "conceptIds": ["MAT-08"],
+      "question": "State two fundamental properties of determinants.",
+      "answer": "det(AB) = det(A) det(B) and det(Aᵀ) = det(A). Consequently a matrix and its transpose have the same determinant, and the determinant of a product is the product of the determinants.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q08",
+      "conceptIds": ["MAT-09"],
+      "question": "How is the inverse of a square matrix obtained using the adjoint?",
+      "answer": "If A is non-singular (det A ≠ 0) then A⁻¹ = (1/det A) · adj(A), where adj(A) is the transpose of the cofactor matrix of A. The identity A · adj(A) = (det A) I holds even when A is singular.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q09",
+      "conceptIds": ["MAT-10"],
+      "question": "What is the difference between a singular and a non-singular matrix?",
+      "answer": "A square matrix is singular if its determinant is zero; it has no inverse. A matrix is non-singular if its determinant is non-zero; it possesses a unique inverse. Invertibility is equivalent to non-singularity.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q10",
+      "conceptIds": ["MAT-11"],
+      "question": "Write a system of linear equations in matrix form and state the condition for a unique solution.",
+      "answer": "The system aᵢⱼ xⱼ = bᵢ is written AX = B where A is the coefficient matrix, X the column of unknowns and B the column of constants. A unique solution exists if and only if A is non-singular; the solution is then X = A⁻¹ B.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q11",
+      "conceptIds": ["MAT-01"],
+      "question": "Give an example of a 2×2 identity matrix and a 2×2 zero matrix.",
+      "answer": "Identity: [[1,0],[0,1]]. Zero: [[0,0],[0,0]]. The identity acts as the multiplicative identity for square matrices of the same order; the zero matrix is the additive identity.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q12",
+      "conceptIds": ["MAT-05"],
+      "question": "Compute the product [[1,2],[3,4]] [[5,6],[7,8]].",
+      "answer": "First row first column: 1·5+2·7=19; first row second: 1·6+2·8=22; second row first: 3·5+4·7=43; second row second: 3·6+4·8=50. Product is [[19,22],[43,50]].",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q13",
+      "conceptIds": ["MAT-06"],
+      "question": "If A = [[1,2,3],[4,5,6]], write Aᵀ.",
+      "answer": "Aᵀ = [[1,4],[2,5],[3,6]]. The three columns of A become the three rows of Aᵀ. The order changes from 2×3 to 3×2.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q14",
+      "conceptIds": ["MAT-07"],
+      "question": "Show that the matrix [[0,2],[-2,0]] is skew-symmetric.",
+      "answer": "Its transpose is [[0,−2],[2,0]] which equals −A. Therefore Aᵀ = −A and the matrix is skew-symmetric. The diagonal elements of a real skew-symmetric matrix must be zero.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q15",
+      "conceptIds": ["MAT-08"],
+      "question": "Evaluate the determinant of [[2,3],[1,4]].",
+      "answer": "det = 2·4 − 3·1 = 8 − 3 = 5. For a 2×2 matrix [[a,b],[c,d]] the determinant is ad − bc.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q16",
+      "conceptIds": ["MAT-09"],
+      "question": "Find the inverse of [[2,1],[5,3]] if it exists.",
+      "answer": "det = 6 − 5 = 1 ≠ 0, so inverse exists. Cofactors: C11=3, C12=−5, C21=−1, C22=2. adj(A)=[[3,−1],[−5,2]]. Inverse = adj(A) = [[3,−1],[−5,2]]. Verification: A times this matrix yields the identity.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q17",
+      "conceptIds": ["MAT-10"],
+      "question": "Is the matrix [[1,2],[2,4]] singular? Justify.",
+      "answer": "Yes. Its determinant is 1·4 − 2·2 = 0. A zero determinant means the matrix is singular and does not possess an inverse. The rows are linearly dependent (second row = 2 × first row).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q18",
+      "conceptIds": ["MAT-11"],
+      "question": "Solve the system 2x + y = 5, 3x + 2y = 8 by matrix inversion.",
+      "answer": "A = [[2,1],[3,2]], B = [[5],[8]]. det A = 1. A⁻¹ = [[2,−1],[−3,2]]. X = A⁻¹ B = [[2,−1],[−3,2]] [[5],[8]] = [[2],[−1]]. Solution x=2, y=−1.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q19",
+      "conceptIds": ["MAT-14"],
+      "question": "What is the rank of a matrix and how is it related to the existence of an inverse?",
+      "answer": "The rank is the maximum number of linearly independent rows (or columns). A square matrix of order n is invertible if and only if its rank equals n (full rank). Rank less than n implies the matrix is singular.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q20",
+      "conceptIds": ["MAT-15"],
+      "question": "State the effect on a determinant of interchanging two rows.",
+      "answer": "Interchanging two rows (or two columns) multiplies the determinant by −1. Consequently a matrix with two identical rows has determinant zero, because swapping those rows would leave the matrix unchanged yet change the sign of the determinant.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q21",
+      "conceptIds": ["MAT-04"],
+      "question": "If A = [[1,−2],[3,0]], compute 3A.",
+      "answer": "3A = [[3,−6],[9,0]]. Every element of A is multiplied by the scalar 3. Scalar multiplication is distributive over matrix addition.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q22",
+      "conceptIds": ["MAT-05"],
+      "question": "Give an example of two matrices A and B such that AB ≠ BA.",
+      "answer": "Let A = [[1,1],[0,0]], B = [[0,0],[1,1]]. Then AB = [[1,1],[0,0]] while BA = [[0,0],[1,1]]. The products are different, illustrating non-commutativity.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q23",
+      "conceptIds": ["MAT-07"],
+      "question": "Prove that the diagonal elements of a real skew-symmetric matrix are zero.",
+      "answer": "Let A be skew-symmetric, so Aᵀ = −A. Looking at the diagonal entries, aᵢᵢ = −aᵢᵢ, which forces 2aᵢᵢ = 0 and therefore aᵢᵢ = 0. All diagonal entries vanish.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q24",
+      "conceptIds": ["MAT-09"],
+      "question": "Show that A · adj(A) = (det A) I for a 2×2 matrix.",
+      "answer": "For A = [[a,b],[c,d]], adj(A) = [[d,−b],[−c,a]]. The product is [[ad−bc,0],[0,ad−bc]] = (det A) I. The same identity holds for matrices of any order.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q25",
+      "conceptIds": ["MAT-12"],
+      "question": "State Cramer’s rule for a system of two equations in two unknowns.",
+      "answer": "For a₁x + b₁y = c₁, a₂x + b₂y = c₂, if Δ = a₁b₂ − a₂b₁ ≠ 0, then x = Δₓ/Δ, y = Δᵧ/Δ where Δₓ is the determinant obtained by replacing the first column by the constants and Δᵧ by replacing the second column.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q26",
+      "conceptIds": ["MAT-13"],
+      "question": "What are elementary row operations and why are they useful?",
+      "answer": "The three elementary row operations are: swapping two rows, multiplying a row by a non-zero scalar, and adding a multiple of one row to another. They are used to reduce a matrix to row-echelon form, to compute its rank, and to find its inverse by the Gauss-Jordan method.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q27",
+      "conceptIds": ["MAT-14"],
+      "question": "Find the rank of the matrix [[1,2,3],[2,4,6],[3,6,9]].",
+      "answer": "All rows are multiples of the first row, so the row space is one-dimensional. The rank is 1. Equivalently every 2×2 minor vanishes while at least one 1×1 minor is non-zero.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q28",
+      "conceptIds": ["MAT-15"],
+      "question": "If two rows of a matrix are identical, what is its determinant?",
+      "answer": "The determinant is zero. Swapping the two identical rows leaves the matrix unchanged, yet the interchange multiplies the determinant by −1; the only number equal to its own negative is zero.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q29",
+      "conceptIds": ["MAT-08"],
+      "question": "Evaluate det([[1,2,3],[0,4,5],[0,0,6]]).",
+      "answer": "The matrix is upper triangular, so the determinant is the product of the diagonal entries: 1·4·6 = 24. For any triangular matrix the determinant equals the product of the diagonal elements.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q30",
+      "conceptIds": ["MAT-05"],
+      "question": "If A is m×n and B is n×p, what is the order of AB?",
+      "answer": "The product AB is an m×p matrix. The inner dimensions n cancel, leaving the outer dimensions m and p as the order of the product.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q31",
+      "conceptIds": ["MAT-06"],
+      "question": "Prove that (AB)ᵀ = Bᵀ Aᵀ.",
+      "answer": "The (i,j)-entry of (AB)ᵀ is the (j,i)-entry of AB, which is the sum over k of a_{jk} b_{ki}. The same sum is the (i,j)-entry of Bᵀ Aᵀ. Therefore the two matrices are equal. The order of multiplication is reversed by transposition.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q32",
+      "conceptIds": ["MAT-09"],
+      "question": "A student computes A⁻¹ = adj(A) without dividing by det A. When is this correct?",
+      "answer": "It is correct only when det A = ±1. In general the factor 1/det A must be included. Omitting the factor is a common error that produces a matrix whose product with A is (det A)I rather than I.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q33",
+      "conceptIds": ["MAT-11"],
+      "question": "If AX = B has a unique solution, what can be said about the homogeneous system AX = 0?",
+      "answer": "The homogeneous system has only the trivial solution X = 0. Uniqueness for the non-homogeneous system is equivalent to the coefficient matrix being invertible, which forces the homogeneous system to have only the zero solution.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q34",
+      "conceptIds": ["MAT-01"],
+      "question": "What is a scalar matrix? Give an example of order 3.",
+      "answer": "A scalar matrix is a diagonal matrix in which all diagonal entries are equal. An example of order 3 is [[5,0,0],[0,5,0],[0,0,5]] = 5 I₃. Every scalar matrix is a scalar multiple of the identity.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "MAT-Q35",
+      "conceptIds": ["MAT-14"],
+      "question": "If the rank of a 3×3 matrix is 2, can it be invertible?",
+      "answer": "No. Invertibility requires full rank, i.e., rank equal to the order of the matrix. Rank 2 < 3 implies the matrix is singular and has no inverse.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q36",
+      "conceptIds": ["MAT-15"],
+      "question": "How does adding a multiple of one row to another row affect the determinant?",
+      "answer": "The determinant remains unchanged. This property is the basis of many evaluation techniques: one can clear entries without altering the value of the determinant, simplifying subsequent expansion.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "MAT-Q37",
+      "conceptIds": ["MAT-03", "MAT-04"],
+      "question": "If A and B are matrices of the same order and k is a scalar, prove that k(A+B) = kA + kB.",
+      "answer": "The (i,j)-entry of the left side is k(a_{ij}+b_{ij}) = k a_{ij} + k b_{ij}, which is precisely the (i,j)-entry of the right side. The equality holds element-wise and therefore as matrices.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    }
+  ]
+}

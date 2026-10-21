@@ -1,0 +1,468 @@
+{
+  "chapterId": "27",
+  "chapterName": "Hydrocarbons",
+  "subject": "Chemistry",
+  "concepts": [
+    {
+      "id": "HYD-01",
+      "name": "Isomerism in Alkanes",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Butane 2 isomers; pentane 3; hexane several; number rises rapidly with chain length."
+    },
+    {
+      "id": "HYD-02",
+      "name": "Conformations of Ethane",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Staggered (stable) and eclipsed (unstable); free rotation about C–C."
+    },
+    {
+      "id": "HYD-03",
+      "name": "Sawhorse and Newman Projections",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [3],
+      "oneLineSummary": "Ways of representing conformations; Newman viewed end-on."
+    },
+    {
+      "id": "HYD-04",
+      "name": "Torsional Energy",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [4],
+      "oneLineSummary": "Energy difference staggered–eclipsed = 12 kJ mol−1; 99 % staggered at room temp."
+    },
+    {
+      "id": "HYD-05",
+      "name": "Industrial Sources of Alkanes",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [5],
+      "oneLineSummary": "Crude oil and natural gas; separated by fractional distillation."
+    },
+    {
+      "id": "HYD-06",
+      "name": "Catalytic Hydrogenation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [5],
+      "oneLineSummary": "Alkenes/alkynes + H2 → alkanes; Ni (high T,P) or Pt/Pd (room temp)."
+    },
+    {
+      "id": "HYD-07",
+      "name": "Reduction of Alkyl Halides",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [6],
+      "oneLineSummary": "RX + Zn/HCl → RH; laboratory method keeping carbon skeleton intact."
+    },
+    {
+      "id": "HYD-08",
+      "name": "Wurtz Reaction",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [6],
+      "oneLineSummary": "2 RX + 2 Na → R–R + 2 NaX (dry ether); prepares higher alkanes."
+    },
+    {
+      "id": "HYD-09",
+      "name": "Preparation of Alkenes",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Dehydrohalogenation of alkyl halides; dehydration of alcohols."
+    },
+    {
+      "id": "HYD-10",
+      "name": "Markovnikov’s Rule",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "In addition of HX to unsymmetrical alkene, H adds to carbon with more hydrogens."
+    },
+    {
+      "id": "HYD-11",
+      "name": "Anti-Markovnikov Addition",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Peroxide effect; free-radical addition of HBr gives opposite orientation."
+    },
+    {
+      "id": "HYD-12",
+      "name": "Preparation of Alkynes",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Dehydrohalogenation of vicinal dihalides; from calcium carbide."
+    },
+    {
+      "id": "HYD-13",
+      "name": "Acidity of Terminal Alkynes",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Terminal alkynes are weakly acidic; form sodium acetylides with NaNH2."
+    },
+    {
+      "id": "HYD-14",
+      "name": "Aromaticity and Hückel’s Rule",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Planar, cyclic, conjugated systems with (4n+2) π electrons are aromatic."
+    },
+    {
+      "id": "HYD-15",
+      "name": "Electrophilic Aromatic Substitution",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Nitration, halogenation, sulphonation, Friedel–Crafts alkylation/acylation."
+    },
+    {
+      "id": "HYD-16",
+      "name": "Directive Influence of Substituents",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Activating groups ortho-para directing; deactivating groups meta directing (except halogens)."
+    },
+    {
+      "id": "HYD-17",
+      "name": "Benzene Structure",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Resonance hybrid of two Kekulé structures; all C–C bonds equal."
+    },
+    {
+      "id": "HYD-18",
+      "name": "Conformational Analysis of Butane",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Anti, gauche, eclipsed conformers; anti most stable."
+    }
+  ],
+  "qna": [
+    {
+      "id": "HYD-Q01",
+      "conceptIds": ["HYD-01"],
+      "question": "How many structural isomers does butane have? Name them.",
+      "answer": "Butane (C4H10) has two structural isomers: n-butane (straight chain) and isobutane (2-methylpropane). They differ in the connectivity of the carbon skeleton.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "HYD-Q02",
+      "conceptIds": ["HYD-02", "HYD-04"],
+      "question": "Why is the staggered conformation of ethane more stable than the eclipsed?",
+      "answer": "In the staggered conformation the C–H bonds are as far apart as possible, minimising electron–electron repulsion. In the eclipsed form the bonds are closest, maximising repulsion. The energy difference is 12 kJ mol−1.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [2, 4]
+    },
+    {
+      "id": "HYD-Q03",
+      "conceptIds": ["HYD-03"],
+      "question": "How is a Newman projection constructed?",
+      "answer": "The molecule is viewed end-on along the C–C bond. The front carbon is represented by a point (or centre of a circle) and the rear carbon by a circle. Bonds from the front carbon radiate from the centre; bonds from the rear radiate from the circumference.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [3]
+    },
+    {
+      "id": "HYD-Q04",
+      "conceptIds": ["HYD-04"],
+      "question": "What percentage of ethane molecules exist in the staggered form at room temperature?",
+      "answer": "Approximately 99 % of ethane molecules exist in the staggered conformation at any instant. Only about 1 % are in the eclipsed form. The two forms interconvert rapidly and cannot be isolated.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [4]
+    },
+    {
+      "id": "HYD-Q05",
+      "conceptIds": ["HYD-05"],
+      "question": "What are the main industrial sources of alkanes?",
+      "answer": "Crude oil and natural gas are the principal industrial sources of alkanes. They are separated into fractions of different boiling ranges by fractional distillation of petroleum.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [5]
+    },
+    {
+      "id": "HYD-Q06",
+      "conceptIds": ["HYD-06"],
+      "question": "How are alkanes prepared from alkenes and alkynes?",
+      "answer": "Alkenes and alkynes undergo catalytic hydrogenation with hydrogen. Nickel requires high temperature and pressure; platinum or palladium catalysts work at room temperature. The multiple bond is fully saturated.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [5]
+    },
+    {
+      "id": "HYD-Q07",
+      "conceptIds": ["HYD-07"],
+      "question": "How are alkanes prepared from alkyl halides by reduction?",
+      "answer": "Alkyl halides are reduced with zinc and hydrochloric acid: RX + 2[H] → RH + HX. The carbon skeleton remains intact and the halogen is replaced by hydrogen.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [6]
+    },
+    {
+      "id": "HYD-Q08",
+      "conceptIds": ["HYD-08"],
+      "question": "What is the Wurtz reaction and what is its limitation?",
+      "answer": "Two molecules of an alkyl halide react with sodium in dry ether to give a higher alkane: 2 RX + 2 Na → R–R + 2 NaX. The reaction is useful only for symmetrical alkanes; mixed alkyl halides give a mixture of products.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [6]
+    },
+    {
+      "id": "HYD-Q09",
+      "conceptIds": ["HYD-09"],
+      "question": "How are alkenes prepared by dehydrohalogenation?",
+      "answer": "Alkyl halides are heated with alcoholic KOH. A molecule of HX is eliminated and an alkene is formed. The reaction follows Saytzeff’s rule, giving the more substituted alkene as the major product.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q10",
+      "conceptIds": ["HYD-10"],
+      "question": "State Markovnikov’s rule.",
+      "answer": "When an unsymmetrical reagent HX adds to an unsymmetrical alkene, the hydrogen atom adds to the carbon atom that already carries more hydrogen atoms. The rule is explained by the relative stabilities of the intermediate carbocations.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q11",
+      "conceptIds": ["HYD-11"],
+      "question": "What is the peroxide effect?",
+      "answer": "In the presence of peroxides, HBr adds to an unsymmetrical alkene in the anti-Markovnikov manner. The reaction proceeds by a free-radical mechanism rather than an ionic one. Only HBr shows this effect; HCl and HI do not.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q12",
+      "conceptIds": ["HYD-12"],
+      "question": "How is acetylene prepared from calcium carbide?",
+      "answer": "Calcium carbide reacts with water: CaC2 + 2 H2O → Ca(OH)2 + C2H2. The reaction is a convenient laboratory and industrial source of ethyne.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q13",
+      "conceptIds": ["HYD-13"],
+      "question": "Why are terminal alkynes acidic?",
+      "answer": "The hydrogen attached to an sp-hybridised carbon is more acidic than that attached to sp2 or sp3 carbons because the sp orbital has greater s-character and holds the electron pair closer to the nucleus. Terminal alkynes therefore form acetylide salts with strong bases.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q14",
+      "conceptIds": ["HYD-14"],
+      "question": "State Hückel’s rule of aromaticity.",
+      "answer": "A planar, cyclic, fully conjugated system containing (4n + 2) π electrons (n = 0, 1, 2 …) is aromatic. Benzene (6 π electrons, n = 1) is the classic example. Such systems are unusually stable.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q15",
+      "conceptIds": ["HYD-15"],
+      "question": "List the common electrophilic aromatic substitution reactions of benzene.",
+      "answer": "The common reactions are nitration (HNO3/H2SO4), halogenation (X2/FeX3), sulphonation (conc. H2SO4), Friedel–Crafts alkylation (RCl/AlCl3) and Friedel–Crafts acylation (RCOCl/AlCl3). All proceed by attack of an electrophile on the benzene ring.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q16",
+      "conceptIds": ["HYD-16"],
+      "question": "How do substituents influence the position of further substitution on a benzene ring?",
+      "answer": "Activating groups (–OH, –NH2, –R) direct the incoming electrophile to the ortho and para positions. Deactivating groups (–NO2, –CN, –COOH) direct to the meta position. Halogens are an exception: they are deactivating yet ortho-para directing.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q17",
+      "conceptIds": ["HYD-17"],
+      "question": "Why are all carbon–carbon bonds in benzene equal?",
+      "answer": "Benzene is a resonance hybrid of two Kekulé structures. The actual structure is intermediate between the two, so every carbon–carbon bond has partial double-bond character and the same length (1.39 Å).",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q18",
+      "conceptIds": ["HYD-02", "HYD-03"],
+      "question": "What is the difference between a sawhorse and a Newman projection?",
+      "answer": "In a sawhorse projection the molecule is viewed at an oblique angle so that all bonds are visible. In a Newman projection the molecule is viewed end-on along the C–C bond; the front carbon is a point and the rear carbon is a circle.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": [3]
+    },
+    {
+      "id": "HYD-Q19",
+      "conceptIds": ["HYD-08"],
+      "question": "Why is dry ether used in the Wurtz reaction?",
+      "answer": "Dry ether provides an inert, non-protic medium that dissolves the alkyl halide and allows sodium to react without being destroyed by moisture. Water would react violently with sodium and prevent the desired coupling.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [6]
+    },
+    {
+      "id": "HYD-Q20",
+      "conceptIds": ["HYD-06"],
+      "question": "Why does catalytic hydrogenation of an alkyne require two moles of hydrogen?",
+      "answer": "An alkyne contains a carbon–carbon triple bond. Complete saturation requires the addition of two moles of hydrogen, first converting the alkyne into an alkene and then the alkene into an alkane.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [5]
+    },
+    {
+      "id": "HYD-Q21",
+      "conceptIds": ["HYD-01"],
+      "question": "How many structural isomers does pentane have?",
+      "answer": "Pentane (C5H12) has three structural isomers: n-pentane, isopentane (2-methylbutane) and neopentane (2,2-dimethylpropane). The number of isomers increases rapidly with increasing carbon number.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "HYD-Q22",
+      "conceptIds": ["HYD-10", "HYD-11"],
+      "question": "How can you convert propene into 1-bromopropane and into 2-bromopropane?",
+      "answer": "Addition of HBr in the presence of peroxide gives 1-bromopropane (anti-Markovnikov). Addition of HBr in the absence of peroxide gives 2-bromopropane (Markovnikov). The peroxide effect therefore controls the regiochemistry.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q23",
+      "conceptIds": ["HYD-13"],
+      "question": "How can a terminal alkyne be distinguished from an internal alkyne?",
+      "answer": "A terminal alkyne reacts with NaNH2 or with ammoniacal AgNO3 / Cu2Cl2 to form a precipitate of the metal acetylide. An internal alkyne lacks the acidic hydrogen and does not give this test.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q24",
+      "conceptIds": ["HYD-15"],
+      "question": "Why is anhydrous AlCl3 required in the Friedel–Crafts reaction?",
+      "answer": "Anhydrous AlCl3 acts as a Lewis acid and generates the electrophile (R+ or RCO+) from the alkyl or acyl halide. Moisture would destroy the catalyst by forming Al(OH)3, so strictly anhydrous conditions are necessary.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q25",
+      "conceptIds": ["HYD-16"],
+      "question": "Why is the nitro group meta-directing?",
+      "answer": "The nitro group is strongly electron-withdrawing. It decreases the electron density especially at the ortho and para positions through resonance, making those positions less reactive toward electrophiles. Attack therefore occurs at the meta position.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q26",
+      "conceptIds": ["HYD-04"],
+      "question": "Why cannot the staggered and eclipsed conformations of ethane be isolated?",
+      "answer": "The energy barrier separating them is only 12 kJ mol−1, which is readily surmounted at room temperature. The conformations interconvert millions of times per second and therefore cannot be separated as distinct compounds.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [4]
+    },
+    {
+      "id": "HYD-Q27",
+      "conceptIds": ["HYD-14", "HYD-17"],
+      "question": "Why is benzene unusually stable?",
+      "answer": "Benzene possesses a cyclic, planar, conjugated system of six π electrons that satisfies Hückel’s rule. The extensive delocalisation of the π electrons lowers the energy of the molecule and confers aromatic stability.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q28",
+      "conceptIds": ["HYD-08"],
+      "question": "What product is obtained when ethyl bromide is subjected to the Wurtz reaction?",
+      "answer": "Two molecules of ethyl bromide couple to give n-butane: 2 CH3CH2Br + 2 Na → CH3CH2CH2CH3 + 2 NaBr. The reaction is a classic method for preparing symmetrical higher alkanes.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [6]
+    },
+    {
+      "id": "HYD-Q29",
+      "conceptIds": ["HYD-09"],
+      "question": "How is ethene prepared from ethanol?",
+      "answer": "Ethanol is heated with excess concentrated sulphuric acid at 170 °C. The alcohol undergoes dehydration to give ethene. The reaction proceeds via a carbocation intermediate.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q30",
+      "conceptIds": ["HYD-18"],
+      "question": "Which conformation of butane is the most stable and why?",
+      "answer": "The anti conformation, in which the two methyl groups are opposite each other (dihedral angle 180°), is the most stable. It has the lowest torsional strain and the least steric repulsion between the methyl groups.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q31",
+      "conceptIds": ["HYD-06", "HYD-12"],
+      "question": "How can ethyne be converted into ethane?",
+      "answer": "Ethyne is subjected to catalytic hydrogenation with two moles of hydrogen in the presence of Ni, Pt or Pd. The triple bond is fully saturated, yielding ethane.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [5]
+    },
+    {
+      "id": "HYD-Q32",
+      "conceptIds": ["HYD-15"],
+      "question": "What is the electrophile in the nitration of benzene?",
+      "answer": "The electrophile is the nitronium ion, NO2+. It is generated from concentrated nitric acid and concentrated sulphuric acid: HNO3 + 2 H2SO4 → NO2+ + H3O+ + 2 HSO4−.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q33",
+      "conceptIds": ["HYD-01"],
+      "question": "Why does the number of structural isomers increase rapidly with the number of carbon atoms?",
+      "answer": "Each additional carbon atom can be attached in more ways—forming longer chains or new branches at different positions. The combinatorial possibilities multiply, leading to a rapid increase in the number of isomers.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "HYD-Q34",
+      "conceptIds": ["HYD-11"],
+      "question": "Why does only HBr show the peroxide effect?",
+      "answer": "The free-radical chain reaction is favourable only for HBr because the hydrogen-abstraction step is exothermic. For HCl the abstraction is endothermic and for HI the addition of iodine radical is endothermic; neither supports a chain process.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "HYD-Q35",
+      "conceptIds": ["HYD-16"],
+      "question": "Why are halogens ortho-para directing even though they are deactivating?",
+      "answer": "Halogens withdraw electrons by the inductive effect (deactivating) but can donate electrons by resonance through their lone pairs (ortho-para directing). The resonance effect controls the orientation while the inductive effect reduces overall reactivity.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "chapterId": "46",
+  "chapterName": "Permutations and Combinations",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "PAC-01",
+      "name": "Circular permutations of n distinct objects",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Number of distinct circular arrangements is (n−1)!."
+    },
+    {
+      "id": "PAC-02",
+      "name": "Circular permutations when direction is irrelevant",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "When clockwise and anticlockwise are the same, number is (n−1)!/2."
+    },
+    {
+      "id": "PAC-03",
+      "name": "Permutations of n objects taken r at a time",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "ⁿPᵣ = n! / (n−r)!."
+    },
+    {
+      "id": "PAC-04",
+      "name": "Combinations of n objects taken r at a time",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "ⁿCᵣ = n! / [r! (n−r)!]."
+    },
+    {
+      "id": "PAC-05",
+      "name": "Number of ways to select one or more objects",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "2ⁿ − 1 non-empty subsets of an n-element set."
+    },
+    {
+      "id": "PAC-06",
+      "name": "Maximum of binomial coefficients",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "For even n max at r = n/2; for odd n at r = (n±1)/2."
+    },
+    {
+      "id": "PAC-07",
+      "name": "Derangement",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Permutation with no fixed points; number Dₙ given by inclusion-exclusion."
+    },
+    {
+      "id": "PAC-08",
+      "name": "Formula for number of derangements",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Dₙ = n! Σ_{k=0}^n (−1)^k / k! ≈ n!/e."
+    },
+    {
+      "id": "PAC-09",
+      "name": "Circular arrangements with identical objects",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Divide by factorials of the sizes of identical groups."
+    },
+    {
+      "id": "PAC-10",
+      "name": "Relation between permutations and combinations",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "ⁿPᵣ = ⁿCᵣ · r!."
+    },
+    {
+      "id": "PAC-11",
+      "name": "Symmetry of binomial coefficients",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "ⁿCᵣ = ⁿC_{n−r}."
+    },
+    {
+      "id": "PAC-12",
+      "name": "Permutations with identical objects",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "n! / (k1! k2! …) when there are identical groups."
+    },
+    {
+      "id": "PAC-13",
+      "name": "Inclusion-exclusion for derangements",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Start with n!, subtract fixed points, add double fixed points, etc."
+    },
+    {
+      "id": "PAC-14",
+      "name": "Seating arrangements at a round table",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "(n−1)! distinct ways for n distinct people."
+    },
+    {
+      "id": "PAC-15",
+      "name": "Necklace problems",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Divide by 2n when rotations and flips are considered the same (Burnside)."
+    }
+  ],
+  "qna": [
+    {
+      "id": "PAC-Q01",
+      "conceptIds": ["PAC-01"],
+      "question": "What is the number of circular permutations of n distinct objects?",
+      "answer": "The number is (n−1)!. Rotations of the same arrangement are regarded as identical, so one object is fixed and the remaining n−1 objects are arranged relative to it. This removes the n-fold rotational symmetry.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q02",
+      "conceptIds": ["PAC-02"],
+      "question": "How does the count change when clockwise and anticlockwise arrangements are considered the same?",
+      "answer": "The number becomes (n−1)!/2. The extra division by 2 accounts for reflection symmetry. This formula is used for necklaces that can be flipped over.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q03",
+      "conceptIds": ["PAC-03"],
+      "question": "State the formula for the number of permutations of n distinct objects taken r at a time.",
+      "answer": "ⁿPᵣ = n! / (n−r)!. It counts ordered selections of r objects from n. The formula is valid for integers 0 ≤ r ≤ n.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q04",
+      "conceptIds": ["PAC-04"],
+      "question": "State the formula for the number of combinations of n distinct objects taken r at a time.",
+      "answer": "ⁿCᵣ = n! / [r! (n−r)!]. Combinations disregard order, so each unordered selection is counted once. The relation ⁿPᵣ = ⁿCᵣ · r! connects the two concepts.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q05",
+      "conceptIds": ["PAC-05"],
+      "question": "How many ways can one or more objects be selected from n different objects?",
+      "answer": "The number is 2ⁿ − 1. It equals the number of non-empty subsets of an n-element set. The empty selection is excluded by subtracting 1 from the total number of subsets 2ⁿ.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q06",
+      "conceptIds": ["PAC-06"],
+      "question": "For which value of r does ⁿCᵣ attain its maximum when n is even?",
+      "answer": "When n is even the maximum occurs at the single central value r = n/2. The ratio of consecutive binomial coefficients changes from greater than 1 to less than 1 exactly at that point.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q07",
+      "conceptIds": ["PAC-06"],
+      "question": "For which values of r does ⁿCᵣ attain its maximum when n is odd?",
+      "answer": "When n is odd the maximum is attained at the two central values r = (n−1)/2 and r = (n+1)/2. These two coefficients are equal by the symmetry ⁿCᵣ = ⁿC_{n−r}.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q08",
+      "conceptIds": ["PAC-07"],
+      "question": "Define a derangement.",
+      "answer": "A derangement is a permutation in which no element appears in its original position, i.e., a permutation with no fixed points. The number of derangements of n objects is denoted Dₙ or !n.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q09",
+      "conceptIds": ["PAC-08"],
+      "question": "State the formula for the number of derangements of n objects.",
+      "answer": "Dₙ = n! Σ_{k=0}^n (−1)^k / k!. Equivalently Dₙ = n! [1 − 1/1! + 1/2! − … + (−1)^n / n!]. The formula is obtained by the inclusion-exclusion principle.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q10",
+      "conceptIds": ["PAC-10"],
+      "question": "How is the formula for ⁿCᵣ derived from ⁿPᵣ?",
+      "answer": "Each combination of r objects can be arranged internally in r! different orders. Therefore ⁿPᵣ = ⁿCᵣ · r!, which rearranges to ⁿCᵣ = ⁿPᵣ / r! = n! / [r! (n−r)!].",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "PAC-Q11",
+      "conceptIds": ["PAC-11"],
+      "question": "State and explain the identity ⁿCᵣ = ⁿC_{n−r}.",
+      "answer": "The number of ways to choose r objects equals the number of ways to choose the complementary n−r objects. It follows at once from the factorial definition. The identity is responsible for the left-right symmetry of Pascal’s triangle.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "PAC-Q12",
+      "conceptIds": ["PAC-12"],
+      "question": "How does the presence of identical objects affect the number of linear permutations?",
+      "answer": "If there are groups of identical objects of sizes k1, k2, … the number of distinct linear permutations is n! / (k1! k2! …). Division by the factorials removes the over-counting caused by interchangeable identical objects.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "PAC-Q13",
+      "conceptIds": ["PAC-13"],
+      "question": "Outline the inclusion-exclusion argument that yields the derangement formula.",
+      "answer": "Start with all n! permutations. Subtract those that fix at least one particular point, add back those that fix at least two particular points, and continue alternating. The resulting series is exactly n! times the partial sum of e⁻¹, which is the expression for Dₙ.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "PAC-Q14",
+      "conceptIds": ["PAC-14"],
+      "question": "How many ways can n distinct people be seated at a round table?",
+      "answer": "The number is (n−1)!. Rotations of the same seating arrangement are regarded as identical. If the table has a distinguishable feature (e.g., a head seat) the number becomes n!.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "PAC-Q15",
+      "conceptIds": ["PAC-01"],
+      "question": "Why are circular permutations counted by (n−1)! rather than n!?",
+      "answer": "In a circular arrangement rotations of the same sequence are considered identical. There are n possible rotations of any linear arrangement, so dividing n! by n yields (n−1)!. Fixing one object and arranging the rest relative to it produces the same count.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q16",
+      "conceptIds": ["PAC-08"],
+      "question": "Why is the number of derangements approximately n!/e for large n?",
+      "answer": "The series for Dₙ / n! is the partial sum of the Taylor series for e⁻¹. As n → ∞ the remainder tends to zero, so Dₙ / n! → 1/e. Consequently Dₙ is the integer closest to n!/e for large n.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q17",
+      "conceptIds": ["PAC-02"],
+      "question": "When is the formula (n−1)!/2 used for circular arrangements?",
+      "answer": "It is used when the arrangement cannot be distinguished from its mirror image, for example when arranging beads on a necklace that can be worn flipped. If the arrangement has a preferred orientation the division by 2 is omitted.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q18",
+      "conceptIds": ["PAC-05"],
+      "question": "Why is the empty selection subtracted when counting non-empty subsets?",
+      "answer": "The total number of subsets of an n-element set is 2ⁿ, which includes the empty set. In many combinatorial problems the empty selection is not admissible. Subtracting 1 therefore yields the correct count of non-empty selections.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q19",
+      "conceptIds": ["PAC-03", "PAC-04"],
+      "question": "What is the essential difference between a permutation and a combination?",
+      "answer": "A permutation is an ordered arrangement while a combination is an unordered selection. The same set of r objects corresponds to r! different permutations but only one combination. Consequently the number of permutations is always at least as large as the number of combinations.",
+      "type": "comparison",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q20",
+      "conceptIds": ["PAC-08"],
+      "question": "Compute D₃ using the series formula.",
+      "answer": "D₃ = 3! (1 − 1 + 1/2 − 1/6) = 6 · (1/3) = 2. The two derangements of three objects are the two 3-cycles. Direct enumeration confirms the count.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q21",
+      "conceptIds": ["PAC-06"],
+      "question": "Why does the maximum of ⁿCᵣ occur near r = n/2?",
+      "answer": "The ratio ⁿC_{r+1}/ⁿCᵣ = (n−r)/(r+1) is greater than 1 when r < (n−1)/2 and less than 1 when r > (n−1)/2. Consequently the sequence of binomial coefficients increases up to the middle and then decreases.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q22",
+      "conceptIds": ["PAC-01", "PAC-14"],
+      "question": "In how many ways can 5 distinct people sit at a round table if rotations are considered the same?",
+      "answer": "The number is (5−1)! = 24. Fixing one person’s position removes the rotational symmetry and the remaining four people may be arranged in 4! = 24 ways relative to the fixed person.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q23",
+      "conceptIds": ["PAC-12"],
+      "question": "How many distinct linear arrangements can be formed from the letters of the word “BOOK”?",
+      "answer": "There are 4 letters with O repeated twice, so the number is 4!/2! = 12. Division by 2! removes the over-counting caused by the identical O’s.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "PAC-Q24",
+      "conceptIds": ["PAC-04"],
+      "question": "In how many ways can a committee of 3 be chosen from 7 people?",
+      "answer": "The number is ⁷C₃ = 35. Order inside the committee does not matter, so combinations rather than permutations are used. If the committee had designated officers the count would become a permutation.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q25",
+      "conceptIds": ["PAC-07", "PAC-08"],
+      "question": "What is the number of derangements of 4 objects?",
+      "answer": "D₄ = 24 (1 − 1 + 1/2 − 1/6 + 1/24) = 24 · (9/24) = 9. Direct listing of the 24 permutations confirms that exactly 9 have no fixed points.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q26",
+      "conceptIds": ["PAC-02"],
+      "question": "A common mistake is to forget the division by 2 when counting necklaces that can be flipped. What is the consequence?",
+      "answer": "The student counts each necklace twice—once for each orientation—thereby obtaining twice the correct number. In an examination this produces an answer that is systematically too large and loses marks.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q27",
+      "conceptIds": ["PAC-03"],
+      "question": "How many different 3-letter words (including nonsense words) can be formed from the letters of “MATHS” if repetition is not allowed?",
+      "answer": "The number is ⁵P₃ = 5! / 2! = 60. Each different ordering of the same three letters is counted as a distinct word because order matters.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q28",
+      "conceptIds": ["PAC-05"],
+      "question": "A set has 6 elements. How many non-empty subsets does it have?",
+      "answer": "2⁶ − 1 = 63. The total number of subsets is 64, including the empty set; subtracting the empty set leaves the 63 non-empty subsets.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q29",
+      "conceptIds": ["PAC-11"],
+      "question": "Why is ¹⁰C₃ equal to ¹⁰C₇?",
+      "answer": "Choosing 3 elements out of 10 is equivalent to choosing the 7 elements that are left out. The identity ⁿCᵣ = ⁿC_{n−r} therefore holds, and both coefficients equal 120.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "PAC-Q30",
+      "conceptIds": ["PAC-08"],
+      "question": "Approximate the number of derangements of 10 objects.",
+      "answer": "D₁₀ ≈ 10!/e ≈ 3628800 / 2.71828 ≈ 1334961. The exact value is the nearest integer to this quantity. For n ≥ 1 the approximation is already very accurate.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q31",
+      "conceptIds": ["PAC-01", "PAC-09"],
+      "question": "How many distinct circular arrangements of the letters of “BANANA” are there?",
+      "answer": "There are 6 letters with A repeated three times and N repeated twice. The number of distinct circular arrangements is (6−1)! / (3! 2!) = 120 / 12 = 10. The factorials in the denominator account for the identical letters.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q32",
+      "conceptIds": ["PAC-10"],
+      "question": "If ⁿPᵣ = 60 and ⁿCᵣ = 10, find r.",
+      "answer": "From the relation ⁿPᵣ = ⁿCᵣ · r! we obtain 60 = 10 · r!, so r! = 6 and r = 3. Checking: ⁿP₃ = n(n−1)(n−2) = 60 and ⁿC₃ = 10 are consistent for n = 5.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "PAC-Q33",
+      "conceptIds": ["PAC-07"],
+      "question": "Why is D₁ = 0 and D₂ = 1?",
+      "answer": "A single object cannot be deranged, so D₁ = 0. For two objects the only derangement is the transposition that swaps them, so D₂ = 1. These values serve as base cases for the recurrence relations satisfied by the derangement numbers.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q34",
+      "conceptIds": ["PAC-15"],
+      "question": "When counting distinct necklaces of n distinct beads that may be rotated or flipped, what is the approximate count for large n?",
+      "answer": "By Burnside’s lemma the number is approximately (n−1)! / 2. The exact count averages the fixed arrangements under the dihedral group actions of rotation and reflection. For most practical purposes the simple formula (n−1)!/2 is used.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "PAC-Q35",
+      "conceptIds": ["PAC-04"],
+      "question": "A student calculates ⁿCᵣ by the formula n! / r! and forgets the (n−r)! term. What is the error?",
+      "answer": "The student is actually computing ⁿPᵣ / r! but has omitted the remaining factorial in the denominator of the combination formula. The resulting number is larger than the true combination by the factor (n−r)!. This is a very common algebraic slip.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "PAC-Q36",
+      "conceptIds": ["PAC-03", "PAC-12"],
+      "question": "How many distinct 4-digit numbers can be formed from the digits 1,2,2,3?",
+      "answer": "Total permutations of the four digits are 4!/2! = 12. All of them are valid 4-digit numbers because none begins with zero. Hence there are 12 such numbers.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "PAC-Q37",
+      "conceptIds": ["PAC-08", "PAC-13"],
+      "question": "Explain why the inclusion-exclusion series for derangements alternates in sign.",
+      "answer": "The first term counts all permutations. Each subsequent term alternately over-subtracts or under-adds the permutations that fix particular sets of points. The alternating signs are the hallmark of the inclusion-exclusion principle and ensure that permutations with any fixed points are ultimately excluded.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    }
+  ]
+}

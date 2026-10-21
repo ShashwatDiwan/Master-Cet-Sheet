@@ -30,6 +30,23 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+
+		<!-- Source: https://mvnrepository.com/artifact/org.springframework.ai/spring-ai-client-chat -->
+<dependency>
+    <groupId>org.springframework.ai</groupId>
+    <artifactId>spring-ai-client-chat</artifactId>
+    <version>1.1.7</version>
+    <scope>compile</scope>
+</dependency>
+
+<!-- Source: https://mvnrepository.com/artifact/org.springframework.ai/spring-ai-starter-model-google-genai -->
+<dependency>
+    <groupId>org.springframework.ai</groupId>
+    <artifactId>spring-ai-starter-model-google-genai</artifactId>
+    <version>1.1.7</version>
+    <scope>compile</scope>
+</dependency>
+
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
@@ -44,6 +61,10 @@
 		 <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-client</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -95,6 +116,16 @@
 			<version>2.19.2</version>
 		</dependency>
 
+		<dependency>	
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
@@ -103,6 +134,10 @@
         <dependency>
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-database-postgresql</artifactId>
         </dependency>
 
 

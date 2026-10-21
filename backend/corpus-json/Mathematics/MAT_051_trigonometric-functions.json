@@ -1,0 +1,462 @@
+{
+  "chapterId": "51",
+  "chapterName": "Trigonometric Functions",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "TF-01",
+      "name": "Domain and range of trigonometric functions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin, cos: ℝ → [−1,1]; tan: ℝ \\ {(2k+1)π/2} → ℝ; etc."
+    },
+    {
+      "id": "TF-02",
+      "name": "Periodicity of trigonometric functions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin, cos period 2π; tan, cot period π; sec, csc period 2π."
+    },
+    {
+      "id": "TF-03",
+      "name": "Even and odd trigonometric functions",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "cos, sec even; sin, tan, cot, csc odd."
+    },
+    {
+      "id": "TF-04",
+      "name": "Fundamental identities",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin²θ + cos²θ = 1; 1 + tan²θ = sec²θ; 1 + cot²θ = csc²θ."
+    },
+    {
+      "id": "TF-05",
+      "name": "Addition and subtraction formulae",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin(A±B), cos(A±B), tan(A±B) standard expansions."
+    },
+    {
+      "id": "TF-06",
+      "name": "Double-angle formulae",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin 2A = 2 sin A cos A; cos 2A = cos²A − sin²A = 2cos²A − 1 = 1 − 2sin²A."
+    },
+    {
+      "id": "TF-07",
+      "name": "Half-angle formulae",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "sin(A/2), cos(A/2), tan(A/2) in terms of cos A or tan(A/2) = (1−cos A)/sin A."
+    },
+    {
+      "id": "TF-08",
+      "name": "Product-to-sum and sum-to-product identities",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "2 sin A cos B = sin(A+B)+sin(A−B); analogous formulae for other products."
+    },
+    {
+      "id": "TF-09",
+      "name": "Inverse trigonometric functions – domains and ranges",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "arcsin: [−1,1]→[−π/2,π/2]; arccos: [−1,1]→[0,π]; arctan: ℝ→(−π/2,π/2)."
+    },
+    {
+      "id": "TF-10",
+      "name": "Principal values of inverse trigonometric functions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "The unique value lying in the principal range of the inverse function."
+    },
+    {
+      "id": "TF-11",
+      "name": "Identities involving inverse trigonometric functions",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "arcsin x + arccos x = π/2; arctan x + arctan(1/x) = π/2 (x>0)."
+    },
+    {
+      "id": "TF-12",
+      "name": "Graphs of trigonometric and inverse trigonometric functions",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Periodic waves for sin/cos; vertical asymptotes for tan; restricted domains for inverses."
+    },
+    {
+      "id": "TF-13",
+      "name": "Solution of trigonometric equations",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "General solution using periodicity; principal solution then ±2kπ or analogous."
+    },
+    {
+      "id": "TF-14",
+      "name": "Trigonometric equations of the form a sin θ + b cos θ = c",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Rewrite as R sin(θ+α) = c and solve."
+    },
+    {
+      "id": "TF-15",
+      "name": "Common CET identities and transformations",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Double-angle, half-angle, product-sum conversions frequently tested."
+    }
+  ],
+  "qna": [
+    {
+      "id": "TF-Q01",
+      "conceptIds": ["TF-01"],
+      "question": "State the domain and range of the sine and cosine functions.",
+      "answer": "Both sin and cos are defined for all real numbers (domain ℝ). Their range is the closed interval [−1,1]. No real number outside [−1,1] is attained by either function.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q02",
+      "conceptIds": ["TF-02"],
+      "question": "What are the fundamental periods of sin, cos, tan and cot?",
+      "answer": "sin and cos have fundamental period 2π; tan and cot have fundamental period π. The secant and cosecant functions also have period 2π. Periodicity is the reason general solutions of trigonometric equations contain an arbitrary integer multiple of the period.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q03",
+      "conceptIds": ["TF-03"],
+      "question": "Which trigonometric functions are even and which are odd?",
+      "answer": "cos and sec are even: f(−θ) = f(θ). sin, tan, cot and csc are odd: f(−θ) = −f(θ). Evenness/oddness follows at once from the definitions in terms of coordinates on the unit circle.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q04",
+      "conceptIds": ["TF-04"],
+      "question": "Write the three fundamental Pythagorean identities.",
+      "answer": "sin²θ + cos²θ = 1; 1 + tan²θ = sec²θ; 1 + cot²θ = csc²θ. These identities hold for all θ where the functions involved are defined. They are obtained by dividing the first identity by cos²θ or sin²θ.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q05",
+      "conceptIds": ["TF-05"],
+      "question": "State the addition formulae for sin(A+B) and cos(A+B).",
+      "answer": "sin(A+B) = sin A cos B + cos A sin B; cos(A+B) = cos A cos B − sin A sin B. The subtraction formulae are obtained by replacing B by −B and using the odd/even properties.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q06",
+      "conceptIds": ["TF-06"],
+      "question": "Write the three common expressions for cos 2A.",
+      "answer": "cos 2A = cos²A − sin²A = 2 cos²A − 1 = 1 − 2 sin²A. The three forms are useful according to whether one wishes to express the result in terms of cos A only, sin A only, or both.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q07",
+      "conceptIds": ["TF-07"],
+      "question": "Express tan(A/2) in terms of sin A and cos A.",
+      "answer": "tan(A/2) = (1 − cos A)/sin A = sin A/(1 + cos A). Both expressions are equivalent where they are defined. The half-angle formulae are derived from the double-angle formulae by solving for the half-angle functions.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q08",
+      "conceptIds": ["TF-08"],
+      "question": "Write the product-to-sum identity for 2 sin A cos B.",
+      "answer": "2 sin A cos B = sin(A+B) + sin(A−B). Similar identities exist for 2 cos A cos B and 2 sin A sin B. These identities convert products into sums and are frequently used in integration and in solving equations.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q09",
+      "conceptIds": ["TF-09"],
+      "question": "State the domain and principal range of arcsin, arccos and arctan.",
+      "answer": "arcsin: domain [−1,1], range [−π/2, π/2]; arccos: domain [−1,1], range [0, π]; arctan: domain ℝ, range (−π/2, π/2). The ranges are chosen so that the inverse functions are single-valued and continuous on their domains.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q10",
+      "conceptIds": ["TF-11"],
+      "question": "Prove that arcsin x + arccos x = π/2 for x ∈ [−1,1].",
+      "answer": "Let θ = arcsin x, so sin θ = x and θ ∈ [−π/2, π/2]. Then cos(π/2 − θ) = sin θ = x and π/2 − θ ∈ [0, π], which is the range of arccos. Therefore arccos x = π/2 − θ = π/2 − arcsin x.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q11",
+      "conceptIds": ["TF-06"],
+      "question": "Express sin 2A in terms of tan A.",
+      "answer": "sin 2A = 2 tan A / (1 + tan² A). The identity is obtained by dividing numerator and denominator of 2 sin A cos A by cos² A and using the definitions of tan and sec.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q12",
+      "conceptIds": ["TF-13"],
+      "question": "Write the general solution of the equation sin θ = 1/2.",
+      "answer": "The principal solutions in [0,2π) are θ = π/6 and θ = 5π/6. The general solution is θ = nπ + (−1)^n (π/6), n ∈ ℤ. Equivalently θ = 2kπ + π/6 or θ = 2kπ + 5π/6.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q13",
+      "conceptIds": ["TF-14"],
+      "question": "Describe the method of solving a sin θ + b cos θ = c.",
+      "answer": "Rewrite the left side as R sin(θ + α) where R = √(a² + b²) and tan α = b/a (with appropriate quadrant). The equation becomes sin(θ + α) = c/R. Solve for θ + α and then for θ, provided |c| ≤ R.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q14",
+      "conceptIds": ["TF-04"],
+      "question": "If sin θ = 3/5 and θ is acute, find cos θ and tan θ.",
+      "answer": "cos θ = √(1 − sin²θ) = √(1 − 9/25) = √(16/25) = 4/5 (positive because θ acute). tan θ = sin θ / cos θ = 3/4. The Pythagorean identity supplies the cosine.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q15",
+      "conceptIds": ["TF-05"],
+      "question": "Evaluate sin 75° using an addition formula.",
+      "answer": "sin 75° = sin(45°+30°) = sin 45° cos 30° + cos 45° sin 30° = (√2/2)(√3/2) + (√2/2)(1/2) = √2/2 · (√3 + 1)/2 = √6/4 + √2/4 = (√6 + √2)/4.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q16",
+      "conceptIds": ["TF-06"],
+      "question": "Prove that cos 2θ = (1 − tan² θ)/(1 + tan² θ).",
+      "answer": "Divide numerator and denominator of cos 2θ = cos²θ − sin²θ by cos²θ: (1 − tan²θ)/(1 + tan²θ). The identity holds wherever cos θ ≠ 0. It is useful for expressing double-angle cosines in terms of a single tangent.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q17",
+      "conceptIds": ["TF-09"],
+      "question": "Find the principal value of arcsin(−1/2).",
+      "answer": "The principal range of arcsin is [−π/2, π/2]. The angle in that interval whose sine is −1/2 is −π/6. Therefore arcsin(−1/2) = −π/6.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q18",
+      "conceptIds": ["TF-11"],
+      "question": "Evaluate arctan(1) + arctan(1).",
+      "answer": "arctan(1) = π/4. Therefore the sum is π/2. Note that the identity arctan x + arctan(1/x) = π/2 holds for x > 0; here x = 1 yields the same result.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q19",
+      "conceptIds": ["TF-02"],
+      "question": "Why does the equation tan θ = 1 have solutions differing by π rather than by 2π?",
+      "answer": "Because the tangent function has fundamental period π, not 2π. Once a particular solution θ₀ is known, all solutions are θ₀ + nπ, n ∈ ℤ. The period of tan is the reason the general solution contains π rather than 2π.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q20",
+      "conceptIds": ["TF-08"],
+      "question": "Express sin 3θ in terms of sin θ using sum-to-product or multiple-angle identities.",
+      "answer": "sin 3θ = 3 sin θ − 4 sin³ θ. One derivation expands sin(2θ + θ) = sin 2θ cos θ + cos 2θ sin θ and substitutes the double-angle formulae, then collects powers of sin θ.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q21",
+      "conceptIds": ["TF-13"],
+      "question": "Solve cos θ = −1/2 for θ ∈ [0, 2π).",
+      "answer": "The solutions are θ = 2π/3 and θ = 4π/3. In the unit-circle picture these are the angles in the second and third quadrants where the cosine equals −1/2.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q22",
+      "conceptIds": ["TF-14"],
+      "question": "Solve √3 sin θ + cos θ = 1.",
+      "answer": "R = √(3+1) = 2. Write 2( (√3/2) sin θ + (1/2) cos θ ) = 1 ⇒ 2(sin θ cos(π/6) + cos θ sin(π/6)) = 1 ⇒ 2 sin(θ + π/6) = 1 ⇒ sin(θ + π/6) = 1/2. General solution follows from the sine equation.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q23",
+      "conceptIds": ["TF-01"],
+      "question": "Why is tan θ undefined at θ = π/2?",
+      "answer": "tan θ = sin θ / cos θ and cos(π/2) = 0 while sin(π/2) = 1 ≠ 0. Division by zero makes the function undefined. The graph of tan has a vertical asymptote at every odd multiple of π/2.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q24",
+      "conceptIds": ["TF-03"],
+      "question": "Show that f(θ) = cos θ is an even function.",
+      "answer": "f(−θ) = cos(−θ) = cos θ = f(θ) by the evenness of the cosine (or by the definition on the unit circle: the x-coordinate is unchanged when the angle is reflected). Therefore cos is even.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q25",
+      "conceptIds": ["TF-07"],
+      "question": "Find sin(π/8) using a half-angle formula.",
+      "answer": "sin(π/8) = √((1 − cos(π/4))/2) = √((1 − √2/2)/2) = √(2 − √2)/2. The positive root is taken because π/8 lies in the first quadrant.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q26",
+      "conceptIds": ["TF-10"],
+      "question": "What is meant by the principal value of an inverse trigonometric function?",
+      "answer": "It is the unique value of the multi-valued inverse that lies in the designated principal range of that function. For example the principal value of arcsin(1/2) is π/6, not 5π/6 or any other angle with the same sine.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q27",
+      "conceptIds": ["TF-05"],
+      "question": "Evaluate cos 15°.",
+      "answer": "cos 15° = cos(45°−30°) = cos 45° cos 30° + sin 45° sin 30° = (√2/2)(√3/2) + (√2/2)(1/2) = (√6 + √2)/4.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q28",
+      "conceptIds": ["TF-11"],
+      "question": "Simplify arctan x + arctan(1/x) for x > 0.",
+      "answer": "The sum equals π/2. Let α = arctan x, β = arctan(1/x). Then tan α = x, tan β = 1/x, and tan(α+β) = (x + 1/x)/(1 − x·1/x) which is undefined, so α+β = π/2 (both angles acute for x>0).",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q29",
+      "conceptIds": ["TF-15"],
+      "question": "A CET question asks for the value of sin 2θ when tan θ = 1/2. Which identity is most convenient?",
+      "answer": "The identity sin 2θ = 2 tan θ / (1 + tan² θ) yields the answer immediately: 2·(1/2)/(1 + 1/4) = 1/(5/4) = 4/5. No need to find sin θ and cos θ separately.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q30",
+      "conceptIds": ["TF-06"],
+      "question": "Express cos 3θ in terms of cos θ.",
+      "answer": "cos 3θ = 4 cos³ θ − 3 cos θ. The identity is the cosine counterpart of the triple-angle formula for sine and is derived by expanding cos(2θ+θ).",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q31",
+      "conceptIds": ["TF-13"],
+      "question": "Write the general solution of cos θ = 0.",
+      "answer": "θ = (2k+1)π/2, k ∈ ℤ. Equivalently θ = π/2 + kπ. The solutions are the odd multiples of π/2, where the cosine vanishes.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q32",
+      "conceptIds": ["TF-01"],
+      "question": "What is the range of the tangent function?",
+      "answer": "The range of tan is the whole real line ℝ. For every real number y there exists θ (for example θ = arctan y) such that tan θ = y. The function is surjective onto ℝ.",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q33",
+      "conceptIds": ["TF-08"],
+      "question": "Convert the product sin 5θ cos 3θ into a sum.",
+      "answer": "2 sin 5θ cos 3θ = sin 8θ + sin 2θ, therefore sin 5θ cos 3θ = (1/2)(sin 8θ + sin 2θ). The product-to-sum identity is applied directly.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q34",
+      "conceptIds": ["TF-09"],
+      "question": "Why is the range of arccos chosen to be [0,π] rather than [−π/2,π/2]?",
+      "answer": "In [−π/2,π/2] the cosine is not one-to-one (it takes the same values in the first and fourth quadrants). The interval [0,π] makes cosine bijective, allowing a well-defined continuous inverse.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q35",
+      "conceptIds": ["TF-04"],
+      "question": "If sec θ = 5/4 and θ is acute, find the remaining five trigonometric functions.",
+      "answer": "cos θ = 4/5, sin θ = √(1 − 16/25) = 3/5, tan θ = 3/4, cot θ = 4/3, csc θ = 5/3. All positive because θ is acute. The Pythagorean identity supplies the sine.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "TF-Q36",
+      "conceptIds": ["TF-14"],
+      "question": "What is the maximum value of a sin θ + b cos θ?",
+      "answer": "The maximum value is √(a² + b²). It is attained when sin(θ + α) = 1, where the expression has been rewritten as R sin(θ + α). The minimum is −√(a² + b²).",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "TF-Q37",
+      "conceptIds": ["TF-15"],
+      "question": "List three identities that are especially useful for CET trigonometric simplification.",
+      "answer": "1. Double-angle formulae (especially cos 2A in three forms). 2. Product-to-sum identities. 3. The expression of sin 2A and cos 2A in terms of tan A. Mastery of these three families covers a large fraction of simplification problems.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    }
+  ]
+}

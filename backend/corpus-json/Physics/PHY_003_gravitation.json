@@ -1,0 +1,645 @@
+{
+  "chapterId": "003",
+  "chapterName": "Gravitation",
+  "subject": "Physics",
+  "concepts": [
+    {
+      "id": "GRAV-01",
+      "name": "Universal law of gravitation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "Every particle attracts every other with force proportional to product of masses and inverse square of distance."
+    },
+    {
+      "id": "GRAV-02",
+      "name": "Gravitational constant G",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        1
+      ],
+      "oneLineSummary": "G is the universal constant appearing in Newton's law of gravitation; value 6.67e-11."
+    },
+    {
+      "id": "GRAV-03",
+      "name": "Acceleration due to gravity g",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "g is the acceleration produced by Earth's gravity near the surface."
+    },
+    {
+      "id": "GRAV-04",
+      "name": "Variation of g with height",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "g decreases with height above Earth's surface approximately as g(1-2h/R)."
+    },
+    {
+      "id": "GRAV-05",
+      "name": "Variation of g with depth",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        3
+      ],
+      "oneLineSummary": "g decreases linearly with depth inside Earth."
+    },
+    {
+      "id": "GRAV-06",
+      "name": "Gravitational potential energy",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Potential energy of a mass in a gravitational field is -GMm/r."
+    },
+    {
+      "id": "GRAV-07",
+      "name": "Gravitational potential",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        4
+      ],
+      "oneLineSummary": "Potential at a point is the work done per unit mass in bringing a test mass from infinity."
+    },
+    {
+      "id": "GRAV-08",
+      "name": "Escape velocity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Minimum speed needed to escape a planet's gravitational field without further propulsion."
+    },
+    {
+      "id": "GRAV-09",
+      "name": "Orbital velocity",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        5
+      ],
+      "oneLineSummary": "Speed required for a satellite to stay in a circular orbit."
+    },
+    {
+      "id": "GRAV-10",
+      "name": "Kepler's laws",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        6
+      ],
+      "oneLineSummary": "Three laws describing planetary motion around the Sun."
+    },
+    {
+      "id": "GRAV-11",
+      "name": "Satellite motion",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Period and energy of satellites in circular and elliptical orbits."
+    },
+    {
+      "id": "GRAV-12",
+      "name": "Weightlessness",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Apparent weight zero when accelerating under gravity alone."
+    },
+    {
+      "id": "GRAV-13",
+      "name": "Geostationary satellites",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Satellites with 24 h period that appear fixed relative to Earth."
+    },
+    {
+      "id": "GRAV-14",
+      "name": "Gravitational field intensity",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Force per unit mass experienced by a test mass at a point."
+    },
+    {
+      "id": "GRAV-15",
+      "name": "Binding energy of a satellite",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Energy required to move a satellite from orbit to infinity."
+    },
+    {
+      "id": "GRAV-16",
+      "name": "Time period of satellite",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "T = 2π√(r³/GM) for a circular orbit of radius r."
+    },
+    {
+      "id": "GRAV-17",
+      "name": "Intensity and potential of spherical shell",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Field inside a uniform spherical shell is zero; potential is constant."
+    },
+    {
+      "id": "GRAV-18",
+      "name": "Relation between g and G",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [
+        2
+      ],
+      "oneLineSummary": "g = GM/R² connects surface gravity to the gravitational constant."
+    }
+  ],
+  "qna": [
+    {
+      "id": "GRAV-Q01",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "Define gravitational field and gravitation.",
+      "answer": "Gravitational field is the region or space around a body in which gravitational force is experienced by other bodies. Gravitation means the mutual force of attraction between any two bodies in the universe. These concepts form the basis for studying gravitational interactions.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q02",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "State the universal law of gravitation.",
+      "answer": "The universal law of gravitation states that the gravitational force of attraction along the line joining two bodies in the universe is directly proportional to the product of their masses and inversely proportional to the square of the distance between them. Mathematically F = G m1 m2 / r². The negative sign in the vector form indicates that the force is always attractive.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q03",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "Write the vector form of gravitational force between two masses.",
+      "answer": "In vector form the force on mass m1 due to m2 is F12 = -G m1 m2 / r² * r-hat. Similarly the force on m2 due to m1 is F21 = -G m1 m2 / r² * r-hat. The negative sign shows that the nature of gravitational force is always attractive.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q04",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "List the important characteristics of gravitational force.",
+      "answer": "Gravitational force is an attractive force and forms an action-reaction pair of equal magnitude and opposite direction. It is a central force acting along the line joining the centres of the two bodies and is independent of the nature of the intervening medium. It is a conservative force so work done is path-independent and is zero for a closed path; it is the weakest fundamental force and is a long-range force.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q05",
+      "conceptIds": [
+        "GRAV-03",
+        "GRAV-04"
+      ],
+      "question": "What are the properties of acceleration due to gravity g?",
+      "answer": "The unit of g is m/s² and its dimensions are [M⁰ L¹ T⁻²]. It is a vector quantity directed towards the centre of the Earth and is zero at the centre of the Earth. g increases as height decreases, is independent of the size shape or mass of the body, depends on the rotation of the Earth, and is minimum at the equator and maximum at the poles.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q06",
+      "conceptIds": [
+        "GRAV-03",
+        "GRAV-04",
+        "GRAV-05"
+      ],
+      "question": "Write the expression for g in terms of G, M and R and related formulae.",
+      "answer": "Acceleration due to gravity g = GM / R² where M and R are mass and radius of Earth. Also g = 4π G ρ R / 3 where ρ is density. Variation with height is given by g_h = GM / (R + h)² and approximately g_h / g = 1 - 2h/R for h << R.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q07",
+      "conceptIds": [
+        "GRAV-03"
+      ],
+      "question": "How does effective g vary due to rotation of Earth?",
+      "answer": "Due to the rotation of Earth the effective acceleration due to gravity is g' = g - R ω² cos² θ. At the equator cos θ = 1 so the reduction is maximum. The weight of a body at the equator would become zero if ω = √(g/R).",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q08",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-03"
+      ],
+      "question": "Define gravitational field intensity and give its relation with g.",
+      "answer": "Gravitational field intensity I at a point is defined as the force experienced by a unit mass placed at that point, so I = F/m. From Newton's law of gravitation I = GM / r². It is clear that acceleration due to gravity equals gravitational field intensity so I = g.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q09",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-03"
+      ],
+      "question": "What is the unit and dimensional formula of gravitational field intensity?",
+      "answer": "The unit of gravitational field intensity is N/kg. Its dimensional formula is [M⁰ L¹ T⁻²] which is the same as that of acceleration. In vector form I = - (GM / r²) r-hat directed towards the centre of the mass.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q10",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-03"
+      ],
+      "question": "Define gravitational potential at a point.",
+      "answer": "Gravitational potential at a point in a gravitational field is defined as the amount of work done in bringing a body of unit mass from infinity to that point without acceleration. It is given by V = -GM / r. The unit is J/kg and dimensions are [L² T⁻²].",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q11",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "State the relation between gravitational field intensity and potential.",
+      "answer": "The gravitational field intensity is related to potential by I = - dV/dr. This means the field is the negative gradient of the potential. The negative sign indicates that the field points in the direction of decreasing potential.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q12",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "Write expressions for gravitational potential outside, on surface and inside a solid sphere.",
+      "answer": "Outside a solid sphere of radius R and mass M for r > R the potential is V = -GM / r. On the surface V_surface = -GM / R. Inside the solid sphere V_inside = - (GM / 2R³) (3R² - r²). At the centre V_centre = (3/2) V_surface.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q13",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "Write expressions for gravitational potential for a hollow sphere.",
+      "answer": "Outside a hollow sphere V_outside = -GM / r. On the surface V_surface = -GM / R. Inside a hollow sphere the potential is constant and equal to V_inside = -GM / R. The potential is continuous across the surface.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q14",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "Define gravitational potential energy and give its expression.",
+      "answer": "Gravitational potential energy is the product of gravitational potential and the mass of the body. For two masses M and m separated by distance r it is U = -GMm / r. It equals the work done in bringing the mass from infinity to the given point.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q15",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-04"
+      ],
+      "question": "Derive the change in gravitational potential energy when a body is raised to height h above Earth's surface.",
+      "answer": "Initial potential energy on surface Ui = -GMm / R. Final potential energy at height h is Uf = -GMm / (R + h). The change ΔU = Uf - Ui = GMm [1/R - 1/(R + h)] = mgh / (1 + h/R). When h << R the change approximates to mgh.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q16",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-04"
+      ],
+      "question": "What is the change in PE when height h equals R?",
+      "answer": "When the height h is equal to the radius R of Earth the factor (1 + h/R) becomes 2. Therefore the change in gravitational potential energy becomes ΔU = mgR / 2. This is half the value that would be obtained from the approximate formula mgh.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q17",
+      "conceptIds": [
+        "GRAV-04",
+        "GRAV-05",
+        "GRAV-06"
+      ],
+      "question": "Find the velocity required to project a particle to height h from Earth's surface.",
+      "answer": "Using conservation of energy or the PE change the required velocity satisfies v = √[2gh / (1 + h/R)]. This expression accounts for the variation of g with height. For small heights it reduces to the familiar √(2gh).",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q18",
+      "conceptIds": [
+        "GRAV-04",
+        "GRAV-05",
+        "GRAV-06"
+      ],
+      "question": "Derive the maximum height attained by a body projected with velocity v from Earth's surface.",
+      "answer": "Equating kinetic energy to the change in potential energy leads to the relation v² (1 + h/R) = 2gh. Solving for h gives h = (v² R) / (2gR - v²). This formula is valid provided v is less than the escape velocity.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q19",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "Define critical velocity or orbital velocity of a satellite.",
+      "answer": "Critical velocity is the minimum velocity that must be given to a satellite so that it can revolve in a circular orbit around the Earth or planet. It is also called orbital velocity. The necessary centripetal force is provided by the gravitational force of attraction.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q20",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "Derive the expression for critical velocity of a satellite.",
+      "answer": "Equating centripetal force mv²/r to gravitational force GMm/r² yields v_c = √(GM / r) where r = R + h. Substituting GM = g_h (R + h)² gives the alternative form v_c = √[g_h (R + h)]. Critical velocity is independent of the mass of the satellite.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q21",
+      "conceptIds": [
+        "GRAV-04",
+        "GRAV-08",
+        "GRAV-09"
+      ],
+      "question": "On what factors does the critical velocity of a satellite depend?",
+      "answer": "Critical velocity of a satellite depends on the mass of the Earth or planet, the radius of the Earth or planet, and the height of the satellite from the surface of the planet. It does not depend on the mass of the satellite itself.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q22",
+      "conceptIds": [
+        "GRAV-03",
+        "GRAV-18"
+      ],
+      "question": "What is the value of acceleration due to gravity on the Moon and the distance between Moon and Earth given in the notes?",
+      "answer": "Acceleration due to gravity on the Moon is given as 2.72 × 10⁻³ m/s². The distance between the Moon and the Earth is 3.85 × 10⁵ km. The radius of the Earth is given as 6378 km and g on Earth is 9.8 m/s².",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q23",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "Why is gravitational force considered a conservative force?",
+      "answer": "Gravitational force is conservative because the work done by it does not depend on the path taken. For any closed path the work done by gravitational force is always zero. This property allows the definition of gravitational potential energy as a state function.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q24",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-04"
+      ],
+      "question": "Compare the strength of gravitational force with other fundamental forces.",
+      "answer": "Gravitational force is weaker than both electromagnetic and nuclear forces. It is about 10³⁶ times weaker than electromagnetic force and 10³⁸ times weaker than nuclear force. Although negligible for light bodies it becomes considerable for massive bodies such as stars and planets.",
+      "type": "comparison",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q25",
+      "conceptIds": [
+        "GRAV-03",
+        "GRAV-04",
+        "GRAV-05"
+      ],
+      "question": "How does g vary with depth below the Earth's surface?",
+      "answer": "The notes indicate that g decreases with depth. The fractional decrease is of the order of d/R where d is the depth. Acceleration due to gravity is zero at the centre of the Earth because the mass above any point cancels the contribution from the surrounding shell.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q26",
+      "conceptIds": [
+        "GRAV-04",
+        "GRAV-18"
+      ],
+      "question": "What is the percentage decrease in weight at height h above the surface?",
+      "answer": "The percentage decrease in weight at height h is approximately (2h/R) × 100. This follows from the approximate relation g_h / g ≈ 1 - 2h/R. The formula is valid when h is much smaller than the radius R of the Earth.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q27",
+      "conceptIds": [
+        "GRAV-09"
+      ],
+      "question": "Explain why g is minimum at the equator and maximum at the poles.",
+      "answer": "Because of the rotation of the Earth the centrifugal force is maximum at the equator and zero at the poles. Consequently the effective value of g is reduced most at the equator. In addition the Earth is slightly flattened at the poles so the distance to the centre is smaller, further increasing g at the poles.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q28",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "Write the expression for gravitational potential energy of a system of two point masses.",
+      "answer": "The gravitational potential energy of two point masses M and m separated by distance r is U = -GMm / r. The negative sign indicates that the force is attractive and that energy is required to separate the masses to infinity where potential energy is taken as zero.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q29",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-04"
+      ],
+      "question": "How is work done related to change in gravitational potential energy?",
+      "answer": "The work done by an external agent in slowly moving a mass in a gravitational field equals the change in gravitational potential energy. When a body is raised from the surface to height h the work done is ΔU = mgh / (1 + h/R). For small heights this reduces to the familiar mgh.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q30",
+      "conceptIds": [
+        "GRAV-03",
+        "GRAV-16"
+      ],
+      "question": "What is the density of Earth relative to water according to the notes?",
+      "answer": "The notes state that the density of Earth is 5.5 times the density of water. This average density is used in the expression g = 4π G ρ R / 3 relating surface gravity to the mean density of the Earth.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q31",
+      "conceptIds": [
+        "GRAV-04",
+        "GRAV-08",
+        "GRAV-09"
+      ],
+      "question": "Derive the orbital radius dependence of critical velocity.",
+      "answer": "From v_c = √(GM / r) it is clear that critical velocity is inversely proportional to the square root of the orbital radius. Larger orbital radius therefore requires smaller orbital speed. Substituting r = R + h shows the explicit dependence on height above the surface.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q32",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-03"
+      ],
+      "question": "Why is gravitational potential always negative?",
+      "answer": "Gravitational potential is defined by taking the potential at infinity as zero. Since work is done by the gravitational field when a mass is brought from infinity, the potential energy (and hence potential) at any finite distance is negative. The negative sign is a consequence of the attractive nature of gravity.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q33",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "What happens to the potential inside a hollow sphere?",
+      "answer": "Inside a hollow sphere the gravitational potential is constant and equal to the value on the surface, namely -GM / R. Consequently the gravitational field intensity is zero everywhere inside a hollow sphere. A test mass experiences no net force inside.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q34",
+      "conceptIds": [
+        "GRAV-04",
+        "GRAV-16"
+      ],
+      "question": "Give the expression for work done to raise a body to height nR where n is an integer.",
+      "answer": "When a body is raised to a height equal to n times the radius of Earth the work done is W = [n / (n + 1)] mgR. This follows from the exact expression ΔU = mgh / (1 + h/R) by substituting h = nR.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q35",
+      "conceptIds": [
+        "GRAV-03"
+      ],
+      "question": "State the condition under which weight of a body on the equator becomes zero.",
+      "answer": "The weight of a body on the equator becomes zero when the angular speed of Earth satisfies ω = √(g/R). At this critical angular speed the centrifugal acceleration equals g and the effective gravity vanishes. The actual angular speed of Earth is much smaller, approximately 7.3 × 10⁻⁵ rad/s.",
+      "type": "definition",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q36",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "How is gravitational field intensity related to the slope of the potential graph?",
+      "answer": "Because I = -dV/dr the field intensity is the negative of the slope of the potential-versus-distance graph. A steeper negative slope corresponds to a stronger attractive field. At large distances both potential and field approach zero.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "GRAV-Q37",
+      "conceptIds": [
+        "GRAV-01",
+        "GRAV-02",
+        "GRAV-06"
+      ],
+      "question": "Why is gravitational force independent of the intervening medium?",
+      "answer": "Unlike electromagnetic forces, gravitational force does not depend on the nature of the medium between the two masses. This is one of the listed characteristics of gravitational force. The force remains the same whether the space between the bodies is vacuum, air or any other material.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    }
+  ]
+}

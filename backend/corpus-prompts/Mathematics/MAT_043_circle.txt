@@ -1,0 +1,35 @@
+# Source resource: 192 (SHORT_NOTES)
+# Expected output: corpus-json/Mathematics/MAT_043_circle.json
+# This prompt is generated. Keep the identifiers unchanged.
+
+You are creating the Master CET Sheet study corpus for one chapter. Use only the selected source PDF. Do not invent facts that are absent from it.
+
+chapterId: 43
+chapterName: Circle
+subject: Mathematics
+outputFileName: MAT_043_circle.json
+conceptIdPrefix: CIR
+
+Return one valid JSON object, with no Markdown fence, matching this shape:
+{
+  "schemaVersion": 1,
+  "chapterId": 43,
+  "chapterName": "Circle",
+  "subject": "Mathematics",
+  "conceptIdPrefix": "CIR",
+  "questions": [
+    {
+      "id": "CIR-Q001",
+      "question": "...",
+      "answer": "At least three complete sentences.",
+      "concepts": ["..."]
+    }
+  ]
+}
+
+Quality requirements:
+- Create at least 35 meaningful questions that cover definitions, reasoning, formulae where relevant, common mistakes, and CET-style application.
+- Give each answer at least three complete sentences; explain the reasoning rather than only stating a result.
+- IDs must begin with CIR- and be unique within this file.
+- Preserve the chapter metadata exactly as above.
+- Save the JSON to corpus-json/Mathematics/MAT_043_circle.json.

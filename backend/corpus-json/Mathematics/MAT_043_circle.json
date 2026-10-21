@@ -1,0 +1,511 @@
+{
+  "chapterId": "43",
+  "chapterName": "Circle",
+  "subject": "Mathematics",
+  "concepts": [
+    {
+      "id": "CIR-01",
+      "name": "Standard form of circle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Equation x² + y² = r² for circle centred at origin."
+    },
+    {
+      "id": "CIR-02",
+      "name": "Centre-radius form",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "(x-h)² + (y-k)² = r² with centre (h,k) and radius r."
+    },
+    {
+      "id": "CIR-03",
+      "name": "General equation of circle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "x² + y² + 2gx + 2fy + c = 0; centre (-g,-f), radius √(g²+f²-c)."
+    },
+    {
+      "id": "CIR-04",
+      "name": "Nature of circle from general equation",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "g²+f²-c >0 real, =0 point circle, <0 imaginary."
+    },
+    {
+      "id": "CIR-05",
+      "name": "Diameter form of circle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "(x-x1)(x-x2)+(y-y1)(y-y2)=0 when ends of diameter known."
+    },
+    {
+      "id": "CIR-06",
+      "name": "Parametric equations of circle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "x = r cosθ, y = r sinθ for x² + y² = r²."
+    },
+    {
+      "id": "CIR-07",
+      "name": "Circles in different quadrants",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "Equations for circles of radius a touching axes in each quadrant."
+    },
+    {
+      "id": "CIR-08",
+      "name": "Tangent at a point on standard circle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "xx1 + yy1 = r² is the tangent at (x1,y1) on x²+y²=r²."
+    },
+    {
+      "id": "CIR-09",
+      "name": "Parametric form of tangent",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "x cosθ + y sinθ = r is the tangent corresponding to parameter θ."
+    },
+    {
+      "id": "CIR-10",
+      "name": "Condition of tangency",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [1],
+      "oneLineSummary": "For y=mx+c to touch x²+y²=r², c = ±r√(1+m²)."
+    },
+    {
+      "id": "CIR-11",
+      "name": "Length of tangent from external point",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Length from (x1,y1) is √(x1²+y1²+2gx1+2fy1+c)."
+    },
+    {
+      "id": "CIR-12",
+      "name": "Director circle",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "Locus of points from which tangents to the circle are perpendicular."
+    },
+    {
+      "id": "CIR-13",
+      "name": "Tangent to general circle",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [2],
+      "oneLineSummary": "xx1+yy1+g(x+x1)+f(y+y1)+c=0 at point (x1,y1)."
+    },
+    {
+      "id": "CIR-14",
+      "name": "Circle through three points",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Substitute three points into general equation and solve for g,f,c."
+    },
+    {
+      "id": "CIR-15",
+      "name": "Circle touching the axes",
+      "importance": "must-know",
+      "source": "notes",
+      "sourcePages": [3],
+      "oneLineSummary": "Absolute value of centre coordinate equals radius when touching an axis."
+    },
+    {
+      "id": "CIR-16",
+      "name": "Intercepts made by circle on axes",
+      "importance": "good-to-know",
+      "source": "notes",
+      "sourcePages": [3],
+      "oneLineSummary": "Found by setting x=0 or y=0 and solving the resulting quadratic."
+    },
+    {
+      "id": "CIR-17",
+      "name": "Pair of tangents from external point",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Equation of pair of tangents is SS1 = T²."
+    },
+    {
+      "id": "CIR-18",
+      "name": "Chord of contact",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Chord of contact from (x1,y1) to x²+y²=r² is xx1+yy1=r²."
+    },
+    {
+      "id": "CIR-19",
+      "name": "Identification of circle from general second degree equation",
+      "importance": "must-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Coefficients of x² and y² equal and non-zero, coefficient of xy zero."
+    },
+    {
+      "id": "CIR-20",
+      "name": "Power of a point",
+      "importance": "good-to-know",
+      "source": "syllabus",
+      "sourcePages": [],
+      "oneLineSummary": "Power of point (x1,y1) w.r.t. circle is the value of the circle expression at the point."
+    }
+  ],
+  "qna": [
+    {
+      "id": "CIR-Q01",
+      "conceptIds": ["CIR-01"],
+      "question": "What is the standard form of the equation of a circle with centre at the origin and radius r?",
+      "answer": "The standard form is x² + y² = r². This represents all points at a fixed distance r from the origin. It is the simplest equation used when the circle is centred at (0,0).",
+      "type": "definition",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q02",
+      "conceptIds": ["CIR-02"],
+      "question": "Write the centre-radius form of the equation of a circle with centre (h,k) and radius r.",
+      "answer": "The centre-radius form is (x-h)² + (y-k)² = r². Expanding this by completing the square yields the general form. It directly shows the geometric centre and radius.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q03",
+      "conceptIds": ["CIR-03"],
+      "question": "What is the general form of the equation of a circle and how do you find its centre and radius?",
+      "answer": "The general form is x² + y² + 2gx + 2fy + c = 0. The centre is (-g, -f) and the radius is √(g² + f² - c). This form is obtained by expanding the centre-radius equation and collecting terms.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q04",
+      "conceptIds": ["CIR-04"],
+      "question": "How do you determine whether the general equation represents a real circle, a point circle or an imaginary circle?",
+      "answer": "Compute g² + f² - c. If the value is positive the circle is real with positive radius; if zero it is a point circle of radius zero; if negative the circle is imaginary and has no real points.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q05",
+      "conceptIds": ["CIR-05"],
+      "question": "Write the diameter form of the equation of a circle when the endpoints of a diameter are (x1,y1) and (x2,y2).",
+      "answer": "The equation is (x-x1)(x-x2) + (y-y1)(y-y2) = 0. It is derived from the geometric property that the angle in a semicircle is a right angle. Expanding gives the general form of the circle having that diameter.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q06",
+      "conceptIds": ["CIR-06"],
+      "question": "Give the parametric equations of the circle x² + y² = r².",
+      "answer": "The parametric equations are x = r cos θ and y = r sin θ. As θ varies from 0 to 2π the point traces the whole circle. These coordinates are useful for finding points of contact of tangents and for chord problems.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q07",
+      "conceptIds": ["CIR-07"],
+      "question": "Write the equations of the circles of radius a that touch both axes and lie in each of the four quadrants.",
+      "answer": "First quadrant: (x-a)² + (y-a)² = a². Second: (x+a)² + (y-a)² = a². Third: (x+a)² + (y+a)² = a². Fourth: (x-a)² + (y+a)² = a². In each case the centre is at a distance a from both axes so the circle touches them.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q08",
+      "conceptIds": ["CIR-08"],
+      "question": "What is the equation of the tangent to the circle x² + y² = r² at the point (x1,y1) on it?",
+      "answer": "The tangent is xx1 + yy1 = r². It is obtained by the standard replacement of x² by xx1 and y² by yy1. The point of contact satisfies both the circle and the tangent equations simultaneously.",
+      "type": "formula",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q09",
+      "conceptIds": ["CIR-09"],
+      "question": "State the parametric form of the tangent to the circle x² + y² = r².",
+      "answer": "The parametric form is x cos θ + y sin θ = r. Here θ is the parameter of the point of contact (r cos θ, r sin θ). This form is especially convenient when the point of contact is given parametrically.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q10",
+      "conceptIds": ["CIR-10"],
+      "question": "State the condition that the line y = mx + c touches the circle x² + y² = r².",
+      "answer": "The condition is c = ± r √(1 + m²). It ensures that the perpendicular distance from the centre (0,0) to the line equals the radius. The two signs correspond to the two parallel tangents of the same slope.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q11",
+      "conceptIds": ["CIR-11"],
+      "question": "How is the length of the tangent drawn from an external point (x1,y1) to the circle x² + y² + 2gx + 2fy + c = 0 calculated?",
+      "answer": "The length is √(x1² + y1² + 2g x1 + 2f y1 + c). This expression is the square root of the power of the point with respect to the circle. It is real only when the point lies outside the circle.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CIR-Q12",
+      "conceptIds": ["CIR-12"],
+      "question": "What is the director circle of the circle x² + y² = r²?",
+      "answer": "The director circle is the locus of points from which the pair of tangents to the given circle are perpendicular. For x² + y² = r² the director circle is x² + y² = 2r². Any point on it is the intersection of two perpendicular tangents.",
+      "type": "definition",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CIR-Q13",
+      "conceptIds": ["CIR-13"],
+      "question": "Write the equation of the tangent to the general circle at the point (x1,y1).",
+      "answer": "The tangent is xx1 + yy1 + g(x + x1) + f(y + y1) + c = 0. It is obtained by polarising the general equation. The point (x1,y1) must satisfy the circle equation for the line to be a tangent.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CIR-Q14",
+      "conceptIds": ["CIR-14"],
+      "question": "How do you find the equation of the circle passing through three given non-collinear points?",
+      "answer": "Substitute each of the three points into the general equation x² + y² + 2gx + 2fy + c = 0 to obtain three linear equations in g, f and c. Solve the system and substitute the values back. The resulting equation is the unique circle through the three points.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CIR-Q15",
+      "conceptIds": ["CIR-15"],
+      "question": "What is the condition that the circle x² + y² + 2gx + 2fy + c = 0 touches the x-axis?",
+      "answer": "The absolute value of the y-coordinate of the centre must equal the radius, i.e. |f| = √(g² + f² - c). This algebraic condition ensures the distance from centre to the x-axis equals the radius so that the circle is tangent to it.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": [3]
+    },
+    {
+      "id": "CIR-Q16",
+      "conceptIds": ["CIR-16"],
+      "question": "How can the intercepts made by a circle on the coordinate axes be found?",
+      "answer": "Set y = 0 in the circle equation and solve the resulting quadratic for x; the roots are the x-intercepts. Set x = 0 and solve for y to obtain the y-intercepts. The length of each intercept is the absolute difference of the corresponding roots.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [3]
+    },
+    {
+      "id": "CIR-Q17",
+      "conceptIds": ["CIR-17"],
+      "question": "How is the equation of the pair of tangents drawn from an external point to a circle written?",
+      "answer": "If S = 0 is the circle and (x1,y1) the external point, the pair of tangents is given by SS1 = T² where S1 is the value of S at (x1,y1) and T is the linear polar expression. Expanding yields a homogeneous quadratic that represents the two tangent lines.",
+      "type": "formula",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CIR-Q18",
+      "conceptIds": ["CIR-18"],
+      "question": "What is the equation of the chord of contact from the external point (x1,y1) to the circle x² + y² = r²?",
+      "answer": "The chord of contact is xx1 + yy1 = r². It is the line joining the points of contact of the two tangents drawn from (x1,y1). The same expression appears as the polar of the point with respect to the circle.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CIR-Q19",
+      "conceptIds": ["CIR-19"],
+      "question": "What conditions must a general second-degree equation satisfy to represent a circle?",
+      "answer": "The coefficients of x² and y² must be equal and non-zero, and the coefficient of the xy term must be zero. Only then can the equation be rewritten, by completing the square, into the centre-radius form of a circle. Otherwise the conic is of a different type.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "sourcePages": []
+    },
+    {
+      "id": "CIR-Q20",
+      "conceptIds": ["CIR-03", "CIR-04"],
+      "question": "A student writes the radius of x² + y² + 2gx + 2fy + c = 0 as √(g² + f² + c). What is wrong and what is the correct expression?",
+      "answer": "The student has used the wrong sign in front of c. The correct radius is √(g² + f² - c). Using the plus sign yields an incorrect (usually larger) value and may even make a real circle appear imaginary or vice versa.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q21",
+      "conceptIds": ["CIR-03"],
+      "question": "Why is the centre of the general circle taken as (-g, -f) and not (g, f)?",
+      "answer": "When the centre-radius form is expanded, the linear terms appear as -2hx and -2ky. Comparing with 2gx + 2fy shows that g = -h and f = -k, so the centre (h,k) is (-g,-f). Taking the positive signs is a very common error that places the centre in the wrong quadrant.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q22",
+      "conceptIds": ["CIR-10"],
+      "question": "Derive the condition of tangency for the line y = mx + c to the circle x² + y² = r² from first principles.",
+      "answer": "The perpendicular distance from the centre (0,0) to the line mx - y + c = 0 is |c|/√(m²+1). For tangency this distance must equal the radius r, giving |c| = r √(m²+1) or c = ± r √(1+m²). The same condition is obtained by requiring that the quadratic formed by substituting the line into the circle has equal roots.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q23",
+      "conceptIds": ["CIR-05"],
+      "question": "A diameter of a circle has endpoints (2,3) and (4,-1). Write the equation of the circle.",
+      "answer": "Using the diameter form: (x-2)(x-4) + (y-3)(y+1) = 0. Expanding gives x² - 6x + 8 + y² + 2y - 3 = 0, so x² + y² - 6x + 2y + 5 = 0. This is the unique circle having the given segment as diameter.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q24",
+      "conceptIds": ["CIR-06", "CIR-09"],
+      "question": "Find the equation of the tangent to x² + y² = 25 at the point corresponding to θ = π/3.",
+      "answer": "The point is (5 cos(π/3), 5 sin(π/3)) = (5/2, (5√3)/2). The parametric tangent is x cos(π/3) + y sin(π/3) = 5, which simplifies to (x/2) + (y √3)/2 = 5 or x + √3 y = 10. This is the required tangent.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q25",
+      "conceptIds": ["CIR-11"],
+      "question": "Find the length of the tangent from the point (1,2) to the circle x² + y² - 4x - 6y + 3 = 0.",
+      "answer": "Here g = -2, f = -3, c = 3. The length is √(1 + 4 - 4·1 - 6·2 + 3) = √(5 - 4 - 12 + 3) = √(-8) which is imaginary. Therefore the point lies inside the circle and no real tangent can be drawn from it.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CIR-Q26",
+      "conceptIds": ["CIR-07"],
+      "question": "A circle of radius 3 touches both positive axes. Write its equation.",
+      "answer": "Because it lies in the first quadrant and touches both axes, its centre must be at (3,3). The equation is therefore (x-3)² + (y-3)² = 9. Expanding gives x² + y² - 6x - 6y + 9 = 0.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q27",
+      "conceptIds": ["CIR-04"],
+      "question": "Show that the equation x² + y² + 2x + 2y + 2 = 0 represents a point circle and find the point.",
+      "answer": "g = 1, f = 1, c = 2, so g² + f² - c = 1 + 1 - 2 = 0. The radius is zero, hence the equation represents a point circle whose only point is the centre (-1,-1).",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q28",
+      "conceptIds": ["CIR-19"],
+      "question": "Does the equation 2x² + 3y² - 4x + 6y - 5 = 0 represent a circle? Justify.",
+      "answer": "No. The coefficients of x² and y² are different (2 and 3). For a circle they must be equal. After dividing by a common factor the xy term is still absent, but the unequal quadratic coefficients show that the conic is an ellipse (or empty).",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "sourcePages": []
+    },
+    {
+      "id": "CIR-Q29",
+      "conceptIds": ["CIR-08", "CIR-13"],
+      "question": "Find the tangent to the circle x² + y² - 2x - 4y - 4 = 0 at the point (3,5) if the point lies on the circle.",
+      "answer": "First verify that (3,5) satisfies the equation: 9 + 25 - 6 - 20 - 4 = 4 ≠ 0, so the point does not lie on the circle. Therefore no tangent can be drawn at that point. The student must always check membership before writing the tangent equation.",
+      "type": "cet_tip",
+      "difficulty": "medium",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CIR-Q30",
+      "conceptIds": ["CIR-12"],
+      "question": "Find the equation of the director circle of x² + y² = 9.",
+      "answer": "For the circle x² + y² = r² the director circle is x² + y² = 2r². Here r² = 9, so the director circle is x² + y² = 18. Any point on this larger circle is the intersection of a pair of perpendicular tangents to the original circle.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CIR-Q31",
+      "conceptIds": ["CIR-15"],
+      "question": "Find the condition that the circle x² + y² + 2gx + 2fy + c = 0 touches the y-axis.",
+      "answer": "The absolute value of the x-coordinate of the centre must equal the radius: |g| = √(g² + f² - c). Squaring both sides yields g² = g² + f² - c, which simplifies to f² = c. This is the required algebraic condition.",
+      "type": "formula",
+      "difficulty": "medium",
+      "sourcePages": [3]
+    },
+    {
+      "id": "CIR-Q32",
+      "conceptIds": ["CIR-01", "CIR-02"],
+      "question": "Convert the centre-radius form (x-3)² + (y+2)² = 16 into the general form and identify centre and radius.",
+      "answer": "Expanding gives x² - 6x + 9 + y² + 4y + 4 = 16, so x² + y² - 6x + 4y - 3 = 0. Comparing with the general form, g = -3, f = 2, c = -3. Centre is (3,-2) and radius is 4, confirming the original data.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q33",
+      "conceptIds": ["CIR-10"],
+      "question": "Find the equations of the tangents to x² + y² = 4 that have slope 1.",
+      "answer": "Here r = 2 and m = 1, so c = ±2√(1+1) = ±2√2. The two tangents are therefore y = x + 2√2 and y = x - 2√2. Both lines touch the circle at exactly one point each.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q34",
+      "conceptIds": ["CIR-06"],
+      "question": "Find the coordinates of the point on the circle x² + y² = 25 corresponding to the parameter θ = 5π/6.",
+      "answer": "x = 5 cos(5π/6) = 5(-√3/2) = - (5√3)/2, y = 5 sin(5π/6) = 5(1/2) = 5/2. The point is therefore (-(5√3)/2, 5/2). It lies in the second quadrant, consistent with the given angle.",
+      "type": "application",
+      "difficulty": "easy",
+      "sourcePages": [1]
+    },
+    {
+      "id": "CIR-Q35",
+      "conceptIds": ["CIR-20"],
+      "question": "What is the geometric meaning of the power of a point with respect to a circle?",
+      "answer": "The power of a point P with respect to a circle is equal to PT² where T is the point of contact of a tangent from P (when P is outside), or to the product of the segments of any chord through P (when P is inside). Algebraically it is the value of the circle expression evaluated at P.",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "sourcePages": []
+    },
+    {
+      "id": "CIR-Q36",
+      "conceptIds": ["CIR-03", "CIR-11"],
+      "question": "A point lies outside the circle x² + y² + 2gx + 2fy + c = 0. How do you confirm this algebraically before calculating the length of the tangent?",
+      "answer": "Evaluate the expression x1² + y1² + 2g x1 + 2f y1 + c. If the value is positive the point is outside, if zero it is on the circle, and if negative it is inside. Only when the value is positive is the length of the tangent real.",
+      "type": "cet_tip",
+      "difficulty": "easy",
+      "sourcePages": [2]
+    },
+    {
+      "id": "CIR-Q37",
+      "conceptIds": ["CIR-07", "CIR-15"],
+      "question": "Find the equation of the circle that touches both axes and the line x = 4 in the first quadrant.",
+      "answer": "Because it touches both axes in the first quadrant its centre is (r,r). Touching the line x = 4 means the distance from centre to the line equals the radius, so |4 - r| = r. Solving gives r = 2 (the other solution r = 4 places the centre on the line). The equation is (x-2)² + (y-2)² = 4.",
+      "type": "application",
+      "difficulty": "hard",
+      "sourcePages": [1, 3]
+    },
+    {
+      "id": "CIR-Q38",
+      "conceptIds": ["CIR-01", "CIR-08"],
+      "question": "Show that the line 3x + 4y = 25 is a tangent to the circle x² + y² = 25 and find the point of contact.",
+      "answer": "The distance from (0,0) to the line is 25/5 = 5, which equals the radius, so the line is tangent. Solving the system x² + y² = 25 and 3x + 4y = 25 yields the unique point of contact (3,4). Verification: 3·3 + 4·4 = 25 and 9 + 16 = 25.",
+      "type": "application",
+      "difficulty": "medium",
+      "sourcePages": [1]
+    }
+  ]
+}
