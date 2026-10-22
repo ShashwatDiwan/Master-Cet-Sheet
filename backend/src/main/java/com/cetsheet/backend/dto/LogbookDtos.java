@@ -29,4 +29,5 @@ public final class LogbookDtos {
                                 LocalDate lastMistakeOn, MistakeReason topReason, BigDecimal weaknessScore,
                                 int sourceResourceId, List<Integer> sourcePages) { }
     public record ReasonBreakdown(String subject, MistakeReason reason, long count) { }
+    public record ChapterBreakdown(int chapterId, String chapterName, long count) { }
 }

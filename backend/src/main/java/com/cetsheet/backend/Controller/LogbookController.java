@@ -69,4 +69,7 @@ public class LogbookController {
 
     @GetMapping("/insights/reasons")
     public List<LogbookDtos.ReasonBreakdown> reasons() { return logbookService.reasonBreakdown(authenticatedUserService.currentUserId()); }
+
+    @GetMapping("/insights/chapters")
+    public List<LogbookDtos.ChapterBreakdown> chapters() { return logbookService.chapterBreakdown(authenticatedUserService.currentUserId()); }
 }

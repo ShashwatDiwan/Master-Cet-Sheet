@@ -191,6 +191,20 @@ public class LogbookService {
                 rs.getString("subject"), MistakeReason.valueOf(rs.getString("reason")), rs.getLong("total")));
     }
 
+    @Transactional(readOnly = true)
+    public List<LogbookDtos.ChapterBreakdown> chapterBreakdown(long userId) {
+        return jdbc.query("""
+                SELECT m.chapter_id, cc.chapter_name, count(*) AS total
+                FROM student_mistakes m
+                JOIN corpus_chapter cc ON cc.chapter_id = m.chapter_id
+                WHERE m.user_id = :userId
+                GROUP BY m.chapter_id, cc.chapter_name
+                ORDER BY total DESC, cc.chapter_name ASC
+                LIMIT 5
+                """, Map.of("userId", userId), (rs, ignored) -> new LogbookDtos.ChapterBreakdown(
+                rs.getInt("chapter_id"), rs.getString("chapter_name"), rs.getLong("total")));
+    }
+
     private ValidTest validateTestRequest(long userId, LogbookDtos.TestUpsertRequest request, UUID existingId) {
         if (request == null || request.testDate() == null || request.score() == null || request.maxScore() == null) {
             throw badRequest("Name, date, score, and total score are required.");
