@@ -41,7 +41,7 @@ public class BirbalMemoryService {
         List<BirbalMemoryDtos.SubjectSnapshot> subjects = snapshots(userId);
         List<BirbalMemoryDtos.RecentTest> recentTests = recentTests(userId);
         return new BirbalMemoryDtos.MemoryResponse(profile, subjects, recentTests,
-                externalPrompt(profile, subjects, recentTests), subjectContexts(profile, subjects));
+                externalPrompt(profile, subjects), subjectContexts(profile, subjects));
     }
 
     @Transactional
@@ -194,19 +194,16 @@ public class BirbalMemoryService {
                 .append(subject.subject()).append(" question. Do not mention unrelated subjects.\n\n")
                 .append("Global learning preferences:\n").append(orNone(profile.globalSummary())).append("\n\n")
                 .append(subject.subject()).append(" profile:\n").append(orNone(summaryFor(profile, subject.subject()))).append("\n\n")
-                .append("Trusted PrepPilot signals:\n")
-                .append("- Progress: ").append(subject.completedChapters()).append('/').append(subject.totalChapters())
-                .append(" chapters completed; ").append(subject.revisedChapters()).append(" revised.\n");
+                .append("Trusted PrepPilot difficulty signals:\n");
         appendWeakChapters(prompt, subject.weakChapters());
         appendWeakConcepts(prompt, subject.weakConcepts());
         appendReasons(prompt, subject.reasonPatterns());
         return truncate(prompt.toString(), 4000);
     }
 
-    private String externalPrompt(BirbalMemoryDtos.Profile profile, List<BirbalMemoryDtos.SubjectSnapshot> subjects,
-                                  List<BirbalMemoryDtos.RecentTest> tests) {
+    private String externalPrompt(BirbalMemoryDtos.Profile profile, List<BirbalMemoryDtos.SubjectSnapshot> subjects) {
         StringBuilder prompt = new StringBuilder("""
-                You are a study-profile analyst helping an MHT-CET student. Use only the trusted PrepPilot facts below and relevant study context already present in this conversation. Do not invent scores, habits, diagnoses, or weaknesses. Create concise, practical memory for another tutor AI.
+                You are a study-profile analyst helping an MHT-CET student. Use only the trusted PrepPilot facts below and relevant study context already present in this conversation. Do not invent habits, diagnoses, strengths, or weaknesses. Explain what the student struggles with, why those struggles are likely happening, and how a tutor should help.
 
                 Return exactly these four headings, in this order, with no preface:
                 [GLOBAL]
@@ -215,23 +212,14 @@ public class BirbalMemoryService {
                 [MATHEMATICS]
 
                 Rules:
-                - GLOBAL: learning preferences and cross-subject study strategy only; maximum 900 characters.
-                - Each subject section: subject-specific strengths, weaknesses, typical mistake patterns, and coaching approach; maximum 1,200 characters.
+                - GLOBAL: a concise overall learning summary and cross-subject coaching strategy only; maximum 900 characters.
+                - Each subject section: the chapters/concepts the student struggles with, the observed mistake reasons, and a specific coaching approach; maximum 1,200 characters.
                 - Keep subjects isolated. If evidence is missing, say that no PrepPilot evidence exists yet.
 
                 TRUSTED PREPPILOT FACTS
                 """);
-        if (!tests.isEmpty()) {
-            prompt.append("Recent whole-test scores (a test may cover multiple subjects):\n");
-            tests.forEach(test -> prompt.append("- ").append(test.name()).append(": ")
-                    .append(test.score().stripTrailingZeros().toPlainString()).append('/').append(test.maxScore().stripTrailingZeros().toPlainString())
-                    .append(" (").append(test.percentage().stripTrailingZeros().toPlainString()).append("%), ")
-                    .append(test.testDate()).append('\n'));
-        }
         for (BirbalMemoryDtos.SubjectSnapshot subject : subjects) {
-            prompt.append('\n').append(subject.subject().toUpperCase(Locale.ROOT)).append(" FACTS\n")
-                    .append("Progress: ").append(subject.completedChapters()).append('/').append(subject.totalChapters())
-                    .append(" completed; ").append(subject.revisedChapters()).append(" revised.\n");
+            prompt.append('\n').append(subject.subject().toUpperCase(Locale.ROOT)).append(" DIFFICULTY SIGNALS\n");
             appendWeakChapters(prompt, subject.weakChapters());
             appendWeakConcepts(prompt, subject.weakConcepts());
             appendReasons(prompt, subject.reasonPatterns());
